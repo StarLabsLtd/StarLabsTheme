@@ -1,0 +1,15 @@
+# Install gresource
+# Create STD
+if [ ! -e /usr/share/gnome-shell/gnome-shell-theme.gresource.std ]; then
+cp /usr/share/gnome-shell/gnome-shell-theme.gresource /usr/share/gnome-shell/gnome-shell-theme.gresource.std
+fi
+
+# Move current to .original
+if [ -e /usr/share/gnome-shell/gnome-shell-theme.gresource ]; then
+mv /usr/share/gnome-shell/gnome-shell-theme.gresource /usr/share/gnome-shell/gnome-shell-theme.gresource.original
+fi
+
+# Create symlink
+ln -fs /usr/share/themes/StarLabs/gnome-shell/gnome-shell-theme.gresource /usr/share/gnome-shell/gnome-shell-theme.gresource
+
+update-alternatives --install /usr/share/gnome-shell/theme/gdm3.css gdm3.css /usr/share/themes/StarLabs/gnome-shell/gnome-shell.css 20

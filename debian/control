@@ -1,0 +1,18 @@
+Source: starlabs-theme
+Section: gnome
+Priority: optional
+Maintainer: Sean Rhodes <sean@starlabs.systems>
+Build-Depends: debhelper (>= 7),
+               sassc
+Standards-Version: 4.1.2
+Homepage: https://starlabs.systems
+
+Package: starlabs-gnome-shell-theme
+Architecture: all
+Description: Gnome Shell Theme from Star Labs
+Depends: gnome-session
+
+Package: starlabs-gtk-theme
+Architecture: all
+Description: GTK Theme from Star Labs
+

@@ -1,0 +1,57 @@
+// Standard Star Labs color scheme
+$blue0: #0070c9;
+$blue1: #1575c5;
+$blue2: #0994db;
+$blue3: #19b5f1;
+$blue4: #002747;
+
+// Dark Star Labs color scheme
+$dark1: #322f30;
+$dark2: #4c4a4b;
+$dark3: #777575;
+
+// Light Star Labs color scheme
+$light1: #b2b0b1;
+$light2: #dddbdb;
+$light3: #fffffe;
+
+// Blacks
+$jet: #0d1f2d;
+$inkstone: #3D3D3D;
+$slate: #5D5D5D;
+$graphite: #666666;
+
+// Whites
+$white: #FFFFFF;
+$porcelain: #eadeda;
+$silk: #CCC;
+$ash: #878787;
+
+// Utility
+$red: #ED3146;
+$orange: #E95420;
+$yellow: #F89B0F;
+$green: #3EB34F;
+$blue: #0994db;
+$purple: #762572;
+
+// Terminal colors
+$terminal_bg_color: #002747;
+$terminal_base_color: lighten($terminal_bg_color, 5%);
+$terminal_fg_color: white;
+$terminal_borders_color: darken($terminal_bg_color, 10%);
+
+// Widget Colors
+$headerbar_bg_color: #0d1f2d;
+$menubar_bg_color: $headerbar_bg_color;
+$headerbar_fg_color: $porcelain;
+$headerbar_text_color: $silk;
+$headerbar_insensitive_color: mix($headerbar_fg_color, $headerbar_bg_color, 50%);
+
+//
+$backdrop_headerbar_bg_color: lighten($headerbar_bg_color, 7%);
+$backdrop_headerbar_fg_color: mix($headerbar_fg_color, $headerbar_bg_color, 70%);
+$backdrop_headerbar_text_color: mix($headerbar_text_color, $backdrop_headerbar_bg_color, 70%);
+$backdrop_headerbar_insensitive_color: mix($headerbar_fg_color, $backdrop_headerbar_bg_color, 70%);
+$backdrop_menubar_bg_color: lighten($menubar_bg_color, 5%);
+

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/org/gnome/shell/theme">
+    <file>src/gnome-shell/assets/activities.svg</file>
+    <file>src/gnome-shell/assets/calendar-arrow-left.svg</file>
+    <file>src/gnome-shell/assets/calendar-arrow-right.svg</file>
+    <file>src/gnome-shell/assets/calendar-today.svg</file>
+    <file>src/gnome-shell/assets/checkbox-focused.svg</file>
+    <file>src/gnome-shell/assets/checkbox-off-focused.svg</file>
+    <file>src/gnome-shell/assets/checkbox-off.svg</file>
+    <file>src/gnome-shell/assets/checkbox.svg</file>
+    <file>src/gnome-shell/assets/close.svg</file>
+    <file>src/gnome-shell/assets/close-window-active.svg</file>
+    <file>src/gnome-shell/assets/close-window-hover.svg</file>
+    <file>src/gnome-shell/assets/close-window.svg</file>
+    <file>src/gnome-shell/assets/corner-ripple-ltr.svg</file>
+    <file>src/gnome-shell/assets/corner-ripple-rtl.svg</file>
+    <file>src/gnome-shell/assets/dash-placeholder.svg</file>
+    <file>src/gnome-shell/assets/dots.svg</file>
+    <file>src/gnome-shell/assets/filter-selected-ltr.svg</file>
+    <file>src/gnome-shell/assets/filter-selected-rtl.svg</file>
+    <file>src/gnome-shell/gnome-shell.css</file>
+    <file>src/gnome-shell/assets/key-enter.svg</file>
+    <file>src/gnome-shell/assets/key-hide.svg</file>
+    <file>src/gnome-shell/assets/key-layout.svg</file>
+    <file>src/gnome-shell/assets/key-shift-latched-uppercase.svg</file>
+    <file>src/gnome-shell/assets/key-shift.svg</file>
+    <file>src/gnome-shell/assets/key-shift-uppercase.svg</file>
+    <file>src/gnome-shell/assets/lockscreen-gradient.svg</file>
+    <file>src/gnome-shell/assets/logged-in-indicator.svg</file>
+    <file>src/gnome-shell/assets/message-indicator-symbolic.svg</file>
+    <file>src/gnome-shell/assets/no-events.svg</file>
+    <file>src/gnome-shell/assets/no-notifications.svg</file>
+    <file>src/gnome-shell/assets/page-indicator-active.svg</file>
+    <file>src/gnome-shell/assets/page-indicator-checked.svg</file>
+    <file>src/gnome-shell/assets/page-indicator-hover.svg</file>
+    <file>src/gnome-shell/assets/page-indicator-inactive.svg</file>
+    <file>src/gnome-shell/pad-osd.css</file>
+    <file>src/gnome-shell/assets/process-working.svg</file>
+    <file>src/gnome-shell/assets/running-indicator.svg</file>
+    <file>src/gnome-shell/assets/source-button-border.svg</file>
+    <file>src/gnome-shell/assets/summary-counter.svg</file>
+    <file>src/gnome-shell/assets/toggle-off-hc.svg</file>
+    <file>src/gnome-shell/assets/toggle-off.svg</file>
+    <file>src/gnome-shell/assets/toggle-on-hc.svg</file>
+    <file>src/gnome-shell/assets/toggle-on.svg</file>
+    <file>src/gnome-shell/assets/ubuntu-appgrid-icon.svg</file>
+    <file>src/gnome-shell/assets/ubuntu-logo-icon.svg</file>
+    <file>src/gnome-shell/assets/ws-switch-arrow-down.svg</file>
+    <file>src/gnome-shell/assets/ws-switch-arrow-up.svg</file>
+  </gresource>
+</gresources>
+
+
