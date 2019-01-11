@@ -1,9 +1,4 @@
 #!/bin/bash
-
-cd upstream/yaru
-git pull
-cd ../..
-
 # GNOME SHELL
 cp -r upstream/yaru/gnome-shell/src/* src/gnome-shell
 mv src/gnome-shell/*.svg src/gnome-shell/assets

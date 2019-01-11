@@ -1,0 +1,3 @@
+[submodule "upstream/yaru"]
+	path = upstream/yaru
+	url = https://github.com/ubuntu/yaru.git
