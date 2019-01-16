@@ -1,1 +1,3 @@
-src/gnome-shell/ /usr/share/themes/Starlabs/
+src/gnome-shell/gnome-shell-theme.gresource /usr/share/themes/StarLabs/gnome-shell/
+src/gnome-shell/gnome-shell.css /usr/share/themes/StarLabs/gnome-shell/
+src/gnome-shell/assets /usr/share/themes/StarLabs/gnome-shell

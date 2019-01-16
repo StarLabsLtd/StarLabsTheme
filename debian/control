@@ -10,7 +10,6 @@ Homepage: https://starlabs.systems
 Package: starlabs-gnome-shell-theme
 Architecture: all
 Description: Gnome Shell Theme from Star Labs
-Depends: gnome-session
 
 Package: starlabs-gtk-theme
 Architecture: all

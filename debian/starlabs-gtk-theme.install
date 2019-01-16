@@ -1,5 +1,15 @@
-src/gtk-3.20/ /usr/share/themes/Starlabs/
-src/gtk-3.0/ /usr/share/themes/Starlabs/
-src/gtk-2.0/ /usr/share/themes/Starlabs/
-src/index.theme /usr/share/themes/StarLabs/
+src/gtk-3.20/gtk.css /usr/share/themes/StarLabs/gtk-3.20
+src/gtk-3.20/assets /usr/share/themes/StarLabs/gtk-3.20/assets
+src/gtk-3.0/gtk.css /usr/share/themes/StarLabs/gtk-3.0
+src/gtk-3.0/assets /usr/share/themes/StarLabs/gtk-3.0/assets
+src/gtk-2.0/*rc /usr/share/themes/StarLabs/gtk-2.0
+src/gtk-2.0/assets /usr/share/themes/StarLabs/gtk-2.0
+
+src/gtk-3.20/gtk-dark.css /usr/share/themes/StarLabs-Dark/gtk-3.20/gtk.css
+src/gtk-3.20/assets /usr/share/themes/StarLabs-Dark/gtk-3.20/assets
+src/gtk-3.0/gtk-dark.css /usr/share/themes/StarLabs-Dark/gtk-3.0/gtk.css
+src/gtk-3.0/assets /usr/share/themes/StarLabs-Dark/gtk-3.0/assets
+src/gtk-2.0/*rc /usr/share/themes/StarLabs-Dark/gtk-2.0
+src/gtk-2.0/assets /usr/share/themes/StarLabs-Dark/gtk-2.0
+
 

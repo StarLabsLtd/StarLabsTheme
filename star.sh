@@ -13,13 +13,13 @@ sed -i 's/orange/blue0/g' src/gnome-shell/gnome-shell-sass/_colors.scss src/gtk-
 sed -i 's/font-family: Ubuntu/font-family: Star Labs/g' src/gnome-shell/gnome-shell-sass/_common.scss
 sed -i 's/#2C001E/#0d1f2d/g' src/gnome-shell/gnome-shell-sass/_common.scss
 # EXPERIMENTAL
-sed -i 's/#2e3436/#0d1f3d/g' src/gnome-shell/gnome-shell-sass/_common.scss
-sed -i 's/#666666/#0d1f2d/g' src/gnome-shell/gnome-shell-sass/_common.scss
-sed -i 's/#3D3D3D/#0d1f2d/g' src/gnome-shell/gnome-shell-sass/_common.scss
-sed -i 's/#5D5D5D/#0d1f2d/g' src/gnome-shell/gnome-shell-sass/_common.scss
-sed -i 's/#252525/#0d1f2d/g' src/gnome-shell/gnome-shell-sass/_colors.scss
-sed -i 's/#2e3436/#0d1f2d/g' src/gnome-shell/gnome-shell-sass/_dock.scss
-sed -i 's/#0f2435/#0d1f2d/g' src/gnome-shell/gnome-shell-sass/_common.scss
+# sed -i 's/#2e3436/#0d1f3d/g' src/gnome-shell/gnome-shell-sass/_common.scss
+# sed -i 's/#666666/#0d1f2d/g' src/gnome-shell/gnome-shell-sass/_common.scss
+# sed -i 's/#3D3D3D/#0d1f2d/g' src/gnome-shell/gnome-shell-sass/_common.scss
+# sed -i 's/#5D5D5D/#0d1f2d/g' src/gnome-shell/gnome-shell-sass/_common.scss
+# sed -i 's/#252525/#0d1f2d/g' src/gnome-shell/gnome-shell-sass/_colors.scss
+# sed -i 's/#2e3436/#0d1f2d/g' src/gnome-shell/gnome-shell-sass/_dock.scss
+# sed -i 's/#0f2435/#0d1f2d/g' src/gnome-shell/gnome-shell-sass/_common.scss
 # Create CSS
 sassc src/gnome-shell/gnome-shell.{scss,css}
 sassc src/gtk-3.0/gtk.{scss,css}
@@ -28,5 +28,6 @@ sassc src/gtk-3.0/gtk-dark.{scss,css}
 sassc src/gtk-3.20/gtk.{scss,css}
 sassc src/gtk-3.20/gtk-dark.{scss,css}
 
-glib-compile-resources src/gnome-shell/gnome-shell-theme.gresource.xml
-
+cd src/gnome-shell
+glib-compile-resources gnome-shell-theme.gresource.xml
+cd ../..

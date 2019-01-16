@@ -2,7 +2,7 @@
 // it gets @if ed depending on $variant
 @import "starlabs-colors";
 $base_color: if($variant == 'light', #FAFAFA, $jet);
-$bg_color: if($variant == 'light', #fdfdfd, #0d1f2d);
+$bg_color: if($variant == 'light', #fdfdfd, #252525);
 $fg_color: if($variant == 'light', $slate, $porcelain);
 $subheader_fg_color: darken($fg_color, 10%);
 $caption_fg_color: darken($fg_color, 20%);
@@ -12,7 +12,7 @@ $inactive_element_color: darken($fg_color, 40%);
 $panel_bg_color: lighten($jet, 2%);
 $panel_fg_color: $porcelain;
 $dash_bg_color: $panel_bg_color;
-$menu_color: #0d1f2d;
+$menu_color: #252525;
 //
 $selected_fg_color: #ffffff;
 $selected_bg_color: $blue0;

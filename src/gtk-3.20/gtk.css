@@ -372,7 +372,7 @@ entry {
       box-shadow: none; }
     .osd spinbutton:disabled:not(.vertical), .osd
     entry:disabled {
-      color: #7c7f84;
+      color: #9d9b9d;
       border-color: #1e4868;
       background-color: rgba(35, 50, 62, 0.5);
       background-clip: padding-box;
@@ -852,18 +852,18 @@ button.osd {
   messagedialog.csd .dialog-action-area button.osd:hover,
   button.osd:hover {
     color: white;
-    border-color: #dedede;
-    background-color: white;
+    border-color: #071119;
+    background-color: #183a55;
     background-clip: padding-box;
-    box-shadow: inset 0 -1px 1px white;
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.05);
     border: none;
     box-shadow: none; }
   messagedialog.csd .dialog-action-area button.osd:active, messagedialog.csd .dialog-action-area button.osd:checked,
   button.osd:active,
   button.osd:checked {
     color: white;
-    border-color: #d9dde0;
-    background-color: #fefefe;
+    border-color: #0d1f2d;
+    background-color: #1e4868;
     background-clip: padding-box;
     box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.2);
     border: none;
@@ -871,7 +871,7 @@ button.osd {
   messagedialog.csd .dialog-action-area button.osd:disabled:backdrop, messagedialog.csd .dialog-action-area button.osd:disabled,
   button.osd:disabled:backdrop,
   button.osd:disabled {
-    color: #7c7f84;
+    color: #9d9b9d;
     background-color: rgba(35, 50, 62, 0.5);
     border-color: rgba(7, 11, 13, 0.5);
     background-clip: padding-box;
@@ -902,10 +902,10 @@ button {
   .osd
   button:hover {
     color: white;
-    border-color: #dedede;
-    background-color: white;
+    border-color: #071119;
+    background-color: #183a55;
     background-clip: padding-box;
-    box-shadow: inset 0 -1px 1px white; }
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.05); }
   popover.background.touch-selection button:active:backdrop, popover.background.magnifier button:active:backdrop, popover.background.touch-selection button:active, popover.background.magnifier button:active, popover.background.touch-selection button:checked:backdrop, popover.background.magnifier button:checked:backdrop, popover.background.touch-selection button:checked, popover.background.magnifier button:checked,
   .osd messagedialog.csd .dialog-action-area button:active:backdrop,
   messagedialog.csd .dialog-action-area .osd button:active:backdrop,
@@ -924,8 +924,8 @@ button {
   .osd
   button:checked {
     color: white;
-    border-color: #d9dde0;
-    background-color: #fefefe;
+    border-color: #0d1f2d;
+    background-color: #1e4868;
     background-clip: padding-box;
     box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.2); }
   popover.background.touch-selection button:disabled:backdrop, popover.background.magnifier button:disabled:backdrop, popover.background.touch-selection button:disabled, popover.background.magnifier button:disabled,
@@ -937,7 +937,7 @@ button {
   button:disabled:backdrop,
   .osd
   button:disabled {
-    color: #7c7f84;
+    color: #9d9b9d;
     background-color: rgba(35, 50, 62, 0.5);
     border-color: rgba(7, 11, 13, 0.5);
     background-clip: padding-box;
@@ -970,16 +970,16 @@ button {
     .osd
     button.flat:hover {
       color: white;
-      border-color: #dedede;
-      background-color: white;
+      border-color: #071119;
+      background-color: #183a55;
       background-clip: padding-box;
-      box-shadow: inset 0 -1px 1px white; }
+      box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.05); }
     popover.background.touch-selection button.flat:disabled, popover.background.magnifier button.flat:disabled,
     .osd messagedialog.csd .dialog-action-area button.flat:disabled,
     messagedialog.csd .dialog-action-area .osd button.flat:disabled,
     .osd
     button.flat:disabled {
-      color: #7c7f84;
+      color: #9d9b9d;
       background-color: rgba(35, 50, 62, 0.5);
       border-color: rgba(7, 11, 13, 0.5);
       background-clip: padding-box;
@@ -1008,8 +1008,8 @@ button {
     .osd
     button.flat:checked {
       color: white;
-      border-color: #d9dde0;
-      background-color: #fefefe;
+      border-color: #0d1f2d;
+      background-color: #1e4868;
       background-clip: padding-box;
       box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.2); }
 
@@ -1132,31 +1132,31 @@ button.suggested-action {
   .osd messagedialog.csd .dialog-action-area button.suggested-action, messagedialog.csd .dialog-action-area .osd button.suggested-action, .osd
   button.suggested-action {
     color: #eadeda;
-    border-color: rgba(45, 130, 57, 0.5);
-    background-color: rgba(62, 179, 79, 0.5);
+    border-color: black;
+    background-color: #0d1f2d;
     background-clip: padding-box;
-    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.2); }
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.05); }
     .osd messagedialog.csd .dialog-action-area button.suggested-action:hover, messagedialog.csd .dialog-action-area .osd button.suggested-action:hover, .osd
     button.suggested-action:hover {
       color: white;
-      border-color: rgba(45, 130, 57, 0.7);
-      background-color: rgba(62, 179, 79, 0.7);
+      border-color: #071119;
+      background-color: #183a55;
       background-clip: padding-box;
-      box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.2); }
+      box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.05); }
     .osd messagedialog.csd .dialog-action-area button.suggested-action:active:backdrop, messagedialog.csd .dialog-action-area .osd button.suggested-action:active:backdrop, .osd messagedialog.csd .dialog-action-area button.suggested-action:active, messagedialog.csd .dialog-action-area .osd button.suggested-action:active, .osd messagedialog.csd .dialog-action-area button.suggested-action:checked:backdrop, messagedialog.csd .dialog-action-area .osd button.suggested-action:checked:backdrop, .osd messagedialog.csd .dialog-action-area button.suggested-action:checked, messagedialog.csd .dialog-action-area .osd button.suggested-action:checked, .osd
     button.suggested-action:active:backdrop, .osd
     button.suggested-action:active, .osd
     button.suggested-action:checked:backdrop, .osd
     button.suggested-action:checked {
       color: white;
-      border-color: #2d8239;
-      background-color: #3EB34F;
+      border-color: #0d1f2d;
+      background-color: #1e4868;
       background-clip: padding-box;
       box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.2); }
     .osd messagedialog.csd .dialog-action-area button.suggested-action:disabled:backdrop, messagedialog.csd .dialog-action-area .osd button.suggested-action:disabled:backdrop, .osd messagedialog.csd .dialog-action-area button.suggested-action:disabled, messagedialog.csd .dialog-action-area .osd button.suggested-action:disabled, .osd
     button.suggested-action:disabled:backdrop, .osd
     button.suggested-action:disabled {
-      color: #7c7f84;
+      color: #9d9b9d;
       background-color: rgba(35, 50, 62, 0.5);
       border-color: rgba(7, 11, 13, 0.5);
       background-clip: padding-box;
@@ -1291,31 +1291,31 @@ button.destructive-action {
   .osd messagedialog.csd .dialog-action-area button.destructive-action, messagedialog.csd .dialog-action-area .osd button.destructive-action, .osd
   button.destructive-action {
     color: #eadeda;
-    border-color: rgba(155, 14, 29, 0.5);
-    background-color: rgba(216, 19, 41, 0.5);
+    border-color: black;
+    background-color: #0d1f2d;
     background-clip: padding-box;
-    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.2); }
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.05); }
     .osd messagedialog.csd .dialog-action-area button.destructive-action:hover, messagedialog.csd .dialog-action-area .osd button.destructive-action:hover, .osd
     button.destructive-action:hover {
       color: white;
-      border-color: rgba(155, 14, 29, 0.7);
-      background-color: rgba(216, 19, 41, 0.7);
+      border-color: #071119;
+      background-color: #183a55;
       background-clip: padding-box;
-      box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.2); }
+      box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.05); }
     .osd messagedialog.csd .dialog-action-area button.destructive-action:active:backdrop, messagedialog.csd .dialog-action-area .osd button.destructive-action:active:backdrop, .osd messagedialog.csd .dialog-action-area button.destructive-action:active, messagedialog.csd .dialog-action-area .osd button.destructive-action:active, .osd messagedialog.csd .dialog-action-area button.destructive-action:checked:backdrop, messagedialog.csd .dialog-action-area .osd button.destructive-action:checked:backdrop, .osd messagedialog.csd .dialog-action-area button.destructive-action:checked, messagedialog.csd .dialog-action-area .osd button.destructive-action:checked, .osd
     button.destructive-action:active:backdrop, .osd
     button.destructive-action:active, .osd
     button.destructive-action:checked:backdrop, .osd
     button.destructive-action:checked {
       color: white;
-      border-color: #9b0e1d;
-      background-color: #d81329;
+      border-color: #0d1f2d;
+      background-color: #1e4868;
       background-clip: padding-box;
       box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.2); }
     .osd messagedialog.csd .dialog-action-area button.destructive-action:disabled:backdrop, messagedialog.csd .dialog-action-area .osd button.destructive-action:disabled:backdrop, .osd messagedialog.csd .dialog-action-area button.destructive-action:disabled, messagedialog.csd .dialog-action-area .osd button.destructive-action:disabled, .osd
     button.destructive-action:disabled:backdrop, .osd
     button.destructive-action:disabled {
-      color: #7c7f84;
+      color: #9d9b9d;
       background-color: rgba(35, 50, 62, 0.5);
       border-color: rgba(7, 11, 13, 0.5);
       background-clip: padding-box;
@@ -1795,7 +1795,7 @@ spinbutton:not(.vertical) {
     box-shadow: none;
     text-shadow: none;
     -gtk-icon-shadow: none;
-    color: #7c7f84;
+    color: #9d9b9d;
     border-color: rgba(30, 72, 104, 0.5);
     box-shadow: none; }
   .osd spinbutton:not(.vertical) button:dir(ltr):last-child {
@@ -1846,18 +1846,18 @@ spinbutton.vertical button.down {
   box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.05); }
   .osd spinbutton.vertical button:first-child:hover {
     color: white;
-    border-color: #dedede;
-    background-color: white;
+    border-color: #071119;
+    background-color: #183a55;
     background-clip: padding-box;
-    box-shadow: inset 0 -1px 1px white; }
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.05); }
   .osd spinbutton.vertical button:first-child:active {
     color: white;
-    border-color: #d9dde0;
-    background-color: #fefefe;
+    border-color: #0d1f2d;
+    background-color: #1e4868;
     background-clip: padding-box;
     box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.2); }
   .osd spinbutton.vertical button:first-child:disabled {
-    color: #7c7f84;
+    color: #9d9b9d;
     background-color: rgba(35, 50, 62, 0.5);
     border-color: rgba(7, 11, 13, 0.5);
     background-clip: padding-box;
@@ -5432,44 +5432,28 @@ paned.vertical > separator {
  **************/
 infobar {
   background-color: #F5F6F7;
-  color: white;
+  color: #2D2D2D;
   border-bottom: 1px solid #c2c8ce; }
 
 infobar.info {
   background-color: #F5F6F7;
-  color: white;
+  color: #2D2D2D;
   border-bottom: 1px solid #c2c8ce; }
 
 infobar.question {
   background-color: #F5F6F7;
-  color: white;
+  color: #2D2D2D;
   border-bottom: 1px solid #c2c8ce; }
 
 infobar.warning {
   background-color: #F89B0F;
-  color: white;
+  color: #2D2D2D;
   border-bottom: 1px solid #c2c8ce; }
 
 infobar.error {
   background-color: #ED3146;
-  color: white;
+  color: #2D2D2D;
   border-bottom: 1px solid #c2c8ce; }
-
-infobar button.close {
-  color: white; }
-  infobar button.close:backdrop {
-    color: rgba(255, 255, 255, 0.7); }
-
-infobar > revealer > box > box label:backdrop {
-  color: rgba(255, 255, 255, 0.7); }
-
-infobar:not(.warning):not(.error) > revealer > box > box label {
-  color: #2D2D2D; }
-  infobar:not(.warning):not(.error) > revealer > box > box label:backdrop {
-    color: rgba(45, 45, 45, 0.8); }
-
-infobar:not(.warning):not(.error):backdrop {
-  background-color: #edeef0; }
 
 /************
  * Tooltips *
@@ -6300,6 +6284,18 @@ headerbar button image ~ window decoration ~ menu separator {
 #MozillaGtkWidget.background scrollbar {
   background-color: transparent;
   border-color: transparent; }
+  #MozillaGtkWidget.background scrollbar slider {
+    background-color: rgba(36, 36, 36, 0.6); }
+    #MozillaGtkWidget.background scrollbar slider:hover {
+      background-color: #242424; }
+    #MozillaGtkWidget.background scrollbar slider:hover:active {
+      background-color: #005496; }
+    #MozillaGtkWidget.background scrollbar slider:backdrop {
+      background-color: rgba(149, 150, 151, 0.6); }
+    #MozillaGtkWidget.background scrollbar slider:disabled {
+      background-color: transparent; }
+  #MozillaGtkWidget.background scrollbar trough {
+    background-color: rgba(245, 246, 247, 0.2); }
 
 /*********************	
  * Chrome / Chromium *	

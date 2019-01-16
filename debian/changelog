@@ -1,8 +1,44 @@
+starlabs-theme (18.04.1) bionic; urgency=medium
+
+  * Changed version number
+
+ -- Sean Rhodes <sean@starlabs.systems>  Fri, 11 Jan 2019 16:46:50 +0000
+
+starlabs-theme (0.0.5) bionic; urgency=medium
+
+  * Removed index.theme
+
+ -- Sean Rhodes <sean@starlabs.systems>  Fri, 11 Jan 2019 12:45:55 +0000
+
+starlabs-theme (0.0.4) bionic; urgency=medium
+
+  * Remove gnome-session dependancy
+
+ -- Sean Rhodes <sean@starlabs.systems>  Fri, 11 Jan 2019 12:05:22 +0000
+
+starlabs-theme (0.0.3) bionic; urgency=medium
+
+  * Updated
+
+ -- Sean Rhodes <sean@starlabs.systems>  Fri, 11 Jan 2019 11:46:27 +0000
+
+starlabs-theme (0.0.2) bionic; urgency=medium
+
+  * Pointless
+
+ -- Sean Rhodes <sean@starlabs.systems>  Fri, 11 Jan 2019 11:40:38 +0000
+
 starlabs-theme (0.0.1) bionic; urgency=medium
 
   * Updated entire theme
 
  -- Sean Rhodes <sean@starlabs.systems>  Fri, 11 Jan 2019 10:17:17 +0000
+
+starlabs-gnome-shell-theme (1.1.4) bionic; urgency=medium
+
+  * Updated
+
+ -- Sean Rhodes <sean@starlabs.systems>  Fri, 11 Jan 2019 11:46:27 +0000
 
 starlabs-gnome-shell-theme (1.1.3) bionic; urgency=medium
 
@@ -94,6 +130,11 @@ starlabs-gnome-shell-theme (0.0.1) bionic; urgency=medium
 
  -- Sean Rhodes <sean@starlabs.systems>  Fri, 05 Oct 2018 11:35:46 +0100
 
+starlabs-gtk-theme (1.0.2) bionic; urgency=medium
+
+  * Removed index.theme
+
+ -- Sean Rhodes <sean@starlabs.systems>  Fri, 11 Jan 2019 12:45:55 +0000
 
 starlabs-gtk-theme (1.0.1) bionic; urgency=medium
 
