@@ -15,7 +15,7 @@ $dash_bg_color: $panel_bg_color;
 $menu_color: #252525;
 //
 $selected_fg_color: #ffffff;
-$selected_bg_color: $blue0;
+$selected_bg_color: $orange;
 $selected_borders_color: if($variant=='light', darken($selected_bg_color, 5%),
                                                darken($selected_bg_color, 15%));
 
