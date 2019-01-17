@@ -87,40 +87,40 @@
   }
 
   &.running-dots .app-well-app.focused .overview-icon {
-    background-color: rgba(238, 238, 236, 0.2);
+    background-color: $accent;
   }
 
   &.dashtodock {
     .app-well-app.focused .overview-icon {
-      background-color: rgba(238, 238, 236, 0.1);
+      background-color: $accent;
     }
 
     #dash {
-      background: #2e3436;
+      background: $head-norm-bg;
     }
   }
 
   &.opaque {
-    background-color: transparentize($dash_bg_color, $dash-opaque-alpha-value);
-    border-color: rgba(0, 0, 0, 0.4);
+    background-color: transparentize($head-norm-bg, $alpha2);
+    border-color: $border;
     transition-duration: 500ms;
   }
 
   &.transparent {
-    background-color: transparentize($dash_bg_color, $dash-alpha-value);
-    border-color: rgba(0, 0, 0, 0.1);
+    background-color: transparentize($head-norm-bg, $alpha2);
+    border-color: $border;
     transition-duration: 500ms;
   }
 
   .number-overlay {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(0, 0, 0, 0.8);
+    color: $head-norm-fg;
+    background-color: $accent;
     text-align: center;
   }
 
   .notification-badge {
-    color: rgba(255, 255, 255, 1);
-    background-color: $green;
+    color: $head-norm-fg;
+    background-color: $accent;
     padding: 0.2em 0.5em;
     border-radius: 1em;
     border: 1px solid darken($green,10%);

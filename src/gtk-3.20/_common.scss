@@ -1589,13 +1589,13 @@ searchbar,
 headerbar {
   padding: 0 6px;
   min-height: 40px;
-  border-color: transparentize(_border_color($headerbar_bg_color), 0.7);
-  border-top-color: $inkstone;
-  border-style: solid;
-  border-width: 0;
-  border-top-width: 1px;
-  border-radius: 0;
-  background-color: $headerbar_bg_color;
+  //border-color: transparentize(_border_color($headerbar_bg_color), 0.7);
+  //border-top-color: $inkstone;
+  //border-style: solid;
+  //border-width: 0;
+  //border-top-width: 1px;
+  //border-radius: 50px;
+  background-color: black;
   color: $headerbar_fg_color;
   @if $variant=='dark' {
     &:backdrop {
@@ -4449,45 +4449,7 @@ decoration {
   }
 }
 
-// Window Close button
-button.titlebutton {
-  $c: $headerbar_bg_color;
-  $tc: $headerbar_fg_color;
-
-  &, &:hover, &:active {
-    headerbar &, .titlebar &, & {
-      // spec bump otherwise :backdrop  will still have a bg
-      &, &:backdrop {
-        @extend %undecorated_button;
-      }
-    }
-  }
-
-  border-radius: $small_radius;
-  min-height: 24px;
-  min-width: 24px;
-  padding: 2px;
-
-  &:not(.close):not(.appmenu){
-    &:hover {
-      @include draw_circle($c);
-    }
-    &:active {
-      @include draw_circle($c);
-    }
-  }
-
-  &.close {
-    @include draw_circle($selected_bg_color, $close:true);
-    &:hover {
-      @include draw_circle($selected_bg_color, $close:true);
-    }
-    &:active {
-      @include draw_circle($selected_bg_color, $close:true);
-    }
-  }
-}
-
+@import 'sections/buttons';
 // catch all extend :)
 
 %selected_items {

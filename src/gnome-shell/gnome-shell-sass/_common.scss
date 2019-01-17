@@ -822,19 +822,17 @@ StScrollBar {
 /* TOP BAR */
 
 #panel {
-  $_fg: darken($panel_fg_color, 5%);
-  background-color: transparentize($panel_bg_color, $panel-alpha-value);
-
+  // background-color: transparentize($head-norm-bg, $alpha2);
   /* transition from solid to transparent */
-  transition-duration: 500ms;
+  // transition-duration: 500ms;
   font-weight: 450;
   height: 1.86em;
-  font-feature-settings: "tnum";
+  // font-feature-settings: "tnum";
 
   &.unlock-screen,
   &.login-screen,
   &.lock-screen {
-    background-color: transparent;
+    // background-color: transparent;
   }
 
   #panelLeft, #panelCenter { // spacing between activities<>app menu and such
@@ -843,12 +841,12 @@ StScrollBar {
 
   .panel-corner {
     -panel-corner-radius: $panel-corner-radius;
-    -panel-corner-background-color: rgba(0, 0, 0, 0.35);
+    // -panel-corner-background-color: rgba(0, 0, 0, 0.35);
     -panel-corner-border-width: 2px;
     -panel-corner-border-color: transparent;
 
     &:active, &:overview, &:focus {
-      -panel-corner-border-color: lighten($selected_bg_color,5%);
+      -panel-corner-border-color: $border;
     }
 
     &.lock-screen, &.login-screen, &.unlock-screen {
@@ -862,40 +860,40 @@ StScrollBar {
     -natural-hpadding: 12px;
     -minimum-hpadding: 6px;
     font-weight: 450;
-    color: $_fg;
-    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.6);
+    color: $head-norm-fg;
+    // text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.6);
     transition-duration: 100ms;
 
     .app-menu-icon {
       -st-icon-style: symbolic;
       margin-left: 4px;
       margin-right: 4px;
-      //dimensions of the icon are hardcoded
+      // dimensions of the icon are hardcoded
     }
 
     .system-status-icon,
     .app-menu-icon > StIcon,
     .popup-menu-arrow {
-      icon-shadow: 0px 1px 4px rgba(0, 0, 0, 0.6);
+      // icon-shadow: 0px 1px 4px rgba(0, 0, 0, 0.6);
     }
 
     &:hover {
-      color: $hover_fg_color;
-      text-shadow: 0px 1px 4px rgba(0, 0, 0, 1);
+      color: $accent;
+      // text-shadow: 0px 1px 4px rgba(0, 0, 0, 1);
 
       .system-status-icon,
       .app-menu-icon > StIcon,
       .popup-menu-arrow {
-        icon-shadow: 0px 1px 4px rgba(0, 0, 0, 1);
+        // icon-shadow: 0px 1px 4px rgba(0, 0, 0, 1);
       }
     }
 
     &:active, &:overview, &:focus, &:checked {
       // Trick due to St limitations. It needs a background to draw
       // a box-shadow
-      background-color: rgba(0, 0, 0, 0.01);
-      box-shadow: inset 0px -2px $selected_bg_color;
-      color: lighten($_fg,10%);
+      // background-color: rgba(0, 0, 0, 0.01);
+      // box-shadow: inset 0px -2px $selected_bg_color;
+      color: $head-norm-fg;
 
       & > .system-status-icon {
         icon-shadow: 0px 1px 4px rgba(0, 0, 0, 1);
@@ -906,8 +904,8 @@ StScrollBar {
     .unlock-screen &,
     .login-screen &,
     .lock-screen & {
-      color: lighten($_fg, 10%);
-      &:focus, &:hover, &:active { color: lighten($_fg, 10%); }
+      color: lighten($head-norm-fg, 10%);
+      &:focus, &:hover, &:active { color: $accent; }
     }
   }
 
@@ -918,29 +916,29 @@ StScrollBar {
 
   // spacing between power icon and (optional) percentage label
   .power-status.panel-status-indicators-box {
-    spacing: 0;
+    spacing: 2px;
   }
 
-  .screencast-indicator { color: $warning_color; }
+  .screencast-indicator { color: $warning; }
 
-  .remote-access-indicator { color: $warning_color; }
+  .remote-access-indicator { color: $warning; }
 
   &.solid {
-    background-color: transparentize($panel_bg_color, $panel_opaque_value);
+    // background-color: transparentize($head-norm-bg, $alpha3);
     /* transition from transparent to solid */
     box-shadow: none;
-    transition-duration: 500ms;
+    // transition-duration: 500ms;
 
     .panel-corner {
-      -panel-corner-background-color: black;
+      // -panel-corner-background-color: black;
     }
 
     .panel-button {
-      color: $_fg;
+      color: $head-norm-fg;
       text-shadow: none;
 
       &:hover, &:active, &:overview, &:focus, &:checked {
-        color: $hover_fg_color;
+        color: $accent;
       }
     }
 
@@ -1010,7 +1008,7 @@ StScrollBar {
     }
 
     .weather-button {
-      color: $caption_fg_color;
+      color: $accent;
     }
 
     .datemenu-today-button .date-label {
@@ -1021,7 +1019,7 @@ StScrollBar {
     .world-clocks-header,
     .weather-header,
     .events-section-title {
-      color: $fg_color;
+      color: $accent;
       font-weight: 450;
       font-size: 110%;
     }
@@ -1074,8 +1072,8 @@ StScrollBar {
       &:selected {
         color: white;
         background-color: transparent;
-        border-radius: $small_radius;
-        border: 2px solid $selected_bg_color;
+        border-radius: $large_radius;
+        border: 2px solid $accent;
         margin: 0;
         &:hover {background-color: $base_hover_color;}
       }
@@ -1250,7 +1248,7 @@ StScrollBar {
 
     &:hover, &:focus {
       background-color: $base_hover_color;
-      color: $fg_color;
+      color: $accent;
       border: none;
       padding: 13px;
     }
@@ -1375,19 +1373,19 @@ StScrollBar {
     border-radius: $small_radius;
     border-color: $osd_borders_color;
     color: $osd_fg_color;
-    background-color: transparentize($panel_bg_color, $panel-alpha-value);
+    background-color: transparentize($head-norm-bg, $alpha2);
 
     &, &:focus { padding: 7px 9px; }
 
     &:focus {
       border-width: 1px;
-      border-color: $selected_bg_color;
+      border-color: $accent;
     }
 
     .search-entry-icon { icon-size: 1em; padding: 0 4px; color: transparentize($fg_color,.3); }
 
     &:hover, &:focus {
-      .search-entry-icon { color: $fg_color; }
+      .search-entry-icon { color: $accent; }
     }
   }
 
@@ -1425,15 +1423,15 @@ StScrollBar {
   #dash {
     // TODO: style the ubuntu dock, not this
     font-size: 9pt;
-    color: $osd_fg_color;
-    background-color: $dash_bg_color;
+    color: $head-norm-fg;
+    background-color: $head-dark-bg;
     padding: 4px 0;
-    border: 1px solid _border_color($dash_bg_color);
-    border-left: 0px;
-    border-radius: 0px 9px 9px 0px;
+    // border: 1px solid _border_color($head-norm-bg);
+    // border-left: 0px;
+    // border-radius: 0px 9px 9px 0px;
 
     &:rtl {
-      border-radius: 9px 0 0 9px;
+      // border-radius: 9px 0 0 9px;
     }
 
     .placeholder {
@@ -1648,8 +1646,9 @@ StScrollBar {
   }
 
 %overview-panel {
-  color: $osd_fg_color;
-  background-color: transparentize($panel_bg_color, $panel-alpha-value);
+  color: $head-norm-fg;
+  // background-color: transparentize($panel_bg_color, $panel-alpha-value);
+  background-color: $head-lite-bg;
   border: none;
 }
 
@@ -1672,7 +1671,7 @@ StScrollBar {
 
 /* NOTIFICATIONS & MESSAGE TRAY */
 
-  .url-highlighter { link-color: $link_color; }
+  .url-highlighter { link-color: $accent; }
 
   // Banners
   .notification-banner {
@@ -1937,7 +1936,7 @@ StScrollBar {
 .login-dialog {
   //reset
   border: none;
-  background-color: transparent;
+  background-color: $head-norm-bg;
 
   StEntry {
     @extend %light_entry;

@@ -1,33 +1,41 @@
-
+// Star Labs Palette
 // Headers
-$header-dark: #1976D2;
-$header-default: #2196F3;
-$header-light: #BBDEFB;
-$header-text: #FFFFFF;
+$accent1: #6ec5ff;
+$accent2: #2195f2;
+$accent3: #0068bf;
+
+
+$head-dark-bg: #455a64;
+$head-norm-bg: #607d8b;
+$head-lite-bg: #cfd8dc;
+$head-norm-fg: #ffffff;
+
+$white: #ffffff;
 
 // Windows
-$accent: #607D8B;
-$window-default: #ffffff;
-$window-text-primary: #212121;
-$window-text-secondary: #757575;
-$divider: #BDBDBD;
+$wind-norm-bg: if($variant == 'light', #ffffff, #212121);
+$wind-prim-fg: if($variant == 'light', #212121, #ffffff);
+$wind-seco-fg: #757575; 
 
-// Blacks
-$jet: $header-dark;
-$inkstone: $header-default;
-$slate: $header-light;
-$graphite: $header-light;
+// Accent
+$accent: #448aff;
 
-// Whites
-$white: $window-text-primary;
-$porcelain: $window-text-primary;
-$silk: $window-text-secondary;
-$ash: $window-text-secondary;
+// Border
+$border: #bdbdbd;
 
-// Utility
-$red: $accent;
-$orange: $accent;
-$yellow: $accent;
-$green: $accent;
-$blue: $accent;
-$purple: $accent;
+// Text
+$text1: #212121;
+$text2: #757575;
+
+// Context Colors
+$success: #a5d6a7;
+$warning: #ffb74d;
+$failure: #d50000;
+
+// Alpha & Omega
+$alpha1: 1; //0.3;
+$alpha2: 1; //0.6;
+$alpha3: 1; //0.9;
+$omega1: 3px;
+$omega2: 6px;
+$omega3: 9px;

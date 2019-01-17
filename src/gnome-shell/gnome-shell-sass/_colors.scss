@@ -1,5 +1,6 @@
 // When color definition differs for dark and light variant,
 // it gets @if ed depending on $variant
+@import "ubuntu-colors";
 @import "starlabs-colors";
 $base_color: if($variant == 'light', #FAFAFA, $jet);
 $bg_color: if($variant == 'light', #fdfdfd, #252525);

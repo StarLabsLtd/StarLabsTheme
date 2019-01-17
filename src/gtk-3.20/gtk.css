@@ -1567,15 +1567,15 @@ modelbutton.flat,
 button:visited, button:link:hover, button:link:active, button:link:checked,
 button:visited:hover,
 button:visited:active,
-button:visited:checked, calendar.button, .scale-popup button:hover, .scale-popup button:backdrop:hover, .scale-popup button:backdrop:disabled, .scale-popup button:backdrop, headerbar button.titlebutton, headerbar button.titlebutton:backdrop, .titlebar button.titlebutton, .titlebar button.titlebutton:backdrop, button.titlebutton, button.titlebutton:backdrop, headerbar button.titlebutton:hover, headerbar button.titlebutton:hover:backdrop, .titlebar button.titlebutton:hover, .titlebar button.titlebutton:hover:backdrop, button.titlebutton:hover, button.titlebutton:hover:backdrop, headerbar button.titlebutton:active, headerbar button.titlebutton:active:backdrop, .titlebar button.titlebutton:active, .titlebar button.titlebutton:active:backdrop, button.titlebutton:active, button.titlebutton:active:backdrop, modelbutton.flat:disabled,
+button:visited:checked, calendar.button, .scale-popup button:hover, .scale-popup button:backdrop:hover, .scale-popup button:backdrop:disabled, .scale-popup button:backdrop, modelbutton.flat:disabled,
 .menuitem.button.flat:disabled, modelbutton.flat:disabled:backdrop:hover,
 .menuitem.button.flat:disabled:backdrop:hover, button:disabled:link,
-button:disabled:visited, calendar.button:disabled, .scale-popup button:disabled:hover, .scale-popup button:disabled:backdrop, button.titlebutton:disabled, button.titlebutton:disabled:hover:backdrop, button.titlebutton:disabled:active:backdrop, modelbutton.flat:backdrop,
+button:disabled:visited, calendar.button:disabled, .scale-popup button:disabled:hover, .scale-popup button:disabled:backdrop, modelbutton.flat:backdrop,
 .menuitem.button.flat:backdrop, modelbutton.flat:backdrop:hover,
 .menuitem.button.flat:backdrop:hover, button:backdrop:link,
-button:backdrop:visited, calendar.button:backdrop, .scale-popup button:backdrop:hover, .scale-popup button:backdrop:disabled, .scale-popup button:backdrop, headerbar button.titlebutton:backdrop, .titlebar button.titlebutton:backdrop, button.titlebutton:backdrop, modelbutton.flat:backdrop:disabled,
+button:backdrop:visited, calendar.button:backdrop, .scale-popup button:backdrop:hover, .scale-popup button:backdrop:disabled, .scale-popup button:backdrop, modelbutton.flat:backdrop:disabled,
 .menuitem.button.flat:backdrop:disabled, button:backdrop:disabled:link,
-button:backdrop:disabled:visited, calendar.button:backdrop:disabled, .scale-popup button:backdrop:disabled, button.titlebutton:backdrop:disabled {
+button:backdrop:disabled:visited, calendar.button:backdrop:disabled, .scale-popup button:backdrop:disabled {
   background-color: transparent;
   background-image: none;
   border-color: transparent;
@@ -2033,13 +2033,7 @@ searchbar,
 headerbar {
   padding: 0 6px;
   min-height: 40px;
-  border-color: rgba(4, 4, 4, 0.3);
-  border-top-color: #3D3D3D;
-  border-style: solid;
-  border-width: 0;
-  border-top-width: 1px;
-  border-radius: 0;
-  background-color: #2B2929;
+  background-color: black;
   color: #F7F7F7; }
   .titlebar:backdrop:not(headerbar),
   headerbar:backdrop {
@@ -5610,56 +5604,46 @@ decoration {
       box-shadow: inset 0 0 0 3px #3d3a3a; }
 
 button.titlebutton {
-  border-radius: 4px;
   min-height: 24px;
   min-width: 24px;
   padding: 2px; }
-  button.titlebutton:not(.close):not(.appmenu):hover {
-    background-image: -gtk-gradient(radial, center center, 0, center center, 0.35714, to(#2B2929), to(transparent)); }
-    button.titlebutton:not(.close):not(.appmenu):hover:hover {
-      background-image: -gtk-gradient(radial, center center, 0, center center, 0.35714, to(#6c6767), to(transparent)); }
-      button.titlebutton:not(.close):not(.appmenu):hover:hover:backdrop {
+  headerbar button.titlebutton, headerbar button.titlebutton:backdrop, .titlebar button.titlebutton, .titlebar button.titlebutton:backdrop, button.titlebutton, button.titlebutton:backdrop, headerbar button.titlebutton:hover, headerbar button.titlebutton:hover:backdrop, .titlebar button.titlebutton:hover, .titlebar button.titlebutton:hover:backdrop, button.titlebutton:hover, button.titlebutton:hover:backdrop, headerbar button.titlebutton:active, headerbar button.titlebutton:active:backdrop, .titlebar button.titlebutton:active, .titlebar button.titlebutton:active:backdrop, button.titlebutton:active, button.titlebutton:active:backdrop, headerbar button.titlebutton:backdrop, headerbar button.titlebutton:backdrop:backdrop, .titlebar button.titlebutton:backdrop, .titlebar button.titlebutton:backdrop:backdrop, button.titlebutton:backdrop, button.titlebutton:backdrop:backdrop {
+    background-color: transparent;
+    border-color: transparent;
+    color: transparent; }
+  button.titlebutton.minimize {
+    background-image: -gtk-gradient(radial, center center, 0, center center, 0.35714, to(#6ec5ff), to(transparent)); }
+    button.titlebutton.minimize:hover {
+      background-image: -gtk-gradient(radial, center center, 0, center center, 0.35714, to(#88cfff), to(transparent));
+      color: #ffffff; }
+      button.titlebutton.minimize:hover:backdrop {
         background-image: -gtk-gradient(radial, center center, 0, center center, 0.35714, to(#524e4e), to(transparent)); }
-    button.titlebutton:not(.close):not(.appmenu):hover:active {
-      background-image: -gtk-gradient(radial, center center, 0, center center, 0.35714, to(#5a5656), to(transparent)); }
-  button.titlebutton:not(.close):not(.appmenu):active {
-    background-image: -gtk-gradient(radial, center center, 0, center center, 0.35714, to(#2B2929), to(transparent)); }
-    button.titlebutton:not(.close):not(.appmenu):active:hover {
-      background-image: -gtk-gradient(radial, center center, 0, center center, 0.35714, to(#6c6767), to(transparent)); }
-      button.titlebutton:not(.close):not(.appmenu):active:hover:backdrop {
+    button.titlebutton.minimize:active {
+      background-image: -gtk-gradient(radial, center center, 0, center center, 0.35714, to(#4ab7ff), to(transparent)); }
+    button.titlebutton.minimize:backdrop {
+      color: #bab9b9; }
+  button.titlebutton.maximize {
+    background-image: -gtk-gradient(radial, center center, 0, center center, 0.35714, to(#2195f2), to(transparent)); }
+    button.titlebutton.maximize:hover {
+      background-image: -gtk-gradient(radial, center center, 0, center center, 0.35714, to(#39a1f3), to(transparent));
+      color: #ffffff; }
+      button.titlebutton.maximize:hover:backdrop {
         background-image: -gtk-gradient(radial, center center, 0, center center, 0.35714, to(#524e4e), to(transparent)); }
-    button.titlebutton:not(.close):not(.appmenu):active:active {
-      background-image: -gtk-gradient(radial, center center, 0, center center, 0.35714, to(#5a5656), to(transparent)); }
+    button.titlebutton.maximize:active {
+      background-image: -gtk-gradient(radial, center center, 0, center center, 0.35714, to(#0d83e2), to(transparent)); }
+    button.titlebutton.maximize:backdrop {
+      color: #bab9b9; }
   button.titlebutton.close {
-    background-image: -gtk-gradient(radial, center center, 0, center center, 0.35714, to(#E95420), to(transparent)); }
+    background-image: -gtk-gradient(radial, center center, 0, center center, 0.35714, to(#0068bf), to(transparent)); }
     button.titlebutton.close:hover {
-      background-image: -gtk-gradient(radial, center center, 0, center center, 0.35714, to(#eb6637), to(transparent)); }
+      background-image: -gtk-gradient(radial, center center, 0, center center, 0.35714, to(#0076d9), to(transparent));
+      color: #ffffff; }
       button.titlebutton.close:hover:backdrop {
         background-image: -gtk-gradient(radial, center center, 0, center center, 0.35714, to(#524e4e), to(transparent)); }
     button.titlebutton.close:active {
-      background-image: -gtk-gradient(radial, center center, 0, center center, 0.35714, to(#d14515), to(transparent)); }
+      background-image: -gtk-gradient(radial, center center, 0, center center, 0.35714, to(#00559b), to(transparent)); }
     button.titlebutton.close:backdrop {
       color: #bab9b9; }
-    button.titlebutton.close:hover {
-      background-image: -gtk-gradient(radial, center center, 0, center center, 0.35714, to(#E95420), to(transparent)); }
-      button.titlebutton.close:hover:hover {
-        background-image: -gtk-gradient(radial, center center, 0, center center, 0.35714, to(#eb6637), to(transparent)); }
-        button.titlebutton.close:hover:hover:backdrop {
-          background-image: -gtk-gradient(radial, center center, 0, center center, 0.35714, to(#524e4e), to(transparent)); }
-      button.titlebutton.close:hover:active {
-        background-image: -gtk-gradient(radial, center center, 0, center center, 0.35714, to(#d14515), to(transparent)); }
-      button.titlebutton.close:hover:backdrop {
-        color: #bab9b9; }
-    button.titlebutton.close:active {
-      background-image: -gtk-gradient(radial, center center, 0, center center, 0.35714, to(#E95420), to(transparent)); }
-      button.titlebutton.close:active:hover {
-        background-image: -gtk-gradient(radial, center center, 0, center center, 0.35714, to(#eb6637), to(transparent)); }
-        button.titlebutton.close:active:hover:backdrop {
-          background-image: -gtk-gradient(radial, center center, 0, center center, 0.35714, to(#524e4e), to(transparent)); }
-      button.titlebutton.close:active:active {
-        background-image: -gtk-gradient(radial, center center, 0, center center, 0.35714, to(#d14515), to(transparent)); }
-      button.titlebutton.close:active:backdrop {
-        color: #bab9b9; }
 
 .view:selected:focus, .view:selected, iconview:selected, .view text:selected, iconview text:selected,
 textview text:selected, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection,

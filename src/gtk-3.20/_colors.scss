@@ -2,7 +2,7 @@
 // it gets @if ed depending on $variant
 
 @import 'ubuntu-colors';
-
+@import 'starlabs-colors';
 $light: if($variant=='light', true, false);
 $base_color: if($variant == 'light', #FFFFFF, $inkstone);
 $bg_color: if($variant == 'light', #F5F6F7, darken($inkstone, 3%));
