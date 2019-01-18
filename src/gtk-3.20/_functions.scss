@@ -1,37 +1,23 @@
-@mixin draw_circle($fill, $filllose:false, $size:24px) {
+@mixin draw_circle($fill, $size:24px) {
 	$button_size: $size + 2px * 2;
-	$fillircle_size: 20px / $button_size / 2;
+	$circle_size: 20px / $button_size / 2;
 	background-image: -gtk-gradient(radial,
 					center center, 0,
-					center center, $fillircle_size,
+					center center, $circle_size,
 					to($fill),
 					to(transparent));
 	&:hover {
-		$_bg: if(lightness($fill)<35%, lighten($fill, 25%), lighten($fill, 5%));
-			background-image: -gtk-gradient(radial,
-							center center, 0,
-							center center, $fillircle_size,
-							to($_bg),
-							to(transparent));
+		color: $white;
+		&:backdrop {
 			color: $white;
-			&:backdrop {
-				$_bg: lighten($backdrop_headerbar_bg_color, 8%);
-				background-image: -gtk-gradient(radial,
-								center center, 0,
-								center center, $fillircle_size,
-								to($_bg),
-								to(transparent));
-			}
-	}
-	&:active {
-		$_bg: if(lightness($fill)<35%, lighten($fill, 18%), darken($fill, 7%));
-		background-image: -gtk-gradient(radial,
-						center center, 0,
-						center center, $fillircle_size,
-						to($_bg),
-						to(transparent));
+		}
 	}
 	&:backdrop {
-		color: $backdrop_headerbar_fg_color;
+	        background-image: -gtk-gradient(radial,
+						center center, 0,
+						center center, $circle_size,
+						to(lighten($fill, $beta1)),
+						to(transparent));
+	
 	}
 }
