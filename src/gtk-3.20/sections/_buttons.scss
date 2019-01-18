@@ -1,7 +1,6 @@
-// Window Close button
 button.titlebutton {
-	min-height: 24px;
-        min-width: 24px;
+	min-height: 22px;
+        min-width: 22px;
         padding: 2px;
 	&, &:hover, &:active, &:backdrop {
 		headerbar &, .titlebar &, & {

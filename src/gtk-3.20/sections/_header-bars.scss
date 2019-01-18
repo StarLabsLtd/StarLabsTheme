@@ -1,0 +1,359 @@
+%titlebar,
+headerbar {
+	padding: 0 6px;
+	min-height: 40px;
+	background-color: $dark1;
+	color: $white;
+	transition: $tran1;
+	&:backdrop {
+		background-color: $dark2;
+		transition: $tran1;
+	}
+	label:backdrop {
+		color: inherit;
+	}
+	.title {
+		font-weight: 600;
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+	.subtitle {
+		font-size: smaller;
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+	& > separator {
+		background-image: image($dark1);
+		&:backdrop {
+			background-image: image($dark2);
+		}
+	}
+	~ separator, separator {
+		&, &.titlebutton {
+			&.horizontal, &.vertical {
+				& { 
+					background-image: image($dark1);
+				}
+				&:backdrop {
+					background-image: image($dark2);
+				}
+			}
+		}
+	}
+
+	& {
+	$c: $headerbar_bg_color;
+	$tc: $headerbar_fg_color;
+	switch {
+		@include switch;
+	}
+
+
+// Below needs work, serious work
+    entry, %dark_entry {
+      @include entry(normal, $c: $c, $tc: $tc);
+      &:disabled { @include entry(insensitive, $c: $c, $tc: $tc); }
+
+      &:backdrop {
+        @include entry(backdrop, $c: $c, $tc: $tc);
+        transition: $backdrop_transition;
+
+        &:disabled { @include entry(backdrop-insensitive, $c: $c, $tc: $tc); }
+      }
+      image {
+        color: $tc;
+        &:hover { color: $backdrop_headerbar_text_color; }
+      }
+    }
+
+	.text-button:not(.suggested-action) {
+		&:not(:hover) {
+			border-color: $hb_button_bg_hover;
+		}
+		&.default {
+			&, &:active, &:hover, &:focus {
+				color: white;
+			}
+		}
+	}
+	button.default {
+		label {
+			color: $white;
+		}
+	}
+
+    button, button.flat, button.titlebutton.appmenu {
+      @each $state, $t in ("", "normal"),
+                          (":hover", "hover"),
+                          (":hover:backdrop", "backdrop-hover"),
+                          (":active, &:checked", "active"),
+                          (":hover:checked", "active-hover"),
+                          (":disabled", "insensitive"),
+                          (":disabled:active, &:disabled:checked", "insensitive-active"),
+                          (":backdrop", "backdrop"),
+                          (":backdrop:active, &:backdrop:checked", 'backdrop-active'),
+                          (":backdrop:disabled", 'backdrop-insensitive'),
+                          (":backdrop:disabled:active, &:backdrop:disabled:checked", 'backdrop-insensitive-active') {
+                            &#{$state} { @include button($t, $c, $tc, $flat:true); }
+      }
+
+      @each $b_type, $b_color in (suggested-action, $success_color),
+                                  (destructive-action, $destructive_color) {
+        &.#{$b_type} {
+          // special buttons show their color when not interacted with
+          @each $state, $t in ("", "normal"),
+                              (":hover", "hover"),
+                              (":hover:backdrop", "backdrop-hover"),
+                              (":active, &:checked", "active"),
+                              (":disabled", "insensitive"),
+                              (":disabled:active, &:disabled:checked", "insensitive-active"),
+                              (":backdrop", "backdrop"),
+                              (":backdrop:active, &:backdrop:checked", 'backdrop-active'),
+                              (":backdrop:disabled", 'backdrop-insensitive'),
+                              (":backdrop:disabled:active, &:backdrop:disabled:checked", 'backdrop-insensitive-active') {
+            &#{$state} { @include button($t, $b_color, white, $flat:true); }
+          }
+        }
+      }
+    }
+
+    .linked:not(.path-bar):not(.stack-switcher):not(buttonbox) button, .linked:not(.vertical) entry {
+      // force linked buttons and entries to be separate
+      // this needs a lot of testing
+      &:focus {
+        & + entry { border-left-color: _border_color($graphite); }
+        & + button { border-left-color: transparent; }
+
+        & + entry,
+        & + button {
+          &:disabled { border-left-color: transparent; }
+          &:backdrop { border-left-color: _border_color($headerbar_bg_color); }
+        }
+      }
+      border-width: 1px;
+      border-style: solid;
+      border-radius: $small_radius;
+      -gtk-outline-radius: $small_radius;
+
+      &:not(:last-child) { margin-right: 4px; }
+    }
+
+    .stack-switcher.linked button,
+    buttonbox.linked button,
+    buttonbox.linked button.text-button ~ button {
+      border-style: solid;
+      border-color: lighten($inkstone, 5%);
+
+      &:not(:only-child) { border-width: 1px 0; }
+      &:first-child { border-width: 1px 0 1px 1px; }
+      &:last-child { border-width: 1px 1px 1px 0; }
+
+      &:backdrop {
+        &, &:checked { border-color: lighten($inkstone, 3%); }
+      }
+    }
+  }
+
+  &.selection-mode {
+    $c: $success_color;
+    color: $selected_fg_color;
+    border-color: _border_color($c);
+    background-color: $c;
+
+    ~ separator, separator {
+      background-image: image(_border_color($c));
+    }
+
+    &:backdrop {
+      $c: _backdrop_color($c);
+      border-color: _border_color($c);
+      background-color: $c;
+
+      ~ separator, separator {
+        background-image: image(_border_color($c));
+      }
+    }
+
+    .subtitle:link { @extend *:link:selected;  }
+
+    button {
+        @each $state, $t in ("", "normal"),
+                            (":hover", "hover"),
+                            (":hover:backdrop", "backdrop-hover"),
+                            (":active, &:checked", "active"),
+                            (":disabled", "insensitive"),
+                            (":disabled:active, &:disabled:checked", "insensitive-active"),
+                            (":backdrop", "backdrop"),
+                            (":backdrop:active, &:backdrop:checked", 'backdrop-active'),
+                            (":backdrop:disabled", 'backdrop-insensitive'),
+                            (":backdrop:disabled:active, &:backdrop:disabled:checked", 'backdrop-insensitive-active') {
+          $c: $success_color;
+          $tc: white;
+          &, &.selection-menu {
+            &#{$state} {
+              @include button($t, $c, $tc, $flat:true);
+              outline-color: white;
+            }
+          }
+        }
+
+      &.text-button:not(:hover) {
+        border-color: transparentize(white, 0.7);
+      }
+
+      &.flat, &.selection-menu {
+        &, &:backdrop {
+          &, &:disabled { @include button(undecorated); }
+        }
+      }
+
+      &.suggested-action {
+        @each $state, $t in ("", "normal"), (":hover", "hover"), (":hover:backdrop", "backdrop-hover"),
+        (":active", "active"), (":disabled", "insensitive"),
+        (":backdrop", "backdrop"), (":backdrop:disabled", 'backdrop-insensitive') {
+          $c: white;
+          $tc: $success_color;
+          &#{$state} { @include button($t, $c, $tc); } }
+      }
+
+      &.selection-menu {
+        &:backdrop, & {
+          padding-left: 10px;
+          padding-right: 10px;
+
+          arrow { -GtkArrow-arrow-scaling: 1; }
+
+          .arrow {
+            -gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
+          }
+        }
+      }
+    }
+  }
+
+  // squared corners when the window is maximized, tiled, or fullscreen
+  .tiled &,
+  .tiled-top &,
+  .tiled-right &,
+  .tiled-bottom &,
+  .tiled-left &,
+  .maximized &,
+  .fullscreen & {
+    border-color: transparentize(_border_color($headerbar_bg_color), 0.7);
+    &.selection-mode { border: none; }
+
+    &:backdrop, & {
+      border-radius: 0;
+    }
+  }
+
+  &.default-decoration {
+    min-height: 26px;
+    padding: 4px 6px;
+
+    button.titlebutton {
+      min-width: 26px;
+      min-height: 26px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .solid-csd & {
+    &:backdrop, & {
+      &:dir(rtl), &:dir(ltr) { // specificity bump
+        margin-left: -1px;
+        margin-right: -1px;
+        margin-top: -1px;
+        border-radius: 0;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+headerbar {
+  // add vertical margins to common widget on the headerbar to avoid them spanning the whole height
+  entry,
+  spinbutton,
+  button {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  switch, separator {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+
+.background .titlebar {
+  &:backdrop, & {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+}
+
+.background.tiled .titlebar,
+.background.tiled-top .titlebar,
+.background.tiled-right .titlebar,
+.background.tiled-bottom .titlebar,
+.background.tiled-left .titlebar,
+.background.maximized .titlebar,
+.background.solid-csd .titlebar {
+  &:backdrop, & {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+headerbar { // headerbar border rounding
+
+  window separator:first-child + &,
+  window &:first-child { &:backdrop, & { border-top-left-radius: 7px; }}
+  window &:last-child { &:backdrop, & { border-top-right-radius: 7px; }}
+
+  window stack & { // tackles the stacked headerbars case
+    &:first-child, &:last-child {
+      &:backdrop, & {
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+      }
+    }
+  }
+
+  window.tiled &,
+  window.tiled-top &,
+  window.tiled-right &,
+  window.tiled-bottom &,
+  window.tiled-left &,
+  window.maximized &,
+  window.fullscreen &,
+  window.solid-csd & {
+    &, &:backdrop {
+      &,
+      &:first-child,
+      &:last-child,
+      &:only-child {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+    }
+  }
+}
+
+.titlebar:not(headerbar) {
+  window.csd > & {
+    // in csd we assume every titlebar is a headerbar so reset anything, this is needed for split toolbars cases
+    padding: 0;
+    background-color: transparent;
+    background-image: none;
+    border-style: none;
+    border-color: transparent;
+    box-shadow: none;
+  }
+
+  > separator { background-color: $borders_color; }  // FIXME: use darker border?
+
+  @extend %titlebar;
+}
+
