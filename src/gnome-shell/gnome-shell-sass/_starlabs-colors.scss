@@ -1,31 +1,17 @@
 // Star Labs Palette
-// Headers
-$accent1: #6ec5ff;
-$accent2: #2195f2;
-$accent3: #0068bf;
+// Accents
+$accent1: #6ec5ff; //light
+$accent2: #2195f2; //standard
+$accent3: #0068bf; //dark
 
+// Dark
+$dark1: #17171d;
+$dark2: #202026;
 
-$head-dark-bg: #455a64;
-$head-norm-bg: #607d8b;
-$head-lite-bg: #cfd8dc;
-$head-norm-fg: #ffffff;
+// White
+$white: #ffffff; // Just to make it easy to change
+//$grey: #e0e0e0; // Do we keep this or go ultra-flat?
 
-$white: #ffffff;
-
-// Windows
-$wind-norm-bg: if($variant == 'light', #ffffff, #212121);
-$wind-prim-fg: if($variant == 'light', #212121, #ffffff);
-$wind-seco-fg: #757575; 
-
-// Accent
-$accent: #448aff;
-
-// Border
-$border: #bdbdbd;
-
-// Text
-$text1: #212121;
-$text2: #757575;
 
 // Context Colors
 $success: #a5d6a7;
@@ -33,9 +19,18 @@ $warning: #ffb74d;
 $failure: #d50000;
 
 // Alpha & Omega
-$alpha1: 1; //0.3;
-$alpha2: 1; //0.6;
-$alpha3: 1; //0.9;
+$alpha1: 0.3;
+$alpha2: 0.6;
+$alpha3: 0.9;
 $omega1: 3px;
 $omega2: 6px;
 $omega3: 9px;
+$beta1: 10%;
+$beta2: 25%;
+$beta3: 50%;
+
+// Transitions
+$tran1: all 1000ms ease-out;
+$tran2: all 500ms ease-out;
+$anim1: ripple_effect 225ms cubic-bezier(0, 0, 0.2, 1) forwards;
+$anim2: ripple_effect 225ms cubic-bezier(0, 0, 0.2, 1) backwards;

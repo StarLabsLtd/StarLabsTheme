@@ -1,13 +1,7 @@
 %titlebar, headerbar {
+	@include header;
 	padding: 0 6px;
 	min-height: 40px;
-	background-color: $dark1;
-	color: $white;
-	transition: $tran1;
-	&:backdrop {
-		background-color: $dark2;
-		transition: $tran1;
-	}
 	label:backdrop {
 		color: inherit;
 	}

@@ -1,5 +1,6 @@
 @mixin entry ($t) {
 	@if $t==normal {
+		border-radius: 0;
 		background-color: darken($white, $beta1);
 		color: $dark1;
 		border-bottom: 2px solid lighten($dark1, $beta1);
