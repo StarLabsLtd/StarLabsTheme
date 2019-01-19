@@ -1,0 +1,55 @@
+// Need to do OSD
+@mixin button($type, $fill:transparent, $color:white) {
+	@if $type==normal {
+		background-color: $fill;
+		color: $color;
+		border: none;
+		border-radius: 0;
+		border-bottom: 2px solid $fill;
+	}
+	@else if $type==hover {
+		border-bottom: 2px solid $accent2;
+	}
+	@else if $type==active {
+		border-bottom: 2px solid $accent3;
+	}
+	@else if $type==active-hover {
+                border-bottom: 2px solid $accent1;
+	}
+	@else if $type==insensitive {
+		opacity: $alpha1;
+	}
+	@else if $type==backdrop {
+                border-bottom: 2px solid lighten($dark1, $beta1);
+                color: lighten($color, $beta1);
+	}
+	@else if $type==backdrop-hover {
+                border-bottom: 2px solid lighten($accent2, $beta1);
+                color: lighten($color, $beta1);
+	}
+	@else if $type==backdrop-active {
+                border-bottom: 2px solid lighten($accent3, $beta1);
+	}
+	@else if $type==backdrop-insensitive {
+		opacity: 0.5;
+	}
+	@else if $type==osd {
+
+	}
+	@else if $type==osd-hover {
+	}
+	@else if $type==osd-active {
+	}
+	@else if $type==osd-insensitive {
+	}
+	@else if $type==osd-backdrop {
+	}
+	@else if $type==undecorated {
+		border-color: transparent;
+		background-color: transparent;
+		background-image: none;
+		box-shadow: none;
+		text-shadow: none;
+	}
+}
+

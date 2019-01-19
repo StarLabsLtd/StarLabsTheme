@@ -332,7 +332,7 @@ entry {
         color: $e_color;
         border-color: entry_focus_border($e_color);
 
-        &:focus { @include entry(focus, $e_color); }
+        &:focus { @include entry(focus); }
 
         &:not(:focus) { border-color: $borders_color; }
         &:backdrop { border-color: $backdrop_borders_color; }
@@ -568,7 +568,7 @@ button {
       (":disabled:active, &:disabled:checked", "insensitive-active"), (":backdrop", "backdrop"),
       (":backdrop:active, &:backdrop:checked", 'backdrop-active'), (":backdrop:disabled", 'backdrop-insensitive'),
       (":backdrop:disabled:active, &:backdrop:disabled:checked", 'backdrop-insensitive-active') {
-        &#{$state} { @include button($t, $flat:true); }
+        &#{$state} { @include button($t); }
       }
     }
 
@@ -1490,7 +1490,7 @@ toolbar {
   padding: 4px 3px 3px 4px;
 
   button.flat {
-    @each $state, $t, $is_flat in ("", "normal", true),
+    @each $state, $type, $is_flat in ("", "normal", true),
                                   (":hover, &:hover:checked", "hover", false),
                                   (":hover:backdrop, &:hover:backdrop:checked", "backdrop-hover", false),
                                   (":active, &:checked", "active", false),
@@ -1500,7 +1500,7 @@ toolbar {
                                   (":backdrop:active, &:backdrop:checked", 'backdrop-active', true),
                                   (":backdrop:disabled", 'backdrop-insensitive', true),
                                   (":backdrop:disabled:active, &:backdrop:disabled:checked", 'backdrop-insensitive-active', true) {
-      &#{$state} { @include button($t, $c:$menu_color, $flat:$is_flat); }
+      &#{$state} { @include button($type, $fill:$menu_color) }
     }
 
     &:hover, &:checked { border-color: $borders_color; }
@@ -1840,10 +1840,10 @@ menubar,
   $_border_color: _border_color($menubar_bg_color);
 
   background-color: $menubar_bg_color;
-  border-color: transparentize($_border_color, 0.8);
+  border-color: transparentize($accent2, 0.8);
   border-style: solid;
   border-width: 0px;
-  box-shadow: inset 0 -1px transparentize($_border_color, 0.8);
+  box-shadow: inset 0 -1px transparentize($accent2, 0.8);
   color: $headerbar_text_color;
   padding: 0px;
 
@@ -2794,7 +2794,7 @@ scale {
 
     &:disabled {
       @include button(insensitive, if($variant == "light", white, darken(white, 20%)));
-      border-color: if($variant=='light', lighten($_bc, 10%), transparent);
+      border-color: if($variant=='light', lighten($accent2, 10%), transparent);
     }
 
     &:backdrop {
@@ -3189,9 +3189,9 @@ levelbar {
     padding: 3px;
     border-radius: 3px;
     border: none;
-    @include entry(normal, $c: $base_color);
+    @include entry(normal);
 
-    &:backdrop { @include entry(backdrop, $c: $base_color); }
+    &:backdrop { @include entry(backdrop); }
     box-shadow: inset 0 0 0 1px $borders_color;
   }
 

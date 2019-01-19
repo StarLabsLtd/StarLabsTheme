@@ -1,0 +1,24 @@
+@mixin draw_circle($fill) {
+        $button_size: 24px + 2px * 2;
+        $circle_size: 20px / $button_size / 2;
+        background-image: -gtk-gradient(radial,
+                                        center center, 0,
+                                        center center, $circle_size,
+                                        to($fill),
+                                        to(transparent));
+        &:hover {
+                color: $white;
+                &:backdrop {
+                        color: $white;
+                }
+        }
+        &:backdrop {
+                background-image: -gtk-gradient(radial,
+                                                center center, 0,
+                                                center center, $circle_size,
+                                                to(lighten($fill, $beta1)),
+                                                to(transparent));
+
+        }
+}
+
