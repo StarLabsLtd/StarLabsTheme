@@ -72,7 +72,6 @@
 		}
 	}
 
-
 button, button.flat, button.titlebutton.appmenu {
 	@each $state, $type in ("", "normal"),
 	(":hover", "hover"),

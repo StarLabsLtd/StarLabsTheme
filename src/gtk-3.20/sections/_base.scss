@@ -1,0 +1,24 @@
+// We do not kill kittens.
+// @import 'kitten-killer';
+
+.background {
+	@include window(normal);
+}
+
+.gtkstyle-fallback {
+	@each $selector, $state in
+	("", "normal"),
+	(":hover", "hover"),
+	(":active", "active"),
+	(":disabled", "disabled"),
+	(":selected", "selected") {
+		&#{$selector} {
+			@include active-fill($state);
+		}
+	}
+}
+
+widget:selected {
+	color: $accent2;
+}
+
