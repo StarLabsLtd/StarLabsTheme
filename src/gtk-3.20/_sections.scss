@@ -1,0 +1,60 @@
+@function gtkalpha($c,$a) {
+  @return unquote("alpha(#{$c},#{$a})");
+}
+
+
+$ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+$asset_suffix: if($variant=='dark', '-dark', '');
+$small_radius: 4px;
+$medium_radius: 6px;
+$large_radius: 12px;
+$backdrop_transition: all 200ms ease-out;
+$button_transition: all 0.4s ease-out;
+$popover_shadow: 0 2px 5px transparentize(black, 0.75);
+$menu_border: if($variant=='light', transparentize($borders_color, 0.2) , transparentize(white, 0.88));
+
+// We do not kill kittens.
+// @import 'sections/kitten-killer';
+
+
+// Lets use this as a TODO list
+
+@import 'sections/base'; //Done
+@import 'sections/view'; //50%
+@import 'sections/spinner'; //Done
+@import 'sections/entries';
+@import 'sections/main-button';
+@import 'sections/links';
+@import 'sections/comboboxes';
+@import 'sections/toolbars';
+@import 'sections/header-bars';
+@import 'sections/pathbars';
+@import 'sections/treeviews';
+@import 'sections/menu-bar';
+@import 'sections/popover';
+@import 'sections/notebook';
+@import 'sections/scrollbars';
+@import 'sections/switch'; //Done
+@import 'sections/checkradio';
+@import 'sections/scale';
+@import 'sections/progressbar';
+@import 'sections/levelbar';
+@import 'sections/printdialog';
+@import 'sections/frame';
+@import 'sections/lists';
+@import 'sections/appnotifications';
+@import 'sections/expander';
+@import 'sections/calendar';
+@import 'sections/dialogs';
+@import 'sections/sidebar'; //Done
+@import 'sections/filechooser';
+@import 'sections/paned';
+@import 'sections/gtkinfobar';
+@import 'sections/tooltip';
+@import 'sections/colorswatch';
+@import 'sections/misc';
+@import 'sections/windowdecorations';
+@import 'sections/touchcopypaste';
+@import 'sections/emoji';
+
+

@@ -1,0 +1,102 @@
+%toolbar {
+  -GtkWidget-window-dragging: true;
+  padding: 4px;
+  background-color: $bg_color;
+}
+
+toolbar {
+  @extend %toolbar;
+
+  padding: 4px 3px 3px 4px;
+
+  button.flat {
+    @each $state, $type, $is_flat in ("", "normal", true),
+                                  (":hover, &:hover:checked", "hover", false),
+                                  (":hover:backdrop, &:hover:backdrop:checked", "backdrop-hover", false),
+                                  (":active, &:checked", "active", false),
+                                  (":disabled", "insensitive", true),
+                                  (":disabled:active, &:disabled:checked", "insensitive-active", false),
+                                  (":backdrop", "backdrop", true),
+                                  (":backdrop:active, &:backdrop:checked", 'backdrop-active', true),
+                                  (":backdrop:disabled", 'backdrop-insensitive', true),
+                                  (":backdrop:disabled:active, &:backdrop:disabled:checked", 'backdrop-insensitive-active', true) {
+      &#{$state} { @include button($type, $fill:$menu_color) }
+    }
+
+    &:hover, &:checked { border-color: $borders_color; }
+    &, &:backdrop { &, &:disabled { background-color: transparent; border-color: transparent; } }
+  }
+
+  // on OSD
+  .osd & { background-color: transparent; }
+
+  // stand-alone OSD toolbars
+  &.osd {
+    padding: 13px;
+    border-radius: $small_radius;
+    border: none;
+    background-color: $osd_bg_color;
+
+    &.left,
+    &.right,
+    &.top,
+    &.bottom { border-radius: 0; } // positional classes for `attached` osd toolbars
+
+    &.left { box-shadow: inset -1px 0 $osd_borders_color; }
+    &.right { box-shadow: inset 1px 0 $osd_borders_color; }
+    &.top { box-shadow: inset 0 -1px $osd_borders_color; }
+    &.bottom { box-shadow: inset 0 1px $osd_borders_color; }
+  }
+
+  // toolbar separators
+  &.horizontal separator { margin: 0 7px 1px 6px; }
+  &.vertical separator { margin: 6px 1px 7px 0; }
+
+  &:not(.inline-toolbar):not(.osd) {
+    switch,
+    scale,
+    entry,
+    spinbutton,
+    button {
+      margin-right: 1px;
+      margin-bottom: 1px;
+    }
+  }
+  toolitem > box.linked.horizontal button { margin: 0; }
+}
+
+//searchbar, location-bar & inline-toolbar
+.inline-toolbar {
+  @extend %toolbar;
+
+  @extend %darkbar;
+
+  padding: 3px;
+  border-width: 0 1px 1px;
+  border-radius: 0  0 5px 5px;
+}
+.inline-toolbar.horizontal.sidebar-toolbar:backdrop { background-color: transparent; }
+
+searchbar,
+.location-bar {
+  @extend %toolbar;
+
+  @extend %darkbar;
+
+  border-width: 0 0 1px;
+  padding: 3px;
+}
+
+%darkbar {
+  border-style: solid;
+  border-color: $borders_color;
+  $_bg: mix($bg_color, $borders_color, 70%);
+  background-color: $sidebar_bg_color;
+
+  &:backdrop {
+    border-color: $backdrop_borders_color;
+    background-color: $backdrop_sidebar_bg_color;
+    box-shadow: none;
+    transition: $backdrop_transition;
+  }
+}

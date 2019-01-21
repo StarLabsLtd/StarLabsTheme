@@ -1,10 +1,11 @@
 // Well, not following the theme but a white terminal looks crap
 terminal-window {
 	.terminal-screen {
-		@include header;
+		@include header(true);
 	}
 	notebook > header.top > tabs > tab {
 		&:checked {
+			background-color: $dark1;
 			color: $white;
 			border-color: $accent2;
 			border-bottom: 2px solid darken($selected_bg_color, 10%);

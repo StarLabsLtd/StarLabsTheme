@@ -1,13 +1,5 @@
 menubar, .menubar {
-	@each $selector, $state in 
-	("", "normal"),
-	(":backdrop", "backdrop"),
-	(":active", "active") {
-		&#{$selector} {
-			@include fill($state);
-		}
-	}
-
+	@include header(true);
 	-GtkWidget-window-dragging: true;
 	padding: 0px;
 	> menuitem {
@@ -21,7 +13,7 @@ menubar, .menubar {
 			}
 		}
 		&:hover {
-			border-bottom: 2px solid $accent2;
+			background-color: $accent2;
 		}
 		&:disabled {
 			opacity: $alpha1;
@@ -34,7 +26,7 @@ menubar, .menubar {
 }
 
 menu, .menu, .context-menu {
-	@include fill(normal);
+	@include header(true);
 	margin: 4px;
 	padding: 8px 0;
 	border-radius: $omega1;
@@ -46,15 +38,7 @@ menu, .menu, .context-menu {
 	min-width: 36px;
 	padding: 5px 6px;
 	border-radius: 0;
-	&:backdrop {
-		@include fill(backdrop);
-	}
-	&:hover {
-		border-bottom: 2px solid $accent2;
-	}
-	&:disabled {
-		opacity: $alpha1;
-	}
+
 
     &:backdrop,
     &:backdrop:hover {

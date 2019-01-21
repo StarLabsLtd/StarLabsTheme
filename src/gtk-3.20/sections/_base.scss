@@ -1,8 +1,5 @@
-// We do not kill kittens.
-// @import 'kitten-killer';
-
 .background {
-	@include window(normal);
+	@include window;
 }
 
 .gtkstyle-fallback {

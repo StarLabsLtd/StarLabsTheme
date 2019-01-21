@@ -1,0 +1,23 @@
+#live_installer {
+	#progress_mode, #title_eventbox {
+		background-color: $dark1;
+		&:backdrop {
+			background-color: lighten($dark1, $beta1);
+		}
+	}
+	#dot_grid {
+		.empty {
+			background-color: $accent2;
+		}
+	}
+	#page_title {
+		color: $white;
+	}
+}
+#warning_dialog.background {
+	border: 1px solid $dark2;
+}
+#dialog-action_area1 {
+	padding-bottom: 5px; padding-right: 5px
+}
+

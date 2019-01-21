@@ -1,0 +1,46 @@
+list {
+  color: $text_color;
+  background-color: $base_color;
+  border-color: $borders_color;
+
+  &:backdrop {
+    background-color: $backdrop_base_color;
+    border-color: $backdrop_borders_color;
+  }
+
+  row { padding: 2px; }
+
+  separator {
+    // separator within sidebar
+    background-color: transparentize($borders_color, 0.5);
+  }
+}
+
+row {
+  outline-offset: -3px;
+  transition: all 150ms $ease-out-quad;
+
+  &:not(:selected) {
+    outline-color: gtkalpha(currentColor, 0.3);
+    &:not(:backdrop):hover { background-color: $base_hover_color; }
+    &:not(:backdrop):active { background-color: $base_active_color; }
+  }
+
+  &:backdrop { transition: $backdrop_transition; }
+
+  &.activatable:not(:backdrop) {
+    &.has-open-popup, // this is for indicathing which row generated a popover see https://bugzilla.gnome.org/show_bug.cgi?id=754411
+
+    &:active { box-shadow: inset 0 2px 2px -2px transparentize(black, 0.8); }
+
+    &:not(:backdrop):selected {
+      &:active { box-shadow: inset 2px 0 $selected_bg_color, inset 0 2px 3px -1px transparentize(black, 0.5); }
+
+      &.has-open-popup { background-color: mix($fg_color, $selected_bg_color, 10%); }
+
+    }
+  }
+
+  &:selected { @extend %selected_items; }
+}
+
