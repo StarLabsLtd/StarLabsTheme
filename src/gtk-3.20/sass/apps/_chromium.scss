@@ -1,0 +1,12 @@
+normal-button {
+	@include clickable(normal);
+	&:hover {
+		@include clickable(hover);
+	}
+	&:active {
+		@include clickable(active)
+	}
+	&:disabled {
+		@include clickable(insensitive);
+	}
+}

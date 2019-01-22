@@ -1,7 +1,9 @@
-$variant: 'light';
+$variant: 'dark';
 
-@import "gnome-shell-sass/_starlabs-colors";
-@import "gnome-shell-sass/_colors";
-@import "gnome-shell-sass/_drawing";
-@import "gnome-shell-sass/_common";
-@import "gnome-shell-sass/_dock";
+@import "sass/starlabs";
+@import "sass/functions";
+@import "sass/_ubuntu-colors";
+@import "sass/_colors"; //use gtk colors
+@import "sass/_drawing";
+@import "sass/_sections";
+@import "sass/_dock";

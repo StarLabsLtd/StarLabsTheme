@@ -1,0 +1,43 @@
+@mixin switch {
+	transition: $tran1;
+	margin: 6px 0;
+	padding: 0 2px;
+	border: 5px solid transparent;
+	border-radius: 9999px;
+	background-color: $accent1;
+	background-clip: padding-box;
+	font-size: 0;
+	&:backdrop {
+		background-color: lighten($accent1, $beta1);
+	}
+	&:checked {
+		background-color: $accent2;
+		&:backdrop {
+			background-color: lighten($accent2, $beta1);
+		}
+	}
+	&:disabled {
+		opacity: $alpha1;
+	}
+	slider {
+		transition: $tran1;
+		min-width: 20px;
+		min-height: 20px;
+		margin: -3px -2px;
+		border-radius: 9999px;
+		background-color: $accent2;
+	}
+	&:backdrop slider {
+		background-color: lighten($accent2, $beta1);
+	}
+	&:checked slider {
+		background-color: $accent3;
+		&:backdrop {
+			background-color: lighten($accent3, $beta1);
+		}
+	}
+	&:disabled {
+		opacity: $alpha1;
+	}
+}
+

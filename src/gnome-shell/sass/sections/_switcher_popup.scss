@@ -1,0 +1,65 @@
+
+/* App Switcher */
+.switcher-popup {
+  padding: 8px;
+  spacing: 16px;
+}
+
+.osd-window,
+.resize-popup {
+  @extend %osd-panel;
+}
+
+.switcher-list {
+  // borders and padding taking from %osd-panel
+  @extend %osd-panel;
+  border-radius: $large_radius;
+  padding: 12px;
+}
+
+  .switcher-list-item-container { spacing: 8px;  }
+
+  .switcher-list .item-box {
+    padding: 8px;
+    border-radius: $small_radius;
+    color: darken($fg_color,30%);
+  }
+
+  .switcher-list .item-box:outlined {
+    padding: 8px;
+  }
+
+  .switcher-list .item-box:selected {
+    background-color: $base_active_color;
+    border-radius: $medium_radius;
+    color: $fg_color;
+  }
+
+  .switcher-list .thumbnail-box {
+    padding: 2px;
+    spacing: 4px;
+  }
+
+  .switcher-list .thumbnail {
+    width:  256px;
+  }
+
+  .switcher-list .separator {
+    width: 1px;
+    background: $light_borders_color;
+  }
+
+  .switcher-arrow {
+    border-color: rgba(0,0,0,0);
+    color: transparentize($dark_fg_color,0.2);
+    &:highlighted {
+      color: $fg_color;
+    }
+  }
+
+  .input-source-switcher-symbol {
+    font-size: 34pt;
+    width: 96px;
+    height: 96px;
+  }
+

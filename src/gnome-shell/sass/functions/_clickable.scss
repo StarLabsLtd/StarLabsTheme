@@ -1,0 +1,37 @@
+@mixin clickable($type, $fill:$dark1, $color:$white) {
+	@if $type==normal {
+		background-color: $fill;
+		color: $color;
+		transition: $tran2;
+	}
+	@else if $type==backdrop {
+		background-color: lighten($fill, $beta1);
+		color: darken($color, $beta1);
+	}
+	@else if $type==active {
+		background-color: $accent2;
+		color: $color;
+	}
+	@else if $type==backdrop-active {
+		background-color: lighten($accent2, $beta1);
+		color: darken($white, $beta1);
+	}
+	@else if $type==hover {
+		background-color: darken($fill, $beta1);
+		color: $color;
+	}
+	@else if $type==backdrop-hover {
+		background-color: lighten($fill, $beta2);
+		color: darken($color, $beta2);
+	}
+	@else if $type==disabled {
+		opacity: $alpha1;
+	}
+	@else if $type==undecorated {
+		background-color: transparent;
+		border-color: transparent;
+		background-image: none;
+		box-shadow: none;
+		text-shadow: none;
+	}
+}

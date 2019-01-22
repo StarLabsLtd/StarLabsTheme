@@ -1,0 +1,52 @@
+.button {
+	border-radius: $omega1;
+	border-width: 1px;
+	border-bottom-style: none;
+	min-height: 22px;
+	padding: 4px 32px;
+	@include clickable(normal);
+	&:focus {
+		@include clickable(focus);
+	}
+	&:hover {
+		@include clickable(active);
+	}
+	&:insensitive {
+		@include clickable(disabled);
+	}
+	&:active {
+		@include clickable(hover);
+	}
+}
+.modal-dialog-linked-button, %light_button {
+	border-right-width: 1px;
+	@include clickable(normal);
+	&:active {
+		@include clickable(active);
+	}
+	&:focus {
+		@include clickable(hover);
+	}
+	&:hover {
+		@include clickable(hover);
+	}
+	&:insensitive {
+		@include clickable(disabled);
+	}
+	&:active {
+		@include clickable(active);
+	}
+	padding: 12px;
+	&:first-child {
+		border-radius: 0px 0px 0px $omega1;
+	}
+	&:last-child {
+		border-right-width: 0px;
+		border-radius: 0px 0px $omega1 0px;
+	}
+	&:first-child:last-child {
+		border-right-width: 0px;
+		border-radius: 0px 0px $omega1 $omega1;
+	}
+}
+

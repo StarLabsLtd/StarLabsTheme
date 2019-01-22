@@ -1,0 +1,15 @@
+@mixin sidebar {
+	background-color: $dark1;
+	color: $white;
+	transition: $tran1;
+	& label {
+		color: $white;
+	}
+	&:backdrop {
+		background-color: lighten($dark1, $beta1);
+		color: darken($white, $beta1);
+		& label {
+			color: darken($white, $beta1);
+		}
+	}
+}

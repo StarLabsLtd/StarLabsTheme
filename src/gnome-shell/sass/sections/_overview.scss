@@ -1,0 +1,89 @@
+
+
+/* OVERVIEW */
+
+#overview {
+  spacing: 24px; //
+}
+
+.overview-controls {
+  padding-bottom: 32px;
+}
+
+  .window-picker { //container around window thumbnails
+    -horizontal-spacing: 16px;
+    -vertical-spacing: 16px;
+    padding: 0 16px 16px;
+
+    &.external-monitor { padding: 16px; }
+  }
+
+  .window-clone-border {
+    $_bg: transparentize(white,0.65);
+    border: 5px solid $_bg;
+    border-radius: $medium_radius;
+    // For window decorations with round corners we can't match
+    // the exact shape when the window is scaled. So apply a shadow
+    // to fix that case
+    box-shadow: inset 0 0 0 1px $_bg;
+  }
+  .window-caption {
+    spacing: 25px;
+    color: $osd_fg_color;
+    background-color: $osd_bg_color;
+    border: 1px solid $osd_borders_color;
+    border-radius: $medium_radius;
+    padding: 4px 12px;
+  }
+
+  //search entry
+  .search-entry {
+    width: 320px;
+    border-radius: $small_radius;
+    border-color: $osd_borders_color;
+    color: $osd_fg_color;
+    background-color: transparentize($panel_bg_color, $panel-alpha-value);
+
+    &, &:focus { padding: 7px 9px; }
+
+    &:focus {
+      border-width: 1px;
+      border-color: $selected_bg_color;
+    }
+
+    .search-entry-icon { icon-size: 1em; padding: 0 4px; color: transparentize($fg_color,.3); }
+
+    &:hover, &:focus {
+      .search-entry-icon { color: $fg_color; }
+    }
+  }
+
+  //search results
+
+  #searchResultsBin {
+    max-width: 1000px;
+  }
+
+  #searchResultsContent {
+    padding-left: 20px;
+    padding-right: 20px;
+    spacing: 16px;
+  }
+
+  .search-section { spacing: 16px; } // This should be equal to #searchResultsContent spacing
+  .search-section-content { spacing: 32px; } // This is the space between the provider icon and the results container
+  .search-statustext { // "no results"
+    @extend %status_text;
+  }
+  .list-search-results { spacing: 3px; }
+
+  .search-section-separator { height: 2px; background-color: rgba(255, 255, 255, 0.2); }
+
+  .list-search-result-content { spacing: 30px; }
+  .list-search-result-title { color: $fg_color; spacing: 12px; }
+  .list-search-result-description { color: $caption_fg_color; }
+  .list-search-provider-details { width: 150px; color: $subheader_fg_color; margin-top: 0.24em; }
+  .list-search-provider-content { spacing: 20px; }
+  .search-provider-icon { padding: 15px; }
+
+

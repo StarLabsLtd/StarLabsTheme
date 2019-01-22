@@ -1,0 +1,58 @@
+
+/* ShellMountOperation Dialogs */
+.shell-mount-operation-icon { icon-size: 48px; }
+
+  .mount-dialog {
+    spacing: 24px;
+
+    .message-dialog-title {
+      padding-top: 10px;
+      padding-left: 17px;
+      padding-bottom: 6px;
+      max-width: 34em;
+    }
+
+    .message-dialog-title:rtl {
+      padding-left: 0px;
+      padding-right: 17px;
+    }
+
+    .message-dialog-body {
+      padding-left: 17px;
+      width: 28em;
+    }
+
+    .message-dialog-body:rtl {
+      padding-left: 0px;
+      padding-right: 17px;
+    }
+  }
+
+  .mount-dialog-app-list {
+    max-height: 200px;
+    padding-top: 24px;
+    padding-left: 49px;
+    padding-right: 32px;
+  }
+
+  .mount-dialog-app-list:rtl {
+    padding-right: 49px;
+    padding-left: 32px;
+  }
+
+  .mount-dialog-app-list-item {
+    color: $caption_fg_color;
+    &:hover { color: $fg_color; }
+    &:ltr { padding-right: 1em; }
+    &:rtl { padding-left: 1em; }
+  }
+
+  .mount-dialog-app-list-item-icon {
+    &:ltr { padding-right: 17px; }
+    &:rtl { padding-left: 17px; }
+  }
+
+  .mount-dialog-app-list-item-name {
+    font-size: 10pt;
+  }
+

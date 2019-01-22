@@ -1,0 +1,44 @@
+
+
+/* Password or Authentication Dialog */
+
+.prompt-dialog {
+  //this is the width of the entire modal popup
+  @extend %dialog_window;
+  width: 34em;
+
+  .message-dialog-main-layout { spacing: 24px; padding: 10px; }
+  .message-dialog-content { spacing: 16px; }
+  .message-dialog-title { color: $dark_subtext_color; }
+}
+
+  .prompt-dialog-description:rtl {
+    text-align: right;
+  }
+
+  .prompt-dialog-password-box {
+    spacing: 1em;
+    padding-bottom: 1em;
+  }
+
+  .prompt-dialog-error-label {
+    font-size: 10pt;
+    color: $error_color;
+    padding-bottom: 8px;
+  }
+
+  .prompt-dialog-info-label {
+    font-size: 10pt;
+    padding-bottom: 8px;
+  }
+
+  .hidden {
+    color: rgba(0,0,0,0);
+  }
+
+  .prompt-dialog-null-label {
+    font-size: 10pt;
+    padding-bottom: 8px;
+  }
+
+

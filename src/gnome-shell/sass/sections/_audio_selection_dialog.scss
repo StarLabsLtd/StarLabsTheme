@@ -1,0 +1,32 @@
+.audio-device-selection-dialog {
+	@extend %dialog_window;
+	spacing: 30px;
+}
+.audio-selection-content {
+	spacing: 20px;
+	padding: 24px;
+}
+.audio-selection-title {
+	font-weight: bold;
+	text-align: center;
+}
+.audio-selection-box {
+	spacing: 20px;
+}
+.audio-selection-device {
+	border-radius: 12px;
+	&:hover, &:focus:hover {
+		@include clickable(hover);
+	}
+	&:active, &:focus:active {
+		@include clickable(focus);
+	}
+}
+.audio-selection-device-box {
+	padding: 20px;
+	spacing: 20px;
+}
+.audio-selection-device-icon {
+	icon-size: 64px;
+}
+

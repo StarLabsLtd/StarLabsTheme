@@ -1,0 +1,10 @@
+.extension-dialog {
+	@include dialog_window;
+	.message-dialog-main-layout {
+		spacing: 24px;
+		padding: 10px;
+	}
+	.message-dialog-title {
+		color: $white;
+	}
+}

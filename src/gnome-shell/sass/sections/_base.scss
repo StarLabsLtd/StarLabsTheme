@@ -1,0 +1,45 @@
+//This is the RIGHT PLACE to edit the stylesheet
+
+//let's start by telling people not to edit the generated CSS:
+$cakeisalie: "This stylesheet is generated, DO NOT EDIT";
+/* #{$cakeisalie} */
+$panel-corner-radius: 0; // 6px;
+$panel-alpha-value: 0.6;
+$panel_opaque_value: 0.0;
+$dash-alpha-value: 0.6;
+$dash-opaque-alpha-value: $panel_opaque_value;
+$popover-alpha-value: 0.025;
+$small_radius: 4px;
+$medium_radius: 6px;
+$large_radius: 12px;
+
+/* Copyright 2009, 2015 Red Hat, Inc.
+ *
+ * Portions adapted from Mx's data/style/default.css
+ *   Copyright 2009 Intel Corporation
+ *
+ * This program is free software; you can redistribute it and/or modify it
+ * under the terms and conditions of the GNU Lesser General Public License,
+ * version 2.1, as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for
+ * more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program; if not, write to the Free Software Foundation,
+ * Inc., 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
+ */
+
+
+/* GLOBALS */
+$font-size: 11;
+$font-family: Star Labs, Cantarell, Sans-Serif;
+$_popover_bg_color: transparentize($osd_bg_color, $popover-alpha-value);
+
+stage {
+	font-family: $font-family;
+	@include fontsize($font-size);
+	color: $fg_color;
+}

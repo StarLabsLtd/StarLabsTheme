@@ -1,0 +1,409 @@
+#panel {
+	@include header;
+	font-weight: 450;
+	height: 1.86em;
+	font-feature-settings: "tnum";
+	#panelLeft, #panelCenter {
+		spacing: 4px;
+	}
+	&.solid {
+		border-bottom: 2px solid green !important;
+	}
+	&, &.solid, &,unlock-screen, &.login-screen, &.lock-screen {
+		@include header;
+		.panel-button {
+			-natural-hpadding: 12px;
+			-mininun-hpadding: 6px;
+			font-weight: 450;
+			.app-menu-icon {
+				margin-left: 4px;
+				margin-right: 4px;
+			}
+			@include clickable(normal);
+			&:hover, &:active, &:overview, &:focus, &:checked {
+				@include clickable(hover, $accent2);
+			}
+		}
+		.system-status-icon {
+			icon-size: 1.09em;
+			padding: 0 5pxl
+		}
+		.panel-corner {
+			-panel-corner-radius: $omega1;
+			-panel-corner-border-width: 2px;
+			-panel-corner-border-color: transparent;
+			&:active, &:overview, &:focus {
+				background-color: $accent2;
+			}
+			&:hover {
+				@include clickable(hover, $accent2);
+
+			}
+			&:active, &:overview, &:focus, &:checked {
+				background-color: rgba(0, 0, 0, 0.01);
+				box-shadow: inset 0px -2px $selected_bg_color;
+				@include clickable(active);
+				& > .system-status-icon {
+					icon-shadow: 0px 1px 4px rgba(0, 0, 0, 1);
+				}
+			}
+		.system-status-icon {
+			icon-size: 1.09em; padding: 0 5px;
+		}
+		.unlock-screen &, .login-screen &, .lock-screen & {
+			@include clickable(normal);
+			&:focus, &:hover, &:active {
+				@include clickable(hover, $accent2);
+			}
+		}}
+	}
+
+	.panel-status-indicators-box, .panel-status-menu-box {
+		spacing: 2px;
+	}
+	.power-status.panel-status-indicators-box {
+		spacing: 0;
+	}
+	.screencast-indicator {
+		color: $warning;
+	}
+	.remote-access-indicator {
+		color: $warning;
+	}
+
+}
+
+
+#calendarArea {
+	padding: 0.75em 1.0em;
+}
+.calendar {
+	margin-bottom: 1em;
+}
+.calendar, .datemenu-today-button, .datemenu-displays-box, .message-list-sections {
+	margin: 0 1.5em;
+}
+.datemenu-calendar-column {
+	spacing: 0.5em;
+}
+.datemenu-displays-section {
+	padding-bottom: 3em;
+}
+.datemenu-displays-box {
+	spacing: 1em;
+}
+.datemenu-calendar-column {
+	&:ltr {
+		border-left-width: 1px;
+	}
+	&:rtl {
+		border-right-width: 1px;
+	}
+}
+.datemenu-today-button, .world-clocks-button, .weather-button, .events-section-title {
+	border-radius: $omega1;
+	padding: .4em;
+}
+.message-list-section-list:ltr {
+	padding-left: .4em;
+}
+.message-list-section-list:rtl {
+	padding-right: .4em;
+}
+.datemenu-today-button, .world-clocks-button, .weather-button, .events-section-title {
+	&:hover,&:focus {
+		@include clickable(hover);
+	}
+	&:active {
+		@include clickable(active);
+	}
+}
+.world-clocks-button {
+	font-size: 10pt;
+}
+.weather-button {
+	color: $accent2;
+}
+.datemenu-today-button .date-label {
+	font-size: 1.5em;
+	font-weight: 300;
+}
+.world-clocks-header, .weather-header, .events-section-title {
+	color: $white;
+	font-weight: 450;
+	font-size: 110%;
+}
+.world-clocks-grid {
+	spacing-rows: 0.4em;
+}
+.weather-box {
+	spacing: 0.4em;
+}
+.calendar-month-label {
+	color: $subheader_fg_color;
+	font-weight: 450;
+	font-size: 110%;
+	padding: 8px 0;
+}
+.pager-button {
+	transition-duration: 100ms;
+	color: $white;
+	background-color: transparent;
+	width: 32px;
+	border-radius: $small_radius;
+	&:hover, &:focus {
+		@include clickable(hover);
+	}
+	&:active {
+//		background-color: $base_active_color;
+		@include clickable(active);
+	}
+}
+.calendar-change-month-back {
+	background-image: url("calendar-arrow-left.svg");
+	&:rtl {
+		background-image: url("calendar-arrow-right.svg");
+	}
+}
+.calendar-change-month-forward {
+	background-image: url("calendar-arrow-right.svg");
+	&:rtl {
+		background-image: url("calendar-arrow-left.svg");
+	}
+}
+.calendar-day-base {
+	font-size: 80%;
+	font-weight: 500;
+	text-align: center;
+	width: 2.4em; height: 2.4em;
+	padding: 0.1em;
+	margin: 2px;
+	border-radius: $omega1;
+	font-feature-settings: "tnum";
+	&:hover,&:focus {
+		@include clickable(hover);
+	}
+	&:selected {
+		color: $white;
+		background-color: transparent;
+		border-radius: $small_radius;
+		border: 2px solid $accent2;
+		margin: 0;
+		&:hover {
+			@include clickable(hover);
+		}
+	}
+	&.calendar-day-heading {
+		color: darken($white, $beta1);
+		margin-top: 1em;
+		font-size: 70%;
+	}
+}
+.calendar-day {
+	border-width: 2px;
+}
+.calendar-day-top {
+	border-top-width: 1px;
+}
+.calendar-day-left {
+	border-left-width: 1px;
+}
+.calendar-nonwork-day {
+	color: darken($white, $beta1);
+}
+.calendar-today {
+	font-weight: bold;
+	background-color: $accent1;
+}
+.calendar-day-with-events {
+	color: $accent1;
+	font-weight: bold;
+	background-image: url("resource:///org/gnome/shell/theme/calendar-today.svg");
+}
+.calendar-other-month-day {
+	color: darken($white, $beta2);
+	opacity: 0.5;
+}
+.calendar-week-number {
+	font-size: 70%;
+	font-weight: 700;
+	width: 2.3em; height: 1.8em;
+	border-radius: 2px;
+	padding: 0.5em 0 0;
+	margin: 6px;
+        background-color: $dark1;
+        color: $white;
+}
+.message-list {
+	width: 31.5em;
+}
+.message-list-clear-button.button {
+        @include clickable(normal);
+	&:hover,&:focus {
+		@include clickable(hover);
+	}
+	&:active {
+		@include clickable(active);
+	}
+	&:insensitive {
+		@include clickable(disabled);
+	}
+	margin: 1.5em 1.5em 0;
+}
+.message-list-sections {
+	spacing: 1em;
+}
+.message-list-section, .message-list-section-list {
+	spacing: 0.4em;
+}
+.message {
+	border: 2px solid $dark1;
+	border-radius: $omega1;
+	&:hover,&:focus {
+		border: 2px solid $accent2;
+	}
+	&:active {
+		border: 2px solid $accent3;
+	}
+	.message-icon-bin {
+		padding: 0.68em 0.2em 0.68em 0.68em;
+		&:rtl {
+			padding: 0.68em 0.68em 0.68em 0.2em;
+		}
+	}
+	.message-icon-bin > StIcon {
+		-st-icon-style: symbolic;
+		color: $white;
+		icon-size: 1.09em;
+	}
+	.message-secondary-bin {
+		padding: 0 0.82em;;
+	}
+	.message-secondary-bin > .event-time {
+		color: $white;
+		font-size: 0.7em;
+		padding-bottom: 0.13em;
+	}
+	.message-secondary-bin > StIcon {
+		icon-size: 1.09em;
+	}
+	.message-title {
+		color: $white;
+	}
+	.message-content {
+		color: $white;
+		padding: 10px;
+	}
+	.message-media-control {
+		padding: 12px;
+		color: $white;
+		&:last-child:ltr {
+			padding-right: 18px;
+		}
+		&:last-child:rtl {
+			padding-left: 18px;
+		}
+		&:hover {
+			color: $accent3;
+		}
+		&:insensitive {
+			color: $dark2;
+		}
+	}
+	.media-message-cover-icon {
+		icon-size: 48px !important;
+		&.fallback {
+			color: $accent2;
+			background-color: $dark1;
+			border: 2px solid $dark1;
+			border-radius: 2px;
+			icon-size: 16px;
+			padding: 8px;
+		}
+	}
+}
+
+.system-switch-user-submenu-icon.user-icon {
+	icon-size: 20px;
+	padding: 0 2px;
+}
+.system-switch-user-submenu-icon.default-icon {
+	icon-size: 16px;
+	padding: 0 4px;
+}
+#appMenu {
+	spinner-image: url("resource:///org/gnome/shell/theme/process-working.svg");
+	spacing: 4px;
+	.label-shadow {
+		color: transparent;
+	}
+}
+.aggregate-menu {
+	min-width: 21em;
+	.popup-menu-icon {
+		padding: 0 4px;
+	}
+	.popup-sub-menu .popup-menu-item > :first-child {
+		&:ltr {
+			padding-left: 20px;
+			margin-left: 1.09em;
+		}
+		&:rtl {
+			padding-right: 20px;
+			margin-right: 1.09em;
+		}
+	}
+}
+.system-menu-action {
+	-st-icon-style: symbolic;
+	color: $white;
+	transition-duration: 200ms;
+	border-radius: $omega1;
+	padding: 13px;
+	border: none;
+	&:hover, &:focus {
+		@include clickable(hover);
+		border: none;
+		padding: 13px;
+	}
+	&:active {
+		@include clickable(active);
+	}
+	& > StIcon {
+		icon-size: 16px;
+	}
+}
+.ripple-box {
+	width: 52px;
+	height: 52px;
+	background-image: url("corner-ripple-ltr.svg");
+	background-size: contain;
+}
+
+.ripple-box:rtl {
+	background-image: url("resource:///org/gnome/shell/theme/corner-ripple-rtl.png");
+}
+
+.popup-menu-arrow {
+	width: 16px;
+	height: 16px;
+}
+.popup-menu-icon {
+	icon-size: 1.09em;
+}
+
+.window-close {
+	transition-duration: 100ms;
+	background-image: url("close-window.svg");
+	background-size: 32px;
+	height: 32px;
+	width: 32px;
+	-shell-close-overlap: 13px;
+	&:hover {
+		background-image: url("close-window-hover.svg");
+	}
+	&:active {
+		background-image: url("close-window-active.svg");
+	}
+}
+

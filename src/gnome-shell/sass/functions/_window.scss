@@ -1,0 +1,9 @@
+@mixin window {
+	background-color: $white;
+	color: $dark1;
+	transition: $tran1;
+	&:backdrop {
+		background-color: darken($white, $beta1);
+		color: lighten($dark1, $beta1);
+	}
+}

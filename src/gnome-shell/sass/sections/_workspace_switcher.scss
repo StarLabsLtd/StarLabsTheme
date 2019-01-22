@@ -1,0 +1,63 @@
+.workspace-switcher-group {
+	padding: 12px;
+}
+.workspace-switcher-container {
+	@extend %osd-panel;
+	padding: 5px;
+	border-radius: $omega2;
+}
+.workspace-switcher {
+	background: transparent;
+	border: 0px;
+	border-radius: 0px;
+	padding: 0px;
+	spacing: 8px;
+}
+.ws-switcher-active-up, .ws-switcher-active-down {
+	height: 50px;
+	background-color: transparentize($fg_color, 0.60);
+	color: $selected_fg_color;
+	background-size: 32px;
+	border-radius: $omega2;
+}
+.ws-switcher-active-up {
+	background-image: url("ws-switch-arrow-up.svg");
+}
+.ws-switcher-active-down {
+	background-image: url("ws-switch-arrow-down.svg");
+}
+.ws-switcher-box {
+	height: 50px;
+	border: 1px solid transparentize($osd_fg_color,0.9);
+	background: transparentize($osd_fg_color,0.9);
+	border-radius: $medium_radius;
+}
+
+%osd-panel {
+	color: $osd_fg_color;
+	background-color: $_popover_bg_color;
+	border: 1px solid $osd_borders_color;
+	border-radius: $large_radius;
+	padding: 12px;
+	box-shadow: 0 3px 9px 1px transparentize(black, 0.5);
+}
+
+%dialog_window {
+  $dialog_bg_color: transparentize($light_base_color, $popover-alpha-value);
+  color: $dark_fg_color;
+  background-color: $dialog_bg_color;
+  border: 1px solid $light_borders_color;
+  box-shadow: 0 3px 9px 1px transparentize(black, 0.5); // to match with the notification banner but maybe no?
+
+  StEntry {
+    @extend %light_entry;
+  }
+  .button {
+    background-color: white;
+    color: $dark_fg_color;
+    border-color: $light_borders_color;
+    &:hover { background-color: $light_base_hover_color; }
+    &:active { background-color: $light_base_active_color; box-shadow: none; }
+  }
+}
+

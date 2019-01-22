@@ -1,0 +1,53 @@
+// Star Labs Palette
+// Accents
+$accent1: #6ec5ff; // Light + Selected
+$accent2: #2195f2; // Standard Accent
+$accent3: #0068bf; // Dark + Active
+
+// Dark
+$dark1: #17171d; // 
+$dark2: #202026;
+
+// White
+$white: #ffffff; // Just to make it easy to change
+
+// Context Colors
+$success: #0ba011;
+$warning: #c98810;
+$failure: #b20903;
+
+// Alpha & Omega
+$alpha1: 0.3;
+$alpha2: 0.6;
+$alpha3: 0.9;
+$omega1: 3px;
+$omega2: 6px;
+$omega3: 9px;
+$omega4: 20px; //Menu + such heights
+$beta1: 5%;
+$beta2: 10%;
+$beta3: 50%;
+
+// Transitions
+$tran1: all 1000ms ease-out; // Used for backdrop(ing)
+$tran2: all 500ms cubic-bezier(0, 0, 0.2, 1); // Used for clicking
+$anim1: ripple_effect 225ms cubic-bezier(0, 0, 0.2, 1) forwards;
+$anim2: ripple_effect 225ms cubic-bezier(0, 0, 0.2, 1) backwards;
+
+// These are mainly comments for reference that we used when creating functions
+
+// Standard Header
+// BG: $dark1;
+// FG: $white;
+
+// Standard Window
+// BG: $white;
+// FG: $dark1;
+
+// Backdrop
+// BG: inverse($beta1)
+// FG: inverse($beta1)
+
+// Button + Switch
+// BG: $accent2;
+// FG: $white;
