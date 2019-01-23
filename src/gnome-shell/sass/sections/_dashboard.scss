@@ -1,8 +1,7 @@
 #dash {
 	font-size: 9pt;
-	@include header;
+	@include fill(normal);
 	padding: 4px 0;
-	border: 1px solid $dark1;
 	border-left: 0px;
 	border-radius: 0px 9px 9px 0px;
 	&:rtl {
@@ -24,8 +23,7 @@
 .dash-label {
 	border-radius: $omega1;
 	padding: 6px 12px;
-	@include header;
-	border: 1px solid $dark1;
+	@include fill(normal);
 	text-align: center;
 	-x-offset: 8px;
 }
@@ -38,9 +36,7 @@
 	}
 }
 .system-action-icon {
-//	background-color: black;
-//	color: white;
-	@include header;
+	@include fill(normal);
 	border-radius: 99px;
 	icon-size: 48px;
 }
@@ -50,18 +46,11 @@
 .app-view-control {
 	padding: 4px 32px;
 	margin: 0 4px;
-	&, &:hover, &:checked {
-		@include clickable(undecorated);
-	}
-//	color: $insensitive_fg_color;
-	&:hover {
-//		box-shadow: inset 0 -2px $insensitive_fg_color;
-		color: $white;
-	}
 	&:checked {
-		color: $white;
-		font-weight: bold;
-//		box-shadow: inset 0 -2px $selected_bg_color;
+		@include clickable(active);
+	}
+	&:hover {
+		@include clickable(hover);
 	}
 	&:first-child {
 		border-right-width: 0;
@@ -72,156 +61,115 @@
 	}
 }
 .search-provider-icon, .list-search-result {
-	@extend %icon_tile;
+	zcolor: $white;
+	border-radius: $omega1;
+	padding: 6px;
+	transition: $tran2;
+	text-align: center;
 	&:active, &:checked {
-		background-color: transparentize(darken($osd_bg_color,10%),.1);
-		}
-		&:focus, &:selected, &:hover {
-			background-color: transparentize($osd_fg_color,.9);
-			transition-duration: 200ms;
-		}
+		@include clickable(active);
 	}
-
-// Up to here
-  .app-well-app,
-  .app-well-app.app-folder,
-  .show-apps,
-  .grid-search-result {
-    & .overview-icon {
-      @extend %icon_tile;
-    }
-    &:active .overview-icon,
-    &:checked .overview-icon {
-      // when clicking on an app or a folder is active
-      $_bg: darken($osd_fg_color, 10%);
-      background-color: transparentize($_bg,.7) !important;
-      box-shadow: inset 0 1px 2px $osd_borders_color;
-    }
-    &:hover .overview-icon,
-    &:focus .overview-icon,
-    &:selected .overview-icon {
-      // when hovering over an app
-      $_bg: $osd_fg_color;
-      background-color: transparentize($_bg,.7);
-      transition-duration: 0ms;
-      border-image: none;
-      background-image: none;
-    }
-
-  }
-
-  .app-well-app-running-dot { //running apps indicator
-    width: 6px; height: 6px;
-    box-shadow: 1px 1px 5px 0px transparentize(black, 0.5);
-    border-radius: 3px;
-    background-color: $selected_bg_color;
-    margin-bottom: 1px;
-  }
-
-  %icon_tile {
-    // appeareance of apps
-    color: $osd_fg_color;
-    border-radius: $small_radius;
-    padding: 6px;
-    border: 1px solid transparent;
-    transition-duration: 100ms;
-    text-align: center;
-  }
-
-  .app-well-app.app-folder > .overview-icon {
-    // app folder
-    $_bg: darken($osd_fg_color, 25%);
-    background-color: transparentize($_bg,.5);
-    box-shadow: inset 0 0 0 1px transparentize($_bg,.6);
-  }
-
-  .show-apps:checked .show-apps-icon,
-  .show-apps:focus .show-apps-icon {
-    color: white;
-    transition-duration: 100ms;
-  }
-
-
-  // Collections
-  .app-folder-popup { //expanded collection
-    $_bg: $osd_fg_color;
-    -arrow-border-radius: $medium_radius;
-    -arrow-background-color: transparentize($_bg,.7);
-    -arrow-border-width: 1px;
-    -arrow-border-color: transparentize($_bg,.5);
-    -arrow-base: 24px;
-    -arrow-rise: 11px;
-  }
-  .app-folder-popup-bin { padding: 5px; }
-  .app-folder-icon {
-    padding: 5px;
-    spacing-rows: 5px;
-    spacing-columns: 5px;
-  }
-
-  .page-indicator {
-    padding: 15px 20px;
-
-    .page-indicator-icon {
-      width: 18px;
-      height: 18px;
-      background-image: url(resource:///org/gnome/shell/theme/page-indicator-inactive.svg);
-    }
-
-    &:hover .page-indicator-icon { background-image: url(resource:///org/gnome/shell/theme/page-indicator-hover.svg); }
-    &:active .page-indicator-icon { background-image: url(resource:///org/gnome/shell/theme/page-indicator-active.svg); }
-    &:checked .page-indicator-icon,
-    &:checked:active { background-image: url(resource:///org/gnome/shell/theme/page-indicator-checked.svg); }
-  }
-
-  .no-frequent-applications-label { @extend %status_text; }
-
-  .app-well-app > .overview-icon.overview-icon-with-label,
-  .grid-search-result .overview-icon.overview-icon-with-label {
-    padding: 10px 8px 5px 8px;
-    spacing: 4px;
-  }
-
-  // Workspace pager
-  .workspace-thumbnails { //container ala dash
-    @extend %overview-panel;
-    visible-width: 32px; //amount visible before hover
-    spacing: 11px;
-    padding: 8px;
-    border-radius: $medium_radius 0 0 $medium_radius;
-    //border-width: 1px 0 1px 1px; //fixme: can't have non unoform borders :(
-    &:rtl { border-radius: 0 $medium_radius $medium_radius 0;}
-
-
-    .placeholder {
-      background-image: url("resource:///org/gnome/shell/theme/dash-placeholder.svg");
-      background-size: contain;
-      height: 24px;
-    }
-  }
-  .workspace-thumbnail-indicator {
-    border: 0px solid $selected_bg_color;
-    border-left-width: 2px;
-    padding: 4px;
-  }
-
-  //Some hacks I don't even
-  .search-display > StBoxLayout,
-  .all-apps,
-  .frequent-apps > StBoxLayout {
-    // horizontal padding to make sure scrollbars or dash don't overlap content
-    padding: 0px 88px 10px 88px;
-  }
-
-%overview-panel {
-  color: $osd_fg_color;
-  background-color: transparentize($panel_bg_color, $panel-alpha-value);
-  border: none;
+	&:focus, &:selected, &:hover {
+		@include clickable(hover);
+	}
+}
+.app-well-app, .app-well-app.app-folder, .show-apps, .grid-search-result {
+	& .overview-icon {
+		color: $white;
+		border-radius: $omega1;
+		padding: 6px;
+		transition: $tran2;
+		text-align: center;
+	}
+	&:active .overview-icon, &:checked .overview-icon {
+		@include clickable(active);
+	}
+	&:hover .overview-icon, &:focus .overview-icon, &:selected .overview-icon {
+		@include clickable(hover);
+	}
+}
+.app-well-app-running-dot {
+	width: 6px;
+	height: 6px;
+	border-radius: $omega1;
+	background-color: $accent2;
+	margin-bottom: 1px;
+}
+.app-well-app.app-folder > .overview-icon {
+	color: $white;
+	border-radius: $omega1;
+	padding: 6px;
+	transition: $tran2;
+	text-align: center;
+}
+.show-apps:checked .show-apps-icon, .show-apps:focus .show-apps-icon {
+	color: $white;
+	transition: $tran2;
+}
+.app-folder-popup {
+	-arrow-border-radius: $omega1;
+	-arrow-background-color: transparentize($dark1,.7);
+	-arrow-border-width: 1px;
+	-arrow-border-color: transparentize($dark1,.5);
+	-arrow-base: 24px;
+	-arrow-rise: 11px;
+}
+.app-folder-popup-bin {
+	padding: 5px;
+}
+.app-folder-icon {
+	padding: 5px;
+	spacing-rows: 5px;
+	spacing-columns: 5px;
+}
+.page-indicator {
+	padding: 15px 20px;
+	.page-indicator-icon {
+		width: 18px;
+		height: 18px;
+		background-image: url(resource:///org/gnome/shell/theme/page-indicator-inactive.svg);
+	}
+	&:hover .page-indicator-icon {
+		background-image: url(resource:///org/gnome/shell/theme/page-indicator-hover.svg);
+	}
+	&:active .page-indicator-icon {
+		background-image: url(resource:///org/gnome/shell/theme/page-indicator-active.svg);
+	}
+	&:checked .page-indicator-icon,	&:checked:active {
+		background-image: url(resource:///org/gnome/shell/theme/page-indicator-checked.svg);
+	}
+}
+.no-frequent-applications-label {
+	font-size: 2em;
+	font-weight: bold;
+	color: $white;
+}
+.app-well-app > .overview-icon.overview-icon-with-label, .grid-search-result .overview-icon.overview-icon-with-label {
+	padding: 10px 8px 5px 8px;
+	spacing: 4px;
+}
+.workspace-thumbnails {
+	border: none;
+	@include fill(normal);
+	visible-width: 32px;
+	spacing: 11px;
+	padding: 8px;
+	border-radius: $omega1 0 0 $omega1;
+	&:rtl {
+		border-radius: 0 $medium_radius $medium_radius 0;
+	}
+	.placeholder {
+		background-image: url("resource:///org/gnome/shell/theme/dash-placeholder.svg");
+		background-size: contain;
+		height: 24px;
+	}
+}
+.workspace-thumbnail-indicator {
+//	border: 0px solid $accent2;
+	border-left-width: 2px;
+	padding: 4px;
 }
 
-%status_text {
-  font-size: 2em;
-  font-weight: bold;
-  color: $fg_color;
+.search-display > StBoxLayout, .all-apps, .frequent-apps > StBoxLayout {
+	padding: 0px 88px 10px 88px;
 }
-

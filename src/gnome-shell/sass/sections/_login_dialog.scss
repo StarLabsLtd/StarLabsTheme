@@ -7,16 +7,12 @@
 	border: none;
 	background-color: transparent;
 	StEntry {
-		@include entry(normal,$white);
+		@include entry(normal);
 		&:hover  {
-			@include entry(hover,$accent2);
+			@include entry(hover);
 		}
 		&:focus {
-			@include entry(active, $accent2);
-		}
-	@include entry(normal);
-		&:focus {
-			@include entry(focus);
+			@include entry(active);
 		}
 		&:insensitive {
 			@include entry(disabled);
@@ -40,21 +36,18 @@
 		&:default {
 			padding-bottom: 5px;
 			padding-top: 5px;
-			@include button(normal, $success);
+			@include button(normal, $accent2);
 			&:hover {
-				@include clickable(hover, $success);
+				@include clickable(hover, $accent2);
 			}
 			&:focus {
-				@include clickable(active, $success);
+				@include clickable(focus, $accent2);
 			}
 			&:active {
-				@include clickable(active, $success);
-			}
-			&:focus:hover {
-				@include clickable(hover, $success);
+				@include clickable(active, $accent2);
 			}
 			&:insensitive {
-				@include button(insensitive, $success);
+				@include clickable(disabled, $accent2);
 			}
 		}
 	}
@@ -153,12 +146,12 @@
 	icon-size: 1.25em;
 }
 .login-dialog-session-list-button {
-	color: $dark1;
+	@include clickable(normal);
 	&:hover,&:focus {
-		color: $white;
+		@include clickable(hover);
 	}
 	&:active {
-		color: $accent2;
+		@include clickable(active);
 	}
 }
 

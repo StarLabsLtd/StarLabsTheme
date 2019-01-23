@@ -41,5 +41,41 @@ $_popover_bg_color: transparentize($osd_bg_color, $popover-alpha-value);
 stage {
 	font-family: $font-family;
 	@include fontsize($font-size);
-	color: $fg_color;
+	color: $white;
 }
+
+%osd-panel {
+	@include fill(normal);
+//	border: 1px solid $osd_borders_color;
+	border-radius: $omega1;
+	padding: 12px;
+	box-shadow: 0 3px 9px 1px transparentize(black, 0.5);
+}
+
+%dialog_window {
+	@include fill(normal);
+	 StEntry {
+		@extend %light_entry;
+	}
+	.button {
+		@include clickable(normal);
+		&:hover {
+			@include clickable(hover);
+		}
+		&:active {
+			@include clickable(active);
+		}
+	}
+}
+
+%overview-panel {
+	@include fill(normal);
+	border: none;
+}
+
+%status_text {
+	font-size: 2em;
+	font-weight: bold;
+	color: $white; 
+}
+

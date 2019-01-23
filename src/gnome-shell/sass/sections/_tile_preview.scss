@@ -1,19 +1,13 @@
-
-/* Tiled window previews */
 .tile-preview {
-  background-color: transparentize(white, .55);
-  border: 2px solid transparentize(white, .75);
+	@include clickable(normal);
 }
-
-  .tile-preview-left.on-primary {
-    border-radius: $panel-corner-radius 0 0 0;
-  }
-
-  .tile-preview-right.on-primary {
-    border-radius: 0 $panel-corner-radius 0 0;
-  }
-
-  .tile-preview-left.tile-preview-right.on-primary {
-    border-radius: $panel-corner-radius $panel-corner-radius 0 0;
-  }
+.tile-preview-left.on-primary {
+	border-radius: 0;
+}
+.tile-preview-right.on-primary {
+	border-radius: 0;
+}
+.tile-preview-left.tile-preview-right.on-primary {
+	border-radius: 0;
+}
 

@@ -9,13 +9,10 @@
 .candidate-box {
 	padding: 0.3em 0.5em 0.3em 0.5em;
 	border-radius: 4px;
-	@include clickable(hover);
-
-//	&:selected, &:hover {
-//		background-color: $selected_bg_color;
-//		color: $selected_fg_color;
-//	}
-
+	@include clickable(normal);
+	&:selected, &:hover {
+		@include clickable(hover);
+	}
 }
 
 .candidate-page-button-box {

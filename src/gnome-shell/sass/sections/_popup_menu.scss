@@ -1,76 +1,58 @@
-
-/* Popovers/Menus */
-
 .popup-menu {
-  min-width: 15em;
-  $bc: $osd_borders_color;
-  $bg: $osd_bg_color;
-
-  .popup-menu-arrow { } //defined globally in the TOP BAR
-  .popup-sub-menu {
-    background-color: transparentize(darken($base_active_color,55%), $popover-alpha-value);
-    box-shadow: inset 0 -1px 0px $bc;
-  }
-
-  .popup-menu-content { padding: 1em 0em; }
-  .popup-menu-item {
-    spacing: 12px;
-    border-top: 1px solid transparent; // to avoid popping
-
-    &:ltr { padding: .4em 1.75em .4em 0em; }
-    &:rtl { padding: .4em 0em .4em 1.75em; }
-    &:checked {
-      //less transparency than $osd_borders_color to match the bottom color of the submenu
-      box-shadow: inset 0 -1px 0px transparentize($fg_color, 0.855);
-      background-color: transparent;
-      border-top-color: transparent;
-      font-weight: bold;
-    }
-    &.selected { background-color: $base_hover_color; color: $fg_color; border-top-color: $light_base_hover_color; }
-    &:active {
-      background-color: $base_active_color;
-      color: $active_fg_color;
-      box-shadow: none;
-    }
-    &:insensitive { color: transparentize($fg_color,.5); }
-  }
-
-  .popup-inactive-menu-item { //all icons and other graphical elements
-    color: $fg_color;
-
-    &:insensitive { color: transparentize($fg_color,0.5); }
-  }
-  //.popup-status-menu-item { font-weight: normal;  color: pink; } //dunno what that is
-  &.panel-menu {
-    -boxpointer-gap: 4px;
-    margin-bottom: 1.75em;
-  }
+	min-width: 15em;
+	.popup-sub-menu {
+		@include clickable(normal);
+	}
+	.popup-menu-content {
+		padding: 1em 0em;
+	}
+	.popup-menu-item {
+		spacing: 12px;
+		border-top: 1px solid transparent;
+		&:ltr {
+			padding: .4em 1.75em .4em 0em;
+		}
+		&:rtl {
+			padding: .4em 0em .4em 1.75em;
+		}
+		&.selected {
+			@include clickable(focus);
+		}
+		&:active {
+			@include clickable(active);
+		}
+		&:insensitive {
+			@include clickable(disabled);
+		}
+	}
+	.popup-inactive-menu-item {
+		@include clickable(normal);
+		&:insensitive {
+			@include clickable(disabled);
+		}
+	}
+	&.panel-menu {
+		-boxpointer-gap: 4px;
+		margin-bottom: 1.75em;
+	}
 }
-
-
-
-  .popup-menu-ornament {
-    text-align: right;
-    width: 1.2em;
-  }
-  .popup-menu-boxpointer,
-  .candidate-popup-boxpointer {
-    -arrow-border-radius: $medium_radius;
-    -arrow-background-color: $_popover_bg_color;
-    -arrow-border-width: 1px;
-    -arrow-border-color: $osd_borders_color;
-    -arrow-base: 24px;
-    -arrow-rise: 11px;
-    -arrow-box-shadow: 0 1px 3px black; //dreaming. bug #689995
-  }
-
-  .popup-separator-menu-item {
-    //-margin-horizontal: 24px;
-    height: 1px; //not really the whole box
-    margin: 6px 64px;
-    background-color: transparent;
-    border-color: transparentize($fg_color, 0.91);
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-  }
+.popup-menu-ornament {
+	text-align: right;
+	width: 1.2em;
+}
+.popup-menu-boxpointer, .candidate-popup-boxpointer {
+	@include clickable(normal);
+	-arrow-border-radius: $omega1;
+	-arrow-border-width: 1px;
+	-arrow-base: 24px;
+	-arrow-rise: 11px;
+}
+.popup-separator-menu-item {
+	height: 1px;
+	margin: 6px 64px;
+	background-color: transparent;
+	border-color: transparent;;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
 

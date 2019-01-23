@@ -21,17 +21,17 @@
 @import 'sections/osd';					//100%
 @import 'sections/overview';				//100%
 @import 'sections/polkit_dialog';			//100%
-@import 'sections/popup_menu';				//100%
-@import 'sections/prompt_dialog';			//100%
+@import 'sections/popup_menu';				//100% Light Button Fi
+@import 'sections/prompt_dialog';			//
 @import 'sections/screen_shield';			//100%
-@import 'sections/scrollbars';				//100%
-@import 'sections/shell_mount_dialog';			//100%
-@import 'sections/slider';				//100%
-@import 'sections/switcher_popup';			//100%
-@import 'sections/switches';				//100% - tidy
-@import 'sections/tile_preview';			//99%
-@import 'sections/top_bar';				//100%
-@import 'sections/widgets';				//100%
-@import 'sections/window_cycler';			//100%
-@import 'sections/workspace_switcher';			//100%
+@import 'sections/scrollbars';
+@import 'sections/shell_mount_dialog';
+@import 'sections/slider';
+@import 'sections/switcher_popup';
+@import 'sections/switches';
+@import 'sections/tile_preview';
+@import 'sections/top_bar';
+@import 'sections/widgets'; 
+@import 'sections/window_cycler';
+@import 'sections/workspace_switcher';
 

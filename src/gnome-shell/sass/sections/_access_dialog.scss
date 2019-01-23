@@ -1,4 +1,22 @@
 .access-dialog {
-	@extend %dialog_window;
+	@include fill(normal);
+	StEntry {
+		@include entry(normal);
+		&:focus {
+			@include entry(focus);
+		}
+		&:insensitive {
+			@include entry(disabled);
+		}
+	}
+	.button {
+		@include clickable(normal);
+		&:hover {
+			@include clickable(hover);
+		}
+		&:active {
+			@include clickable(active);
+		}
+	}
 	spacing: 30px;
 }

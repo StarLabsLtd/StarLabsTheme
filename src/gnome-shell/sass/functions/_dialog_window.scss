@@ -1,8 +1,5 @@
 @mixin dialog_window {
-//	$dialog_bg_color: transparentize($light_base_color, $popover-alpha-value);
-
-	@include header;
-//	border: 1px solid $dark2;
+	@include fill(normal);
 	box-shadow: 0 3px 9px 1px transparentize(black, 0.5);
 	StEntry {
 		@include entry(normal);

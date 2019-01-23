@@ -1,10 +1,10 @@
 #!/bin/bash
 # GNOME SHELL
-cp -r upstream/yaru/gnome-shell/src/* src/gnome-shell
-mv src/gnome-shell/*.svg src/gnome-shell/assets
+# cp -r upstream/yaru/gnome-shell/src/* src/gnome-shell
+# mv src/gnome-shell/*.svg src/gnome-shell/assets
 
 # GTK
-cp -r upstream/yaru/gtk/src/light/* src/
+#cp -r upstream/yaru/gtk/src/light/* src/
 
 # Change Ubuntu Colors
 # sed -i "s/'colors';/'starlabs-colors';/g" src/gtk-3.20/gtk.scss

@@ -1,57 +1,73 @@
-.headline { font-size: 110%; }
-.lightbox { background-color: black; }
-.flashspot { background-color: white; }
-
-.modal-dialog {
-  border-radius: $medium_radius;
-  @extend %dialog_window;
-  .modal-dialog-content-box {
-    padding: 24px;
-  }
-  .run-dialog-entry { width: 20em; margin-bottom: 6px;
-    &:focus { border-color: $selected_bg_color; }
-  }
-  .run-dialog-error-box {
-    padding-top: 16px;
-    spacing: 6px;
-  }
-  .run-dialog-button-box { padding-top: 1em; }
-  .run-dialog-label {
-    @include fontsize($font-size + 1.1);
-    font-weight: normal;
-    color: $dark_subtext_color;
-    padding-bottom: .4em;
-  }
-
+.headline {
+	font-size: 110%;
 }
-
-  .mount-dialog-subject,
-  .end-session-dialog-subject { //this should be a generic header class
-    @include fontsize($font-size * 1.3);
-  }
-
-/* Message Dialog */
-  .message-dialog-main-layout {
-    padding: 12px 20px 0;
-    spacing: 12px;
-  }
-
-  .message-dialog-content {
-    max-width: 28em;
-    spacing: 20px;
-  }
-
-  .message-dialog-icon {
-    min-width: 48px;
-    icon-size: 48px;
-  }
-
-  .message-dialog-title {
-    font-size: 135%;
-    font-weight: normal;
-  }
-
-  .message-dialog-subtitle {
-    color: $dark_subtext_color;
-    font-weight: normal;
-  }
+.lightbox {
+	background-color: $dark1;
+}
+.flashspot {
+	background-color: $white;
+}
+.modal-dialog {
+	border-radius: $omega1;
+	@include fill(normal);
+	StEntry {
+		@include entry(normal);
+		&:focus {
+			@include entry(focus);
+		}
+		&:insensitive {
+			@include entry(disabled);
+		}
+	}
+	.button {
+		@include clickable(normal);
+		&:hover {
+			@include clickable(hover);
+		}
+		&:active {
+			@include clickable(active);
+		}
+	}
+	.modal-dialog-content-box {
+		padding: 24px;
+	}
+	.run-dialog-entry {
+		width: 20em;
+		margin-bottom: 6px;
+	}
+	.run-dialog-error-box {
+		padding-top: 16px;
+		spacing: 6px;
+	}
+	.run-dialog-button-box {
+		padding-top: 1em;
+	}
+	.run-dialog-label {
+		@include fontsize($font-size + 1.1);
+		font-weight: normal;
+		padding-bottom: .4em;
+	}
+}
+.mount-dialog-subject, .end-session-dialog-subject {
+	@include fontsize($font-size * 1.3);
+}
+.message-dialog-main-layout {
+	padding: 12px 20px 0;
+	spacing: 12px;
+}
+.message-dialog-content {
+	max-width: 28em;
+	spacing: 20px;
+}
+.message-dialog-icon {
+	min-width: 48px;
+	icon-size: 48px;
+}
+.message-dialog-title {
+	font-size: 135%;
+	font-weight: normal;
+}
+.message-dialog-subtitle {
+	color: $dark_subtext_color;
+	font-weight: normal;
+}

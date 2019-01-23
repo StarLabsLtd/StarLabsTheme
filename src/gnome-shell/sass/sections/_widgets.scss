@@ -9,13 +9,13 @@
 		@include clickable(focus);
 	}
 	&:hover {
-		@include clickable(active);
+		@include clickable(hover);
 	}
 	&:insensitive {
 		@include clickable(disabled);
 	}
 	&:active {
-		@include clickable(hover);
+		@include clickable(active);
 	}
 }
 .modal-dialog-linked-button, %light_button {
@@ -25,7 +25,7 @@
 		@include clickable(active);
 	}
 	&:focus {
-		@include clickable(hover);
+		@include clickable(focus);
 	}
 	&:hover {
 		@include clickable(hover);

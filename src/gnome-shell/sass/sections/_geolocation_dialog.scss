@@ -1,5 +1,23 @@
-.geolocation-dialog {
-@include dialog_window;
+.geolocation-dialog, inhibit-shortcuts-dialog {
+	@include fill(normal);
+	StEntry {
+		@include entry(normal);
+		&:focus {
+			@include entry(active);
+		}
+		&:insensitive {
+			@include entry(disabled);
+		}
+	}
+	.button {
+		@include clickable(normal);
+		&:hover {
+			@include clickable(hover);
+		}
+		&:active {
+			@include clickable(active);
+		}
+	}
 	spacing: 30px;
 }
 

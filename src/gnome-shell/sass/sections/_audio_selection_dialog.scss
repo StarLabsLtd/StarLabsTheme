@@ -1,5 +1,14 @@
 .audio-device-selection-dialog {
-	@extend %dialog_window;
+	@include fill(normal)
+	StEntry {
+		@include entry(normal);
+		&:focus {
+			@include entry(focus);
+		}
+		&:active {
+			@include entry(active);
+		}
+	}
 	spacing: 30px;
 }
 .audio-selection-content {
@@ -15,6 +24,7 @@
 }
 .audio-selection-device {
 	border-radius: 12px;
+	@include clickable(norma);
 	&:hover, &:focus:hover {
 		@include clickable(hover);
 	}

@@ -1,16 +1,12 @@
 #panel {
-	@include header;
 	font-weight: 450;
 	height: 1.86em;
 	font-feature-settings: "tnum";
 	#panelLeft, #panelCenter {
 		spacing: 4px;
 	}
-	&.solid {
-		border-bottom: 2px solid green !important;
-	}
 	&, &.solid, &,unlock-screen, &.login-screen, &.lock-screen {
-		@include header;
+		@include fill(normal);
 		.panel-button {
 			-natural-hpadding: 12px;
 			-mininun-hpadding: 6px;
@@ -21,41 +17,40 @@
 			}
 			@include clickable(normal);
 			&:hover, &:active, &:overview, &:focus, &:checked {
-				@include clickable(hover, $accent2);
+				@include clickable(hover);
 			}
 		}
 		.system-status-icon {
 			icon-size: 1.09em;
-			padding: 0 5pxl
+			padding: 0 5px;
 		}
 		.panel-corner {
 			-panel-corner-radius: $omega1;
 			-panel-corner-border-width: 2px;
 			-panel-corner-border-color: transparent;
 			&:active, &:overview, &:focus {
-				background-color: $accent2;
+				@include clickable(focus);
 			}
 			&:hover {
-				@include clickable(hover, $accent2);
+				@include clickable(hover);
 
 			}
 			&:active, &:overview, &:focus, &:checked {
-				background-color: rgba(0, 0, 0, 0.01);
-				box-shadow: inset 0px -2px $selected_bg_color;
 				@include clickable(active);
 				& > .system-status-icon {
 					icon-shadow: 0px 1px 4px rgba(0, 0, 0, 1);
 				}
 			}
-		.system-status-icon {
-			icon-size: 1.09em; padding: 0 5px;
-		}
-		.unlock-screen &, .login-screen &, .lock-screen & {
-			@include clickable(normal);
-			&:focus, &:hover, &:active {
-				@include clickable(hover, $accent2);
+			.system-status-icon {
+				icon-size: 1.09em; padding: 0 5px;
 			}
-		}}
+			.unlock-screen &, .login-screen &, .lock-screen & {
+				@include clickable(normal);
+				&:focus, &:hover, &:active {
+					@include clickable(hover);
+				}
+			}
+		}
 	}
 
 	.panel-status-indicators-box, .panel-status-menu-box {
@@ -122,14 +117,14 @@
 	font-size: 10pt;
 }
 .weather-button {
-	color: $accent2;
+	@include clickable(normal);
 }
 .datemenu-today-button .date-label {
 	font-size: 1.5em;
 	font-weight: 300;
 }
 .world-clocks-header, .weather-header, .events-section-title {
-	color: $white;
+	@include fill(normal);
 	font-weight: 450;
 	font-size: 110%;
 }
@@ -140,22 +135,19 @@
 	spacing: 0.4em;
 }
 .calendar-month-label {
-	color: $subheader_fg_color;
+	@include fill(normal);
 	font-weight: 450;
 	font-size: 110%;
 	padding: 8px 0;
 }
 .pager-button {
-	transition-duration: 100ms;
-	color: $white;
-	background-color: transparent;
+	@include fill(normal);
 	width: 32px;
-	border-radius: $small_radius;
+	border-radius: $omega1;
 	&:hover, &:focus {
 		@include clickable(hover);
 	}
 	&:active {
-//		background-color: $base_active_color;
 		@include clickable(active);
 	}
 }
@@ -184,17 +176,15 @@
 		@include clickable(hover);
 	}
 	&:selected {
-		color: $white;
-		background-color: transparent;
-		border-radius: $small_radius;
-		border: 2px solid $accent2;
+		@include clickable(focus);
+		border-radius: $omega1;
 		margin: 0;
 		&:hover {
 			@include clickable(hover);
 		}
 	}
 	&.calendar-day-heading {
-		color: darken($white, $beta1);
+		@include fill(normal);
 		margin-top: 1em;
 		font-size: 70%;
 	}
@@ -209,19 +199,19 @@
 	border-left-width: 1px;
 }
 .calendar-nonwork-day {
-	color: darken($white, $beta1);
+	@include fill(normal);
 }
 .calendar-today {
 	font-weight: bold;
-	background-color: $accent1;
+	@include fill(normal);
 }
 .calendar-day-with-events {
-	color: $accent1;
+	@include fill(hover);
 	font-weight: bold;
 	background-image: url("resource:///org/gnome/shell/theme/calendar-today.svg");
 }
 .calendar-other-month-day {
-	color: darken($white, $beta2);
+	@include fill(backdrop);
 	opacity: 0.5;
 }
 .calendar-week-number {
@@ -231,8 +221,7 @@
 	border-radius: 2px;
 	padding: 0.5em 0 0;
 	margin: 6px;
-        background-color: $dark1;
-        color: $white;
+        @include fill(normal);
 }
 .message-list {
 	width: 31.5em;
@@ -257,13 +246,12 @@
 	spacing: 0.4em;
 }
 .message {
-	border: 2px solid $dark1;
 	border-radius: $omega1;
 	&:hover,&:focus {
-		border: 2px solid $accent2;
+		@include clickable(focus);
 	}
 	&:active {
-		border: 2px solid $accent3;
+		@include clickable(active);
 	}
 	.message-icon-bin {
 		padding: 0.68em 0.2em 0.68em 0.68em;
@@ -273,14 +261,14 @@
 	}
 	.message-icon-bin > StIcon {
 		-st-icon-style: symbolic;
-		color: $white;
+		@include clickable(normal);
 		icon-size: 1.09em;
 	}
 	.message-secondary-bin {
 		padding: 0 0.82em;;
 	}
 	.message-secondary-bin > .event-time {
-		color: $white;
+		@include clickable(normal);
 		font-size: 0.7em;
 		padding-bottom: 0.13em;
 	}
@@ -288,15 +276,16 @@
 		icon-size: 1.09em;
 	}
 	.message-title {
-		color: $white;
+		@include fill(normal);
 	}
 	.message-content {
-		color: $white;
+		@include fill(normal);
 		padding: 10px;
 	}
 	.message-media-control {
+		border-radius: $omega1;
 		padding: 12px;
-		color: $white;
+		@include clickable(normal);
 		&:last-child:ltr {
 			padding-right: 18px;
 		}
@@ -304,18 +293,16 @@
 			padding-left: 18px;
 		}
 		&:hover {
-			color: $accent3;
+			@include clickable(hover, $accent2);
 		}
 		&:insensitive {
-			color: $dark2;
+			@include clickable(disabled);
 		}
 	}
 	.media-message-cover-icon {
 		icon-size: 48px !important;
 		&.fallback {
-			color: $accent2;
-			background-color: $dark1;
-			border: 2px solid $dark1;
+			@include clickable(normal);
 			border-radius: 2px;
 			icon-size: 16px;
 			padding: 8px;
@@ -356,7 +343,7 @@
 }
 .system-menu-action {
 	-st-icon-style: symbolic;
-	color: $white;
+	@include fill(normal);
 	transition-duration: 200ms;
 	border-radius: $omega1;
 	padding: 13px;
@@ -393,6 +380,7 @@
 }
 
 .window-close {
+	@include fill(normal);
 	transition-duration: 100ms;
 	background-image: url("close-window.svg");
 	background-size: 32px;

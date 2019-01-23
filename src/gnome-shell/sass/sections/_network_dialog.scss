@@ -30,25 +30,36 @@
 	font-weight: bold;
 	text-align: center;
 }
-
-  .nm-dialog-airplane-text { color: $dark_fg_color; }
-  .nm-dialog-header-icon { icon-size: 32px; }
-  .nm-dialog-scroll-view { border: 1px solid $light_borders_color; }
-  .nm-dialog-header { font-weight: bold; }
-
-  .nm-dialog-item {
-    font-size: 110%;
-    border-bottom: 1px solid $light_borders_color;
-    padding: 12px;
-    spacing: 20px;
-  }
-
-  .nm-dialog-item:selected {
-    background-color: $light_base_hover_color;
-    color: $dark_fg_color;
-  }
-
-  .nm-dialog-icons { spacing: .5em; }
-  .nm-dialog-icon { icon-size: 16px; }
-  .no-networks-label { color: $dark_subtext_color; }
-  .no-networks-box { spacing: 12px; }
+.nm-dialog-airplane-text {
+//	color: ;
+}
+.nm-dialog-header-icon {
+	icon-size: 32px;
+}
+.nm-dialog-scroll-view {
+//	border: ;
+}
+.nm-dialog-header {
+	font-weight: bold;
+}
+.nm-dialog-item {
+	font-size: 110%;
+//	border-bottom: ;
+	padding: 12px;
+	spacing: 20px;
+}
+.nm-dialog-item:selected {
+	@include clickable(active);
+}
+.nm-dialog-icons {
+	spacing: .5em;
+}
+.nm-dialog-icon {
+	icon-size: 16px;
+}
+.no-networks-label {
+	@include fill(normal);
+}
+.no-networks-box {
+	spacing: 12px;
+}

@@ -1,36 +1,70 @@
-@mixin entry($type, $fill:$dark1, $color:$white) {
+@mixin entry($type, $style:$variant) {
+	$color: $dark1;
+	$fill: if($style==light, darken($white, $beta1), if($style==dark, $white, $style));
+
 	@if $type==normal {
-		background-color: darken($fill, $beta1);
+		// Standard Entry
 		color: $color;
-		border-bottom: 2px solid $dark2;
+		background-color: $fill;
+		box-shadow: $shadow1;
 		transition: $tran2;
 	}
-	@else if $type==backdrop {
+	@else if $type==focus {
+		// Selected Entry
 		background-color: $fill;
-		color: darken($color, $beta1);
-		border-bottom: 2px solid lighten($dark2, $beta1);
-	}
-	@else if $type==active {
-		background-color: darken($fill, $beta2);
 		color: $color;
+		box-shadow: $shadow2;
+		transition: $tran2;
 		border-bottom: 2px solid $accent2;
 	}
-	@else if $type==backdrop-active {
-		background-color: darken($fill, $beta1);
-		color: darken($color, $beta1);
-		border-bottom: 2px solid lighten($accent2, $beta1);
-	}
 	@else if $type==hover {
-		background-color: lighten($fill, $beta1);
-		color: darken($color, $beta1);
-		border-bottom: 2px solid lighten($dark2, $beta1);
+		// Hovering on Entry
+		color: $color;
+		background-color: $fill;
+		border-color: transparent;
+		box-shadow: $shadow2;
+		transition: $tran2;
 	}
-	@else if $type==backdrop-hover {
-		background-color: lighten($fill, $beta2);
-		color: darken($color, $beta2);
-		border-bottom: 2px solid lighten($dark2, $beta2);
+	@elseif $type==active {
+		// Entry in On State
+		color: $color;
+		background-color: $fill;
+		border-color: transparent;
+		box-shadow: $shadow2;
+		transition: $tran2;
 	}
 	@else if $type==disabled {
+		// Entry that is disabled
 		opacity: $alpha1;
+	}
+	@if $type==backdrop {
+		// Backdropped Standard Entry
+		color: if($color==$white, darken($color, $beta1), lighten($color, $beta1));
+		background-color: if($fill==$dark1, lighten($fill, $beta1), darken($fill, $beta1));
+		box-shadow: $shadow1;
+		transition: $tran2;
+	}
+	@else if $type==backdrop-focus {
+		// Backdropped Selected Entry
+		color: if($color==$white, darken($color, $beta1), lighten($color, $beta1));
+		background-color: if($fill==$dark1, lighten($fill, $beta1), darken($fill, $beta1));
+		box-shadow: $shadow2;
+		transition: $tran2;
+	}
+	@else if $type==backdrop-hover {
+		// Backdropped Hovering on Entry
+		color: if($color==$white, darken($color, $beta1), lighten($color, $beta1));
+		background-color: if($fill==$dark1, lighten($fill, $beta1), darken($fill, $beta1));
+		border-color: transparent;
+		box-shadow: $shadow2;
+		transition: $tran2;
+	}
+	@elseif $type==backdrop-active {
+		// Backdropped Entry in On State
+		color: if($color==$white, darken($color, $beta1), lighten($color, $beta1));
+		background-color: if($fill==$accent1, lighten($fill, $beta1), darken($fill, $beta1));
+		border-color: transparent;
+		box-shadow: $shadow2;
+		transition: $tran2;
 	}
 }
