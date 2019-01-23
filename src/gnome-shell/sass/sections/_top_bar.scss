@@ -5,8 +5,24 @@
 	#panelLeft, #panelCenter {
 		spacing: 4px;
 	}
-	&, &.solid, &,unlock-screen, &.login-screen, &.lock-screen {
-		@include fill(normal);
+	&.solid {
+		@include fill(normal, $alpha3);
+		.panel-button {
+			@include clickable(normal, $alpha1);
+			&:hover, &:active, &:overview, &:focus, &:checked {
+				@include clickable(normal, $alpha2);
+			}
+		}
+	}
+	&, &,unlock-screen, &.login-screen, &.lock-screen {
+		@include fill(normal, $alpha2);
+		.panel-button {
+			&:hover, &:active, &:overview, &:focus, &:checked {
+				@include clickable(normal, $alpha2);
+			}
+		}
+	}
+	&, &,solid, &,unlock-screen, &.login-screen, &.lock-screen {
 		.panel-button {
 			-natural-hpadding: 12px;
 			-mininun-hpadding: 6px;
@@ -14,10 +30,6 @@
 			.app-menu-icon {
 				margin-left: 4px;
 				margin-right: 4px;
-			}
-			@include clickable(normal);
-			&:hover, &:active, &:overview, &:focus, &:checked {
-				@include clickable(hover);
 			}
 		}
 		.system-status-icon {
@@ -293,7 +305,7 @@
 			padding-left: 18px;
 		}
 		&:hover {
-			@include clickable(hover, $accent2);
+			@include clickable(hover);
 		}
 		&:insensitive {
 			@include clickable(disabled);

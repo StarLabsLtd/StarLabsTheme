@@ -1,5 +1,5 @@
 .view, %view {
-	@include window;
+	@include fill(normal);
 }
 
 
@@ -136,7 +136,7 @@ assistant {
 }
 
 %osd, .osd {
-	@include header;
+	@include fill(normal);
 //	color: $dak;
 //	border: none;
 //	box-shadow: inset 0 0 0 1px $osd_borders_color;

@@ -123,7 +123,7 @@ scale {
   slider {
     $c: $neutral_color;
     $_bc: _border_color($dark_fill);
-    @include clickable(normal, white);
+    @include clickable(normal);
 
     border: 1px solid if($variant=='light', $_bc, transparent);
     border-radius: 10px;

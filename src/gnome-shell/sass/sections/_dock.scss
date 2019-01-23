@@ -73,15 +73,11 @@
 }
 
 &.opaque {
-	background-color: $dark1;
-	border-color: $dark2;
-	transition-duration: 500ms;
+	@include fill(normal,solid);
 }
 
 &.transparent {
-	background-color: transparentize($dark1, $alpha1);
-	border-color: rgba($dark1, $alpha1);
-	transition-duration: 500ms;
+	@include fill(normal,$alpha2);
 }
 
 .number-overlay {
@@ -92,10 +88,10 @@
 
 .notification-badge {
 	color: $white;;
-	background-color: $green;
+	background-color: green;
 	padding: 0.2em 0.5em;
 	border-radius: 1em;
-	border: 1px solid darken($green,10%);
+	border: 1px solid darken(green,10%);
 	box-shadow: -1px 1px 5px 0px transparentize(black, 0.5);
 	font-weight: bold;
 	text-align: center;
@@ -152,19 +148,10 @@
 
 .app-well-app {
 	&, & .overview-icon {
-		// Normal
-		@include clickable(normal);
+		@include clickable(normal,$alpha1);
 	}
-	&:active .overview-icon, &:checked .overview-icon {
-		// Clicking
-	}
-	&.focused .overview-icon {
-		// Focus
-		@include clickable(focus);
-	}
-	&:hover .overview-icon, &:focus .overview-icon, &:selected .overview-icon {
-		// when hovering over an app
-		@include clickable(hover);
+	&:hover .overview-icon, &:focus &:selected .overview-icon {
+		@include clickable(hover, $alpha3);
 	}
 	}
 }

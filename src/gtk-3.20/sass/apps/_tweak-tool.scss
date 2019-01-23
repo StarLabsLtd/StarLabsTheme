@@ -1,5 +1,8 @@
 list.tweak-categories {
-	@include header;
+	@include fill(normal, $alpha1);
+	&:backdrop {
+		@include fill(normal, $alpha1);
+	}
 }
 list.tweak-categories separator {
 	background: transparent;

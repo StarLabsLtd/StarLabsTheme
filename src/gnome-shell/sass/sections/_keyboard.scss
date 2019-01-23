@@ -1,76 +1,72 @@
-
-//Keyboard
-/* On-screen Keyboard */
 .word-suggestions {
-    font-size: 14pt;
-    spacing: 12px;
-    min-height: 20pt;
+	font-size: 14pt;
+	spacing: 12px;
+	min-height: 20pt;
 }
 
 #keyboard {
-    background-color: transparentize($osd_bg_color, 0.3);
+    @include fill(normal);
 }
 
-  .key-container {
-    padding: 4px;
-    spacing: 4px;
-  }
-
-  .keyboard-key {
-    background-color: $dark_fg_color;
-    min-height: 2em;
-    min-width: 2em;
-    font-size: 16pt;
-    border-radius: 3px;
-    border: 1px solid $osd_borders_color;
-    color: $fg_color;
-    &:focus { @include button(focus, $dark_fg_color, $fg_color); }
-    &:hover,&:checked { @include button(hover, $dark_fg_color, $fg_color); }
-    &:active { @include button(active, $dark_fg_color, $fg_color);}
-    &:grayed { //FIXME
-      background-color: $osd_bg_color;
-      color: $osd_fg_color;
-      border-color: $osd_borders_color;
-    }
-    &.default-key {
-      border-color: $osd_borders_color;
-      background-color: darken($dark_fg_color, 5%);
-      background-size: 24px;
-    }
-    &.enter-key {
-      @include button(normal, $success_color);
-      // border-color: _border_color(#00A2E4);
-      // background-color: #00A2E4;
-      background-image: url("key-enter.svg");
-      &:active { @include button(active, darken($success_color, 5%)); }
-    }
-    &.shift-key-lowercase {
-      background-image: url("key-shift.svg");
-    }
-    &.shift-key-uppercase {
-      background-image: url("key-shift-uppercase.svg");
-    }
-    &.shift-key-uppercase:latched {
-      background-image: url("key-shift-latched-uppercase.svg");
-    }
-    &.hide-key {
-      background-image: url("key-hide.svg");
-    }
-    &.layout-key {
-      background-image: url("key-layout.svg");
-    }
-  }
-
-  .keyboard-subkeys { //long press on a key popup
-    color: white;
-    -arrow-border-radius: 10px;
-    -arrow-background-color: transparentize($osd_bg_color, 0.3);
-    -arrow-border-width: 2px;
-    -arrow-border-color: $osd_borders_color;
-    -arrow-base: 20px;
-    -arrow-rise: 10px;
-    -boxpointer-gap: 5px;
-  }
+.key-container {
+	padding: 4px;
+	spacing: 4px;
+}
+.keyboard-key {
+	@include clickable(normal);
+	min-height: 2em;
+	min-width: 2em;
+	font-size: 16pt;
+	border-radius: $omega1;
+	&:focus {
+		@include clickable(focus);
+	}
+	&:hover, &:checked {
+		@include clickable(hover);
+	}
+	&:active {
+		@include clickable(active);
+	}
+	&:grayed {
+		@include clickable(disabled);
+	}
+	&.default-key {
+		@include clickable(normal);
+		background-size: 24px;
+	}
+	&.enter-key {
+		@include clickable(normal);
+		background-image: url("key-enter.svg");
+		&:active {
+			@include clickable(active);
+		}
+	}
+	&.shift-key-lowercase {
+		background-image: url("key-shift.svg");
+	}
+	&.shift-key-uppercase {
+		background-image: url("key-shift-uppercase.svg");
+	}
+	&.shift-key-uppercase:latched {
+		background-image: url("key-shift-latched-uppercase.svg");
+	}
+	&.hide-key {
+		background-image: url("key-hide.svg");
+	}
+	&.layout-key {
+		background-image: url("key-layout.svg");
+	}
+}
+.keyboard-subkeys {
+	color: $white;
+	-arrow-border-radius: 10px;
+	-arrow-background-color: $accent2;
+	-arrow-border-width: 2px;
+	-arrow-border-color: $accent2;
+	-arrow-base: 20px;
+	-arrow-rise: 10px;
+	-boxpointer-gap: 5px;
+}
 
 
 

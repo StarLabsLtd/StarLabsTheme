@@ -20,7 +20,7 @@ toolbar {
                                   (":backdrop:active, &:backdrop:checked", 'backdrop-active', true),
                                   (":backdrop:disabled", 'backdrop-insensitive', true),
                                   (":backdrop:disabled:active, &:backdrop:disabled:checked", 'backdrop-insensitive-active', true) {
-      &#{$state} { @include clickable($type, $fill:$menu_color) }
+      &#{$state} { @include clickable($type) }
     }
 
     &:hover, &:checked { border-color: $borders_color; }

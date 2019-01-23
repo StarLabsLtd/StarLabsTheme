@@ -1,21 +1,22 @@
-@mixin fill($type, $style: $variant) {
+@mixin fill($type, $transparent: solid, $style:$variant) {
 	$color: if($style==light, $dark1, $white);
 	$fill: if($style==light, $white, $dark1);
 	@if $type==normal {
-		// Standard Window Fill
 		color: $color;
-		background-color: $fill;
-		transition: $tran2;
+		$background-normal: $fill;
+		background-color: if($transparent==solid, $background-normal, transparentize($background-normal, $transparent));
+		transition: $tran1;
 	}
 	@if $type==hover {
 		color: if($color==$white, lighten($color, $beta1), darken($color, $beta1));
-		background-color: if($fill==$dark1, darken($fill, $beta1), lighten($fill, $beta1));
-		transition: $tran2;
+		$background-hover: if($fill==$dark1, darken($fill, $beta1), lighten($fill, $beta1));
+		background-color: if($transparent==solid, $background-hover, transparentize($background-hover, $transparent));
+		transition: $tran1;
 	}
 	@if $type==backdrop {
-		// Backdropped Standard Window
 		color: if($color==$white, darken($color, $beta1), lighten($color, $beta1));
-		background-color: if($fill==$dark1, lighten($fill, $beta1), darken($fill, $beta1));
-		transition: $tran2;
+		$background-backdrop: if($fill==$dark1, lighten($fill, $beta1), darken($fill, $beta1));
+		background-color: if($transparent==solid, $background-backdrop, transparentize($background-backdrop, $transparent));
+		transition: $tran1;
 	}
 }

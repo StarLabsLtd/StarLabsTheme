@@ -1,9 +1,8 @@
 menubar, .menubar {
-	@include clickable(normal, $dark1);
+	@include fill(normal);
 	-GtkWidget-window-dragging: true;
 	padding: 0px;
 	> menuitem {
-		transition: $tran1;
 		min-height: 16px;
 		padding: 4px 8px;
 		menu {
@@ -26,7 +25,7 @@ menubar, .menubar {
 }
 
 menu, .menu, .context-menu {
-	@include clickable(normal, $dark1);
+	@include clickable(normal);
 	margin: 4px;
 	padding: 8px 0;
 	border-radius: $omega1;

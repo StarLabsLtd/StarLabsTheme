@@ -3,16 +3,6 @@
 //let's start by telling people not to edit the generated CSS:
 $cakeisalie: "This stylesheet is generated, DO NOT EDIT";
 /* #{$cakeisalie} */
-$panel-corner-radius: 0; // 6px;
-$panel-alpha-value: 0.6;
-$panel_opaque_value: 0.0;
-$dash-alpha-value: 0.6;
-$dash-opaque-alpha-value: $panel_opaque_value;
-$popover-alpha-value: 0.025;
-$small_radius: 4px;
-$medium_radius: 6px;
-$large_radius: 12px;
-
 /* Copyright 2009, 2015 Red Hat, Inc.
  *
  * Portions adapted from Mx's data/style/default.css
@@ -36,7 +26,6 @@ $large_radius: 12px;
 /* GLOBALS */
 $font-size: 11;
 $font-family: Star Labs, Cantarell, Sans-Serif;
-$_popover_bg_color: transparentize($osd_bg_color, $popover-alpha-value);
 
 stage {
 	font-family: $font-family;
@@ -44,38 +33,4 @@ stage {
 	color: $white;
 }
 
-%osd-panel {
-	@include fill(normal);
-//	border: 1px solid $osd_borders_color;
-	border-radius: $omega1;
-	padding: 12px;
-	box-shadow: 0 3px 9px 1px transparentize(black, 0.5);
-}
-
-%dialog_window {
-	@include fill(normal);
-	 StEntry {
-		@extend %light_entry;
-	}
-	.button {
-		@include clickable(normal);
-		&:hover {
-			@include clickable(hover);
-		}
-		&:active {
-			@include clickable(active);
-		}
-	}
-}
-
-%overview-panel {
-	@include fill(normal);
-	border: none;
-}
-
-%status_text {
-	font-size: 2em;
-	font-weight: bold;
-	color: $white; 
-}
 

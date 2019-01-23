@@ -1,5 +1,8 @@
 %titlebar, headerbar {
-	@include header;
+	@include fill(normal,$alpha3,light);
+	&:backdrop {
+		@include fill(normal,$alpha3,dark);
+	}
 	padding: 0 6px;
 	min-height: 40px;
 	label:backdrop {
@@ -15,50 +18,27 @@
 		padding-left: 12px;
 		padding-right: 12px;
 	}
-	& > separator {
-		background-image: image($dark1);
-		&:backdrop {
-			background-image: image($dark2);
-		}
-	}
-	~ separator, separator {
-		&, &.titlebutton {
-			&.horizontal, &.vertical {
-				& { 
-					background-image: image($dark1);
-				}
-				&:backdrop {
-					background-image: image($dark2);
-				}
-			}
-		}
-	}
 
-	& {
-	switch {
-		@include switch;
-	}
-
-	entry, %dark_entry {
-		@include entry(normal);
-		&:disabled {
-			@include entry(insensitive);
+	&, {
+		switch {
+			@include switch;
 		}
-		&:backdrop {
-			@include entry(backdrop);
-			transition: $tran1;
+	
+		entry, %dark_entry { //Remove dark entry
+			@include entry(normal);
 			&:disabled {
-				@include entry(backdrop-insensitive);
+				@include entry(disabled);
+			}
+			&:backdrop {
+				@include entry(backdrop);
+			}
+		image {
+			color: $accent2;
+			&:hover {
+				color: $accent3;
 			}
 		}
-	image {
-		color: $accent2;
-		&:hover {
-			color: $backdrop_headerbar_text_color;
-		}
 	}
-}
-
 	.text-button:not(.suggested-action) {
 		&.default {
 			&, &:active, &:hover, &:focus {
@@ -72,43 +52,86 @@
 		}
 	}
 
-button, button.flat, button.titlebutton.appmenu {
-	@each $state, $type in ("", "normal"),
-	(":hover", "hover"),
-	(":hover:backdrop", "backdrop-hover"),
-	(":active, &:checked", "active"),
-	(":hover:checked", "active-hover"),
-	(":disabled", "insensitive"),
-	(":disabled:active, &:disabled:checked", "insensitive-active"),
-	(":backdrop", "backdrop"),
-	(":backdrop:active, &:backdrop:checked", 'backdrop-active'),
-	(":backdrop:disabled", 'backdrop-insensitive'),
-	(":backdrop:disabled:active, &:backdrop:disabled:checked", 'backdrop-insensitive-active') {
-		&#{$state} {
-			@include clickable($type);
+	button, button.flat, button.titlebutton.appmenu {
+		@include clickable(normal);
+		&:focus {
+			@include clickable(focus);
 		}
-	}
-	@each $b_type, $fill in (suggested-action, $success),
-	(destructive-action, $warning) {
-		&.#{$b_type} {
-			// special buttons show their color when not interacted with
-			@each $state, $type in ("", "normal"),
-			(":hover", "hover"),
-			(":hover:backdrop", "backdrop-hover"),
-			(":active, &:checked", "active"),
-			(":disabled", "insensitive"),
-			(":disabled:active, &:disabled:checked", "insensitive-active"),
-			(":backdrop", "backdrop"),
-			(":backdrop:active, &:backdrop:checked", 'backdrop-active'),
-			(":backdrop:disabled", 'backdrop-insensitive'),
-			(":backdrop:disabled:active, &:backdrop:disabled:checked", 'backdrop-insensitive-active') {
-				&#{$state} {
-					@include clickable($type, $fill);
+		&:hover {
+			@include clickable(hover);
+		}
+		&:active {
+			@include clickable(active);
+		}
+		&:disabled {
+			@include clickable(disabled);
+		}
+		&:backdrop {
+			@include clickable(backdrop);
+			&:focus {
+				@include clickable(backdrop-focus);
+			}
+			&:hover {
+				@include clickable(backdrop-hover);
+			}
+			&:active {
+				@include clickable(backdrop-active);
+			}
+		}
+		.destructive-action {
+			&:focus {
+				@include clickable(focus,solid,$failure);
+			}
+			&:hover {
+				@include clickable(hover,solid,$failure);
+			}
+			&:active {
+				@include clickable(active,solid,$failure);
+			}
+			&:disabled {
+				@include clickable(disabled,solid,$failure);
+			}
+			&:backdrop {
+				@include clickable(backdrop,solid,$failure);
+				&:focus {
+					@include clickable(backdrop-focus,solid,$failure);
+				}
+				&:hover {
+					@include clickable(backdrop-hover,solid,$failure);
+				}
+				&:active {
+					@include clickable(backdrop-active,solid,$failure);
+				}
+			}	
+		}
+		.suggested-action {
+			&:focus {
+				@include clickable(focus,solid,$success);
+			}
+			&:hover {
+				@include clickable(hover,solid,$success);
+			}
+			&:active {
+				@include clickable(active,solid,$success);
+			}
+			&:disabled {
+				@include clickable(disabled,solid,$success);
+			}
+			&:backdrop {
+				@include clickable(backdrop,solid,$success);
+				&:focus {
+					@include clickable(backdrop-focus,solid,$success);
+				}
+				&:hover {
+					@include clickable(backdrop-hover,solid,$success);
+				}
+				&:active {
+					@include clickable(backdrop-active,solid,$success);
 				}
 			}
 		}
 	}
-}
+
 
 .linked:not(.path-bar):not(.stack-switcher):not(buttonbox) button, .linked:not(.vertical) entry {
 			&:focus {
@@ -188,7 +211,7 @@ button, button.flat, button.titlebutton.appmenu {
           $color: white;
           &, &.selection-menu {
             &#{$state} {
-              @include clickable($type, $fill, $color);
+              @include clickable($type);
               outline-color: white;
             }
           }
@@ -204,14 +227,14 @@ button, button.flat, button.titlebutton.appmenu {
         }
       }
 
-      &.suggested-action {
-        @each $state, $t in ("", "normal"), (":hover", "hover"), (":hover:backdrop", "backdrop-hover"),
-        (":active", "active"), (":disabled", "insensitive"),
-        (":backdrop", "backdrop"), (":backdrop:disabled", 'backdrop-insensitive') {
-          $c: white;
-          $tc: $success_color;
-          &#{$state} { @include clickable($t, $c, $tc); } }
-      }
+//      &.suggested-action {
+  //      @each $state, $type in ("", "normal"), (":hover", "hover"), (":hover:backdrop", "backdrop-hover"),
+    //    (":active", "active"), (":disabled", "insensitive"),
+//        (":backdrop", "backdrop"), (":backdrop:disabled", 'backdrop-insensitive') {
+  //        $c: white;
+    //      $tc: $success_color;
+      //    &#{$state} { @include clickable($type, $accent2;)} }
+     // }
 
       &.selection-menu {
         &:backdrop, & {
@@ -228,21 +251,21 @@ button, button.flat, button.titlebutton.appmenu {
     }
   }
 
-  // squared corners when the window is maximized, tiled, or fullscreen
-  .tiled &,
-  .tiled-top &,
-  .tiled-right &,
-  .tiled-bottom &,
-  .tiled-left &,
-  .maximized &,
-  .fullscreen & {
-    border-color: transparentize($accent2, 0.7);
-    &.selection-mode { border: none; }
-
-    &:backdrop, & {
-      border-radius: 0;
-    }
-  }
+.tiled &,
+.tiled-top &,
+.tiled-right &,
+.tiled-bottom &,
+.tiled-left &,
+.maximized &,
+.fullscreen & {
+//	border-color: transparentize($accent2, 0.7);
+	&.selection-mode {
+		border: none;
+	}
+	&:backdrop, & {
+		border-radius: 0;
+	}
+}
 
   &.default-decoration {
     min-height: 26px;
@@ -281,10 +304,10 @@ headerbar {
 }
 
 .background .titlebar {
-  &:backdrop, & {
-    border-top-left-radius: $omega2;
-    border-top-right-radius: $omega2;
-  }
+	&:backdrop, & {
+		border-top-left-radius: $omega1;
+		border-top-right-radius: $omega1;
+	}
 }
 
 .background.tiled .titlebar,
@@ -294,28 +317,29 @@ headerbar {
 .background.tiled-left .titlebar,
 .background.maximized .titlebar,
 .background.solid-csd .titlebar {
-  &:backdrop, & {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-  }
+	&:backdrop, & {
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
 }
 
 headerbar {
-	window separator:first-child + &, window &:first-child { &:backdrop, & {
-		border-top-left-radius: $omega2;
+	window separator:first-child + &, window &:first-child {
+	&:backdrop, & {
+		border-top-left-radius: $omega1;
 	}
 }
 window &:last-child {
 	&:backdrop, & {
-		border-top-right-radius: $omega2;
+		border-top-right-radius: $omega1;
 	}
 }
 
 window stack & {
 	&:first-child, &:last-child {
 		&:backdrop, & {
-			border-top-left-radius: $omega2;
-			border-top-right-radius: $omega2;
+			border-top-left-radius: $omega1;
+			border-top-right-radius: $omega1;
 		}
 	}
 }
@@ -327,7 +351,7 @@ window.tiled &, window.tiled-top &, window.tiled-right &, window.tiled-bottom &,
 			border-top-right-radius: 0;
 		}
 	}
-	} // You What?
+	}
 }
 
 .titlebar:not(headerbar) {
@@ -340,8 +364,9 @@ window.tiled &, window.tiled-top &, window.tiled-right &, window.tiled-bottom &,
 		box-shadow: none;
 	}
 	> separator {
-		background-color: $dark1;
+//		background-color: $dark1;
 	} 
-	@extend %titlebar;
+//	@extend %titlebar;
+	@include fill(normal,$alpha2);
 }
 

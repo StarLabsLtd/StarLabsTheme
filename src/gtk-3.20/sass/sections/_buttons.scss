@@ -190,25 +190,25 @@
 	(suggested-action, $success),
 	(destructive-action, $failure) {
 		&.#{$type} {
-			@include clickable(normal, $fill);
+			@include clickable(normal);
 			&.flat {
 				@include clickable(undecorated);
 			}
 			&:hover {
-				@include clickable(hover, $fill);
+				@include clickable(hover);
 			}
 			&:active, &:checked {
-				@include clickable(active, $fill);
+				@include clickable(active);
 			}
 			&:backdrop, &.flat:backdrop {
-				@include clickable(backdrop, $fill);
+				@include clickable(backdrop);
 				&:active, &:checked {
-					@include clickable(backdrop-active, $fill);
+					@include clickable(backdrop-active);
 				}
 				&:disabled {
 					@include clickable(disabled);
 					&:active, &:checked {
-						@include clickable(backdrop-active, $fill);
+						@include clickable(backdrop-active);
 					}
 				}
 			}

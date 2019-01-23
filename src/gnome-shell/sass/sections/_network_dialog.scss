@@ -9,7 +9,25 @@
 }
 
 .nm-dialog {
-	@include dialog_window;
+	@include fill(normal);
+	StEntry {
+		@include entry(normal);
+		&:focus {
+			@include entry(active);
+		}
+		&:insensitive {
+			@include entry(disabled);
+		}
+	}
+	.button {
+		@include clickable(normal);
+		&:hover {
+			@include clickable(hover);
+		}
+		&:active {
+			@include clickable(active);
+		}
+	}
 	max-height: 34em;
 	min-height: 31em;
 	min-width: 32em;

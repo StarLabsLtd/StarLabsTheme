@@ -1,19 +1,14 @@
-@import 'functions/header';
+// Gnome Shell
 @import 'functions/entries';
-@import 'functions/checkradio';
 @import 'functions/clickable';
-@import 'functions/circle';
-@import 'functions/dialog_window';
-// @import 'functions/entries';
-// @import 'functions/header';
 @import 'functions/fill';
-@import 'functions/light_entry';
-@import 'functions/overshoot';
-@import 'functions/switch';
-@import 'functions/undershoot';
-@import 'functions/window';
-
-
-// need to remove
-@import 'functions/selected-items';
 @import 'functions/font-size';
+// GTK
+@import 'functions/checkradio';
+@import 'functions/circle';
+@import 'functions/header';
+@import 'functions/switch';
+@import 'functions/overshoot';
+@import 'functions/undershoot';
+@import 'functions/testing/window';
+@import 'functions/testing/selected-items';

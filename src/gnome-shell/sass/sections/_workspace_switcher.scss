@@ -2,9 +2,9 @@
 	padding: 12px;
 }
 .workspace-switcher-container {
-	@extend %osd-panel;
+	@include fill(normal);
 	padding: 5px;
-	border-radius: $omega2;
+	border-radius: $omega1;
 }
 .workspace-switcher {
 	background: transparent;

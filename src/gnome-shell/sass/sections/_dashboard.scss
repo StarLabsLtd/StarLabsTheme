@@ -156,7 +156,7 @@
 	padding: 8px;
 	border-radius: $omega1 0 0 $omega1;
 	&:rtl {
-		border-radius: 0 $medium_radius $medium_radius 0;
+		border-radius: 0 $omega1 $omega1 0;
 	}
 	.placeholder {
 		background-image: url("resource:///org/gnome/shell/theme/dash-placeholder.svg");

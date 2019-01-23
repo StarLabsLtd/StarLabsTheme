@@ -36,18 +36,18 @@
 		&:default {
 			padding-bottom: 5px;
 			padding-top: 5px;
-			@include button(normal, $accent2);
+			@include clickable(normal);
 			&:hover {
-				@include clickable(hover, $accent2);
+				@include clickable(hover);
 			}
 			&:focus {
-				@include clickable(focus, $accent2);
+				@include clickable(focus);
 			}
 			&:active {
-				@include clickable(active, $accent2);
+				@include clickable(active);
 			}
 			&:insensitive {
-				@include clickable(disabled, $accent2);
+				@include clickable(disabled);
 			}
 		}
 	}

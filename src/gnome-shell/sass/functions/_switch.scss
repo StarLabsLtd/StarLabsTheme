@@ -16,9 +16,6 @@
 			background-color: lighten($accent2, $beta1);
 		}
 	}
-	&:disabled {
-		opacity: $alpha1;
-	}
 	slider {
 		transition: $tran1;
 		min-width: 20px;
@@ -36,7 +33,7 @@
 			background-color: lighten($accent3, $beta1);
 		}
 	}
-	&:disabled {
+	&:disabled, &:disabled slider {
 		opacity: $alpha1;
 	}
 }

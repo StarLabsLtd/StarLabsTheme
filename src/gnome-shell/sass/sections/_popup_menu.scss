@@ -1,7 +1,7 @@
 .popup-menu {
 	min-width: 15em;
 	.popup-sub-menu {
-		@include clickable(normal);
+		@include clickable(normal, $alpha3);
 	}
 	.popup-menu-content {
 		padding: 1em 0em;
@@ -16,10 +16,10 @@
 			padding: .4em 0em .4em 1.75em;
 		}
 		&.selected {
-			@include clickable(focus);
+			@include clickable(focus, $alpha2);
 		}
 		&:active {
-			@include clickable(active);
+			@include clickable(active, $alpha3);
 		}
 		&:insensitive {
 			@include clickable(disabled);
