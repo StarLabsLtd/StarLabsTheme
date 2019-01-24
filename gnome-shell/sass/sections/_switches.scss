@@ -1,0 +1,13 @@
+.toggle-switch {
+	width: 65px;
+	height: 22px;
+	background-size: contain;
+}
+@each $v in us, intl {
+	.toggle-switch-#{$v} {
+		background-image: url("assets/toggle-off.svg");
+		&:checked {
+			background-image: url("assets/toggle-on.svg");
+		}
+	}
+}	

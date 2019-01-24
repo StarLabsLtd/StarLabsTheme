@@ -1,0 +1,36 @@
+// This is our fill function. Everytime this is used, a kitten is born.
+@mixin fill($state, $background:$dark1, $foreground: $white) {
+	@if $state==normal {
+		background-color: $background;
+		color: $foreground;
+		transition: $tran1;
+		border-bottom: 2px solid $background;
+	}
+	@else if $state==hover {
+		border-buttom: 2px solid $accent2;
+	}
+	@else if $state==active {
+		border-bottom: 2px solid $accent3;
+	}
+	@else if $state==backdrop {
+		background-color: lighten($background, $beta1);
+		color: darken($foreground, $beta1);
+		border-bottom: 2px solid lighten($background, $beta1);
+	}
+	@else if $state==backdrop-hover {
+		border-bottom: 2px solid lighten($accent2, $beta1);
+	}
+	@else if $state==backdrop-active {
+		border-bottom: 2px solid lighten($accent3, $beta1);
+	}
+	@else if $state==disabled {
+		opacity: $alpha1;
+	}
+	@else if $state==undecorated {
+		border-color: transparent;
+		background-color: transparent;
+		background-image: none;
+		box-shadow: none;
+		text-shadow: none;
+	}
+}

@@ -1,0 +1,27 @@
+button.titlebutton {
+	min-height: 22px;
+        min-width: 22px;
+        padding: 2px;
+	&, &:hover, &:active, &:backdrop {
+		headerbar &, .titlebar &, & {
+			&, &:backdrop {
+				background-color: transparent;
+				border-color: transparent;
+				color: transparent;
+			}
+		}
+	}
+	&.minimize {
+		$fill: $accent1;
+		@include circle($fill);
+	}
+	&.maximize {
+		$fill: $accent2;
+		@include circle($fill);
+	}
+	&.close {
+		$fill: $accent3;
+		@include circle($fill);
+	}
+}
+

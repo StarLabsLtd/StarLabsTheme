@@ -1,0 +1,17 @@
+.geolocation-dialog, inhibit-shortcuts-dialog {
+	@include fill(normal, $alpha3);
+	StEntry {
+		@include entry(normal);
+		&:focus {
+			@include entry(active);
+		}
+		&:insensitive {
+			@include entry(disabled);
+		}
+	}
+	.button {
+		@extend %shell-button;
+	}
+	spacing: 30px;
+}
+

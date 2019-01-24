@@ -1,0 +1,21 @@
+.background {
+	@include fill(normal);
+}
+
+.gtkstyle-fallback {
+	@each $selector, $state in
+	("", "normal"),
+	(":hover", "hover"),
+	(":active", "active"),
+	(":disabled", "disabled") {
+//	(":selected", "selected") 
+		&#{$selector} {
+			@include clickable($state);
+		}
+	}
+}
+
+widget:selected {
+	color: $accent2;
+}
+

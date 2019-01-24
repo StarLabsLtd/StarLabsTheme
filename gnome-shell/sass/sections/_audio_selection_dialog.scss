@@ -1,0 +1,42 @@
+.audio-device-selection-dialog {
+	@include fill(normal, $alpha3)
+	StEntry {
+		@include entry(normal);
+		&:focus {
+			@include entry(focus);
+		}
+		&:active {
+			@include entry(active);
+		}
+	}
+	spacing: 30px;
+}
+.audio-selection-content {
+	spacing: 20px;
+	padding: 24px;
+}
+.audio-selection-title {
+	font-weight: bold;
+	text-align: center;
+}
+.audio-selection-box {
+	spacing: 20px;
+}
+.audio-selection-device {
+	border-radius: 12px;
+	@include clickable(normal, $alpha2);
+	&:hover, &:focus:hover {
+		@include clickable(hover, $alpha2);
+	}
+	&:active, &:focus:active {
+		@include clickable(focus, $alpha2);
+	}
+}
+.audio-selection-device-box {
+	padding: 20px;
+	spacing: 20px;
+}
+.audio-selection-device-icon {
+	icon-size: 64px;
+}
+

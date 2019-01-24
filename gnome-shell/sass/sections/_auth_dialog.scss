@@ -1,0 +1,9 @@
+.framed-user-icon {
+	background-size: contain;
+	@include clickable(normal);
+	border-radius: $omega1;
+	&:hover {
+		@include clickable(hover);
+	}
+}
+

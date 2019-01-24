@@ -1,0 +1,76 @@
+popover.emoji-picker {
+  padding: 0;
+
+  entry {
+    border-bottom: 1px solid $borders_color;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: none;
+    border-width: 0 0 1px 0;
+    padding: 4px 12px;
+
+    &:focus {
+      box-shadow: inset 0 -1px $selected_bg_color;
+      border-color: $selected_bg_color;
+    }
+  }
+}
+
+button.emoji-section {
+  border-style: none;
+  border-radius: 0;
+
+  margin: 0;
+  padding: 2px 5px;
+  min-width: 32px;
+  min-height: 28px;
+
+  /* reset props inherited from the button style */
+  background: none;
+  box-shadow: inset 0 1px $borders_color;
+
+  outline-offset: -5px;
+
+  &:hover {
+    box-shadow: inset 0 2px $borders_color;
+    background-color: $base_hover_color;
+  }
+
+  &:active {
+    box-shadow: inset 0 2px $selected_bg_color;
+    background-color: $base_active_color;
+  }
+
+  &:checked {
+    box-shadow: inset 0 2px $selected_bg_color;
+    background-color: transparent;
+    &:hover {
+      box-shadow: inset 0 2px $selected_bg_color;
+      background-color: $base_hover_color;
+    }
+  }
+
+  label {
+    padding: 0;
+  }
+
+  &:first-child { border-bottom-left-radius: $small_radius; }
+  &:last-child { border-bottom-right-radius: $small_radius; }
+}
+
+.emoji {
+  font-size: x-large;
+  padding: 6px;
+
+  :hover {
+    background: $selected_bg_color;
+    border-radius: 6px;
+  }
+}
+
+.regular-button{
+  @include clickable(normal);
+  &:hover{@include clickable(hover)};
+  &:active{@include clickable(active);}
+  &:disabled{@include clickable(insensitive)}
+}

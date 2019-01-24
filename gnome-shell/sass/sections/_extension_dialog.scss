@@ -1,0 +1,28 @@
+.extension-dialog {
+	@include fill (normal);
+	StEntry {
+		@include entry(normal);
+		&:hover {
+			@include entry(hover);
+		}
+		&:insensitive {
+			@include entry(disabled);
+		}
+	}
+	.button {
+		@include clickable(normal);
+		&:hover {
+			@include clickable(hover);
+		}
+		&:active {
+			@include clickable(active);
+		}
+	}
+	.message-dialog-main-layout {
+		spacing: 24px;
+		padding: 10px;
+	}
+	.message-dialog-title {
+		color: $white;
+	}
+}

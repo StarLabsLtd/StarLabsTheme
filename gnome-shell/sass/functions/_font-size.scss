@@ -1,0 +1,3 @@
+@mixin fontsize($size: 24, $base: 16) {
+	font-size: round($size) + pt;
+}

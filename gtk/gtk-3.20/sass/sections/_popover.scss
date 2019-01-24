@@ -1,0 +1,60 @@
+popover.background {
+  padding: 2px;
+  color: $text_color;
+  border-radius: $medium_radius;
+  background-color: $menu_color;
+
+  .csd &, & { border: 1px solid if($variant=='light', $menu_border, transparentize(white, 0.8)); }
+
+  box-shadow: $popover_shadow;
+
+  &:backdrop {
+    background-color: $backdrop_bg_color;
+    color: $backdrop_text_color;
+    box-shadow: none;
+  }
+
+  > list,
+  > .view,
+  > toolbar {
+    border-style: none;
+    background-color: transparent;
+  }
+
+  .csd &, & {
+    &.touch-selection,
+    &.magnifier {
+      @extend %osd;
+
+      border: 1px solid transparentize(white, 0.9);
+
+      button { @extend %osd_button };
+    }
+
+    &.osd { @extend %osd; }
+  }
+
+  modelbutton {
+    min-height: 16px;
+    min-width: 36px;
+    padding: 5px 6px;
+  }
+
+  separator { margin: 3px; }
+
+  list separator { margin: 0px; }
+
+  radiobutton radio, checkbutton check {
+    &:dir(ltr) { margin-right: 3px; }
+    &:dir(rtl) { margin-left: 3px; }
+  }
+
+  @if $variant=='dark' {
+    separator { background-color: darken($menu_border,12%); &:backdrop { background-color: transparent; } }
+    *:not(fill):not(highlight):not(trough):not(slider):not(switch):not(selection) { background-color: transparent; }
+    scrollbar slider { background-color: $scrollbar_slider_color; }
+    entry:not(:focus), button { border-color: darken($inkstone,1%); &:backdrop { border-color: transparent; } }
+    button, button.circular, button.flat, button.text-button, modelbutton { @extend %jet_popover_button; }
+    switch { @include switch; }
+  }
+}

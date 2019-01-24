@@ -1,0 +1,173 @@
+
+.message-list {
+	width: 31.5em;
+}
+.message-list-clear-button.button {
+        @include clickable(normal);
+	&:hover,&:focus {
+		@include clickable(hover);
+	}
+	&:active {
+		@include clickable(active);
+	}
+	&:insensitive {
+		@include clickable(disabled);
+	}
+	margin: 1.5em 1.5em 0;
+}
+.message-list-sections {
+	spacing: 1em;
+}
+.message-list-section, .message-list-section-list {
+	spacing: 0.4em;
+}
+.message {
+	border-radius: $omega1;
+	&:hover,&:focus {
+		@include clickable(focus);
+	}
+	&:active {
+		@include clickable(active);
+	}
+	.message-icon-bin {
+		padding: 0.68em 0.2em 0.68em 0.68em;
+		&:rtl {
+			padding: 0.68em 0.68em 0.68em 0.2em;
+		}
+	}
+	.message-icon-bin > StIcon {
+		-st-icon-style: symbolic;
+		@include clickable(normal);
+		icon-size: 1.09em;
+	}
+	.message-secondary-bin {
+		padding: 0 0.82em;;
+	}
+	.message-secondary-bin > .event-time {
+		@include clickable(normal);
+		font-size: 0.7em;
+		padding-bottom: 0.13em;
+	}
+	.message-secondary-bin > StIcon {
+		icon-size: 1.09em;
+	}
+	.message-title {
+		@include fill(normal, $alpha3);
+	}
+	.message-content {
+		@include fill(normal, $alpha3);
+		padding: 10px;
+	}
+	.message-media-control {
+		border-radius: $omega1;
+		padding: 12px;
+		@include clickable(normal);
+		&:last-child:ltr {
+			padding-right: 18px;
+		}
+		&:last-child:rtl {
+			padding-left: 18px;
+		}
+		&:hover {
+			@include clickable(hover);
+		}
+		&:insensitive {
+			@include clickable(disabled);
+		}
+	}
+	.media-message-cover-icon {
+		icon-size: 48px !important;
+		&.fallback {
+			@include clickable(normal);
+			border-radius: 2px;
+			icon-size: 16px;
+			padding: 8px;
+		}
+	}
+}
+
+.system-switch-user-submenu-icon.user-icon {
+	icon-size: 20px;
+	padding: 0 2px;
+}
+.system-switch-user-submenu-icon.default-icon {
+	icon-size: 16px;
+	padding: 0 4px;
+}
+#appMenu {
+	spinner-image: url("resource:///org/gnome/shell/theme/process-working.svg");
+	spacing: 4px;
+	.label-shadow {
+		color: transparent;
+	}
+}
+.aggregate-menu {
+	min-width: 21em;
+	.popup-menu-icon {
+		padding: 0 4px;
+	}
+	.popup-sub-menu .popup-menu-item > :first-child {
+		&:ltr {
+			padding-left: 20px;
+			margin-left: 1.09em;
+		}
+		&:rtl {
+			padding-right: 20px;
+			margin-right: 1.09em;
+		}
+	}
+}
+.system-menu-action {
+	-st-icon-style: symbolic;
+	@include fill(normal, $alpha3);
+	transition-duration: 200ms;
+	border-radius: $omega1;
+	padding: 13px;
+	border: none;
+	&:hover, &:focus {
+		@include clickable(hover);
+		border: none;
+		padding: 13px;
+	}
+	&:active {
+		@include clickable(active);
+	}
+	& > StIcon {
+		icon-size: 16px;
+	}
+}
+.ripple-box {
+	width: 52px;
+	height: 52px;
+	background-image: url("assets/corner-ripple-ltr.svg");
+	background-size: contain;
+}
+
+.ripple-box:rtl {
+	background-image: url("resource:///org/gnome/shell/theme/corner-ripple-rtl.png");
+}
+
+.popup-menu-arrow {
+	width: 16px;
+	height: 16px;
+}
+.popup-menu-icon {
+	icon-size: 1.09em;
+}
+
+.window-close {
+	@include fill(normal, $alpha3);
+	transition-duration: 100ms;
+	background-image: url("assets/close-window.svg");
+	background-size: 32px;
+	height: 32px;
+	width: 32px;
+	-shell-close-overlap: 13px;
+	&:hover {
+		background-image: url("assets/close-window-hover.svg");
+	}
+	&:active {
+		background-image: url("assets/close-window-active.svg");
+	}
+}
+
