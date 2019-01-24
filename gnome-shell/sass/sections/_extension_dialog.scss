@@ -1,22 +1,10 @@
 .extension-dialog {
-	@include fill (normal);
+	@extend %shell-window;
 	StEntry {
-		@include entry(normal);
-		&:hover {
-			@include entry(hover);
-		}
-		&:insensitive {
-			@include entry(disabled);
-		}
+		@extend %shell-entry;
 	}
 	.button {
-		@include clickable(normal);
-		&:hover {
-			@include clickable(hover);
-		}
-		&:active {
-			@include clickable(active);
-		}
+		@extend %shell-button;
 	}
 	.message-dialog-main-layout {
 		spacing: 24px;

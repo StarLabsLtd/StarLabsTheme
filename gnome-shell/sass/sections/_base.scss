@@ -49,8 +49,8 @@ stage {
                 @include clickable(disabled);
         }
         &:active {
-                @include clickable(active, $alpha2, $accent3);
-        }
+		@include clickable(active, $alpha2, $accent3);
+	}
         padding: 12px;
         &:first-child {
                 border-radius: 0px 0px 0px $omega1;
@@ -67,11 +67,13 @@ stage {
 
 %shell-entry {
 	@include entry(normal, $alpha2);
-		&:focus {
-                        @include entry(focus, $alpha2);
-                }
-                &:active {
-                        @include entry(active, $alpha2);
-                }
+	&:focus {
+		@include entry(focus, $alpha2);
 	}
+        &:active {
+		@include entry(active, $alpha2);
+	}
+}
+%shell-window {
+	@include fill(normal, $alpha3);
 }

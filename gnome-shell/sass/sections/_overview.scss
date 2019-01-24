@@ -19,32 +19,22 @@
 }
 .window-caption {
 	spacing: 25px;
-	@include fill(normal, $alpha3);
-	border: 1px solid $dark1;
+	@extend %shell-window;
 	border-radius: $omega1;
 	padding: 4px 12px;
 }
 .search-entry {
 	width: 320px;
 	border-radius: $omega1;
-	border-color: $dark1;
-	@include fill(normal, $alpha3);
-
-	&, &:focus {
-		padding: 7px 9px;
-	}
-	&:focus {
-		border-width: 1px;
-		border-color: $accent2;
-	}
+	@include fill(normal, $alpha2, light);
 	.search-entry-icon {
-		icon-size: 1em;
-		padding: 0 4px;
-		color: $white;
+		icon-size: 16px;
+		padding: 0 0;
 	}
 	&:hover, &:focus {
+		@include fill(normal, $alpha3, light);
 		.search-entry-icon {
-			color: $white;
+			color: black;
 		}
 	}
 }

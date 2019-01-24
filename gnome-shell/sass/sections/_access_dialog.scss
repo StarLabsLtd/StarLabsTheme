@@ -1,22 +1,10 @@
 .access-dialog {
-	@include fill(normal, $alpha3);
+	@extend %shell-window;
 	StEntry {
-		@include entry(normal);
-		&:focus {
-			@include entry(focus);
-		}
-		&:insensitive {
-			@include entry(disabled);
-		}
+		@extend %shell-entry;
 	}
 	.button {
-		@include clickable(normal, $alpha2);
-		&:hover {
-			@include clickable(hover, $alpha2);
-		}
-		&:active {
-			@include clickable(active, $alpha2);
-		}
+		@extend %shell-button;
 	}
 	spacing: 30px;
 }

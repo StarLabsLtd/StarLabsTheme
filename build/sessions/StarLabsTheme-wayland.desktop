@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=StarLabsTheme on wayland
+Comment=This session logs you with StarLabsTheme on wayland
+Exec=env GNOME_SHELL_SESSION_MODE=starlabstheme gnome-session
+TryExec=gnome-session
+Type=Application
+DesktopNames=StarLabsTheme:ubuntu:GNOME
+X-Ubuntu-Gettext-Domain=gnome-session-3.0

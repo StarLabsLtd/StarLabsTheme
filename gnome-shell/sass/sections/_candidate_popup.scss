@@ -9,9 +9,9 @@
 .candidate-box {
 	padding: 0.3em 0.5em 0.3em 0.5em;
 	border-radius: 4px;
-	@include clickable(normal);
+	@extend %shell-window;
 	&:selected, &:hover {
-		@include clickable(hover);
+		@include fill(hover, $alpha3, $accent2);
 	}
 }
 

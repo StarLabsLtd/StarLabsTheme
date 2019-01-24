@@ -1,9 +1,9 @@
 .framed-user-icon {
 	background-size: contain;
-	@include clickable(normal);
+	@extend %shell-window;
 	border-radius: $omega1;
 	&:hover {
-		@include clickable(hover);
+		@include fill(hover, $alpha3, $accent2);
 	}
 }
 

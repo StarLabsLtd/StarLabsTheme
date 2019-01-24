@@ -1,0 +1,21 @@
+Build started at 2019-01-24T23:10:39.907834
+Main binary: /usr/bin/python3
+Python system: Linux
+The Meson build system
+Version: 0.47.2
+Source dir: /home/sean/Documents/git/starlabs-theme
+Build dir: /home/sean/Documents/git/starlabs-theme/build
+Build type: native build
+Project name: StarLabsTheme
+Project version: 3.0.0
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Program sassc found: YES (/usr/bin/sassc)
+Configuring starlabstheme.json using configuration
+Configuring StarLabsTheme.desktop using configuration
+Configuring StarLabsTheme-wayland.desktop using configuration
+Configuring 99_StarLabsTheme.gschema.override using configuration
+Program meson/install-dock-override found: YES (/home/sean/Documents/git/starlabs-theme/sessions/meson/install-dock-override)
+Program meson/compile-schemas found: YES (/home/sean/Documents/git/starlabs-theme/sessions/meson/compile-schemas)
+Build targets in project: 1
+Found ninja-1.8.2 at /usr/bin/ninja

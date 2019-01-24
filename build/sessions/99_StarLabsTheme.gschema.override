@@ -1,0 +1,18 @@
+##########################################
+# StarLabsTheme specific session for testers #
+##########################################
+
+[org.gnome.desktop.interface:StarLabsTheme]
+cursor-theme = "StarLabsTheme"
+icon-theme = "StarLabsTheme"
+gtk-theme = "StarLabsTheme"
+
+[org.gnome.desktop.sound:StarLabsTheme]
+theme-name = "StarLabsTheme"
+input-feedback-sounds = true
+
+[org.gnome.mutter:StarLabsTheme]
+center-new-windows = true
+
+[org.gnome.shell.extensions.user-theme]
+name="StarLabsTheme"

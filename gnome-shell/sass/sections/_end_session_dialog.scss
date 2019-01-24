@@ -32,7 +32,7 @@
 	background-size: contain;
 }
 .end-session-dialog-shutdown-icon {
-	color: red;
+	color: $accent2;
 	width: 48px;
 	height: 48px;
 }
@@ -58,7 +58,7 @@
 	font-weight: bold;
 }
 .end-session-dialog-app-list-item-description {
-	color: green;
+	color: $white;
 	font-size: 10pt;
 }
 

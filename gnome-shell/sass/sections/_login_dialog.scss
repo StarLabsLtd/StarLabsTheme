@@ -63,7 +63,7 @@
 	spacing: 5px;
 }
 .login-dialog-message-warning {
-	color: $warning;
+	color: $white;
 }
 .login-dialog-message-hint {
 	padding-top: 0;
@@ -74,8 +74,8 @@
 }
 .login-dialog-not-listed-label {
 	padding-left: 2px;
-	.login-dialog-not-listed-button:focus &, .login-dialog-not-listed-button:hover & {
-		color: $white;
+	.login-dialog-not-listed-button:hover & {
+		text-shadow: $shadow1;
 	}
 }
 .login-dialog-not-listed-label {
@@ -91,7 +91,7 @@
 	spacing: 12px;
 	width: 23em;
 	&:expanded .login-dialog-user-list-item:selected {
-		@include clickable(focus);
+		@include clickable(focus, $alpha2);
 	}
 	&:expanded .login-dialog-user-list-item:logged-in {
 		border-right: 2px solid $accent2;
@@ -146,12 +146,6 @@
 	icon-size: 1.25em;
 }
 .login-dialog-session-list-button {
-	@include clickable(normal);
-	&:hover,&:focus {
-		@include clickable(hover);
-	}
-	&:active {
-		@include clickable(active);
-	}
+	color: $white;
 }
 

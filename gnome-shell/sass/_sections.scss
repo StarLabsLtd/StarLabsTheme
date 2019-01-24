@@ -1,19 +1,19 @@
 @import 'sections/base';
-@import 'sections/access_dialog';
-@import 'sections/audio_selection_dialog';		 
-@import 'sections/auth_dialog';				
-@import 'sections/background_menu';
-@import 'sections/calendar';			
-@import 'sections/candidate_popup';			
-@import 'sections/check';
+@import 'sections/access_dialog';			//Perfect
+@import 'sections/audio_selection_dialog';		//Perfect
+@import 'sections/auth_dialog';				//Perfect
+@import 'sections/background_menu';			//Perfect
+@import 'sections/calendar';
+@import 'sections/candidate_popup';			//Perfect
+@import 'sections/check';				//Perfect
 @import 'sections/dashboard';				
-@import 'sections/dock';
-@import 'sections/end_session_dialog';			
-@import 'sections/entries';
-@import 'sections/extension_dialog';			
-@import 'sections/geolocation_dialog';			
+@import 'sections/dock';				//Perfect
+@import 'sections/end_session_dialog';			//Perfect
+@import 'sections/entries';				//Need Review
+@import 'sections/extension_dialog';			//Perfect
+@import 'sections/geolocation_dialog';			//Perfect
 @import 'sections/keyboard';
-@import 'sections/links';				
+@import 'sections/links';				//Perfect
 @import 'sections/login_dialog';			
 @import 'sections/looking_glass_dialog';
 @import 'sections/magnifier';
@@ -22,7 +22,7 @@
 @import 'sections/network_dialog';			
 @import 'sections/notifications';
 @import 'sections/osd';					
-@import 'sections/overview';				
+@import 'sections/overview';				//Search Icon
 @import 'sections/polkit_dialog';			
 @import 'sections/popup_menu';
 @import 'sections/prompt_dialog';			//Perfect

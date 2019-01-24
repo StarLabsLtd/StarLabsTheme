@@ -1,0 +1,5 @@
+{
+    "parentMode": "user",
+    "stylesheetName": "StarLabsTheme/gnome-shell.css",
+    "enabledExtensions": ["ubuntu-dock@ubuntu.com", "ubuntu-appindicators@ubuntu.com", "user-theme@gnome-shell-extensions.gcampax.github.com", "lockkeys@vaina.lt"]
+}

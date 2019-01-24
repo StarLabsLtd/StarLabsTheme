@@ -65,10 +65,10 @@
 
 &.dashtodock {
 	.app-well-app.focused .overview-icon {
-		@include clickable(active, $alpha2, $accent2);
+		@include fill(normal, $alpha3, $accent2);
 	}
 	#dash {
-		@include fill(normal, $alpha3);
+		@extend %shell-window;
 	}
 }
 
@@ -77,22 +77,18 @@
 }
 
 &.transparent {
-	@include fill(normal,$alpha3);
+	@extend %shell-window;
 }
 
 .number-overlay {
-	color: $accent2;
-	background-color: $dark1;
+	@include fill(normal, $alpha3, $accent2);
 	text-align: center;
 }
 
 .notification-badge {
-	color: $white;;
-	background-color: green;
+	@include fill(normal, $alpha3, $accent2);
 	padding: 0.2em 0.5em;
 	border-radius: 1em;
-	border: 1px solid darken(green,10%);
-	box-shadow: -1px 1px 5px 0px transparentize(black, 0.5);
 	font-weight: bold;
 	text-align: center;
 	margin: 2px;
@@ -106,7 +102,7 @@
 	margin: 32px 0px;
 }
 
-/* Yaru Dock styling */
+/* Yaru Dock styling 
 
 #dashtodockContainer {
 	&.shrink #dash, &.dashtodock #dash {
@@ -155,3 +151,4 @@
 		}
 	}
 }
+*/

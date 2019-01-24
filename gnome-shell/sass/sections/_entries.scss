@@ -3,17 +3,8 @@ StEntry {
 	border-width: 1px;
 	min-height: 22px;
 	padding: 4px;
-	@include entry(normal);
-	&:hover {
-		@include entry(hover);
-	}
-	&:focus {
-		@include entry(focus)
-	}
-	&:insensitive {
-		@include entry(insensitive);
-	}
-//	selection-background-color: darken($dark1, $beta1);
+	@extend %shell-entry;
+//	selection-background-color: 
 //	selected-color: $white;
 	StIcon.capslock-warning {
 		icon-size: 16px;

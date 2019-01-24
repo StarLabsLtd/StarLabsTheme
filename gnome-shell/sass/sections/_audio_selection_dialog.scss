@@ -1,13 +1,7 @@
 .audio-device-selection-dialog {
-	@include fill(normal, $alpha3)
+	@extend %shell-window;
 	StEntry {
-		@include entry(normal);
-		&:focus {
-			@include entry(focus);
-		}
-		&:active {
-			@include entry(active);
-		}
+		@extend %shell-entry;
 	}
 	spacing: 30px;
 }
@@ -24,13 +18,7 @@
 }
 .audio-selection-device {
 	border-radius: 12px;
-	@include clickable(normal, $alpha2);
-	&:hover, &:focus:hover {
-		@include clickable(hover, $alpha2);
-	}
-	&:active, &:focus:active {
-		@include clickable(focus, $alpha2);
-	}
+	@extend %shell-button;
 }
 .audio-selection-device-box {
 	padding: 20px;
