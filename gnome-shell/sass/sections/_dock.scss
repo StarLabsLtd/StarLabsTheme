@@ -1,0 +1,136 @@
+#dashtodockContainer {
+	&.shrink #dash, &.dashtodock #dash {
+		border: 1px;
+		padding: 0px;
+	}
+	&.shrink.left #dash, &.dashtodock.left #dash {
+		border-left: 0px;
+		border-radius: 0px 9px 9px 0px;
+	}
+	&.shrink.right #dash, &.dashtodock.right #dash {
+		border-right: 0px;
+		border-radius: 9px 0px 0px 9px;
+	}
+	&.shrink.top #dash, &.dashtodock.top #dash {
+		border-top: 0px;
+		border-radius: 0px 0px 9px 9px;
+	}
+	&.shrink.bottom #dash, &.dashtodock.bottom #dash {
+		border-bottom: 0px;
+		border-radius: 9px 9px 0px 0px;
+	}
+	&.straight-corner #dash, &.shrink.straight-corner #dash {
+		border-radius: 0px;
+	}
+}
+
+.bottom #dashtodockDashScrollview, .top #dashtodockDashScrollview {
+	-st-hfade-offset: 24px;
+}
+
+.left #dashtodockDashScrollview, .right #dashtodockDashScrollview {
+	-st-vfade-offset: 24px;
+}
+
+#dashtodockContainer {
+	&.running-dots .dash-item-container > StButton, &.dashtodock .dash-item-container > StButton {
+		transition-duration: 250;
+		background-size: contain;
+	}
+	&.shrink .dash-item-container > StButton, &.dashtodock .dash-item-container > StButton {
+		padding: 2px 4px;
+	}
+	&.extended {
+		&.top #dash, &.right #dash,
+		&.bottom #dash, &.left #dash {
+			border-radius: 0;
+		}
+		&.top #dash, &.bottom #dash {
+			border-left: 0px;
+			border-right: 0px;
+		}
+		&.right #dash, &.left #dash {
+			border-top: 0px;
+			border-bottom: 0px;
+		}
+	}
+
+	&.running-dots .app-well-app.running > .overview-icon, &.dashtodock .app-well-app.running > .overview-icon {
+		background-image: none;
+	}
+
+	&.running-dots .app-well-app.focused .overview-icon {
+		@include fill(normal, $alpha3, $accent2);
+	}
+
+	&.dashtodock {
+		.app-well-app.focused .overview-icon {
+			@include fill(normal, $alpha2, $accent2);
+	}
+	#dash {
+		@extend %shell-window;
+	}
+}
+
+&.opaque {
+	@include fill(normal,solid);
+}
+
+&.transparent {
+	@extend %shell-window;
+}
+
+.number-overlay {
+	@include fill(normal, $alpha3, $accent2);
+	text-align: center;
+}
+
+.notification-badge {
+	@include fill(normal, $alpha3, $accent2);
+	padding: 0.2em 0.5em;
+	border-radius: 1em;
+	font-weight: bold;
+	text-align: center;
+	margin: 2px;
+  }
+}
+
+#dashtodockPreviewSeparator.popup-separator-menu-item-horizontal {
+	width: 1px;
+	height: auto;
+	border-right-width: 1px;
+	margin: 32px 0px;
+}
+
+#dashtodockContainer {
+	&.shrink #dash, &.dashtodock #dash {
+		border: none !important;
+		//box-shadow: inset 0 1px 2px -1px rgba(0, 0, 0, 0.4) !important;
+	}
+	&.shrink.left #dash, &.dashtodock.left #dash {
+		border: none !important;
+	}
+	&.shrink.right #dash, &.dashtodock.right #dash {
+		border: none !important;
+	}
+	&.shrink.top #dash, &.dashtodock.top #dash {
+		border: none !important;
+	}
+	&.shrink.bottom #dash, &.dashtodock.bottom #dash {
+		border: none !important;
+	}
+	&.straight-corner #dash, &.shrink.straight-corner #dash {
+		border: none !important;
+	}
+	&.shrink.left #dash, &.dashtodock.left #dash, &.shrink.right #dash, &.dashtodock.right #dash {
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+	.overview-icon {
+		border-radius: $omega1;
+	}
+	.app-well-app {
+		&, & .overview-icon {
+		}
+	}
+}

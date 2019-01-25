@@ -1,0 +1,11 @@
+.geolocation-dialog, inhibit-shortcuts-dialog {
+	@extend %shell-window;
+	StEntry {
+		@extend %shell-entry;
+	}
+	.button {
+		@extend %shell-button;
+	}
+	spacing: 30px;
+}
+

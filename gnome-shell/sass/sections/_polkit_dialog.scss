@@ -1,0 +1,18 @@
+.polkit-dialog-user-layout {
+	padding-left: 10px;
+	spacing: 10px;
+	&:rtl {
+		padding-left: 0px;
+		padding-right: 10px;
+	}
+}
+.polkit-dialog-user-root-label {
+	color: $warning;
+}
+.polkit-dialog-user-icon {
+	border-radius: $omega1;
+	background-size: contain;
+	width: 48px;
+	height: 48px;
+}
+

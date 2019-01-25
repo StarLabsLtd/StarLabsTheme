@@ -1,0 +1,13 @@
+.tile-preview {
+	@include clickable(normal);
+}
+.tile-preview-left.on-primary {
+	border-radius: 0;
+}
+.tile-preview-right.on-primary {
+	border-radius: 0;
+}
+.tile-preview-left.tile-preview-right.on-primary {
+	border-radius: 0;
+}
+

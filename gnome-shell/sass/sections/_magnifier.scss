@@ -1,0 +1,7 @@
+.magnifier-zoom-region {
+	border: 2px solid $accent2;
+	&.full-screen {
+		border-width: 0;
+	}
+}
+

@@ -1,0 +1,16 @@
+.extension-dialog {
+	@extend %shell-window;
+	StEntry {
+		@extend %shell-entry;
+	}
+	.button {
+		@extend %shell-button;
+	}
+	.message-dialog-main-layout {
+		spacing: 24px;
+		padding: 10px;
+	}
+	.message-dialog-title {
+		color: $white;
+	}
+}

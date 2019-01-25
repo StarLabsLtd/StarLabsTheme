@@ -1,0 +1,53 @@
+.switcher-popup {
+	padding: 8px;
+	spacing: 16px;
+}
+.osd-window, .resize-popup {
+	border-radius: $omega1;
+	padding: 12px;
+}
+.switcher-list {
+	@extend %shell-window;
+        border-radius: $omega1;
+        padding: 12px;
+	color: $white;
+}
+.switcher-list-item-container {
+	spacing: 8px;
+}
+.switcher-list .item-box {
+	padding: 8px;
+	color: if($variant==light, $dark1, $white);
+	border-radius: $omega1;	
+}
+.switcher-list .item-box:outlined {
+	padding: 8px;
+}
+.switcher-list .item-box:selected {
+	border-radius: $omega1;
+	@include clickable(hover, $alpha2, $accent3);
+}
+.switcher-list .thumbnail-box {
+	padding: 2px;
+	spacing: 4px;
+}
+.switcher-list .thumbnail {
+	width:  256px;
+}
+.switcher-list .separator {
+	width: 1px;
+	color: $accent2;
+}
+.switcher-arrow {
+	border-color: rgba(0,0,0,0);
+	color: $white;
+	&:highlighted {
+		color: $white;
+	}
+}
+.input-source-switcher-symbol {
+	font-size: 34pt;
+	width: 96px;
+	height: 96px;
+}
+
