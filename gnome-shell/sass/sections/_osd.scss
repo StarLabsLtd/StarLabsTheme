@@ -5,8 +5,6 @@
 	margin: 32px;
 	min-width: 64px;
 	min-height: 64px;
-
-//	@include fill(normal, $alpha3);
 	border-radius: $omega1;
 	padding: 12px;
 	.osd-monitor-label {
@@ -26,7 +24,6 @@
 }
 .pad-osd-window {
 	padding: 32px;
-//	background-color: red;
 	.pad-osd-title-box {
 		spacing: 12px;
 	}

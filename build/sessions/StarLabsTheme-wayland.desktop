@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=StarLabsTheme on wayland
+Name=StarLabsTheme on Wayland
 Comment=This session logs you with StarLabsTheme on wayland
 Exec=env GNOME_SHELL_SESSION_MODE=starlabstheme gnome-session
 TryExec=gnome-session

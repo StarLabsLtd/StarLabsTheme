@@ -1,9 +1,10 @@
 .popup-menu {
 	min-width: 20em;
 	.popup-sub-menu {
-		@include fill(normal, $alpha2);
+		@extend %shell-window;		
 	}
 	.popup-menu-content {
+		//Content part but not arrow
 		padding: 1em 0em;
 	}
 	.popup-menu-item {
@@ -30,7 +31,6 @@
 	width: 1.2em;
 }
 .popup-menu-boxpointer, .candidate-popup-boxpointer {
-	@include fill(normal, $alpha3);
 	border-radius: $omega1;
 	-arrow-border-radius: $omega1;
 	-arrow-border-width: 1px;

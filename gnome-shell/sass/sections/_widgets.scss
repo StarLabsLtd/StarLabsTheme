@@ -4,19 +4,20 @@
 	border-bottom-style: none;
 	min-height: 22px;
 	padding: 4px 32px;
-	@include clickable(normal, $alpha2);
-	&:focus {
-		@include clickable(focus, $alpha2);
-	}
-	&:hover {
-		@include clickable(hover, $alpha2);
-	}
-	&:insensitive {
-		@include clickable(disabled);
-	}
-	&:active {
-		@include clickable(active, $alpha2);
-	}
+	@extend %shell-button;
+//	@include clickable(normal, $alpha2);
+//	&:focus {
+//		@include clickable(focus, $alpha2);
+//	}
+//	&:hover {
+//		@include clickable(hover, $alpha2);
+//	}
+//	&:insensitive {
+//		@include clickable(disabled);
+//	}
+//	&:active {
+//		@include clickable(active, $alpha2);
+//	}
 }
 .modal-dialog-linked-button {
 	@extend %shell-button;

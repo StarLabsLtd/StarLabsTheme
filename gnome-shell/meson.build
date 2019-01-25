@@ -1,10 +1,9 @@
-gnomeshell_theme_dir = join_paths(get_option('datadir'), 'gnome-shell', 'theme')
-
 # destination directory
-install_dir = join_paths(gnomeshell_theme_dir, meson.project_name())
+install_dir = join_paths(get_option('datadir'), 'gnome-shell', 'theme')
 
 # generate .css files
 theme_sources = files([
+  'gnome-shell.scss',
   'sass/_starlabs.scss',
   'sass/_functions.scss',
   'sass/functions/_entries.scss',

@@ -1,5 +1,5 @@
 name: starlabstheme
-version: '0.1'
+version: '0.2'
 architectures: [all]
 summary: Star Labs Gnome theme.
 description: |
@@ -7,8 +7,8 @@ description: |
 
   More information is available at
   https://starlabs.systems
-icon: snap/assets/star.png
-grade: testing
+icon: snap/gui/star.png
+grade: devel
 confinement: strict
 
 parts:

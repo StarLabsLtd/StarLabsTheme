@@ -48,9 +48,9 @@ stage {
         &:insensitive {
                 @include clickable(disabled);
         }
-        &:active {
-		@include clickable(active, $alpha2, $accent3);
-	}
+//      &:active {
+//		@include clickable(active, $alpha2, $accent3);
+//	}
         padding: 12px;
         &:first-child {
                 border-radius: 0px 0px 0px $omega1;

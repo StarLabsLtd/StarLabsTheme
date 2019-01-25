@@ -8,7 +8,6 @@
 	&.solid {
 		@include fill(normal, $alpha3);
 		.panel-button {
-			@include clickable(normal, $alpha1);
 			&:hover, &:active, &:overview, &:focus, &:checked {
 				@include clickable(normal, $alpha2);
 			}
@@ -37,6 +36,7 @@
 			padding: 0 5px;
 		}
 		.panel-corner {
+			-panel-corner-background-color: transparent;
 			-panel-corner-radius: $omega1;
 			-panel-corner-border-width: 2px;
 			-panel-corner-border-color: transparent;
