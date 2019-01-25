@@ -70,9 +70,9 @@ foreach style: styles
                               install_dir: install_dir,
                               depend_files: theme_sources)
 endforeach
-
 # static files to copy
 data_sources = [
+  'gnome-shell-theme.gresource.xml',
   'assets/calendar-arrow-left.svg',
   'assets/calendar-arrow-right.svg',
   'assets/calendar-today.svg',
@@ -118,7 +118,7 @@ data_sources = [
   'assets/key-layout.svg',
   'assets/key-shift.svg',
   'assets/key-shift-latched-uppercase.svg',
-  'assets/key-shift-uppercase.svg'
+  'assets/key-shift-uppercase.svg',
 ]
 
 # install static data files

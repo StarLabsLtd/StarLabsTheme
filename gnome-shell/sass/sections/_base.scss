@@ -35,7 +35,7 @@ stage {
 
 %shell-button {
         border-right-width: 1px;
-        @include clickable(normal, $alpha2);
+//        @include clickable(normal, $alpha2);
         &:active {
                 @include clickable(active, $alpha2, $accent2);
         }
@@ -48,9 +48,9 @@ stage {
         &:insensitive {
                 @include clickable(disabled);
         }
-//      &:active {
-//		@include clickable(active, $alpha2, $accent3);
-//	}
+        &:active, &:checked {
+		@include clickable(active, $alpha2, $accent2);
+	}
         padding: 12px;
         &:first-child {
                 border-radius: 0px 0px 0px $omega1;
@@ -76,4 +76,14 @@ stage {
 }
 %shell-window {
 	@include fill(normal, $alpha3);
+}
+
+%shell-element {
+	@include fill(normal, $alpha2, $accent2);
+	&:hover, &:focus {
+		@include clickable(normal, $alpha3, $accent2);
+	}
+	&:selected, &:active {
+		@include clickable(normal, $alpha3, $accent3);
+	}
 }

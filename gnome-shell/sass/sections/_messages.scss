@@ -3,22 +3,7 @@
 	width: 31.5em;
 }
 .message-list-clear-button.button {
-        @include clickable(normal, $alpha2);
-        &:active {
-                @include clickable(active, $alpha2, $accent2);
-        }
-        &:focus {
-                @include clickable(focus, $alpha2, $accent2);
-        }
-        &:hover {
-                @include clickable(hover, $alpha2, $accent2);
-        }
-        &:insensitive {
-                @include clickable(disabled);
-        }
-        &:active {
-		@include clickable(active, $alpha2, $accent3);
-	}
+        @extend %shell-button;
 	margin: 1.5em 1.5em 0;
 }
 .message-list-sections {
@@ -28,17 +13,8 @@
 	spacing: 0.4em;
 }
 .message {
-	background-color: transparent;
 	border-radius: $omega1;
-//	@include fill(normal, $alpha2, $accent2);
-//	@extend %shell-window;
-//	&:hover,&:focus {
-//		@include clickable(focus);
-//	}
-//	&:active {
-//		@include clickable(active);
-//	}
-
+	@extend %shell-element;
 	.message-icon-bin {
 		padding: 0.68em 0.2em 0.68em 0.68em;
 		&:rtl {
@@ -47,46 +23,32 @@
 	}
 	.message-icon-bin > StIcon {
 		-st-icon-style: symbolic;
-//		@include clickable(normal);
 		icon-size: 1.09em;
 	}
 	.message-secondary-bin {
 		padding: 0 0.82em;;
 	}
 	.message-secondary-bin > .event-time {
-//		@include clickable(normal);
 		font-size: 0.7em;
 		padding-bottom: 0.13em;
 	}
 	.message-secondary-bin > StIcon {
 		icon-size: 1.09em;
 	}
-	.message-title {
-//		@include fill(normal, $alpha3);
-	}
 	.message-content {
-//		@include fill(normal, $alpha3);
 		padding: 10px;
 	}
 	.message-media-control {
-//		border-radius: $omega1;
+		border-radius: $omega1;
 		padding: 12px;
-		border-radius: 0 $omega1 $omega1 0;
-//		@include clickable(normal);
+		&:hover {
+			@include clickable(normal, $alpha3);
+		}
 		&:last-child:ltr {
 			padding-right: 18px;
 		}
 		&:last-child:rtl {
 			padding-left: 18px;
-			border-radius: 0 $omega1 $omega1 0;
-		}
-		&:hover {
-			background-color: yellow;
-			color: green;
-//			@include clickable(hover, $alpha3, $accent3);
-		}
-		&:insensitive {
-//			@include clickable(disabled);
 		}
 	}
 	.media-message-cover-icon {
@@ -169,7 +131,6 @@
 }
 
 .window-close {
-//	@include fill(normal, $alpha3);
 	transition-duration: 100ms;
 	background-image: url("assets/close-window.svg");
 	background-size: 32px;

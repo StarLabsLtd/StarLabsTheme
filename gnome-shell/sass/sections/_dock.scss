@@ -60,12 +60,12 @@
 }
 
 &.running-dots .app-well-app.focused .overview-icon {
-	background-color: red;
+	background-color: $accent2;
 }
 
 &.dashtodock {
 	.app-well-app.focused .overview-icon {
-		@include fill(normal, $alpha3, $accent2);
+		@include fill(normal, $alpha2, $accent2);
 	}
 	#dash {
 		@extend %shell-window;

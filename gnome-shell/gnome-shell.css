@@ -23,40 +23,40 @@ stage {
   font-size: 11pt;
   color: #ffffff; }
 
-.access-dialog .button, .audio-selection-device, .extension-dialog .button, .geolocation-dialog .button, inhibit-shortcuts-dialog .button, .hotplug-notification-item, .prompt-dialog .button, .button, .modal-dialog-linked-button {
+.access-dialog .button, .audio-selection-device, .weather-button, .datemenu-today-button, .world-clocks-button, .events-section-title, .app-view-control, .extension-dialog .button, .geolocation-dialog .button, inhibit-shortcuts-dialog .button, .message-list-clear-button.button, .hotplug-notification-item, .prompt-dialog .button, .button, .modal-dialog-linked-button {
   border-right-width: 1px;
-  color: #ffffff;
-  background-color: rgba(23, 23, 29, 0.2);
-  box-shadow: 0 1px 1.5px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
-  transition: all 100ms cubic-bezier(0, 0, 0.2, 1);
-  -arrow-background-color: #17171d;
-  -arrow-border-color: #17171d;
   padding: 12px; }
-  .audio-selection-device:active, .hotplug-notification-item:active, .button:active, .modal-dialog-linked-button:active {
+  .audio-selection-device:active, .weather-button:active, .datemenu-today-button:active, .world-clocks-button:active, .events-section-title:active, .app-view-control:active, .hotplug-notification-item:active, .button:active, .modal-dialog-linked-button:active {
     color: #ffffff;
     background-color: rgba(33, 149, 242, 0.2);
     border-color: transparent;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.24), 0 3px 3px rgba(0, 0, 0, 0.345);
     transition: all 100ms cubic-bezier(0, 0, 0.2, 1); }
-  .audio-selection-device:focus, .hotplug-notification-item:focus, .button:focus, .modal-dialog-linked-button:focus {
+  .audio-selection-device:focus, .weather-button:focus, .datemenu-today-button:focus, .world-clocks-button:focus, .events-section-title:focus, .app-view-control:focus, .hotplug-notification-item:focus, .button:focus, .modal-dialog-linked-button:focus {
     background-color: rgba(33, 149, 242, 0.2);
     color: #ffffff;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.24), 0 3px 3px rgba(0, 0, 0, 0.345);
     transition: all 100ms cubic-bezier(0, 0, 0.2, 1); }
-  .audio-selection-device:hover, .hotplug-notification-item:hover, .button:hover, .modal-dialog-linked-button:hover {
+  .audio-selection-device:hover, .weather-button:hover, .datemenu-today-button:hover, .world-clocks-button:hover, .events-section-title:hover, .app-view-control:hover, .hotplug-notification-item:hover, .button:hover, .modal-dialog-linked-button:hover {
     color: #ffffff;
     background-color: rgba(33, 149, 242, 0.2);
     border-color: transparent;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.24), 0 3px 3px rgba(0, 0, 0, 0.345);
     transition: all 100ms cubic-bezier(0, 0, 0.2, 1); }
-  .audio-selection-device:insensitive, .hotplug-notification-item:insensitive, .button:insensitive, .modal-dialog-linked-button:insensitive {
+  .audio-selection-device:insensitive, .weather-button:insensitive, .datemenu-today-button:insensitive, .world-clocks-button:insensitive, .events-section-title:insensitive, .app-view-control:insensitive, .hotplug-notification-item:insensitive, .button:insensitive, .modal-dialog-linked-button:insensitive {
     opacity: 1; }
-  .audio-selection-device:first-child, .hotplug-notification-item:first-child, .button:first-child, .modal-dialog-linked-button:first-child {
+  .audio-selection-device:active, .weather-button:active, .datemenu-today-button:active, .world-clocks-button:active, .events-section-title:active, .app-view-control:active, .hotplug-notification-item:active, .button:active, .modal-dialog-linked-button:active, .audio-selection-device:checked, .weather-button:checked, .datemenu-today-button:checked, .world-clocks-button:checked, .events-section-title:checked, .app-view-control:checked, .hotplug-notification-item:checked, .button:checked, .modal-dialog-linked-button:checked {
+    color: #ffffff;
+    background-color: rgba(33, 149, 242, 0.2);
+    border-color: transparent;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.24), 0 3px 3px rgba(0, 0, 0, 0.345);
+    transition: all 100ms cubic-bezier(0, 0, 0.2, 1); }
+  .audio-selection-device:first-child, .weather-button:first-child, .datemenu-today-button:first-child, .world-clocks-button:first-child, .events-section-title:first-child, .app-view-control:first-child, .hotplug-notification-item:first-child, .button:first-child, .modal-dialog-linked-button:first-child {
     border-radius: 0px 0px 0px 6px; }
-  .audio-selection-device:last-child, .hotplug-notification-item:last-child, .button:last-child, .modal-dialog-linked-button:last-child {
+  .audio-selection-device:last-child, .weather-button:last-child, .datemenu-today-button:last-child, .world-clocks-button:last-child, .events-section-title:last-child, .app-view-control:last-child, .hotplug-notification-item:last-child, .button:last-child, .modal-dialog-linked-button:last-child {
     border-right-width: 0px;
     border-radius: 0px 0px 6px 0px; }
-  .audio-selection-device:first-child:last-child, .hotplug-notification-item:first-child:last-child, .button:first-child:last-child, .modal-dialog-linked-button:first-child:last-child {
+  .audio-selection-device:first-child:last-child, .weather-button:first-child:last-child, .datemenu-today-button:first-child:last-child, .world-clocks-button:first-child:last-child, .events-section-title:first-child:last-child, .app-view-control:first-child:last-child, .hotplug-notification-item:first-child:last-child, .button:first-child:last-child, .modal-dialog-linked-button:first-child:last-child {
     border-right-width: 0px;
     border-radius: 0px 0px 6px 6px; }
 
@@ -82,6 +82,25 @@ stage {
   color: #ffffff;
   background-color: rgba(23, 23, 29, 0.8);
   transition-duration: 500ms; }
+
+.calendar-day-base, .message {
+  color: #ffffff;
+  background-color: rgba(33, 149, 242, 0.2);
+  transition-duration: 500ms; }
+  .calendar-day-base:hover, .message:hover, .calendar-day-base:focus, .message:focus {
+    color: #ffffff;
+    background-color: rgba(33, 149, 242, 0.8);
+    box-shadow: 0 1px 1.5px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
+    transition: all 100ms cubic-bezier(0, 0, 0.2, 1);
+    -arrow-background-color: #2195f2;
+    -arrow-border-color: #2195f2; }
+  .calendar-day-base:selected, .message:selected, .calendar-day-base:active, .message:active {
+    color: #ffffff;
+    background-color: rgba(0, 104, 191, 0.8);
+    box-shadow: 0 1px 1.5px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
+    transition: all 100ms cubic-bezier(0, 0, 0.2, 1);
+    -arrow-background-color: #0068bf;
+    -arrow-border-color: #0068bf; }
 
 .access-dialog {
   spacing: 30px; }
@@ -211,22 +230,7 @@ stage {
   padding: 0.1em;
   margin: 2px;
   border-radius: 6px;
-  font-feature-settings: "tnum";
-  color: #ffffff;
-  background-color: rgba(33, 149, 242, 0.2);
-  transition-duration: 500ms; }
-  .calendar-day-base:hover, .calendar-day-base:focus {
-    color: #ffffff;
-    background-color: rgba(110, 197, 255, 0.8);
-    border-color: transparent;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.24), 0 3px 3px rgba(0, 0, 0, 0.345);
-    transition: all 100ms cubic-bezier(0, 0, 0.2, 1); }
-  .calendar-day-base:selected {
-    background-color: rgba(0, 104, 191, 0.8);
-    color: #ffffff;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.24), 0 3px 3px rgba(0, 0, 0, 0.345);
-    transition: all 100ms cubic-bezier(0, 0, 0.2, 1);
-    margin: 0; }
+  font-feature-settings: "tnum"; }
   .calendar-day-base.calendar-day-heading {
     color: #ffffff;
     background-color: rgba(23, 23, 29, 0);
@@ -373,18 +377,6 @@ stage {
 .app-view-control {
   padding: 4px 32px;
   margin: 0 4px; }
-  .app-view-control:checked {
-    color: #ffffff;
-    background-color: rgba(23, 23, 29, 0.2);
-    border-color: transparent;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.24), 0 3px 3px rgba(0, 0, 0, 0.345);
-    transition: all 100ms cubic-bezier(0, 0, 0.2, 1); }
-  .app-view-control:hover {
-    color: #ffffff;
-    background-color: rgba(23, 23, 29, 0.2);
-    border-color: transparent;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.24), 0 3px 3px rgba(0, 0, 0, 0.345);
-    transition: all 100ms cubic-bezier(0, 0, 0.2, 1); }
   .app-view-control:first-child {
     border-right-width: 0;
     border-radius: 0; }
@@ -419,14 +411,14 @@ stage {
 
 .app-well-app:active .overview-icon, .app-well-app:checked .overview-icon, .app-well-app.app-folder:active .overview-icon, .app-well-app.app-folder:checked .overview-icon, .show-apps:active .overview-icon, .show-apps:checked .overview-icon, .grid-search-result:active .overview-icon, .grid-search-result:checked .overview-icon {
   color: #ffffff;
-  background-color: rgba(33, 149, 242, 0.2);
+  background-color: rgba(0, 104, 191, 0.8);
   border-color: transparent;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.24), 0 3px 3px rgba(0, 0, 0, 0.345);
   transition: all 100ms cubic-bezier(0, 0, 0.2, 1); }
 
 .app-well-app:hover .overview-icon, .app-well-app:focus .overview-icon, .app-well-app:selected .overview-icon, .app-well-app.app-folder:hover .overview-icon, .app-well-app.app-folder:focus .overview-icon, .app-well-app.app-folder:selected .overview-icon, .show-apps:hover .overview-icon, .show-apps:focus .overview-icon, .show-apps:selected .overview-icon, .grid-search-result:hover .overview-icon, .grid-search-result:focus .overview-icon, .grid-search-result:selected .overview-icon {
   color: #ffffff;
-  background-color: rgba(23, 23, 29, 0.2);
+  background-color: rgba(33, 149, 242, 0.8);
   border-color: transparent;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.24), 0 3px 3px rgba(0, 0, 0, 0.345);
   transition: all 100ms cubic-bezier(0, 0, 0.2, 1); }
@@ -562,11 +554,11 @@ stage {
   background-image: none; }
 
 #dashtodockContainer.running-dots .app-well-app.focused .overview-icon {
-  background-color: red; }
+  background-color: #2195f2; }
 
 #dashtodockContainer.dashtodock .app-well-app.focused .overview-icon {
   color: #ffffff;
-  background-color: rgba(33, 149, 242, 0.8);
+  background-color: rgba(33, 149, 242, 0.2);
   transition-duration: 500ms; }
 
 #dashtodockContainer.opaque {
@@ -1076,38 +1068,7 @@ StEntry {
   width: 31.5em; }
 
 .message-list-clear-button.button {
-  color: #ffffff;
-  background-color: rgba(23, 23, 29, 0.2);
-  box-shadow: 0 1px 1.5px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
-  transition: all 100ms cubic-bezier(0, 0, 0.2, 1);
-  -arrow-background-color: #17171d;
-  -arrow-border-color: #17171d;
   margin: 1.5em 1.5em 0; }
-  .message-list-clear-button.button:active {
-    color: #ffffff;
-    background-color: rgba(33, 149, 242, 0.2);
-    border-color: transparent;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.24), 0 3px 3px rgba(0, 0, 0, 0.345);
-    transition: all 100ms cubic-bezier(0, 0, 0.2, 1); }
-  .message-list-clear-button.button:focus {
-    background-color: rgba(33, 149, 242, 0.2);
-    color: #ffffff;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.24), 0 3px 3px rgba(0, 0, 0, 0.345);
-    transition: all 100ms cubic-bezier(0, 0, 0.2, 1); }
-  .message-list-clear-button.button:hover {
-    color: #ffffff;
-    background-color: rgba(33, 149, 242, 0.2);
-    border-color: transparent;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.24), 0 3px 3px rgba(0, 0, 0, 0.345);
-    transition: all 100ms cubic-bezier(0, 0, 0.2, 1); }
-  .message-list-clear-button.button:insensitive {
-    opacity: 1; }
-  .message-list-clear-button.button:active {
-    color: #ffffff;
-    background-color: rgba(0, 104, 191, 0.2);
-    border-color: transparent;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.24), 0 3px 3px rgba(0, 0, 0, 0.345);
-    transition: all 100ms cubic-bezier(0, 0, 0.2, 1); }
 
 .message-list-sections {
   spacing: 1em; }
@@ -1116,7 +1077,6 @@ StEntry {
   spacing: 0.4em; }
 
 .message {
-  background-color: transparent;
   border-radius: 6px; }
   .message .message-icon-bin {
     padding: 0.68em 0.2em 0.68em 0.68em; }
@@ -1135,16 +1095,19 @@ StEntry {
   .message .message-content {
     padding: 10px; }
   .message .message-media-control {
-    padding: 12px;
-    border-radius: 0 6px 6px 0; }
+    border-radius: 6px;
+    padding: 12px; }
+    .message .message-media-control:hover {
+      color: #ffffff;
+      background-color: rgba(23, 23, 29, 0.8);
+      box-shadow: 0 1px 1.5px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
+      transition: all 100ms cubic-bezier(0, 0, 0.2, 1);
+      -arrow-background-color: #17171d;
+      -arrow-border-color: #17171d; }
     .message .message-media-control:last-child:ltr {
       padding-right: 18px; }
     .message .message-media-control:last-child:rtl {
-      padding-left: 18px;
-      border-radius: 0 6px 6px 0; }
-    .message .message-media-control:hover {
-      background-color: yellow;
-      color: green; }
+      padding-left: 18px; }
   .message .media-message-cover-icon {
     icon-size: 48px !important; }
     .message .media-message-cover-icon.fallback {
@@ -1659,8 +1622,7 @@ StEntry {
   spacing: 3px; }
 
 .search-section-separator {
-  height: 2px;
-  background-color: rgba(255, 255, 255, 0.2); }
+  height: 2px; }
 
 .list-search-result-content {
   spacing: 30px; }

@@ -46,12 +46,7 @@
 .app-view-control {
 	padding: 4px 32px;
 	margin: 0 4px;
-	&:checked {
-		@include clickable(active, $alpha2);
-	}
-	&:hover {
-		@include clickable(hover, $alpha2);
-	}
+	@extend %shell-button;
 	&:first-child {
 		border-right-width: 0;
 		border-radius: 0;
@@ -82,10 +77,10 @@
 		text-align: center;
 	}
 	&:active .overview-icon, &:checked .overview-icon {
-		@include clickable(active, $alpha2, $accent2);
+		@include clickable(active, $alpha3, $accent3);
 	}
 	&:hover .overview-icon, &:focus .overview-icon, &:selected .overview-icon {
-		@include clickable(hover, $alpha2);
+		@include clickable(hover, $alpha3, $accent2);
 	}
 }
 .app-well-app-running-dot {
