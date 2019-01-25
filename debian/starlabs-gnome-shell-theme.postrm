@@ -1,5 +1,0 @@
-rm /usr/share/gnome-shell/gnome-shell-theme.gresource
-mv /usr/share/gnome-shell/gnome-shell-theme.gresource.original /usr/share/gnome-shell/gnome-shell-theme.gresource
-
-update-alternatives --remove gdm3.css /usr/share/themes/StarLabs/gnome-shell/gnome-shell.css
-
