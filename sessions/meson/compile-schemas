@@ -7,4 +7,4 @@ if not environ.get('DESTDIR', ''):
     PREFIX = environ.get('MESON_INSTALL_PREFIX', '/usr')
     print('Compiling overridden schemas')
     call(['glib-compile-schemas', path.join(PREFIX, 'share', 'glib-2.0', 'schemas')])
-    call(['glib-compile-schemas', path,join(PREFIX, 'share', 'gnome-shell', 'StarLabsTheme')])
+    call(['glib-compile-schemas', path.join(PREFIX, 'share', 'gnome-shell', 'StarLabsTheme')])
