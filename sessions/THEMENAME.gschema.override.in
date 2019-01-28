@@ -13,3 +13,15 @@ input-feedback-sounds = true
 
 [org.gnome.mutter:@ThemeName@]
 center-new-windows = true
+
+[org.gnome.desktop.background:@ThemeName@]
+picture-uri = 'file:///usr/share/backgrounds/StarLabs/StarWallpaper10.jpg'
+
+[org.gnome.desktop.screensaver:@ThemeName@]
+picture-uri = 'file:///usr/share/backgrounds/StarLabs/StarWallpaper10.jpg'
+
+[org.gnome.desktop.interface:@ThemeName@]
+show-battery-percentage=true
+
+[com.ubuntu.sound:@ThemeName@]
+allow-amplified-volume=true

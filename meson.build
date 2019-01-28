@@ -5,6 +5,7 @@ project('StarLabs',
         default_options: ['prefix=/usr'])
 
 subdir('icons')
+subdir('backgrounds')
 subdir('gnome-shell')
 subdir('gtk')
 subdir('sounds')
