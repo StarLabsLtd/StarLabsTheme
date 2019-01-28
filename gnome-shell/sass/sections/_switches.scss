@@ -5,9 +5,9 @@
 }
 @each $v in us, intl {
 	.toggle-switch-#{$v} {
-		background-image: url("assets/toggle-off.svg");
+		background-image: url("toggle-off.svg");
 		&:checked {
-			background-image: url("assets/toggle-on.svg");
+			background-image: url("toggle-on.svg");
 		}
 	}
 }	

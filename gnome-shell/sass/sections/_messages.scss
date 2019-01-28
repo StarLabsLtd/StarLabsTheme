@@ -103,7 +103,7 @@
 .ripple-box {
 	width: 52px;
 	height: 52px;
-	background-image: url("assets/corner-ripple-ltr.svg");
+	background-image: url("corner-ripple-ltr.svg");
 	background-size: contain;
 }
 
@@ -121,16 +121,16 @@
 
 .window-close {
 	transition-duration: 100ms;
-	background-image: url("assets/close-window.svg");
+	background-image: url("close-window.svg");
 	background-size: 32px;
 	height: 32px;
 	width: 32px;
 	-shell-close-overlap: 13px;
 	&:hover {
-		background-image: url("assets/close-window-hover.svg");
+		background-image: url("close-window-hover.svg");
 	}
 	&:active {
-		background-image: url("assets/close-window-active.svg");
+		background-image: url("close-window-active.svg");
 	}
 }
 

@@ -1,0 +1,106 @@
+menubar, .menubar {
+	@include fill(normal);
+	-GtkWidget-window-dragging: true;
+	padding: 0px;
+	> menuitem {
+		min-height: 16px;
+		padding: 4px 8px;
+		menu {
+			border-radius: 0 0 $omega1 $omega1;
+			menu {
+				border-radius: $omega1;
+			}
+		}
+		&:hover {
+			@include clickable(hover);
+		}
+		&:disabled {
+			@include clickable(disabled);
+		}
+	}
+}
+
+.background.popup {
+	background-color: transparent;
+}
+
+menu, .menu, .context-menu {
+	@include clickable(normal);
+	margin: 4px;
+	padding: 8px 0;
+	border-radius: $omega1;
+	.csd & {
+		border: none;
+	}
+	menuitem {
+		min-height: 20px;
+		min-width: 36px;
+		padding: 5px 6px;
+		border-radius: 0;
+		&:backdrop, &:backdrop:hover {
+			@include clickable(backdrop-hover);
+		}
+		arrow {
+			min-height: 16px;
+			min-width: 16px;
+			&:dir(ltr) {
+				-gtk-icon-source: -gtk-icontheme('pan-end-symbolic');
+			}
+			&:dir(rtl) {
+				-gtk-icon-source: -gtk-icontheme('pan-end-symbolic-rtl');
+			}
+		}
+		label {
+			&:dir(rtl), &:dir(ltr) {
+				color: inherit;
+			}
+		}
+	}
+
+	> arrow {
+		@include clickable(undecorated);
+		min-height: 16px;
+		min-width: 16px;
+		padding: 4px;
+		border-radius: 0;
+		&.top {
+			border-bottom: 1px solid $accent2;
+			border-top-right-radius: $omega1;
+			border-top-left-radius: $omega1;
+			-gtk-icon-source: -gtk-icontheme('pan-up-symbolic');
+		}
+		&.bottom {
+			margin-bottom: -8px;
+			border-top: 1px solid $accent2;
+			border-bottom-right-radius: $omega1;
+			border-bottom-left-radius: $omega1;
+			-gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
+		}
+		&:hover {
+			@include clickable(hover);
+		}
+		&:backdrop {
+			@include clickable(backdrop);
+		}
+		&:disabled {
+			@include clickable(disabled);
+		}
+	}
+}
+
+menuitem {
+	accelerator {
+		color: $accent2;
+	}
+	check, radio {
+		&:dir(ltr) {
+			margin-right: 7px;
+		}
+		&:dir(rtl) {
+			margin-left: 7px;
+		}
+	}
+}
+
+
+

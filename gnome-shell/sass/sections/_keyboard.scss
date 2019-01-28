@@ -36,25 +36,25 @@
 	}
 	&.enter-key {
 		@include clickable(normal);
-		background-image: url("assets/key-enter.svg");
+		background-image: url("key-enter.svg");
 		&:active {
 			@include clickable(active);
 		}
 	}
 	&.shift-key-lowercase {
-		background-image: url("assets/key-shift.svg");
+		background-image: url("key-shift.svg");
 	}
 	&.shift-key-uppercase {
-		background-image: url("assets/key-shift-uppercase.svg");
+		background-image: url("key-shift-uppercase.svg");
 	}
 	&.shift-key-uppercase:latched {
-		background-image: url("assets/key-shift-latched-uppercase.svg");
+		background-image: url("key-shift-latched-uppercase.svg");
 	}
 	&.hide-key {
-		background-image: url("assets/key-hide.svg");
+		background-image: url("key-hide.svg");
 	}
 	&.layout-key {
-		background-image: url("assets/key-layout.svg");
+		background-image: url("key-layout.svg");
 	}
 }
 .keyboard-subkeys {

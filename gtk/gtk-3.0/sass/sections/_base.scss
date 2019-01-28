@@ -1,0 +1,152 @@
+.background {
+	@include fill(normal);
+}
+
+.gtkstyle-fallback {
+	@each $selector, $state in
+	("", "normal"),
+	(":hover", "hover"),
+	(":active", "active"),
+	(":disabled", "disabled") {
+//	(":selected", "selected") 
+		&#{$selector} {
+			@include clickable($state);
+		}
+	}
+}
+
+widget:selected {
+	color: $accent2;
+}
+
+
+%gtk-entry {
+        @include entry(normal);
+        &:focus {
+                @include entry(focus);
+        }
+        &:active {
+                @include entry(active);
+        }
+}
+%gtk-header {
+	@include fill(normal, $alpha3, dark);
+	&:backdrop {
+		@include fill(backdrop, $alpha3, dark);
+	}
+}
+
+%gtk-window {
+        @include fill(normal);
+	&:backdrop {
+		@include fill(backdrop);
+	}
+}
+
+%gtk-button {
+	@include clickable(normal);
+	&:focus {
+		@include clickable(focus);
+	}
+	&:hover {
+		@include clickable(hover);
+	}
+	&:active {
+		@include clickable(active);
+	}
+	&:disabled {
+		@include clickable(disabled);
+	}
+	&:backdrop {
+		@include clickable(backdrop);
+		&:focus {
+			@include clickable(backdrop-focus);
+		}
+		&:hover {
+			@include clickable(backdrop-hover);
+		}
+		&:active {
+			@include clickable(backdrop-active);
+		}
+	}
+	.destructive-action {
+		&:focus {
+			@include clickable(focus,solid,$failure);
+		}
+		&:hover {
+			@include clickable(hover,solid,$failure);
+		}
+		&:active {
+			@include clickable(active,solid,$failure);
+		}
+		&:disabled {
+			@include clickable(disabled,solid,$failure);
+		}
+		&:backdrop {
+			@include clickable(backdrop,solid,$failure);
+			&:focus {
+				@include clickable(backdrop-focus,solid,$failure);
+			}
+			&:hover {
+				@include clickable(backdrop-hover,solid,$failure);
+			}
+			&:active {
+				@include clickable(backdrop-active,solid,$failure);
+			}
+		}	
+	}
+	.suggested-action {
+		&:focus {
+			@include clickable(focus,solid,$success);
+		}
+		&:hover {
+			@include clickable(hover,solid,$success);
+		}
+		&:active {
+			@include clickable(active,solid,$success);
+		}
+		&:disabled {
+			@include clickable(disabled,solid,$success);
+		}
+		&:backdrop {
+			@include clickable(backdrop,solid,$success);
+			&:focus {
+				@include clickable(backdrop-focus,solid,$success);
+			}
+			&:hover {
+				@include clickable(backdrop-hover,solid,$success);
+			}
+			&:active {
+				@include clickable(backdrop-active,solid,$success);
+			}
+		}
+	}
+        &:first-child {
+                border-radius: 0px 0px 0px $omega1;
+        }
+        &:last-child {
+                border-right-width: 0px;
+                border-radius: 0px 0px $omega1 0px;
+        }
+        &:first-child:last-child {
+                border-right-width: 0px;
+                border-radius: 0px 0px $omega1 $omega1;
+        }
+}
+
+%gtk-selected, %selected_items {
+	background-color: $accent2
+	&:disabled {
+		opacity: 0.5;
+	}
+}
+
+%selected_items:disabled, %selected_items:backdrop {
+	opacity: 0.5;
+}
+
+
+%gtk-selected-clear, %nobg_selected_items {
+	background-color: transparent;
+}
+

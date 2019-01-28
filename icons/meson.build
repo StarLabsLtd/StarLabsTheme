@@ -3,7 +3,7 @@ theme_dir = join_paths(get_option('prefix'), 'share/icons', meson.project_name()
 install_subdir('StarLabs',
     install_dir: theme_dir,
     strip_directory: true,
-    exclude_files: ['index.theme', 'cursor.theme'],
+#    exclude_files: ['index.theme', 'cursor.theme'],
 )
 
 themes_f = [

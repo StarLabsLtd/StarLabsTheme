@@ -1,0 +1,398 @@
+%scale_trough {
+  border-radius: 3px;
+  background-color: $dark_fill;
+  min-height: 2px;
+
+  &:disabled { background-color: $insensitive_dark_fill; }
+
+  &:backdrop {
+    background-color: _backdrop_color($dark_fill);
+    transition: $backdrop_transition;
+
+    &:disabled { background-color: $backdrop_insensitive_dark_fill; }
+  }
+
+  // ...on selected list rows
+  row:selected & { &:disabled, & { border-color: $neutral_color; }} // TODO: what program uses this so it can be tested out?
+
+  // OSD
+  .osd & { }
+}
+
+%scale_highlight {
+  $c: $neutral_color;
+  border-radius: 3px;
+  background-color: $c;
+
+  &:disabled {
+    background-color: transparent;
+  }
+
+  &:backdrop {
+    background-color: _backdrop_color($c);
+    &:disabled {
+      background-color: transparent;
+    }
+  }
+
+  // ...on selected list rows
+  row:selected & { &:disabled, & { border-color: $c; }}
+
+  // OSD
+  .osd & { }
+}
+
+scale {
+  // sizing
+  $_marks_lenght: 6px;
+  $_marks_distance: 6px;
+
+  min-height: 8px;
+  min-width: 8px;
+  padding: 12px;
+
+  // the slider is inside the trough, so to have make it bigger there's a negative margin
+  slider {
+    min-height: 18px;
+    min-width: 18px;
+    margin: -9px;
+  }
+
+  &.horizontal slider { margin-top: -8px; }
+
+  &.vertical slider { margin-left: -8px; }
+
+  // click-and-hold the slider to activate
+  &.fine-tune {
+    &.horizontal {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      min-height: 16px;
+    }
+
+    &.vertical {
+      padding-left: 8px;
+      padding-right: 8px;
+      min-width: 16px;
+    }
+
+    // to make the trough grow in fine-tune mode
+    slider { margin: -8px; }
+
+    &.horizontal slider { margin-top: -7px; }
+
+    &.vertical slider { margin-left: -7px; }
+
+    fill,
+    highlight,
+    trough {
+      border-radius: 5px;
+      -gtk-outline-radius: 7px;
+    }
+  }
+
+  // the backing bit
+  trough {
+    @extend %scale_trough;
+
+    outline-offset: 3px;
+    -gtk-outline-radius: 5px;
+  }
+
+  // the colored part of the backing bit
+  highlight { @extend %scale_highlight; }
+
+  // this is another differently styled part of the backing bit, the most relevant use case is for example
+  // in media player to indicate how much video stream as been cached
+  fill {
+    @extend %scale_trough;
+
+    &:backdrop, & { background-color: $borders_color; }
+
+    &:disabled {
+      &:backdrop, & {
+        border-color: transparent;
+        background-color: transparent;
+      }
+    }
+
+    // OSD
+    .osd & { }
+  }
+
+  slider {
+    $c: $neutral_color;
+    $_bc: _border_color($dark_fill);
+    @include clickable(normal);
+
+    border: 1px solid if($variant=='light', $_bc, transparent);
+    border-radius: 10px;
+    background-clip: if($variant == "light", border-box, padding-box);
+    transition: $button_transition;
+    transition-property: background, border, box-shadow;
+
+    &:hover {
+      background-color: darken(white, 5%);
+    }
+
+    &:active { border-color: _border_color($c); }
+
+    &:disabled {
+      @include clickable(insensitive, if($variant == "light", white, darken(white, 20%)));
+      border-color: if($variant=='light', lighten($accent2, 10%), transparent);
+    }
+
+    &:backdrop {
+      transition: $backdrop_transition;
+      background-color: mix($white, $backdrop_bg_color, 70%);
+      &:disabled { background-color: mix($white, $backdrop_insensitive_color, 70%); border-color: $backdrop_insensitive_color; }
+    }
+
+    // ...on selected list rows
+    row:selected & { &:disabled, & { border-color: $c; } }
+
+    // OSD
+    .osd & { }
+  }
+
+  value { color: gtkalpha(currentColor, 0.55); }
+
+  marks {
+    color: gtkalpha(currentColor, 0.55);
+
+    @each $marks_class, $marks_pos, $marks_margin in (top, top, bottom),
+                                                     (bottom, bottom, top),
+                                                     (top, left, right),
+                                                     (bottom, right, left) {
+      &.#{$marks_class} {
+        margin-#{$marks_margin}: $_marks_distance;
+        margin-#{$marks_pos}: -($_marks_distance + $_marks_lenght);
+      }
+    }
+  }
+
+  &.fine-tune marks {
+    @each $marks_class, $marks_pos, $marks_margin in (top, top, bottom),
+                                                     (bottom, bottom, top),
+                                                     (top, left, right),
+                                                     (bottom, right, left) {
+      &.#{$marks_class} {
+        margin-#{$marks_margin}: $_marks_distance;
+        margin-#{$marks_pos}: -($_marks_distance + $_marks_lenght - 1px);
+      }
+    }
+  }
+
+  &.horizontal {
+    indicator {
+      min-height: $_marks_lenght;
+      min-width: 1px;
+    }
+
+    &.fine-tune indicator { min-height: ($_marks_lenght - 1px); }
+  }
+
+  &.vertical {
+    indicator {
+      min-height: 1px;
+      min-width: $_marks_lenght;
+    }
+
+    &.fine-tune indicator { min-width: ($_marks_lenght - 1px); }
+  }
+
+  // *WARNING* scale with marks madness following
+
+  // FIXME: OSD and selected list rows missing, I don't feel like adding the other 144 assets needed for those...
+  @each $dir_class, $dir_infix in ('horizontal', 'horz'),
+                                  ('vertical', 'vert') {
+    @each $marks_infix, $marks_class in ('scale-has-marks-above', 'marks-before:not(.marks-after)'),
+                                        ('scale-has-marks-below', 'marks-after:not(.marks-before)') {
+      @each $state, $state_infix in ('', ''),
+                                    (':hover', '-hover'),
+                                    (':active', '-active'),
+                                    (':disabled', '-insensitive'),
+                                    (':backdrop', '-backdrop'),
+                                    (':backdrop:disabled', '-backdrop-insensitive') {
+        &.#{$dir_class}.#{$marks_class} {
+
+          slider {
+            &#{$state} {
+              // an asymmetric slider asset is used here, so the margins are uneven, the smaller
+              // margin is set on the point side.
+              margin: -9px;
+              $_scale_asset: 'assets/slider-#{$dir_infix}-#{$marks_infix}#{$state_infix}';
+              border-style: none;
+              border-radius: 0;
+
+              background-color: transparent;
+              background-image: -gtk-scaled(url('#{$_scale_asset}.png'), url('#{$_scale_asset}@2.png'));
+
+              $_scale_slider_bg_pos: center calc(100% - 2px);
+
+              @if $dir_class == 'horizontal' {
+                min-height: 26px;
+                min-width: 22px;
+                background-size: 16px 24px;
+
+                @if $marks_infix == 'scale-has-marks-above' {
+                  margin-top: -14px;
+
+                  $_scale_slider_bg_pos: center 2px;
+                }
+
+                @else { margin-bottom: -14px; }
+              }
+
+              @else {
+                min-height: 22px;
+                min-width: 26px;
+                background-size: 24px 16px;
+
+                @if $marks_infix == 'scale-has-marks-above' {
+                  margin-left: -14px;
+
+                  $_scale_slider_bg_pos: calc(100% - 2px) center;
+                }
+
+                @else {
+                  margin-right: -14px;
+
+                  $_scale_slider_bg_pos: 2px center;
+                }
+              }
+
+              background-position: $_scale_slider_bg_pos;
+              background-repeat: no-repeat;
+              box-shadow: none;
+            }
+          }
+
+          &.fine-tune slider {
+            // bigger negative margins to make the trough grow here as well
+            margin: -8px;
+
+            @if $dir_class == 'horizontal' {
+              @if $marks_infix == 'scale-has-marks-above' { margin-top: -13px; }
+
+              @else { margin-bottom: -13px; }
+            }
+
+            @else {
+              @if $marks_infix == 'scale-has-marks-above' { margin-left: -13px; }
+
+              @else { margin-right: -13px; }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.color {
+    min-height: 0;
+    min-width: 0;
+
+    trough { }
+
+    &.horizontal {
+      padding: 0 0 12px 0;
+
+      trough {
+        padding-bottom: 3px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+
+      slider {
+        &:dir(ltr), &:dir(rtl) { // specificity bumb
+          &:hover, &:backdrop, &:disabled, &:backdrop:disabled, & {
+            margin-bottom: -12px;
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+
+    &.vertical {
+      &:dir(ltr) {
+        padding: 0 0 0 12px;
+
+        trough {
+          padding-left: 3px;
+          border-bottom-right-radius: 0;
+          border-top-right-radius: 0;
+        }
+
+        slider {
+          &:hover, &:backdrop, &:disabled, &:backdrop:disabled, & {
+            margin-left: -12px;
+            margin-right: 5px;
+          }
+        }
+      }
+
+      &:dir(rtl) {
+        padding: 0 12px 0 0;
+
+        trough {
+          padding-right: 3px;
+          border-bottom-left-radius: 0;
+          border-top-left-radius: 0;
+        }
+
+        slider {
+          &:hover, &:backdrop, &:disabled, &:backdrop:disabled, & {
+            margin-right: -12px;
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+
+    &.fine-tune {
+      &.horizontal {
+        &:dir(ltr), &:dir(rtl) { // specificity bump
+          padding: 0 0 10px 0;
+
+          trough {
+            padding-bottom: 5px;
+          }
+
+          slider {
+            margin-bottom: -12px;
+            margin-top: 5px;
+          }
+        }
+      }
+
+      &.vertical {
+        &:dir(ltr) {
+          padding: 0 0 0 10px;
+
+          trough {
+            padding-left: 5px;
+          }
+
+          slider {
+            margin-left: -12px;
+            margin-right: 5px;
+          }
+        }
+
+        &:dir(rtl) {
+          padding: 0 10px 0 0;
+
+          trough {
+            padding-right: 5px;
+          }
+
+          slider {
+            margin-right: -12px;
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+}

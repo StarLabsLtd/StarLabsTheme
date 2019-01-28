@@ -52,7 +52,6 @@
 .calendar-day-left {
 	border-left-width: 1px;
 }
-
 .weather-button {
 	@extend %shell-button;
 }
@@ -66,7 +65,7 @@
 }
 
 .datemenu-today-button, .world-clocks-button, .weather-button, .events-section-title {
-	@extend %shell-button;
+//	@extend %shell-button;
 }
 .calendar-month-label {
 	font-weight: 450;
@@ -79,15 +78,15 @@
 	border-radius: $omega1;
 }
 .calendar-change-month-back {
-	background-image: url("assets/calendar-arrow-left.svg");
+	background-image: url("calendar-arrow-left.svg");
 	&:rtl {
-		background-image: url("assets/calendar-arrow-right.svg");
+		background-image: url("calendar-arrow-right.svg");
 	}
 }
 .calendar-change-month-forward {
-	background-image: url("assets/calendar-arrow-right.svg");
+	background-image: url("calendar-arrow-right.svg");
 	&:rtl {
-		background-image: url("assets/calendar-arrow-left.svg");
+		background-image: url("calendar-arrow-left.svg");
 	}
 }
 .calendar-day-base {

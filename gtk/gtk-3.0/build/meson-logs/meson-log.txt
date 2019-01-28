@@ -1,0 +1,10 @@
+Build started at 2019-01-27T20:26:28.671334
+Main binary: /usr/bin/python3
+Python system: Linux
+The Meson build system
+Version: 0.47.2
+Source dir: /home/sean/Documents/git/StarLabsTheme/gtk/gtk-3.0
+Build dir: /home/sean/Documents/git/StarLabsTheme/gtk/gtk-3.0/build
+Build type: native build
+
+ERROR: First statement must be a call to project

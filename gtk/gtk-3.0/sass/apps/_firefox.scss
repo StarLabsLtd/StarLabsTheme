@@ -1,0 +1,27 @@
+#MozillaGtkWidget.background  {
+	menu, .menu,.context-menu {
+		border-radius: 0;
+	}
+	scrollbar {
+		background-color: transparent;
+		border-color: transparent;
+		slider  {
+			background-color: $dark1;
+			&:hover {
+				background-color: $accent2;
+			}
+			&:hover:active {
+				background-color: $accent1;
+			}
+			&:backdrop {
+				background-color: lighten($dark1, $beta1);
+			}
+			&:disabled {
+				opacity: $alpha1;
+			}
+		}
+		trough {
+			background-color: $white;
+		}
+	}
+}

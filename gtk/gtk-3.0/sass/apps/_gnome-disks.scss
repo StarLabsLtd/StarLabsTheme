@@ -1,0 +1,5 @@
+headerbar button image ~ window decoration ~ menu separator {
+  // gnome disks headerbar menu seems to inherit the headerbar separator bg color
+  // no unique class names or id used here so this rule is as specific as it can be
+  background: $borders_color;
+}
