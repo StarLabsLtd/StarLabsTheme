@@ -1,4 +1,4 @@
-@mixin entry($type, $style:$variant) {
+@mixin entry($type, $transparent: solid, $style:$variant) {
 	$color: $dark1;
 	$fill: if($style==light, darken($white, $beta1), if($style==dark, $white, $style));
 

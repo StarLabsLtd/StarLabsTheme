@@ -40,6 +40,7 @@
 	}
 	@else if $type==disabled {
 		// Button that is disabled
+		color: darken($color, $beta2);
 		opacity: $alpha1;
 	}
 	@if $type==backdrop {
@@ -75,5 +76,13 @@
 		border-color: transparent;
 		box-shadow: $shadow2;
 		transition: $tran2;
+	}
+	@elseif $type==undecorated {
+		background-color: transparent;
+		border-color: transparent;
+		background-image: none;
+		box-shadow: none;
+		text-shadow: none;
+		-gtk-icon-shadow: none;
 	}
 }

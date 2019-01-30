@@ -1,8 +1,8 @@
-$variant: 'light';
+$variant: 'dark';
 
 @import 'sass/starlabs';
-@import 'sass/colors';
 @import 'sass/functions';
+@import 'sass/colors';
+@import "sass/colors-public";
+@import 'sass/drawing';
 @import 'sass/sections';
-@import "sass/apps";
-@import 'sass/colors-public';
