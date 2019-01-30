@@ -25,6 +25,7 @@ gtk3_scss_dependencies = [
   'sass/functions/_fill.scss',
   'sass/functions/_overshoot.scss',
   'sass/_sections.scss',
+  'sass/_base.scss',
   'sass/_colors.scss',
   'sass/_colors-public.scss',
 ]

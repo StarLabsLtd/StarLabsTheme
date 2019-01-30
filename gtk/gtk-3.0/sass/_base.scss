@@ -1,0 +1,31 @@
+%gtk-button {
+	border-radius: $omega1;
+	border: none;
+	box-shadow: none;
+
+	@include clickable(normal);
+	&:hover {
+		@include clickable(normal, $alpha3, $accent2);
+	}
+	&:focus, &:active, &:checked {
+
+	}
+	&:backdrop {
+
+	}
+
+
+	&:disabled {
+		color: if($variant==dark, darken($dark1, $beta1), darken($white, $beta1));
+	}
+	&.flat {
+		@include clickable(undecorated);
+	}
+	&.suggested-action {
+		@include clickable(normal, solid, $success);
+	}
+	&.destructive-action {
+		@include clickable(normal, solid, $failure);
+	}
+
+}
