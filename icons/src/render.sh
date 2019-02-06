@@ -1,6 +1,8 @@
 #!/bin/bash
 path=../../../StarLabs
-
+rm -r ../StarLabs/[0-9]*
+rm -r ../StarLabs/scalable
+cd fullcolor
 for d in apps; do
 #categories devices emblems mimetypes places status
 	cd $d
@@ -17,6 +19,11 @@ for d in apps; do
 	done
 	cd ..
 done
+cd ..
 
+cp scalable ../../StarLabs
+cd symlinks
+	./generate-symlinks.sh
+cd ..
 
-
+find -L ../StarLabs/*x*/*/. -name . -o -type d -prune -o -type l -exec rm {} +

@@ -1,6 +1,6 @@
 [Icon Theme]
 Name=@ThemeName@
-Comment=A desktop adaptation of the Ubuntu mobile icons.
+Comment=Star Labs Icon Theme.
 Inherits=Humanity,hicolor
 Example=folder
 
