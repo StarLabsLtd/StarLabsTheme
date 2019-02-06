@@ -40,37 +40,41 @@
      id="namedview6"
      showgrid="false"
      inkscape:zoom="29.5"
-     inkscape:cx="22.989157"
-     inkscape:cy="21.764041"
+     inkscape:cx="16.650174"
+     inkscape:cy="6.8487868"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg4" />
   <g
-     id="g938"
-     transform="translate(-9.9844399,17.75)">
-    <rect
-       y="-15"
-       x="15.48444"
-       height="11"
-       width="1"
-       id="rect819"
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.64646131;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+     id="g857"
+     transform="translate(1)">
     <circle
        r="2"
-       cy="-4.5"
-       cx="21.48444"
+       cy="13.25"
+       cx="11.5"
        id="path817-7"
        style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.8787235;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
-    <circle
-       r="2"
-       cy="-4"
-       cx="14.48444"
-       id="path817-7-5"
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.8787235;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <g
+       transform="translate(-3)"
+       id="g849">
+      <rect
+         style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.64646131;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+         id="rect819"
+         width="1"
+         height="11"
+         x="6.5"
+         y="2.75" />
+      <circle
+         style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.8787235;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+         id="path817-7-5"
+         cx="5.5"
+         cy="13.75"
+         r="2" />
+    </g>
     <rect
-       y="-15.5"
-       x="22.48444"
+       y="2.25"
+       x="12.5"
        height="11"
        width="1"
        id="rect819-35"
@@ -79,7 +83,7 @@
        sodipodi:nodetypes="ccccc"
        inkscape:connector-curvature="0"
        id="rect930"
-       d="m 15.48444,-17 8,-0.5 v 3 l -8,0.5 z"
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.49533063;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+       d="M 3.5000001,0.75 13.5,0.25 v 3 l -9.9999999,0.5 z"
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.55379647;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
   </g>
 </svg>
