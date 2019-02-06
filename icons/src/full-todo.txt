@@ -55,10 +55,8 @@ software-store.svg
 software-updater.svg
 sudoku-app.svg
 system-monitor-app.svg
-terminal-app.svg
 thunderbird.svg
 to-do-app.svg
-tweaks-app.svg
 ubiquity.svg
 usage-app.svg
 usb-creator-gtk.svg
@@ -74,7 +72,6 @@ preferences-power.svg
 preferences-system-bluetooth.svg
 preferences-system-network.svg
 preferences-system-time.svg
-todo.txt
 drive-harddisk-ieee1394.svg
 drive-harddisk.svg
 drive-harddisk-usb.svg
@@ -82,10 +79,8 @@ drive-removable-media-usb.svg
 input-keyboard.svg
 input-mouse.svg
 printer.svg
-todo.txt
 emblem-readonly.svg
 emblem-unreadable.svg
-todo.txt
 application-apk.svg
 application-epub+zip.svg
 application-illustrator.svg
@@ -164,7 +159,6 @@ text-x-sql.svg
 text-x-tex.svg
 text-x-typescript.svg
 text-x-vala.svg
-todo.txt
 unknown.svg
 video-x-generic.svg
 x-office-document.svg
@@ -172,10 +166,8 @@ x-office-presentation.svg
 x-office-spreadsheet.svg
 folders.svg
 network-server.svg
-todo.txt
 user-desktop.svg
 user-trash.svg
 image-loading.svg
 image-missing.svg
 software-update-available.svg
-todo.txt

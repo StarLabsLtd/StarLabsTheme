@@ -2,9 +2,10 @@
 path=../../../StarLabs
 rm -r ../StarLabs/[0-9]*
 rm -r ../StarLabs/scalable
+cp -r scalable ../StarLabs
 cd fullcolor
-for d in apps; do
-#categories devices emblems mimetypes places status
+for d in apps places; do
+#categories devices emblems mimetypes status
 	cd $d
 	for f in *.svg; do
 		for s in 256 48 32 24 16 8; do
@@ -21,7 +22,7 @@ for d in apps; do
 done
 cd ..
 
-cp scalable ../../StarLabs
+
 cd symlinks
 	./generate-symlinks.sh
 cd ..
