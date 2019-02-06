@@ -164,7 +164,7 @@ video-x-generic.svg
 x-office-document.svg
 x-office-presentation.svg
 x-office-spreadsheet.svg
-folders.svg
+
 network-server.svg
 user-desktop.svg
 user-trash.svg

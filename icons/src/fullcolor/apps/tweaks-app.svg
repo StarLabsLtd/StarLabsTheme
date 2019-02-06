@@ -17,7 +17,7 @@
    viewBox="0 0 256 256"
    enable-background="new 0 0 256 256"
    xml:space="preserve"
-   sodipodi:docname="tweak-app.svg"
+   sodipodi:docname="tweaks-app.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
    inkscape:label="Shadow"><metadata
    id="metadata253"><rdf:RDF><cc:Work
@@ -1147,13 +1147,13 @@
    inkscape:pageopacity="0"
    inkscape:pageshadow="2"
    inkscape:window-width="1920"
-   inkscape:window-height="1539"
+   inkscape:window-height="1019"
    id="namedview249"
    showgrid="false"
    inkscape:zoom="2.8284272"
-   inkscape:cx="25.599364"
-   inkscape:cy="56.380723"
-   inkscape:window-x="1920"
+   inkscape:cx="44.337693"
+   inkscape:cy="169.5178"
+   inkscape:window-x="0"
    inkscape:window-y="27"
    inkscape:window-maximized="0"
    inkscape:current-layer="layer1"
@@ -1170,7 +1170,7 @@
      rx="124.05"
      ry="124" /><g
      id="g1399"
-     transform="matrix(0.77777778,0,0,0.77777778,28.494447,28.444444)"><rect
+     transform="matrix(0.88888889,0,0,0.88888889,14.272225,14.222222)"><rect
        ry="10"
        y="118"
        x="38"

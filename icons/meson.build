@@ -1,9 +1,21 @@
 theme_dir = join_paths(get_option('prefix'), 'share/icons', meson.project_name())
+theme_dir_light = join_paths(get_option('prefix'), 'share/icons', meson.project_name()+'-Light')
+theme_dir_dark = join_paths(get_option('prefix'), 'share/icons', meson.project_name()+'-Dark')
 
 install_subdir('StarLabs',
-    install_dir: theme_dir,
-    strip_directory: true,
-    exclude_files: ['index.theme', 'cursor.theme'],
+  install_dir: theme_dir,
+  strip_directory: true,
+  exclude_files: ['index.theme', 'cursor.theme'],
+)
+install_subdir('StarLabs-Light',
+  install_dir: theme_dir_light,
+  strip_directory: true,
+  exclude_files: ['index.theme', 'cursor.theme'],
+)
+install_subdir('StarLabs-Dark',
+  install_dir: theme_dir_dark,
+  strip_directory: true,
+  exclude_files: ['index.theme', 'cursor.theme'],
 )
 
 themes_f = [
@@ -18,5 +30,6 @@ foreach theme: themes_f
                  configuration : conf_data,
                  install_dir: theme_dir)
 endforeach
+
 
 meson.add_install_script('meson/post_install.py', meson.project_name())

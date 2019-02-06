@@ -1146,12 +1146,12 @@
    guidetolerance="10"
    inkscape:pageopacity="0"
    inkscape:pageshadow="2"
-   inkscape:window-width="3840"
-   inkscape:window-height="1539"
+   inkscape:window-width="1920"
+   inkscape:window-height="1019"
    id="namedview249"
    showgrid="false"
    inkscape:zoom="2"
-   inkscape:cx="16.1881"
+   inkscape:cx="-77.3119"
    inkscape:cy="125.88241"
    inkscape:window-x="0"
    inkscape:window-y="27"
@@ -1170,7 +1170,7 @@
      cy="128"
      r="124" /><g
      id="g1115"
-     transform="matrix(0.75268827,0,0,0.75268827,31.655902,29.063302)"><path
+     transform="matrix(0.86021517,0,0,0.86021517,17.892459,14.929488)"><path
        d="m 183.11111,100.44444 a 55.111111,55.111111 0 0 0 -110.222222,0 55.124889,55.124889 0 0 0 34.444442,51.07423 v 52.25911 h 41.33334 v -52.25911 a 55.124889,55.124889 0 0 0 34.44444,-51.07423 z"
        stroke-miterlimit="10"
        id="path6"
