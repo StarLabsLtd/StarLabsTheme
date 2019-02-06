@@ -1,2 +1,2 @@
-Add font
 Add Plymouth
+Fix gdm3 CSS install

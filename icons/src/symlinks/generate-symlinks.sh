@@ -80,3 +80,4 @@ if command -v symlinks 2>&1 >/dev/null; then
 	symlinks -cdr $DIR/../../$THEME
 	echo "Done."
 fi
+

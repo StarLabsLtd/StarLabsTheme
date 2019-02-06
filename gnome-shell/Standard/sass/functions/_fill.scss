@@ -1,0 +1,24 @@
+@mixin fill($type, $transparent: solid, $style:$variant) {
+	$color: if($style==light, $dark1, $white);
+	$fill: if($style==light, $white, if($style==dark, $dark1, $style));
+	@if $type==normal {
+		color: $color;
+		$background-normal: $fill;
+		background-color: if($transparent==solid, $background-normal, transparentize($background-normal, $transparent));
+		transition: $backdrop;
+	}
+	@if $type==hover {
+		color: $color;
+//		color: if($color==$white, lighten($color, $beta1), darken($color, $beta1));
+		$background-hover: if($fill==$dark1, darken($fill, $beta1), lighten($fill, $beta1));
+		background-color: if($transparent==solid, $background-hover, transparentize($background-hover, $transparent));
+		transition: $backdrop;
+	}
+	@if $type==backdrop {
+		color: $color;
+//		color: if($color==$white, darken($color, $beta1), lighten($color, $beta1));
+		$background-backdrop: darken($fill, $beta1);
+		background-color: if($transparent==solid, $background-backdrop, transparentize($background-backdrop, $transparent));
+		transition: $backdrop;
+	}
+}

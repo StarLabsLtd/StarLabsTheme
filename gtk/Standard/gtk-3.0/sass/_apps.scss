@@ -9,127 +9,70 @@ list.tweak-categories separator {
  * Nautilus *
  ***********/
 .nautilus-window {
-  // keep details box visible
-  // details box looks ugly when many items are selected and it floats above the orange
-  background-image: none;
-  background-color: if($light, white, $base_color);
-  &:backdrop { background-color: $backdrop_base_color }
-
-  // Makes icons less bright in backdrop
-  @at-root %dim_icons_in_backdrop,
-  *scrolledwindow:backdrop { opacity: 0.9; }
-
-  paned box.floating-bar {
-    background: transparentize($jet, 0.1);
-    color: $porcelain;
-    border: none;
-    border-radius: $omega1 0 0 0;
-
-    /* stop upload folder button */
-    button.circular.flat.image-button {
-      // style both normal and hover at the same time is necessary
-      // otherwise gtk will take the style from somewhere else...
-      &, &:hover {
-        background-color: transparent;
-        border-color: transparent;
-        box-shadow: none;
-        color: $bg_color;
-        margin: 2px;
-      }
-
-      &:backdrop {
-        transition: none;
-        border-color: transparent;
-      }
-
-      // ...and here style just the difference from normal
-      &:hover {
-        color: $destructive_color;
-      }
-    }
-
-    &:backdrop {
-      @if $variant=='light' {
-        background: transparentize(darken($backdrop_bg_color, 10%), 0.1);
-      }
-      @else {
-        background: transparentize(lighten($jet, 10%), 0.1);
-      }
-    }
-  }
-
-  .searchbar-container searchbar {
-    // get rid of a 1px white line shown at the top of the window
-    // applies to the desktop too
-    background: transparent;
-    border-color: transparent;
-  }
-
-  treeview:drop(active):focus {
-    // drop target green bottom border was missing
-    border-bottom: 1px solid $drop_target_color;
-  }
-
-  treeview.view header button {
-    background-color: if($light, $base_color, $base_color);
-    background-image: none;
-    border-color: transparentize($borders_color, 0.6);
-    border-left: 1px;
-
-    &:hover {background-color: $bg_color;}
-    &:backdrop { background-color: if($light, #EEEFF0, $backdrop_base_color);} // It should be _backdrop_color(white); but that does not work.
-  }
-
-  @at-root %remove_folder_icon_tint,
-  scrolledwindow widget.view:selected {
-    // reduces orangeness of selected folder icons
-    background-color: rgba(255, 255, 255, 0.1); // folder icon is tinted based on this
-                                                // near transparent white results in no tint
-                                                // completely transparent tints the icon black
-    background-image: image($selected_bg_color); // label background becomes this
-    border-radius: $omega1;
-  }
-
-  .nautilus-list-view .view {
-    border-bottom: 1px solid transparentize($borders_color, 0.8);
-
-    // Hide superfluous treeview drop target indication
-    &.dnd { border-style: none; }
-  }
-
-  notebook > header {
-    background: if($variant==light, $porcelain, $bg_color);
-  }
-
-  paned > separator {
-    // separator between sidebar and main window view
-    $_alpha: if($variant=='light', 0.08, 0.16);
-    $_separator_color: rgba(0, 0, 0, $_alpha);
-
-    background-image: image($_separator_color);
-    &:backdrop { background-image: image(transparentize($borders_color, 0.7)); }
-  }
-
-  .nautilus-canvas-item.dim-label,
-  .nautilus-list-dim-label {
-      color: if($variant==light, lighten($text_color, 30%), darken($text_color, 25%));
-      &:selected { color: transparentize($selected_fg_color, 0.3); }
-  }
-
-  .nautilus-canvas-item {
-    -gtk-outline-radius: $omega1;
-    outline-offset: -2px;
-    &:selected {
-      outline-color: white;
-    }
-  }
+	paned box.floating-bar {
+		@include clickable(normal, $alpha3, $accent2);
+		border: none;
+		border-radius: $omega1 0 0 0;
+	}
+	button.circular.flat.image-button {
+		&, &:hover {
+			background-color: transparent;
+			border-color: transparent;
+			box-shadow: none;
+			color: if($variant==light, transparentize($white, 0.001), transparentize($dark1, 0.001));
+			margin: 2px;
+		}
+		&:backdrop {
+			transition: none;
+			border-color: transparent;
+		}
+		&:hover {
+			color: $failure;
+		}
+	}
+	.searchbar-container searchbar {
+		background: transparent;
+		border-color: transparent;
+	}
+	treeview:drop(active):focus {
+		border-bottom: 1px solid $success;
+	}
+	treeview.view header button {
+		background-image: none;
+		border-color: transparentize($borders_color, 0.6);
+		border-left: 1px;
+		@extend %gtk-button;
+	}
+	scrolledwindow widget.view:selected {
+		@include clickable(hover, $alpha3, $accent2);
+		border-radius: $omega1;
+	}
+	.nautilus-list-view .view {
+		&.dnd {
+			border-style: none;
+		}
+	}
+	notebook > header {
+		background: if($variant==light, $white, $dark1);
+	}
+	paned > separator {
+		&:backdrop, & {
+			background: none;
+		}
+	}
+	.nautilus-canvas-item {
+		-gtk-outline-radius: $omega1;
+		outline-offset: -2px;
+		&:selected {
+			outline-color: green;
+		}
+	}
 }
 
 .nautilus-desktop-window {
-  .nautilus-desktop.view {
-    color: $selected_fg_color;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
-  }
+	.nautilus-desktop.view {
+		color: $accent2;
+	}
 }
 
 
@@ -138,9 +81,10 @@ list.tweak-categories separator {
  ***********/
 terminal-window {
 	.terminal-screen {
-		@include fill(normal);
+		// Surely it has to be blue?!
+		@include fill(normal, $alpha3, darken($accent3, 20%));
 		&:backdrop {
-			@include fill(backdrop);
+			@include fill(backdrop, $alpha3, darken($accent3, 20%));
 		}
 	}
 	notebook > header.top > tabs > tab {
@@ -150,12 +94,11 @@ terminal-window {
 //			border-bottom: 2px solid darken($selected_bg_color, 10%);
 		}
 	}
-
-  notebook {
-    // inherits from notebook header
-    > header {
-      border-color: $inkstone;
-      background-color: $headerbar_bg_color;
+	notebook {
+		// inherits from notebook header
+		> header {
+		border-color: $inkstone;
+		background-color: $headerbar_bg_color;
 
       button.flat {
         &, &:backdrop {
@@ -283,23 +226,30 @@ terminal-window {
  * GNOME Software *
  ******************/
 .review-row {
-  margin-bottom: 10px;
-  padding: 6px 12px;
-  box-shadow: 0 1px 2.5px transparentize(black, 0.75);
-  outline-offset: -1px;
+	margin-bottom: 10px;
+	padding: 6px 12px;
+	box-shadow: 0 1px 2.5px transparentize(black, 0.75);
+	outline-offset: -1px;
 
-  &,
-  &:not(:selected):not(:backdrop):hover,
-  &:not(:selected):not(:backdrop):active { background-color: $base_color; }
-
-  &:backdrop { background-color: $backdrop_base_color; }
-
-  &:last-child { margin-bottom: 0; }
-
-  > grid { margin-top: -24px; }
+	&,
+	&:not(:selected):not(:backdrop):hover,
+	&:not(:selected):not(:backdrop):active {
+		background-color: $base_color;
+	}
+	&:backdrop {
+		background-color: $backdrop_base_color;
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+	> grid {
+		margin-top: -24px;
+	}
 }
 
-.app-listbox-header { background: $dark_fill; }
+.app-listbox-header {
+	background: $dark1;
+}
 
 .list-box-app-row {
   border-radius: 0;
@@ -309,7 +259,7 @@ terminal-window {
   margin: -1px 0 0 0;
 
   & ~ separator {
-    background-color: $bg_color;
+    background-color: transparent;
     border: none;
     min-height: 0px;
   }
@@ -341,14 +291,15 @@ box > list row.list-box-app-row {
  * Gedit *
  *********/
 .gedit-bottom-panel-paned notebook > header {
-    background: if($variant==light, $porcelain, $bg_color);
+	@extend %gtk-window;
 }
 
 .gedit-bottom-panel-paned ~ statusbar {
-  // give gedit's bottom panel a border
-  border-top: 1px solid $borders_color;
-
-  &:backdrop { border-color: $backdrop_borders_color; }
+// give gedit's bottom panel a border
+	border-top: 1px solid if($variant==light, transparentize($white, 0.001), transparentize($dark1, 0.001));
+	&:backdrop {
+		border-color: if($variant==light, transparentize(darken($white, $beta1), 0.001), transparentize(lighten($dark1, $beta1), 0.001));
+	}
 }
 
 .gedit-search-slider {
@@ -451,8 +402,8 @@ headerbar button image ~ window decoration ~ menu separator {
   .view {
     // imports nautilus tweaks
     // dim icons in backdrop and have only labels be colored when selected
-    &:selected { @extend %remove_folder_icon_tint; }
-    &:backdrop { @extend %dim_icons_in_backdrop; }
+    &:selected {  }
+    &:backdrop {  }
   }
 
   toolbar.horizontal.primary-toolbar {

@@ -1,0 +1,39 @@
+// Star Labs Palette
+// Accents
+$accent1: #6ec5ff;
+$accent2: #2195f2;
+$accent3: #0068bf;
+
+// Dark
+$dark1: #17171d;
+
+// White
+$white: #ffffff;
+
+// Context Colors
+$success: #0ba011;
+$warning: #c98810;
+$failure: #b20903;
+
+// Alpha & Omega
+$alpha1: 1;
+$alpha2: 0.8;
+$alpha3: 0.2;
+$omega1: 6px;
+$beta1: 5%;
+$beta2: 10%;
+
+// Shadows
+// These shadows need work
+$shadow1: 0 1.5px 2px rgba(0, 0, 0, 0.16), 0 1.5px 2px rgba(0, 0, 0, 0.24);
+$shadow2: 0 3px 4px rgba(0, 0, 0, 0.16 * 1.5), 0 3px 4px rgba(0, 0, 0, 0.23 * 1.5);
+
+// Transitions
+$time: 100ms;
+$backdrop: all 500ms ease-out;
+$click: all 100ms cubic-bezier(0, 0, 0.2, 1);
+
+// Need to remove these
+$tran1: all 500ms ease-out; // Used for backdrop(ing)
+$tran2: all 100ms cubic-bezier(0, 0, 0.2, 1); // Used for clicking
+

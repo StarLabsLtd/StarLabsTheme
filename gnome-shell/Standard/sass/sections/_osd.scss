@@ -1,0 +1,44 @@
+.osd-window {
+	text-align: center;
+	font-weight: bold;
+	spacing: 1em;
+	margin: 32px;
+	min-width: 64px;
+	min-height: 64px;
+	border-radius: $omega1;
+	padding: 12px;
+	color: $accent2;
+	.osd-monitor-label {
+		font-size: 3em;
+	}
+	.level {
+		height: 1em;
+		border-radius: 0.3em;
+		color: $accent2;
+		-barlevel-height: 1em;
+		-barlevel-background-color: transparent;
+		-barlevel-active-background-color: $accent2;
+		-barlevel-overdrive-color: $accent3;
+		-barlevel-overdrive-separator-width: 0em;
+	}
+	/* START: VERSION SPECIFIC CODE (< 3.29.90) */
+	.level-bar {
+		background-color: $accent2;
+		box-shadow: $shadow1;
+		border-radius: 0.3em;
+	}
+	/* END: VERSION SPECIFIC CODE (< 3.29.90) */
+}
+.pad-osd-window {
+	padding: 32px;
+	.pad-osd-title-box {
+		spacing: 12px;
+	}
+	.pad-osd-title-menu-box {
+		spacing: 6px;
+	}
+}
+.combo-box-label {
+	width: 15em;
+}
+

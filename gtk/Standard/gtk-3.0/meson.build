@@ -17,7 +17,6 @@ gtk3_scss_dependencies = [
   'sass/functions/_dialog_window.scss',
   'sass/functions/_font-size.scss',
   'sass/functions/_switch.scss',
-  'sass/functions/_circle.scss',
   'sass/functions/_entries.scss',
   'sass/functions/_header.scss',
   'sass/functions/_undershoot.scss',

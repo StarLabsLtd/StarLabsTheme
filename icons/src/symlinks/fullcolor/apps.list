@@ -6,7 +6,6 @@ address-book-app.png office-address-book.png
 address-book-app.png office-addressbook.png
 address-book-app.png org.gnome.Contacts.png
 address-book-app.png x-office-address-book.png
-aptdaemon-download.png update-notifier.png
 backups-app.png deja-dup.png
 backups-app.png org.gnome.DejaDup.png
 calculator-app.png accessories-calculator.png
@@ -47,6 +46,7 @@ help-app.png org.gnome.Yelp.png
 help-app.png system-help.png
 image-viewer-app.png eog.png
 image-viewer-app.png multimedia-photo-viewer.png
+google-keep.png web-google-keep.png
 log-viewer-app.png gnome-logs.png
 log-viewer-app.png logviewer.png
 mail-app.png evolution.png
@@ -66,15 +66,15 @@ music-app.png org.gnome.Music.png
 notes-app.png bijiben.png
 notes-app.png org.gnome.Bijiben.png
 notes-app.png org.gnome.bijiben.png
-packages-app.png system-software-install.png
 passwords-app.png seahorse.png
-podcasts-app.png org.gnome.Podcasts.png
-polari.png org.gnome.Polari.png
 power-statistics.png org.gnome.PowerStats.png
 rhythmbox.png org.gnome.Rhythmbox.png
 root-terminal-app.png gksu-root-terminal.png
 screenshot-app.png applets-screenshooter.png
 screenshot-app.png gnome-screenshot.png
+skype.png com.skype.Client.png
+skype.png skype-call-recorder.png
+skype.png skypeforlinux.png
 software-properties.png software-properties-gtk.png
 software-store.png gnome-software.png
 software-store.png org.gnome.Software.png
