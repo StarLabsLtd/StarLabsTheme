@@ -21,6 +21,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -39,31 +40,32 @@
      inkscape:window-height="1539"
      id="namedview12"
      showgrid="false"
-     inkscape:zoom="7.5848251"
-     inkscape:cx="47.199544"
-     inkscape:cy="-13.662819"
-     inkscape:window-x="0"
+     inkscape:zoom="30.3393"
+     inkscape:cx="1.0116213"
+     inkscape:cy="-2.3710565"
+     inkscape:window-x="1920"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg10" />
+     inkscape:current-layer="svg10"
+     inkscape:pagecheckerboard="true" />
   <g
-     id="g852">
-    <path
-       id="rect823"
-       d="M 0,0 V 16 H 16 V 0 Z M 1,1 H 15 V 13 H 1 Z"
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.74296921;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-       inkscape:connector-curvature="0" />
+     id="g860">
     <circle
        r="1.5"
        cy="3.6577697"
        cx="12.001007"
        id="path843"
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.52568001;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.52568001;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
     <path
        sodipodi:nodetypes="cccccccc"
        inkscape:connector-curvature="0"
        id="rect846"
        d="M 2,9 5,4 8,8.9997313 11,6 l 2.984,3 -4.8e-4,2.98352 H 1.9835197 Z"
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.73748875;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.73748875;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path
+       inkscape:connector-curvature="0"
+       id="rect1133"
+       d="M 1.503906,0 C 0.670539,0 0,0.67053871 0,1.5039062 V 14.496094 C 0,15.329461 0.670539,16 1.503906,16 H 14.496094 C 15.329461,16 16,15.329461 16,14.496094 V 1.5039062 C 16,0.67053871 15.329461,0 14.496094,0 Z M 1,1 H 15 V 13 H 1 Z"
+       style="opacity:0.93999999;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.10432946;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
   </g>
 </svg>
