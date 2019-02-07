@@ -39,33 +39,22 @@
      inkscape:window-height="1539"
      id="namedview18"
      showgrid="false"
-     inkscape:zoom="7.375"
-     inkscape:cx="-24.868859"
-     inkscape:cy="-14.664226"
+     inkscape:zoom="29.5"
+     inkscape:cx="3.1979587"
+     inkscape:cy="1.9503986"
      inkscape:window-x="1920"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg16" />
   <path
-     inkscape:connector-curvature="0"
-     style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.44039023;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     d="M 1,0 V 14 H 15 V 0 Z M 2,0.87500005 H 14 V 13.125 H 2 Z"
-     id="rect817" />
-  <path
-     style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.18553527;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     d="m 3,1.875 v 1 1 h 10 v -1 -1 z"
-     id="rect835-6"
-     inkscape:connector-curvature="0" />
+     style="opacity:0.93999999;fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:0.09128828;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     d="M 2.5039062 0 C 1.6705393 0 0.999999 0.58720995 1 1.3164062 L 1 12.683594 C 1 13.41279 1.6705393 14 2.5039062 14 L 13.496094 14 C 14.329461 14 15 13.41279 15 12.683594 L 15 1.3164062 C 15 0.58720995 14.329461 0 13.496094 0 L 2.5039062 0 z M 3 1.875 L 13 1.875 L 13 2.875 L 13 3.875 L 3 3.875 L 3 2.875 L 3 1.875 z M 3 4.875 L 13 4.875 L 13 5.875 L 13 6.875 L 3 6.875 L 3 5.875 L 3 4.875 z M 8.1699219 9.9375 A 0.5 0.5 0 0 1 8.6699219 10.4375 A 0.5 0.5 0 0 1 8.1699219 10.9375 A 0.5 0.5 0 0 1 7.6699219 10.4375 A 0.5 0.5 0 0 1 8.1699219 9.9375 z "
+     id="rect1133" />
   <path
      inkscape:connector-curvature="0"
      id="rect825-3"
      style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.08238148;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
      d="m 7,14 h 2 v 1 H 7 Z m -4,1 h 10 v 1 H 3 Z" />
-  <path
-     style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.18553527;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     d="m 3,4.875 v 1 1 h 10 v -1 -1 z"
-     id="rect835-6-6"
-     inkscape:connector-curvature="0" />
   <ellipse
      style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.69999999;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
      id="path887"
@@ -73,10 +62,4 @@
      cy="14.983051"
      rx="1.7457627"
      ry="1.1864407" />
-  <circle
-     style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.26319081;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     id="path889"
-     cx="8.1694918"
-     cy="10.4375"
-     r="0.5" />
 </svg>
