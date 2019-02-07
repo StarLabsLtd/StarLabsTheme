@@ -77,7 +77,7 @@ $asset_suffix: if($variant=='dark', '-dark', '');
 }
 
 textview border {
-//	background-color: if($variant==light, $dark1, $white);
+	background-color: if($variant==light, $dark1, $white);
 }
 
 iconview {
@@ -355,13 +355,6 @@ progress {
 	}
 }
 
-treeview, row {
-	&:focus {
-	}
-	&:backdrop:hover {
-	}
-}
-
 treeview entry {
 	&:focus {
 		&:dir(rtl), &:dir(ltr) { // specificity bump hack
@@ -416,8 +409,6 @@ treeview entry {
 /***********
  * Buttons *
  ***********/
-
-
 @keyframes needs_attention {
 	from {
 		background-image:
@@ -437,11 +428,11 @@ treeview entry {
 	}
 }
 
-%button_basic:drop(active), %button_selected.flat, %button_basic.flat {
+%gtk-button:drop(active), %gtk-button_selected.flat, %gtk-button.flat {
 	background-color: yellow;
 }	
 
-button, %gtk-button, %button, %button_basic, %osd_button {
+button, %gtk-button {
 	min-height: 22px;
 	min-width: 16px;
 	padding: 2px 6px;
@@ -463,8 +454,6 @@ button, %gtk-button, %button, %button_basic, %osd_button {
 			padding-right: 8px;
 		}
 	}
-
-
 	&.osd {
 		min-width: 24px;
 		min-height: 32px;
@@ -685,49 +674,48 @@ toolbar.inline-toolbar toolbutton:backdrop {
 }
 
 /* menu buttons */
-modelbutton.flat,
-.menuitem.button.flat {
-  min-height: 26px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-radius: 3px;
-  -gtk-outline-radius: 3px;
-  outline-offset: -2px;
+modelbutton.flat, .menuitem.button.flat {
+	min-height: 26px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 3px;
+	-gtk-outline-radius: 3px;
+	outline-offset: -2px;
 	@include clickable(undecorated);
-
-  &:hover { background-color: $base_hover_color; }
-  &:active { background-color: $base_active_color; }
-
-  &:selected { @extend %selected_items; }
-
-  &:backdrop,
-  &:backdrop:hover { @include clickable(undecorated); }
+	&:hover {
+		@include clickable(hover);
+	}
+	&:active {
+		@include clickable(active, $alpha3, $accent2);
+	}
+	&:selected {
+		@extend %selected_items;
+	}
+	&:backdrop, &:backdrop:hover {
+		@include clickable(undecorated);
+	}
 }
 
 modelbutton.flat arrow {
-  background: none;
-
-  &:hover { background: none; }
-
-  &.left { -gtk-icon-source: -gtk-icontheme("pan-start-symbolic"); }
-
-  &.right { -gtk-icon-source: -gtk-icontheme("pan-end-symbolic"); }
+	background: none;
+	&:hover {
+		background: none;
+	}
+	&.left {
+		-gtk-icon-source: -gtk-icontheme("pan-start-symbolic");
+	}
+	&.right {
+		-gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
+	}
 }
 
 button.color {
-  padding: 4px;
-
-  colorswatch:only-child {
-    &, overlay { border-radius: 0; }
-
-    @if $variant == 'light' {
-      box-shadow: 0 1px _text_shadow_color();
-
-      .osd & { box-shadow: none; }
-    }
-  
-
-  }
+	padding: 4px;
+	colorswatch:only-child {
+		&, overlay {
+			border-radius: 0;
+		}
+	}
 }
 
 
@@ -735,93 +723,80 @@ button.color {
  * Links *
  *********/
 
-%link,
-*:link {
-  color: $link_color;
-
-  &:visited {
-    color: $link_visited_color;
-
-    *:selected & { color: mix($selected_fg_color, $selected_bg_color, 60%); }
-  }
-
-  &:hover {
-    color: lighten($link_color,10%);
-
-    *:selected & { color: mix($selected_fg_color, $selected_bg_color, 90%); }
-  }
-
-  &:active {
-    color: $link_color;
-
-    *:selected & { color: mix($selected_fg_color, $selected_bg_color, 80%); }
-  }
-
-  &:backdrop { &:backdrop:hover, &:backdrop:hover:selected, & { color: _backdrop_color($link_color); }}
-
-  @at-root %link_selected,
-  &:selected,
-  *:selected & { color: mix($selected_fg_color, $link_color, 80%); }
+%link, *:link {
+	color: $accent2;
+	&:visited {
+		color: $accent3;
+		*:selected & {
+//			color: ;
+		}
+	}
+	&:hover {
+		color: $accent1;
+		*:selected & {
+//			color: ;
+		}
+	}
+	&:active {
+		color: $accent2;
+		*:selected & {
+//			color: ;
+		}
+	}
+	&:backdrop {
+		color: lighten($accent2, $beta1);
+		&:backdrop:hover, &:backdrop:hover:selected, & {
+			color: lighten($accent3, $beta1);
+		}
+	}
+	@at-root %link_selected, &:selected, *:selected & {
+		color: $accent3;
+	}
 }
 
-button:link,
-button:visited {
-  @include clickable(undecorated);
-  @extend *:link;
-
-  &:hover,
-  &:active,
-  &:checked {
-    @include clickable(undecorated);
-  }
-
-  > label {
-    @extend %link;
-  }
-
-  &:hover > label {
-    text-decoration-line: underline;
-  }
-
-  &:backdrop:hover {
-      background-color: transparent;
-      border-color: transparent;
-  }
-
+button:link, button:visited {
+	@include clickable(undecorated);
+	@extend *:link;
+	&:hover, &:active, &:checked {
+		@include clickable(undecorated);
+	}
+	> label {
+		@extend %link;
+	}
+	&:hover > label {
+		text-decoration-line: underline;
+	}
+	&:backdrop:hover {
+		background-color: transparent;
+		border-color: transparent;
+	}
 }
-
 
 /*****************
  * GtkSpinButton *
  *****************/
 spinbutton {
-  &:not(.vertical) {
-    // in this horizontal configuration, the whole spinbutton
-    // behaves as the entry, so we extend the entry styling
-    // and nuke the style on the internal entry
-    @extend %entry;
-
-    padding: 0;
-
-    entry {
-      min-width: 28px;
-      // reset all the other props since the spinbutton node is styled here
-      margin: 0;
-      background: none;
-      background-color: transparent;
-      border: none;
-      border-radius: 0;
-      box-shadow: none;
-
-      &:backdrop:disabled { background-color: transparent; }
-    }
-
-    button {
-      min-height: 16px;
-      margin: 0;
-      padding-bottom: 0;
-      padding-top: 0;
-      color: mix($fg_color, $base_color, 90%);
+	&:not(.vertical) {
+		@extend %entry;
+		padding: 0;
+		entry {
+			min-width: 28px;
+			margin: 0;
+			background: none;
+			background-color: transparent;
+			border: none;
+			border-radius: 0;
+			box-shadow: none;
+			&:backdrop:disabled {
+				background-color: transparent;
+			}
+		}
+		button {
+			min-height: 16px;
+			margin: 0;
+			padding-bottom: 0;
+			padding-top: 0;
+			color: mix($fg_color, $base_color, 90%);
       border-style: none none none solid;
       background-color: transparent;
       border-color: $borders_color;
@@ -1013,7 +988,7 @@ combobox {
   &:drop(active) { // FIXME: untested
     box-shadow: none;
 
-    button.combo { @extend %button_basic:drop(active); }
+    button.combo { @extend %gtk-button:drop(active); }
   }
 }
 
@@ -1051,16 +1026,15 @@ combobox {
 %toolbar {
 	-GtkWidget-window-dragging: true;
 	padding: 4px;
-	background-color: green;
-//	background-color: if($variant==light, transparentize($white, 0.001), transparentize($dark1, 0.001));
+	@include fill(normal, $alpha3);
 	&:backdrop {
-//		background-color: if($variant==light, transparentize(darken($white, $beta1), 0.001), transparentize(lighten($dark1, $beta1), 0.001));
+		@include fill(backdrop, $alpha3);
 	}
 }
 
 toolbar {
 	@extend %toolbar;
-  padding: 4px 3px 3px 4px;
+	padding: 4px 3px 3px 4px;
 
   button.flat {
     @each $state, $t, $is_flat in ("", "normal", true),
@@ -1231,8 +1205,8 @@ searchbar,
 			}
 		}
 		button, button.flat, button.titlebutton.appmenu {
-			min-height: 22px;
-			min-width: 22px;
+			min-height: 26px; //22px
+			min-width: 26px; //22px
 			@include gtk-button($header);
 		}
 		.linked:not(.path-bar):not(.stack-switcher):not(buttonbox) button, .linked:not(.vertical) entry {
@@ -1269,7 +1243,7 @@ searchbar,
 			}
 		}
 		.path-bar.linked button {
-			min-height: 22px;
+			min-height: 26px; //22px
 			@include gtk-button(if($header==light, dark, light), $alpha2);
 			label, image {
 				color: if($header==light, $dark1, $white);
@@ -1360,8 +1334,8 @@ searchbar,
 		min-height: 26px;
 		padding: 4px 6px;
 		button.titlebutton {
-			min-width: 22px;
-			min-height: 22px;
+			min-width: 26px; //22px
+			min-height: 26px; //22px
 			margin: 0;
 			padding: 0;
 		}
@@ -1479,19 +1453,15 @@ headerbar {
 
 .path-bar button {
 	@include gtk-button(if($header==light, dark, light), $alpha2);
-
-
-  &.text-button, &.image-button, & {
-    padding-left: 4px;
-    padding-right: 4px;
-  }
-
-  &.text-button.image-button label {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  &.text-button.image-button, & {
+	&.text-button, &.image-button, & {
+		padding-left: 4px;
+		padding-right: 4px;
+	}
+	&.text-button.image-button label {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	&.text-button.image-button, & {
     label:last-child { padding-right: 8px; }
     label:first-child { padding-left: 8px; }
   }
@@ -1825,7 +1795,7 @@ popover.background {
 			@extend %osd;
 //			border: 1px solid transparentize(white, 0.9);
 			button {
-				@extend %osd_button
+				@extend %gtk-button
 			}
 		}
 		&.osd {
@@ -1948,8 +1918,8 @@ notebook {
 		}
 	}
 	> tabs > arrow {
-		@extend %button_basic;
-		@extend %button_basic.flat;
+		@extend %gtk-button;
+//		@extend %gtk-button.flat;
 		min-height: 16px;
 		min-width: 16px;
 		border-radius: 0;
@@ -2244,7 +2214,7 @@ treeview ~ scrollbar.vertical {
  **********/
 switch {
   transition: $click;
-  @include switch($dark_fill, $success);
+  @include switch;
 }
 
 
@@ -3382,9 +3352,9 @@ placessidebar {
     }
 
     @at-root button.sidebar-button {
-      @extend %button_basic.flat;
+//      @extend %gtk-button.flat;
 
-      @extend %button_selected.flat;
+  //    @extend %gtk-button_selected.flat;
 
       min-height: 26px;
       min-width: 26px;
@@ -3426,8 +3396,7 @@ placessidebar {
 placesview {
 
   > stack > frame > scrolledwindow > viewport > list {
-    background-color: red;
-    &:backdrop { background-color: $backdrop_bg_color; }
+    @extend %gtk-window;
   }
 
   .server-list-button > image {
@@ -3835,8 +3804,8 @@ decoration {
 // Window Close button
 button.titlebutton {
 	border-radious: $omega1;
-        min-height: 22px;
-        min-width: 22px;
+        min-height: 26px; //22px
+        min-width: 26px; //22px
         padding: 2px;
 	&.minimize {
 		@include clickable(normal, $alpha3, $header);

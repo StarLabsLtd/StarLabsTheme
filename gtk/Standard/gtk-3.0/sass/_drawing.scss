@@ -659,7 +659,7 @@
 /************
  * Switches *
  ************/
-@mixin switch($bg:$dark_fill, $alt:$success_color) {
+@mixin witch($bg:$dark_fill, $alt:$success_color) {
   background-color: $bg;
   border-radius: 5px;
   border-width: 1px;
