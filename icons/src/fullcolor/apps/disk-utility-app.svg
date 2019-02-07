@@ -7447,24 +7447,31 @@
    inkscape:window-height="1539"
    id="namedview249"
    showgrid="false"
-   inkscape:zoom="1.4142136"
-   inkscape:cx="153.42464"
-   inkscape:cy="-13.178349"
+   inkscape:zoom="4.0000001"
+   inkscape:cx="120.367"
+   inkscape:cy="91.748954"
    inkscape:window-x="1920"
    inkscape:window-y="27"
    inkscape:window-maximized="0"
-   inkscape:current-layer="layer1"
+   inkscape:current-layer="layer2"
    inkscape:pagecheckerboard="true" />
 
 <g
    inkscape:groupmode="layer"
    id="layer2"
    inkscape:label="Background"><circle
-     style="display:inline;fill:#17171d;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="display:inline;fill:#003059;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path1090"
      cx="128"
      cy="128"
-     r="124" /></g><g
+     r="124" /><rect
+     style="fill:#17171d;fill-opacity:1;stroke:none;stroke-width:0.94675499;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     id="rect5147"
+     width="118.25"
+     height="167.75"
+     x="68.875"
+     y="44.125"
+     ry="6.75" /></g><g
    inkscape:groupmode="layer"
    id="layer1"
    inkscape:label="Icon"
