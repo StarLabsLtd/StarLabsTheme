@@ -1151,7 +1151,7 @@
    id="namedview249"
    showgrid="false"
    inkscape:zoom="2"
-   inkscape:cx="-183.8119"
+   inkscape:cx="-277.3119"
    inkscape:cy="125.88241"
    inkscape:window-x="0"
    inkscape:window-y="27"
@@ -1172,12 +1172,12 @@
    id="layer1"
    inkscape:label="Icon"
    style="display:inline"><rect
-     style="fill:#d4ff2a;fill-opacity:1;stroke:none;stroke-width:1.1917913;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:#d4ff2a;fill-opacity:1;stroke:none;stroke-width:1.3620472;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="rect1091"
-     width="140"
-     height="140"
-     x="58"
-     y="58" /></g><g
+     width="160"
+     height="160"
+     x="48"
+     y="48" /></g><g
    inkscape:groupmode="layer"
    id="layer6"
    inkscape:label="Shadow"
