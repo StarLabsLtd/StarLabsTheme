@@ -1,0 +1,10 @@
+
+/**********
+ * Switch *
+ **********/
+switch {
+  transition: $click;
+  @include switch;
+}
+
+

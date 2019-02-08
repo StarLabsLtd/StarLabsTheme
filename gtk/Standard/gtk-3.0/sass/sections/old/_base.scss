@@ -1,0 +1,52 @@
+.background {
+	@include fill(normal);
+	&:backdrop {
+		@include fill(backdrop);
+	}
+}
+.normal-icons {
+	-gtk-icon-size: 16px;
+}
+.large-icons {
+	-gtk-icon-size: 32px;
+}
+image.drag-icon {
+	-gtk-icon-size: 32px;
+}
+
+/*  DONT   */
+/*  KILL   */
+/* KITTENS */
+//	*:disabled {
+//		-gtk-icon-filter: opacity(0.5);
+//	}
+
+.gtkstyle-fallback {
+	@include clickable(normal);
+	&:hover {
+		@include clickable(hover);
+	}
+	&:active {
+		@include clickable(focus);
+	}
+	&:disabled {
+		@include clickable(disabled);
+	}
+	&:selected {
+		@include clickable(selected);
+	}
+}
+
+.view,	%view {
+	@include clickable(normal);
+	&:backdrop {
+		@include clickable(backdrop);
+	}
+	&:disabled {
+		@include clickable(disabled);
+	}
+	&:selected, &:focus {
+		@include clickable(selected);
+//		border-radius: ;
+	}
+}

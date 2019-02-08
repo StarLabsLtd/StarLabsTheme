@@ -9,7 +9,7 @@ gtk3_scss_dependencies = [
   '../../Standard/gtk-3.0/sass/_functions.scss',
   '../../Standard/gtk-3.0/sass/_colors.scss',
   '../../Standard/gtk-3.0/sass/_drawing.scss',
-  '../../Standard/gtk-3.0/sass/_common.scss',
+  '../../Standard/gtk-3.0/sass/_sections.scss',
   '../../Standard/gtk-3.0/sass/_apps.scss',
   '../../Standard/gtk-3.0/sass/_colors-public.scss',
 ]

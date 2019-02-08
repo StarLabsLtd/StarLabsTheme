@@ -1,0 +1,131 @@
+
+/**********************
+ * Window Decorations *
+ *********************/
+decoration {
+	border-radius: $omega1 $omega1 0 0;
+	border-width: 0px;
+	$_wm_border: if($variant == 'light',transparentize(black, 0.77),transparentize(black, 0.5));
+	$window_decoration_shadow: 0 3px 9px 1px;
+	box-shadow: $shadow2;
+	margin: 10px;
+	&:backdrop {
+		transition: $backdrop;
+		box-shadow: $shadow1;
+	}
+	.maximized &,
+	.fullscreen &,
+	.tiled &,
+	.tiled-top &,
+	.tiled-right &,
+	.tiled-bottom &,
+	.tiled-left & {
+		border-radius: 0;
+	}
+	.popup & {
+		box-shadow: none;
+	}
+	.ssd & {
+		box-shadow: none;
+	}
+	.csd.popup & {
+		border-radius: $omega1;
+		box-shadow: $shadow2;
+	} // Right Click Menu in Nautilus
+	tooltip.csd & {
+		border-radius: $omega1;
+		box-shadow: none;
+		border: none;
+	}
+	messagedialog.csd & {
+//		box-shadow: $shadow2;
+//		box-shadow: $window_decoration_shadow transparentize(black, 0.5);
+	} // Nautilus Notification
+	.solid-csd & {
+		margin: 0;
+		padding: 4px;
+//		background-color: $borders_color;
+//		border: solid 1px $borders_color;
+		border-radius: 0;
+		box-shadow: $shadow2;
+//		box-shadow: inset 0 0 0 3px $headerbar_bg_color;
+		&:backdrop {
+//			box-shadow: inset 0 0 0 3px $backdrop_headerbar_bg_color;
+			box-shadow: $shadow1;
+		}
+	}
+}
+
+// Window Close button
+button.titlebutton {
+	border-radious: $omega1;
+        min-height: 26px; //22px
+        min-width: 26px; //22px
+        padding: 2px;
+	&.minimize {
+		@include clickable(normal, $alpha3, $header);
+		&:hover {
+			@include clickable(hover, $alpha3, $accent1);
+		}
+		&:backdrop {
+			@include clickable(backdrop, $alpha3, $header);
+			&:hover {
+				@include clickable(backdrop-hover, $alpha3, $accent1);
+			}
+		}
+	}
+	&.maximize {
+		@include clickable(normal, $alpha3, $header);
+		&:hover {
+			@include clickable(hover, $alpha3, $accent2);
+		}
+		&:backdrop {
+			@clickable(backdrop, $alpha3, $header);
+			&:hover {
+				@include clickable(backdrop-hover, $alpha3, $accent2);
+			}
+		}
+	}
+	&.close {
+		@include clickable(normal, $alpha3, $accent3);
+		&:hover {
+			@include clickable(hover, $alpha3, $accent2);
+		}
+		&:backdrop {
+			@include clickable(backdrop, $alpha3, $accent3);
+			&:hover {
+				@include clickable(backdrop-hover, $alpha3, $accent2);
+			}
+		}
+	}
+}
+
+%selected_items {
+	background-color: $accent2;
+	&:backdrop {
+		background-color: lighten($accent2, $beta1);
+	}
+	@at-root %nobg_selected_items, & {
+		color: $white;
+		&:disabled {
+			color: if($variant==light, lighten($dark1, 50%), darken($white, 50%));
+		}
+	}
+}
+
+%selected_text {
+	background-color: $accent2;
+	color: $white;
+	&:disabled {
+		color: if($variant==light, lighten($dark1, 50%), darken($white, 50%));
+	}
+	&:backdrop {
+		background-color: lighten($accent2, $beta1);
+	}
+}
+
+.monospace {
+	font-family: monospace;
+}
+
+
