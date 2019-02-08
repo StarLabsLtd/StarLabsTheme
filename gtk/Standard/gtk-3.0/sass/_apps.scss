@@ -8,7 +8,7 @@ list.tweak-categories separator {
 /***********
  * Nautilus *
  ***********/
-.nautilus-window.csd.background, .nautilus-window placessidebar list {
+.nautilus-window.csd.background {
         &:backdrop, & {
 		background-color: transparent;
 	}

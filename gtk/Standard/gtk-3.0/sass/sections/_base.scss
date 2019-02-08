@@ -22,7 +22,7 @@ $asset_suffix: if($variant=='dark', '-dark', '');
 /***************
  * Base States *
  ***************/
-.background, %gtk-window {
+.background, overlay scrolledwindow, %gtk-window {
 	color: if($variant==light, $dark1, $white);
 	background-color: if($variant==light, transparentize($white, 0.001), transparentize($dark1, 0.001));
 	transition: $backdrop;
