@@ -89,7 +89,6 @@
 
 
 @mixin gtk-button($color:$variant, $alpha:$alpha3) {
-//	border-radius: $omega1;
 	@include clickable(normal, $alpha, $color);
 	&:hover {
 		@include clickable(hover, $alpha, $color);
@@ -127,4 +126,10 @@
 	&.flat {
 		@include clickable(undecorated);
 	}
+}
+
+@mixin merlin {
+	min-height: 22px;
+	min-width: 22px;
+	border-radius: $omega1;
 }
