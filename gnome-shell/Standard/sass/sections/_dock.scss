@@ -60,39 +60,39 @@
 	}
 
 	&.running-dots .app-well-app.focused .overview-icon {
-		@include fill(normal, $alpha3, $accent2);
+		@include fill(normal, $alpha2, $accent2);
 	}
 
 	&.dashtodock {
 		.app-well-app.focused .overview-icon {
 			@include fill(normal, $alpha2, $accent2);
+		}
+		#dash {
+			@extend %shell-window;
+		}
 	}
-	#dash {
+
+	&.opaque {
+		@include fill(normal,solid);
+	}
+
+	&.transparent {
 		@extend %shell-window;
 	}
-}
 
-&.opaque {
-	@include fill(normal,solid);
-}
+	.number-overlay {
+		@include fill(normal, $alpha3, $accent2);
+		text-align: center;
+	}
 
-&.transparent {
-	@extend %shell-window;
-}
-
-.number-overlay {
-	@include fill(normal, $alpha3, $accent2);
-	text-align: center;
-}
-
-.notification-badge {
-	@include fill(normal, $alpha3, $accent2);
-	padding: 0.2em 0.5em;
-	border-radius: 1em;
-	font-weight: bold;
-	text-align: center;
-	margin: 2px;
-  }
+	.notification-badge {
+		@include fill(normal, $alpha3, $accent2);
+		padding: 0.2em 0.5em;
+		border-radius: 1em;
+		font-weight: bold;
+		text-align: center;
+		margin: 2px;
+	}
 }
 
 #dashtodockPreviewSeparator.popup-separator-menu-item-horizontal {

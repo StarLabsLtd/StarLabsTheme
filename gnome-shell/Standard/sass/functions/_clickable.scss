@@ -89,7 +89,7 @@
 
 
 @mixin gtk-button($color:$variant, $alpha:$alpha3) {
-	border-radius: $omega1;
+//	border-radius: $omega1;
 	@include clickable(normal, $alpha, $color);
 	&:hover {
 		@include clickable(hover, $alpha, $color);
