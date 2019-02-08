@@ -2,6 +2,7 @@ backgrounds_dir = join_paths(get_option('datadir'), 'backgrounds')
 install_dir =  join_paths(backgrounds_dir, meson.project_name())
 
 backgrounds_sources = [
+  'StarWallpaper0.png',
   'StarWallpaper1.jpg',
   'StarWallpaper2.jpg',
   'StarWallpaper3.jpg',
