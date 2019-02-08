@@ -103,7 +103,6 @@ notebook {
 	}
 	> tabs > arrow {
 		@extend %gtk-button;
-//		@extend %gtk-button.flat;
 		min-height: 16px;
 		min-width: 16px;
 		border-radius: 0;

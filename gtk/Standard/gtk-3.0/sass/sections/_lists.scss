@@ -2,9 +2,10 @@
  * Lists *
  *********/
 list {
-//	@extend %gtk-window;
-	label {
-		color: if($variant==light, $dark1, $white);
+	label, image {
+		&:backdrop, & {
+			color: if($variant==light, $dark1, $white);
+		}
 	}
 	row {
 		padding: 2px;
@@ -18,14 +19,12 @@ list {
 }
 
 row {
-	outline-offset: 0;
 	transition: $click;
 	&.activatable {
 		label, image {
-			color: if($header==light, $dark1, $white);
-		}
-		label:backdrop, image:backdrop {
-			color: if($header==light, $dark1, $white);
+			&:backdrop, & {
+				color: inherit;
+			}
 		}
 		&:hover {
 			@include clickable(hover, $alpha3, $accent2);
@@ -34,9 +33,9 @@ row {
 			}
 		}
 		&:selected, &:active, &.has-open-popup {
-			@include clickable(active, solid, if($header==light, $dark1, $white));
+			@include fill(normal, solid, if($header==light, $dark1, $white));
 			&:backdrop {
-				@include clickable(backdrop-active, solid, if($header==light, $dark1, $white));
+				@include fill(backdrop, solid, if($header==light, $dark1, $white));
 			}
 			label, image {
 				color: if($header==light, $white, $dark1);
