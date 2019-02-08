@@ -10,14 +10,8 @@
 		color: inherit;
 	}
 	list {
-		@include fill(normal, $alpha3, $header);
-                &:backdrop {
-                        @include fill(backdrop, $alpha3, $header);
-                }
-
 	}
 }
-
 row {
 	padding: 10px 4px;
 	> label {
@@ -31,6 +25,4 @@ row {
 		@extend %needs_attention;
 		background-size: 6px 6px, 0 0;
 	}
-	
-
 }

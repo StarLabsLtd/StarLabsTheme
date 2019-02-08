@@ -1,5 +1,3 @@
-
-
 /************
  * Pathbars *
  ************/
@@ -25,25 +23,27 @@
 		padding-right: 0;
 	}
 	&.text-button.image-button, & {
-    label:last-child { padding-right: 8px; }
-    label:first-child { padding-left: 8px; }
-  }
-
-  image {
-    padding-left: 4px;
-    padding-right: 4px;
-  }
-
-  &.slider-button {
-    padding-left: 0;
-    padding-right: 0;
-    box-shadow: none;
-
-    &:hover { color: $selected_bg_color; }
-    &:disabled image {
-      // make disabled arrows less prominent
-      opacity: 0.3;
-    }
-  }
+		label:last-child {
+			padding-right: 8px;
+		}
+		label:first-child {
+			padding-left: 8px;
+		}
+	}
+	image {
+		padding-left: 4px;
+		padding-right: 4px;
+	}
+	&.slider-button {
+		padding-left: 0;
+		padding-right: 0;
+		box-shadow: none;
+		&:hover {
+			color: $accent2;
+		}
+		&:disabled image {
+			opacity: $alpha2;
+		}
+	}
 }
 
