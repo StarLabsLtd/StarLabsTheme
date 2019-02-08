@@ -6,10 +6,11 @@ frame > border,	.frame {
 	box-shadow: none;
 	margin: 0;
 	padding: 0;
-	border-radius: $omega1;
+	border: none;
+//	border-radius: $omega1;
 //	border: 1px solid if($variant==light, $dark1, $white);
 	&.flat {
-		border-style: none;
+//		border-style: none;
 	}
 	&:backdrop {
 //		border-color: if($variant==light, lighten($dark1, $beta1), darken($white, $beta1));
@@ -25,10 +26,11 @@ actionbar > revealer >  box {
 }
 
 scrolledwindow {
+	border-style: none;
 	viewport > list, viewport > stack list {
-		background-color: $sidebar_bg_color;
+		@include fill(normal, $alpha3, $header);
 		&:backdrop {
-			background-color: $backdrop_sidebar_bg_color;
+			@include fill(backdrop, $alpha3, $header);
 		}
 	}
 	viewport.frame { // avoid double borders when viewport inside scrolled window
@@ -92,7 +94,7 @@ scrolledwindow {
 
 //vbox and hbox separators
 separator {
-	background: transparentize($accent2, 0.7);
+//	background: transparentize($accent2, 0.7);
 	min-width: 1px;
 	min-height: 1px;
 }

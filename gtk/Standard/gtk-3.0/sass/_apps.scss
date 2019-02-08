@@ -8,6 +8,11 @@ list.tweak-categories separator {
 /***********
  * Nautilus *
  ***********/
+.nautilus-window.csd.background, .nautilus-window placessidebar list {
+        &:backdrop, & {
+		background-color: transparent;
+	}
+}
 .nautilus-window {
 	paned box.floating-bar {
 		@include clickable(normal, $alpha3, $accent2);

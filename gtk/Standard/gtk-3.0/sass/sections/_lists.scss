@@ -1,31 +1,48 @@
-
 /*********
  * Lists *
  *********/
 list {
-	@extend %gtk-window;
+//	@extend %gtk-window;
+	label {
+		color: if($variant==light, $dark1, $white);
+	}
 	row {
 		padding: 2px;
 	}
 	separator {
-		background-color: transparent; // separator in sidebar
+		@include fill(normal, $alpha3, $header);
+		&:backdrop {
+			@include fill(backdrop, $alpha3, $header);
+		}
 	}
 }
 
 row {
 	outline-offset: 0;
-	transition: all 150ms $ease-out-quad;
+	transition: $click;
 	&.activatable {
+		label, image {
+			color: if($header==light, $dark1, $white);
+		}
+		label:backdrop, image:backdrop {
+			color: if($header==light, $dark1, $white);
+		}
 		&:hover {
-			@include clickable(hover);
+			@include clickable(hover, $alpha3, $accent2);
 			&:backdrop {
 				@include clickable(backdrop-hover, $alpha3, $accent2);
 			}
 		}
 		&:selected, &:active, &.has-open-popup {
-			@include clickable(active, $alpha3, $accent2);
+			@include clickable(active, solid, if($header==light, $dark1, $white));
 			&:backdrop {
-				@include clickable(backdrop-active, $alpha3, $accent2);
+				@include clickable(backdrop-active, solid, if($header==light, $dark1, $white));
+			}
+			label, image {
+				color: if($header==light, $white, $dark1);
+			}
+			label:backdrop, image:backdrop {
+				color: if($header==light, $white, $dark1);
 			}
 		}
 	}
