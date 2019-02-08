@@ -11,16 +11,13 @@ treeview.view {
 		-GtkTreeView-tree-line-pattern: '';
 		-GtkTreeView-expander-size: 16;
 	}
-//	border-left-color: mix($fg_color, $base_color, 50%); // this is actually the tree lines color,
-//	border-top-color: transparentize($borders_color, 0.8); // while this is the grid lines color, better then nothing
-//	background-color: $base_color;
-//	@extend %gtk-window;
+	@extend %gtk-window;
 	rubberband {
 		@extend rubberband;
 	}
-	// to avoid borders being overridden by the previously set props
 	&:selected {
 		&:focus, & {
+			@include clickable(normal);
 			@extend %selected_items;
 			border-radius: 0;
 		}
@@ -34,20 +31,17 @@ treeview.view {
 	&:disabled {
 		color: $insensitive_fg_color;
 	}
-	&:backdrop {
-		color: $backdrop_insensitive_color;
-	}
 	&.separator {
 		min-height: 2px;
-		color: $bg_color;
+		color: red;
 		&:backdrop {
 			color: transparentize($bg_color, 0.9);
 		}
 	}
 	&:backdrop {
-		border-left-color: mix($backdrop_fg_color, $backdrop_bg_color, 50%);
-		border-top-color: transparentize($borders_color, 0.8);
-		background-color: $backdrop_bg_color;
+//		border-left-color: mix($backdrop_fg_color, $backdrop_bg_color, 50%);
+//		border-top-color: transparentize($borders_color, 0.8);
+//		background-color: $backdrop_bg_color;
 	}
 	&:drop(active) {
     border-style: solid none;

@@ -26,8 +26,7 @@
 }	
 
 button, %gtk-button {
-	min-height: 22px;
-	min-width: 16px;
+	@include merlin;
 	padding: 2px 6px;
 	@include gtk-button;
 	&.image-button {
@@ -53,9 +52,6 @@ button, %gtk-button {
 		&.image-button {
 			min-width: 32px;
 		}
-		color: $osd_fg_color;
-		border-radius: $omega1;
-		@include clickable(normal);
 	}
 	.stack-switcher > & {
 		> label {
@@ -268,7 +264,7 @@ toolbar.inline-toolbar toolbutton:backdrop {
 
 /* menu buttons */
 modelbutton.flat, .menuitem.button.flat {
-	min-height: 26px;
+	@include merlin;
 	padding-left: 5px;
 	padding-right: 5px;
 	border-radius: 3px;
