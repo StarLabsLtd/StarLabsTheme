@@ -1,0 +1,17 @@
+/*********************
+ * App Notifications *
+ *********************/
+.app-notification, .app-notification.frame {
+	padding: 10px;
+	margin: 12px;
+	border-radius: $omega1;
+	box-shadow: $shadow2;
+	@extend %gtk-window;
+	button.flat:hover {
+		@include clickable(hover);
+	}
+	border {
+		border: none;
+	}
+}
+

@@ -1,0 +1,58 @@
+
+/*************
+ * Level Bar *
+ *************/
+levelbar {
+	&.horizontal {
+		block {
+			min-height: 3px;
+		}
+		&.discrete block {
+			margin: 0 1px;
+			min-width: 32px;
+		}
+	}
+	&.vertical {
+		block {
+			min-width: 3px;
+		}
+		&.discrete block {
+			margin: 1px 0;
+			min-height: 32px;
+		}
+	}
+	&:backdrop {
+		transition: $backdrop;
+	}
+	trough {
+		padding: 3px;
+		border-radius: 3px;
+		border: none;
+		@include entry(normal);
+		&:backdrop {
+			@include entry(backdrop);
+		}
+	}
+	block {
+		border-radius: 3px;
+		&.low {
+			background-color: $warning;
+			&:backdrop {
+				background-color: lighten($warning, $beta1);
+			}
+		}
+		&.high, &:not(.empty), &:full {
+			background-color: $accent2;
+			&:backdrop {
+				background-color: lighten($accent2, $beta1);
+			}
+		}
+		&.empty {
+			background-color: if($variant==light, $white, $dark1);
+			&:backdrop {
+				background-color: if($variant==light, darken($white, $beta1), lighten($dark1, $beta1));
+			}
+		}
+	}
+}
+

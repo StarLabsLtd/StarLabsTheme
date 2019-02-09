@@ -61,10 +61,7 @@ gtk3_scss_dependencies = [
   'sass/sections/_windowdecorations.scss',
   'sass/sections/_touchcopypaste.scss',
   'sass/sections/_emoji.scss',
-  'sass/_drawing.scss',
-  'sass/_colors.scss',
-  'sass/_colors-public.scss',
-  'sass/_apps.scss',
+  'sass/sections/_apps.scss',
 ]
 
 gtk3_assets = [

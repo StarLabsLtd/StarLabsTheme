@@ -1,0 +1,26 @@
+// Tweaks 
+list.tweaks-categories seperator {
+	background: transparent;
+}
+
+// Terminal
+terminal-window {
+	.terminal-screen {
+		@include fill(normal, $alpha3, darken($accent3, 20%));
+		&:backdrop {
+			@include fill(backdrop, $alpha3, darken($accent3, 20%));
+		}
+	}
+}
+
+//Naughty-less
+paned box.floating-bar {
+	border-top-left-radius: $omega1;
+	label {
+		color: $white;
+	}
+	background-color: $accent2;
+	&:backdrop {
+		background-color: lighten($accent2, $beta1);
+	}		
+}	

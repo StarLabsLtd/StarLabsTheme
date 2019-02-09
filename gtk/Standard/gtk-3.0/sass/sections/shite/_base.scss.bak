@@ -1,0 +1,171 @@
+@function gtkalpha($c,$a) {
+	@return unquote("alpha(#{$c},#{$a})");
+}
+
+* {
+//	padding: 0;
+//	-GtkToolButton-icon-spacing: 4;
+//	-GtkTextView-error-underline-color: $failure;
+//	-GtkScrolledWindow-scrollbar-spacing: 0;
+//	-GtkToolItemGroup-expander-size: 11;
+//	-GtkWidget-text-handle-width: 20;
+//	-GtkWidget-text-handle-height: 24;
+//	-GtkDialog-button-spacing: 4;
+//	-GtkDialog-action-area-border: 0;
+//	-gtk-outline-radius: 0px;
+//	-gtk-secondary-caret-color: $accent2;
+}
+
+$ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+$asset_suffix: if($variant=='dark', '-dark', '');
+
+/***************
+ * Base States *
+ ***************/
+.background, %gtk-window {
+	color: if($variant==light, $dark1, $white);
+	background-color: if($variant==light, transparentize($white, 0.001), transparentize($dark1, 0.001));
+	transition: $backdrop;
+	&:backdrop {
+		color: if($variant==light, $dark1, $white);
+		background-color: if($variant==light, transparentize(darken($white, $beta1), 0.001), transparentize(lighten($dark1, $beta1), 0.001));
+		transition: $backdrop;
+	}
+}
+
+/*
+	Don't kill kittens.
+	We are Linux users.
+	All Linux users are cat people.
+*/
+
+.gtkstyle-fallback {
+	@include clickable(normal, $alpha3);
+	&:hover {
+		@include clickable(hover, $alpha3);
+	}
+	&:active {
+		@include clickable(active, $alpha3);
+	}
+	&:disabled {
+		@include clickable(disabled, $alpha3);
+	}
+	&:selected {
+		@include clickable(focus, $alpha3);
+	}
+	&:backdrop {
+		@include clickable(backdrop, $alpha3);
+	}
+}
+
+.view, %view {
+	@extend %gtk-window;
+	&:disabled {
+		color: if($variant==light, lighten($dark1, 50%), darken($white, 50%));
+	}
+}
+
+.view, textview {
+	text {
+		@extend %view;
+		selection {
+			&:focus, & {
+				@extend %selected_text;
+			}
+		}
+	}
+}
+
+textview border {
+	background-color: if($variant==light, $dark1, $white);
+}
+
+iconview {
+	@extend .view;
+	&:selected {
+		border-radius: $omega1;
+	}
+}
+
+.rubberband, rubberband {
+	@include fill(normal, $alpha3);
+}
+
+flowbox {
+	rubberband {
+		@extend rubberband;
+	}
+	flowboxchild {
+		padding: 3px;
+		&:selected {
+			@extend %selected_items;
+			outline-offset: -2px;
+		}
+	}
+}
+
+.content-view .tile {
+	margin: 2px;
+	background-color: transparent;
+	border-radius: 0;
+	padding: 0;
+}
+
+label {
+	caret-color: currentColor;
+	outline-offset: 1px;
+	&:selected {
+		@extend %nobg_selected_items;
+	}
+	selection {
+		@extend %selected_text;
+	}
+	counter-label{
+		background-color: $accent2;
+	}
+	&:disabled {
+		color: if($variant==light, lighten($dark1, 50%), darken($white, 50%));
+	}
+	&:backdrop {
+		selection {
+			@extend %selected_text:backdrop;
+		}
+	}
+}
+
+.dim-label {
+	opacity: $alpha3;
+}
+
+.counter-label {
+	margin-top: 2px;
+	margin-bottom: 2px;
+	border-width: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+	box-shadow: inset 0 0 10px 10px $success;
+}
+
+.compressed-entries-label {
+	box-shadow: inset 0 0 10px 10px $failure;
+}
+
+assistant {
+	.sidebar {
+		@extend %gtk-window;
+	}
+	.sidebar label {
+		padding: 6px 12px;
+	}
+	.sidebar label.highlight {
+		background-color: $accent2; // FIXME
+	}
+}
+
+%osd, .osd {
+	@extend %gtk-window;
+	box-shadow: $shadow1;
+	background-clip: padding-box;
+}
+
+

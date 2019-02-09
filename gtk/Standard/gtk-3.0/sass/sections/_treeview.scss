@@ -1,155 +1,27 @@
-
-/**************
- * Tree Views *
- **************/
-treeview.view {
-	@at-root * {
+treeview {
+	  @at-root * {
 		-GtkTreeView-horizontal-separator: 4;
 		-GtkTreeView-grid-line-width: 1;
 		-GtkTreeView-grid-line-pattern: '';
 		-GtkTreeView-tree-line-width: 1;
 		-GtkTreeView-tree-line-pattern: '';
-		-GtkTreeView-expander-size: 16;
+		-GtkTreeView-expander-size: 22;
 	}
-	@extend %gtk-window;
-	rubberband {
-		@extend rubberband;
+	@include fill(normal);
+	&:backdrop {
+		@include fill(backdrop);
 	}
 	&:selected {
-		&:focus, & {
-			@include clickable(normal);
-			@extend %selected_items;
-			border-radius: 0;
-		}
-		&:backdrop, & {
-			color: $selected_fg_color;
-			/* TODO: What the following lines actually do? */
-			border-left-color: mix($selected_fg_color, $selected_bg_color, 50%);
-			border-top-color: transparentize($borders_color, 0.8); // doesn't work unfortunately
-		}
+		@extend %selected;
 	}
-	&:disabled {
-		color: $insensitive_fg_color;
+	button {
+		padding: $omega1;
+		@include clickable(normal);
 	}
-	&.separator {
-		min-height: 2px;
-		color: red;
-		&:backdrop {
-			color: transparentize($bg_color, 0.9);
+	&.expander {
+		-gtk-icon-source: -gtk-icontheme('pan-end-symbolic');
+		&:checked {
+			-gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
 		}
 	}
-	&:backdrop {
-//		border-left-color: mix($backdrop_fg_color, $backdrop_bg_color, 50%);
-//		border-top-color: transparentize($borders_color, 0.8);
-//		background-color: $backdrop_bg_color;
-	}
-	&:drop(active) {
-    border-style: solid none;
-    border-width: 1px;
-    border-color: _border_color($selected_bg_color);
-
-    &.after { border-top-style: none; }
-
-    &.before { border-bottom-style: none; }
-  }
-
-  &.expander {
-    -gtk-icon-source: -gtk-icontheme('pan-end-symbolic');
-
-    &:dir(rtl) { -gtk-icon-source: -gtk-icontheme('pan-end-symbolic-rtl'); }
-
-    color: $text_color;
-
-    &:hover { color: lighten($text_color, 25%); }
-
-    &:selected {
-      color: mix($selected_fg_color, $selected_bg_color, 70%);
-
-      &:hover { color: $selected_fg_color; }
-
-      &:backdrop { color: mix($backdrop_selected_fg_color, $selected_bg_color, 70%); }
-    }
-
-    &:checked { -gtk-icon-source: -gtk-icontheme('pan-down-symbolic'); }
-
-    &:backdrop { color: mix($backdrop_fg_color, $backdrop_base_color, 70%); }
-  }
-
-  &.progressbar { // progress bar in treeviews
-    background-color: $neutral_color;
-    border-radius: $omega1 0 0 $omega1;
-    border: 1px solid $neutral_color;
-    color: $text_color;
-
-    &:selected {
-      &:focus, & {
-        background-color: $neutral_color;
-        border-color: $selected_bg_color;
-        border-style: solid none;
-        border-width: 1px 0;
-        border-radius: $omega1 0 0 $omega1;
-      }
-    }
-
-    &:backdrop {
-      color: $backdrop_text_color;
-    }
-  }
-
-  &.trough { // progress bar trough in treeviews
-    background-color: $dark_fill;
-    border-radius: $omega1;
-    border: 1px solid $dark_fill;
-
-    &:selected {
-      &:focus, & {
-        background-color: lighten($selected_bg_color, 15%);
-        border-radius: $omega1;
-        border: 1px solid $selected_bg_color;
-      }
-    }
-  }
-
-  header {
-    button {
-      @extend %column_header_button;
-      font-weight: 500;
-      box-shadow: none;
-      -gtk-outline-radius: 0;
-    }
-  }
-
-  button.dnd,
-  header.button.dnd { // for treeview-like derive widgets
-    &:active, &:selected, &:hover, & {
-      padding: 0 6px;
-      color: $selected_fg_color;
-      background-image: none;
-      background-color: $selected_bg_color;
-      border-style: none;
-      border-radius: 0;
-      box-shadow: inset 0 0 0 1px $borders_color;
-      transition: none;
-    }
-  }
-  acceleditor > label { background-color: $selected_bg_color; } // see tests/testaccel to test
 }
-
-%column_header_button {
-  padding: 0 6px;
-  background-image: none;
-  border-style: none solid solid none;
-  &:not(:hover), &:not(:active) { background-image: if($variant==light, image(white), image($bg_color)); }
-  &:backdrop { background-image: image($backdrop_bg_color); }
-  &:hover, &:active { background-image: image($bg_color); }
-  border-color: $borders_color; // don't darken the bottom border color
-  border-radius: 0;
-
-  &:backdrop {
-    border-style: none solid solid none;
-    border-color: $backdrop_borders_color;
-  }
-
-  &:last-child { &:backdrop, & { border-right-style: none; }}
-}
-

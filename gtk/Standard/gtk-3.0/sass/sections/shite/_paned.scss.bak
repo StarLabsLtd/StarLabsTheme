@@ -1,0 +1,74 @@
+
+/*********
+ * Paned *
+ *********/
+paned {
+	> separator {
+		border: 1px solid if($variant==light, $white, $dark1);
+		&:backdrop {
+			border: 1px solid if($variant==light, darken($white, $beta1), darken($dark1, $beta1));
+		}
+	}
+}
+
+/** SHITE
+		min-width: 0;
+		min-height: 0;
+		-gtk-icon-source: none;
+		border-style: none;
+		padding: 0;
+		&:backdrop {
+		}
+		&.wide {
+			min-width: 0;
+			min-height: 0px;
+//			background-color: $bg_color;
+//			background-image: image($borders_color), image($borders_color);
+      background-size: 1px 1px, 1px 1px;
+
+      &:backdrop {
+        background-color: $backdrop_bg_color;
+        background-image: image($backdrop_borders_color),
+                          image($backdrop_borders_color);
+      }
+    }
+  }
+
+  &.horizontal > separator {
+    background-repeat: repeat-y;
+
+    &:dir(ltr) {
+//      margin: 0 -8px 0 0;
+//      padding: 0 8px 0 0;
+//      background-position: left;
+    }
+    &:dir(rtl) {
+//      margin: 0 0 0 -8px;
+//      padding: 0 0 0 8px;
+      background-position: right;
+    }
+
+    &.wide {
+      margin: 0;
+      padding: 0;
+      background-repeat: repeat-y, repeat-y;
+      background-position: left, right;
+    }
+  }
+
+  &.vertical > separator {
+//    margin: 0 0 -8px 0;
+//    padding: 0 0 8px 0;
+    background-repeat: repeat-x;
+    background-position: top;
+
+    &.wide {
+      margin: 0;
+      padding: 0;
+      background-repeat: repeat-x, repeat-x;
+      background-position: bottom, top;
+    }
+  }
+}
+
+**/

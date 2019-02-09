@@ -55,10 +55,7 @@ gtk3_scss_dependencies = [
   '../../Standard/gtk-3.0/sass/sections/_windowdecorations.scss',
   '../../Standard/gtk-3.0/sass/sections/_touchcopypaste.scss',
   '../../Standard/gtk-3.0/sass/sections/_emoji.scss',
-  '../../Standard/gtk-3.0/sass/_drawing.scss',
-  '../../Standard/gtk-3.0/sass/_colors.scss',
-  '../../Standard/gtk-3.0/sass/_colors-public.scss',
-  '../../Standard/gtk-3.0/sass/_apps.scss',
+  '../../Standard/gtk-3.0/sass/sections/_apps.scss',
 ]
 
 # generate .css files
