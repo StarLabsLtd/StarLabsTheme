@@ -1137,7 +1137,32 @@
    id="i-6" /><path
    inkscape:connector-curvature="0"
    d="M 21.97,8 V 48.34 L 61.36,116 96,56 h 88 V 8 Z"
-   id="m-2" /></defs><sodipodi:namedview
+   id="m-2" /><filter
+   style="color-interpolation-filters:sRGB;"
+   inkscape:label="Drop Shadow"
+   id="filter1128"><feFlood
+     flood-opacity="0.498039"
+     flood-color="rgb(0,0,0)"
+     result="flood"
+     id="feFlood1118" /><feComposite
+     in="flood"
+     in2="SourceGraphic"
+     operator="in"
+     result="composite1"
+     id="feComposite1120" /><feGaussianBlur
+     in="composite1"
+     stdDeviation="5"
+     result="blur"
+     id="feGaussianBlur1122" /><feOffset
+     dx="0"
+     dy="0"
+     result="offset"
+     id="feOffset1124" /><feComposite
+     in="SourceGraphic"
+     in2="offset"
+     operator="over"
+     result="composite2"
+     id="feComposite1126" /></filter></defs><sodipodi:namedview
    pagecolor="#ffffff"
    bordercolor="#666666"
    borderopacity="1"
@@ -1147,12 +1172,12 @@
    inkscape:pageopacity="0"
    inkscape:pageshadow="2"
    inkscape:window-width="1920"
-   inkscape:window-height="1019"
+   inkscape:window-height="1013"
    id="namedview249"
    showgrid="false"
    inkscape:zoom="2"
-   inkscape:cx="-30.8119"
-   inkscape:cy="125.88241"
+   inkscape:cx="183.24746"
+   inkscape:cy="177.93419"
    inkscape:window-x="0"
    inkscape:window-y="27"
    inkscape:window-maximized="1"
@@ -1169,7 +1194,7 @@
    cy="128"
    r="124" /><text
    xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:47.28132629px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.18203318"
+   style="font-style:normal;font-weight:normal;font-size:47.28132629px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.18203318;filter:url(#filter1128)"
    x="95.546097"
    y="205.50354"
    id="text1095"><tspan
@@ -1178,6 +1203,7 @@
      x="95.546097"
      y="205.50354"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:226.9503479px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:1.18203318">!</tspan></text>
+
 
 </g><g
    inkscape:groupmode="layer"
