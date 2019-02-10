@@ -1,5 +1,5 @@
 // Tweaks 
-list.tweaks-categories seperator {
+list.tweaks-categories separator {
 	background: transparent;
 }
 
@@ -24,3 +24,11 @@ paned box.floating-bar {
 		background-color: lighten($accent2, $beta1);
 	}		
 }	
+
+//Geedit
+statusbar {
+	@include fill(normal);
+	&:backdrop {
+		@include fill(backdrop);
+	}
+}

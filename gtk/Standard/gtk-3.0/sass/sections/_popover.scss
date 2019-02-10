@@ -1,0 +1,27 @@
+popover {
+	border-radius: $omega1;
+	@include clickable(normal);
+	&:backdrop {
+		@include clickable(backdrop);
+	}
+	button {
+		min-height: 20px;
+		min-width: 20px;
+		@include clickable(normal);
+		border-radius: 9999px;
+	}
+	modelbutton {
+		padding: $omega1 0;
+		arrow {
+			color: if($variant==light, $dark1, $white);
+			min-height: 20px;
+			min-width: 20px;
+			&.right {
+				-gtk-icon-source: -gtk-icontheme('pan-end-symbolic');
+			}
+			&.left {
+				-gtk-icon-source: -gtk-icontheme('pan-start-symbolic');
+			}
+		}
+	}
+}

@@ -15,6 +15,7 @@ treeview {
 		@extend %selected;
 	}
 	button {
+		border-radius: 0;
 		padding: $omega1;
 		@include clickable(normal);
 	}

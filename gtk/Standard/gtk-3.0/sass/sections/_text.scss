@@ -1,0 +1,13 @@
+.monospace {
+	font-family: monospace;
+}
+
+.view, textview {
+        text {
+                selection {
+                        &:focus, & {
+                                @extend %selected;
+                        }
+                }
+        }
+}

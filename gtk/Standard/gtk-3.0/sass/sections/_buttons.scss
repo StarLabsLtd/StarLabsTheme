@@ -1,3 +1,4 @@
+// File Path Button i.e. Naughty-less
 .path-bar button {
 	&:first-child, &:last-child {
 		background-color: transparent;
@@ -7,6 +8,12 @@
 		min-height: 0;
 		margin: 0;
 		padding: 0;
+		image {
+			background-color: transparent;
+			&:backdrop {
+				background-color: transparent;
+			}
+		}
 	}
 	min-height: 24px;
 	min-width: 24px;
@@ -28,8 +35,13 @@
 			@include clickable(backdrop-active, $alpha3, $accent2);
 		}
 	}
+	&.image-button {
+		border-radius: $omega1;
+
+	}
 }
 
+// Image i.e. Search Magnifier Icon
 button.image-button {
 	margin: 6px 4px;
 	padding: 4px 6px;
@@ -43,6 +55,7 @@ button.image-button {
 	}
 }	
 
+// Minimize, Maximise and Close
 button.titlebutton {
 	min-height: 24px;
 	min-width: 24px;
@@ -73,8 +86,11 @@ button.titlebutton {
 		}
 	}
 }
+// Button with text inside
 button.text-button {
-	padding: 4 6px;
+	border-radius: $omega1;
+	margin: 6px 0;
+	padding: 4px 6px;
 	@include clickable(normal, $alpha3);
 	&:hover {
 		@include clickable(hover, $alpha3);
@@ -100,7 +116,17 @@ buttonbox button, .path-bar button {
 combobox button, filechooserbutton, widget button {
 	border-radius: $omega1;
 	padding: $omega1;
+	min-height: 24px;
+	min-width: 24px;
 	@include clickable(normal);
+	&:disabled {
+		@include clickable(disabled);
+	}
+	arrow {
+		-gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
+		min-height: 20px;
+		min-width: 20px;
+	}
 }
 
 button.toggle {
@@ -112,6 +138,7 @@ button.toggle {
 	}
 }
 
+// Selected icon i.e. in Naughty-less
 widget.view:selected {
 	border-radius: $omega1;
 	@include clickable(active, $alpha3, $accent2);

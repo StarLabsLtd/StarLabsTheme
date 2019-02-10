@@ -1,0 +1,17 @@
+// Sidebar
+list.tweak-categories, viewport > stack > list, placessidebar viewport list {
+	@include fill(normal, $alpha3, $header);
+	&:backdrop {
+		@include fill(backdrop, $alpha3, $header);
+	}
+	> separator {
+		@include fill(normal, $alpha2, $header);
+		&:backdrop {
+			@include fill(backdrop, $alpha2, $header);
+		}
+	}
+}
+
+paned > separator {
+	margin: -3px;
+}

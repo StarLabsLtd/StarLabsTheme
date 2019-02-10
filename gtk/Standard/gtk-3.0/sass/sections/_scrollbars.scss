@@ -1,0 +1,35 @@
+scrollbar {
+        @at-root * {
+                -GtkScrollbar-has-backward-stepper: false;
+                -GtkScrollbar-has-forward-stepper: false;
+        }
+	background-color: transparent;
+	&:backdrop {
+		background-color: transparent;
+	}
+	slider {
+		min-width: 6px;
+		min-height: 6px;
+		margin: -1px;
+		border-radius: $omega1;
+		transition: $click;
+		@include fill(normal, $alpha3, if($variant==light, dark, light));
+		&:hover {
+			background-color: $accent2;
+			min-width: 12px;
+			transition: $click;
+		}
+		&:active {
+			background-color: $accent3;
+		}
+		&:disabled {
+			background-color: transparent;
+		}
+		&:backdrop {
+			@include fill(backdrop, $alpha3, if($variant==light, dark, light));
+		}
+	}
+	
+
+
+}

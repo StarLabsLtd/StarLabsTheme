@@ -1,21 +1,11 @@
 headerbar {
 	padding: 0 $omega1;
 	min-height: 40px;
-	border-radius: 0;
 	@include fill(normal, $alpha3, $header);
 	&:backdrop {
 		@include fill(backdrop, $alpha3, $header);
 	}
-
-
-	switch {
-		@include switch;
-	}
-	entry {
-		@include entry(normal);
-		// Need to add more states;
-	}
 	button {
-		border-radius: $omega1;
+		maring: 6px 4px;
 	}
 }

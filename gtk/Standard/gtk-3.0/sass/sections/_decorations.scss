@@ -1,0 +1,24 @@
+decoration {
+	box-shadow: $shadow2;
+	&:backdrop {
+		box-shadow: $shadow1;
+	}
+	margin: 10px;
+	border-radius: $omega1 $omega1 0;
+        .maximized &,
+        .fullscreen &,
+        .tiled &,
+        .tiled-top &,
+        .tiled-right &,
+        .tiled-bottom &,
+        .tiled-left & {
+                border-radius: 0;
+        }
+
+
+	.csd.popup, .tooltip.csd, messagedialog.csd, .solid-csd {
+		background-color: red;
+		color: blue;
+		box-shadow: $shadow2;
+	}
+}

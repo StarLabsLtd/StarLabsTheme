@@ -1,14 +1,14 @@
 viewport > stack > list row {
-	padding: 4px;
+	padding: 0;
+	margin: 0;
 }
-
 
 list.tweak-categories row, placessidebar viewport list row {
 	padding: 10px;
 }
 
 list.tweak-categories > row , viewport > stack > list > row, placessidebar > viewport > list > row {
-	min-height: 30px;
+	min-height: 10px;
 	image {
 		padding: 0 10px;
 	}

@@ -1,19 +1,18 @@
 messagedialog {
-	decoration {
-		border-radius: $omega1;
-	}
-	&.titlebar, &.csd {
-		@include fill(normal, $alpha3);
-		&:backdrop {
-			@include fill(backdrop, $alpha3);
-		}
-	}
+	border-bottom-left-radius: $omega1;
+	border-bottom-right-radius: $omega1;
+	background-color: transparent;
+//	@include fill(normal, $alpha3);
+	&:backdrop {
+		background-color: transparent;
+//		@include fill(backdrop, $alpha3);
+	}	
 	.titlebar {
-		border-top-left-radius: $omega1;
-		border-top-right-radius: $omega1;
-	}
-	.csd {
-		border-bottom-left-radius: $omega1;
-		border-bottom-right-radius: $omega1;
+//		border-top-left-radius: $omega1;
+//		border-top-right-radius: $omega1;
+//		@include fill(normal, $alpha3);
+		&:backdrop {
+//			@include fill(backdrop, $alpha3);
+		}
 	}
 }

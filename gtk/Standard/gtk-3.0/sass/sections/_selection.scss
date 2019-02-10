@@ -1,0 +1,11 @@
+%selected {
+	background-color: $accent2;
+	color: $white;
+	&:backdrop {
+		background-color: lighten($accent2, $beta1);
+		color: $white;
+	}
+	&:disabled {
+		color: if($variant==light, lighten($dark1, 50%), darken($white, 50%));
+	}
+}
