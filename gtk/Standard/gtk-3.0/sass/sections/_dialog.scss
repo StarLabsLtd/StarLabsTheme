@@ -1,18 +1,16 @@
-messagedialog {
-	border-bottom-left-radius: $omega1;
+messagedialog, dialog {
 	border-bottom-right-radius: $omega1;
-	background-color: transparent;
-//	@include fill(normal, $alpha3);
-	&:backdrop {
-		background-color: transparent;
-//		@include fill(backdrop, $alpha3);
-	}	
-	.titlebar {
-//		border-top-left-radius: $omega1;
-//		border-top-right-radius: $omega1;
-//		@include fill(normal, $alpha3);
+	> decoration {
+		@include fill(normal, $alpha3);
+		border-bottom-right-radius: $omega1;
 		&:backdrop {
-//			@include fill(backdrop, $alpha3);
+			@include fill(backdrop, $alpha3);
+		}
+	}
+	label, image {
+		color: if($variant==light, $dark1, $white);
+		&:backdrop {
+			color: if($variant==light, $dark1, $white);
 		}
 	}
 }

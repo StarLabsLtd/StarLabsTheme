@@ -1,5 +1,5 @@
 // Tweaks 
-list.tweaks-categories separator {
+list.tweak-categories separator {
 	background: transparent;
 }
 
@@ -21,6 +21,9 @@ paned box.floating-bar {
 	}
 	background-color: $accent2;
 	&:backdrop {
+		label {
+			color: $white;
+		}
 		background-color: lighten($accent2, $beta1);
 	}		
 }	
