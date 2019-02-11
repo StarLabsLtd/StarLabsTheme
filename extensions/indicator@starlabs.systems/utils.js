@@ -7,7 +7,7 @@ const Gettext = imports.gettext;
 
 
 function getSettings(extension) {
-	let schema = 'org.gnome.shell.extensions.lockkeys';
+	let schema = 'org.gnome.shell.extensions.indicator';
 
 	const GioSSS = Gio.SettingsSchemaSource;
 

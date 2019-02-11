@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schemalist gettext-domain="gnome-shell-extension-lockkeys">
-	<schema path="/org/gnome/shell/extensions/lockkeys/" id="org.gnome.shell.extensions.lockkeys">
+<schemalist gettext-domain="gnome-shell-extension-indicator">
+	<schema path="/org/gnome/shell/extensions/indicator/" id="org.gnome.shell.extensions.indicator">
 		<key name="notifications" type="b">
 			<default>true</default>
 			<summary>Show notifications when key state changes</summary>

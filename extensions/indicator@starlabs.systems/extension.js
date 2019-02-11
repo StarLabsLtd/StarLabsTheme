@@ -4,7 +4,7 @@ const Gio = imports.gi.Gio;
 const Gtk = imports.gi.Gtk;
 const Gdk = imports.gi.Gdk;
 const GLib = imports.gi.GLib;
-const Gettext = imports.gettext.domain('lockkeys');
+const Gettext = imports.gettext.domain('indicator');
 const _ = Gettext.gettext;
 
 const Panel = imports.ui.panel;
@@ -36,7 +36,7 @@ function main() {
 }
 
 function init() {
-	Utils.initTranslations("lockkeys");
+	Utils.initTranslations("indicator");
 }
 
 function enable() {
@@ -70,7 +70,7 @@ LockKeysIndicator.prototype = {
 			style_class: 'system-status-icon'});
 
 		this.layoutManager = new St.BoxLayout({vertical: false,
-			style_class: 'lockkeys-container'});
+			style_class: 'indicator-container'});
 		this.layoutManager.add(this.numIcon);
 		this.layoutManager.add(this.capsIcon);
 
@@ -103,7 +103,7 @@ LockKeysIndicator.prototype = {
 	}, 
 
 	_handleSettingsMenuItem: function(actor, event) {
-		imports.misc.util.spawn(['gnome-shell-extension-prefs', 'lockkeys@vaina.lt']);
+		imports.misc.util.spawn(['gnome-shell-extension-prefs', 'indicator@vaina.lt']);
 	},
 	
 	_handleSettingsChange: function(actor, event) {

@@ -1,7 +1,7 @@
 const Gtk = imports.gi.Gtk;
 const Lang = imports.lang;
 
-const Gettext = imports.gettext.domain('lockkeys');
+const Gettext = imports.gettext.domain('indicator');
 const _ = Gettext.gettext;
 
 const ExtensionUtils = imports.misc.extensionUtils;
@@ -19,7 +19,7 @@ let settings;
 
 function init() {
 	settings = Utils.getSettings(Meta);
-	Utils.initTranslations("lockkeys");
+	Utils.initTranslations("indicator");
 }
 
 function buildPrefsWidget() {
