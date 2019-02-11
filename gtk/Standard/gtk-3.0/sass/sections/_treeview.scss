@@ -1,5 +1,5 @@
-treeview {
-	  @at-root * {
+treeview.view {
+	@at-root * {
 		-GtkTreeView-horizontal-separator: 4;
 		-GtkTreeView-grid-line-width: 1;
 		-GtkTreeView-grid-line-pattern: '';
@@ -10,6 +10,10 @@ treeview {
 	@include fill(normal);
 	&:backdrop {
 		@include fill(backdrop);
+	}
+
+	rubberband {
+		background-color: red;
 	}
 	&:selected {
 		@extend %selected;
