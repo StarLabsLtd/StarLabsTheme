@@ -3,7 +3,7 @@
 <wallpapers>
 
 <wallpaper deleted="false">
-    <name>Star Labs Systems - Rising Sun</name>
+    <name>Star Labs Systems - Theme</name>
     <filename>/usr/share/backgrounds/StarLabs/StarWallpaper0.png</filename>
     <options>zoom</options>
     <shade_type>solid</shade_type>
@@ -131,6 +131,16 @@
      <shade_type>solid</shade_type>
      <artist>TheLegend</artist>
  </wallpaper>
+
+<wallpaper deleted="false">
+    <name>Star Labs Systems - Rising Sun</name>
+    <filename>/usr/share/backgrounds/StarLabs/StarWallpaper13.png</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000000</pcolor>
+    <scolor>#000000</scolor>
+    <artist>StarLabs</artist>
+</wallpaper>
 
 </wallpapers>
 
