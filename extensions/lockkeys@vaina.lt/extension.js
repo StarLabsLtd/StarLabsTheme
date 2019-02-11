@@ -40,7 +40,7 @@ function init() {
 }
 
 function enable() {
-	indicator = new LockKeysIndicator();	
+	indicator = new LockKeysIndicator();
 	Main.panel.addToStatusArea('lockkeys', indicator, 2);
 	indicator.setActive(true);
 }
@@ -76,17 +76,17 @@ LockKeysIndicator.prototype = {
 
 		this.actor.add_actor(this.layoutManager);
 
-		this.numMenuItem = new PopupMenu.PopupSwitchMenuItem(_("Num Lock"), false, { reactive: false });
-		this.menu.addMenuItem(this.numMenuItem);
+//		this.numMenuItem = new PopupMenu.PopupSwitchMenuItem(_("Num Lock"), false, { reactive: false });
+//		this.menu.addMenuItem(this.numMenuItem);
 
-		this.capsMenuItem = new PopupMenu.PopupSwitchMenuItem(_("Caps Lock"), false, { reactive: false });
-		this.menu.addMenuItem(this.capsMenuItem);
+//		this.capsMenuItem = new PopupMenu.PopupSwitchMenuItem(_("Caps Lock"), false, { reactive: false });
+//		this.menu.addMenuItem(this.capsMenuItem);
 
 		this.menu.addMenuItem(new PopupMenu.PopupSeparatorMenuItem());
 		this.settingsMenuItem = new PopupMenu.PopupMenuItem(_("Settings"));
 		this.settingsMenuItem.connect('activate', Lang.bind(this, this._handleSettingsMenuItem));
 		this.menu.addMenuItem(this.settingsMenuItem);
-		
+
 		this.config = new Configuration();
 		this.indicatorStyle = new HighlightIndicator(this);
 	},

@@ -8,7 +8,7 @@
 				notifications</description>
 		</key>
 		<key name="style" type="s">
-			<default>'both'</default>
+			<default>'capslock'</default>
 			<summary>Indicator style</summary>
 			<description>Set numlock value to display only num-lock indicator,
 				set capslock value to display only caps-lock indicator, or both for

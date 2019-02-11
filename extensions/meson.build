@@ -37,11 +37,11 @@ schema_sources = [
 install_data(schema_sources, install_dir: install_dir)
 
 
-glib_dir = join_paths(get_option('datadir'), 'glib-2.0', 'schemas')
+glib_dir = join_paths(get_option('datadir'), 'glib-2.0' , 'schemas')
 
 
 glib_sources = [
 	'org.gnome.shell.extensions.lockkeys.gschema.xml',
 ]
 
-install_data(glib_sources, install_dir: schema_dir)
+install_data(glib_sources, install_dir: glib_dir)

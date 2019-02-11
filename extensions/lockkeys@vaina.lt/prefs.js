@@ -27,10 +27,10 @@ function buildPrefsWidget() {
 		border_width: 10, margin: 20});
 	frame.set_spacing(10);
 	//can not use constants here like STYLE_NUMLOCK etc, don't know why
-	frame.add(_createComboBox(STYLE, _("Indicator Style"), _("Change indicator display options"),
-			{'numlock': _("Num-Lock Only"), 'capslock' : _("Caps-Lock Only"), 'both' : _("Both"), 'show-hide' : _("Show/Hide")}));
+//	frame.add(_createComboBox(STYLE, _("Indicator Style"), _("Change indicator display options"),
+//			{'numlock': _("Num-Lock Only"), 'capslock' : _("Caps-Lock Only"), 'both' : _("Both"), 'show-hide' : _("Show/Hide")}));
 	frame.add(_createCheckBox(NOTIFICATIONS, _("Notifications"), _("Show notifications when state changes")));
-	
+
 	frame.show_all();
 	return frame;
 }
