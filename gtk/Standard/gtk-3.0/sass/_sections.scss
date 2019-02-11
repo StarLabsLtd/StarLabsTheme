@@ -1,39 +1,25 @@
-@import 'sections/base.scss';
-@import 'sections/spinnerautomation.scss';
-@import 'sections/textentries.scss';
-@import 'sections/buttons.scss';
-@import 'sections/links.scss';
-@import 'sections/gtkspinbutton.scss';
-@import 'sections/comboboxes.scss';
-@import 'sections/toolbar.scss';
-@import 'sections/headerbar.scss';
-@import 'sections/pathbar.scss';
-@import 'sections/treeview.scss';
-@import 'sections/menu.scss';
-@import 'sections/popover.scss';
-@import 'sections/notebook.scss';
-@import 'sections/scrollbars.scss';
-@import 'sections/switch.scss';			// Done
-@import 'sections/radiocheck.scss';
-@import 'sections/gtkscale.scss';
-@import 'sections/progressbar.scss';
-@import 'sections/levelbar.scss';
-@import 'sections/printdialog.scss';
-@import 'sections/frames.scss';
-@import 'sections/lists.scss';			// Done
-@import 'sections/appnotifications.scss';	// Done
-@import 'sections/expander.scss';		// Done
-@import 'sections/calendar.scss';
-@import 'sections/dialog.scss';
-@import 'sections/sidebar.scss';		// Done
-@import 'sections/filechooser.scss';
-@import 'sections/paned.scss';
-@import 'sections/infobar.scss';
-@import 'sections/tooltip.scss';
-@import 'sections/colorchooser.scss';
-@import 'sections/misc.scss';
-@import 'sections/windowdecorations.scss';
-@import 'sections/touchcopypaste.scss';
-@import 'sections/emoji.scss';
-
-
+@import 'sections/_apps.scss';
+@import 'sections/_buttons.scss';
+@import 'sections/_calendar.scss';
+@import 'sections/_colorchooser.scss';
+@import 'sections/_comboboxes.scss';
+@import 'sections/_dialog.scss';
+@import 'sections/_entries.scss';
+@import 'sections/_headerbar.scss';
+@import 'sections/_links.scss';
+@import 'sections/_lists.scss';
+@import 'sections/_menu.scss';
+@import 'sections/_misc.scss';
+@import 'sections/_popover.scss';
+@import 'sections/_radiocheck.scss';
+@import 'sections/_rounding.scss';
+@import 'sections/_scrollbars.scss';
+@import 'sections/_selection.scss';
+@import 'sections/_sidebar.scss';
+@import 'sections/_slider.scss';
+@import 'sections/_switch.scss';
+@import 'sections/_text.scss';
+@import 'sections/_toolbar.scss';
+@import 'sections/_treeview.scss';
+@import 'sections/_decorations.scss';
+@import 'sections/_window.scss';

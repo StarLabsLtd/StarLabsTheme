@@ -40,8 +40,8 @@
      id="namedview12"
      showgrid="false"
      inkscape:zoom="45.254834"
-     inkscape:cx="15.125167"
-     inkscape:cy="1.8939917"
+     inkscape:cx="11.917681"
+     inkscape:cy="4.84449"
      inkscape:window-x="1920"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
@@ -58,9 +58,40 @@
      id="rect1188-3"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="sccssssssss" />
-  <path
-     style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.31628358;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     d="m 7.040039,5.7949413 a 2.5,2.5 0 0 0 -2.5,2.5 2.5,2.5 0 0 0 2.5,2.4999997 2.5,2.5 0 0 0 1.5820312,-0.564453 l 2.4843748,2.484375 0.353516,-0.353516 -2.4843751,-2.4843745 a 2.5,2.5 0 0 0 0.5644531,-1.5820312 2.5,2.5 0 0 0 -2.5,-2.5 z m 0,0.5 a 2,2 0 0 1 2,2 2,2 0 0 1 -0.6074219,1.4355469 2,2 0 0 1 -1.3925781,0.5644528 2,2 0 0 1 -2,-1.9999997 2,2 0 0 1 2,-2 z"
-     id="path833"
-     inkscape:connector-curvature="0" />
+  <g
+     style="display:inline"
+     id="g1158"
+     transform="matrix(0.06024851,0,0,0.06024851,12.440689,-2.9329954)">
+    <path
+       inkscape:connector-curvature="0"
+       id="path1099"
+       d="m -83.5,152.5 a 40,40 0 0 0 -40,40 40,40 0 0 0 40,40 40,40 0 0 0 40,-40 40,40 0 0 0 -40,-40 z m 0,5 a 35,35 0 0 1 35,35 35,35 0 0 1 -35,35 35,35 0 0 1 -35,-35 35,35 0 0 1 35,-35 z"
+       style="fill:#17171d;fill-opacity:1;stroke:none;stroke-width:0.68732351;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <circle
+       r="35"
+       cy="192.5"
+       cx="-83.5"
+       id="path1099-3-6"
+       style="display:inline;fill:#ffffff;fill-opacity:0.39215686;stroke:none;stroke-width:0.60140806;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <g
+       transform="rotate(-135,-39.940082,154.89337)"
+       id="g1151">
+      <rect
+         style="fill:#17171d;fill-opacity:0.9948235;stroke:none;stroke-width:0.60001528;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+         id="rect1132"
+         width="30"
+         height="10"
+         x="-115"
+         y="92.5"
+         ry="0" />
+      <rect
+         style="display:inline;fill:#17171d;fill-opacity:0.9948235;stroke:none;stroke-width:0.24495521;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+         id="rect1132-7"
+         width="10"
+         height="5"
+         x="-85"
+         y="95"
+         ry="0" />
+    </g>
+  </g>
 </svg>

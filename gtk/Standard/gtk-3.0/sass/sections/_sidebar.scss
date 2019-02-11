@@ -1,28 +1,17 @@
-/***********
- * Sidebar *
- ***********/
-.sidebar {
+// Sidebar
+list.tweak-categories, viewport > stack > list, placessidebar viewport list {
 	@include fill(normal, $alpha3, $header);
 	&:backdrop {
-		@include fill(normal, $alpha3, $header);
+		@include fill(backdrop, $alpha3, $header);
 	}
-	label:backdrop {
-		color: inherit;
-	}
-	list {
+	> separator {
+		@include fill(normal, $alpha2, $header);
+		&:backdrop {
+			@include fill(backdrop, $alpha2, $header);
+		}
 	}
 }
-row {
-	padding: 10px 4px;
-	> label {
-		padding-left: 6px;
-		padding-right: 6px;
-	}
-	&:selected > label {
-		padding-left: 9px;
-	}
-	&.needs-attention > label {
-		@extend %needs_attention;
-		background-size: 6px 6px, 0 0;
-	}
+
+paned > separator {
+	margin: -3px;
 }

@@ -1,0 +1,35 @@
+// Main Window
+viewport > list, box > stack, notebook, overlay stack viewport, overlay, grid > box {
+	@include fill(normal);
+	&:backdrop {
+		@include fill(backdrop);
+	}
+	label, image {
+		&:backdrop, & {
+			color: if($variant==light, $dark1, $white);
+		}
+	}
+	> list {
+		@include fill(normal);
+		&:backdrop {
+			@include fill(backdrop);
+		}
+	}
+}
+// Main Window built from a list
+pooviewport > list {
+	label, image {
+		&:backdrop, & {
+			color: if($variant==light, $dark1, $white);
+		}
+	}
+}
+paned > notebook {
+	margin: -6px -11px -12px -6px;
+	padding: 10px;
+}
+
+
+textview {
+	caret-color: if($variant==light, $dark1, $white);
+}

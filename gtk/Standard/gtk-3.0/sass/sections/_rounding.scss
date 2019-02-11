@@ -1,0 +1,22 @@
+list.tweak-categories, viewport > stack > list, placessidebar viewport list {
+	border-bottom-left-radius: $omega1;
+}
+headerbar, titlebar {
+	border-top-left-radius: $omega1;
+	border-top-right-radius: $omega1;
+}
+
+window.tiled-right,
+window.tiled-bottom,
+window.tiled-left,
+window.maximized,
+window.fullscreen {  
+	list.tweak-categories, viewport > stack > list, placessidebar viewport list {
+		border-bottom-left-radius: 0;
+	}
+	headerbar, titlebar {
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
+}
+

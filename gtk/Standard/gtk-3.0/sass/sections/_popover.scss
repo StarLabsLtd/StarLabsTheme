@@ -1,45 +1,27 @@
-
-/***************
- * Popovers   *
- ***************/
-
-popover.background {
-	padding: 2px;
+popover {
 	border-radius: $omega1;
 	@include clickable(normal);
-	.csd &, & {
-//		border: 1px solid $borders_color;
-	}
-	box-shadow: $shadow2;
 	&:backdrop {
 		@include clickable(backdrop);
 	}
-	> list, > .view, > toolbar {
-		border-style: none;
-		background-color: transparent;
-	}
-	.csd &, & {
-		&.touch-selection, &.magnifier {
-			@extend %osd;
-//			border: 1px solid transparentize(white, 0.9);
-			button {
-				@extend %gtk-button
-			}
-		}
-		&.osd {
-			@extend %osd;
-		}
+	button {
+		min-height: 20px;
+		min-width: 20px;
+		@include clickable(normal);
+		border-radius: 9999px;
 	}
 	modelbutton {
-		min-height: 16px;
-		min-width: 36px;
-		padding: 5px 6px;
-	}
-	separator {
-		margin: 3px;
-	}
-	list separator {
-		margin: 0px;
+		padding: $omega1 0;
+		arrow {
+			color: if($variant==light, $dark1, $white);
+			min-height: 20px;
+			min-width: 20px;
+			&.right {
+				-gtk-icon-source: -gtk-icontheme('pan-end-symbolic');
+			}
+			&.left {
+				-gtk-icon-source: -gtk-icontheme('pan-start-symbolic');
+			}
+		}
 	}
 }
-

@@ -1139,15 +1139,7 @@
    id="i-6" /><path
    inkscape:connector-curvature="0"
    d="M 21.97,8 V 48.34 L 61.36,116 96,56 h 88 V 8 Z"
-   id="m-2" /><linearGradient
-   inkscape:collect="always"
-   xlink:href="#d"
-   id="linearGradient1171"
-   x1="61.27565"
-   y1="118.80761"
-   x2="249.52513"
-   y2="117.74695"
-   gradientUnits="userSpaceOnUse" /></defs><sodipodi:namedview
+   id="m-2" /></defs><sodipodi:namedview
    pagecolor="#ffffff"
    bordercolor="#666666"
    borderopacity="1"
@@ -1161,7 +1153,7 @@
    id="namedview249"
    showgrid="false"
    inkscape:zoom="2"
-   inkscape:cx="106.43719"
+   inkscape:cx="12.93719"
    inkscape:cy="125.74688"
    inkscape:window-x="1920"
    inkscape:window-y="27"
@@ -1173,7 +1165,7 @@
    inkscape:groupmode="layer"
    id="layer2"
    inkscape:label="Background"><circle
-     style="display:inline;fill:url(#linearGradient1171);fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="display:inline;fill:#0068bf;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path1090"
      cx="128"
      cy="128"
@@ -1321,6 +1313,7 @@
      id="tspan1182"
      x="-516.66876"
      y="250.29257">R</tspan></text>
+
 
 </g><ellipse
        ry="12.980088"

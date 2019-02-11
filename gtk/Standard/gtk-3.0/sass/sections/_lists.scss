@@ -1,25 +1,17 @@
-/*********
- * Lists *
- *********/
-list {
-	label, image {
-		&:backdrop, & {
-			color: if($variant==light, $dark1, $white);
-		}
-	}
-	row {
-		padding: 2px;
-	}
-	separator {
-		@include fill(normal, $alpha3, $header);
-		&:backdrop {
-			@include fill(backdrop, $alpha3, $header);
-		}
-	}
+viewport > stack > list row {
+	padding: 0;
+	margin: 0;
 }
 
-row {
-	transition: $click;
+list.tweak-categories row, placessidebar viewport list row {
+	padding: 10px;
+}
+
+list.tweak-categories > row , viewport > stack > list > row, placessidebar > viewport > list > row {
+	min-height: 10px;
+	image {
+		padding: 0 10px;
+	}
 	&.activatable {
 		label, image {
 			&:backdrop, & {
@@ -28,23 +20,32 @@ row {
 		}
 		&:hover {
 			@include clickable(hover, $alpha3, $accent2);
-			&:backdrop {
-				@include clickable(backdrop-hover, $alpha3, $accent2);
-			}
 		}
 		&:selected, &:active, &.has-open-popup {
-			@include fill(normal, solid, if($header==light, $dark1, $white));
+			@include clickable(active, solid, if($header==light, $dark1, $white));
 			&:backdrop {
-				@include fill(backdrop, solid, if($header==light, $dark1, $white));
+				@include clickable(backdrop-active, solid, if($header==light, $dark1, $white));
 			}
 			label, image {
-				color: if($header==light, $white, $dark1);
-			}
-			label:backdrop, image:backdrop {
-				color: if($header==light, $white, $dark1);
+				&:backdrop, & {
+					color: if($header==light, $white, $dark1);
+				}
 			}
 		}
 	}
 }
 
-
+frame row {
+	border-radius: $omega1;
+	margin: 6px 1px;
+	@include clickable(normal);
+	&:selected {
+		@include clickable(active, solid, $accent2);
+	}
+	&:backdrop {
+		@include clickable(backdrop);
+		&:selected {
+			@include clickable(active, solid, $accent2);
+		}
+	}
+}

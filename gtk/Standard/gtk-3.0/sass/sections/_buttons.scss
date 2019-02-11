@@ -1,308 +1,148 @@
-
-/***********
- * Buttons *
- ***********/
-@keyframes needs_attention {
-	from {
-		background-image:
-			-gtk-gradient(radial,
-			center center, 0,
-			center center, 0.01,
-			to($accent2),
-			to(transparent));
+// File Path Button i.e. Naughty-less
+.path-bar button {
+	&:first-child, &:last-child {
+		background-color: transparent;
+		box-shadow: none;
+		color: transparent;
+		min-width: 0;
+		min-height: 0;
+		margin: 0;
+		padding: 0;
+		image {
+			background-color: transparent;
+			&:backdrop {
+				background-color: transparent;
+			}
+		}
 	}
-	to {
-		background-image:
-			-gtk-gradient(radial,
-			center center, 0,
-			center center, 0.5,
-			to($accent2),
-			to(transparent));
+	min-height: 24px;
+	min-width: 24px;
+	margin: 6px 0;
+	margin-left: -6px;
+	&:dir(ltr):not(:first-child):not(:last-child):not(:checked) {
+		border-radius: 0 $omega1 $omega1 0;
+		padding: 4px 14px;
+		@include clickable(normal, $alpha3, $header);
+		&:backdrop {
+			@include clickable(backdrop, $alpha3, $header);
+		}
+	}
+	&:checked {
+		border-radius: 0 $omega1 $omega1 0;
+		padding: 4px 14px;
+		@include clickable(active, $alpha3, $accent2);
+		&:backdrop {
+			@include clickable(backdrop-active, $alpha3, $accent2);
+		}
+	}
+	&.image-button {
+		border-radius: $omega1;
+
 	}
 }
 
-%gtk-button:drop(active), %gtk-button_selected.flat, %gtk-button.flat {
-	background-color: yellow;
+// Image i.e. Search Magnifier Icon
+button.image-button {
+	margin: 6px 4px;
+	padding: 4px 6px;
+	min-height: 16px;
+	min-width: 16px;
+	&:hover {
+		color: $accent2;
+		&:backdrop {
+			color: lighten($accent2, $beta1);
+		}
+	}
 }	
 
-button, %gtk-button {
-	@include merlin;
-	padding: 2px 6px;
-	@include gtk-button;
-	&.image-button {
-		min-width: 24px;
-		padding-left: 2px;
-		padding-right: 2px;
-	}
-	&.text-button {
-		padding-left: 16px;
-		padding-right: 16px;
-	}
-	&.text-button.image-button {
-		padding-left: 8px;
-		padding-right: 8px;
-		label {
-			padding-left: 8px;
-			padding-right: 8px;
-		}
-	}
-	&.osd {
-		min-width: 24px;
-		min-height: 32px;
-		&.image-button {
-			min-width: 32px;
-		}
-	}
-	.stack-switcher > & {
-		> label {
-			padding-left: 6px;
-			padding-right: 6px;
-		}
-		> image {
-			padding-left: 6px;
-			padding-right: 6px;
-			padding-top: 3px;
-			padding-bottom: 3px;
-		}
-		&.text-button {
-			padding-left: 10px;
-			padding-right: 10px;
-		}
-		&.image-button {
-			padding-left: 0;
-			padding-right: 0;
-		}
-		&.needs-attention {
-			> label, > image {
-				@extend %needs_attention;
-			}
-			&:active, &:checked {
-				> label, > image {
-					animation: none;
-					background-image: none;
-				}
+// Minimize, Maximise and Close
+button.titlebutton {
+	min-height: 24px;
+	min-width: 24px;
+	border-radius: 50%;
+	&.minimize {
+		&:hover {
+			@include clickable(hover, $alpha3, $accent1);
+			&:backdrop {
+				@include clickable(backdrop-hover, $alpha3, $accent1);
 			}
 		}
 	}
-	&.font, &.file {
-		separator {
-			background-color: transparent;
+	&.maximize {
+		&:hover {
+			@include clickable(hover, $alpha3, $accent2);
+			&:backdrop {
+				@include clickable(backdrop-hover, $alpha3, $accent2); 
+			}
 		}
 	}
-	&.font {
-		> box > box > label {
-			font-weight: 500;
+	&.close {
+		@include clickable(normal, $alpha3, $accent2);
+		&:hover {
+			@include clickable(hover, $alpha3, $accent3);
+			&:backdrop {
+				@include clickable(backdrop-hover, $alpha3, $accent3);
+			}
 		}
-	}
-	.inline-toolbar &, .inline-toolbar &:backdrop {
-		border-radius: 2px;
-		border-width: 1px;
-		@extend %linked;
-	}
-	.linked > &,
-	.linked > &:hover,
-	.linked > &:active,
-	.linked > &:checked,
-	.linked > &:backdrop {
-		@extend %linked;
-	}
-	.linked.vertical > &,
-	.linked.vertical > &:hover,
-	.linked.vertical > &:active,
-	.linked.vertical > &:checked,
-	.linked.vertical > &:backdrop {
-		@extend %linked_vertical;
-	}
-	&.circular {
-		border-radius: 9999px;
-		-gtk-outline-radius: 9999px;
-		label {
-			padding: 0;
-		}
-		&:not(.flat):not(:checked):not(:active):not(:disabled):not(:backdrop),
-		&:hover:not(:checked):not(:active):not(:disabled):not(:backdrop),
-		&:checked, &:active {
-			border-color: $accent2;
-			box-shadow: none;
-		}
-		&:not(.flat):not(:checked):not(:active):not(:disabled):not(:backdrop) {
-			@include clickable(normal);
-		}
-		&:hover:not(:checked):not(:active):not(:disabled):not(:backdrop) {
-			@include clickable(hover);
-		}
-		background-origin: padding-box, border-box;
-		background-clip: padding-box, border-box;
 	}
 }
-
-%needs_attention {
-	animation: needs_attention 150ms ease-in;
-	background-image: -gtk-gradient(radial,
-					center center, 0,
-					center center, 0.5,
-					to($accent2),
-					to(transparent)),
-				-gtk-gradient(radial,
-					center center, 0,
-					center center, 0.5,
-					to($accent2),
-					to(transparent));
-	background-size: 6px 6px, 6px 6px;
-	background-repeat: no-repeat;
-	background-position: right 3px, right 4px;
-	&:backdrop {
-		background-size: 6px 6px, 0 0;
-	}
-	&:dir(rtl) {
-		background-position: left 3px, left 4px;
-	}
-}
-
-.inline-toolbar toolbutton > button {
-	@include clickable(normal);
+// Button with text inside
+button.text-button {
+	border-radius: $omega1;
+	margin: 6px 0;
+	padding: 4px 6px;
+	@include clickable(normal, $alpha3);
 	&:hover {
-		@include clickable(hover);
+		@include clickable(hover, $alpha3);
 	}
-	&:active, &:checked{
-		@include clickable(active);
+	&.default {
+		@include clickable(normal, $alpha3, $accent2);
 	}
+	&.suggested-action {
+		@include clickable(normal, $alpha3, $success);
+	}
+}
+
+buttonbox button, .path-bar button {
+        border-radius: 0;
+	&:first-child {
+		border-radius: $omega1 0 0 $omega1;
+	}
+	&:last-child {
+		border-radius: 0 $omega1 $omega1 0;
+	}
+}
+
+combobox button, filechooserbutton, widget button {
+	border-radius: $omega1;
+	padding: $omega1;
+	min-height: 24px;
+	min-width: 24px;
+	@include clickable(normal);
 	&:disabled {
 		@include clickable(disabled);
 	}
-	&:backdrop {
-		@include clickable(backdrop);
-		&:active, &:checked {
-			@include clickable(backdrop-active);
-		}
-	}
-}
-toolbar.inline-toolbar toolbutton,
-toolbar.inline-toolbar toolbutton:backdrop {
-	> button.flat {
-		@extend %linked_middle;
-	}
-	&:first-child > button.flat {
-		@extend %linked:first-child;
-	}
-	&:not(:first-child) > button.flat {
-//		border-left-color: $borders_color;
-		&:disabled {
-//			border-left-color: $insensitive_borders_color;
-		}
-	}
-	&:last-child > button.flat {
-		@extend %linked:last-child;
-	}
-	&:only-child > button.flat {
-		@extend %linked:only-child;
+	arrow {
+		-gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
+		min-height: 20px;
+		min-width: 20px;
 	}
 }
 
-%linked_middle {
-	border-radius: 0;
-	border-right-style: none;
-	-gtk-outline-radius: 0;
-}
-
-%linked {
-	@extend %linked_middle;
-	&:first-child {
-		border-top-left-radius: $omega1;
-		border-bottom-left-radius: $omega1;
-		-gtk-outline-radius: $omega1 0 0 $omega1;
-	}
-	&:last-child {
-		border-top-right-radius: $omega1;
-		border-bottom-right-radius: $omega1;
-		border-right-style: solid;
-		-gtk-outline-radius: 0 $omega1 $omega1 0;
-	}
-	&:only-child {
-		border-radius: $omega1;
-		-gtk-outline-radius: $omega1;
-		border-style: solid;
-	}
-}
-
-%linked_vertical_middle {
-	border-style: solid solid none solid;
-	border-radius: 0;
-	-gtk-outline-radius: 0px;
-}
-
-%linked_vertical{
-	@extend %linked_vertical_middle;
-	&:not(:first-child) {
-		// linked buttons will have more defined border colors
-//		border-top-color: $borders_color;
-		&:disabled {
-//			border-top-color: $insensitive_borders_color;
-		}
-	}
-	&:first-child {
-		border-top-left-radius: $omega1;
-		border-top-right-radius: $omega1;
-		-gtk-outline-radius: $omega1 $omega1 0 0;
-	}
-	&:last-child {
-		border-bottom-left-radius: $omega1;
-		border-bottom-right-radius: $omega1;
-		-gtk-outline-radius: 0 0 $omega1 $omega1;
-		border-style: solid;
-	}
-	&:not(:last-child) {
-		// only the last button will have the 3d effect
-		box-shadow: none;
-	}
-	&:only-child {
-		border-radius: $omega1;
-		-gtk-outline-radius: $omega1;
-		border-style: solid;
-	}
-}
-
-/* menu buttons */
-modelbutton.flat, .menuitem.button.flat {
-	@include merlin;
-	padding-left: 5px;
-	padding-right: 5px;
-	border-radius: 3px;
-	-gtk-outline-radius: 3px;
-	outline-offset: -2px;
-	@include clickable(undecorated);
-	&:hover {
-		@include clickable(hover);
-	}
-	&:active {
+button.toggle {
+	&:checked {
 		@include clickable(active, $alpha3, $accent2);
-	}
-	&:selected {
-		@extend %selected_items;
-	}
-	&:backdrop, &:backdrop:hover {
-		@include clickable(undecorated);
-	}
-}
-
-modelbutton.flat arrow {
-	background: none;
-	&:hover {
-		background: none;
-	}
-	&.left {
-		-gtk-icon-source: -gtk-icontheme("pan-start-symbolic");
-	}
-	&.right {
-		-gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
-	}
-}
-
-button.color {
-	padding: 4px;
-	colorswatch:only-child {
-		&, overlay {
-			border-radius: 0;
+		&:backdrop {
+			@include clickable(backdrop-active, $alpha3, $accent2);
 		}
+	}
+}
+
+// Selected icon i.e. in Naughty-less
+widget.view:selected {
+	border-radius: $omega1;
+	@include clickable(active, $alpha3, $accent2);
+	&:backdrop {
+		@include clickable(backdrop-active, $alpha3, $accent2);
 	}
 }

@@ -1,0 +1,9 @@
+// Terminal
+terminal-window {
+	.terminal-screen {
+		@include fill(normal, $alpha3, darken($accent3, 20%));
+		&:backdrop {
+			@include fill(backdrop, $alpha3, darken($accent3, 20%));
+		}
+	}
+}

@@ -9,8 +9,7 @@
 		background-color: if($transparent==solid, $background-normal, transparentize($background-normal, $transparent));
 		box-shadow: $shadow1;
 		transition: $tran2;
-		-arrow-background-color: $fill;
-		-arrow-border-color: $fill;
+		caret-color: $accent2;
 	}
 	@else if $type==focus {
 		// Selected Button
