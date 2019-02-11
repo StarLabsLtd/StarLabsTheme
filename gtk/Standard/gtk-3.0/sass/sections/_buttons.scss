@@ -1,5 +1,57 @@
+button {
+	animation: shrink 2s linear infinite;
+	min-height: 24px;
+	min-width: 16px;
+	border-radius: $omega1;
+	.flat {
+		@include clickable(undecorated);
+		&:hover {
+			-gtk-icon-effect: highlight;
+		}
+	}
+	
+}
+
+headerbar, .titlebar {
+	button:not(.image-button):not(.titlebutton) {
+		@include button($alpha3, $header);
+	}
+	buttonbox.linked {
+		@include button($alpha3, $header);
+		margin: 0;
+		&:first-child {
+			border-radius: 0 $omega1 $omega1 0;
+		}
+		&:last-child {
+			border-radius: $omega1 0 0 $omega1;
+		}
+		&:only-child {
+			border-radius: $omega1;
+		}
+	}
+	.path-bar button {
+		&:first-child, &:last-child {
+			background-color: transparent;
+			box-shadow: none;
+			color: transparent;
+			min-width: 0;
+			min-height: 0;
+			margin: 0;
+			padding: 0;
+			image {
+				color: transparent;
+				background-color: transparent;
+				&:backdrop {
+					color: transparent;
+					background-color: transparent;
+				}
+			}
+		}	
+	}	
+}
+
 // File Path Button i.e. Naughty-less
-.path-bar button {
+#pathbarbox button, .path-bar button {
 	&:first-child, &:last-child {
 		background-color: transparent;
 		box-shadow: none;
@@ -9,13 +61,14 @@
 		margin: 0;
 		padding: 0;
 		image {
+			color: transparent;
 			background-color: transparent;
 			&:backdrop {
+				color: transparent;
 				background-color: transparent;
 			}
 		}
 	}
-	min-height: 24px;
 	min-width: 24px;
 	margin: 6px 0;
 	margin-left: -6px;
@@ -28,6 +81,7 @@
 		}
 	}
 	&:checked {
+		font-weight: normal;
 		border-radius: 0 $omega1 $omega1 0;
 		padding: 4px 14px;
 		@include clickable(active, $alpha3, $accent2);
@@ -43,14 +97,16 @@
 
 // Image i.e. Search Magnifier Icon
 button.image-button {
-	margin: 6px 4px;
-	padding: 4px 6px;
-	min-height: 16px;
-	min-width: 16px;
+	min-height: 24px;
+	min-width: 24px;
 	&:hover {
-		color: $accent2;
+		image {
+			color: $accent2;
+		}
 		&:backdrop {
-			color: lighten($accent2, $beta1);
+			image {
+				color: lighten($accent2, $beta1);
+			}
 		}
 	}
 }	
@@ -88,40 +144,18 @@ button.titlebutton {
 }
 // Button with text inside
 button.text-button {
-	border-radius: $omega1;
+	min-height: 24px;
+	min-width: 60px;
 	margin: 6px 0;
 	padding: 4px 6px;
-	@include clickable(normal, $alpha3);
-	&:hover {
-		@include clickable(hover, $alpha3);
-	}
-	&.default {
-		@include clickable(normal, $alpha3, $accent2);
-	}
-	&.suggested-action {
-		@include clickable(normal, $alpha3, $success);
-	}
-}
-
-buttonbox button, .path-bar button {
-        border-radius: 0;
-	&:first-child {
-		border-radius: $omega1 0 0 $omega1;
-	}
-	&:last-child {
-		border-radius: 0 $omega1 $omega1 0;
-	}
+	@include button($alpha3, $variant);
 }
 
 combobox button, filechooserbutton, widget button {
-	border-radius: $omega1;
 	padding: $omega1;
 	min-height: 24px;
 	min-width: 24px;
-	@include clickable(normal);
-	&:disabled {
-		@include clickable(disabled);
-	}
+	@include button;
 	arrow {
 		-gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
 		min-height: 20px;
@@ -146,3 +180,5 @@ widget.view:selected {
 		@include clickable(backdrop-active, $alpha3, $accent2);
 	}
 }
+
+

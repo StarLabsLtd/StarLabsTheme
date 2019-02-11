@@ -5,7 +5,6 @@ headerbar {
 	&:backdrop {
 		@include fill(backdrop, $alpha3, $header);
 	}
-	button {
-		margin: 6px 4px;
-	}
 }
+
+

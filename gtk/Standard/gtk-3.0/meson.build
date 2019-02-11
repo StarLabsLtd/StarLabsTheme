@@ -24,6 +24,7 @@ gtk3_scss_dependencies = [
   'sass/functions/_clickable.scss',
   'sass/functions/_fill.scss',
   'sass/functions/_overshoot.scss',
+  'sass/functions/_button.scss',
   'sass/_sections.scss',
   'sass/sections/_apps.scss',
   'sass/sections/_buttons.scss',
@@ -53,6 +54,7 @@ gtk3_scss_dependencies = [
   'sass/sections/_notifications.scss',
   'sass/sections/_tooltip.scss',
   'sass/sections/_spinner.scss',
+  'sass/sections/_notebook.scss',
 ]
 
 gtk3_assets = [

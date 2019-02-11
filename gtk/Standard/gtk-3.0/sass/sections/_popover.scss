@@ -1,13 +1,17 @@
 popover {
 	border-radius: $omega1;
+	box-shadow: $shadow2;
 	@include clickable(normal);
 	&:backdrop {
 		@include clickable(backdrop);
 	}
 	button {
-		min-height: 20px;
-		min-width: 20px;
+		min-height: 26px;
+		min-width: 26px;
 		@include clickable(normal);
+		&:hover {
+			@include clickable(hover, solid, $accent2);
+		}
 		border-radius: 9999px;
 	}
 	modelbutton {
