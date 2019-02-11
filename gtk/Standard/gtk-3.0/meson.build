@@ -52,6 +52,7 @@ gtk3_scss_dependencies = [
   'sass/sections/_window.scss',
   'sass/sections/_notifications.scss',
   'sass/sections/_tooltip.scss',
+  'sass/sections/_spinner.scss',
 ]
 
 gtk3_assets = [
