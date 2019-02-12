@@ -1267,6 +1267,13 @@
      id="circle1160"
      cx="124"
      cy="128"
+     r="124" /></clipPath><clipPath
+   clipPathUnits="userSpaceOnUse"
+   id="clipPath1155"><circle
+     style="display:inline;fill:#003059;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="circle1157"
+     cx="-331.61942"
+     cy="199.17514"
      r="124" /></clipPath></defs><sodipodi:namedview
    pagecolor="#ffffff"
    bordercolor="#666666"
@@ -1281,8 +1288,8 @@
    id="namedview249"
    showgrid="false"
    inkscape:zoom="1"
-   inkscape:cx="139.8808"
-   inkscape:cy="97.01727"
+   inkscape:cx="122.66087"
+   inkscape:cy="67.976865"
    inkscape:window-x="0"
    inkscape:window-y="27"
    inkscape:window-maximized="1"
@@ -1314,8 +1321,10 @@
    id="rect1125"
    width="256"
    height="128"
-   x="0"
-   y="128" /><text
+   x="-459.61942"
+   y="195.17514"
+   clip-path="url(#clipPath1155)"
+   transform="translate(459.61942,-67.17514)" /><text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:133.33332825px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none"
    x="52.230213"
@@ -1326,6 +1335,7 @@
      x="52.230213"
      y="174.26666"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:133.33332825px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;fill-opacity:1">28</tspan></text>
+
 </g><g
    inkscape:groupmode="layer"
    id="layer6"
