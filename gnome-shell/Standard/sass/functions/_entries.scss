@@ -43,24 +43,24 @@
 	}
 	@if $type==backdrop {
 		// Backdropped Standard Button
-		color: if($color==$white, darken($color, $beta1), lighten($color, $beta1));
-		$background-backdrop: if($fill==$dark1, lighten($fill, $beta1), darken($fill, $beta1));
+		color: $color;
+		$background-backdrop: if($fill==$dark1, darken($fill, $beta1), if($fill==$white, darken($fill, $beta1), darken($fill, $beta1)));
                 background-color: if($transparent==solid, $background-backdrop, transparentize($background-backdrop, $transparent));
 		box-shadow: $shadow1;
 		transition: $tran2;
 	}
 	@else if $type==backdrop-focus {
 		// Backdropped Selected Button
-		color: if($color==$white, darken($color, $beta1), lighten($color, $beta1));
-		$background-backdrop-focus: if($fill==$dark1, lighten($fill, $beta1), darken($fill, $beta1));
+		color: $color;
+		$background-backdrop-focus: if($fill==$dark1, darken($fill, $beta1), if($fill==$white, darken($fill, $beta1), darken($fill, $beta1)));
 		background-color: if($transparent==solid, $background-backdrop-focus, transparentize($background-backdrop-focus, $transparent));
 		box-shadow: $shadow2;
 		transition: $tran2;
 	}
 	@else if $type==backdrop-hover {
 		// Backdropped Hovering on Button
-		color: if($color==$white, darken($color, $beta1), lighten($color, $beta1));
-		$background-backdrop-hover: if($fill==$dark1, lighten($fill, $beta1), darken($fill, $beta1));
+		color: $color;
+		$background-backdrop-hover: if($fill==$dark1, darken($fill, $beta1), if($fill==$white, darken($fill, $beta1), darken($fill, $beta1)));
                 background-color: if($transparent==solid, $background-backdrop-hover, transparentize($background-backdrop-hover, $transparent));
 		border-color: transparent;
 		box-shadow: $shadow2;
@@ -68,8 +68,8 @@
 	}
 	@elseif $type==backdrop-active {
 		// Backdropped Button in On State
-		color: if($color==$white, darken($color, $beta1), lighten($color, $beta1));
-		$background-backdrop-active: if($fill==$accent2, lighten($fill, $beta1), darken($fill, $beta1));
+		color: $color;
+		$background-backdrop-active: if($fill==$dark1, darken($fill, $beta1), if($fill==$white, darken($fill, $beta1), darken($fill, $beta1)));
                 background-color: if($transparent==solid, $background-backdrop-active, transparentize($background-backdrop-active, $transparent));
 		border-color: transparent;
 		box-shadow: $shadow2;

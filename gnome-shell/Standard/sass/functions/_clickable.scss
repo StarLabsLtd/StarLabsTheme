@@ -52,7 +52,7 @@
 		&, label, image {
 			color: $color;
 		}
-		$background-backdrop: if($fill==$dark1, lighten($fill, $beta1), darken($fill, $beta1));
+		$background-backdrop: if($fill==$dark1, darken($fill, $beta1), if($fill==$white, darken($fill, $beta1), darken($fill, $beta1)));
                 background-color: if($transparent==solid, $background-backdrop, transparentize($background-backdrop, $transparent));
 		box-shadow: $shadow1;
 		transition: $backdrop;
@@ -62,7 +62,7 @@
 		&, label, image {
 			color: $color;
 		}
-		$background-backdrop-focus: if($fill==$dark1, lighten($fill, $beta1), darken($fill, $beta1));
+		$background-backdrop-focus: if($fill==$dark1, darken($fill, $beta1), if($fill==$white, darken($fill, $beta1), darken($fill, $beta1)));
 		background-color: if($transparent==solid, $background-backdrop-focus, transparentize($background-backdrop-focus, $transparent));
 		box-shadow: $shadow2;
 		transition: $backdrop;
@@ -72,7 +72,7 @@
 		&, label, image {
 			color: $color;
 		}
-		$background-backdrop-hover: if($fill==$dark1, lighten($fill, $beta1), darken($fill, $beta1));
+		$background-backdrop-hover: if($fill==$dark1, darken($fill, $beta1), if($fill==$white, darken($fill, $beta1), darken($fill, $beta1)));
                 background-color: if($transparent==solid, $background-backdrop-hover, transparentize($background-backdrop-hover, $transparent));
 		border-color: transparent;
 		box-shadow: $shadow2;
@@ -82,7 +82,7 @@
 		&, label, image {
 			color: $color;
 		}
-		$background-backdrop-active: if($fill==$accent2, lighten($fill, $beta1), darken($fill, $beta1));
+		$background-backdrop-active: if($fill==$dark1, darken($fill, $beta1), if($fill==$white, darken($fill, $beta1), darken($fill, $beta1)));
                 background-color: if($transparent==solid, $background-backdrop-active, transparentize($background-backdrop-active, $transparent));
 		border-color: transparent;
 		box-shadow: $shadow2;
@@ -98,48 +98,3 @@
 }
 
 
-
-@mixin gtk-button($color:$variant, $alpha:$alpha3) {
-	@include clickable(normal, $alpha, $color);
-	&:hover {
-		@include clickable(hover, $alpha, $color);
-	}
-	&:focus {
-		@include clickable(focus, $alpha, $color);
-	}
-	&:active, &:checked {
-		@include clickable(active, $alpha3, $accent2);
-	}
-	&:backdrop {
-		@include clickable(backdrop, $alpha, $color);
-		&:hover {
-			@include clickable(backdrop-hover, $alpha, $color);
-		}
-		&:focus {
-			@include clickable(backdrop-focus, $alpha, $color);
-		}
-		&:active, &:checked {
-			@include clickable(backdrop-active, $alpha3, $accent2);
-		}
-	}
-	&:disabled {
-		@include clickable(disabled);
-	}
-	&.default:not(.suggested-action):not(.destructive-action) {
-		@include clickable(normal, $alpha, $accent2);
-	}
-	&.suggested-acton {
-		@include clickable(normal, $alpha, $success);
-	}
-	&.destructive-action {
-		@include clickable(normal, $alpha, $failure);
-	}
-	&.flat {
-		@include clickable(undecorated);
-	}
-}
-
-@mixin merlin {
-	min-height: 22px;
-	min-width: 22px;
-}
