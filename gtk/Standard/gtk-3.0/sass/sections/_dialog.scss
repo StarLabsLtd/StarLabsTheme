@@ -1,10 +1,10 @@
-dialog {
+dialog, messagedialog {
 	border-bottom-right-radius: $omega1;
 	> decoration {
-//		@include fill(normal, $alpha3);
+		@include fill(normal, $alpha3);
 		border-bottom-right-radius: $omega1;
 		&:backdrop {
-//			@include fill(backdrop, $alpha3);
+			@include fill(backdrop, $alpha3);
 		}
 	}
 	label, image {

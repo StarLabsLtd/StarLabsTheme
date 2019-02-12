@@ -1,11 +1,14 @@
 menubar, .menubar {
-	@include fill(normal, $alpha3, $header);
+	@include fill(normal, $alpha2, $header);
 	&:backdrop {
-		@include fill(normal, $alpha3, $header);
+		@include fill(normal, $alpha2, $header);
 	}
 	> menuitem {
 		min-height: 20px;
 		padding: 4px $omega1;
+		&:active, &:checked {
+			@include clickable(active, $alpha3, $accent2);
+		}
 		&:disabled {
 			@include clickable(disabled);
 		}

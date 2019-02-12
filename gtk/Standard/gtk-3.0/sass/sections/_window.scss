@@ -1,12 +1,16 @@
 .background {
-//	background-color: transparentize(if($variant==light, $white, $dark1), 0.6);
+	background-color: transparentize(if($variant==light, $dark1, $white), $alpha3);
+	color: if($variant==light, $white, $dark1);
 	&:backdrop {
-//		background-color: transparentize(if($variant==light, darken($white, $beta1), darken($dark1, $beta1)), 0.6)
+		background-color: transparentize(if($variant==light, darken($dark1, $beta1), darken($white, $beta1)), $alpha3);
+		color: if($variant==light, $white, $dark1);
 	}
 }
 
 // Main Window
+//window > box, //GHEX
 window > box > box, 
+window > box > box > box, // CHEESE
 window > box > stack {
 	&:last-child, &:only-child {
 		@include fill(normal);
@@ -25,8 +29,8 @@ notebook, widget viewport, stack > widget > box > stack box {
 // Main Window built from a list
 paned > notebook {
 	&, &:backdrop {
-		margin: -6px -11px -12px -6px;
-		padding: 10px;
+//		margin: -6px -11px -12px -6px;
+//		padding: 10px;
 	}
 }
 

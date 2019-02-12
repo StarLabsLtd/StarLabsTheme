@@ -190,3 +190,21 @@ combobox button, filechooserbutton, widget button {
 		min-width: 20px;
 	}
 }
+
+
+buttonbox.linked button {
+	margin: 0;
+	&:not(:first-child):not(:last-child) {
+		border-radius: 0;
+	}
+	&:first-child {
+		border-radius: $omega1 0 0 $omega1;
+	}
+	&:last-child {
+		border-radius: 0 $omega1 $omega1 0;
+	}
+	&:only-child {
+		border-radius: $omega1;
+	}
+}
+
