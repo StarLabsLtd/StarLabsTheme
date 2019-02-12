@@ -3,6 +3,8 @@ path=../../../StarLabs
 rm -r ../StarLabs/[0-9]*
 rm -r ../StarLabs/scalable
 cp -r scalable ../StarLabs
+rm -r ../StarLabs/scalable-max-32
+cp -r scalable-max-32 ../StarLabs
 cd fullcolor
 for d in apps places mimetypes; do
 #categories devices emblems status
