@@ -54,7 +54,7 @@ headerbar, .titlebar {
 }
 
 // File Path Button i.e. Naughty-less
-#pathbarbox button, .path-bar button {
+#pathbarbox button.image-button, .path-bar button.image-button {
 	&:first-child, &:last-child {
 		background-color: transparent;
 		box-shadow: none;
@@ -72,15 +72,42 @@ headerbar, .titlebar {
 			}
 		}
 	}
+	image {
+		&, &:backdrop {
+			color: $white;
+		}		
+	}
+	border-radius: $omega1;
+        min-width: 24px;
+        margin: 6px 0;
+        margin-left: -6px;
+        &:dir(ltr):not(:first-child):not(:last-child):not(:checked) {
+                padding: 4px 14px;
+                @include clickable(normal, solid, $header);
+                &:backdrop {
+                        @include clickable(backdrop, solid, $header);
+                }
+        }
+        &:checked {
+                font-weight: normal;
+                padding: 4px 14px;
+                @include clickable(active, $alpha3, $accent2);
+                &:backdrop {
+                        @include clickable(backdrop-active, $alpha3, $accent2);
+                }
+        }
+
+}
+#pathbarbox button:not(.image-button), .path-bar button:not(.image-button) {
 	min-width: 24px;
 	margin: 6px 0;
 	margin-left: -6px;
 	&:dir(ltr):not(:first-child):not(:last-child):not(:checked) {
 		border-radius: 0 $omega1 $omega1 0;
 		padding: 4px 14px;
-		@include clickable(normal, $alpha3, $header);
+		@include clickable(normal, solid, $header);
 		&:backdrop {
-			@include clickable(backdrop, $alpha3, $header);
+			@include clickable(backdrop, solid, $header);
 		}
 	}
 	&:checked {
@@ -91,10 +118,6 @@ headerbar, .titlebar {
 		&:backdrop {
 			@include clickable(backdrop-active, $alpha3, $accent2);
 		}
-	}
-	&.image-button {
-		border-radius: $omega1;
-
 	}
 }
 
@@ -167,14 +190,3 @@ combobox button, filechooserbutton, widget button {
 		min-width: 20px;
 	}
 }
-
-// Selected icon i.e. in Naughty-less
-widget.view:selected {
-	border-radius: $omega1;
-	@include clickable(active, $alpha3, $accent2);
-	&:backdrop {
-		@include clickable(backdrop-active, $alpha3, $accent2);
-	}
-}
-
-

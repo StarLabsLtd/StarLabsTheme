@@ -3,6 +3,7 @@
 }
 
 .view, textview {
+        caret-color: if($variant==light, $dark1, $white);
         text {
                 selection {
                         &:focus, & {
@@ -11,3 +12,10 @@
                 }
         }
 }
+
+// Selected icon i.e. in Naughty-less
+widget.view:selected {
+	border-radius: $omega1;
+        @extend %selected;
+}
+

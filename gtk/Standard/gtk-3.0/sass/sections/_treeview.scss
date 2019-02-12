@@ -7,10 +7,6 @@ treeview.view {
 		-GtkTreeView-tree-line-pattern: '';
 		-GtkTreeView-expander-size: 22;
 	}
-	@include fill(normal);
-	&:backdrop {
-		@include fill(backdrop);
-	}
 
 	rubberband {
 		background-color: red;

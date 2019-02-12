@@ -1,4 +1,5 @@
 // Sidebar
+//box > paned > scrolledwindow > treeview,
 list.tweak-categories, viewport > stack > list, placessidebar viewport list {
 	@include fill(normal, $alpha3, $header);
 	&:backdrop {
@@ -11,6 +12,17 @@ list.tweak-categories, viewport > stack > list, placessidebar viewport list {
 		}
 	}
 }
+
+list.tweak-categories, viewport > stack > list {
+	margin-top: 1px;
+}
+searchbar { 
+	@include fill(normal, $alpha3, $header);
+	&:backdrop {
+		@include fill(backdrop, $alpha3, $header);
+	}
+}
+
 
 paned > separator {
 	margin: -3px;

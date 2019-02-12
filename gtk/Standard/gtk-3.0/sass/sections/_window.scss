@@ -1,29 +1,28 @@
+.background {
+//	background-color: transparentize(if($variant==light, $white, $dark1), 0.6);
+	&:backdrop {
+//		background-color: transparentize(if($variant==light, darken($white, $beta1), darken($dark1, $beta1)), 0.6)
+	}
+}
+
 // Main Window
-viewport > list, box > stack, notebook, overlay stack viewport, overlay, grid > box {
+window > box > box, 
+window > box > stack {
+	&:last-child, &:only-child {
+		@include fill(normal);
+		&:backdrop {
+			@include fill(backdrop);
+		}	
+	}
+}
+notebook, widget viewport, stack > widget > box > stack box {
 	@include fill(normal);
 	&:backdrop {
 		@include fill(backdrop);
 	}
-	label, image {
-		&:backdrop, & {
-			color: if($variant==light, $dark1, $white);
-		}
-	}
-	> list {
-		@include fill(normal);
-		&:backdrop {
-			@include fill(backdrop);
-		}
-	}
 }
+
 // Main Window built from a list
-pooviewport > list {
-	label, image {
-		&:backdrop, & {
-			color: if($variant==light, $dark1, $white);
-		}
-	}
-}
 paned > notebook {
 	&, &:backdrop {
 		margin: -6px -11px -12px -6px;
@@ -31,7 +30,3 @@ paned > notebook {
 	}
 }
 
-
-textview {
-	caret-color: if($variant==light, $dark1, $white);
-}

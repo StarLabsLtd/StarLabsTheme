@@ -1,20 +1,23 @@
 decoration {
+	border-radius: $omega1;
 	&, &:backdrop {
 		background-color: transparent;
 	}
 	box-shadow: $shadow2;
-	transition: $backdrop;
 	&:backdrop {
 		transition: $backdrop;
-		box-shadow: $shadow1;
+		box-shadow: $shadow2;
 	}
 	margin: 10px;
-	border-radius: $omega1 $omega1 0;
 
-
-	.csd.popup, .tooltip.csd, messagedialog.csd, .solid-csd {
-		background-color: red;
-		color: blue;
-		box-shadow: $shadow2;
+	window.tiled &,
+        window.tiled-top &,
+        window.tiled-right &,
+        window.tiled-bottom &,
+        window.tiled-left &,
+        window.maximized &,
+        window.fullscreen &,
+        window.solid-csd & {
+		border-radius: $omega1;
 	}
 }
