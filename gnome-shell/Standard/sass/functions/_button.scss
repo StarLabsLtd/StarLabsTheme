@@ -1,0 +1,121 @@
+@mixin button($transparent: $alpha3, $color: $variant) {
+	border-radius: $omega1;	
+	@include clickable(normal, $transparent, $color);
+	&:focus {
+		@include clickable(focus, $transparent, $accent2);
+	}
+	&:hover {
+		@include clickable(hover, $transparent, $accent2);
+	}
+	&:active, &:checked {
+		@include clickable(active, $transparent, $accent2);
+	}
+	&:disabled {
+		@include clickable(disabled);
+	}
+	&:backdrop {
+		@include clickable(backdrop, $transparent, $color);
+		&:focus {
+			@include clickable(backdrop-focus, $transparent, $accent2);
+		}
+		&:hover {
+			@include clickable(hover, $transparent, $accent2);
+		}
+		&:active, &:checked {
+			@include clickable(active, $transparent, $accent2);
+		}
+		&:disabled {
+			@include clickable(disabled);
+		}	
+	}
+	&.default:not(.suggested-action):not(.destructive-action) {
+		@include clickable(normal, $transparent, $accent2);
+		&:focus {
+			@include clickable(focus, $transparent, $accent3);
+		}
+		&:hover {
+			@include clickable(hover, $transparent, $accent3);
+		}
+		&:active, &:checked {
+			@include clickable(active, $transparent, $accent3);
+		}
+		&:disabled {
+			@include clickable(disabled);
+		}
+		&:backdrop {
+			@include clickable(backdrop, $transparent, $accent2);
+			&:focus {
+				@include clickable(backdrop-focus, $transparent, $accent3);
+			}
+			&:hover {
+				@include clickable(hover, $transparent, $accent3);
+			}
+			&:active, &:checked {
+				@include clickable(active, $transparent, $accent3);
+			}
+			&:disabled {
+				@include clickable(disabled);
+			}	
+		}
+	}
+	&.suggested-action {
+		@include clickable(normal, $transparent, $success);
+		&:focus {
+			@include clickable(focus, $transparent, $success);
+		}
+		&:hover {
+			@include clickable(hover, $transparent, $success);
+		}
+		&:active, &:checked {
+			@include clickable(active, $transparent, $success);
+		}
+		&:disabled {
+			@include clickable(disabled);
+		}
+		&:backdrop {
+			@include clickable(backdrop, $transparent, $success);
+			&:focus {
+				@include clickable(backdrop-focus, $transparent, $success);
+			}
+			&:hover {
+				@include clickable(hover, $transparent, $success);
+			}
+			&:active, &:checked {
+				@include clickable(active, $transparent, $success);
+			}
+			&:disabled {
+				@include clickable(disabled);
+			}	
+		}
+	}
+	&.destructive-action {
+		@include clickable(normal, $transparent, $failure);
+		&:focus {
+			@include clickable(focus, $transparent, $failure);
+		}
+		&:hover {
+			@include clickable(hover, $transparent, $failure);
+		}
+		&:active, &:checked {
+			@include clickable(active, $transparent, $failure);
+		}
+		&:disabled {
+			@include clickable(disabled);
+		}
+		&:backdrop {
+			@include clickable(backdrop, $transparent, $failure);
+			&:focus {
+				@include clickable(backdrop-focus, $transparent, $failure);
+			}
+			&:hover {
+				@include clickable(hover, $transparent, $failure);
+			}
+			&:active, &:checked {
+				@include clickable(active, $transparent, $failure);
+			}
+			&:disabled {
+				@include clickable(disabled);
+			}	
+		}
+	}
+}

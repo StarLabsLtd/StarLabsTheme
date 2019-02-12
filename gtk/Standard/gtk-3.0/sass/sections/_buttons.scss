@@ -13,17 +13,20 @@ button {
 }
 
 headerbar, .titlebar {
-	button:not(.image-button):not(.titlebutton) {
+	button:not(.image-button):not(.titlebutton):not(.toggle):not(.slider-button) {
 		@include button($alpha3, $header);
 	}
-	buttonbox.linked {
+	buttonbox.linked button {
 		@include button($alpha3, $header);
 		margin: 0;
+		&:not(:first-child):not(:last-child) {
+			border-radius: 0;
+		}
 		&:first-child {
-			border-radius: 0 $omega1 $omega1 0;
+			border-radius: $omega1 0 0 $omega1;
 		}
 		&:last-child {
-			border-radius: $omega1 0 0 $omega1;
+			border-radius: 0 $omega1 $omega1 0;
 		}
 		&:only-child {
 			border-radius: $omega1;
@@ -96,16 +99,18 @@ headerbar, .titlebar {
 }
 
 // Image i.e. Search Magnifier Icon
-button.image-button {
+button.image-button, button.toggle {
 	min-height: 24px;
 	min-width: 24px;
-	&:hover {
+	&:hover, &:checked {
 		image {
 			color: $accent2;
 		}
 		&:backdrop {
-			image {
-				color: lighten($accent2, $beta1);
+			&:hover, &:checked {
+				image {
+					color: lighten($accent2, $beta1);
+				}
 			}
 		}
 	}
@@ -160,15 +165,6 @@ combobox button, filechooserbutton, widget button {
 		-gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
 		min-height: 20px;
 		min-width: 20px;
-	}
-}
-
-button.toggle {
-	&:checked {
-		@include clickable(active, $alpha3, $accent2);
-		&:backdrop {
-			@include clickable(backdrop-active, $alpha3, $accent2);
-		}
 	}
 }
 

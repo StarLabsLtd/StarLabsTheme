@@ -4,29 +4,28 @@
 
 	@if $type==normal {
 		// Standard Button
-//		color: $color;
-		$background-normal: $fill;
-		background-color: if($transparent==solid, $background-normal, transparentize($background-normal, $transparent));
+		&, label, image {
+			color: $color;
+		}
+		background-color: if($transparent==solid, $fill, transparentize($fill, $transparent));
 		box-shadow: $shadow1;
 		transition: $click;
-		label, image {
-			color: $color;
-			&:backdrop {
-				color: inherit;
-			}
-		}
 	}
 	@else if $type==focus {
 		// Selected Button
+		&, label, image {
+			color: $color;
+		}
 		$background-focus: $fill;
                 background-color: if($transparent==solid, $background-focus, transparentize($background-focus, $transparent));
-		color: $color;
 		box-shadow: $shadow2;
 		transition: $click;
 	}
 	@else if $type==hover {
 		// Hovering on Button
-		color: $color;
+		&, label, image {
+			color: $color;
+		}
 		$background-hover: $fill;
                 background-color: if($transparent==solid, $background-hover, transparentize($background-hover, $transparent));
 		border-color: transparent;
@@ -35,7 +34,9 @@
 	}
 	@elseif $type==active {
 		// Button in On State
-		color: $color;
+		&, label, image {
+			color: $color;
+		}
 		$background-active: $fill;
                 background-color: if($transparent==solid, $background-active, transparentize($background-active, $transparent));
 		border-color: transparent;
@@ -48,8 +49,9 @@
 	}
 	@if $type==backdrop {
 		// Backdropped Standard Button
-		color: $color;
-//		color: if($color==$white, darken($color, $beta1), lighten($color, $beta1));
+		&, label, image {
+			color: $color;
+		}
 		$background-backdrop: if($fill==$dark1, lighten($fill, $beta1), darken($fill, $beta1));
                 background-color: if($transparent==solid, $background-backdrop, transparentize($background-backdrop, $transparent));
 		box-shadow: $shadow1;
@@ -57,7 +59,9 @@
 	}
 	@else if $type==backdrop-focus {
 		// Backdropped Selected Button
-		color: if($color==$white, darken($color, $beta1), lighten($color, $beta1));
+		&, label, image {
+			color: $color;
+		}
 		$background-backdrop-focus: if($fill==$dark1, lighten($fill, $beta1), darken($fill, $beta1));
 		background-color: if($transparent==solid, $background-backdrop-focus, transparentize($background-backdrop-focus, $transparent));
 		box-shadow: $shadow2;
@@ -65,7 +69,9 @@
 	}
 	@else if $type==backdrop-hover {
 		// Backdropped Hovering on Button
-		color: if($color==$white, darken($color, $beta1), lighten($color, $beta1));
+		&, label, image {
+			color: $color;
+		}
 		$background-backdrop-hover: if($fill==$dark1, lighten($fill, $beta1), darken($fill, $beta1));
                 background-color: if($transparent==solid, $background-backdrop-hover, transparentize($background-backdrop-hover, $transparent));
 		border-color: transparent;
@@ -73,8 +79,9 @@
 		transition: $backdrop;
 	}
 	@elseif $type==backdrop-active {
-		// Backdropped Button in On State
-		color: if($color==$white, darken($color, $beta1), lighten($color, $beta1));
+		&, label, image {
+			color: $color;
+		}
 		$background-backdrop-active: if($fill==$accent2, lighten($fill, $beta1), darken($fill, $beta1));
                 background-color: if($transparent==solid, $background-backdrop-active, transparentize($background-backdrop-active, $transparent));
 		border-color: transparent;
