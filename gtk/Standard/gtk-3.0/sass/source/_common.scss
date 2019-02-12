@@ -48,11 +48,11 @@ $popover_shadow: 0 2px 5px transparentize(black, 0.75);
  ***************/
 .background {
   color: $fg_color;
-  background-color: transparentize($bg_color, 0.001);
+  background-color: rgba(23,23,23,0.8);
 
   &:backdrop {
     color: $backdrop_fg_color;
-    background-color: $backdrop_bg_color;
+    background-color: rgba(23,23,23,0.8);
   }
 }
 
