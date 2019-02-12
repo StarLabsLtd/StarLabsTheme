@@ -53,18 +53,22 @@ headerbar {
         }
 }
 
-list.tweak-categories, viewport > stack > list, placessidebar viewport list {
-        .tiled &,
-        .tiled-top &,
-        .tiled-right &,
-        .tiled-bottom &,
-        .tiled-left &,
-        .maximized &,
-        .fullscreen & {
-                &:backdrop, & {
-                        border-bottom-left-radius: 0;
-                }
+// list.tweak-categories, viewport > stack > list, placessidebar viewport list {
+.background {
+        &, &:backdrop {
+		border-bottom-left-radius: $omega1;
+	}
+}
+
+.background.tiled,
+.background.tiled-top,
+.background.tiled-right,
+.background.tiled-bottom,
+.background.tiled-left,
+.background.maximized,
+.background.solid-csd {
+        &:backdrop, & {
+                border-bottom-left-radius: 0;
         }
-	border-bottom-left-radius: $omega1;
 }
 
