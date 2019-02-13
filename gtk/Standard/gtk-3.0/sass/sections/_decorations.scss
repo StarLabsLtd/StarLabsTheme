@@ -3,10 +3,10 @@ decoration {
 	&, &:backdrop {
 		background-color: transparent;
 	}
-	box-shadow: $shadow2;
+	box-shadow: 0 3px 9px 1px transparentize($dark1, $alpha2);
 	&:backdrop {
 		transition: $backdrop;
-		box-shadow: $shadow2;
+		box-shadow: 0 3px 9px 1px transparentize($dark1, $alpha3);
 	}
 	margin: 10px;
 

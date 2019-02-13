@@ -64,9 +64,9 @@ echo -e "\033[0KGenerating simple cursor pixmaps... DONE"
 
 
 
-for i in 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23
+for i in 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
 do
-	echo -ne "\033[0KGenerating animated cursor pixmaps... $i / 23 \\r"
+	echo -ne "\033[0KGenerating animated cursor pixmaps... $i / 24 \\r"
 
 	if [ "$DIR1X/progress-$i.png" -ot $RAWSVG ] ; then
 		inkscape -i progress-$i -d 90  -f $RAWSVG -e "$DIR1X/progress-$i.png" > /dev/null
