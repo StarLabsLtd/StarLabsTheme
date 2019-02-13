@@ -1,9 +1,11 @@
-@mixin fill($type, $transparent: solid, $style:$variant) {
+@mixin fill($type, $transparent: solid, $style:$variant, $element: true) {
 	$color: if($style==light, $dark1, $white);
 	$fill: if($style==light, $white, if($style==dark, $dark1, $style));
 	@if $type==normal {
-		&, label, image {
-			color: $color;
+		@if $element==true {
+			&, label, image {
+				color: $color;
+			}
 		}
 		background-color: if($transparent==solid, $fill, transparentize($fill, $transparent));
 		transition: $backdrop;
@@ -17,8 +19,10 @@
 		transition: $backdrop;
 	}
 	@if $type==backdrop {
-		&, label, image {
+		@if $element==true {
+			&, label, image {
 			color: $color;
+			}
 		}
 		$background-backdrop: darken($fill, $beta1);
 		background-color: if($transparent==solid, $background-backdrop, transparentize($background-backdrop, $transparent));

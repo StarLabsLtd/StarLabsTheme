@@ -45,7 +45,9 @@
 	}
 	@else if $type==disabled {
 		// Button that is disabled
-		color: if($variant==light, lighten($color, 50%), darken($color, 50%));
+		&, label, image {
+			color: if($variant==light, lighten($color, 50%), darken($color, 50%));
+		}
 	}
 	@if $type==backdrop {
 		// Backdropped Standard Button

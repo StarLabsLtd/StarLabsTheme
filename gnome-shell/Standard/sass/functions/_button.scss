@@ -1,4 +1,5 @@
 @mixin button($transparent: $alpha3, $color: $variant) {
+//	$color: if($style==dark, $dark1, $white);
 	border-radius: $omega1;	
 	@include clickable(normal, $transparent, $color);
 	&:focus {
