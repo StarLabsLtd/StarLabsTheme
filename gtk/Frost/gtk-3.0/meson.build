@@ -17,7 +17,7 @@ gtk3_scss_dependencies = [
   '../../Standard/gtk-3.0/sass/functions/_clickable.scss',
   '../../Standard/gtk-3.0/sass/functions/_fill.scss',
   '../../Standard/gtk-3.0/sass/functions/_overshoot.scss',
-  '../../Standard/gtk-3.0/sass/functions/_button.scss',
+  '../../Standard/gtk-3.0/sass/functions/_general.scss',
   '../../Standard/gtk-3.0/sass/_sections.scss',
   '../../Standard/gtk-3.0/sass/sections/_apps.scss',
   '../../Standard/gtk-3.0/sass/sections/_buttons.scss',

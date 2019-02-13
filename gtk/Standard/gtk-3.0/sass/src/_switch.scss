@@ -1,0 +1,7 @@
+/**********
+ * Switch *
+ **********/
+switch {
+  transition: $button_transition;
+  @include switch($dark_fill, $success_color);
+}

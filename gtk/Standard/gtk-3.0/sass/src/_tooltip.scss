@@ -1,0 +1,18 @@
+tooltip {
+	&.background {
+		background-color: $accent2;
+		background-clip: padding-box;
+	}
+	border-radius: $omega1;
+	box-shadow: none;
+	decoration {
+		background-color: transparent;
+	}
+	> * {
+		min-height: 32px - (6px - 1px) * 2;
+		padding: 0 8px - (6px - 1px);
+		background-color: transparent;
+		color: $white;
+	}
+}
+

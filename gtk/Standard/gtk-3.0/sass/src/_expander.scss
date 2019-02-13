@@ -1,0 +1,19 @@
+expander {
+	notebook {
+//		border: 1px solid $borders_color;
+	}
+	arrow {
+		min-width: 16px;
+		min-height: 16px;
+		-gtk-icon-source: -gtk-icontheme('pan-end-symbolic');
+		&:dir(rtl) {
+			-gtk-icon-source: -gtk-icontheme('pan-end-symbolic-rtl');
+		}
+		&:hover {
+			color: $accent2;
+		}
+		&:checked {
+			-gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
+		}
+	}
+}

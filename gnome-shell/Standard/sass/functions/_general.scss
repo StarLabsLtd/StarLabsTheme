@@ -1,5 +1,4 @@
-@mixin button($transparent: $alpha3, $color: $variant) {
-//	$color: if($style==dark, $dark1, $white);
+@mixin click($transparent: $alpha3, $color: $variant) {
 	border-radius: $omega1;	
 	@include clickable(normal, $transparent, $color);
 	&:focus {
@@ -118,5 +117,14 @@
 				@include clickable(disabled);
 			}	
 		}
+	}
+}
+@mixin type($transparent: $alpha3, $color: $variant) {
+	@include entry($transparent, $color);
+}
+@mixin selected($color: $accent2, $transparent: solid) {
+	@include fill(normal, $transparent, $color)
+	&:backdrop {
+		@include fill(backdrop, $transparent, $color);
 	}
 }
