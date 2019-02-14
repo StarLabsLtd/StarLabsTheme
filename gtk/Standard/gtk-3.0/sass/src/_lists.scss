@@ -27,13 +27,13 @@ list.tweak-categories > row , viewport > stack > list > row, placessidebar > vie
                         @include clickable(hover, $alpha3, $accent2);
                 }
                 &:selected, &:active, &.has-open-popup {
-                        @include clickable(active, solid, if($header==light, $dark1, $white));
+                        @include clickable(active, solid);
                         &:backdrop {
-                                @include clickable(backdrop-active, solid, if($header==light, $dark1, $white));
+                                @include clickable(backdrop-active, solid);
                         }
                         label, image {
                                 &:backdrop, & {
-                                        color: if($header==light, $white, $dark1);
+                                        color: if($variant==light, $dark1, $white);
                                 }
                         }
                 }
