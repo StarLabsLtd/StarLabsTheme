@@ -22,7 +22,7 @@
    inkscape:label="Shadow"><metadata
    id="metadata253"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
    id="defs251">
 	
 	
@@ -1137,7 +1137,14 @@
    id="i-6" /><path
    inkscape:connector-curvature="0"
    d="M 21.97,8 V 48.34 L 61.36,116 96,56 h 88 V 8 Z"
-   id="m-2" /></defs><sodipodi:namedview
+   id="m-2" /><clipPath
+   clipPathUnits="userSpaceOnUse"
+   id="clipPath1112"><circle
+     style="display:inline;fill:#17171d;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="circle1114"
+     cx="128"
+     cy="128"
+     r="124" /></clipPath></defs><sodipodi:namedview
    pagecolor="#ffffff"
    bordercolor="#666666"
    borderopacity="1"
@@ -1146,16 +1153,16 @@
    guidetolerance="10"
    inkscape:pageopacity="0"
    inkscape:pageshadow="2"
-   inkscape:window-width="3840"
-   inkscape:window-height="1476"
+   inkscape:window-width="1920"
+   inkscape:window-height="1537"
    id="namedview249"
    showgrid="false"
-   inkscape:zoom="2"
-   inkscape:cx="-13.608627"
-   inkscape:cy="142.12906"
+   inkscape:zoom="2.8284271"
+   inkscape:cx="26.05021"
+   inkscape:cy="124.85946"
    inkscape:window-x="0"
    inkscape:window-y="27"
-   inkscape:window-maximized="1"
+   inkscape:window-maximized="0"
    inkscape:current-layer="layer1"
    inkscape:pagecheckerboard="true" />
 
@@ -1176,10 +1183,11 @@
      d="m 47.244984,97.737402 v 0"
      id="path1167"
      inkscape:connector-curvature="0" /><path
-     style="fill:none;stroke:#0068bf;stroke-width:6.8;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-     d="m 7,131.5 h 29.5 l 18.24167,-68.078838 37.314582,139.259918 19.512818,-72.82283 6.35289,-23.70929 11.69587,43.64959 6.31915,-23.58339 H 240.5"
+     style="fill:none;stroke:#0068bf;stroke-width:7.45524645;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 0,126.29941 H 32.342612 L 52.342045,51.660517 93.25225,204.33948 l 21.39307,-79.84002 6.96505,-25.993905 12.82288,47.855645 6.92806,-25.85588 H 256"
      id="path1249"
-     inkscape:connector-curvature="0" /></g><g
+     inkscape:connector-curvature="0"
+     clip-path="url(#clipPath1112)" /></g><g
    inkscape:groupmode="layer"
    id="layer6"
    inkscape:label="Shadow"
