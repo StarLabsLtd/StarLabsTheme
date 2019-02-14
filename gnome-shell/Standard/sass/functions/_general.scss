@@ -1,4 +1,38 @@
-@mixin click($transparent: $alpha3, $color: $variant) {
+@mixin click($transparent: $alpha3, $color: $variant, $plain: false) {
+@if $plain == true {
+	background-color: transparent;
+	box-shadow: none;
+	border: none;
+	&, label, image {
+		color: if($variant==light, $dark1, $white);
+	}
+	&:hover {
+		&, label, image {
+			color: $accent2;
+		}
+	}
+	&:active, &:checked {
+		&, label, image {
+			color: $accent3;
+		}
+	}
+	&:backdrop {
+		&:hover {
+			&, label, image {
+				color: lighten($accent2, $beta1);
+			}
+		}
+		&:active, &:checked {
+			&, label, image {
+				color: lighten($accent2, $beta1);
+			}
+		}
+	}
+	&:disabled {
+		@include clickable(disabled);
+	}
+}
+@if $plain == false {
 	border-radius: $omega1;	
 	@include clickable(normal, $transparent, $color);
 	&:focus {
@@ -119,6 +153,7 @@
 		}
 	}
 }
+}
 @mixin type($transparent: $alpha3, $color: $variant) {
 	@include entry($transparent, $color);
 }
@@ -128,3 +163,4 @@
 		@include fill(backdrop, $transparent, $color);
 	}
 }
+
