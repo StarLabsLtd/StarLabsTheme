@@ -56,9 +56,10 @@ gtk3_scss_dependencies = [
   'sass/sections/_spinner.scss',
   'sass/sections/_notebook.scss',
   'sass/sections/_searchbar.scss',
-
+  'sass/_src.scss',
   'sass/src/_alpha.scss',
   'sass/src/_base.scss',
+  'sass/src/_apps.scss',
   'sass/src/_button.scss',
   'sass/src/_calendar.scss',
   'sass/src/_checkradio.scss',

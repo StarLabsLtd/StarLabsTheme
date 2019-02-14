@@ -1,0 +1,71 @@
+%underline_focus_effect {
+	transition: 300ms ease;
+}
+
+.path-bar button {
+	&:first-child, &:last-child {
+		&:backdrop, & {
+			background-color: transparent;
+			box-shadow: none;
+			color: transparent;
+			min-width: 0;
+			min-height: 0;
+			margin: 0;
+			padding: 0;
+			image {
+				color: transparent;
+				background-color: transparent;
+				&:backdrop {
+					color: transparent;
+					background-color: transparent;
+				}
+			}
+		}
+	}
+	border-radius: $omega1;
+        min-width: 24px;
+        margin: 6px 0;
+        margin-left: -6px;
+        &:dir(ltr):not(:first-child):not(:last-child):not(:checked) {
+                border-radius: 0 $omega1 $omega1 0;
+                @include clickable(normal, solid, $header);
+                &:backdrop {
+                        @include clickable(backdrop, solid, $header);
+                }
+        }
+        &:checked {
+                border-radius: 0 $omega1 $omega1 0;
+                @include clickable(active, $alpha3, $accent2);
+                &:backdrop {
+                        @include clickable(backdrop-active, $alpha3, $accent2);
+                }
+        }
+	&.text-button, &.image-button, & {
+		padding-left: 4px;
+		padding-right: 4px;
+	}
+	&.text-button.image-button label {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	&.text-button.image-button, & {
+		label:last-child {
+			padding-right: 8px;
+		}
+		label:first-child {
+			padding-left: 8px;
+		}
+	}
+	image {
+		padding-left: 4px;
+		padding-right: 4px;
+	}
+	&.slider-button {
+		padding-left: 0;
+		padding-right: 0;
+		box-shadow: none;
+		&:hover {
+			color: $accent2;
+		}
+	}
+}

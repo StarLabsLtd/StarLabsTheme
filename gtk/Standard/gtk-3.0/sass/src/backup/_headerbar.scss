@@ -1,0 +1,358 @@
+%titlebar, headerbar {
+	padding: 0 $omega1;
+	min-height: 40px;
+	border-radius: 0;
+	@include fill(normal, $alpha3, $header);
+	&:backdrop {
+		@include fill(backdrop, $alpha3, $header);
+	}
+	& {
+		$c: $headerbar_bg_color;
+		$tc: $headerbar_fg_color;
+		switch {
+			@include switch(lighten($headerbar_bg_color, 25%));
+		}
+		entry, %dark_entry {
+			@include type($alpha3, $header);
+		}
+		.text-button:not(.suggested-action) {
+			&.default {
+				&, &:active, &:hover, &:focus {
+	//				color: white;
+				}
+			}
+		}
+		button.default {
+			label {
+	//			color: if($header==dark, $white, $dark1);
+			}
+		}
+		button, button.flat, button.titlebutton.appmenu {
+			@include click($alpha1, $header);
+
+	//		@each $state, $t in
+	//		("", "normal"),
+	//		(":hover", "hover"),
+	//		(":hover:backdrop", "backdrop-hover"),
+	//		(":active, &:checked", "active"),
+	//		(":hover:checked", "active-hover"),
+	//		(":disabled", "insensitive"),
+	//		(":disabled:active, &:disabled:checked", "insensitive-active"),	
+	//		(":backdrop", "backdrop"),
+	//		(":backdrop:active, &:backdrop:checked", 'backdrop-active'),
+	//		(":backdrop:disabled", 'backdrop-insensitive'),
+	//		(":backdrop:disabled:active, &:backdrop:disabled:checked", 'backdrop-insensitive-active') {
+	//			&#{$state} {
+	//				@include button($t, $c, $tc, $flat:true);
+	//			}
+	//		}
+	//		@each $b_type, $b_color in
+	//		(suggested-action, $success_color),
+	//		(destructive-action, $destructive_color) {
+	//		&.#{$b_type} {
+	//			@each $state, $t in ("", "normal"),
+	//			(":hover", "hover"),
+	//			(":hover:backdrop", "backdrop-hover"),
+	//			(":active, &:checked", "active"),
+	//			(":disabled", "insensitive"),
+	//			(":disabled:active, &:disabled:checked", "insensitive-active"),
+	//			(":backdrop", "backdrop"),
+	//			(":backdrop:active, &:backdrop:checked", 'backdrop-active'),
+	//			(":backdrop:disabled", 'backdrop-insensitive'),
+	//			(":backdrop:disabled:active, &:backdrop:disabled:checked", 'backdrop-insensitive-active') {
+	//				&#{$state} {
+	//					@include button($t, $b_color, white, $flat:true);
+	//				}
+	//			}
+	//		}
+		}
+		.linked:not(.path-bar):not(.stack-switcher):not(buttonbox) button, .linked:not(.vertical) entry {
+			&:focus {
+				& + entry {
+					border-left-color: _border_color($graphite);
+				}
+				& + button {
+					border-left-color: transparent;
+				}
+				& + entry, & + button {
+					&:disabled {
+						border-left-color: transparent;
+					}
+					&:backdrop {
+						border-left-color: _border_color($headerbar_bg_color);
+					}
+				}
+			}
+	//		border-width: 1px;
+	//		border-style: solid;
+			border-radius: $omega1;
+			-gtk-outline-radius: $omega1;
+			&:not(:last-child) {
+				margin-right: 4px;
+			}
+		}
+	%underline_focus_headerbar {
+		@extend %underline_focus_effect;
+			$c: $hb_pathbar_bg;
+		//	background-color: $c;
+		//	color: $headerbar_text_color;
+			&:hover {
+		//		box-shadow: inset 0 -2px transparentize($headerbar_text_color, 0.5);
+				&:backdrop {
+		//			box-shadow: inset 0 -2px transparentize($headerbar_text_color, 0.7);
+				}
+			}
+			&:active {
+		//		box-shadow: inset 0 -2px $headerbar_text_color;
+			}
+			&:checked {
+		//		color: $selected_fg_color;
+		//		box-shadow: inset 0 -2px $selected_bg_color;
+				&:hover {
+		//			box-shadow: inset 0 -2px mix($selected_fg_color, $selected_bg_color, 10%);
+				}
+			}
+			&:backdrop {
+		//		background-color: _backdrop_color($c);
+		//		color: $backdrop_headerbar_insensitive_color;
+				&:checked {
+		//			color: $backdrop_headerbar_fg_color;
+		//			box-shadow: inset 0 -2px _backdrop_color($selected_bg_color);
+				}
+			}
+		}
+		buttonbox.linked button, buttonbox.linked button.text-button ~ button {
+		//	border-style: solid;
+		//	border-color: $inkstone;
+			&:not(:only-child) {
+		//		border-width: 1px 0;
+			}
+			&:first-child {
+		//		border-width: 1px 0 1px 1px;
+			}
+			&:last-child {
+		//		border-width: 1px 1px 1px 0;
+			}
+			&:backdrop {
+				&, &:checked {
+		//			border-color: lighten($inkstone, 3%);
+				}
+			}
+		}
+		.stack-switcher.linked {
+		//	border-width: 0 8px;
+		//	border-style: solid;
+		//	border-color: $c;
+			border-radius: $omega1;
+			&:backdrop {
+		//		border-color: _backdrop_color($c);
+			}
+			button {
+				@extend %underline_focus_headerbar;
+				&:dir(rtl), &:dir(ltr) {
+					border-radius: 0;
+					-gtk-outline-radius: 0;
+				}
+				margin: 0;
+				border: none;
+				&:disabled:checked {
+					background-color: $hb_pathbar_bg;
+					&:backdrop{
+						background-color: $hb_pathbar_bg_backdrop;
+					}
+				}
+			}
+		}
+		.path-bar.linked button {
+			@extend %underline_focus_headerbar;
+			&.slider-button {
+				box-shadow: none;
+			}
+		}
+	}
+	&.selection-mode {
+		@include fill(normal, solid, $success);
+		~ separator, separator {
+//			background-image: image(_border_color($c));
+		}
+		&:backdrop {
+			@include fill(backdrop, solid, $success);
+			~ separator, separator {
+//				background-image: image(_border_color($c));
+			}
+		}
+		.subtitle:link {
+			@extend *:link:selected;
+		}
+		button {
+			@each $state, $t in
+			("", "normal"),
+			(":hover", "hover"),
+			(":hover:backdrop", "backdrop-hover"),
+			(":active, &:checked", "active"),
+			(":disabled", "insensitive"),
+			(":disabled:active, &:disabled:checked", "insensitive-active"),
+			(":backdrop", "backdrop"),
+			(":backdrop:active, &:backdrop:checked", 'backdrop-active'),
+			(":backdrop:disabled", 'backdrop-insensitive'),
+			(":backdrop:disabled:active, &:backdrop:disabled:checked", 'backdrop-insensitive-active') {
+			$c: $success_color;
+			$tc: white;
+			&, &.selection-menu {
+				&#{$state} {
+					@include button($t, $c, $tc, $flat:true);
+				}
+			}
+		}
+		&.text-button:not(:hover) {			
+			border-color: transparentize(white, 0.7);
+		}
+		&.flat, &.selection-menu {
+			&, &:backdrop {
+				&, &:disabled {
+					@include button(undecorated);
+				}
+			}
+		}
+		&.suggested-action {
+			@each $state, $t in	
+			("", "normal"),
+			(":hover", "hover"),
+			(":hover:backdrop", "backdrop-hover"),
+			(":active", "active"), (":disabled", "insensitive"),
+			(":backdrop", "backdrop"), (":backdrop:disabled", 'backdrop-insensitive') {
+				$c: white;
+				$tc: $success_color;
+				&#{$state} {
+					@include button($t, $c, $tc);
+				}
+			}
+		}
+		&.selection-menu {
+			&:backdrop, & {
+				padding-left: 10px;
+				padding-right: 10px;
+				arrow {
+					-GtkArrow-arrow-scaling: 1;
+				}
+				.arrow {
+					-gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
+				}
+			}
+		}
+	}
+}
+
+.tiled &,
+.tiled-top &,
+.tiled-right &,
+.tiled-bottom &,
+.tiled-left &,
+.maximized &,
+.fullscreen & {
+	&:backdrop, & {
+		border-radius: 0;
+	}
+}
+&.default-decoration {
+	min-height: 26px;
+	padding: 4px 6px;
+	button.titlebutton {
+		min-width: 26px;
+		min-height: 26px;
+		margin: 0;
+		padding: 0;
+	}
+}
+.solid-csd & {
+	&:backdrop, & {
+		&:dir(rtl), &:dir(ltr) {
+			margin-left: -1px;
+			margin-right: -1px;
+			margin-top: -1px;
+			border-radius: 0;
+			box-shadow: none;
+		}
+	}
+	}
+}
+
+headerbar {
+	entry, spinbutton, button {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	switch, separator {
+		margin-top: 8px;
+		margin-bottom: 8px;
+	}
+}
+
+.background .titlebar {
+	&:backdrop, & {
+		border-top-left-radius: $omega1;
+		border-top-right-radius: $omega1;
+	}
+}
+
+.background.tiled .titlebar,
+.background.tiled-top .titlebar,
+.background.tiled-right .titlebar,
+.background.tiled-bottom .titlebar,
+.background.tiled-left .titlebar,
+.background.maximized .titlebar,
+.background.solid-csd .titlebar {
+	&:backdrop, & {
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
+}
+
+headerbar {
+	window separator:first-child + &, window &:first-child {
+		&:backdrop, & {
+			border-top-left-radius: $omega1;
+		}
+	}
+	window &:last-child {
+		&:backdrop, & {
+			border-top-right-radius: 7px;
+		}
+	}
+	window stack & {
+		&:first-child, &:last-child {
+			&:backdrop, & {
+				border-top-left-radius: $omega1;
+				border-top-right-radius: $omega1;
+			}
+		}
+	}
+	window.tiled &,
+	window.tiled-top &,
+	window.tiled-right &,
+	window.tiled-bottom &,
+	window.tiled-left &,
+	window.maximized &,
+	window.fullscreen &,
+	window.solid-csd & {
+		&, &:backdrop {
+			&, &:first-child, &:last-child, &:only-child {
+				border-top-left-radius: 0;
+				border-top-right-radius: 0;
+			}
+		}
+	}
+}
+
+.titlebar:not(headerbar) {
+	window.csd > & {
+		padding: 0;
+		background-color: transparent;
+		background-image: none;
+		border-style: none;
+		border-color: transparent;
+		box-shadow: none;
+	}
+	@extend %titlebar;
+}
+
