@@ -96,7 +96,7 @@ gtk3_scss_dependencies = [
   'sass/src/_tooltip.scss',
   'sass/src/_touchcopypaste.scss',
   'sass/src/_treeview.scss',
-
+  'sass/src/_barryallen.scss',
 
 ]
 

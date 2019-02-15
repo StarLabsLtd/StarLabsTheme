@@ -2,10 +2,6 @@
 	padding: 0 $omega1;
 	min-height: 40px;
 	border-radius: 0;
-	@include fill(normal, $alpha3, $header);
-	&:backdrop {
-		@include fill(backdrop, $alpha3, $header);
-	}
 	& {
 		$c: $headerbar_bg_color;
 		$tc: $headerbar_fg_color;
