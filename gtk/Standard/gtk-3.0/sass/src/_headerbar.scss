@@ -291,6 +291,59 @@ headerbar {
 	}
 }
 
+.background {
+	&:backdrop, & {
+		border-bottom-left-radius: $omega1;
+	}
+}
+
+.background.tiled-right,
+.background.tiled-bottom,
+.background.tiled-left,
+.background.maximized,
+.background.solid-csd {
+        &:backdrop, & {
+                border-bottom-left-radius: 0;
+        }
+}
+
+list.tweak-categories, viewport > stack > list, placessidebar > viewport > list {
+	&:backdrop, & {
+		border-bottom-left-radius: $omega1;
+	}
+}
+
+
+.background.tiled list.tweak-categories,
+.background.tiled-top list.tweak-categories,
+.background.tiled-right list.tweak-categories,
+.background.tiled-bottom list.tweak-categories, 
+.background.tiled-left list.tweak-categories,
+.background.maximized list.tweak-categories,
+.background.solid-csd list.tweak-categories,
+.background.tiled viewport > stack > list,
+.background.tiled-top viewport > stack > list,
+.background.tiled-right viewport > stack > list,
+.background.tiled-bottom viewport > stack > list,
+.background.tiled-left viewport > stack > list,
+.background.maximized viewport > stack > list,
+.background.solid-csd viewport > stack > list, 
+.background.tiled placessidebar > viewport > list,
+.background.tiled-top placessidebar > viewport > list,
+.background.tiled-right placessidebar > viewport > list,
+.background.tiled-bottom placessidebar > viewport > list,
+.background.tiled-left placessidebar > viewport > list,
+.background.maximized placessidebar > viewport > list,
+.background.solid-csd placessidebar > viewport > list {
+        &:backdrop, & {
+                border-bottom-left-radius: 0;
+        }
+}
+
+
+
+
+
 .background.tiled .titlebar,
 .background.tiled-top .titlebar,
 .background.tiled-right .titlebar,
