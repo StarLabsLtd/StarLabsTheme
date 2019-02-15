@@ -1,37 +1,20 @@
 // "We're not Gods, Nora. We've just been given extraordinary abilities"
 
-// Header/Siderbar
-// Adds tint to the Header and Sidebar when the variant and header match
-
-$alpha4: 0.1;
-
-@if $header!=$variant {
-
-	list.tweak-categories, viewport > stack > list, placessidebar > viewport > list {
+list.tweak-categories, viewport > stack > list, placessidebar > viewport > list {
+	@include fill(normal, $alpha2, $header);
+	&:backdrop {
 		@include fill(backdrop, $alpha2, $header);
-		&:backdrop {
-			@include fill(backdrop, $alpha2, $header);
-		}
-	}
-	headerbar, %titlebar {
-		background: if($variant==light, transparentize($white, $alpha3), transparentize($dark1, $alpha3));
-		background-image: image(if($header==dark, transparentize($dark1, $alpha2), transparentize($white, $alpha2)));
-		&:backdrop {
-			background: if($variant==light, transparentize(darken($white, $beta1), $alpha3), transparentize(darken($dark1, $beta1), $alpha3));
-			background-image: image(if($header==dark, transparentize(darken($dark1, $beta1), $alpha2), transparentize(darken($white, $beta1), $alpha2)));
-		}
-	}
-
-}
-@else {
-	headerbar, %titlebar {
-		@include fill(normal, $alpha3, $header);
-		&:backdrop {
-			@include fill(backdrop, $alpha3, $header);
-		}
 	}
 }
 
+headerbar, %titlebar {
+	background: if($variant==light, transparentize($white, $alpha3), transparentize($dark1, $alpha3));
+	background-image: image(if($header==dark, transparentize($dark1, $alpha2), transparentize($white, $alpha2)));
+	&:backdrop {
+		background: if($variant==light, transparentize(darken($white, $beta1), $alpha3), transparentize(darken($dark1, $beta1), $alpha3));
+		background-image: image(if($header==dark, transparentize(darken($dark1, $beta1), $alpha2), transparentize(darken($white, $beta1), $alpha2)));
+	}
+}
 
 
 // Windows
