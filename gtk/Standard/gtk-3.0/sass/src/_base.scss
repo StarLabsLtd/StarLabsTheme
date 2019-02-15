@@ -1,30 +1,9 @@
 .background {
-	@include fill(normal, $alpha3, $header, false);
-	color: if($variant==light, $dark1, $white);
+	@include fill(normal, $alpha3, $variant);
 	&:backdrop {
-		@include fill(backdrop, $alpha3, $header, false);
-		color: if($variant==light, $dark1, $white);
+		@include fill(backdrop, $alpha3, $variant);
 	}
 }
-
-
-window > box > box,
-window > box > box > box,
-window > box > stack {
-        &:last-child, &:only-child {
-                @include fill(normal);
-                &:backdrop {
-                        @include fill(backdrop);
-                }
-        }
-}
-notebook, widget viewport, stack > widget > box > stack box {
-        @include fill(normal);
-        &:backdrop {
-                @include fill(backdrop);
-        }
-}
-
 
 *:disabled {
 	-gtk-icon-effect: dim;
@@ -63,7 +42,7 @@ widget:selected {
 }
 
 scrolledwindow .view {
-	background-color: white;
+	@include fill(normal, solid, $variant, false);
 }
 
 .view, textview {
@@ -77,7 +56,7 @@ scrolledwindow .view {
 }
 
 textview border {
-	background-color: yellow;
+	box-shadow: $shadow1;
 }
 
 iconview {

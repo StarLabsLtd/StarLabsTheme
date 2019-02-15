@@ -16,7 +16,7 @@ list.tweak-categories > row , viewport > stack > list > row, placessidebar > vie
         image {
                 padding: 0 10px;
         }
-	color: if($header==dark, $white, $dark1);
+	color: if($header==dark, $dark1, $white);
         &.activatable {
                 label, image {
                         &:backdrop, & {
@@ -24,7 +24,7 @@ list.tweak-categories > row , viewport > stack > list > row, placessidebar > vie
                         }
                 }
                 &:hover {
-                        @include clickable(hover, $alpha3, $accent2);
+                      @include clickable(hover, $alpha3, $accent2);
                 }
                 &:selected, &:active, &.has-open-popup {
                         @include clickable(active, solid);
