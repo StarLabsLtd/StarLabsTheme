@@ -9,7 +9,6 @@ list.tweak-categories separator {
  * Nautilus *
  ***********/
 .nautilus-window {
-//	background-image: none;
 	//@at-root %dim_icons_in_backdrop,*scrolledwindow:backdrop { opacity: 0.9; }
 	paned box.floating-bar {
 		background: $accent2;
