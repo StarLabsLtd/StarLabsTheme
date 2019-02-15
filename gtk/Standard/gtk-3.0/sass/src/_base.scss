@@ -10,15 +10,15 @@
 }
 
 .gtkstyle-fallback {
-	color: $fg_color;
-	background-color: $bg_color;
+	color: if($variant==light, $dark1, $white);
+	background-color: if($variant==light, $white, $dark1);
 	&:hover {
-		color: $fg_color;
-		background-color: lighten($bg_color, 10%);
+		color: $white;
+		background-color: $accent2;
 	}
 	&:active {
-		color: $fg_color;
-		background-color: darken($bg_color, 10%);
+		color: $white;
+		background-color: $accent3;
 	}
 	&:disabled {
 		@include clickable(disabled);
@@ -96,13 +96,6 @@ flowbox {
 label {
 	caret-color: currentColor;
 	outline-offset: 1px;
-	&.separator {
-//		@extend .dim-label;
-//		color: $fg_color;
-		&:backdrop {
-//			color: $backdrop_text_color;
-		}
-	}
 	&:selected {
 		@extend %nobg_selected_items;
 	}
@@ -139,22 +132,11 @@ label {
 }
 
 assistant {
-	.sidebar {
-//		background-color: $sidebar_bg_color;
-//		border-top: 1px solid $borders_color;
-		&:backdrop {
-//			background-color: $backdrop_sidebar_bg_color;
-//			border-color: $backdrop_borders_color;
-		}
-	}
 	&.csd .sidebar {
 		border-top-style: none;
 	}
 	.sidebar label {
 		padding: 6px 12px;
-	}
-	.sidebar label.highlight {
-//		background-color: mix($bg_color, $fg_color, 80%);
 	}
 }
 

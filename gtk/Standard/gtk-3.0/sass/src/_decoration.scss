@@ -49,14 +49,16 @@ decoration {
 
 // Window Close button
 button.titlebutton {
-        min-height: 24px;
-        min-width: 24px;
+//      min-height: 24px;
+//      min-width: 24px;
         border-radius: $omega1; // Should be round?
         &.minimize {
                 &:hover {
                         @include clickable(hover, $alpha3, $accent1);
                         &:backdrop {
-                                @include clickable(backdrop-hover, $alpha3, $accent1);
+				&:hover {
+	                                @include clickable(backdrop-hover, $alpha3, $accent1);
+				}
                         }
                 }
         }
@@ -64,7 +66,9 @@ button.titlebutton {
                 &:hover {
                         @include clickable(hover, $alpha3, $accent2);
                         &:backdrop {
-                                @include clickable(backdrop-hover, $alpha3, $accent2);
+				&:hover {
+	                                @include clickable(backdrop-hover, $alpha3, $accent2);
+				}
                         }
                 }
         }
@@ -73,7 +77,10 @@ button.titlebutton {
                 &:hover {
                         @include clickable(hover, $alpha3, $accent3);
                         &:backdrop {
-                                @include clickable(backdrop-hover, $alpha3, $accent3);
+				@include clickable(backdrop, $alpha3, $accent2);
+				&:hover {
+	                                @include clickable(backdrop-hover, $alpha3, $accent3);
+				}
                         }
                 }
         }
@@ -81,30 +88,36 @@ button.titlebutton {
 
 // catch all extend :)
 
-// REMOVE BELOW
+.monospace {
+	font-family: monospace;
+}
+
 %selected_items {
-  $c: $selected_bg_color;
-  $tc: $selected_fg_color;
-  background-color: $c;
-
-  &:backdrop { background-color: _backdrop_color($c); }
-
-  @at-root %nobg_selected_items, & {
-    color: $tc;
-
-    &:disabled { color: mix($tc, $c, 50%); }
-
-    &:backdrop {
-      &, label { color: $backdrop_selected_fg_color; }
-
-      &:disabled { color: mix($backdrop_selected_fg_color, $c, 30%); }
-    }
-  }
+	$c: $accent2;
+	$tc: $white;
+	background-color: $c;
+	&:backdrop {
+		background-color: _backdrop_color($c);
+	}
+	@at-root %nobg_selected_items, & {
+		color: $tc;
+		&:disabled {
+			color: mix($tc, $c, 50%);
+		}
+		&:backdrop {
+			&, label {
+				color: $backdrop_selected_fg_color;
+			}
+			&:disabled {
+				color: mix($backdrop_selected_fg_color, $c, 30%);
+			}
+		}
+	}
 }
 
 %selected_text {
-  $c: $text_selection;
-  $tc: $text_color;
+  $c: $accent2;
+  $tc: $white;
   background-color: $c;
   color: $tc;
 
@@ -116,9 +129,5 @@ button.titlebutton {
 
     &:disabled { color: mix($backdrop_selected_fg_color, $c, 30%); }
   }
-}
-
-.monospace {
-	font-family: monospace;
 }
 

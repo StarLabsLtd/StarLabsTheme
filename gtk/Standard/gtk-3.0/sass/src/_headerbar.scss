@@ -307,7 +307,7 @@ headerbar {
         }
 }
 
-list.tweak-categories, viewport > stack > list, placessidebar > viewport > list {
+list.tweak-categories, viewport > stack > list, placessidebar {
 	&:backdrop, & {
 		border-bottom-left-radius: $omega1;
 	}
