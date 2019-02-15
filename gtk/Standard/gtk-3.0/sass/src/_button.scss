@@ -52,9 +52,7 @@ $_dot_color: if($variant=='light', $selected_bg_color, lighten($selected_bg_colo
 		}
 		&:backdrop {
 			&.flat, & {
-				@include button(backdrop);
-				transition: $backdrop_transition;
-				outline-color: $focus_color;
+				@include clickable(backdrop);
 				-gtk-icon-effect: none;
 				&:active, &:checked {
 					@include button(backdrop-active);
@@ -69,11 +67,11 @@ $_dot_color: if($variant=='light', $selected_bg_color, lighten($selected_bg_colo
 		}
 		&.flat {
 			&:backdrop, &:disabled, &:backdrop:disabled {
-				@include button(undecorated);
+				@include clickable(undecorated);
 			}
 		}
 		&:disabled {
-			@include button(insensitive);
+			@include clickable(disabled);
 			&:active, &:checked {
 				@include button(insensitive-active);
 			}
@@ -103,9 +101,6 @@ $_dot_color: if($variant=='light', $selected_bg_color, lighten($selected_bg_colo
 	}
 	@at-root %button_selected, & {
 		row:selected & {
-			@if $variant == 'light' {
-				border-color: _border_color($selected_bg_color);
-			}
 			&.flat:not(:active):not(:checked):not(:hover):not(disabled) {
 				color: $selected_fg_color;
 				border-color: transparent;

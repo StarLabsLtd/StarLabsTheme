@@ -40,7 +40,7 @@
 
 @function entry_focus_shadow($fc:$selected_bg_color) { @return 0 0 2px 2px transparentize($fc, .8); }
 
-@mixin entry($t, $fc:$selected_bg_color, $c: $base_color, $tc: $fg_color, $edge: none) {
+@mixin bentry($t, $fc:$selected_bg_color, $c: $base_color, $tc: $fg_color, $edge: none) {
 //
 // Entries drawing function
 //
