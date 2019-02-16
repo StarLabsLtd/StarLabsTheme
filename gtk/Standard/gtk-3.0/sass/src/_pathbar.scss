@@ -1,7 +1,3 @@
-%underline_focus_effect {
-	transition: 300ms ease;
-}
-
 .path-bar button {
 	&:first-child, &:last-child {
 		&:backdrop, & {
@@ -22,15 +18,18 @@
 			}
 		}
 	}
+	&:nth-child(2){
+		border-radius: $omega1;
+	}
 	border-radius: $omega1;
         min-width: 24px;
         margin: 6px 0;
         margin-left: -6px;
         &:dir(ltr):not(:first-child):not(:last-child):not(:checked) {
                 border-radius: 0 $omega1 $omega1 0;
-                @include clickable(normal, solid, $header);
+                @include clickable(normal, solid, $variant);
                 &:backdrop {
-                        @include clickable(backdrop, solid, $header);
+                        @include clickable(backdrop, solid, $variant);
                 }
         }
         &:checked {

@@ -1,0 +1,121 @@
+.background .titlebar {
+	&:backdrop, & {
+		border-top-left-radius: $omega1;
+		border-top-right-radius: $omega1;
+	}
+}
+
+.background {
+	&:backdrop, & {
+		border-bottom-left-radius: $omega1;
+	}
+}
+
+.background.tiled-right,
+.background.tiled-bottom,
+.background.tiled-left,
+.background.maximized,
+.background.solid-csd {
+        &:backdrop, & {
+                border-bottom-left-radius: 0;
+        }
+}
+
+list.tweak-categories, viewport > stack > list, placessidebar {
+	&:backdrop, & {
+		border-bottom-left-radius: $omega1;
+	}
+}
+
+
+.background.tiled list.tweak-categories,
+.background.tiled-top list.tweak-categories,
+.background.tiled-right list.tweak-categories,
+.background.tiled-bottom list.tweak-categories, 
+.background.tiled-left list.tweak-categories,
+.background.maximized list.tweak-categories,
+.background.solid-csd list.tweak-categories,
+.background.tiled viewport > stack > list,
+.background.tiled-top viewport > stack > list,
+.background.tiled-right viewport > stack > list,
+.background.tiled-bottom viewport > stack > list,
+.background.tiled-left viewport > stack > list,
+.background.maximized viewport > stack > list,
+.background.solid-csd viewport > stack > list, 
+.background.tiled placessidebar > viewport > list,
+.background.tiled-top placessidebar > viewport > list,
+.background.tiled-right placessidebar > viewport > list,
+.background.tiled-bottom placessidebar > viewport > list,
+.background.tiled-left placessidebar > viewport > list,
+.background.maximized placessidebar > viewport > list,
+.background.solid-csd placessidebar > viewport > list {
+        &:backdrop, & {
+                border-bottom-left-radius: 0;
+        }
+}
+
+
+
+
+
+.background.tiled .titlebar,
+.background.tiled-top .titlebar,
+.background.tiled-right .titlebar,
+.background.tiled-bottom .titlebar,
+.background.tiled-left .titlebar,
+.background.maximized .titlebar,
+.background.solid-csd .titlebar {
+	&:backdrop, & {
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
+}
+
+headerbar {
+	window separator:first-child + &, window &:first-child {
+		&:backdrop, & {
+			border-top-left-radius: $omega1;
+		}
+	}
+	window &:last-child {
+		&:backdrop, & {
+			border-top-right-radius: 7px;
+		}
+	}
+	window stack & {
+		&:first-child, &:last-child {
+			&:backdrop, & {
+				border-top-left-radius: $omega1;
+				border-top-right-radius: $omega1;
+			}
+		}
+	}
+	window.tiled &,
+	window.tiled-top &,
+	window.tiled-right &,
+	window.tiled-bottom &,
+	window.tiled-left &,
+	window.maximized &,
+	window.fullscreen &,
+	window.solid-csd & {
+		&, &:backdrop {
+			&, &:first-child, &:last-child, &:only-child {
+				border-top-left-radius: 0;
+				border-top-right-radius: 0;
+			}
+		}
+	}
+}
+
+.titlebar:not(headerbar) {
+	window.csd > & {
+		padding: 0;
+		background-color: transparent;
+		background-image: none;
+		border-style: none;
+		border-color: transparent;
+		box-shadow: none;
+	}
+	@extend %titlebar;
+}
+

@@ -32,8 +32,8 @@ placessidebar {
 			}
 		}
 	@at-root button.sidebar-button {
-		@extend %button_basic.flat;
-		@extend %button_selected.flat;
+//		@extend %button_basic.flat;
+//		@extend %button_selected.flat;
 		min-height: 26px;
 		min-width: 26px;
 		margin-top: 3px;

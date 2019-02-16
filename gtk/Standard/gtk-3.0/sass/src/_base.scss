@@ -68,7 +68,7 @@ iconview {
 
 .rubberband, rubberband {
 	border: 1px solid $accent2;
-	background-color: $accent2;
+	background-color: transparentize($accent2, $alpha2);
 }
 
 flowbox {
