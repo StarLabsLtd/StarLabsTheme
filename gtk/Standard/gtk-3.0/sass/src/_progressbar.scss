@@ -11,7 +11,7 @@ progressbar {
 		}
 	}
 	font-size: smaller;
-	color: transparentize(if($variant==light, $dark1, $white, $alpha3);
+	color: transparentize(if($variant==light, $dark1, $white), $alpha3);
 	&:backdrop {
 		box-shadow: none;
 		transition: $backdrop;
