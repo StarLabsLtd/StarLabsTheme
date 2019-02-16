@@ -74,6 +74,7 @@ gtk3_scss_dependencies = [
   '../../Standard/gtk-3.0/sass/src/_misc.scss',
   '../../Standard/gtk-3.0/sass/src/_notebook.scss',
   '../../Standard/gtk-3.0/sass/src/_notifications.scss',
+  '../../Standard/gtk-3.0/sass/src/_rounding.scss',
   '../../Standard/gtk-3.0/sass/src/_paned.scss',
   '../../Standard/gtk-3.0/sass/src/_pathbar.scss',
   '../../Standard/gtk-3.0/sass/src/_popover.scss',

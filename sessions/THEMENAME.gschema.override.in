@@ -15,10 +15,10 @@ input-feedback-sounds = true
 center-new-windows = true
 
 [org.gnome.desktop.background:@ThemeName@]
-picture-uri = 'file:///usr/share/backgrounds/StarLabs/StarWallpaper10.jpg'
+picture-uri = 'file:///usr/share/backgrounds/StarLabs/StarWallpaper0.png'
 
 [org.gnome.desktop.screensaver:@ThemeName@]
-picture-uri = 'file:///usr/share/backgrounds/StarLabs/StarWallpaper10.jpg'
+picture-uri = 'file:///usr/share/backgrounds/StarLabs/StarWallpaper0.png'
 
 [org.gnome.desktop.interface:@ThemeName@]
 show-battery-percentage=true

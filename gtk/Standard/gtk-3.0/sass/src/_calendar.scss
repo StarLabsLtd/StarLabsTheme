@@ -1,38 +1,25 @@
 calendar {
-	color: $text_color;
-	border: 1px solid $borders_color;
+	color: if($variant==light, $dark1, $white);
+	border: 1px solid transparentize(if($variant==light, $dark1, $white), $alpha3);
 	&:selected {
 		@extend %selected_items;
 		border-radius: $omega1;
 	}
-	&.header {
-//		border-bottom-color: $borders_color;
-		&:backdrop {
-//			border-bottom-color: $borders_color;
-		}
-	}
 	&.button {
 		@extend %undecorated_button;
-		color: transparentize($fg_color, 0.55);
+		color: transparentize(if($variant==light, $dark1, $white), $alpha3);
 		&:hover {
-			color: $fg_color;
-		}
-		&:backdrop {
-			color: transparentize($backdrop_fg_color,0.55);
+			color: if($variant==light, $dark1, $white);
 		}
 		&:disabled {
-			color:  transparentize($insensitive_fg_color,0.55);
+			@include clickable(disabled);
 		}
 	}
 	&.highlight {
-		color: $insensitive_fg_color;
+		color: $accent2;
 		&:backdrop {
-			color: $backdrop_insensitive_color;
+			color: lighten($accent2, $beta1);
 		}
-	}
-	&:backdrop {
-		color: $backdrop_text_color;
-		border-color: $backdrop_borders_color;
 	}
 	&:indeterminate {
 		color: gtkalpha(currentColor, 0.1);

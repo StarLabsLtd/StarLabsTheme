@@ -1,0 +1,29 @@
+!PullState
+assets:
+  build-packages:
+  - sassc
+  - libglib2.0-dev
+  build-snaps: []
+  source-details: null
+  stage-packages: []
+extracted_metadata:
+  files: []
+  metadata: !ExtractedMetadata
+    _data: {}
+project_options:
+  deb_arch: amd64
+properties:
+  override-pull: snapcraftctl pull
+  parse-info: []
+  plugin: meson
+  source: .
+  source-branch: ''
+  source-commit: ''
+  source-depth: 0
+  source-subdir: ''
+  source-tag: ''
+  source-type: ''
+  stage-packages: []
+schema_properties: []
+scriptlet_metadata: !ExtractedMetadata
+  _data: {}

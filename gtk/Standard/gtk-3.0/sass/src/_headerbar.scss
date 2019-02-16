@@ -3,25 +3,11 @@
 	min-height: 40px;
 	border-radius: 0;
 	& {
-		$c: $headerbar_bg_color;
-		$tc: $headerbar_fg_color;
 		switch {
-			@include switch(lighten($headerbar_bg_color, 25%));
+			@include switch(if($header==light, $white, $dark1));
 		}
-		entry, %dark_entry {
+		entry {
 			@include type($alpha3, $header);
-		}
-		.text-button:not(.suggested-action) {
-			&.default {
-				&, &:active, &:hover, &:focus {
-	//				color: white;
-				}
-			}
-		}
-		button.default {
-			label {
-	//			color: if($header==dark, $white, $dark1);
-			}
 		}
 		button, button.flat, button.titlebutton.appmenu {
 			@include click(solid, $variant, false, $alpha1);
@@ -49,95 +35,11 @@
 				margin-right: 4px;
 			}
 		}
-	%underline_focus_headerbar {
-		@extend %underline_focus_effect;
-			$c: $hb_pathbar_bg;
-		//	background-color: $c;
-		//	color: $headerbar_text_color;
-			&:hover {
-		//		box-shadow: inset 0 -2px transparentize($headerbar_text_color, 0.5);
-				&:backdrop {
-		//			box-shadow: inset 0 -2px transparentize($headerbar_text_color, 0.7);
-				}
-			}
-			&:active {
-		//		box-shadow: inset 0 -2px $headerbar_text_color;
-			}
-			&:checked {
-		//		color: $selected_fg_color;
-		//		box-shadow: inset 0 -2px $selected_bg_color;
-				&:hover {
-		//			box-shadow: inset 0 -2px mix($selected_fg_color, $selected_bg_color, 10%);
-				}
-			}
-			&:backdrop {
-		//		background-color: _backdrop_color($c);
-		//		color: $backdrop_headerbar_insensitive_color;
-				&:checked {
-		//			color: $backdrop_headerbar_fg_color;
-		//			box-shadow: inset 0 -2px _backdrop_color($selected_bg_color);
-				}
-			}
-		}
-		buttonbox.linked button, buttonbox.linked button.text-button ~ button {
-		//	border-style: solid;
-		//	border-color: $inkstone;
-			&:not(:only-child) {
-		//		border-width: 1px 0;
-			}
-			&:first-child {
-		//		border-width: 1px 0 1px 1px;
-			}
-			&:last-child {
-		//		border-width: 1px 1px 1px 0;
-			}
-			&:backdrop {
-				&, &:checked {
-		//			border-color: lighten($inkstone, 3%);
-				}
-			}
-		}
-		.stack-switcher.linked {
-		//	border-width: 0 8px;
-		//	border-style: solid;
-		//	border-color: $c;
-			border-radius: $omega1;
-			&:backdrop {
-		//		border-color: _backdrop_color($c);
-			}
-			button {
-				@extend %underline_focus_headerbar;
-				&:dir(rtl), &:dir(ltr) {
-					border-radius: 0;
-					-gtk-outline-radius: 0;
-				}
-				margin: 0;
-				border: none;
-				&:disabled:checked {
-					background-color: $hb_pathbar_bg;
-					&:backdrop{
-//						background-color: $hb_pathbar_bg_backdrop;
-					}
-				}
-			}
-		}
-		.path-bar.linked button {
-			@extend %underline_focus_headerbar;
-			&.slider-button {
-				box-shadow: none;
-			}
-		}
 	}
 	&.selection-mode {
 		@include fill(normal, solid, $success);
-		~ separator, separator {
-//			background-image: image(_border_color($c));
-		}
 		&:backdrop {
 			@include fill(backdrop, solid, $success);
-			~ separator, separator {
-//				background-image: image(_border_color($c));
-			}
 		}
 		.subtitle:link {
 			@extend *:link:selected;

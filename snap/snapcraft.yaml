@@ -1,16 +1,16 @@
 name: starlabstheme
-version: '0.4'
+version: '0.4.2'
 architectures: [all]
 summary: Star Labs Theme.
 description: |
-  Yaru, formerly known as Communitheme, is the new Ubuntu theme built by the community. Yaru will become the default Ubuntu theme in Ubuntu 18.10. This package allows you to try out the theme on Ubuntu 18.04 LTS.
+  The Star Labs theme, originally forked from Yaru, is a theme built to suit the Phase II laptops from Star Labs.
 
-  To try out the theme, install this package on Ubuntu 18.04 LTS, restart your computer and select the "Ubuntu with communitheme snap" session from the login screen.
+  To try out the theme, install this package on Ubuntu 18.04 LTS, restart your computer and select the "StarLabs" session from the login screen.
 
   More information is available at
   https://starlabs.systems
 icon: snap/gui/star.png
-grade: devel
+grade: stable
 confinement: strict
 
 parts:
@@ -26,5 +26,3 @@ parts:
       ln -s snap/session $SNAPCRAFT_PART_INSTALL/session
       # remove unused artefacts in the snap (sessions and schemas)
       rm -rf $SNAPCRAFT_PART_INSTALL/share/*sessions $SNAPCRAFT_PART_INSTALL/share/glib-2.0
-      # don't support dark variant until it's ready
-      #rm -r $SNAPCRAFT_PART_INSTALL/share/themes/*-dark

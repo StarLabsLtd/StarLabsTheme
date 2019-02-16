@@ -8,5 +8,5 @@ configure_file(input : 'index.theme.in',
                configuration : conf_data,
                install_dir: theme_dir)
 
-# subdir('gtk-2.0')
+subdir('gtk-2.0')
 subdir('gtk-3.0')
