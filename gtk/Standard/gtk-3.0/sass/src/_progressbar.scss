@@ -1,105 +1,92 @@
-
-
-
-/*****************
- * Progress bars *
- *****************/
 progressbar {
-  // sizing
-  &.horizontal {
-    trough,
-    progress { min-height: 3px; }
-  }
-
-  &.vertical {
-    trough,
-    progress { min-width: 3px; }
-  }
-
-  // FIXME: insensitive state missing and some other state should be set probably
-  font-size: smaller;
-  color: transparentize($fg_color, 0.6);
-
-  &:backdrop {
-    box-shadow: none;
-    transition: $backdrop_transition;
-  }
-
-  trough { @extend %scale_trough; }
-
-  &:backdrop trough { @extend %scale_trough:backdrop; } // looks like states are not passed to the trough component here
-
-  %progressbar_highlight {
-    $c: $neutral_color;
-    border-radius: 3px;
-    background-color: $c;
-
-    &:disabled {
-      background-color: transparent;
-    }
-
-    &:backdrop {
-      background-color: _backdrop_color($c);
-
-      &:disabled {
-        background-color: transparent;
-      }
-    }
-
-    // ...on selected nist rows
-    row:selected & { &:disabled, & { border-color: $c; }} // TODO: what program uses this so it can be tested out?
-
-    // OSD
-    .osd & { }
-  }
-// TODO: maybe we can experiment with &:not(.full)
-// so prgoress bars won't be rounded at the opposite end until they're full?
-  progress {
-    @extend %progressbar_highlight;
-
-    border-radius: 1.5px;
-
-    &.left {
-      border-top-left-radius: 3px;
-      border-bottom-left-radius: 3px;
-    }
-
-    &.right {
-      border-top-right-radius: 3px;
-      border-bottom-right-radius: 3px;
-    }
-
-    &.top {
-      border-top-right-radius: 3px;
-      border-top-left-radius: 3px;
-    }
-
-    &.bottom {
-      border-bottom-right-radius: 3px;
-      border-bottom-left-radius: 3px;
-    }
-  }
-
-  &:backdrop progress { @extend %progressbar_highlight:backdrop; } // states not passed here as well
-
-  &.osd { // progressbar.osd used for epiphany page loading progress
-    min-width: 3px;
-    min-height: 3px;
-    box-shadow: none;
-    background-color: transparent;
-
-    trough {
-      border-style: none;
-      border-radius: 0;
-      background-color: transparent;
-      box-shadow: none;
-    }
-
-    progress {
-      border-style: none;
-      border-radius: 0;
-    }
-  }
-
-  trough.empty progress { all: unset; } // makes the progress indicator disappear, when the fraction is 0
+	// sizing
+	&.horizontal {
+		trough, progress {
+			min-height: 3px;
+		}
+	}
+	&.vertical {
+		trough, progress {
+			min-width: 3px;
+		}
+	}
+	font-size: smaller;
+	color: transparentize(if($variant==light, $dark1, $white, $alpha3);
+	&:backdrop {
+		box-shadow: none;
+		transition: $backdrop;
+	}
+	trough {
+		@extend %scale_trough;
+	}
+	&:backdrop trough {
+		@extend %scale_trough:backdrop;
+	}
+	%progressbar_highlight {
+		$c: $neutral_color;
+		border-radius: 3px;
+		background-color: $c;
+		&:disabled {
+			background-color: transparent;
+		}
+		&:backdrop {
+			background-color: _backdrop_color($c);
+			&:disabled {
+				background-color: transparent;
+			}
+		}
+		// ...on selected nist rows
+		row:selected & {
+			&:disabled, & {
+				border-color: $c;
+			}
+		}
+		// TODO: what program uses this so it can be tested out?
+		.osd & {
+		}
+	}
+	progress {
+		@extend %progressbar_highlight;
+		border-radius: 1.5px;
+		&.left {
+			border-top-left-radius: 3px;
+			border-bottom-left-radius: 3px;
+		}
+		&.right {
+			border-top-right-radius: 3px;
+			border-bottom-right-radius: 3px;
+		}
+		&.top {
+			border-top-right-radius: 3px;
+			border-top-left-radius: 3px;
+		}
+		&.bottom {
+			border-bottom-right-radius: 3px;
+			border-bottom-left-radius: 3px;
+		}
+	}
+	&:backdrop progress {
+		@extend %progressbar_highlight:backdrop;
+	}
+	&.osd { 
+		// progressbar.osd used for epiphany page loading progress
+		min-width: 3px;
+		min-height: 3px;
+		box-shadow: none;
+		background-color: transparent;
+		trough {
+			border-style: none;
+			border-radius: 0;
+			background-color: transparent;
+			box-shadow: none;
+		}
+		progress {
+			border-style: none;
+			border-radius: 0;
+		}
+	}
+	trough.empty progress {
+		all: unset;
+	}
+	// makes the progress indicator disappear, when the fraction is 0
 }
