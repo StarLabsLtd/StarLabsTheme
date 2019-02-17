@@ -22,10 +22,10 @@
 
 $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 $asset_suffix: if($variant=='dark', '-dark', '');
-$small_radius: 4px;
+$omega1: 4px;
 $medium_radius: 6px;
 $large_radius: 12px;
-$backdrop_transition: all 200ms ease-out;
+$backdrop: all 200ms ease-out;
 $button_transition: all 0.4s ease-out;
 $popover_shadow: 0 2px 5px transparentize(black, 0.75);
 

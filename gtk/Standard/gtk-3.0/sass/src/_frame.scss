@@ -56,14 +56,14 @@ scrolledwindow {
 	junction {
 		border-color: transparent;
 //		border-image: linear-gradient(to bottom, $borders_color 1px, transparent 1px) 0 0 0 1 / 0 1px stretch;
-		background-color: $scrollbar_bg_color;
+		background-color: $mix;
 		&:dir(rtl) {
 			border-image-slice: 0 1 0 0;
 		}
 		&:backdrop {
 //			border-image-source: linear-gradient(to bottom, $backdrop_borders_color 1px, transparent 1px);
 //			background-color: $backdrop_scrollbar_bg_color;
-//			transition: $backdrop_transition;
+//			transition: $backdrop;
 		}
 	}
 }

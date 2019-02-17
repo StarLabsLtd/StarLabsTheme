@@ -40,7 +40,7 @@
 
 @function entry_focus_shadow($fc:$selected_bg_color) { @return 0 0 2px 2px transparentize($fc, .8); }
 
-@mixin bentry($t, $fc:$selected_bg_color, $c: $base_color, $tc: $fg_color, $edge: none) {
+@mixin bentry($t, $fc:$selected_bg_color, $c: $base_color, $tc: $color, $edge: none) {
 //
 // Entries drawing function
 //
@@ -58,7 +58,7 @@
 
   @if $t==normal {
     $_bc: if($c == $headerbar_bg_color, lighten($hb_pathbar_bg, 5%), $c);
-    color: if($tc != $fg_color, transparentize($tc, .1), $fg_color);
+    color: if($tc != $color, transparentize($tc, .1), $color);
     border-color: if($c != $base_color, transparent, $borders_color);
     @if $c!=$headerbar_bg_color {
       @if $variant == 'light' {
@@ -158,7 +158,7 @@
   }
 }
 
-@function _text_shadow_color ($tc: $fg_color, $bg: $bg_color) {
+@function _text_shadow_color ($tc: $color, $bg: $bg_color) {
 // calculate the color of text shadows
 //
 // $tc is the text color
@@ -183,7 +183,7 @@
   @else { @return transparentize(white, 0.95); }
 }
 
-@mixin _button_text_shadow ($tc:$fg_color, $bg:$bg_color) {
+@mixin _button_text_shadow ($tc:$color, $bg:$bg_color) {
 //
 // helper function for the text emboss effect
 //
@@ -204,7 +204,7 @@
   }
 }
 
-@mixin button($t, $c:$button_bg_color, $tc:$fg_color, $flat:false) {
+@mixin button($t, $c:$button_bg_color, $tc:$color, $flat:false) {
   // Button drawing function
   //
   // $t:    button type,
@@ -245,7 +245,7 @@
     $_bg: null;
 
     @if $c==$headerbar_bg_color { $_bg: lighten($c, 15%); }
-    @else if $c==$success_color or $c==$destructive_color or $c==$warning_color or $c==$neutral_color or $c==$purple { $_bg: lighten($c, 5%); }
+    @else if $c==$success_color or $c==$destructive_color or $c==$warning_color or $c==$mix or $c==$purple { $_bg: lighten($c, 5%); }
     @else if $c==$button_bg_color {
       @if $variant=='light' { $_bg: lighten($c, 25%); }
       @else { $_bg: lighten($c, 1%); }
@@ -286,7 +286,7 @@
       }
       $_box_shadow: inset 0 1px 1px 0px rgba(0, 0, 0, 0.05);
     }
-    @else if $c==$success_color or $c==$destructive_color or $c==$warning_color or $c==$neutral_color or $c==$purple {
+    @else if $c==$success_color or $c==$destructive_color or $c==$warning_color or $c==$mix or $c==$purple {
       $_bg: darken($c, 10%);
       $_border: darken($c, 15%);
       $_border_top_color: darken($_border, 5%);
@@ -352,7 +352,7 @@
       @if $c == $success_color {
         $_label_color: $porcelain;
         $_label_alpha: 0.45;
-      } @else if $tc == $fg_color {
+      } @else if $tc == $color {
         $_label_color: $insensitive_fg_color;
         $_label_alpha: 0;
       } @else {
@@ -403,13 +403,13 @@
     border-color: if($flat==true, $_bg, $_bc);
     box-shadow: none;
 
-    label, & { color: if($tc != $fg_color, mix($tc, $_bg, 60%), $backdrop_text_color); }
+    label, & { color: if($tc != $color, mix($tc, $_bg, 60%), $backdrop_text_color); }
   }
 
   @else if $t==backdrop-hover {
     $_bg: null;
     @if $c==$headerbar_bg_color { $_bg: lighten($backdrop_headerbar_bg_color, 6%); }
-    @else if $c==$success_color or $c==$destructive_color or $c==$neutral_color or $c==$purple {
+    @else if $c==$success_color or $c==$destructive_color or $c==$mix or $c==$purple {
       $_c: _backdrop_color($c);
       $_bg: lighten($_c, 5%);
     } @else if $c==$button_bg_color {
@@ -455,7 +455,7 @@
     border-top-color: $_border_top_color;
     box-shadow: none;
 
-    label, & { color: if($tc != $fg_color, mix($tc, $_bg, 80%), $backdrop_fg_color); }
+    label, & { color: if($tc != $color, mix($tc, $_bg, 80%), $backdrop_fg_color); }
   }
 
   @else if $t==backdrop-insensitive {
@@ -721,7 +721,7 @@
 
     border: 1px solid if($bg==$dark_fill, if($variant=='light', $borders_edge, $bg), transparent);
     border-top-color: darken($bg, if($variant=='light', 10%, 5%));
-    transition: $backdrop_transition;
+    transition: $backdrop;
 
     &:hover {
       background-color: $bg;
@@ -752,7 +752,7 @@
   slider {
     background-color: if($bg==$dark_fill, white, $headerbar_fg_color);
     background-clip: if($variant == "light", border-box, padding-box);
-    border-radius: $small_radius;
+    border-radius: $omega1;
     border: 1px solid transparent;
     box-shadow: 0 1px 1px if($bg==$dark_fill, darken($bg, 7%), rgba(0, 0, 0, 0.15));
     margin: 2px;
@@ -761,7 +761,7 @@
     outline-color: $focus_color;
     outline-offset: -2px;
     transition: $button_transition;
-    -gtk-outline-radius: $small_radius;
+    -gtk-outline-radius: $omega1;
   }
 
   &:checked slider {
@@ -775,7 +775,7 @@
   }
 
   &:backdrop slider {
-    transition: $backdrop_transition;
+    transition: $backdrop;
     @if $bg==$dark_fill {
       @if $variant=='light' {
         background-color: $backdrop_bg_color;
@@ -789,14 +789,14 @@
 
   &:backdrop:disabled slider {
     background-color: if($bg==$dark_fill, transparent, _backdrop_color($ash));
-    transition: $backdrop_transition;
+    transition: $backdrop;
   }
 }
 
 /**************************
  * Overshoot & Undershoot *
  **************************/
-@mixin overshoot($p, $t:normal, $c:$fg_color) {
+@mixin overshoot($p, $t:normal, $c:$color) {
 //
 // overshoot
 //
@@ -838,9 +838,9 @@
   $_small_gradient_color: $c;
   $_big_gradient_color: $c;
 
-  @if $c==$fg_color {
+  @if $c==$color {
     $_small_gradient_color: darken($borders_color, 10%);
-    $_big_gradient_color: $fg_color;
+    $_big_gradient_color: $color;
 
     @if $t==backdrop { $_small_gradient_color: $backdrop_borders_color; }
   }

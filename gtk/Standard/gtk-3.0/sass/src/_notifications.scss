@@ -16,7 +16,7 @@
     background-color: $backdrop_bg_color;
     color: $backdrop_text_color;
     box-shadow: none;
-    transition: $backdrop_transition;
+    transition: $backdrop;
   }
 
   button.flat:hover {

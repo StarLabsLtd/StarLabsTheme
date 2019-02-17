@@ -35,20 +35,20 @@ levelbar {
 		@mixin block_highlight($c) {
 			background-color: $c;
 			&:backdrop {
-				background-color: _backdrop_color($c);
+				background-color: lighten($c, $beta1);
 			}
 		}
 		&.low {
 			@include block_highlight($warning);
 		}
 		&.high, &:not(.empty) {
-			@include block_highlight($neutral_color);
+			@include block_highlight($mix);
 		}
 		&.full {
-			@include block_highlight($neutral_color);
+			@include block_highlight($mix);
 		}
 		&.empty {
-			@include block_highlight($dark_fill);
+			@include block_highlight($color);
 		}
 	}
 }

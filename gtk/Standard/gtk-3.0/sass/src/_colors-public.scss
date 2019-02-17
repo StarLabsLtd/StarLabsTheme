@@ -7,7 +7,7 @@
 // warning, it's innocuous and can be defeated by using "" + $var
 /*
 widget text/foreground color */
-@define-color theme_fg_color #{"" +$fg_color};
+@define-color theme_fg_color #{"" +$color};
 
 /*
 text color for entries, views and content in general */
@@ -27,7 +27,7 @@ base background color of selections */
 
 /*
 text/foreground color of selections */
-@define-color theme_selected_fg_color #{"" +$selected_fg_color};
+@define-color theme_selected_fg_color #{"" +$white};
 
 /*
 base background color of insensitive widgets */
@@ -63,7 +63,7 @@ base background color of selections on backdrop windows */
 
 /*
 text/foreground color of selections on backdrop windows */
-@define-color theme_unfocused_selected_fg_color #{"" + $selected_fg_color};
+@define-color theme_unfocused_selected_fg_color #{"" + $white};
 
 /*
 insensitive color on backdrop windows*/
@@ -93,7 +93,7 @@ $_wm_highlight: if($variant=='light', $top_hilight,  // Sass gets mad if this is
 /*
 these colors are exported for the window manager and shouldn't be used in applications,
 read if you used those and something break with a version upgrade you're on your own... */
-@define-color wm_title shade(#{$fg_color}, 1.8);
+@define-color wm_title shade(#{$color}, 1.8);
 @define-color wm_unfocused_title #{$backdrop_fg_color};
 @define-color wm_highlight #{"" + $_wm_highlight};
 @define-color wm_borders_edge #{"" + $borders_edge};

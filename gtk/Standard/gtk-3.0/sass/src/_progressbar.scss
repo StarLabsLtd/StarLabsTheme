@@ -23,7 +23,7 @@ progressbar {
 		@extend %scale_trough:backdrop;
 	}
 	%progressbar_highlight {
-		$c: $neutral_color;
+		$c: $mix;
 		border-radius: 3px;
 		background-color: $c;
 		&:disabled {

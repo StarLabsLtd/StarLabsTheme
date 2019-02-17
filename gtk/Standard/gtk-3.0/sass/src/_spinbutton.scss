@@ -49,7 +49,7 @@ spinbutton {
         color: mix($backdrop_fg_color, $backdrop_base_color, 90%);
         background-color: transparent;
         border-color: $backdrop_borders_color;
-        transition: $backdrop_transition;
+        transition: $backdrop;
 
         &:disabled {
             color: transparentize($insensitive_fg_color, 0.5);
@@ -61,9 +61,9 @@ spinbutton {
         }
       }
 
-      &:dir(ltr):last-child { border-radius: 0 $small_radius $small_radius 0; }
+      &:dir(ltr):last-child { border-radius: 0 $omega1 $omega1 0; }
 
-      &:dir(rtl):first-child { border-radius: $small_radius 0 0 $small_radius; }
+      &:dir(rtl):first-child { border-radius: $omega1 0 0 $omega1; }
     }
   }
 
@@ -105,9 +105,9 @@ spinbutton {
         box-shadow: none;
       }
 
-      &:dir(ltr):last-child { border-radius: 0 $small_radius $small_radius 0; }
+      &:dir(ltr):last-child { border-radius: 0 $omega1 $omega1 0; }
 
-      &:dir(rtl):first-child { border-radius: $small_radius 0 0 $small_radius; }
+      &:dir(rtl):first-child { border-radius: $omega1 0 0 $omega1; }
     }
   }
 
@@ -152,12 +152,12 @@ spinbutton {
     }
 
     %top_button {
-      border-radius: $small_radius $small_radius 0 0;
+      border-radius: $omega1 $omega1 0 0;
       border-style: solid solid none solid;
     }
 
     %bottom_button {
-      border-radius: 0 0 $small_radius $small_radius;
+      border-radius: 0 0 $omega1 $omega1;
       border-style: none solid solid solid;
     }
   }

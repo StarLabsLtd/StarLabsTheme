@@ -5,7 +5,7 @@ decoration {
 	box-shadow: $shadowa;
 	&:backdrop {
 		box-shadow: $shadowb;
-		transition: $backdrop_transition;
+		transition: $backdrop;
 	}
 	.maximized &,
 	.fullscreen &,
@@ -37,8 +37,8 @@ decoration {
 	.solid-csd & {
 		margin: 0;
 		padding: 4px;
-		background-color: if($variant==light, $white, $dark1);
-		border: solid 1px if($variant==light, $white, $dark1);
+		background-color: $fill;
+		border: solid 1px $fill;
 		border-radius: 0;
 		box-shadow: $shadowa;
 		&:backdrop {
@@ -86,48 +86,39 @@ button.titlebutton {
         }
 }
 
-// catch all extend :)
-
 .monospace {
 	font-family: monospace;
 }
 
 %selected_items {
-	$c: $accent2;
-	$tc: $white;
-	background-color: $c;
+	background-color: $selected;
 	&:backdrop {
-		background-color: _backdrop_color($c);
+		background-color: lighten($selected, $beta1);
 	}
 	@at-root %nobg_selected_items, & {
-		color: $tc;
+		color: $color;
 		&:disabled {
-			color: mix($tc, $c, 50%);
+			@include clickable(disabled);
 		}
 		&:backdrop {
-			&, label {
-				color: $backdrop_selected_fg_color;
-			}
 			&:disabled {
-				color: mix($backdrop_selected_fg_color, $c, 30%);
+				@include clickable(disabled);
 			}
 		}
 	}
 }
 
 %selected_text {
-  $c: $accent2;
-  $tc: $white;
-  background-color: $c;
-  color: $tc;
-
-  &:disabled { color: mix($tc, $c, 50%); }
-
-  &:backdrop {
-    background-color: _backdrop_color($c);
-    color: $backdrop_text_color;
-
-    &:disabled { color: mix($backdrop_selected_fg_color, $c, 30%); }
-  }
+	background-color: $selected;
+	color: $white;
+	&:disabled {
+		@include clickable(disabled);
+	}
+	&:backdrop {
+		background-color: lighten($selected, $beta1);
+		&:disabled {
+			@include clickable(disabled);
+		}
+	}
 }
 

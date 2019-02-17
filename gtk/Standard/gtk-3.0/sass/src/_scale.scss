@@ -1,29 +1,25 @@
-
-/************
- * GtkScale *
- ************/
 %scale_trough {
-  border-radius: 3px;
-  background-color: $dark_fill;
-
-  &:disabled { background-color: $insensitive_dark_fill; }
-
-  &:backdrop {
-    background-color: _backdrop_color($dark_fill);
-    transition: $backdrop_transition;
+	border-radius: 3px;
+	background-color: $dark_fill;
+	&:disabled {
+		background-color: $insensitive_dark_fill;
+	}
+	&:backdrop {
+		background-color: _backdrop_color($dark_fill);
+    transition: $backdrop;
 
     &:disabled { background-color: $backdrop_insensitive_dark_fill; }
   }
 
   // ...on selected list rows
-  row:selected & { &:disabled, & { border-color: $neutral_color; }} // TODO: what program uses this so it can be tested out?
+  row:selected & { &:disabled, & { border-color: $mix; }} // TODO: what program uses this so it can be tested out?
 
   // OSD
   .osd & { }
 }
 
 %scale_highlight {
-  $c: $neutral_color;
+  $c: $mix;
   border-radius: 3px;
   background-color: $c;
 
@@ -124,7 +120,7 @@ scale {
   }
 
   slider {
-    $c: $neutral_color;
+    $c: $mix;
     $_bc: _border_color($dark_fill);
     @include button(normal, white);
 
@@ -146,7 +142,7 @@ scale {
     }
 
     &:backdrop {
-      transition: $backdrop_transition;
+      transition: $backdrop;
       background-color: mix($white, $backdrop_bg_color, 70%);
       &:disabled { background-color: mix($white, $backdrop_insensitive_color, 70%); border-color: $backdrop_insensitive_color; }
     }

@@ -1,46 +1,42 @@
- 
-/*************** * Popovers * ***************/
- popover.background {
-     padding: 2px;
-     color: $text_color;
-     border-radius: $medium_radius;
-     background-color: $menu_color;
-     .csd &, & {
-         border: 1px solid $borders_color;
-    }
-     box-shadow: $popover_shadow;
-     &:backdrop {
-         background-color: $backdrop_bg_color;
-         color: $backdrop_text_color;
-         box-shadow: none;
-    }
-     > list, > .view, > toolbar {
-         border-style: none;
-         background-color: transparent;
-    }
-     .csd &, & {
-         &.touch-selection, &.magnifier {
-             @extend %osd;
-             border: 1px solid transparentize(white, 0.9);
-             button {
-                 @extend %osd_button 
-            }
-            ;
-        }
-         &.osd {
-             @extend %osd;
-        }
-    }
-     modelbutton {
-         min-height: 16px;
-         min-width: 36px;
-         padding: 5px 6px;
-    }
-     separator {
-         margin: 3px;
-    }
-     list separator {
-         margin: 0px;
-    }
+popover.background {
+	padding: 2px;
+	color: $color;
+	border-radius: $omega1;
+	background-color: $fill;
+	.csd &, & {
+		border: 1px solid $mix;
+	}
+	box-shadow: $shadow2;
+	&:backdrop {
+		background-color: $bd-fill;
+		box-shadow: none;
+	}
+	> list, > .view, > toolbar {
+		border-style: none;
+		background-color: transparent;
+	}
+	.csd &, & {
+		&.touch-selection, &.magnifier {
+			@extend %osd;
+			border: 1px solid transparentize($mix, $alpha3);
+			button {
+				@extend %osd_button; 
+			}
+		}
+		&.osd {
+			@extend %osd;
+		}
+	}
+	modelbutton {
+		min-height: 16px;
+		min-width: 36px;
+		padding: 5px 6px;
+	}
+	separator {
+		margin: 3px;
+	}
+	list separator {
+		margin: 0px;
+	}
 }
 

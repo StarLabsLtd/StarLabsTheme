@@ -1,10 +1,10 @@
 printdialog {
 	paper {
 		@include fill(normal);
-		border: 1px solid if($variant==light, $dark1, $white);
+		border: 1px solid $color;
 		padding: 0;
 		&:backdrop {
-			@include fill(normal);
+			@include fill(backdrop);
 		}
 	}
 	.dialog-action-box {

@@ -1,4 +1,4 @@
 switch {
 	transition: $click;
-	@include switch($dark_fill, $accent2);
+	@include switch($color, $accent2);
 }

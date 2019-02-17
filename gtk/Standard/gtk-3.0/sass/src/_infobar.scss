@@ -14,10 +14,10 @@ infobar {
 			}
 			// The following extensive local styling of buttons in infobars
 			// should be replaced by smarter functions in drawing after 18.10 UI-Freeze
-			$_active_amount: if($variant=='light', 10%, 8%);
-			$_hover_amount: 5%;
-			$_bg: if($variant=='light', $button_bg_color, lighten($button_bg_color, $_hover_amount));
-			$_c: $fg_color;
+			$_active_amount: $beta2;
+			$_hover_amount: $beta1;
+			$_bg: $fill;
+			$_c: $color;
 			$_active_bg: darken($_bg, $_active_amount);
 			$_hover_bg: if($variant=='light', darken($_bg, $_hover_amount), lighten($_bg, $_hover_amount));
 			$_insensitive_bg: mix($c, $_bg, 20%);
@@ -78,7 +78,7 @@ infobar {
 		}
 		&:backdrop {
 			background-color: _backdrop_color($c);
-			color: $selected_fg_color;
+			color: $white;
 		}
 	}
 }
