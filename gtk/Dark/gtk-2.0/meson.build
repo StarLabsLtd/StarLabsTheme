@@ -6,6 +6,7 @@ gtk2_theme_data_sources = [
   'main.rc',
   'apps.rc',
   'hacks.rc',
+  'hacks-dark.rc',
 ]
 
 gtk2_asset_dir = join_paths(gtk2_dir, 'assets')
