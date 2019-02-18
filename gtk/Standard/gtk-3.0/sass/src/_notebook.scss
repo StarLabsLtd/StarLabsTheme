@@ -142,7 +142,7 @@ notebook {
 			}
 			&:backdrop {
 				&:hover {
-					background-color: transparentize($bd_selected, $alpha2);
+					background-color: transparentize($bd-selected, $alpha2);
 				}
 			}
 			&:checked {

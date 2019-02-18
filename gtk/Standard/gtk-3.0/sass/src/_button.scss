@@ -49,7 +49,6 @@
 					@include clickable(backdrop-active);
 				}
 				&:disabled {
-					@include clickable(backdrop);
 					@include clickable(disabled);
 					&:active, &:checked {
 						@include clickable(backdrop-active);

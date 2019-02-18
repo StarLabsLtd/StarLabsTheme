@@ -18,21 +18,20 @@
 			}
 		}
 	}
-	&:nth-child(2){
-		border-radius: $omega1;
-	}
 	border-radius: $omega1;
         min-width: 24px;
         margin: 6px 0;
         margin-left: -6px;
         &:dir(ltr):not(:first-child):not(:last-child):not(:checked) {
-                border-radius: 0 $omega1 $omega1 0;
                 @include clickable(normal, solid, $variant);
                 &:backdrop {
                         @include clickable(backdrop, solid, $variant);
                 }
         }
-        &:checked {
+        &:dir(ltr):not(:first-child):not(:last-child):not(:checked):not(:nth-child(2)) {
+                border-radius: 0 $omega1 $omega1 0;
+        }	
+        &:checked:not(:nth-child(2)) {
                 border-radius: 0 $omega1 $omega1 0;
                 @include clickable(active, $alpha3, $accent2);
                 &:backdrop {
@@ -67,4 +66,8 @@
 			color: $accent2;
 		}
 	}
+        &:nth-child(2){
+                border-radius: $omega1;
+        }
+
 }
