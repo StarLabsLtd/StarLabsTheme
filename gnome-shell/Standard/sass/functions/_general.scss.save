@@ -24,7 +24,7 @@
 		}
 		&:active, &:checked {
 			&, label, image {
-				color: lighten($accent3, $beta1);
+				color: lighten($accent2, $beta1);
 			}
 		}
 	}
@@ -33,7 +33,7 @@
 	}
 }
 @if $plain == false {
-//	border-radius: $omega1;	
+	border-radius: $omega1;	
 	@include clickable(normal, $base, $color);
 	&:focus {
 		@include clickable(focus, $transparent, $accent2);
@@ -63,7 +63,7 @@
 		}	
 	}
 	&.default:not(.suggested-action):not(.destructive-action) {
-		@include clickable(normal, $transparent, $accent2);
+		@include clickable(normal, $base, $accent2);
 		&:focus {
 			@include clickable(focus, $transparent, $accent3);
 		}
@@ -77,7 +77,7 @@
 			@include clickable(disabled);
 		}
 		&:backdrop {
-			@include clickable(backdrop, $transparent, $accent2);
+			@include clickable(backdrop, $base, $accent2);
 			&:focus {
 				@include clickable(backdrop-focus, $transparent, $accent3);
 			}
@@ -93,7 +93,7 @@
 		}
 	}
 	&.suggested-action {
-		@include clickable(normal, $transparent, $success);
+		@include clickable(normal, $base, $success);
 		&:focus {
 			@include clickable(focus, $transparent, $success);
 		}
@@ -107,7 +107,7 @@
 			@include clickable(disabled);
 		}
 		&:backdrop {
-			@include clickable(backdrop, $transparent, $success);
+			@include clickable(backdrop, $base, $success);
 			&:focus {
 				@include clickable(backdrop-focus, $transparent, $success);
 			}
@@ -123,7 +123,7 @@
 		}
 	}
 	&.destructive-action {
-		@include clickable(normal, $transparent, $failure);
+		@include clickable(normal, $base, $failure);
 		&:focus {
 			@include clickable(focus, $transparent, $failure);
 		}
@@ -137,7 +137,7 @@
 			@include clickable(disabled);
 		}
 		&:backdrop {
-			@include clickable(backdrop, $transparent, $failure);
+			@include clickable(backdrop, $base, $failure);
 			&:focus {
 				@include clickable(backdrop-focus, $transparent, $failure);
 			}

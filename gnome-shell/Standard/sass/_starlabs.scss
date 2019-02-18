@@ -28,8 +28,8 @@ $beta2: 10%;
 $shadow1: 0 1.5px 2px transparentize(if($variant==light, $dark1, black), $alpha2), 0 1.5px 2px transparentize(if($variant==light, $dark1, black), $alpha2);
 $shadow2: 0 3px 4px transparentize(if($variant==light, $dark1, black), $alpha2), 0 3px 4px transparentize(if($variant==light, $dark1, black), $alpha2);
 
-$shadowa: 0 3px 9px 1px transparentize(if($variant==light, $dark1, lighten($dark1, $beta2)), $alpha3); // Window Active Shadow
-$shadowb: 0 3px 9px 1px transparent, 0 2px 6px 2px transparentize (if($variant==light, $dark1, lighten($dark1, $beta2)), $alpha3); // Window Backdrop Shadow
+$shadowa: 0 3px 9px 1px transparentize(if($variant==light, $dark1, black), $alpha3); // Window Active Shadow
+$shadowb: 0 3px 9px 1px transparent, 0 2px 6px 2px transparentize (if($variant==light, $dark1, black), $alpha3); // Window Backdrop Shadow
 
 // Transitions
 $time: 100ms;
