@@ -2,9 +2,6 @@
 	padding: 0 $omega1;
 	min-height: 40px;
 	border-radius: 0;
-	label:backdrop {
-		
-	}
 	& {
 		switch {
 			@include switch;
@@ -13,7 +10,10 @@
 			@include type($alpha3, $header);
 		}
 		button, button.flat, button.titlebutton.appmenu {
-			@include click(solid, $header, false, $alpha1);
+			@include click(solid, $variant, false, $alpha1);
+		}
+		button.imagebutton {
+			
 		}
 		.linked:not(.path-bar):not(.stack-switcher):not(buttonbox) button, .linked:not(.vertical) entry {
 			border-radius: $omega1;
@@ -33,9 +33,6 @@
 		}
 		button {
 			@include click($alpha3, $success);
-			&.text-button:not(:hover) {			
-//				border-color: transparentize(white, 0.7);
-			}
 			&.flat, &.selection-menu {
 				&, &:backdrop {
 					&, &:disabled {

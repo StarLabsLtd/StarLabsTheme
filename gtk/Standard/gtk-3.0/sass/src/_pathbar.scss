@@ -33,6 +33,7 @@
         }	
         &:checked:not(:nth-child(2)) {
                 border-radius: 0 $omega1 $omega1 0;
+		color: $white;
                 @include clickable(active, $alpha3, $accent2);
                 &:backdrop {
                         @include clickable(backdrop-active, $alpha3, $accent2);
