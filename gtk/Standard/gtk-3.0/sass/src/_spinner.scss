@@ -7,7 +7,7 @@
 spinner {
 	background: none;
 	opacity: 0;
-	color: $accent3;
+	color: $selected;
 	-gtk-icon-source: -gtk-icontheme('process-working-symbolic');
 	&:checked {
 		opacity: 1;
@@ -17,7 +17,7 @@ spinner {
 		}
 	}
 	&:backdrop {
-		color: lighten($accent3, $beta1);
+		color: $bd-selected;
 	}
 }
 

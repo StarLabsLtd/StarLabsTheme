@@ -53,7 +53,7 @@ infobar {
 				background-color: $_insensitive_bg;
 				border-color: $_insensitive_bg;
 				label {
-					color: $insensitive_fg_color;
+					color: $color;
 				}
 			}
 			&:backdrop {
@@ -63,7 +63,7 @@ infobar {
 					background-color: $_insensitive_bg;
 					border-color: $_insensitive_bg;
 					label {
-						color: _backdrop_color($insensitive_fg_color);
+						color: $color;
 					}
 				}
 				&:hover {

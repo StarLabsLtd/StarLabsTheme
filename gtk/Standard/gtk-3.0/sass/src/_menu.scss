@@ -1,9 +1,9 @@
 menubar, .menubar {
 	-GtkWidget-window-dragging: true;
 	padding: 0px;
-	@include fill(normal, $alpha2, $header);
+	@include fill(normal, $alpha1, $header);
 	&:backdrop {
-		@include fill(backdrop, $alpha2, $header);
+		@include fill(backdrop, $alpha1, $header);
 	}
 	> menuitem {
 		transition: 100ms ease;

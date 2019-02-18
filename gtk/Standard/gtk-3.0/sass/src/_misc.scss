@@ -21,8 +21,7 @@
 	}
 	button { // +/- buttons on GtkVolumeButton popup
 		&:hover {
-			@extend %undecorated_button;
-//			background-color: transparentize($color, $alpha3);
+			@include clickable(undecorated);
 			border-radius: $omega1;
 		}
 	}

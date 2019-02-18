@@ -1,4 +1,4 @@
 switch {
 	transition: $click;
-	@include switch($color, $accent2);
+	@include switch;
 }

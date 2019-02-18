@@ -11,7 +11,7 @@ progressbar {
 		}
 	}
 	font-size: smaller;
-	color: transparentize(if($variant==light, $dark1, $white), $alpha3);
+	color: transparentize($color, $alpha3);
 	&:backdrop {
 		box-shadow: none;
 		transition: $backdrop;
@@ -22,31 +22,8 @@ progressbar {
 	&:backdrop trough {
 		@extend %scale_trough:backdrop;
 	}
-	%progressbar_highlight {
-		$c: $mix;
-		border-radius: 3px;
-		background-color: $c;
-		&:disabled {
-			background-color: transparent;
-		}
-		&:backdrop {
-			background-color: _backdrop_color($c);
-			&:disabled {
-				background-color: transparent;
-			}
-		}
-		// ...on selected nist rows
-		row:selected & {
-			&:disabled, & {
-				border-color: $c;
-			}
-		}
-		// TODO: what program uses this so it can be tested out?
-		.osd & {
-		}
-	}
 	progress {
-		@extend %progressbar_highlight;
+		@extend %scale_highlight;
 		border-radius: 1.5px;
 		&.left {
 			border-top-left-radius: 3px;
@@ -66,7 +43,7 @@ progressbar {
 		}
 	}
 	&:backdrop progress {
-		@extend %progressbar_highlight:backdrop;
+		@extend %scale_highlight:backdrop;
 	}
 	&.osd { 
 		// progressbar.osd used for epiphany page loading progress
@@ -88,5 +65,4 @@ progressbar {
 	trough.empty progress {
 		all: unset;
 	}
-	// makes the progress indicator disappear, when the fraction is 0
 }

@@ -1,29 +1,22 @@
-
-/*********************
- * App Notifications *
- *********************/
-.app-notification,
-.app-notification.frame {
-  padding: 10px;
-  margin: 12px;
-  color: $text_color;
-  border-radius: $medium_radius;
-  background-color: $menu_color;
-  border: 1px solid $borders_color;
-  box-shadow: $popover_shadow;
-
-  &:backdrop {
-    background-color: $backdrop_bg_color;
-    color: $backdrop_text_color;
-    box-shadow: none;
-    transition: $backdrop;
-  }
-
-  button.flat:hover {
-      @include button(hover, $menu_color);
-      border-color: $borders_color;
-  }
-
-  border { border: none; }
+.app-notification, .app-notification.frame {
+	padding: 10px;
+	margin: 12px;
+	color: $color;
+	border-radius: $omega1;
+	background-color: $fill;
+	border: 1px solid $mix;
+	box-shadow: $shadow2;
+	&:backdrop {
+		background-color: $bd-fill;
+		box-shadow: $shadow1;
+		transition: $backdrop;
+	}
+	button.flat:hover {
+		color: $accent2;
+		border-color: $mix;
+	}
+	border {
+		border: none;
+	}
 }
 

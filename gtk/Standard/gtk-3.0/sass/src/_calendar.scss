@@ -6,7 +6,7 @@ calendar {
 		border-radius: $omega1;
 	}
 	&.button {
-		@extend %undecorated_button;
+		@include clickable(undecorated);
 		color: transparentize($fill, $alpha3);
 		&:hover {
 			color: $selected;

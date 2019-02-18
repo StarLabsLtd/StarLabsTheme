@@ -2,11 +2,10 @@
 	%entry_basic, & {
 		min-height: 24px;
 		padding: 2px 6px;
-		border: 1px solid;
 		border-radius: $omega1;
 		caret-color: currentColor;
 		@include entry(normal);
-		image { // icons inside the entry
+		image {
 			&.left {
 				margin-right: 6px;
 			}
@@ -49,7 +48,7 @@
 		(warning, $warning) {
 			&.#{$e_type} {
 				color: $e_color;
-				border-color: entry_focus_border($e_color);
+//				border-color: entry_focus_border($e_color);
 				&:focus {
 					@include entry(focus, $alpha3, $e_color);
 				}
@@ -178,7 +177,7 @@ treeview entry {
 	&.flat, & {
 		border-radius: 0;
 		background-image: none;
-		background-color: $base_color;
+//		background-color: $base_color;
 		&:focus {
 //			border-color: $selected_bg_color;
 		}
@@ -201,29 +200,27 @@ treeview entry {
 		margin-right: 8px;
 	}
 	border-style: none;
-	$_entry_tag_color: if($variant=='light', $white, $base_color);
-	color: $_entry_tag_color;
-	$_entry_tag_bg: if($variant=='light', $selected_bg_color, mix($color, $base_color, 50%));
-	background-color: $_entry_tag_bg;
+	color: $fill;
+	background-color: $bd-selected;
 	&:hover {
-		background-color: lighten($_entry_tag_bg, 10%);
+		background-color: $accent3;
 	}
 	:backdrop & {
-		color: $backdrop_base_color;
-		background-color: if($variant=='light', $selected_bg_color, mix($backdrop_fg_color, $backdrop_base_color, 50%));
+		color: $bd-fill;
+		background-color: $bd-selected;
 	}
 	&.button {
 		background-color: transparent;
-		color: transparentize($_entry_tag_color, 0.3);
+		color: transparentize($fill, $alpha2);
 	}
 	:not(:backdrop) &.button {
 		&:hover {
-			border: 1px solid $_entry_tag_bg;
-			color: $_entry_tag_color;
+			border: 1px solid $accent2;
+			color: $fill;
 		}
 		&:active {
-			background-color: $_entry_tag_bg;
-			color: transparentize($_entry_tag_color, 0.3);
+			background-color: $accent2;
+			color: transparentize($fill, $alpha2);
 		}
 	}
 }

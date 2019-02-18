@@ -4,7 +4,7 @@
 	border-radius: 0;
 	& {
 		switch {
-			@include switch(if($header==light, $white, $dark1));
+			@include switch;
 		}
 		entry {
 			@include type($alpha3, $header);
@@ -13,22 +13,6 @@
 			@include click(solid, $variant, false, $alpha1);
 		}
 		.linked:not(.path-bar):not(.stack-switcher):not(buttonbox) button, .linked:not(.vertical) entry {
-			&:focus {
-				& + entry {
-//					border-left-color: _border_color($graphite);
-				}
-				& + button {
-//					border-left-color: transparent;
-				}
-				& + entry, & + button {
-					&:disabled {
-//						border-left-color: transparent;
-					}
-					&:backdrop {
-//						border-left-color: _border_color($headerbar_bg_color);
-					}
-				}
-			}
 			border-radius: $omega1;
 			-gtk-outline-radius: $omega1;
 			&:not(:last-child) {
@@ -45,96 +29,65 @@
 			@extend *:link:selected;
 		}
 		button {
-			@each $state, $t in
-			("", "normal"),
-			(":hover", "hover"),
-			(":hover:backdrop", "backdrop-hover"),
-			(":active, &:checked", "active"),
-			(":disabled", "insensitive"),
-			(":disabled:active, &:disabled:checked", "insensitive-active"),
-			(":backdrop", "backdrop"),
-			(":backdrop:active, &:backdrop:checked", 'backdrop-active'),
-			(":backdrop:disabled", 'backdrop-insensitive'),
-			(":backdrop:disabled:active, &:backdrop:disabled:checked", 'backdrop-insensitive-active') {
-			$c: $success_color;
-			$tc: white;
-			&, &.selection-menu {
-				&#{$state} {
-					@include button($t, $c, $tc, $flat:true);
+			@include click($alpha3, $success);
+			&.text-button:not(:hover) {			
+				border-color: transparentize(white, 0.7);
+			}
+			&.flat, &.selection-menu {
+				&, &:backdrop {
+					&, &:disabled {
+						@include clickable(undecorated);
+					}
 				}
 			}
-		}
-		&.text-button:not(:hover) {			
-			border-color: transparentize(white, 0.7);
-		}
-		&.flat, &.selection-menu {
-			&, &:backdrop {
-				&, &:disabled {
-					@include button(undecorated);
-				}
+			&.suggested-action {
+				@include click($alpha3, $success);
 			}
-		}
-		&.suggested-action {
-			@each $state, $t in	
-			("", "normal"),
-			(":hover", "hover"),
-			(":hover:backdrop", "backdrop-hover"),
-			(":active", "active"), (":disabled", "insensitive"),
-			(":backdrop", "backdrop"), (":backdrop:disabled", 'backdrop-insensitive') {
-				$c: white;
-				$tc: $success_color;
-				&#{$state} {
-					@include button($t, $c, $tc);
-				}
-			}
-		}
-		&.selection-menu {
-			&:backdrop, & {
-				padding-left: 10px;
-				padding-right: 10px;
-				arrow {
-					-GtkArrow-arrow-scaling: 1;
-				}
-				.arrow {
-					-gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
+			&.selection-menu {
+				&:backdrop, & {
+					padding-left: 10px;
+					padding-right: 10px;
+					arrow {
+						-GtkArrow-arrow-scaling: 1;
+					}
+					.arrow {
+						-gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
+					}
 				}
 			}
 		}
 	}
-}
-.tiled &,
-.tiled-top &,
-.tiled-right &,
-.tiled-bottom &,
-.tiled-left &,
-.maximized &,
-.fullscreen & {
-        &:backdrop, & {
-                border-radius: 0;
-        }
-}
-
-
-&.default-decoration {
-	min-height: 26px;
-	padding: 4px 6px;
-	button.titlebutton {
-		min-width: 26px;
-		min-height: 26px;
-		margin: 0;
-		padding: 0;
-	}
-}
-.solid-csd & {
-	&:backdrop, & {
-		&:dir(rtl), &:dir(ltr) {
-			margin-left: -1px;
-			margin-right: -1px;
-			margin-top: -1px;
+	.tiled &,
+	.tiled-top &,
+	.tiled-right &,
+	.tiled-bottom &,
+	.tiled-left &,
+	.maximized &,
+	.fullscreen & {
+		&:backdrop, & {
 			border-radius: 0;
-			box-shadow: none;
 		}
 	}
+	&.default-decoration {
+		min-height: 26px;
+		padding: 4px 6px;
+		button.titlebutton {
+			min-width: 26px;
+			min-height: 26px;
+			margin: 0;
+			padding: 0;
+		}
+	}
+	.solid-csd & {
+		&:backdrop, & {
+			&:dir(rtl), &:dir(ltr) {
+				margin-left: -1px;
+				margin-right: -1px;
+				margin-top: -1px;
+				border-radius: 0;
+				box-shadow: none;
+			}
+		}
 	}
 }
 

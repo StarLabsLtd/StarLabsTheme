@@ -25,8 +25,8 @@ $beta2: 10%;
 
 
 // Shadows
-$shadow1: 0 1.5px 2px transparentize(if($variant==light, $dark1, mix($white, $dark1, 50%)), $alpha2), 0 1.5px 2px transparentize(if($variant==light, $dark1, $white), $alpha2);
-$shadow2: 0 3px 4px transparentize(if($variant==light, $dark1, mix($white, $dark1, 50%)), $alpha2), 0 3px 4px transparentize(if($variant==light, $dark1, mix($white, $dark1, 50%)), $alpha2);
+$shadow1: 0 1.5px 2px transparentize(if($variant==light, $dark1, black), $alpha2), 0 1.5px 2px transparentize(if($variant==light, $dark1, black), $alpha2);
+$shadow2: 0 3px 4px transparentize(if($variant==light, $dark1, black), $alpha2), 0 3px 4px transparentize(if($variant==light, $dark1, black), $alpha2);
 
 $shadowa: 0 3px 9px 1px transparentize(if($variant==light, $dark1, lighten($dark1, $beta2)), $alpha3); // Window Active Shadow
 $shadowb: 0 3px 9px 1px transparent, 0 2px 6px 2px transparentize (if($variant==light, $dark1, lighten($dark1, $beta2)), $alpha3); // Window Backdrop Shadow
@@ -45,6 +45,6 @@ $color: if($variant==light, $dark1, $white);
 $fill: if($variant==light, $white, $dark1);
 $bd-fill: lighten(if($variant==light, $white, $dark1), $beta1);
 $mix: if($variant==light, mix($white, $dark1, 25%), mix($dark1, $white, 25%));
-
+$bd-mix: lighten($mix, $beta1);
 $selected: $accent2;
 $bd-selected: lighten($accent2, $beta1);

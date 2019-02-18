@@ -29,10 +29,10 @@
 }
 
 button:link, button:visited {
-	@extend %undecorated_button;
+	@include clickable(undecorated);
 	@extend *:link;
 	&:hover, &:active, &:checked {
-		@extend %undecorated_button;
+		@include clickable(undecorated);
 	}
 	> label {
 		@extend %link;

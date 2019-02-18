@@ -9,7 +9,6 @@ list.tweak-categories separator {
  * Nautilus *
  ***********/
 .nautilus-window {
-	//@at-root %dim_icons_in_backdrop,*scrolledwindow:backdrop { opacity: 0.9; }
 	paned box.floating-bar {
 		background: $accent2;
 		label {
@@ -23,7 +22,7 @@ list.tweak-categories separator {
 				background-color: transparent;
 				border-color: transparent;
 				box-shadow: none;
-				color: $bg_color;
+				color: $fill;
 				margin: 2px;
 			}
 			&:hover {
@@ -36,15 +35,8 @@ list.tweak-categories separator {
 		border-color: transparent;
 	}
 	treeview.view header button {
-//		background-color: if($light, $base_color, $base_color);
-//		background-image: none;
-//		border-color: transparentize($borders_color, 0.6);
-//		border-left: 1px;
 		&:hover {
-			background-color: $bg_color;
-		}
-		&:backdrop {
-//			background-color: if($light, #EEEFF0, $backdrop_base_color);
+			background-color: $fill;
 		}
 	}
 	@at-root %remove_folder_icon_tint, scrolledwindow widget.view:selected {
@@ -53,20 +45,9 @@ list.tweak-categories separator {
 		border-radius: $omega1;
 	}
 	.nautilus-list-view .view {
-//		border-bottom: 1px solid transparentize($borders_color, 0.8);
 		// Hide superfluous treeview drop target indication
 		&.dnd {
 			border-style: none;
-		}
-	}
-	notebook > header {
-//		background: if($variant==light, $porcelain, $bg_color);
-	}
-
-	.nautilus-canvas-item.dim-label, .nautilus-list-dim-label {
-//		color: if($variant==light, lighten($text_color,30%), darken($text_color,25%));
-		&:selected {
-//			color: transparentize($white, 0.3);
 		}
 	}
 	.nautilus-canvas-item {
@@ -101,25 +82,25 @@ terminal-window {
 			@include fill(normal, $alpha3, darken($accent3, 20%));
 		}
 	}
-	notebook {
-		> header {
-			@include fill(normal, $alpha3, $header);
-			button.flat {
-				&, &:backdrop {
-					@include click(solid, $variant, true);
-				}
-			}
-			tab {
-				@include fill(backdrop, $alpha3, $header);
-				&:hover {
-				}
-				&:checked {
-				}
-				&:backdrop {
-				}
-			}
-		}
-	}
+//	notebook {
+//		> header {
+//			@include fill(normal, $alpha3, $header);
+//			button.flat {
+//				&, &:backdrop {
+//					@include click(solid, $variant, true);
+//				}
+//			}
+//			tab {
+//				@include fill(backdrop, $alpha3, $header);
+//				&:hover {
+//				}
+//				&:checked {
+//				}
+//				&:backdrop {
+//				}
+//			}
+//		}
+//	}
 	scrollbar {
 		slider {
 			margin: 0;
@@ -133,122 +114,119 @@ terminal-window {
  * GNOME Software *
  ******************/
 .review-row {
-margin-bottom: 10px;
-padding: 6px 12px;
-box-shadow: 0 1px 2.5px transparentize(black, 0.75);
-outline-offset: -1px;
-
-&,
-&:not(:selected):not(:backdrop):hover,
-&:not(:selected):not(:backdrop):active { background-color: $base_color; }
-
-&:backdrop { background-color: $backdrop_base_color; }
-
-&:last-child { margin-bottom: 0; }
-
-> grid { margin-top: -24px; }
+	margin-bottom: 10px;
+	padding: 6px 12px;
+	box-shadow: 0 1px 2.5px transparentize($dark1, $alpha3);
+	outline-offset: -1px;
+	&, &:not(:selected):not(:backdrop):hover, &:not(:selected):not(:backdrop):active {
+		background-color: $fill;
+	}
+	&:backdrop {
+		background-color: $bd-fill;
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+	> grid {
+		margin-top: -24px;
+	}
 }
 
-.app-listbox-header { background: $dark_fill; }
+.app-listbox-header {
+	background: $fill;
+}
 
 .list-box-app-row {
-border-radius: 0;
-border-color: $borders_color;
-border-style: none solid solid solid;
-border-width: 0 1px 1px 1px;
-margin: -1px 0 0 0;
-
-& ~ separator {
-background-color: $bg_color;
-border: none;
-min-height: 0px;
+	border-radius: 0;
+	border-color: $mix;
+	border-style: none solid solid solid;
+	border-width: 0 1px 1px 1px;
+	margin: -1px 0 0 0;
+	& ~ separator {
+		background-color: $fill;
+		border: none;
+		min-height: 0px;
+	}
 }
-}
-
 // Avoid double border when list in included in a box (e.g. Updates view)
 box > list row.list-box-app-row {
-border: none;
+	border: none;
 }
 
 // Star color can not be set, so this gives the stars a background in the dark theme
-.star{
-@if $variant=='dark'{
-border-radius: $omega1;
-box-shadow: inset 0 0 10px 10px #fdfdfd;
-}
+.star	{
+
 }
 
 // Background color can not be set, so use a inset-box-shadow
 .application-details-infobar {
-box-shadow: inset 0 0 100px 100px $base_color;
+	box-shadow: inset 0 0 100px 100px $fill;
 }
 
 .category_page_header_filter_box{
-box-shadow: inset 0 0 100px 100px $base_color;
+	box-shadow: inset 0 0 100px 100px $fill;
 }
 
 /*********
  * Gedit *
  *********/
 .gedit-bottom-panel-paned notebook > header {
-background: if($variant==light, $porcelain, $bg_color);
+//	background: if($variant==light, $porcelain, $fill);
 }
 
 .gedit-bottom-panel-paned ~ statusbar {
 // give gedit's bottom panel a border
-border-top: 1px solid $borders_color;
-
-&:backdrop { border-color: $backdrop_borders_color; }
+	border-top: 1px solid $mix;
+	&:backdrop {
+		border-color: $bd-mix; 
+	}
 }
 
 .gedit-search-slider {
-// gives gedit search entry some padding and a border
-// otherwise it's right under the headerbar
-background: $bg_color;
-border: 1px solid $borders_color;
-border-top-style: none;
-padding: 4px 8px;
-border-radius: 0 0 5px 5px; // same radius as tooltips
-
-&:backdrop {
-background-color: $backdrop_bg_color;
-border-color: $backdrop_borders_color;
-}
+	// gives gedit search entry some padding and a border
+	// otherwise it's right under the headerbar
+	background: $fill;
+	border: 1px solid $mix;
+	border-top-style: none;
+	padding: 4px 8px;
+	border-radius: 0 0 $omega1 $omega1; // same radius as tooltips
+	&:backdrop {
+		background-color: $bd-fill;
+		border-color: $bd-mix;
+	}
 }
 
 .gedit-search-entry-occurrences-tag {
-color: transparentize($color, 0.65);
-border: none; // Removed ugly tag border
-box-shadow: none; // Removed button inset shadow
-margin: 2px;
-padding: 2px;
+	color: transparentize($color, $alpha3);
+	border: none; // Removed ugly tag border
+	box-shadow: none; // Removed button inset shadow
+	margin: 2px;
+	padding: 2px;
 }
 
 .gedit-document-panel { // 'documents' pane
-
-background-color: $bg_color;
-row.activatable { padding: 6px; }
-
-row button { // 'close' button
-min-width: 22px;
-min-height: 22px;
-padding: 0;
-margin: 0;
-border: none;
-}
-
-row:hover button {
-&:hover {
-background-color: rgba($color, 0.15);
-}
-&:active {
-background-color: rgba($color, 0.25);
-}
-}
-
-row:hover:selected button:hover {
-color: $white;
-}
+	background-color: $fill;
+	row.activatable {
+		padding: 6px;
+	}
+	row button { // 'close' button
+		min-width: 22px;
+		min-height: 22px;
+		padding: 0;
+		margin: 0;
+		border: none;
+	}
+	row:hover button {
+		&:hover {
+			background-color: rgba($color, 0.15);
+		}
+		&:active {
+			background-color: rgba($color, 0.25);
+		}
+	}
+	row:hover:selected button:hover {
+		color: $white;
+	}
 }
 
 /***************
@@ -258,182 +236,195 @@ color: $white;
 headerbar button image ~ window decoration ~ menu separator {
 // gnome disks headerbar menu seems to inherit the headerbar separator bg color
 // no unique class names or id used here so this rule is as specific as it can be
-background: $borders_color;
+	background: $mix;
 }
 
 /********
  * Nemo *
  ********/
 .nemo-properties-dialog {
-.dialog-action-box .dialog-action-area {
-// add margin to preferences buttons
-margin: 2px 6px 4px;
-}
-
-toolbar stackswitcher.linked button {
-margin-right: 0;
-&:backdrop {
-color: $backdrop_fg_color;
-background-color: $backdrop_bg_color;
-}
-}
+	.dialog-action-box .dialog-action-area {
+		// add margin to preferences buttons
+		margin: 2px 6px 4px;
+	}
+	toolbar stackswitcher.linked button {
+		margin-right: 0;
+		&:backdrop {
+			background-color: $bd-fill;
+		}
+	}
 }
 
 .nemo-window {
-.sidebar{
-scrolledwindow.frame.nemo-places-sidebar {
-// get rid of double border in sidebar
-border: none;
+	.sidebar{
+		scrolledwindow.frame.nemo-places-sidebar {
+			// get rid of double border in sidebar
+			border: none;
+		}
+		viewport.frame box.vertical treeview.view.places-treeview {
+			// use sidebar bg color
+			 @include fill(normal, $alpha1, $header);
+			border-radius: 0; // get rid of weird radius on selected rows
+			&:backdrop {
+				 @include fill(backdrop, $alpha1, $header);
+			}
+			&:selected {
+				background: $selected;
+			}
+			&:not(:selected) {
+				&:not(:backdrop):hover {
+					background-image: image($accent2);
+				}
+			}
+		}
+	}
+	.view {
+		// imports nautilus tweaks
+		// dim icons in backdrop and have only labels be colored when selected
+		&:selected {
+			@extend %remove_folder_icon_tint;
+		}
+		&:backdrop {
+			//@extend %dim_icons_in_backdrop;
+		}
+	}
+	toolbar.horizontal.primary-toolbar {
+		// add border under toolbar
+		border-bottom: 1px solid $mix;
+
+		widget.linked.raised button {
+			// use proper icons for next and left in stackswitcher-like pathbar
+			&:first-child widget {
+				-gtk-icon-source: -gtk-icontheme('go-previous-symbolic'); 
+			}
+			&:last-child widget {
+				-gtk-icon-source: -gtk-icontheme('go-next-symbolic');
+			}
+		}
+		toolitem box widget * {
+			// reset toolbar button dimensions
+			min-height: 0;
+			min-width: 0;
+		}
+		.linked button {
+			// link linked buttons
+			margin-right: 0;
+		}
+		button {
+			// return non-flat buttons
+			@include click($alpha3);			
+		}
+	}
 }
 
-viewport.frame box.vertical treeview.view.places-treeview {
-// use sidebar bg color
-background-image: image($sidebar_bg_color);
-border-radius: 0; // get rid of weird radius on selected rows
-&:backdrop { background-image: image($backdrop_sidebar_bg_color); }
-&:selected { background: $selected_bg_color; }
-&:not(:selected) {
-&:not(:backdrop):hover { background-image: image($base_hover_color); }
-}
-}
-}
-
-.view {
-// imports nautilus tweaks
-// dim icons in backdrop and have only labels be colored when selected
-&:selected { @extend %remove_folder_icon_tint; }
-&:backdrop {
-//@extend %dim_icons_in_backdrop;
-}
-}
-
-toolbar.horizontal.primary-toolbar {
-// add border under toolbar
-border-bottom: 1px solid $borders_color;
-
-widget.linked.raised button {
-// use proper icons for next and left in stackswitcher-like pathbar
-&:first-child widget {-gtk-icon-source: -gtk-icontheme('go-previous-symbolic'); }
-&:last-child widget {-gtk-icon-source: -gtk-icontheme('go-next-symbolic'); }
-}
-
-toolitem box widget * {
-// reset toolbar button dimensions
-min-height: 0;
-min-width: 0;
-}
-
-.linked button {
-// link linked buttons
-margin-right: 0;
-}
-
-button {
-// return non-flat buttons
-@each $state, $t in ("", "normal"),
-(":hover", "hover"),
-(":active, &:checked", "active"),
-(":disabled", "insensitive"),
-(":disabled:active, &:disabled:checked", "insensitive-active"),
-(":backdrop", "backdrop"),
-(":backdrop:active, &:backdrop:checked", 'backdrop-active'),
-(":backdrop:disabled", 'backdrop-insensitive'),
-(":backdrop:disabled:active, &:backdrop:disabled:checked", 'backdrop-insensitive-active') {
-&#{$state} { @include button($t) }
-}
-}
-}
-}
 
 /*************
 * GNOME ToDo *
 **************/
-
 .org-gnome-Todo {
-taskrow.activatable.new-task-row button.popup.toggle {
- border-radius: 0px;
- border: none;
- border-left: 1px solid $borders-color;
- padding-left: 10px; padding-right: 10px;
- -gtk-outline-radius: 0px;
-
+	taskrow.activatable.new-task-row button.popup.toggle {
+		border-radius: 0px;
+		border: none;
+		border-left: 1px solid $mix;
+		padding-left: 10px; padding-right: 10px;
+		-gtk-outline-radius: 0px;
 }
 
 viewport.view, listbox.transparent {
- background-color: darken($base_color,5%);
- &:backdrop { background-color: $backdrop_base_color}
-}
+	background-color: $fill,5%;
+	&:backdrop {
+		background-color: $bd_fill}
+	}
 }
 
 /****************
  * GNOME Photos *
  ****************/
 //removes the black background for picture tiles
-.documents-scrolledwin.frame.frame widget flowboxchild.tile { background-color: transparent; }
+.documents-scrolledwin.frame.frame widget flowboxchild.tile {
+	background-color: transparent;
+}
 
 /***********
  * Firefox *
  ***********/
-#MozillaGtkWidget.background{
-> widget {
-> scrolledwindow > textview {
-text {
-&:selected { @extend %selected_text; border-color: $selected_bg_color;}
-}
-}
-}
-
-headerbar.titlebar {
-// Remove the round corners until firefox fixed the white border bleed at the top edges
-border-radius: 0;
-}
-
-> menu, .menu { border: none; } // Removed menu borders
-> menu > menuitem { border-radius: 0; } // Removed rounded menu corners
-
-// Adapt scrollbars a bit more to the GTK Scrollbar styling
-scrollbar {
-background-color: transparent;
-border-color: transparent;
-}
+#MozillaGtkWidget.background {
+	> widget {
+		> scrolledwindow > textview {
+			text {
+				&:selected {
+					@extend %selected_text;
+					border-color: $selected;
+				}
+			}
+		}
+	}
+	headerbar.titlebar {
+		// Remove the round corners until firefox fixed the white border bleed at the top edges
+		border-radius: 0;
+	}
+	> menu, .menu {
+		border: none;
+	}
+	> menu > menuitem {
+		border-radius: 0;
+	}
+	scrollbar {
+		background-color: transparent;
+		border-color: transparent;
+	}
 }
 
 normal-button {
-@include button(normal);
-
-&:hover {
-@include button(hover);
-}
-&:active { @include button(active)}
-
-&:disabled {@include button(insensitive);}
+	@include clickable(normal);
+	&:hover {
+		@include clickable(hover);
+	}
+	&:active {
+		@include clickable(active);
+	}
+	&:disabled {
+		@include clickable(disabled);
+	}
 }
 
 /***********
  * Ubiquity *
  ***********/
-
 #live_installer {
- #progress_mode, #title_eventbox {
- background-color: $headerbar_bg_color;
- &:backdrop { background-color: $backdrop_headerbar_bg_color; }
- }
-#dot_grid {
-.empty { background-color: transparentize($blue, 0.6); }
+	#progress_mode, #title_eventbox {
+		background-color: $fill;
+		&:backdrop {
+			background-color: $bd-fill;
+		}
+	}
+	#dot_grid {
+		.empty {
+			background-color: transparentize($accent2, $alpha2);
+		}
+	}
+	#page_title {
+		color: $color;
+	}
 }
-#page_title { color: $headerbar_fg_color; }
+#warning_dialog.background {
+	border: 1px solid $mix;
 }
-#warning_dialog.background { border: 1px solid $borders_color; }
-#dialog-action_area1 { padding-bottom: 5px; padding-right: 5px }
+#dialog-action_area1 {
+	padding-bottom: 5px;
+	padding-right: 5px
+}
 
 /***********
  * Geary *
  ***********/
-
-.geary-expanded headerbar { border: none; }
+.geary-expanded headerbar {
+	border: none;
+}
 
 /***********
  * usb-creator-gtk *
  ***********/
-
- #dialog-action_area3 { margin: 5px; }
+#dialog-action_area3 {
+	margin: 5px;
+}
