@@ -42,6 +42,7 @@ list.tweak-categories separator {
 	@at-root %remove_folder_icon_tint, scrolledwindow widget.view:selected {
 		background-color: transparentize($accent2, $alpha2); // folder icon is tinted based on this
 		background-image: image($accent2);
+		label: $white;
 		border-radius: $omega1;
 	}
 	.nautilus-list-view .view {
