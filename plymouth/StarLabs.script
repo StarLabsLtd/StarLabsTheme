@@ -1,4 +1,7 @@
 # StarLabsTheme
+# We added anitmations but our laptops are to fast to display them so they were removed.
+
+
 
 ## Set Wallpaper
 Window.SetBackgroundTopColor(0.074, 0.527, 0.703);
@@ -30,57 +33,57 @@ bg_sprite.SetPosition(Window.GetX() + Window.GetWidth() / 2 - scaled_wallpaper.G
 
 ## Animation
 
-Window.GetMaxWidth = fun (){
-  i = 0;
-  width = 0;
-  while (Window.GetWidth(i)){
-    width = Math.Max(width, Window.GetWidth(i));
-    i++;
-    }
-  return width;
-};
+#Window.GetMaxWidth = fun (){
+#  i = 0;
+#  width = 0;
+#  while (Window.GetWidth(i)){
+#    width = Math.Max(width, Window.GetWidth(i));
+#    i++;
+#    }
+#  return width;
+#};
 
-Window.GetMaxHeight = fun (){
-  i = 0;
-  height = 0;
-  while (Window.GetHeight(i)){
-    height = Math.Max(height, Window.GetHeight(i));
-    i++;
-    }
-  return height;
-};
+#Window.GetMaxHeight = fun (){
+#  i = 0;
+#  height = 0;
+#  while (Window.GetHeight(i)){
+#    height = Math.Max(height, Window.GetHeight(i));
+#    i++;
+#    }
+#  return height;
+#};
 
-anim.imagecount = 32;
-anim.target_width =  0.05 * Window.GetWidth();
-anim.target_height =  0.05 * Window.GetWidth();
+#anim.imagecount = 32;
+#anim.target_width =  0.05 * Window.GetWidth();
+#anim.target_height =  0.05 * Window.GetWidth();
 
-fun RotatedImage (index){
-	index = Math.Int(index);
-	if (!RotatedImageCache[index])
-		RotatedImageCache[index] = anim.original_image.Rotate((Math.Pi*2*index)/anim.imagecount).Scale(anim.target_width, anim.target_height);
-	return RotatedImageCache[index];
-}
+#fun RotatedImage (index){
+#	index = Math.Int(index);
+#	if (!RotatedImageCache[index])
+#		RotatedImageCache[index] = anim.original_image.Rotate((Math.Pi*2*index)/anim.imagecount).Scale(anim.target_width, anim.target_height);
+#	return RotatedImageCache[index];
+#}
 
 
-anim.image= ImageNew("animation.png");
-anim.original_image= anim.image.Scale(anim.target_width, anim.target_width);
+#anim.image= ImageNew("animation.png");
+#anim.original_image= anim.image.Scale(anim.target_width, anim.target_width);
 
-anim.sprite = SpriteNew();
-anim.sprite.SetImage(RotatedImage (0));
-anim.sprite.SetX((Window.GetX() + Window.GetWidth() - RotatedImage(0).GetWidth()) / 2);
-anim.sprite.SetY(Window.GetY() + Window.GetHeight() * 0.75);
-anim.angle = 0;
-anim.index = 0;
+#anim.sprite = SpriteNew();
+#anim.sprite.SetImage(RotatedImage (0));
+#anim.sprite.SetX((Window.GetX() + Window.GetWidth() - RotatedImage(0).GetWidth()) / 2);
+#anim.sprite.SetY(Window.GetY() + Window.GetHeight() * 0.75);
+#anim.angle = 0;
+#anim.index = 0;
 
-sprite_prompt = SpriteNew();
+#sprite_prompt = SpriteNew();
 
-fun refresh_callback () {
-	anim.index += 1;
-	anim.index %= anim.imagecount;
-	anim.sprite.SetImage(RotatedImage (anim.index));
-        #anim.sprite.SetOpacity (1);
-	motif.sprite.SetOpacity(motif.opacity);
-}
+#fun refresh_callback () {
+#	anim.index += 1;
+#	anim.index %= anim.imagecount;
+#	anim.sprite.SetImage(RotatedImage (anim.index));
+#        #anim.sprite.SetOpacity (1);
+#	motif.sprite.SetOpacity(motif.opacity);
+#}
  
 
 
