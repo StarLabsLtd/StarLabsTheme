@@ -32,35 +32,42 @@ placessidebar {
 			}
 		}
 	@at-root button.sidebar-button {
-		min-height: 26px;
-		min-width: 26px;
-		margin-top: 3px;
-		margin-bottom: 3px;
-		padding: 0;
-		border-radius: 100%;
-		-gtk-outline-radius: 100%;
-	}
-
-	&:selected:active {
-		box-shadow: none;
-	}
-	&.sidebar-placeholder-row {
-		padding: 0 8px;
-		min-height: 2px;
-		background-image: image($success);
-		background-clip: content-box;
-	}
-	&.sidebar-new-bookmark-row {
-		color: $accent2;
-	}
-	&:drop(active):not(:disabled) {
-		color: $success;
-		box-shadow: inset 0 1px $success, inset 0 -1px $success;
-		&:selected {
-			color: $white;
-			background-color: $success;
+//		min-height: 26px;
+//		min-width: 26px;
+//		margin-top: 3px;
+//		margin-bottom: 3px;
+//		padding: 0;
+//		border-radius: $omega1;
+//		-gtk-outline-radius: $omega1;
+		&:hover {
+			background-color: $fill;
+			box-shadow: $shadow2;
+			image {
+				color: $color;
+			}
 		}
 	}
+
+		&:selected:active {
+			box-shadow: none;
+		}
+		&.sidebar-placeholder-row {
+			padding: 0 8px;
+			min-height: 2px;
+			background-image: image($success);
+			background-clip: content-box;
+		}
+		&.sidebar-new-bookmark-row {
+			color: $accent2;
+		}
+		&:drop(active):not(:disabled) {
+			color: $success;
+			box-shadow: inset 0 1px $success, inset 0 -1px $success;
+			&:selected {
+				color: $white;
+				background-color: $success;
+			}
+		}
 	}
 }
 
