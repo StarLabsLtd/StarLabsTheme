@@ -1,8 +1,7 @@
 $variant: 'dark';
 $header: 'light';
 
-@import 'sass/starlabs';
-@import 'sass/functions';
+@import 'sass/_starlabs.scss';
+@import 'sass/_functions.scss';
 @import 'sass/_src.scss';
-@import 'sass/sections';
 
