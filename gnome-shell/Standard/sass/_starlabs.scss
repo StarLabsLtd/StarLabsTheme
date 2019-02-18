@@ -16,7 +16,7 @@ $warning: #c98810;
 $failure: #b20903;
 
 // Alpha & Omega
-$alpha1: 1;
+$alpha1: 0.95;
 $alpha2: 0.8;
 $alpha3: 0.2;
 $omega1: 6px;
@@ -25,10 +25,11 @@ $beta2: 10%;
 
 
 // Shadows
-$shadow1: 0 1.5px 2px rgba(0, 0, 0, 0.16), 0 1.5px 2px rgba(0, 0, 0, 0.24);
-$shadow2: 0 3px 4px rgba(0, 0, 0, 0.16 * 1.5), 0 3px 4px rgba(0, 0, 0, 0.23 * 1.5);
-$shadowa: 0 3px 9px 1px transparentize(if($variant==light, $dark1, lighten($dark1, $beta1)), $alpha3); // Window Active Shadow
-$shadowb: 0 3px 9px 1px transparent, 0 2px 6px 2px transparentize (if($variant==light, $dark1, lighten($dark1, $beta1)), $alpha3); // Window Backdrop Shadow
+$shadow1: 0 1.5px 2px transparentize(if($variant==light, $dark1, mix($white, $dark1, 50%)), $alpha2), 0 1.5px 2px transparentize(if($variant==light, $dark1, $white), $alpha2);
+$shadow2: 0 3px 4px transparentize(if($variant==light, $dark1, mix($white, $dark1, 50%)), $alpha2), 0 3px 4px transparentize(if($variant==light, $dark1, mix($white, $dark1, 50%)), $alpha2);
+
+$shadowa: 0 3px 9px 1px transparentize(if($variant==light, $dark1, lighten($dark1, $beta2)), $alpha3); // Window Active Shadow
+$shadowb: 0 3px 9px 1px transparent, 0 2px 6px 2px transparentize (if($variant==light, $dark1, lighten($dark1, $beta2)), $alpha3); // Window Backdrop Shadow
 
 // Transitions
 $time: 100ms;
@@ -39,3 +40,11 @@ $click: all 100ms cubic-bezier(0, 0, 0.2, 1);
 $tran1: all 500ms ease-out; // Used for backdrop(ing)
 $tran2: all 100ms cubic-bezier(0, 0, 0.2, 1); // Used for clicking
 
+// Derived
+$color: if($variant==light, $dark1, $white);
+$fill: if($variant==light, $white, $dark1);
+$bd-fill: lighten(if($variant==light, $white, $dark1), $beta1);
+$mix: if($variant==light, mix($white, $dark1, 25%), mix($dark1, $white, 25%));
+
+$selected: $accent2;
+$bd-selected: lighten($accent2, $beta1);
