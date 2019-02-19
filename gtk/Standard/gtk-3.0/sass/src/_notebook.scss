@@ -1,11 +1,3 @@
-// Main Window built from a list
-paned > notebook {
-	&, &:backdrop {
-//		margin: -6px -11px -12px -6px;
-//		padding: 10px;
-	}
-}
-
 notebook {
 	> header {
 		@include fill(normal, $alpha2, $header);

@@ -15,18 +15,8 @@ configure_file(input : 'THEMENAME.desktop.in',
               configuration : conf_data,
               install_dir: join_paths(get_option('datadir'), 'xsessions'))
 
-configure_file(input : 'THEMENAME-ubuntu.desktop.in',
-              output : meson.project_name()+'-ubuntu.desktop',
-              configuration : conf_data,
-              install_dir: join_paths(get_option('datadir'), 'xsessions'))
-
 configure_file(input : 'THEMENAME-wayland.desktop.in',
               output : meson.project_name()+'-wayland.desktop',
-              configuration : conf_data,
-              install_dir: join_paths(get_option('datadir'), 'wayland-sessions'))
-
-configure_file(input : 'THEMENAME-ubuntu-wayland.desktop.in',
-              output : meson.project_name()+'-ubuntu-wayland.desktop',
               configuration : conf_data,
               install_dir: join_paths(get_option('datadir'), 'wayland-sessions'))
 
@@ -37,4 +27,3 @@ configure_file(input : 'THEMENAME.gschema.override.in',
 
 meson.add_install_script('meson/install-dock-override', meson.project_name().to_lower())
 meson.add_install_script('meson/compile-schemas')
-meson.add_install_script('meson/gdm3')

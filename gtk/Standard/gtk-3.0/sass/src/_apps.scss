@@ -39,11 +39,14 @@ list.tweak-categories separator {
 			background-color: $fill;
 		}
 	}
-	@at-root %remove_folder_icon_tint, scrolledwindow widget.view:selected {
-		background-color: transparentize($accent2, $alpha2); // folder icon is tinted based on this
-		background-image: image($accent2);
-		label: $white;
-		border-radius: $omega1;
+	@at-root %remove_folder_icon_tint, scrolledwindow {
+		&, &:backdrop {
+			widget.view:selected {
+				background-color: transparentize($accent2, $alpha2); // folder icon is tinted based on this
+				background-image: image($accent2);
+				border-radius: $omega1;
+			}
+		}
 	}
 	.nautilus-list-view .view {
 		// Hide superfluous treeview drop target indication
@@ -239,6 +242,15 @@ headerbar button image ~ window decoration ~ menu separator {
 // no unique class names or id used here so this rule is as specific as it can be
 	background: $mix;
 }
+
+box > paned > notebook {
+        &, &:backdrop {
+                margin: -6px -11px -12px -6px;
+                padding: 10px;
+        }
+}
+
+
 
 /********
  * Nemo *

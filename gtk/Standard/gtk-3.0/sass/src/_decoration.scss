@@ -92,7 +92,9 @@ button.titlebutton {
 
 %selected_items {
 	background-color: $selected;
+	color: $white;
 	&:backdrop {
+		color: $white;
 		background-color: lighten($selected, $beta1);
 	}
 	@at-root %nobg_selected_items, & {
@@ -116,6 +118,7 @@ button.titlebutton {
 	}
 	&:backdrop {
 		background-color: lighten($selected, $beta1);
+		color: $white;
 		&:disabled {
 			@include clickable(disabled);
 		}

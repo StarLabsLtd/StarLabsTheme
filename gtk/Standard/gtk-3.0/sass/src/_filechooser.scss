@@ -31,22 +31,20 @@ placessidebar {
 				padding-left: 2px;
 			}
 		}
-	@at-root button.sidebar-button {
-//		min-height: 26px;
-//		min-width: 26px;
-//		margin-top: 3px;
-//		margin-bottom: 3px;
-//		padding: 0;
-//		border-radius: $omega1;
-//		-gtk-outline-radius: $omega1;
-		&:hover {
-			background-color: $fill;
-			box-shadow: $shadow2;
+		@at-root button.sidebar-button {
+			box-shadow: none;
+//			background-color: $color;
 			image {
-				color: $color;
+//				color: $fill;
+			}
+			&:hover {
+				box-shadow: none;
+//				background-color: transparentize($fill, $alpha3);
+				image {
+//					color: red;
+				}
 			}
 		}
-	}
 
 		&:selected:active {
 			box-shadow: none;

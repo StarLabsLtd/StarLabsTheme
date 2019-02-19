@@ -1,8 +1,10 @@
 tooltip {
 	&.background {
-		color: $white;
 		background-color: $selected;
 		background-clip: padding-box;
+	}
+	label {
+		color: $white;
 	}
 	border-radius: $omega1;
 	box-shadow: none;

@@ -1,7 +1,7 @@
-gnomeshell_theme_dir = join_paths(get_option('datadir'), 'gnome-shell', 'theme')
+gnomeshell_light_theme_dir = join_paths(get_option('datadir'), 'gnome-shell', 'theme')
 
 # destination directory
-install_dir = join_paths(gnomeshell_theme_dir, meson.project_name()+'-Light')
+install_dir = join_paths(gnomeshell_light_theme_dir, meson.project_name()+'-Light')
 
 # generate .css files
 theme_sources = files([
@@ -74,7 +74,7 @@ foreach style: styles
 endforeach
 
 # static files to copy
-data_sources = [
+light_data_sources = [
   'gnome-shell-theme.gresource.xml',
   'calendar-arrow-left.svg',
   'calendar-arrow-right.svg',
@@ -125,4 +125,4 @@ data_sources = [
 ]
 
 # install static data files
-install_data(data_sources, install_dir: install_dir)
+install_data(light_data_sources, install_dir: install_dir)
