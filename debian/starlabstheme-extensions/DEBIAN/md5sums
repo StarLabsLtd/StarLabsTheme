@@ -1,0 +1,16 @@
+9cbfaa25579dcbaff805be425c3574e5  usr/share/doc/starlabstheme-extensions/changelog.gz
+d69ab6a5f3131027fa491f8b22d5de65  usr/share/doc/starlabstheme-extensions/copyright
+6205688f5c6a0f58f609adc9eee33104  usr/share/glib-2.0/schemas/org.gnome.shell.extensions.indicator.gschema.xml
+a708ae57c00783f7aa6b2805f00d4c11  usr/share/gnome-shell/extensions/indicator@starlabs.systems/extension.js
+d591f5d46f962cb8c19260a6c9a2373d  usr/share/gnome-shell/extensions/indicator@starlabs.systems/icons/capslock-disabled-symbolic.svg
+9b0c0158d08d505ef3d5026fe51f85d0  usr/share/gnome-shell/extensions/indicator@starlabs.systems/icons/capslock-enabled-symbolic.svg
+0181685f3d2a931e56fffa4b17548f9b  usr/share/gnome-shell/extensions/indicator@starlabs.systems/icons/numlock-disabled-symbolic.svg
+18f5bf1f318566bcff59d29ae5835ba6  usr/share/gnome-shell/extensions/indicator@starlabs.systems/icons/numlock-enabled-symbolic.svg
+319351e30db6d269ae515c068e318d22  usr/share/gnome-shell/extensions/indicator@starlabs.systems/lockkeys.pot
+45467cd46634d9208f71708dde854ba2  usr/share/gnome-shell/extensions/indicator@starlabs.systems/metadata.json
+f8a021f2596f9f8088264624d8d2ef97  usr/share/gnome-shell/extensions/indicator@starlabs.systems/prefs.js
+f863e2edbf84f498be0ea0e54d357425  usr/share/gnome-shell/extensions/indicator@starlabs.systems/schemas/gschemas.compiled
+6205688f5c6a0f58f609adc9eee33104  usr/share/gnome-shell/extensions/indicator@starlabs.systems/schemas/org.gnome.shell.extensions.indicator.gschema.xml
+fa5cf16e44f92f85306279a5b2c9d265  usr/share/gnome-shell/extensions/indicator@starlabs.systems/stylesheet.css
+c2c9427197d50512288a96daa42918a2  usr/share/gnome-shell/extensions/indicator@starlabs.systems/utils.js
+d41d8cd98f00b204e9800998ecf8427e  usr/share/gnome-shell/extensions/ubuntu-dock@ubuntu.com/starlabs.css

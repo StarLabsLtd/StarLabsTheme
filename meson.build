@@ -1,16 +1,18 @@
 project('StarLabs',
-        version: '18.10.1',
+        version: '0.1',
         meson_version: '>= 0.45',
         license : ['GPL3', 'CC BY-SA 4.0'],
-        default_options: ['prefix=/usr'])
+        default_options: ['prefix=/usr']
+)
 
-subdir('grub')
-subdir('plymouth')
-subdir('extensions')
-subdir('icons')
 subdir('backgrounds')
-subdir('gnome-shell')
-subdir('gtk')
-subdir('sounds')
+subdir('extensions')
 subdir('font')
+subdir('gnome-shell')
+subdir('grub')
+subdir('gtk')
+subdir('icons')
+subdir('plymouth')
 subdir('sessions')
+subdir('sounds')
+

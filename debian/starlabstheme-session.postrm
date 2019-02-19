@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = "remove" ]; then
+	glib-compile-schemas /usr/share/glib-2.0/schemas
+fi
+
+#DEBHELPER#
+

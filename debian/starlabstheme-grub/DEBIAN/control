@@ -1,0 +1,10 @@
+Package: starlabstheme-grub
+Source: starlabstheme
+Version: 18.04
+Architecture: all
+Maintainer: Star Labs Systems <support@starlabs.systems>
+Installed-Size: 270
+Section: misc
+Priority: optional
+Homepage: https://starlabs.systems
+Description: Star Labs Theme.

@@ -1,0 +1,11 @@
+Package: starlabstheme-sessions
+Source: starlabstheme
+Version: 18.04
+Architecture: all
+Maintainer: Star Labs Systems <support@starlabs.systems>
+Installed-Size: 21
+Depends: dconf-gsettings-backend | gsettings-backend
+Section: misc
+Priority: optional
+Homepage: https://starlabs.systems
+Description: Star Labs Theme.
