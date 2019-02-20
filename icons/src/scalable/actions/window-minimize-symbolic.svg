@@ -40,23 +40,20 @@
      inkscape:window-height="1019"
      id="namedview6"
      showgrid="false"
-     inkscape:zoom="29.5"
-     inkscape:cx="3.6770101"
-     inkscape:cy="5.1091117"
+     inkscape:zoom="20.85965"
+     inkscape:cx="3.8925104"
+     inkscape:cy="10.354724"
      inkscape:window-x="960"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg4"
      inkscape:pagecheckerboard="true" />
-  <g
-     aria-label="_"
-     style="font-style:normal;font-weight:normal;font-size:17.80643654px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.4451609"
-     id="text818"
-     transform="matrix(1.0809642,0,0,1,-0.64771338,0)">
-    <path
-       d="M 12.6255,11.756679 V 13 H 3.3744996 v -1.243321 z"
-       style="fill:#808080;fill-opacity:1;stroke-width:0.4451609"
-       id="path820"
-       inkscape:connector-curvature="0" />
-  </g>
+  <rect
+     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.9668234;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     id="rect816-3"
+     width="2"
+     height="10"
+     x="-13.000001"
+     y="3"
+     transform="rotate(-90)" />
 </svg>

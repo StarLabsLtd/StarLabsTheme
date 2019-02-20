@@ -41,55 +41,45 @@
      id="namedview6"
      showgrid="false"
      inkscape:zoom="20.85965"
-     inkscape:cx="7.1685346"
-     inkscape:cy="12.206146"
+     inkscape:cx="9.3096674"
+     inkscape:cy="10.354724"
      inkscape:window-x="960"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg4"
      inkscape:pagecheckerboard="true" />
   <g
-     aria-label="_"
-     style="font-style:normal;font-weight:normal;font-size:17.80643654px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.4451609"
-     id="text818"
-     transform="matrix(1.0809642,0,0,1,-0.64771338,0)">
-    <path
-       d="M 12.6255,11.756679 V 13 H 3.3744996 v -1.243321 z"
-       style="fill:#808080;fill-opacity:1;stroke-width:0.4451609"
-       id="path820"
-       inkscape:connector-curvature="0" />
-  </g>
-  <g
-     transform="matrix(1.0809642,0,0,1,-0.64771338,-8.7566785)"
-     aria-label="_"
-     style="font-style:normal;font-weight:normal;font-size:17.80643654px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.4451609"
-     id="text818-3">
-    <path
-       d="M 12.6255,11.756679 V 13 H 3.3744996 v -1.243321 z"
-       style="fill:#808080;fill-opacity:1;stroke-width:0.4451609"
-       id="path820-6"
-       inkscape:connector-curvature="0" />
-  </g>
-  <g
-     transform="matrix(0,-1.0809642,1,0,-8.7566791,16.647714)"
-     aria-label="_"
-     style="font-style:normal;font-weight:normal;font-size:17.80643654px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.4451609"
-     id="text818-3-7">
-    <path
-       d="M 12.6255,11.756679 V 13 H 3.3744996 v -1.243321 z"
-       style="fill:#808080;fill-opacity:1;stroke-width:0.4451609"
-       id="path820-6-5"
-       inkscape:connector-curvature="0" />
-  </g>
-  <g
-     transform="matrix(0,-1.0809642,1,0,1.271e-7,16.647713)"
-     aria-label="_"
-     style="font-style:normal;font-weight:normal;font-size:17.80643654px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.4451609"
-     id="text818-3-3">
-    <path
-       d="M 12.6255,11.756679 V 13 H 3.3744996 v -1.243321 z"
-       style="fill:#808080;fill-opacity:1;stroke-width:0.4451609"
-       id="path820-6-56"
-       inkscape:connector-curvature="0" />
+     id="g843"
+     transform="translate(0,0.75736094)">
+    <rect
+       transform="rotate(-90)"
+       y="3"
+       x="-12.24264"
+       height="10"
+       width="2"
+       id="rect816-3"
+       style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.9668234;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <rect
+       y="2.2426391"
+       x="11"
+       height="10"
+       width="2"
+       id="rect816-3-3"
+       style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.9668234;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <rect
+       transform="rotate(90)"
+       y="-13"
+       x="2.2426391"
+       height="10"
+       width="2"
+       id="rect816-3-6"
+       style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.9668234;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <rect
+       y="2.2426386"
+       x="3"
+       height="10"
+       width="2"
+       id="rect816-3-7"
+       style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.9668234;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
   </g>
 </svg>
