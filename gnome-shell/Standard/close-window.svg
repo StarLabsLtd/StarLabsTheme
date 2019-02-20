@@ -13,7 +13,7 @@
    height="32"
    id="svg4486"
    version="1.1"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
    viewBox="0 0 32 32"
    sodipodi:docname="close-window.svg">
   <defs
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="11.2"
-     inkscape:cx="-1.9278787"
-     inkscape:cy="10.075645"
+     inkscape:cx="-18.713593"
+     inkscape:cy="9.7185021"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -35,11 +35,11 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1853"
-     inkscape:window-height="1136"
-     inkscape:window-x="1433"
+     inkscape:window-width="1920"
+     inkscape:window-height="1539"
+     inkscape:window-x="1920"
      inkscape:window-y="27"
-     inkscape:window-maximized="1"
+     inkscape:window-maximized="0"
      inkscape:measure-start="-6.9448,18.1196"
      inkscape:measure-end="16.2887,3.34613" />
   <metadata
@@ -50,7 +50,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -59,21 +59,15 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(290.21429,-509.86219)">
-    <g
-       style="display:inline;stroke-width:2.07407451"
-       transform="matrix(1.8222718,0,0,1.8222718,-533.19382,505.36163)"
-       id="layer1-6"
-       inkscape:label="Layer 1">
-      <path
-         id="path4141"
-         d="M 142.11905,3.8416665 A 7.4083333,7.4083333 0 0 0 134.71071,11.25 7.4083333,7.4083333 0 0 0 142.11905,18.658334 7.4083333,7.4083333 0 0 0 149.52738,11.25 7.4083333,7.4083333 0 0 0 142.11905,3.8416665 Z"
-         style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#dd4814;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:35.12099457;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
-         inkscape:connector-curvature="0" />
-      <path
-         id="path4170"
-         d="m 139.31818,7.7008631 2.80087,2.8008629 2.80086,-2.8008629 0.74827,0.7482734 -2.80086,2.8008635 2.80086,2.800864 -0.74827,0.748273 -2.80086,-2.800864 -2.80087,2.800864 -0.74827,-0.748273 2.80086,-2.800864 -2.80086,-2.8008635 z"
-         style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:35.12099457;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
-         inkscape:connector-curvature="0" />
-    </g>
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#2195f2;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:63.99999619;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+       d="m -274.21428,512.36219 a 13.499997,13.499997 0 0 0 -13.50001,13.5 13.499997,13.499997 0 0 0 13.50001,13.5 13.499997,13.499997 0 0 0 13.49999,-13.5 13.499997,13.499997 0 0 0 -13.49999,-13.5 z"
+       id="path4141" />
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:63.99999619;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+       d="m -279.31823,519.3947 5.10395,5.10393 5.10393,-5.10393 1.36355,1.36355 -5.10393,5.10394 5.10393,5.10393 -1.36355,1.36356 -5.10393,-5.10394 -5.10395,5.10394 -1.36355,-1.36356 5.10393,-5.10393 -5.10393,-5.10394 z"
+       id="path4170" />
   </g>
 </svg>
