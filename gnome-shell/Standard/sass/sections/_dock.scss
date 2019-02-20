@@ -73,7 +73,8 @@
 	}
 
 	&.opaque {
-		@include fill(normal,solid);
+		@extend %shell-window;
+//		@include fill(normal, solid);
 	}
 
 	&.transparent {
