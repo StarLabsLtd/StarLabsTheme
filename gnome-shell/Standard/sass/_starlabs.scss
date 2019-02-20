@@ -25,8 +25,8 @@ $beta2: 10%;
 
 
 // Shadows
-$shadow1: 0 1.5px 2px transparentize(if($variant==light, $dark1, black), $alpha2), 0 1.5px 2px transparentize(if($variant==light, $dark1, black), $alpha2);
-$shadow2: 0 3px 4px transparentize(if($variant==light, $dark1, black), $alpha2), 0 3px 4px transparentize(if($variant==light, $dark1, black), $alpha2);
+$shadow1: 0 1.5px 2px if($variant==light, transparentize($dark1, $alpha2), transparentize(black, $alpha3)), 0 1.5px 2px if($variant==light, transparentize($dark1, $alpha2), transparentize(black, $alpha3));
+$shadow2: 0 3px 4px if($variant==light, transparentize($dark1, $alpha2), transparentize(black, $alpha3)), 0 3px 4px if($variant==light, transparentize($dark1, $alpha2), transparentize(black, $alpha3));
 
 $shadowa: 0 3px 9px 1px transparentize(if($variant==light, $dark1, black), $alpha3); // Window Active Shadow
 $shadowb: 0 3px 9px 1px transparent, 0 2px 6px 2px transparentize (if($variant==light, $dark1, black), $alpha3); // Window Backdrop Shadow

@@ -35,7 +35,6 @@ stage {
 
 %shell-button {
         border-right-width: 1px;
-
 	@include click($alpha2);
 	border-radius: 0;
         padding: 12px;
@@ -62,7 +61,7 @@ stage {
 	}
 }
 %shell-window {
-        background: if($variant==light, transparentize($white, $alpha3), transparentize($dark1, $alpha3));
+        background:if($variant==light, transparentize($white, $alpha3), transparentize($dark1, $alpha3));
         background-image: image(if($variant==dark, transparentize($dark1, $alpha2), transparentize($white, $alpha2)));
 
 //	@include fill(normal, $alpha3);

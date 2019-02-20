@@ -27,4 +27,4 @@ show-battery-percentage=true
 allow-amplified-volume=true
 
 [org.gnome.shell.extensions.dash-to-dock]
-transparency-mode=FIXED
+transparency-mode='FIXED'
