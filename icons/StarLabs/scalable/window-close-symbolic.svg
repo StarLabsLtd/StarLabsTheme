@@ -21,7 +21,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -40,23 +40,23 @@
      inkscape:window-height="1019"
      id="namedview6"
      showgrid="false"
-     inkscape:zoom="20.85965"
-     inkscape:cx="8.3029391"
-     inkscape:cy="10.354724"
+     inkscape:zoom="14.75"
+     inkscape:cx="4.9713365"
+     inkscape:cy="1.2512854"
      inkscape:window-x="960"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg4"
-     inkscape:pagecheckerboard="true" />
-  <g
-     aria-label="X"
+     inkscape:pagecheckerboard="false" />
+  <text
+     xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:14.40922165px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.36023054"
-     id="text821"
-     transform="matrix(1.0809969,0,0,1,-0.64797504,-1e-7)">
-    <path
-       d="M 10.795389,13 Q 10.060519,11.818444 8.5043226,9.685879 L 7.9279538,8.8789626 Q 6.904899,10.291066 6.2708933,11.184438 5.6512968,12.063401 5.0605187,13 H 3.3746397 Q 4.0662824,11.948127 4.8155619,10.925072 5.5648414,9.8876081 6.8040345,8.2593661 L 7.0922189,7.8847263 6.7463976,7.4236312 Q 4.5706051,4.5561961 3.5475504,3.0000002 H 5.3775216 Q 6.1268011,4.2103748 7.4092218,5.9538906 L 8.0144091,6.8040347 Q 8.720461,5.8386168 9.4121036,4.8587898 10.103746,3.8645535 10.651297,3.0000002 h 1.685879 Q 11.054755,4.9452451 8.850144,7.8126802 10.190202,9.556196 11.025936,10.708934 11.861671,11.847262 12.62536,13 Z"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#808080;fill-opacity:1;stroke-width:0.36023054"
-       id="path816"
-       inkscape:connector-curvature="0" />
-  </g>
+     x="3.3314121"
+     y="13"
+     id="text821"><tspan
+       sodipodi:role="line"
+       id="tspan819"
+       x="3.3314121"
+       y="13"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#808080;fill-opacity:1;stroke-width:0.36023054">X</tspan></text>
 </svg>
