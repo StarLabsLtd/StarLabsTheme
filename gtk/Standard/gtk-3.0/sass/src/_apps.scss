@@ -39,7 +39,7 @@ list.tweak-categories separator {
 			background-color: $fill;
 		}
 	}
-	@at-root %remove_folder_icon_tint, scrolledwindow {
+	@at-root %remove_folder_icon_tint, scrolledwindow widget.view:selected {
 		&, &:backdrop {
 			widget.view:selected {
 				background-color: transparentize($accent2, $alpha2); // folder icon is tinted based on this

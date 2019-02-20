@@ -33,19 +33,26 @@ widget:selected {
 	color: $white;
 }
 
-.view, %view {
+.view {
+	@include fill(normal, $alpha3, $variant);
+	&:backdrop {
+		@include fill(backdrop, $alpha3, $variant);
+	}
 	&:selected {
 		&:focus, & {
-			@extend %selected_items;
+			@include fill(normal, $alpha3, $accent2);
 		}
 	}
 }
 
-scrolledwindow .view {
-	@include fill(normal, solid, $variant, false);
+window > box > box > .view {
+	background-color: transparent;
+	&:backdrop {
+		background-color: transparent;
+	}
 }
 
-.view, textview {
+textview {
 	text {
 		selection {
 			&:focus, & {
