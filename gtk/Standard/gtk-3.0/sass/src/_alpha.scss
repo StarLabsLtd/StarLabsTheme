@@ -20,14 +20,7 @@
 	-gtk-secondary-caret-color: $accent2;
 }
 
-//$ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 $asset_suffix: if($variant=='dark', '-dark', '');
-//$omega1: 4px;
-//$medium_radius: 6px;
-//$large_radius: 12px;
-//$backdrop: all 200ms ease-out;
-//$button_transition: all 0.4s ease-out;
-//$popover_shadow: 0 2px 5px transparentize(black, 0.75);
 
 
 @define-color theme_fg_color #{"" +$color};
@@ -46,7 +39,7 @@ $asset_suffix: if($variant=='dark', '-dark', '');
 @define-color theme_unfocused_selected_bg_color #{"" +$selected};
 @define-color theme_unfocused_selected_fg_color #{"" + $white};
 @define-color unfocused_insensitive_color #{"" + $mix};
-@define-color borders #{"" +$mix};
+@define-color borders #{"" +$selected};
 @define-color unfocused_borders #{"" +$mix};
 @define-color warning_color #{"" +$warning};
 @define-color error_color #{"" +$failure};

@@ -15,7 +15,7 @@ treeview.view {
 		@include selected;
 	}
 	&:backdrop {
-		@include fill(backdrop, solid, $variant);
+//		@include fill(backdrop, solid, $variant);
 	}
 	&:drop(active) {
 		background-color: blue; // Remove?

@@ -34,9 +34,9 @@ widget:selected {
 }
 
 .view {
-	@include fill(normal, $alpha3, $variant);
+//	@include fill(normal, $alpha3, $variant);
 	&:backdrop {
-		@include fill(backdrop, $alpha3, $variant);
+//		@include fill(backdrop, $alpha3, $variant);
 	}
 	&:selected {
 		&:focus, & {

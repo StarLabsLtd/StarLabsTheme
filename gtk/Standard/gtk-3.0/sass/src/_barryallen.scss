@@ -25,24 +25,38 @@ headerbar, %titlebar {
 window > box > box,
 window > box > box > box,
 window > box > stack {
-        &:last-child, &:only-child {
-                @include fill(normal);
-                &:backdrop {
-                        @include fill(backdrop);
-                }
-        }
+&:last-child, &:only-child {
+@include fill(normal);
+&:backdrop {
+@include fill(backdrop);
+}
+}
 }
 notebook, widget viewport, stack > widget > box > stack box {
-        @include fill(normal);
-        &:backdrop {
-                @include fill(backdrop);
-        }
+@include fill(normal);
+&:backdrop {
+@include fill(backdrop);
+}
 }
 
 
-window > box > box > treeview.view, window > box > paned > scrolledwindow > .viewport {
-        &, &:backdrop {
-                background-color: transparent;
-        }
+window > box > box > treeview.view, window > box > box > scrolledwindow {
+background-color: transparent;
+&:backdrop {
+		background-color: transparent;
+	}
 }
 
+window > box > paned > scrolledwindow > treeview > .view:selected {
+	&:selected {
+		@include clickable(active, solid);
+		&:backdrop {
+			@include clickable(backdrop-active, solid);
+		}
+		label, image {
+			&:backdrop, & {
+				color: if($variant==light, $dark1, $white);
+			}
+		}
+	}
+}
