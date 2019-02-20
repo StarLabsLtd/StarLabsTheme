@@ -40,9 +40,9 @@
      inkscape:window-height="1019"
      id="namedview6"
      showgrid="false"
-     inkscape:zoom="20.85965"
-     inkscape:cx="7.8862934"
-     inkscape:cy="2.1906182"
+     inkscape:zoom="10.429825"
+     inkscape:cx="-0.28118087"
+     inkscape:cy="7.498369"
      inkscape:window-x="960"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
@@ -56,7 +56,7 @@
   <g
      id="g1151"
      transform="matrix(-0.09940491,-0.09940491,0.09940491,-0.09940491,-6.620568,12.763385)"
-     style="fill:#808080;fill-opacity:1">
+     style="fill:#808080;fill-opacity:1;stroke:none">
     <rect
        ry="0"
        y="92.5"
@@ -84,5 +84,5 @@
        id="tspan819"
        x="3.1085472"
        y="10.313572"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';stroke-width:0.31380752;fill:#808080;fill-opacity:1;">+</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';stroke-width:0.31380752;fill:#808080;fill-opacity:1;stroke:none;">+</tspan></text>
 </svg>
