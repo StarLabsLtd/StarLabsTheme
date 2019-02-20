@@ -12,20 +12,58 @@
 	-GtkWidget-text-handle-height: 24;
 	-GtkDialog-button-spacing: 4;
 	-GtkDialog-action-area-border: 0;
-	outline-color: green; // gtkalpha(currentColor, 0.3);
+//	outline-color: green; // gtkalpha(currentColor, 0.3);
 //	outline-style: dashed;
-//	outline-offset: 0px;
-//	outline-width: 1px;
+	outline-offset: 0px;
+	outline-width: 1px;
 	-gtk-outline-radius: 0px;
 	-gtk-secondary-caret-color: $accent2;
 }
 
-$ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+//$ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 $asset_suffix: if($variant=='dark', '-dark', '');
-$omega1: 4px;
-$medium_radius: 6px;
-$large_radius: 12px;
-$backdrop: all 200ms ease-out;
-$button_transition: all 0.4s ease-out;
-$popover_shadow: 0 2px 5px transparentize(black, 0.75);
+//$omega1: 4px;
+//$medium_radius: 6px;
+//$large_radius: 12px;
+//$backdrop: all 200ms ease-out;
+//$button_transition: all 0.4s ease-out;
+//$popover_shadow: 0 2px 5px transparentize(black, 0.75);
+
+
+@define-color theme_fg_color #{"" +$color};
+@define-color theme_text_color #{"" +$color};
+@define-color theme_bg_color #{"" +$fill};
+@define-color theme_base_color #{"" +$fill};
+@define-color theme_selected_bg_color #{"" +$accent2};
+@define-color theme_selected_fg_color #{"" +$white};
+@define-color insensitive_bg_color #{"" +$bd-fill};
+@define-color insensitive_fg_color #{"" +$mix};
+@define-color insensitive_base_color #{"" +$fill};
+@define-color theme_unfocused_fg_color #{"" +$color};
+@define-color theme_unfocused_text_color #{"" +$color};
+@define-color theme_unfocused_bg_color #{"" +$bd-fill};
+@define-color theme_unfocused_base_color #{"" +$bd-fill};
+@define-color theme_unfocused_selected_bg_color #{"" +$selected};
+@define-color theme_unfocused_selected_fg_color #{"" + $white};
+@define-color unfocused_insensitive_color #{"" + $mix};
+@define-color borders #{"" +$mix};
+@define-color unfocused_borders #{"" +$mix};
+@define-color warning_color #{"" +$warning};
+@define-color error_color #{"" +$failure};
+@define-color success_color #{"" +$success};
+//@define-color destructive_color #{$destructive_color}
+@define-color wm_title #{$color};
+@define-color wm_unfocused_title #{$color};
+@define-color wm_highlight #{"" + $accent2};
+@define-color wm_borders_edge #{"" + $mix};
+@define-color wm_bg_a #{$fill};
+@define-color wm_bg_b #{$fill};
+@define-color wm_shadow alpha(black, 0.35);
+@define-color wm_border alpha(black, 0.18);
+@define-color wm_button_hover_color_a #{$accent2};
+@define-color wm_button_hover_color_b #{$accent2};
+@define-color wm_button_active_color_a #{$accent2};
+@define-color wm_button_active_color_b #{$accent3};
+@define-color wm_button_active_color_c #{accent3};
+@define-color content_view_bg #{"" + $fill};
 

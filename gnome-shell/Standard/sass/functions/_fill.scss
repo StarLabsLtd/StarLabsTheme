@@ -1,4 +1,4 @@
-@mixin fill($type, $transparent: solid, $style:$variant, $element: true) {
+@mixin fill($type, $transparent: solid, $style:$variant, $element:true) {
 	$color: if($style==light, $dark1, $white);
 	$fill: if($style==light, $white, if($style==dark, $dark1, $style));
 	@if $type==normal {

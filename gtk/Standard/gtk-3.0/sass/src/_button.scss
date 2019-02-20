@@ -113,7 +113,7 @@
 		@include click($alpha3);
 	}
 
-//overlay / OSD style
+	//overlay / OSD style
 	@at-root %osd_button, .osd & {
 		@include click($alpha3, $variant, false, $alpha1);
 		&.flat {

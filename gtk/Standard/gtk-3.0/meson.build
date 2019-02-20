@@ -67,7 +67,6 @@ gtk3_scss_dependencies = [
   'sass/src/_touchcopypaste.scss',
   'sass/src/_treeview.scss',
   'sass/src/_barryallen.scss',
-
 ]
 
 gtk3_assets = [

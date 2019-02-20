@@ -39,3 +39,10 @@ notebook, widget viewport, stack > widget > box > stack box {
         }
 }
 
+
+window > box > box > treeview.view, window > box > paned > scrolledwindow > .viewport {
+        &, &:backdrop {
+                background-color: transparent;
+        }
+}
+

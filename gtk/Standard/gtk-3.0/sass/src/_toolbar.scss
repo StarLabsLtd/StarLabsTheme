@@ -10,7 +10,7 @@
 toolbar {
 	@extend %toolbar;
 	padding: 4px 3px 3px 4px;
-	button.flat {
+	button.flat, button {
 		@include click($alpha3, $variant);
 	}
 	.osd & {
@@ -65,5 +65,8 @@ toolbar {
 searchbar, .location-bar {
 	@extend %toolbar;
 	background-color: transparent;
+	&:backdrop {
+		background-color: transparent;
+	}
 	padding: 3px;
 }

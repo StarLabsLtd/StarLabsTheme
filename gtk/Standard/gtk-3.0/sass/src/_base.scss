@@ -45,13 +45,6 @@ widget:selected {
 	}
 }
 
-window > box > box > .view {
-	background-color: transparent;
-	&:backdrop {
-		background-color: transparent;
-	}
-}
-
 textview {
 	text {
 		selection {

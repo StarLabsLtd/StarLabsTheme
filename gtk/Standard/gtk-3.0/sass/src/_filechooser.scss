@@ -71,11 +71,11 @@ placessidebar {
 
 placesview {
 	.server-list-button > image {
-		transition: 200ms $ease-out-quad;
+		transition: $click;
 		-gtk-icon-transform: rotate(0turn);
 	}
 	.server-list-button:checked > image {
-		transition: 200ms $ease-out-quad;
+		transition: $click;
 		-gtk-icon-transform: rotate(-0.5turn);
 	}
 	row.activatable:hover {

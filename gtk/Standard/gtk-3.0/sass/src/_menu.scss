@@ -42,7 +42,7 @@ menu, .menu, .context-menu {
 		@include fill(backdrop);
 	}
 	menuitem {
-		transition: all 100ms $ease-out-quad;
+		transition: $click;
 		min-height: 16px;
 		min-width: 36px;
 		padding: 5px 6px;

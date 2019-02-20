@@ -95,7 +95,7 @@ button.titlebutton {
 	color: $white;
 	&:backdrop {
 		color: $white;
-		background-color: lighten($selected, $beta1);
+		background-color: $bd-selected;
 	}
 	@at-root %nobg_selected_items, & {
 		color: $color;
