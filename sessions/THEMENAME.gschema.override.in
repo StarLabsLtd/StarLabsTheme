@@ -25,3 +25,6 @@ show-battery-percentage=true
 
 [com.ubuntu.sound:@ThemeName@]
 allow-amplified-volume=true
+
+[org.gnome.shell.extensions.dash-to-dock]
+transparency-mode=FIXED
