@@ -73,19 +73,17 @@
 	}
 
 	&.opaque {
-		@extend %shell-window;
-//		@include fill(normal, solid);
+		background-color: transparentize(red, $alpha3);
 	}
 
 	&.transparent {
-		@extend %shell-window;
+		background-color: transparentize(red, $alpha2);
 	}
 
 	.number-overlay {
 		@include fill(normal, $alpha3, $accent2);
 		text-align: center;
 	}
-
 	.notification-badge {
 		@include fill(normal, $alpha3, $accent2);
 		padding: 0.2em 0.5em;
@@ -104,9 +102,14 @@
 }
 
 #dashtodockContainer {
-	&.opaque, &.solid {
-		@extend %shell-window;
-	}
+	background-color: transparentize($fill, $alpha2) !important;
+        &.opaque {
+                background-color: transparentize(red, $alpha3);
+        }
+
+        &.transparent {
+                background-color: transparentize(red, $alpha2);
+        }
 	&.shrink #dash, &.dashtodock #dash {
 		border: none !important;
 		//box-shadow: inset 0 1px 2px -1px rgba(0, 0, 0, 0.4) !important;
@@ -138,3 +141,4 @@
 		}
 	}
 }
+

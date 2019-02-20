@@ -14,4 +14,4 @@ override_sources = [
 
 install_data(override_sources, install_dir: install_dir)
 
-meson.add_install_script('sh', '-c', 'update-grub')
+# meson.add_install_script('sh', '-c', 'update-grub')

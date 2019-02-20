@@ -46,7 +46,7 @@ list.tweak-categories separator {
 	@at-root %remove_folder_icon_tint, scrolledwindow widget.view:selected {
 		&, &:backdrop {
 			widget.view:selected {
-				background-color: transparentize($accent2, $alpha2); // folder icon is tinted based on this
+				background-color: transparentize($accent2, $alpha1); // folder icon is tinted based on this
 				background-image: image($accent2);
 				border-radius: $omega1;
 			}

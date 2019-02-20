@@ -1,4 +1,10 @@
-starlabstheme (18.04) cosmic; urgency=medium
+starlabstheme-master (0.0.2) cosmic; urgency=medium
+
+  * Fixed Ubuntu Dock
+
+ -- Sean Rhodes <sean@starlabs.systems>  Wed, 20 Feb 2019 14:17:24 +0000
+
+starlabstheme-master (0.0.1) cosmic; urgency=medium
 
   * Initial release. 
 

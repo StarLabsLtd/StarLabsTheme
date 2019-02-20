@@ -1,4 +1,4 @@
-Source: starlabstheme
+Source: starlabstheme-master
 Section: misc
 Priority: optional
 Maintainer: Star Labs Systems <support@starlabs.systems>
@@ -10,6 +10,11 @@ Standards-Version: 4.1.5
 Homepage: https://starlabs.systems
 Vcs-Browser: https://github.com/StarLabsLtd/StarLabsTheme
 Vcs-Git: https://github.com/StarLabsLtd/StarLabsTheme.git
+
+Package: starlabstheme
+Architecture: all
+Description: Star Labs Theme
+Depends: starlabstheme-backgrounds, starlabstheme-extensions, starlabstheme-font, starlabstheme-gnome-shell, starlabstheme-grub, starlabstheme-gtk, starlabstheme-icons, starlabstheme-plymouth, starlabstheme-session, starlabstheme-sounds
 
 Package: starlabstheme-backgrounds
 Architecture: all

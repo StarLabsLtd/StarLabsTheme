@@ -15,13 +15,16 @@ if [ -n "${XDG_DATA_DIRS##*/snap/starlabstheme/current/share/*}" ]; then
     export XDG_DATA_DIRS
 fi
 
-gtk2_starlabstheme="/snap/starlabstheme/current/share/themes/starlabstheme/gtk-2.0/gtkrc"
-if [ -z "$GTK2_RC_FILES" ]; then
-    GTK2_RC_FILES=$gtk2_starlabstheme
-elif [ -n "${GTK2_RC_FILES##*$gtk2_starlabstheme*}" ]; then
-    GTK2_RC_FILES=$gtk2_starlabstheme:$GTK2_RC_FILES
+current=$(gsettings get org.gnome.desktop.interface gtk-theme)
+
+if [ $current = "'StarLabs'" ]; then
+  GTK2_RC_FILES="/snap/starlabstheme/current/share/themes/StarLabs/gtk-2.0/gtkrc"
+elif [ $current = "'StarLabs-Dark'" ]; then
+  GTK2_RC_FILES="/snap/starlabstheme/current/share/themes/StarLabs-Dark/gtk-2.0/gtkrc"
+else
+  GTK2_RC_FILES=""
 fi
+
 export GTK2_RC_FILES
 
 gnome-session --session=ubuntu
-

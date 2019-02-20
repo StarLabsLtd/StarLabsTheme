@@ -44,7 +44,7 @@ $asset_suffix: if($variant=='dark', '-dark', '');
 @define-color warning_color #{"" +$warning};
 @define-color error_color #{"" +$failure};
 @define-color success_color #{"" +$success};
-//@define-color destructive_color #{$destructive_color}
+//@define-color destructive_color #{$failure}
 @define-color wm_title #{$color};
 @define-color wm_unfocused_title #{$color};
 @define-color wm_highlight #{"" + $accent2};

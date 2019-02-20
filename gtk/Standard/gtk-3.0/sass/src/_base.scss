@@ -33,6 +33,10 @@ widget:selected {
 	color: $white;
 }
 
+overlay > notebook > stack > box > grid > overlay scrolledwindow widget {
+	background-color: transparentize($white, $alpha2);
+}
+
 .view {
 //	@include fill(normal, $alpha3, $variant);
 	&:backdrop {
@@ -94,23 +98,23 @@ flowbox {
 }
 
 label {
-	caret-color: currentColor;
-	outline-offset: 1px;
-	&:selected {
-		@extend %nobg_selected_items;
-	}
-	selection {
-		@extend %selected_text;
-	}
-	counter-label {
-		background-color: $selected;
-	}
-	&:disabled {
-		@include clickable(disabled);
-		selection {
-			@extend %selected_items:disabled;
-		}
-	}
+//	caret-color: currentColor;
+//	outline-offset: 1px;
+//	&:selected {
+//		@extend %nobg_selected_items;
+//	}
+//	selection {
+//		@extend %selected_text;
+//	}
+//	counter-label {
+//		background-color: $selected;
+//	}
+//	&:disabled {
+//		@include clickable(disabled);
+//		selection {
+//			@extend %selected_items:disabled;
+//		}
+//	}
 }
 
 .dim-label {
