@@ -1,3 +1,15 @@
+starlabstheme-master (0.0.42) cosmic; urgency=medium
+
+  * Fixed installer and remove
+
+ -- Sean Rhodes <sean@starlabs.systems>  Thu, 21 Feb 2019 22:05:10 +0000
+
+starlabstheme-master (0.0.41) cosmic; urgency=medium
+
+  * Fixed typo
+
+ -- Sean Rhodes <sean@starlabs.systems>  Thu, 21 Feb 2019 08:45:06 +0000
+
 starlabstheme-master (0.0.4) cosmic; urgency=medium
 
   * Fixed icon installer removal

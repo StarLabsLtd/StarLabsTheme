@@ -1,10 +1,10 @@
 #!/bin/sh
 
-set -e
+#	set -e
 
-if [ "$1" = configure ]; then
-	gtk-update-icon-cache -qtf /usr/share/icons/StarLabs
-fi
+#	if [ "$1" = configure ]; then
+#		gtk-update-icon-cache -qtf /usr/share/icons/StarLabs
+#	fi
 
 #DEBHELPER#
 
