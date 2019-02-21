@@ -11,7 +11,7 @@
    width="16"
    version="1.1"
    id="svg4"
-   sodipodi:docname="list-add-symbolic.svg"
+   sodipodi:docname="folder-download-symbolic.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
      id="metadata10">
@@ -21,7 +21,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -36,34 +35,20 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="960"
+     inkscape:window-width="1920"
      inkscape:window-height="1019"
      id="namedview6"
      showgrid="false"
-     inkscape:zoom="20.85965"
-     inkscape:cx="0.39293102"
-     inkscape:cy="10.354724"
-     inkscape:window-x="960"
+     inkscape:zoom="1.3037281"
+     inkscape:cx="121.27149"
+     inkscape:cy="-0.97478329"
+     inkscape:window-x="0"
      inkscape:window-y="27"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg4"
-     inkscape:pagecheckerboard="true" />
-  <g
-     id="g818">
-    <rect
-       y="3"
-       x="7"
-       height="10"
-       width="2"
-       id="rect816-3-3"
-       style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.9668234;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
-    <rect
-       transform="rotate(90)"
-       y="-13"
-       x="7"
-       height="10"
-       width="2"
-       id="rect816-3-6"
-       style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.9668234;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
-  </g>
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <path
+     inkscape:connector-curvature="0"
+     style="display:inline;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.58760148;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 5.8183615,0 v 4.36328 4.36328 h -2.181643 l 4.363283,5.81836 4.3632795,-5.81836 h -2.18164 V 4.36328 0 Z m 2.18164,14.54492 H 3.6367185 V 16 h 4.363283 4.3632795 v -1.45508 z"
+     id="rect820-6" />
 </svg>
