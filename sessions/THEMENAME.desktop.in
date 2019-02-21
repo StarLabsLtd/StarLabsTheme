@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=@ThemeName@ on Ubuntu
+Name=@ThemeName@
 Comment=This session logs you with @ThemeName@
 Exec=env GNOME_SHELL_SESSION_MODE=@LowerCaseThemeName@ gnome-session
 TryExec=gnome-session
