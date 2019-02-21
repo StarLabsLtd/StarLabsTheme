@@ -40,7 +40,7 @@
      id="namedview6"
      showgrid="false"
      inkscape:zoom="32"
-     inkscape:cx="1.0239884"
+     inkscape:cx="6.9614884"
      inkscape:cy="17.808599"
      inkscape:window-x="0"
      inkscape:window-y="27"
@@ -51,4 +51,12 @@
      d="M 5.3214277,0.5 3.1785716,2.6428571 8.5357136,7.9999997 3.1785716,13.357142 5.3214277,15.5 10.678572,10.142858 12.821428,7.9999997 10.678572,5.8571433 Z"
      id="rect816-3-7-5"
      inkscape:connector-curvature="0" />
+  <rect
+     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.9668234;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     id="rect816-3-6"
+     width="2"
+     height="10"
+     x="-16"
+     y="-13"
+     transform="scale(-1)" />
 </svg>
