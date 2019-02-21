@@ -11,7 +11,7 @@
    width="16"
    version="1.1"
    id="svg10"
-   sodipodi:docname="network-wireless-signal-none-secure-symbolic.svg"
+   sodipodi:docname="network-wireless-signal-ok-symbolic.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
      id="metadata16">
@@ -141,8 +141,8 @@
      id="namedview12"
      showgrid="false"
      inkscape:zoom="20.85965"
-     inkscape:cx="-5.0278562"
-     inkscape:cy="10.871795"
+     inkscape:cx="4.1285774"
+     inkscape:cy="11.063553"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -158,12 +158,12 @@
      id="path900-5"
      clip-path="url(#clipPath1113)" />
   <path
-     style="opacity:0.5;fill:#808080;fill-opacity:1;stroke:none;stroke-width:2.16671753;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:2.16671753;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
      d="M 8 6 A 10 10 0 0 0 -2 16 A 10 10 0 0 0 8 26 A 10 10 0 0 0 18 16 A 10 10 0 0 0 8 6 z M 8 9 A 7 7 0 0 1 15 16 A 7 7 0 0 1 8 23 A 7 7 0 0 1 1 16 A 7 7 0 0 1 8 9 z "
      id="path900-5-6"
      clip-path="url(#clipPath1117)" />
   <path
-     style="opacity:0.5;fill:#808080;fill-opacity:1;stroke:none;stroke-width:1.51670229;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:1.51670229;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
      d="M 8 9 A 7 7 0 0 0 1 16 A 7 7 0 0 0 8 23 A 7 7 0 0 0 15 16 A 7 7 0 0 0 8 9 z M 8 12 A 4 4 0 0 1 12 16 A 4 4 0 0 1 8 20 A 4 4 0 0 1 4 16 A 4 4 0 0 1 8 12 z "
      id="path900-5-6-2"
      clip-path="url(#clipPath1121)" />
@@ -174,9 +174,4 @@
      cy="16"
      r="4"
      clip-path="url(#clipPath1125)" />
-  <path
-     style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.03129256;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-     d="m 13.30569,9.2971616 c -0.915027,0 -1.660156,0.7534144 -1.660532,1.6769404 6e-6,0.01475 0.0061,0.02798 0.0066,0.04266 H 10.611474 V 16 H 16 v -4.983237 h -1.040294 c 3.91e-4,-0.01468 0.0066,-0.02792 0.0066,-0.04266 -3.66e-4,-0.923527 -0.745494,-1.6769414 -1.660522,-1.6769414 z m 0,0.3724711 c 0.71555,0 1.291017,0.5822823 1.291343,1.3044693 -8e-6,0.01478 -0.006,0.02797 -0.0066,0.04266 h -2.5712 c -4.97e-4,-0.01469 -0.0066,-0.02789 -0.0066,-0.04266 3.93e-4,-0.72213 0.577475,-1.3044693 1.292983,-1.3044693 z m 0,2.3283553 a 0.61907158,0.5776646 0 0 1 0.618598,0.577576 0.61907158,0.5776646 0 0 1 -0.29207,0.490611 l 0.446309,1.678582 h -1.545674 l 0.444669,-1.680222 a 0.61907158,0.5776646 0 0 1 -0.290429,-0.488971 0.61907158,0.5776646 0 0 1 0.618597,-0.577576 z"
-     id="rect1093"
-     inkscape:connector-curvature="0" />
 </svg>
