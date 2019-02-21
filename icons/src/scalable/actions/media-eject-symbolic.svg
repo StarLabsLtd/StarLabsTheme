@@ -11,7 +11,7 @@
    width="16"
    version="1.1"
    id="svg4"
-   sodipodi:docname="list-add-symbolic.svg"
+   sodipodi:docname="media-eject-symbolic.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
      id="metadata10">
@@ -21,7 +21,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -36,34 +35,29 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="960"
-     inkscape:window-height="1019"
+     inkscape:window-width="3137"
+     inkscape:window-height="1539"
      id="namedview6"
      showgrid="false"
      inkscape:zoom="20.85965"
-     inkscape:cx="0.39293102"
-     inkscape:cy="10.354724"
-     inkscape:window-x="960"
+     inkscape:cx="22.127636"
+     inkscape:cy="6.1518631"
+     inkscape:window-x="703"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg4"
-     inkscape:pagecheckerboard="true" />
+     inkscape:current-layer="svg4" />
   <g
-     id="g818">
-    <rect
-       y="3"
-       x="7"
-       height="10"
-       width="2"
-       id="rect816-3-3"
-       style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.9668234;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
-    <rect
-       transform="rotate(90)"
-       y="-13"
-       x="7"
-       height="10"
-       width="2"
-       id="rect816-3-6"
-       style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.9668234;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+     id="g864"
+     transform="rotate(180,8,9.2791011)">
+    <path
+       id="path814"
+       d="M 3.6367188,8.7265625 8,14.544922 12.363281,8.7265625 H 10.181641 8 5.8183594 Z"
+       style="display:inline;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.58760148;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="rect820-6"
+       d="m 8.0000018,6.5714825 h -4.363283 v 1.45508 h 4.363283 4.3632792 v -1.45508 z"
+       style="display:inline;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.58760148;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
 </svg>

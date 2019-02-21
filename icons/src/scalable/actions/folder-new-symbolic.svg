@@ -11,7 +11,7 @@
    width="16"
    version="1.1"
    id="svg4"
-   sodipodi:docname="list-add-symbolic.svg"
+   sodipodi:docname="folder-new-symbolic.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
      id="metadata10">
@@ -21,7 +21,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -36,19 +35,31 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="960"
+     inkscape:window-width="1920"
      inkscape:window-height="1019"
      id="namedview6"
      showgrid="false"
-     inkscape:zoom="20.85965"
-     inkscape:cx="0.39293102"
-     inkscape:cy="10.354724"
-     inkscape:window-x="960"
+     inkscape:zoom="10.429825"
+     inkscape:cx="-35.547626"
+     inkscape:cy="5.009108"
+     inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg4"
-     inkscape:pagecheckerboard="true" />
+     inkscape:current-layer="svg4" />
+  <path
+     style="fill:none;fill-opacity:1;stroke:#808080;stroke-width:0.94117647;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 1.920697,1.3071889 h 2.732897 l 1.254902,1.254902 h 8.170807 c 0.803359,0 1.450109,0.646722 1.450109,1.450081 v 9.2305301 c 0,0.80336 -0.64675,1.450109 -1.450109,1.450109 H 1.920697 c -0.803361,0 -1.450109,-0.646749 -1.450109,-1.450109 V 2.7572979 c 0,-0.80336 0.646748,-1.450109 1.450109,-1.450109 z"
+     id="rect1188"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="sccssssssss" />
+  <path
+     style="fill:none;fill-opacity:1;stroke:#808080;stroke-width:0.94117647;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 1.648801,5.0718959 h 3.841395 l 1.254902,-1.254902 h 7.606101 c 0.652729,0 1.178213,0.525483 1.178213,1.178213 v 8.5193901 c 0,0.65273 -0.525484,1.178214 -1.178213,1.178214 H 1.648801 c -0.65273,0 -1.178213,-0.525484 -1.178213,-1.178214 V 6.2500809 c 0,-0.65273 0.525483,-1.178185 1.178213,-1.178185 z"
+     id="rect1188-3"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="sccssssssss" />
   <g
+     transform="matrix(0.6,0,0,0.6,3.2,4.4549025)"
      id="g818">
     <rect
        y="3"
