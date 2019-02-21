@@ -11,7 +11,7 @@
    width="16"
    version="1.1"
    id="svg4"
-   sodipodi:docname="media-playback-seek-backward-rtl-symbolic.svg"
+   sodipodi:docname="media-skip-backward-rtl-symbolic.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
      id="metadata10">
@@ -41,9 +41,9 @@
      id="namedview6"
      showgrid="false"
      inkscape:zoom="59"
-     inkscape:cx="8.3069377"
+     inkscape:cx="5.0865987"
      inkscape:cy="6.1746764"
-     inkscape:window-x="1920"
+     inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg4"
@@ -53,7 +53,7 @@
      d="M 0.3359375 3.21875 L 0.3359375 12.78125 L 7.6640625 8.0019531 L 0.3359375 3.21875 z "
      id="path12312" />
   <g
-     style="fill:#808080;fill-opacity:1;stroke:#808080;stroke-opacity:1;opacity:1"
+     style="opacity:1;fill:#808080;fill-opacity:1;stroke:#808080;stroke-opacity:1"
      transform="matrix(1.0503427,0,0,1.0503427,-1010.1231,-401.5785)"
      id="g12310-3"
      inkscape:export-filename="/home/sean/Documents/LabTop Mk III/PNG/LabTop-MkIII-UK-Linux.png"
@@ -65,4 +65,9 @@
        style="fill:#808080;fill-opacity:1;stroke:#808080;stroke-width:0.64060003;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 969.645,385.395 6.976,4.554 -6.976,4.551 z" />
   </g>
+  <path
+     inkscape:connector-curvature="0"
+     style="display:inline;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.6363945;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 16,8.0000023 V 2.882 H 14.54492 V 8.0000023 13.118 H 16 Z"
+     id="rect820-6" />
 </svg>
