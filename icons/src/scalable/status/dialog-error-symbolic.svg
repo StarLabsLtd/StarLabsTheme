@@ -10,23 +10,22 @@
    height="16"
    width="16"
    version="1.1"
-   id="svg4"
-   sodipodi:docname="application-exit-symbolic.svg"
+   id="svg8"
+   sodipodi:docname="dialog-error-symbolic.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
-     id="metadata10">
+     id="metadata14">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs8" />
+     id="defs12" />
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -36,18 +35,22 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="960"
-     inkscape:window-height="1019"
-     id="namedview6"
+     inkscape:window-width="3840"
+     inkscape:window-height="1539"
+     id="namedview10"
      showgrid="false"
-     inkscape:zoom="29.5"
-     inkscape:cx="1.4922375"
-     inkscape:cy="9.6338358"
-     inkscape:window-x="960"
+     inkscape:zoom="41.7193"
+     inkscape:cx="-4.0377602"
+     inkscape:cy="8.1104336"
+     inkscape:window-x="0"
      inkscape:window-y="27"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg4"
-     inkscape:pagecheckerboard="true" />
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8" />
+  <path
+     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.62168556;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10.00000095;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     d="M 7.9999999,2.5e-7 A 8,8 0 0 0 1.5e-7,8.0000002 8,8 0 0 0 7.9999998,16 8,8 0 0 0 16,8.0000003 8,8 0 0 0 7.9999999,2.5e-7 Z m 0,0.99999995 A 7,7 0 0 1 15,8.0000002 7,7 0 0 1 7.9999999,15 7,7 0 0 1 1.0000001,8.0000002 a 7,7 0 0 1 6.9999998,-7 z"
+     id="path823"
+     inkscape:connector-curvature="0" />
   <g
      id="g827">
     <rect
