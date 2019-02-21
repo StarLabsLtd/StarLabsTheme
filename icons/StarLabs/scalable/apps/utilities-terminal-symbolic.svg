@@ -11,7 +11,7 @@
    width="16"
    version="1.1"
    id="svg4"
-   sodipodi:docname="media-playback-start-rtl-symbolic.svg"
+   sodipodi:docname="utilities-terminal-symbolic.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
      id="metadata10">
@@ -21,7 +21,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -36,21 +35,19 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1539"
+     inkscape:window-width="960"
+     inkscape:window-height="1019"
      id="namedview6"
      showgrid="false"
-     inkscape:zoom="29.5"
-     inkscape:cx="-5.5575827"
-     inkscape:cy="7.1955253"
-     inkscape:window-x="0"
+     inkscape:zoom="14.75"
+     inkscape:cx="11.317299"
+     inkscape:cy="22.351855"
+     inkscape:window-x="960"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg4"
-     inkscape:pagecheckerboard="true" />
+     inkscape:current-layer="svg4" />
   <path
-     inkscape:connector-curvature="0"
-     style="opacity:1;fill:#808080;fill-opacity:1;stroke:#808080;stroke-width:0.67284954;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="M 11.664048,12.78125 V 3.2187498 L 4.3359236,7.9980467 Z"
-     id="path12312" />
+     style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.17680639;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 8 0 A 8 8 0 0 0 0 8 A 8 8 0 0 0 8 16 A 8 8 0 0 0 16 8 A 8 8 0 0 0 8 0 z M 3.1269531 4.4960938 L 7.8085938 6.4648438 L 7.8085938 7.3789062 L 3.1269531 9.3457031 L 2.8378906 8.5605469 L 6.7949219 6.921875 L 2.8378906 5.28125 L 3.1269531 4.4960938 z M 8.1914062 10.757812 L 13.162109 10.757812 L 13.162109 11.503906 L 8.1914062 11.503906 L 8.1914062 10.757812 z "
+     id="path1090" />
 </svg>

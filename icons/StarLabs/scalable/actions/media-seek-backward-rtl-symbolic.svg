@@ -1,1 +1,68 @@
-media-seek-forward-symbolic.svg
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="16"
+   width="16"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="media-playback-seek-backward-rtl-symbolic.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1539"
+     id="namedview6"
+     showgrid="false"
+     inkscape:zoom="59"
+     inkscape:cx="8.3069377"
+     inkscape:cy="6.1746764"
+     inkscape:window-x="1920"
+     inkscape:window-y="27"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg4"
+     inkscape:pagecheckerboard="true" />
+  <path
+     style="fill:#808080;fill-opacity:1;stroke:#808080;stroke-width:0.67284954;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;opacity:1"
+     d="M 0.3359375 3.21875 L 0.3359375 12.78125 L 7.6640625 8.0019531 L 0.3359375 3.21875 z "
+     id="path12312" />
+  <g
+     style="fill:#808080;fill-opacity:1;stroke:#808080;stroke-opacity:1;opacity:1"
+     transform="matrix(1.0503427,0,0,1.0503427,-1010.1231,-401.5785)"
+     id="g12310-3"
+     inkscape:export-filename="/home/sean/Documents/LabTop Mk III/PNG/LabTop-MkIII-UK-Linux.png"
+     inkscape:export-xdpi="96"
+     inkscape:export-ydpi="96">
+    <path
+       inkscape:connector-curvature="0"
+       id="path12312-6"
+       style="fill:#808080;fill-opacity:1;stroke:#808080;stroke-width:0.64060003;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 969.645,385.395 6.976,4.554 -6.976,4.551 z" />
+  </g>
+</svg>
