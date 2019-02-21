@@ -6,8 +6,7 @@ cp -r scalable ../StarLabs
 rm -r ../StarLabs/scalable-max-32
 cp -r scalable-max-32 ../StarLabs
 cd fullcolor
-for d in apps places mimetypes; do
-#categories devices emblems status
+for d in apps places mimetypes categories devices emblems status; do
 	cd $d
 	for f in *.svg; do
 		for s in 256 48 32 24 16 8; do
