@@ -3,7 +3,7 @@
 set -e
 
 if [ "$1" = remove ]; then
-	gtk-update-icon-cache -qtf /usr/share/icons
+#	gtk-update-icon-cache -qtf /usr/share/icons
 fi
 
 #DEBHELPER#
