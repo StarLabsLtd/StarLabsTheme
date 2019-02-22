@@ -13,7 +13,9 @@ Includes:
 * Desktop Wallpapers
 * GNOME extensions
 * Font
+
 ![Desktop](Screenshots/Desktop.png)
+
 ![Dash](Screenshots/Dash.png)
 
 
