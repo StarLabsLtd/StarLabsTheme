@@ -11,7 +11,7 @@
    width="16"
    version="1.1"
    id="svg4"
-   sodipodi:docname="search-symbolic.svg"
+   sodipodi:docname="weather-cloudy-symbolic.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
      id="metadata10">
@@ -21,7 +21,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -37,27 +37,19 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
-     inkscape:window-height="1539"
+     inkscape:window-height="1474"
      id="namedview6"
      showgrid="false"
      inkscape:zoom="29.5"
-     inkscape:cx="3.838974"
-     inkscape:cy="8.658763"
-     inkscape:window-x="1920"
+     inkscape:cx="7.896209"
+     inkscape:cy="9.3917969"
+     inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg4"
-     inkscape:pagecheckerboard="true" />
-  <rect
-     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.67782897;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     id="rect816-3-7-5"
-     width="2"
-     height="4.9152541"
-     x="-0.99999917"
-     y="-17.313709"
-     transform="rotate(135)" />
+     inkscape:current-layer="svg4" />
   <path
-     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:1.26999259;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     d="M 7.0507812 3.0507812 A 4 4 0 0 0 3.0507812 7.0507812 A 4 4 0 0 0 7.0507812 11.050781 A 4 4 0 0 0 11.050781 7.0507812 A 4 4 0 0 0 7.0507812 3.0507812 z M 7.0507812 4.5507812 A 2.5 2.5 0 0 1 9.5507812 7.0507812 A 2.5 2.5 0 0 1 7.0507812 9.5507812 A 2.5 2.5 0 0 1 4.5507812 7.0507812 A 2.5 2.5 0 0 1 7.0507812 4.5507812 z "
-     id="path824" />
+     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.44185147;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     d="M 9.874976,2.5614137 A 4.6222223,4.4340474 0 0 0 5.9902549,4.7331357 3.1824362,3.0528763 0 0 0 5.0069211,4.5999019 3.1824362,3.0528763 0 0 0 1.8833097,7.6909441 3.1824362,3.0528763 0 0 0 1.8902797,7.8215149 C 0.8162731,7.9891997 0,8.8714869 0,9.9506035 v 0.4450035 c 0,1.199449 1.0065909,2.165062 2.256944,2.165062 H 13.743056 C 14.993408,12.560669 16,11.595056 16,10.395607 V 9.9506035 C 16,9.0007969 15.364157,8.205305 14.480555,7.9121145 A 4.6222223,4.4340474 0 0 0 14.58195,6.9941275 L 14.58045,6.8848782 A 4.6222223,4.4340474 0 0 0 9.874936,2.5614137 Z"
+     id="rect834"
+     inkscape:connector-curvature="0" />
 </svg>

@@ -11,7 +11,7 @@
    width="16"
    version="1.1"
    id="svg4"
-   sodipodi:docname="search-symbolic.svg"
+   sodipodi:docname="document-send-symbolic.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
      id="metadata10">
@@ -21,7 +21,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -40,24 +39,15 @@
      inkscape:window-height="1539"
      id="namedview6"
      showgrid="false"
-     inkscape:zoom="29.5"
-     inkscape:cx="3.838974"
-     inkscape:cy="8.658763"
-     inkscape:window-x="1920"
+     inkscape:zoom="20.85965"
+     inkscape:cx="1.3370435"
+     inkscape:cy="7.0587595"
+     inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg4"
-     inkscape:pagecheckerboard="true" />
-  <rect
-     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.67782897;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     id="rect816-3-7-5"
-     width="2"
-     height="4.9152541"
-     x="-0.99999917"
-     y="-17.313709"
-     transform="rotate(135)" />
+     inkscape:current-layer="svg4" />
   <path
-     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:1.26999259;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     d="M 7.0507812 3.0507812 A 4 4 0 0 0 3.0507812 7.0507812 A 4 4 0 0 0 7.0507812 11.050781 A 4 4 0 0 0 11.050781 7.0507812 A 4 4 0 0 0 7.0507812 3.0507812 z M 7.0507812 4.5507812 A 2.5 2.5 0 0 1 9.5507812 7.0507812 A 2.5 2.5 0 0 1 7.0507812 9.5507812 A 2.5 2.5 0 0 1 4.5507812 7.0507812 A 2.5 2.5 0 0 1 7.0507812 4.5507812 z "
-     id="path824" />
+     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:1.01036298;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     d="M 1.9375 1 L 1.9375 6 L 6.4375 7 L 10.9375 8 L 6.4375 9 L 1.9375 10 L 1.9375 15 L 8 11.5 L 14.0625 8 L 8 4.5 L 1.9375 1 z "
+     id="path818-3" />
 </svg>
