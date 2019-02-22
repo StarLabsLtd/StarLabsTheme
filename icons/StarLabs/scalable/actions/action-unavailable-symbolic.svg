@@ -10,11 +10,11 @@
    height="16"
    width="16"
    version="1.1"
-   id="svg4"
-   sodipodi:docname="media-eject-symbolic.svg"
+   id="svg8"
+   sodipodi:docname="action-unavailable-symbolic.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
-     id="metadata10">
+     id="metadata14">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -25,7 +25,7 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs8" />
+     id="defs12" />
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -37,30 +37,26 @@
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
      inkscape:window-height="1539"
-     id="namedview6"
+     id="namedview10"
      showgrid="false"
-     inkscape:zoom="20.85965"
-     inkscape:cx="4.0065268"
-     inkscape:cy="6.1518631"
+     inkscape:zoom="14.75"
+     inkscape:cx="-4.8813559"
+     inkscape:cy="8"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg4" />
-  <g
-     id="g824"
-     transform="matrix(0.91028338,0,0,0.91028338,1.7527618,1.2489032)">
-    <path
-       id="path814"
-       d="M 11.86296,9.4001847 6.8629594,2.7327718 1.8629596,9.4001847 h 2.4999993 2.5000005 2.5 z"
-       style="display:inline;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.67334819;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:connector-curvature="0" />
-    <rect
-       transform="rotate(90)"
-       y="-11.86296"
-       x="10.100184"
-       height="10"
-       width="2"
-       id="rect816-3-6"
-       style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.9668234;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
-  </g>
+     inkscape:current-layer="svg8" />
+  <path
+     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.62168556;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10.00000095;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     d="M 7.9999999,2.5e-7 A 8,8 0 0 0 1.5e-7,8.0000002 8,8 0 0 0 7.9999998,16 8,8 0 0 0 16,8.0000003 8,8 0 0 0 7.9999999,2.5e-7 Z m 0,0.99999995 A 7,7 0 0 1 15,8.0000002 7,7 0 0 1 7.9999999,15 7,7 0 0 1 1.0000001,8.0000002 a 7,7 0 0 1 6.9999998,-7 z"
+     id="path823"
+     inkscape:connector-curvature="0" />
+  <rect
+     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:1.39081085;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     id="rect816-3-7-5-2"
+     width="2.6263967"
+     height="15.75838"
+     x="-1.3131983"
+     y="3.4345186"
+     transform="rotate(-45)" />
 </svg>

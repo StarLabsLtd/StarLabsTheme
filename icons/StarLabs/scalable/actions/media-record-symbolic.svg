@@ -36,27 +36,31 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="3840"
+     inkscape:window-width="1920"
      inkscape:window-height="1539"
      id="namedview6"
      showgrid="false"
      inkscape:pagecheckerboard="true"
      inkscape:zoom="41.7193"
-     inkscape:cx="2.2637672"
-     inkscape:cy="4.5070426"
-     inkscape:window-x="0"
+     inkscape:cx="0.87005409"
+     inkscape:cy="4.4166667"
+     inkscape:window-x="1920"
      inkscape:window-y="27"
-     inkscape:window-maximized="1"
+     inkscape:window-maximized="0"
      inkscape:current-layer="svg4" />
-  <path
-     style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:2.45816851;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="M 7.9999993,2 A 6.0000002,6.0000002 0 0 0 2.0000003,8 6.0000002,6.0000002 0 0 0 7.9999993,14 6.0000002,6.0000002 0 0 0 14,8 6.0000002,6.0000002 0 0 0 7.9999993,2 Z m 0,0.75 A 5.2500002,5.2500002 0 0 1 13.25,8 5.2500002,5.2500002 0 0 1 7.9999993,13.25 5.2500002,5.2500002 0 0 1 2.7500013,8 5.2500002,5.2500002 0 0 1 7.9999993,2.75 Z"
-     id="path820"
-     inkscape:connector-curvature="0" />
-  <circle
-     style="opacity:1;fill:#808080;fill-opacity:1;stroke:#808080;stroke-width:0.50913942;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     id="path831"
-     cx="8"
-     cy="8"
-     r="4.7454305" />
+  <g
+     id="g818"
+     transform="matrix(0.71058333,0,0,0.71058333,2.3153333,2.3153334)">
+    <path
+       inkscape:connector-curvature="0"
+       id="path820"
+       d="M 7.9999993,2 A 6.0000002,6.0000002 0 0 0 2.0000003,8 6.0000002,6.0000002 0 0 0 7.9999993,14 6.0000002,6.0000002 0 0 0 14,8 6.0000002,6.0000002 0 0 0 7.9999993,2 Z m 0,0.75 A 5.2500002,5.2500002 0 0 1 13.25,8 5.2500002,5.2500002 0 0 1 7.9999993,13.25 5.2500002,5.2500002 0 0 1 2.7500013,8 5.2500002,5.2500002 0 0 1 7.9999993,2.75 Z"
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:2.45816851;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <circle
+       r="4.7454305"
+       cy="8"
+       cx="8"
+       id="path831"
+       style="opacity:1;fill:#808080;fill-opacity:1;stroke:#808080;stroke-width:0.50913942;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+  </g>
 </svg>
