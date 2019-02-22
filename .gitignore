@@ -1,0 +1,20 @@
+# Meson suggested build directories (local and package)
+build/
+/obj-*/
+
+# Packaging generated content
+debian/*debhelper*
+debian/files
+debian/*.substvars
+debian/tmp/
+debian/yaru-theme-gnome-shell/
+debian/yaru-theme-gtk/
+debian/yaru-theme-icon/
+debian/yaru-theme-sound/
+
+# snapcraft build artefacts
+parts/
+stage/
+prime/
+snap/.snapcraft/state
+*.snap
