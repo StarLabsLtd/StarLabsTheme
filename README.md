@@ -4,7 +4,7 @@ Star Labs Theme
 Includes:
 * GTK 3.0 Theme
 * GTK 2.0 Theme
-* GNOME shell Theme
+* GNOME Shell Theme
 * Plymouth Theme
 * Sound Theme
 * Icon Set
@@ -13,7 +13,9 @@ Includes:
 * Desktop Wallpapers
 * GNOME extensions
 * Font
+
 ![Desktop](Screenshots/Desktop.png)
+
 ![Dash](Screenshots/Dash.png)
 
 
@@ -36,8 +38,8 @@ sudo apt remove starlabstheme
 ```
 
 
-### Other distributions
-##### Dependancies
+### Other Distributions
+##### Dependencies
 You need to install:
 ```
 git sassc
