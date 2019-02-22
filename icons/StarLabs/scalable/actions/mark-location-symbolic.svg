@@ -11,7 +11,7 @@
    width="16"
    version="1.1"
    id="svg4"
-   sodipodi:docname="media-playback-start-symbolic.svg"
+   sodipodi:docname="mark-location-symbolic.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
      id="metadata10">
@@ -21,7 +21,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -40,29 +39,15 @@
      inkscape:window-height="1539"
      id="namedview6"
      showgrid="false"
-     inkscape:zoom="22.627417"
-     inkscape:cx="-3.9986791"
-     inkscape:cy="9.1300268"
-     inkscape:window-x="1920"
+     inkscape:zoom="59"
+     inkscape:cx="8.2446927"
+     inkscape:cy="7.7077225"
+     inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg4"
-     inkscape:pagecheckerboard="true" />
+     inkscape:current-layer="svg4" />
   <path
-     sodipodi:type="star"
-     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.61538458;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     id="path818-3"
-     sodipodi:sides="3"
-     sodipodi:cx="5.0935922"
-     sodipodi:cy="11.333348"
-     sodipodi:r1="4.9230766"
-     sodipodi:r2="2.4615383"
-     sodipodi:arg1="1.5707963"
-     sodipodi:arg2="2.6179939"
-     inkscape:flatsided="false"
-     inkscape:rounded="0"
-     inkscape:randomized="0"
-     d="M 5.0935923,16.256425 2.9618374,12.564117 0.83008267,8.8718101 l 4.26350953,-10e-8 4.2635093,-2e-7 -2.1317546,3.6923072 z"
-     transform="rotate(-90,4.2647375,8.8288546)"
-     inkscape:transform-center-x="-2.0000004" />
+     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.65795618;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     d="M 8 0 A 4 4 0 0 0 4.0058594 3.8808594 L 4 3.8808594 L 4.0058594 3.8964844 A 4 4 0 0 0 4 4 A 4 4 0 0 0 4.8535156 6.4667969 L 8 16 L 11.150391 6.4550781 A 4 4 0 0 0 12 4 A 4 4 0 0 0 11.996094 3.8925781 L 12 3.8808594 L 11.996094 3.8808594 A 4 4 0 0 0 8 0 z M 8 1 A 3 3 0 0 1 11 4 A 3 3 0 0 1 8 7 A 3 3 0 0 1 5 4 A 3 3 0 0 1 8 1 z "
+     id="path817" />
 </svg>

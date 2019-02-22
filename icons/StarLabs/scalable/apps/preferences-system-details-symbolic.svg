@@ -10,23 +10,23 @@
    height="16"
    width="16"
    version="1.1"
-   id="svg4"
-   sodipodi:docname="media-playback-stop-symbolic.svg"
+   id="svg8"
+   sodipodi:docname="preferences-system-details-symbolic.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
-     id="metadata10">
+     id="metadata14">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs8" />
+     id="defs12" />
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -38,19 +38,29 @@
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
      inkscape:window-height="1539"
-     id="namedview6"
+     id="namedview10"
      showgrid="false"
-     inkscape:zoom="29.5"
-     inkscape:cx="-5.4897861"
-     inkscape:cy="7.0599321"
+     inkscape:zoom="20.85965"
+     inkscape:cx="-1.4961724"
+     inkscape:cy="16.118056"
      inkscape:window-x="1920"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg4"
-     inkscape:pagecheckerboard="true" />
+     inkscape:current-layer="svg8" />
   <path
-     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.75276393;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     d="m 3.7353713,3.7365 v 8.527 H 5.156538 6.5777047 7.9988715 9.4200382 10.841206 12.264629 V 3.7365 H 10.841206 9.4200383 7.9988716 6.5777048 5.1565381 Z"
-     id="rect816-3-7-5-2-3"
+     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.08072932;stroke-opacity:0.94117647"
+     d="m 8.0000002,-2e-7 a 8,8 0 0 0 -7.99999995,8 A 8,8 0 0 0 8.0000002,16 8,8 0 0 0 16,7.9999998 a 8,8 0 0 0 -7.9999998,-8 z m 0,1.5 A 6.5,6.5 0 0 1 14.5,7.9999998 6.5,6.5 0 0 1 8.0000002,14.5 a 6.5,6.5 0 0 1 -6.5,-6.5000002 6.5,6.5 0 0 1 6.5,-6.5 z"
+     id="path1119"
      inkscape:connector-curvature="0" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.80000019px;line-height:1.25;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';letter-spacing:0px;word-spacing:0px;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.1"
+     x="6.4320002"
+     y="12.6976"
+     id="text1123"><tspan
+       sodipodi:role="line"
+       id="tspan1121"
+       x="6.4320002"
+       y="12.6976"
+       style="fill:#808080;fill-opacity:1;stroke-width:0.1">i</tspan></text>
 </svg>
