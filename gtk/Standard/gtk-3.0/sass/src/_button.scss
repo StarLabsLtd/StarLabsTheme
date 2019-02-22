@@ -22,51 +22,9 @@
 		min-width: 16px;
 		padding: 2px 6px;
 		border-radius: $omega1;
-		@include clickable(normal);
+		@include click($alpha3);
 		&.flat {
 			@include click($alpha3, $variant, true);
-		}
-		&.default:not(.suggested-action):not(.destructive-action) {
-			color: $color;
-		}
-		&:hover {
-			@include clickable(hover);
-			&:backdrop {
-				@include clickable(backdrop-hover);
-			}
-		}
-			&:active, &:checked {
-			@include clickable(active);
-		}
-		&:hover:checked {
-			@include clickable(active-hover);
-		}
-		&:backdrop {
-			&.flat, & {
-				@include clickable(backdrop);
-				-gtk-icon-effect: none;
-				&:active, &:checked {
-					@include clickable(backdrop-active);
-				}
-				&:disabled {
-					@include clickable(disabled);
-					&:active, &:checked {
-						@include clickable(backdrop-active);
-					}
-				}
-			}
-		}
-		&.flat {
-			&:backdrop, &:disabled, &:backdrop:disabled {
-				@include clickable(undecorated);
-			}
-		}
-		&:disabled {
-			@include clickable(disabled);
-			&:active, &:checked {
-				@include clickable(active);
-				@include clickable(disabled);
-			}
 		}
 		&.image-button {
 			min-width: 24px;
@@ -133,82 +91,82 @@
 		}
 	}
 	.stack-switcher > & {
-	> label {
-		padding-left: 6px;
-		padding-right: 6px;
-	}
-	> image {
-		padding-left: 6px;
-		padding-right: 6px;
-		padding-top: 3px;
-		padding-bottom: 3px;
-	}
-	&.text-button {
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-	&.image-button {
-		padding-left: 0;
-		padding-right: 0;
-	}
-	&.needs-attention {
-		> label, > image {
-			@extend %needs_attention;
+		> label {
+			padding-left: 6px;
+			padding-right: 6px;
 		}
-		&:active, &:checked {
+		> image {
+			padding-left: 6px;
+			padding-right: 6px;
+			padding-top: 3px;
+			padding-bottom: 3px;
+		}
+		&.text-button {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		&.image-button {
+			padding-left: 0;
+			padding-right: 0;
+		}
+		&.needs-attention {
 			> label, > image {
-				animation: none;
-				background-image: none;
+				@extend %needs_attention;
+			}
+			&:active, &:checked {
+				> label, > image {
+					animation: none;
+					background-image: none;
+					}
 				}
 			}
 		}
-	}
-	// hide separators
-	&.font, &.file {
-		separator {
-			background-color: transparent; 
+		// hide separators
+		&.font, &.file {
+			separator {
+				background-color: transparent; 
+			}
 		}
-	}
-	&.font {
-		> box > box > label {
-			font-weight: 500;
+		&.font {
+			> box > box > label {
+				font-weight: 500;
+			}
 		}
-	}
-	// inline-toolbar buttons
-	.inline-toolbar &, .inline-toolbar &:backdrop {
-		border-radius: 2px;
-		border-width: 1px;
-		@extend %linked;
-	}
+		// inline-toolbar buttons
+		.inline-toolbar &, .inline-toolbar &:backdrop {
+			border-radius: 2px;
+			border-width: 1px;
+			@extend %linked;
+		}
 
-	.linked > &,
-	.linked > &:hover,
-	.linked > &:active,
-	.linked > &:checked,
-	.linked > &:backdrop {
-		@extend %linked;
-	}
-	.linked.vertical > &,
-	.linked.vertical > &:hover,
-	.linked.vertical > &:active,
-	.linked.vertical > &:checked,
-	.linked.vertical > &:backdrop {
-		@extend %linked_vertical;
-	}
-	&.circular {
-		border-radius: 9999px;
-		-gtk-outline-radius: 9999px;
-		label {
-			padding: 0;
+		.linked > &,
+		.linked > &:hover,
+		.linked > &:active,
+		.linked > &:checked,
+		.linked > &:backdrop {
+			@extend %linked;
 		}
-		&:not(.flat):not(:checked):not(:active):not(:disabled):not(:backdrop),	
-		&:hover:not(:checked):not(:active):not(:disabled):not(:backdrop),
-		&:checked, &:active {
-			border-color: $mix;
-			box-shadow: none;
+		.linked.vertical > &,
+		.linked.vertical > &:hover,
+		.linked.vertical > &:active,
+		.linked.vertical > &:checked,
+		.linked.vertical > &:backdrop {
+			@extend %linked_vertical;
 		}
-		&:not(.flat):not(:checked):not(:active):not(:disabled):not(:backdrop) {
-			@include clickable(normal);
+		&.circular {
+			border-radius: 9999px;
+			-gtk-outline-radius: 9999px;
+			label {
+				padding: 0;
+			}
+			&:not(.flat):not(:checked):not(:active):not(:disabled):not(:backdrop),	
+			&:hover:not(:checked):not(:active):not(:disabled):not(:backdrop),
+			&:checked, &:active {
+				border-color: $mix;
+				box-shadow: none;
+			}
+			&:not(.flat):not(:checked):not(:active):not(:disabled):not(:backdrop) {
+				@include clickable(normal);
 		}
 		&:hover:not(:checked):not(:active):not(:disabled):not(:backdrop) {
 			@include clickable(hover);
@@ -246,35 +204,36 @@
 // all the following is for the +|- buttons on inline toolbars, that way
 // should really be deprecated...
 .inline-toolbar toolbutton > button { // redefining the button look is
+	@include click($alpha3);
 // needed since those are flat...
-	@include clickable(normal);
-	&:hover {
-		@include clickable(hover);
-	}
-	&:active, &:checked {
-		@include clickable(active);
-	}
-	&:disabled {
-		@include clickable(disabled);
-		&:active, &:checked {
-			@include clickable(active);
-			@include clickable(disabled);
-		}
-	}
-	&:backdrop {
-		@include clickable(backdrop);
-		&:active, &:checked {
-			@include clickable(backdrop-active);
-		}
-		&:disabled {
-			@include clickable(backdrop);
-			@include clickable(disabled);
-			&:active, &:checked {
-				@include clickable(backdrop-active);
-				@include clickable(disabled);
-			}
-		}
-	}
+//	@include clickable(normal);
+//	&:hover {
+//		@include clickable(hover);
+//	}
+//	&:active, &:checked {
+//		@include clickable(active);
+//	}
+//	&:disabled {
+//		@include clickable(disabled);
+//		&:active, &:checked {
+//			@include clickable(active);
+//			@include clickable(disabled);
+//		}
+//	}
+//	&:backdrop {
+//		@include clickable(backdrop);
+//		&:active, &:checked {
+//			@include clickable(backdrop-active);
+//		}
+//		&:disabled {
+//			@include clickable(backdrop);
+//			@include clickable(disabled);
+//			&:active, &:checked {
+//				@include clickable(backdrop-active);
+//				@include clickable(disabled);
+//			}
+//		}
+//	}
 }
 
 // More inline toolbar buttons
