@@ -10,11 +10,11 @@
    height="16"
    width="16"
    version="1.1"
-   id="svg8"
-   sodipodi:docname="preferences-system-time-symbolic.svg"
+   id="svg4"
+   sodipodi:docname="star-new-symbolic.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
-     id="metadata14">
+     id="metadata10">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -25,7 +25,7 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs12" />
+     id="defs8" />
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -37,17 +37,17 @@
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
      inkscape:window-height="1019"
-     id="namedview10"
+     id="namedview6"
      showgrid="false"
      inkscape:zoom="41.7193"
-     inkscape:cx="6.6782376"
-     inkscape:cy="8.3525546"
+     inkscape:cx="6.3775617"
+     inkscape:cy="7.9613473"
      inkscape:window-x="0"
      inkscape:window-y="27"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg8" />
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg4" />
   <path
-     style="display:inline;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.17680639;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="M 8 0 A 8 8 0 0 0 0 8 A 8 8 0 0 0 8 16 A 8 8 0 0 0 16 8 A 8 8 0 0 0 8 0 z M 12.400391 3.1425781 L 12.857422 3.5996094 L 8.6230469 7.8339844 A 0.64516127 0.64516127 0 0 1 8.6445312 8 A 0.64516127 0.64516127 0 0 1 8.1621094 8.6230469 L 8.1621094 13.162109 L 7.8378906 13.162109 L 7.8378906 8.6230469 A 0.64516127 0.64516127 0 0 1 7.3554688 8 A 0.64516127 0.64516127 0 0 1 7.3769531 7.8339844 L 4.96875 5.4238281 L 5.4238281 4.96875 L 7.8339844 7.3769531 A 0.64516127 0.64516127 0 0 1 7.8378906 7.3769531 L 7.8378906 6.7089844 L 8.1621094 6.7089844 L 8.1621094 7.375 A 0.64516127 0.64516127 0 0 1 8.1660156 7.3769531 L 12.400391 3.1425781 z "
-     id="path1090" />
+     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:2.28012753;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     d="M 8 1 L 5.7246094 5.609375 L 0.640625 6.3476562 L 4.3203125 9.9355469 L 3.4511719 15 L 8 12.609375 L 12.548828 15 L 11.679688 9.9355469 L 15.359375 6.3476562 L 10.275391 5.609375 L 8 1 z M 7.4003906 6.0898438 L 8.5996094 6.0898438 L 8.5996094 8.4882812 L 11 8.4882812 L 11 9.6894531 L 8.5996094 9.6894531 L 8.5996094 12.089844 L 7.4003906 12.089844 L 7.4003906 9.6894531 L 5 9.6894531 L 5 8.4882812 L 7.4003906 8.4882812 L 7.4003906 6.0898438 z "
+     id="path819" />
 </svg>
