@@ -10,23 +10,22 @@
    height="16"
    width="16"
    version="1.1"
-   id="svg12"
-   sodipodi:docname="alarm-symbolic.svg"
+   id="svg8"
+   sodipodi:docname="preferences-system-time-symbolic.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
-     id="metadata18">
+     id="metadata14">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs16" />
+     id="defs12" />
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -37,40 +36,18 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
-     inkscape:window-height="1474"
-     id="namedview14"
+     inkscape:window-height="1019"
+     id="namedview10"
      showgrid="false"
-     inkscape:zoom="29.5"
-     inkscape:cx="3.0857036"
-     inkscape:cy="5.0975814"
+     inkscape:zoom="41.7193"
+     inkscape:cx="6.6782376"
+     inkscape:cy="8.3525546"
      inkscape:window-x="0"
      inkscape:window-y="27"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg12" />
-  <g
-     id="g868"
-     transform="translate(20.433753,-0.46738529)">
-    <circle
-       r="8"
-       cy="8.4673853"
-       cx="-12.433753"
-       id="path1090"
-       style="display:inline;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.17680638;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <rect
-       transform="rotate(44.999999)"
-       y="14.456777"
-       x="-6.7700839"
-       height="0.64516133"
-       width="3.8709676"
-       id="rect1093-8"
-       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.06519886;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
-    <rect
-       transform="rotate(89.790765)"
-       y="12.074871"
-       x="1.7299283"
-       height="0.68522298"
-       width="6.8522296"
-       id="rect1093"
-       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.08939803;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
-  </g>
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8" />
+  <path
+     style="display:inline;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.17680639;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 8 0 A 8 8 0 0 0 0 8 A 8 8 0 0 0 8 16 A 8 8 0 0 0 16 8 A 8 8 0 0 0 8 0 z M 12.400391 3.1425781 L 12.857422 3.5996094 L 8.6230469 7.8339844 A 0.64516127 0.64516127 0 0 1 8.6445312 8 A 0.64516127 0.64516127 0 0 1 8.1621094 8.6230469 L 8.1621094 13.162109 L 7.8378906 13.162109 L 7.8378906 8.6230469 A 0.64516127 0.64516127 0 0 1 7.3554688 8 A 0.64516127 0.64516127 0 0 1 7.3769531 7.8339844 L 4.96875 5.4238281 L 5.4238281 4.96875 L 7.8339844 7.3769531 A 0.64516127 0.64516127 0 0 1 7.8378906 7.3769531 L 7.8378906 6.7089844 L 8.1621094 6.7089844 L 8.1621094 7.375 A 0.64516127 0.64516127 0 0 1 8.1660156 7.3769531 L 12.400391 3.1425781 z "
+     id="path1090" />
 </svg>
