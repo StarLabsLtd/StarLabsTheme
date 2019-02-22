@@ -1,7 +1,7 @@
 # Star Labs Theme ![alt text](https://cdn.shopify.com/s/files/1/2059/5897/files/Star_50x.png?v=1513954416 "Star Labs Systems")
 Star Labs Theme
 
-Inlcudes:
+Includes:
 * GTK 3.0 Theme
 * GTK 2.0 Theme
 * GNOME shell Theme
