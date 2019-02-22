@@ -47,6 +47,14 @@ meson build
 ninja -C build
 sudo ninja -C build install
 ```
+##### Update
+```
+cd StarLabsTheme
+git pull
+ninja -C build reconfigure
+sudo ninja -C build install
+```
+
 ##### Uninstall
 ```
 sudo ninja -C build uninstall
