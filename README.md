@@ -1,7 +1,7 @@
 # Star Labs Theme ![alt text](https://cdn.shopify.com/s/files/1/2059/5897/files/Star_50x.png?v=1513954416 "Star Labs Systems")
 Star Labs Theme
 
-Inlcudes:
+Includes:
 * GTK 3.0 Theme
 * GTK 2.0 Theme
 * GNOME shell Theme
@@ -47,6 +47,14 @@ meson build
 ninja -C build
 sudo ninja -C build install
 ```
+##### Update
+```
+cd StarLabsTheme
+git pull
+ninja -C build reconfigure
+sudo ninja -C build install
+```
+
 ##### Uninstall
 ```
 sudo ninja -C build uninstall
@@ -78,13 +86,13 @@ sudo glib-compile-schemas /usr/share/glib-2.0/schemas
 ### Plymouth
 ##### Install
 ```
-update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/StarLabs/StarLabs.plymouth 150 --slave /usr/share/plymouth/themes/default.grub default.plymouth.grub /usr/share/plymouth/themes/StarLabs/StarLabs.grub
-update-initramfs -u
+sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/StarLabs/StarLabs.plymouth 150 --slave /usr/share/plymouth/themes/default.grub default.plymouth.grub /usr/share/plymouth/themes/StarLabs/StarLabs.grub
+sudo update-initramfs -u
 ```
 ##### Uninstall
 ```
-update-alternatives --remove default.plymouth /usr/share/plymouth/themes/starlabs-logo/starlabs-logo.plymouth
-update-initramfs -u
+sudo update-alternatives --remove default.plymouth /usr/share/plymouth/themes/starlabs-logo/starlabs-logo.plymouth
+sudo update-initramfs -u
 ```
 
 
