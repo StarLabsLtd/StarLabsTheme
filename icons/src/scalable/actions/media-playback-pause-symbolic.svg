@@ -41,31 +41,27 @@
      id="namedview6"
      showgrid="false"
      inkscape:zoom="14.75"
-     inkscape:cx="0.91019468"
+     inkscape:cx="-11.971161"
      inkscape:cy="11.28418"
-     inkscape:window-x="777"
-     inkscape:window-y="335"
+     inkscape:window-x="563"
+     inkscape:window-y="471"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg4"
      inkscape:pagecheckerboard="true" />
-  <g
-     id="g835"
-     transform="translate(1.3220339,-0.13559341)">
-    <rect
-       transform="scale(-1)"
-       y="-13.135593"
-       x="-5.6779661"
-       height="10"
-       width="2"
-       id="rect816-3-6"
-       style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.9668234;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
-    <rect
-       transform="scale(-1)"
-       y="-13.135593"
-       x="-9.6779661"
-       height="10"
-       width="2"
-       id="rect816-3-6-6"
-       style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.9668234;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
-  </g>
+  <rect
+     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.65175498;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     id="rect816-3-7-5-2-3"
+     width="1.2307692"
+     height="7.3846149"
+     x="-7.3846154"
+     y="-11.692307"
+     transform="scale(-1)" />
+  <rect
+     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.65175498;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     id="rect816-3-7-5-2-6"
+     width="1.2307692"
+     height="7.3846149"
+     x="-9.8461542"
+     y="-11.692307"
+     transform="scale(-1)" />
 </svg>
