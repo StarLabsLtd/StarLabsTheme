@@ -13,6 +13,9 @@ Includes:
 * Desktop Wallpapers
 * GNOME extensions
 * Font
+![Desktop](Screenshots/Desktop.png)
+![Dash](Screenshots/Dash.png)
+
 
 # Warning: This theme is currently in beta.
 We still have a lot of work to do: more icons to add, bugs to squash and many tweaks. Please let us know what you think or if you find a bug!
