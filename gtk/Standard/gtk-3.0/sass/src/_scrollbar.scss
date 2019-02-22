@@ -25,7 +25,7 @@ scrollbar {
 		background-clip: padding-box;
 		transition: 150ms linear;
 		transition-property: min-height, min-width, border-color, background-color;
-		@include fill(normal, $alpha3, $variant, false);
+		background-color: transparentize($color, $alpha3);
 		&:hover {
 			background-color: $accent2;
 			min-width: 12px;
@@ -34,7 +34,7 @@ scrollbar {
 			background-color: $accent3;
 		}
 		&:backdrop {
-			@include fill(backdrop, $alpha3, $variant, false);
+			background-color: transparenize($color, $alpha3);
 		}
 		&:disabled {
 			background-color: transparent;
