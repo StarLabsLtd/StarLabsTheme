@@ -11,7 +11,7 @@
    width="16"
    version="1.1"
    id="svg4"
-   sodipodi:docname="edit-find-symbolic.svg"
+   sodipodi:docname="search-symbolic.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
      id="metadata10">
@@ -36,20 +36,28 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="960"
-     inkscape:window-height="1019"
+     inkscape:window-width="1920"
+     inkscape:window-height="1539"
      id="namedview6"
      showgrid="false"
      inkscape:zoom="29.5"
-     inkscape:cx="10.279652"
+     inkscape:cx="3.838974"
      inkscape:cy="8.658763"
-     inkscape:window-x="960"
+     inkscape:window-x="1920"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg4"
      inkscape:pagecheckerboard="true" />
+  <rect
+     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.67782897;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     id="rect816-3-7-5"
+     width="2"
+     height="4.9152541"
+     x="-0.99999917"
+     y="-17.313709"
+     transform="rotate(135)" />
   <path
-     style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.09662379;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     d="M 6.6230469 1 A 5.6231913 5.6231913 0 0 0 1 6.6230469 A 5.6231913 5.6231913 0 0 0 6.6230469 12.246094 A 5.6231913 5.6231913 0 0 0 10.339844 10.837891 L 11.271484 11.769531 L 11.023438 12.017578 L 14.005859 15 L 15 14.005859 L 12.017578 11.023438 L 11.769531 11.271484 L 10.835938 10.337891 A 5.6231913 5.6231913 0 0 0 12.246094 6.6230469 A 5.6231913 5.6231913 0 0 0 6.6230469 1 z M 6.6230469 1.703125 A 4.9202924 4.9202924 0 0 1 11.542969 6.6230469 A 4.9202924 4.9202924 0 0 1 6.6230469 11.542969 A 4.9202924 4.9202924 0 0 1 1.703125 6.6230469 A 4.9202924 4.9202924 0 0 1 6.6230469 1.703125 z "
-     id="path1099" />
+     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:1.26999259;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     d="M 7.0507812 3.0507812 A 4 4 0 0 0 3.0507812 7.0507812 A 4 4 0 0 0 7.0507812 11.050781 A 4 4 0 0 0 11.050781 7.0507812 A 4 4 0 0 0 7.0507812 3.0507812 z M 7.0507812 4.5507812 A 2.5 2.5 0 0 1 9.5507812 7.0507812 A 2.5 2.5 0 0 1 7.0507812 9.5507812 A 2.5 2.5 0 0 1 4.5507812 7.0507812 A 2.5 2.5 0 0 1 7.0507812 4.5507812 z "
+     id="path824" />
 </svg>
