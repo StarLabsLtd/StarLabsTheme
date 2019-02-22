@@ -21,7 +21,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -53,61 +53,38 @@
      id="namedview6"
      showgrid="false"
      inkscape:zoom="45.254834"
-     inkscape:cx="6.0485927"
+     inkscape:cx="-2.3483003"
      inkscape:cy="8.8568055"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg4" />
-  <g
-     id="g869"
-     transform="translate(-0.25466037,-16.860371)">
-    <path
-       transform="matrix(0.07585544,0,0,0.07834366,28.950778,7.3223504)"
-       clip-path="url(#clipPath1127)"
-       d="m -224.09259,174.83332 a 47.407414,47.407414 0 0 0 -94.81482,0 47.419266,47.419266 0 0 0 29.62963,43.93483 v 44.95408 h 35.55556 v -44.95408 a 47.419266,47.419266 0 0 0 29.62963,-43.93483 z"
-       stroke-miterlimit="10"
-       id="path6"
-       inkscape:connector-curvature="0"
-       style="display:inline;fill:none;stroke:#808080;stroke-width:11.85185337;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1" />
-    <g
-       transform="matrix(1,0,0,0.80724154,0,6.3355673)"
-       id="g852">
-      <rect
-         style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.06551223;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-         id="rect1093"
-         width="10"
-         height="11.768473"
-         x="3.2546604"
-         y="21.099436" />
-      <ellipse
-         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.06551223;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-         id="path1149"
-         cx="8.2546597"
-         cy="24.765482"
-         rx="1.148844"
-         ry="1.3643261" />
-      <path
-         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.06551223px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 8.7706202,25.480128 0.9189457,4.405287 H 6.8197531 l 0.9094712,-4.359869 h 1.0269448"
-         id="path1151"
-         inkscape:connector-curvature="0" />
-    </g>
-    <rect
-       ry="0"
-       y="20.981422"
-       x="4.312429"
-       height="4.3833432"
-       width="0.8979795"
-       id="rect871"
-       style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.54914165;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <rect
-       style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.54914165;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect860"
-       width="0.8979795"
-       height="4.3833432"
-       x="11.503671"
-       y="20.981422"
-       ry="0" />
-  </g>
+  <path
+     style="display:inline;fill:none;stroke:#808080;stroke-width:11.85185337;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
+     inkscape:connector-curvature="0"
+     id="path6"
+     stroke-miterlimit="10"
+     d="m -224.09259,174.83332 a 47.407414,47.407414 0 0 0 -94.81482,0 47.419266,47.419266 0 0 0 29.62963,43.93483 v 44.95408 h 35.55556 v -44.95408 a 47.419266,47.419266 0 0 0 29.62963,-43.93483 z"
+     clip-path="url(#clipPath1127)"
+     transform="matrix(0.07585544,0,0,0.07834366,28.696118,-9.5380206)" />
+  <path
+     style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.05886053;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+     d="M 3 6.5078125 L 3 16.007812 L 13 16.007812 L 13 6.5078125 L 3 6.5078125 z M 8 8.3652344 A 1.148844 1.1013408 0 0 1 9.1484375 9.4667969 A 1.148844 1.1013408 0 0 1 8.6074219 10.402344 L 9.4355469 13.599609 L 6.5644531 13.599609 L 7.3925781 10.398438 A 1.148844 1.1013408 0 0 1 6.8515625 9.4667969 A 1.148844 1.1013408 0 0 1 8 8.3652344 z "
+     id="rect1093" />
+  <rect
+     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.54914165;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="rect871"
+     width="0.8979795"
+     height="4.3833432"
+     x="4.0577683"
+     y="4.1210513"
+     ry="0" />
+  <rect
+     ry="0"
+     y="4.1210513"
+     x="11.24901"
+     height="4.3833432"
+     width="0.8979795"
+     id="rect860"
+     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.54914165;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>

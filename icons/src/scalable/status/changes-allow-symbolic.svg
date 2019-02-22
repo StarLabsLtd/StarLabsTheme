@@ -64,7 +64,7 @@
      id="namedview6"
      showgrid="false"
      inkscape:zoom="64"
-     inkscape:cx="4.1830222"
+     inkscape:cx="1.2142722"
      inkscape:cy="7.4662704"
      inkscape:window-x="0"
      inkscape:window-y="27"
@@ -84,25 +84,10 @@
      height="16"
      x="-46.033897"
      y="83.090523" />
-  <rect
-     style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.05890815;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-     id="rect1093"
-     width="10"
-     height="9.515377"
-     x="2.9999998"
-     y="6.4846234" />
-  <ellipse
-     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.05890815;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-     id="path1149"
-     cx="7.9999986"
-     cy="9.4487991"
-     rx="1.148844"
-     ry="1.1031233" />
   <path
-     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.05890815px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="m 8.5159597,10.026624 0.9189457,3.561887 H 6.5650926 l 0.9094712,-3.525164 h 1.0269448"
-     id="path1151"
-     inkscape:connector-curvature="0" />
+     style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.05890815;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+     d="M 3 6.484375 L 3 16 L 13 16 L 13 6.484375 L 3 6.484375 z M 8 8.3457031 A 1.148844 1.1031233 0 0 1 9.1484375 9.4492188 A 1.148844 1.1031233 0 0 1 8.6074219 10.384766 L 9.4355469 13.587891 L 6.5644531 13.587891 L 7.3925781 10.382812 A 1.148844 1.1031233 0 0 1 6.8515625 9.4492188 A 1.148844 1.1031233 0 0 1 8 8.3457031 z "
+     id="rect1093" />
   <path
      style="display:inline;fill:none;stroke:#808080;stroke-width:11.84958061;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
      inkscape:connector-curvature="0"
