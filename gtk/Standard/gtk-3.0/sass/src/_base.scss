@@ -38,6 +38,7 @@ overlay > notebook > stack > box > grid > overlay scrolledwindow widget {
 }
 
 .view {
+	background-color: transparentize(if($variant==light, $white, $dark1) ,0);
 //	@include fill(normal, $alpha3, $variant);
 	&:backdrop {
 //		@include fill(backdrop, $alpha3, $variant);
