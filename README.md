@@ -87,13 +87,5 @@ update-initramfs -u
 
 Any issues or questions, please contact us at [support@starlabs.systems](mailto:supportstarlabs.systems)
 
-[© Star Labs® / All Rights Reserved.](https://starlabs.systems) # StarLabsTheme
-Star Labs GNOME Shell and GTK Theme
+[© Star Labs® / All Rights Reserved.](https://starlabs.systems)
 
-
-
-
-Any issues or questions, please contact us at support@starlabs.systems
-
-© Star Labs® / All Rights Reserved.
-https://starlabs.systems
