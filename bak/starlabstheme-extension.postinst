@@ -1,9 +1,0 @@
-#!/bin/sh
-
-set -e
-
-if [ "$1" = configure ]; then
-	glib-compline-schemas /usr/share/glib-2.0/schemas
-fi
-#DEBHELPER#
-
