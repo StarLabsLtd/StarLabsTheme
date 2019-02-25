@@ -1,3 +1,28 @@
+starlabstheme-master (0.0.47.3) cosmic; urgency=medium
+
+  * Various icon updates
+
+ -- Sean Rhodes <sean@starlabs.systems>  Mon, 25 Feb 2019 23:12:29 +0000
+
+starlabstheme-master (0.0.47.2) cosmic; urgency=medium
+
+  * Fixed dropdowns
+
+ -- Sean Rhodes <sean@starlabs.systems>  Sat, 23 Feb 2019 09:20:38 +0000
+
+starlabstheme-master (0.0.47.1) cosmic; urgency=medium
+
+  * Declared base .view color as apps like libreoffice inherit this color
+
+ -- Sean Rhodes <sean@starlabs.systems>  Fri, 22 Feb 2019 22:49:49 +0000
+
+starlabstheme-master (0.0.47) cosmic; urgency=medium
+
+  * Added new icons
+  * Fixed scrollbar bug
+
+ -- Sean Rhodes <sean@starlabs.systems>  Fri, 22 Feb 2019 17:21:33 +0000
+
 starlabstheme-master (0.0.42) cosmic; urgency=medium
 
   * Fixed installer and remove
