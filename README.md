@@ -42,7 +42,7 @@ sudo apt remove starlabstheme
 ##### Dependencies
 You need to install:
 ```
-git sassc
+git meson sassc
 ```
 ##### Install
 ```
