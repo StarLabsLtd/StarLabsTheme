@@ -10,23 +10,22 @@
    height="16"
    width="16"
    version="1.1"
-   id="svg6"
+   id="svg10"
    sodipodi:docname="channel-insecure-symbolic.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
-     id="metadata12">
+     id="metadata16">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs10">
+     id="defs14">
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath1127">
@@ -38,38 +37,6 @@
          x="-328.80466"
          y="121.6497" />
     </clipPath>
-    <filter
-       style="color-interpolation-filters:sRGB"
-       inkscape:label="Drop Shadow"
-       id="filter1128">
-      <feFlood
-         flood-opacity="0.498039"
-         flood-color="rgb(0,0,0)"
-         result="flood"
-         id="feFlood1118" />
-      <feComposite
-         in="flood"
-         in2="SourceGraphic"
-         operator="in"
-         result="composite1"
-         id="feComposite1120" />
-      <feGaussianBlur
-         in="composite1"
-         stdDeviation="5"
-         result="blur"
-         id="feGaussianBlur1122" />
-      <feOffset
-         dx="0"
-         dy="0"
-         result="offset"
-         id="feOffset1124" />
-      <feComposite
-         in="SourceGraphic"
-         in2="offset"
-         operator="over"
-         result="composite2"
-         id="feComposite1126" />
-    </filter>
   </defs>
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -82,41 +49,27 @@
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
      inkscape:window-height="1539"
-     id="namedview8"
+     id="namedview12"
      showgrid="false"
-     inkscape:zoom="41.7193"
-     inkscape:cx="5.8279889"
-     inkscape:cy="-1.8870023"
-     inkscape:window-x="0"
-     inkscape:window-y="27"
+     inkscape:zoom="11.313709"
+     inkscape:cx="1.7027426"
+     inkscape:cy="-6.5926898"
+     inkscape:window-x="870"
+     inkscape:window-y="466"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg6" />
+     inkscape:current-layer="svg10" />
   <path
-     style="display:inline;fill:none;stroke:#808080;stroke-width:11.85185337;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-     inkscape:connector-curvature="0"
-     id="path6"
-     stroke-miterlimit="10"
-     d="m -224.09259,174.83332 a 47.407414,47.407414 0 0 0 -94.81482,0 47.419266,47.419266 0 0 0 29.62963,43.93483 v 44.95408 h 35.55556 v -44.95408 a 47.419266,47.419266 0 0 0 29.62963,-43.93483 z"
-     clip-path="url(#clipPath1127)"
-     transform="matrix(0.07585544,0,0,0.07834366,28.696118,-9.5455576)" />
+     style="opacity:0.9;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.08975382;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     d="M 8,0 A 4.25,4.25 0 0 0 3.75,4.25 v 8.5 H 5.5 v -8.6 a 2.5,2.5 0 0 1 2.5,-2.5 2.5,2.5 0 0 1 2.5,2.5 v 8.6 h 1.75 V 4.25 A 4.25,4.25 0 0 0 8,0 Z"
+     id="path1177"
+     inkscape:connector-curvature="0" />
   <path
-     style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.05886053;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-     d="M 3 6.5 L 3 16 L 13 16 L 13 6.5 L 3 6.5 z M 7.5664062 8.25 L 8.4335938 8.25 L 8.4335938 8.640625 C 8.4335938 10.008001 8.3604084 11.25141 8.2128906 12.369141 L 7.7871094 12.369141 C 7.6395916 11.25141 7.5664063 10.008001 7.5664062 8.640625 L 7.5664062 8.25 z M 8 13.203125 C 8.1531915 13.203125 8.2785461 13.253341 8.375 13.355469 C 8.4771277 13.457596 8.5273437 13.582951 8.5273438 13.730469 C 8.5273438 13.877986 8.4771277 14.003341 8.375 14.105469 C 8.2785461 14.201923 8.1531915 14.25 8 14.25 C 7.8468085 14.25 7.7193152 14.201923 7.6171875 14.105469 C 7.5207336 14.003341 7.4726562 13.877986 7.4726562 13.730469 C 7.4726562 13.582951 7.5207336 13.457596 7.6171875 13.355469 C 7.7193152 13.253341 7.8468085 13.203125 8 13.203125 z "
-     id="rect1093" />
-  <rect
-     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.54914165;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="rect871"
-     width="0.8979795"
-     height="4.3833432"
-     x="4.0577683"
-     y="4.1135144"
-     ry="0" />
-  <rect
-     ry="0"
-     y="4.1135144"
-     x="11.24901"
-     height="4.3833432"
-     width="0.8979795"
-     id="rect860"
-     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.54914165;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     style="display:inline;opacity:0.9;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.0712751;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     d="M 8,0.775 A 3.375,3.375 0 0 0 4.625,4.15 v 8.6 H 5.5 v -8.6 a 2.5,2.5 0 0 1 2.5,-2.5 2.5,2.5 0 0 1 2.5,2.5 v 8.6 h 0.875 V 4.15 A 3.375,3.375 0 0 0 8,0.775 Z"
+     id="path1177-5"
+     inkscape:connector-curvature="0" />
+  <path
+     style="display:inline;opacity:1;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.46368098;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     d="M 2.6015625 6.7128906 L 2.6015625 16 L 13.398438 16 L 13.398438 6.7128906 L 2.6015625 6.7128906 z M 7.6992188 9.28125 L 8.3007812 9.28125 L 8.3007812 9.5527344 C 8.3007812 10.498503 8.2485175 11.357762 8.1464844 12.130859 L 7.8535156 12.130859 C 7.7514825 11.357762 7.6992188 10.498503 7.6992188 9.5527344 L 7.6992188 9.28125 z M 8 12.707031 C 8.1059575 12.707031 8.1930517 12.741862 8.2597656 12.8125 C 8.3304039 12.883138 8.3652344 12.970233 8.3652344 13.072266 C 8.3652344 13.174299 8.3304039 13.261393 8.2597656 13.332031 C 8.1930517 13.398745 8.1059575 13.431641 8 13.431641 C 7.8940425 13.431641 7.8050133 13.398745 7.734375 13.332031 C 7.667661 13.261393 7.6347656 13.174299 7.6347656 13.072266 C 7.6347656 12.970233 7.667661 12.883138 7.734375 12.8125 C 7.8050133 12.741862 7.8940425 12.707031 8 12.707031 z "
+     id="rect1106-3" />
 </svg>
