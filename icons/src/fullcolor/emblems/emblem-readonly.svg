@@ -1159,7 +1159,7 @@
    id="namedview249"
    showgrid="false"
    inkscape:zoom="1.4142136"
-   inkscape:cx="432.79949"
+   inkscape:cx="298.44921"
    inkscape:cy="105.82475"
    inkscape:window-x="1920"
    inkscape:window-y="27"
@@ -1170,17 +1170,13 @@
 <g
    inkscape:groupmode="layer"
    id="layer2"
-   inkscape:label="Background"><circle
-     style="display:inline;fill:#fd6a02;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="path1090"
-     cx="128"
-     cy="128"
-     r="124" /></g><g
+   inkscape:label="Background" /><g
    inkscape:groupmode="layer"
    id="layer1"
    inkscape:label="Icon"
    style="display:inline"><g
-     id="g1437"><g
+     id="g1437"
+     transform="matrix(1.55,0,0,1.55,-70.400006,-70.4)"><g
        transform="translate(-314.5,-80.5)"
        id="g1427"><path
          style="opacity:1;fill:#72673c;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.89753824;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
