@@ -40,14 +40,15 @@
      id="namedview6"
      showgrid="false"
      inkscape:zoom="59"
-     inkscape:cx="8.2446927"
+     inkscape:cx="5.0243537"
      inkscape:cy="7.7077225"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg4" />
   <path
-     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.65795618;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     d="M 8 0 A 4 4 0 0 0 4.0058594 3.8808594 L 4 3.8808594 L 4.0058594 3.8964844 A 4 4 0 0 0 4 4 A 4 4 0 0 0 4.8535156 6.4667969 L 8 16 L 11.150391 6.4550781 A 4 4 0 0 0 12 4 A 4 4 0 0 0 11.996094 3.8925781 L 12 3.8808594 L 11.996094 3.8808594 A 4 4 0 0 0 8 0 z M 8 1 A 3 3 0 0 1 11 4 A 3 3 0 0 1 8 7 A 3 3 0 0 1 5 4 A 3 3 0 0 1 8 1 z "
-     id="path817" />
+     style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.38088405;marker:none;enable-background:accumulate"
+     d="M 8,6.0761286e-4 C 5.2128604,6.0761286e-4 2.953125,2.2603433 2.953125,5.0474826 2.953125,9.193312 6.9194015,15.915475 8,15.998655 9.0805986,16.081845 13.046875,9.1101264 13.046875,5.0474826 13.046875,2.2603433 10.787139,6.0761286e-4 8,6.0761286e-4 Z M 8,1.2193576 A 3.8265133,3.8265133 0 0 1 11.826172,5.0474826 3.8265133,3.8265133 0 0 1 8,8.8736545 3.8265133,3.8265133 0 0 1 4.1738281,5.0474826 3.8265133,3.8265133 0 0 1 8,1.2193576 Z"
+     id="path14659-1"
+     inkscape:connector-curvature="0" />
 </svg>
