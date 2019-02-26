@@ -1192,7 +1192,7 @@
    id="namedview249"
    showgrid="false"
    inkscape:zoom="1.4142136"
-   inkscape:cx="341.55176"
+   inkscape:cx="72.851195"
    inkscape:cy="110.20295"
    inkscape:window-x="1920"
    inkscape:window-y="27"
@@ -1292,7 +1292,7 @@
        x="140.20912"
        y="103.84956"
        inkscape:label="24x24" /></g><g
-     style="fill:#ffffff"
+     style="fill:#ffffff;fill-opacity:1"
      id="g843"
      transform="matrix(2.7999997,0,0,2.7999997,49.599994,163.72061)"><rect
        transform="rotate(-90)"
@@ -1321,7 +1321,7 @@
        width="2"
        id="rect816-3-7"
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.9668234;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" /></g><g
-     style="fill:#ffffff"
+     style="fill:#ffffff;fill-opacity:1"
      id="g843-7"
      transform="matrix(2.7999997,0,0,2.7999997,49.599994,107.72061)"><rect
        transform="rotate(-90)"
@@ -1350,7 +1350,7 @@
        width="2"
        id="rect816-3-7-6"
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.9668234;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" /></g><g
-     style="fill:#ffffff"
+     style="fill:#ffffff;fill-opacity:1"
      id="g843-2"
      transform="matrix(2.7999997,0,0,2.7999997,49.599994,51.720612)"><rect
        transform="rotate(-90)"
@@ -1400,7 +1400,7 @@
      x="-86"
      y="113.99999"
      transform="rotate(-90)" /><path
-     style="opacity:1;fill:#0ba011;fill-opacity:1;stroke:none;stroke-width:3.02632785;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     style="opacity:1;fill:#177f1d;fill-opacity:1;stroke:none;stroke-width:3.02632785;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
      d="m 57.857866,122.95 10.10113,10.10113 4.041002,4.041 4.041002,-4.041 10.101134,-10.10113 10.10113,-10.10113 4.041006,-4.04101 -4.041003,-4.041 -4.041005,4.04101 L 82.101132,118.909 71.999998,129.01013 61.898866,118.909 Z"
      id="rect816-3-7-5-7"
      inkscape:connector-curvature="0" /></g><g
