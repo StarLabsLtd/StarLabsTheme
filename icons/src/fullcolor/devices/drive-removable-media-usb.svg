@@ -7513,9 +7513,9 @@
    inkscape:window-height="1539"
    id="namedview249"
    showgrid="false"
-   inkscape:zoom="2.8284272"
-   inkscape:cx="104.49828"
-   inkscape:cy="168.94234"
+   inkscape:zoom="4.0000001"
+   inkscape:cx="49.29445"
+   inkscape:cy="211.40425"
    inkscape:window-x="1920"
    inkscape:window-y="27"
    inkscape:window-maximized="0"
@@ -7526,7 +7526,7 @@
    inkscape:groupmode="layer"
    id="layer2"
    inkscape:label="Background"><circle
-     style="display:inline;fill:#003059;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="display:inline;fill:#0068bf;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path1090"
      cx="128"
      cy="128"
@@ -7550,7 +7550,7 @@
      y="48" /><path
      inkscape:connector-curvature="0"
      style="fill:#666666;fill-opacity:1;stroke-width:0.63899767"
-     d="m 127.54641,47.999998 v 0.03774 h 1.92771 v -0.03774 z m 1.92771,0.03774 v 5.632001 h -4.08221 v 3.401843 h 4.08221 v 1.965508 2.872669 0.755974 h -4.08221 v 3.401832 h 4.08221 v 1.965509 2.910465 0.755975 h -4.08221 v 3.439632 h 4.08221 v 1.927704 2.872667 0.755975 h -4.08221 v 3.401841 h 4.08221 v 4.800377 h -1.92771 V 86.025047 H 123.4642 V 78.80558 h 4.08221 v -1.738725 -0.07567 h -4.08221 v -7.219389 h 4.08221 v -1.738724 -0.03774 h -4.08221 v -7.219524 h 4.08221 v -1.738724 -0.07567 H 123.4642 V 51.74202 h 4.08221 v -3.70423 h -16.21545 -0.0756 -4.91379 V 88.9355 h 4.91379 0.0757 33.52706 4.98937 V 48.037796 h -4.98945 z"
+     d="m 127.39524,47.962206 v 0.03774 h 1.92771 v -0.03774 z m 1.92771,0.03774 v 5.632001 h -4.08221 v 3.401843 h 4.08221 v 1.965508 2.872669 0.755974 h -4.08221 v 3.401832 h 4.08221 v 1.965509 2.910465 0.755975 h -4.08221 v 3.439632 h 4.08221 v 1.927704 2.872667 0.755975 h -4.08221 v 3.401841 h 4.08221 v 4.800377 h -1.92771 v -2.872663 h -4.08221 v -7.219467 h 4.08221 v -1.738725 -0.07567 h -4.08221 v -7.219389 h 4.08221 V 67.99528 67.95754 h -4.08221 v -7.219524 h 4.08221 v -1.738724 -0.07567 h -4.08221 v -7.219394 h 4.08221 v -3.70423 h -16.21545 -0.0756 -4.91379 v 40.89771 h 4.91379 0.0757 33.52706 4.98937 V 48.000004 h -4.98945 z"
      id="rect68" /></g><g
    inkscape:groupmode="layer"
    id="layer1"
