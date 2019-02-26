@@ -1151,7 +1151,7 @@
    id="namedview249"
    showgrid="false"
    inkscape:zoom="1.4142136"
-   inkscape:cx="79.115306"
+   inkscape:cx="-57.356299"
    inkscape:cy="132.98742"
    inkscape:window-x="0"
    inkscape:window-y="27"
@@ -1167,17 +1167,7 @@
    id="path1090"
    cx="128"
    cy="128"
-   r="124" /><text
-   xml:space="preserve"
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none"
-   x="164.52"
-   y="220.368"
-   id="text1093-7"><tspan
-     sodipodi:role="line"
-     id="tspan1091-9"
-     x="164.52"
-     y="220.368"
-     style="font-size:96px;fill:#ffffff">=</tspan></text>
+   r="124" />
 
 <path
    style="fill:#2195f2;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -1211,6 +1201,7 @@
 
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none"
@@ -1222,6 +1213,7 @@
      x="59.384003"
      y="70.568001"
      style="font-size:96px;fill:#ffffff">_</tspan></text>
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none"
@@ -1233,6 +1225,7 @@
      x="146.12"
      y="201.368"
      style="font-size:96px;fill:#ffffff">=</tspan></text>
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none"
@@ -1244,6 +1237,7 @@
      x="56.119995"
      y="201.224"
      style="font-size:96px;fill:#ffffff">+</tspan></text>
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none"
@@ -1255,6 +1249,7 @@
      x="148.664"
      y="106.71201"
      style="font-size:96px;fill:#ffffff">x</tspan></text>
+
 </g><g
    inkscape:groupmode="layer"
    id="layer6"
