@@ -41,7 +41,7 @@
      id="namedview6"
      showgrid="false"
      inkscape:zoom="14.75"
-     inkscape:cx="3.4806205"
+     inkscape:cx="3.9551968"
      inkscape:cy="11.775332"
      inkscape:window-x="960"
      inkscape:window-y="27"
@@ -82,39 +82,8 @@
        id="rect816-3-7-5"
        style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.9668234;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
   </g>
-  <g
-     id="g843-3-6"
-     transform="matrix(0.8,0,0,0.8,2.6,1.2058888)"
-     style="opacity:0.5">
-    <rect
-       transform="rotate(-90)"
-       y="3"
-       x="-12.24264"
-       height="10"
-       width="2"
-       id="rect816-3-67-2"
-       style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.9668234;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
-    <rect
-       y="2.2426391"
-       x="11"
-       height="10"
-       width="2"
-       id="rect816-3-3-5-9"
-       style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.9668234;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
-    <rect
-       transform="rotate(90)"
-       y="-13"
-       x="2.2426391"
-       height="10"
-       width="2"
-       id="rect816-3-6-3-1"
-       style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.9668234;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
-    <rect
-       y="2.2426386"
-       x="3"
-       height="10"
-       width="2"
-       id="rect816-3-7-5-2"
-       style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.9668234;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
-  </g>
+  <path
+     style="opacity:0.5;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.77345872;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     d="M 5 3 L 5 4.5996094 L 11.400391 4.5996094 L 11.400391 11 L 13 11 L 13 4.5996094 L 13 3 L 11.400391 3 L 5 3 z "
+     id="rect816-3-3-5-9" />
 </svg>
