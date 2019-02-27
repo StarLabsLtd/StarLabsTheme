@@ -10,22 +10,49 @@
    height="16"
    width="16"
    version="1.1"
-   id="svg8"
+   id="svg4"
    sodipodi:docname="media-playlist-repeat-song-symbolic-rtl.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
-     id="metadata14">
+     id="metadata10">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs12" />
+     id="defs8">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath827">
+      <rect
+         style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect829"
+         width="3.3677459"
+         height="3.1759882"
+         x="-6.5677037"
+         y="31.700167"
+         ry="0.50847501" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1109">
+      <rect
+         style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1111"
+         width="3.955004"
+         height="3.5954583"
+         x="27.827713"
+         y="1.5103962"
+         ry="0.335576"
+         transform="rotate(90)" />
+    </clipPath>
+  </defs>
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -37,51 +64,57 @@
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
      inkscape:window-height="1539"
-     id="namedview10"
+     id="namedview6"
      showgrid="false"
-     inkscape:zoom="14.75"
-     inkscape:cx="-8.9267377"
-     inkscape:cy="12.337906"
-     inkscape:window-x="437"
-     inkscape:window-y="440"
+     inkscape:zoom="64"
+     inkscape:cx="4.499549"
+     inkscape:cy="9.2743426"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg8"
-     showguides="true"
-     inkscape:guide-bbox="true">
-    <sodipodi:guide
-       position="-41.559322,13.423729"
-       orientation="1,0"
-       id="guide815"
-       inkscape:locked="false" />
-  </sodipodi:namedview>
-  <path
-     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:1.01409066;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     d="M 14.927734 6.8164062 L 14.927734 11.695312 C 14.927734 11.924316 14.742674 12.109375 14.513672 12.109375 L 11.416016 12.109375 L 10.203125 12.109375 L 8.734375 12.109375 L 7.6621094 12.109375 L 7.6621094 12.111328 L 1.4863281 12.111328 C 1.257326 12.111328 1.0722656 11.926269 1.0722656 11.697266 L 1.0722656 6.8183594 C 0.47500431 6.8415865 1.4802974e-16 7.3245827 0 7.9277344 L 0 12.066406 C 0 12.684477 0.49716305 13.183594 1.1152344 13.183594 L 8.4375 13.183594 C 8.4409602 13.183594 8.4438132 13.181672 8.4472656 13.181641 L 8.734375 13.181641 L 10.203125 13.181641 L 11.416016 13.181641 L 14.884766 13.181641 C 15.502837 13.181641 16 12.684477 16 12.066406 L 16 7.9277344 C 16 7.3245829 15.524996 6.8396333 14.927734 6.8164062 z "
-     id="rect849-3-7" />
-  <path
-     inkscape:connector-curvature="0"
-     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:1.01409066;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     d="m 2.056997e-7,8.0721157 c 0,0.603151 0.4750802843003,1.087679 1.0723416943003,1.110906 v -4.87903 c 0,-0.2290027 0.1840111,-0.4142575 0.4130132,-0.4142575 H 5.7971139 V 2.8173931 H 1.1158824 C 0.49781106,2.8173931 2.056997e-7,3.3152038 2.056997e-7,3.9332752 Z"
-     id="rect849-3-3-5" />
-  <path
-     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.56791806;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     d="M 8.4629222,0.6996633 9.2211793,1.4579211 7.3255371,3.3535633 9.2211793,5.2492067 8.4629222,6.0074644 6.5672781,4.1118211 5.8090222,3.3535633 6.5672781,2.5953074 Z"
-     id="rect816-3-7-5"
-     inkscape:connector-curvature="0" />
-  <path
-     inkscape:connector-curvature="0"
-     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:1.01409066;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     d="M 14.927658,9.1826067 V 4.3035771 c 0,-0.2290028 -0.184011,-0.4142576 -0.413013,-0.4142576 H 6.4496901 C 6.4729179,3.2920588 6.9586887,2.8169784 7.5618404,2.8169784 H 14.884118 C 15.502189,2.8169784 16,3.3147892 16,3.9328605 v 4.1388412 c 0,0.603151 -0.47508,1.087678 -1.072342,1.110905 z"
-     id="rect849-3" />
+     inkscape:current-layer="svg4"
+     showguides="false" />
+  <g
+     id="g830"
+     transform="matrix(-1,0,0,1,16,0)">
+    <path
+       sodipodi:nodetypes="ccccccc"
+       inkscape:connector-curvature="0"
+       id="rect816-3-7-5-6-7-2"
+       d="m 14.235878,11.187484 v 1.076014 H 5.3427412 l -3.5572629,-2e-6 4.1e-6,-1.076012 h 3.5572465 z"
+       style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:1.03614485;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path
+       inkscape:connector-curvature="0"
+       id="rect816-3-7-5-3-5"
+       d="M 7.039292,3.7365 6.278435,4.4973569 8.1805749,6.3994955 6.278435,8.3016367 7.039292,9.0624934 8.9414331,7.1603526 9.7022875,6.3994955 8.9414331,5.6386411 Z"
+       style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.56986457;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path
+       id="rect816-3-7-5-6-7-2-9"
+       d="m 1.7641221,5.8614009 v 1.075977 h 3.5573118 3.845215 L 9.7034175,6.4006093 9.164209,5.8614009 H 5.3214339 Z m 8.9201179,0 0.539208,0.5392084 -0.539208,0.5367686 h 3.530474 v -1.075977 z"
+       style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:1.03614473;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       inkscape:connector-curvature="0" />
+    <path
+       sodipodi:nodetypes="ccccccc"
+       inkscape:connector-curvature="0"
+       id="rect816-3-7-5-6-7-2-9-3"
+       d="M 2.8411754,5.8614908 H 1.7651617 v 4.5356772 l 1.2e-6,1.814275 1.0760125,-2e-6 v -1.814267 z"
+       style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.73996985;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path
+       sodipodi:nodetypes="ccccccc"
+       inkscape:connector-curvature="0"
+       id="rect816-3-7-5-6-7-2-9-3-6"
+       d="m 14.235878,5.9135482 h -1.076014 v 4.5356778 l 10e-7,1.814274 1.076013,-2e-6 v -1.814266 z"
+       style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.73996985;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+  </g>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:35.7142868px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.89285713"
-     x="6.3567142"
-     y="11.142"
-     id="text821"><tspan
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.28571415px;line-height:1.25;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';letter-spacing:0px;word-spacing:0px;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.4017857"
+     x="10.733739"
+     y="10.588524"
+     id="text823"><tspan
        sodipodi:role="line"
-       id="tspan819"
-       x="6.3567142"
-       y="11.142"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.14285707px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#808080;fill-opacity:1;stroke-width:0.89285713">1</tspan></text>
+       id="tspan821"
+       x="10.733739"
+       y="10.588524"
+       style="stroke-width:0.4017857">1</tspan></text>
 </svg>
