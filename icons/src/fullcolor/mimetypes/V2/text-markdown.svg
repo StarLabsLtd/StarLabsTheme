@@ -1327,7 +1327,7 @@
    id="namedview249"
    showgrid="false"
    inkscape:zoom="2.8284271"
-   inkscape:cx="175.09475"
+   inkscape:cx="107.91961"
    inkscape:cy="86.490582"
    inkscape:window-x="1920"
    inkscape:window-y="27"
@@ -1361,29 +1361,32 @@
 
 <g
    id="g1196"
-   transform="matrix(0.90416667,0,0,0.90416667,12.266666,12.266666)"><text
-     id="text1128"
-     y="166.70967"
-     x="43.188988"
+   transform="matrix(0.90416667,0,0,0.90416667,12.266666,12.266666)">
+<g
+   id="g1142"
+   transform="matrix(0.70588235,0,0,0.70588235,37.647059,37.647057)"><text
+     xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:111.55526733px;line-height:1.25;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.30728829"
-     xml:space="preserve"><tspan
-       style="stroke-width:1.30728829"
-       y="166.70967"
-       x="43.188988"
+     x="43.188988"
+     y="166.70967"
+     id="text1128"><tspan
+       sodipodi:role="line"
        id="tspan1126"
-       sodipodi:role="line">M</tspan></text>
+       x="43.188988"
+       y="166.70967"
+       style="stroke-width:1.30728829">M</tspan></text>
 <path
-     id="path36"
-     d="m 169.88315,89.290323 v 23.224757 23.22478 h -11.61237 l 23.22475,30.96982 23.22477,-30.96982 H 193.10792 V 112.51508 89.290323 Z"
+     inkscape:connector-curvature="0"
      style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.12767148;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     inkscape:connector-curvature="0" /><rect
-     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:7.97761726;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     id="rect1198"
-     width="180.04082"
-     height="124.74128"
-     x="37.979591"
+     d="m 169.88315,89.290323 v 23.224757 23.22478 h -11.61237 l 23.22475,30.96982 23.22477,-30.96982 H 193.10792 V 112.51508 89.290323 Z"
+     id="path36" /><rect
+     ry="23.054506"
      y="65.629364"
-     ry="23.054506" /></g></g><g
+     x="37.979591"
+     height="124.74128"
+     width="180.04082"
+     id="rect1198"
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:7.97761726;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" /></g></g></g><g
    inkscape:groupmode="layer"
    id="layer6"
    inkscape:label="Shadow"

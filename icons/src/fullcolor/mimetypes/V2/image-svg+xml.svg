@@ -1327,7 +1327,7 @@
    id="namedview249"
    showgrid="false"
    inkscape:zoom="2"
-   inkscape:cx="11.9717"
+   inkscape:cx="-83.0283"
    inkscape:cy="49.944586"
    inkscape:window-x="1920"
    inkscape:window-y="27"
@@ -1361,15 +1361,16 @@
 
 <text
    xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:25.93361092px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#003059;fill-opacity:1;stroke:none;stroke-width:0.64834023"
-   x="29.135565"
-   y="165.46889"
+   style="font-style:normal;font-weight:normal;font-size:16.86429596px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#003059;fill-opacity:1;stroke:none;stroke-width:0.42160735"
+   x="63.709721"
+   y="152.36554"
    id="text1111"><tspan
      sodipodi:role="line"
      id="tspan1109"
-     x="29.135565"
-     y="165.46889"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:124.48133087px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#003059;fill-opacity:1;stroke-width:0.64834023">&lt;/&gt;</tspan></text>
+     x="63.709721"
+     y="152.36554"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:80.94861603px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#003059;fill-opacity:1;stroke-width:0.42160735">&lt;/&gt;</tspan></text>
+
 
 </g><g
    inkscape:groupmode="layer"
