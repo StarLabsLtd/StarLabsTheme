@@ -1350,12 +1350,12 @@
    id="namedview249"
    showgrid="false"
    inkscape:zoom="2"
-   inkscape:cx="106.9717"
+   inkscape:cx="11.9717"
    inkscape:cy="49.944586"
    inkscape:window-x="1920"
    inkscape:window-y="27"
    inkscape:window-maximized="0"
-   inkscape:current-layer="layer2"
+   inkscape:current-layer="layer1"
    inkscape:pagecheckerboard="true"
    showguides="true"
    inkscape:guide-bbox="true"><sodipodi:guide
@@ -1385,7 +1385,7 @@
 <g
    style="display:inline"
    id="g1153"
-   transform="matrix(0.87500006,0,0,0.87500006,279.81251,-77.18751)"><path
+   transform="matrix(0.75000005,0,0,0.75000005,258.12501,-47.875008)"><path
      style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:url(#linearGradient3005);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.5;marker:none"
      id="path7508"
      d="m -173.6354,273.59957 c 35.39768,48.25534 70.03957,-13.46852 69.98868,-50.58675 -0.0602,-43.88605 -44.54091,-68.41369 -70.01768,-68.41369 -40.89242,0 -79.8356,33.79608 -79.8356,80.03589 0,51.396 44.64038,79.86497 79.8356,79.86497 -7.96447,-1.14675 -34.5062,-6.83395 -34.86292,-67.96677 -0.23987,-41.3466 13.48757,-57.86551 34.80527,-50.59905 0.47743,0.17707 23.51392,9.26451 23.51392,38.95053 0,29.55992 -23.42727,38.71487 -23.42727,38.71487 z"
