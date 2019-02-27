@@ -137,41 +137,31 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
-     inkscape:window-height="1019"
+     inkscape:window-height="1539"
      id="namedview12"
      showgrid="false"
-     inkscape:zoom="20.85965"
-     inkscape:cx="4.1285774"
-     inkscape:cy="11.063553"
+     inkscape:zoom="29.5"
+     inkscape:cx="13.174398"
+     inkscape:cy="6.2329304"
      inkscape:window-x="0"
      inkscape:window-y="27"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg10" />
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg10"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       position="-28.813559,7.661017"
+       orientation="1,0"
+       id="guide1021"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
   <path
-     style="opacity:0.55;fill:#808080;fill-opacity:1;stroke:none;stroke-width:3.466748;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     d="M 8 0 A 16 16 0 0 0 -8 16 A 16 16 0 0 0 8.0019531 32 A 16 16 0 0 0 24 16 A 16 16 0 0 0 8 0 z M 8 3 A 13 13 0 0 1 21 16 A 13 13 0 0 1 8 29 A 13 13 0 0 1 -5 16 A 13 13 0 0 1 8 3 z "
-     id="path900"
-     clip-path="url(#clipPath1109)" />
+     style="opacity:0.5;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8.22895622;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     d="m 0,5.6568542 8,8.0000008 8,-8.0000008 a 11.313708,11.313708 0 0 0 -16,0 z"
+     id="path836"
+     inkscape:connector-curvature="0" />
   <path
-     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:2.81673288;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     d="M 8 3 A 13 13 0 0 0 -5 16 A 13 13 0 0 0 8 29 A 13 13 0 0 0 21 16 A 13 13 0 0 0 8 3 z M 8 6 A 10 10 0 0 1 18 16 A 10 10 0 0 1 8 26 A 10 10 0 0 1 -2 16 A 10 10 0 0 1 8 6 z "
-     id="path900-5"
-     clip-path="url(#clipPath1113)" />
-  <path
-     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:2.16671753;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     d="M 8 6 A 10 10 0 0 0 -2 16 A 10 10 0 0 0 8 26 A 10 10 0 0 0 18 16 A 10 10 0 0 0 8 6 z M 8 9 A 7 7 0 0 1 15 16 A 7 7 0 0 1 8 23 A 7 7 0 0 1 1 16 A 7 7 0 0 1 8 9 z "
-     id="path900-5-6"
-     clip-path="url(#clipPath1117)" />
-  <path
-     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:1.51670229;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     d="M 8 9 A 7 7 0 0 0 1 16 A 7 7 0 0 0 8 23 A 7 7 0 0 0 15 16 A 7 7 0 0 0 8 9 z M 8 12 A 4 4 0 0 1 12 16 A 4 4 0 0 1 8 20 A 4 4 0 0 1 4 16 A 4 4 0 0 1 8 12 z "
-     id="path900-5-6-2"
-     clip-path="url(#clipPath1121)" />
-  <circle
-     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.866687;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     id="path900-5-6-2-9"
-     cx="8.0009766"
-     cy="16"
-     r="4"
-     clip-path="url(#clipPath1125)" />
+     style="opacity:1;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.68602705;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     d="M 7.9160156 4.2949219 A 9.1923881 9.1923881 0 0 0 1.5488281 6.9863281 A 9.1923881 9.1923881 0 0 0 1.4179688 7.1269531 L 2.9179688 8.6269531 L 4.4179688 10.126953 L 5.9179688 11.626953 L 7.9472656 13.65625 L 10.082031 11.523438 L 11.582031 10.023438 L 13.082031 8.5234375 L 14.582031 7.0234375 A 9.1923881 9.1923881 0 0 0 14.548828 6.9863281 A 9.1923881 9.1923881 0 0 0 7.9160156 4.2949219 z "
+     id="path836-3" />
 </svg>
