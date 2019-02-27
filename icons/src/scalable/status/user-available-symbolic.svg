@@ -39,16 +39,16 @@
      inkscape:window-height="1539"
      id="namedview6"
      showgrid="false"
-     inkscape:zoom="29.5"
-     inkscape:cx="6.772918"
-     inkscape:cy="7.2575439"
+     inkscape:zoom="14.75"
+     inkscape:cx="7.6128769"
+     inkscape:cy="24.372593"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg4" />
   <path
-     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.09515279"
-     d="M 8.0000003,1.8945314 A 7.7264957,5.333333 0 0 0 0.2734376,7.2265626 7.7264957,5.333333 0 0 0 4.1640623,11.849609 l 1.302735,2.25586 2.685547,-1.550781 A 7.7264957,5.333333 0 0 0 15.726562,7.2265626 7.7264957,5.333333 0 0 0 8.0000003,1.8945314 Z"
-     id="rect4893"
+     style="opacity:1;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.29331252;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     d="m -2e-7,3.2941178 2.8235294,2.8235294 v 5.5999998 c 0,0.547482 0.4407529,0.988235 0.9882352,0.988235 H 15.011764 C 15.559247,12.705882 16,12.265129 16,11.717647 V 4.2823531 C 16,3.7348708 15.559247,3.2941178 15.011764,3.2941178 H 4.7058821 3.8117644 2.8235292 Z"
+     id="rect1170"
      inkscape:connector-curvature="0" />
 </svg>
