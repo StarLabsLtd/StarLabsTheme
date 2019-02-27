@@ -40,9 +40,9 @@
      inkscape:window-height="1539"
      id="namedview6"
      showgrid="false"
-     inkscape:zoom="20.85965"
-     inkscape:cx="-8.811442"
-     inkscape:cy="10.162966"
+     inkscape:zoom="41.7193"
+     inkscape:cx="-6.8593434"
+     inkscape:cy="1.4097234"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -52,15 +52,9 @@
      style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.9668234;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
      d="M 3 3 L 3 5 L 3 7 L 5 7 L 5 5 L 7 5 L 7 3 L 5 3 L 3 3 z M 9 3 L 9 5 L 11 5 L 11 7 L 13 7 L 13 3 L 9 3 z M 3 9 L 3 11 L 3 13 L 5 13 L 7 13 L 7 11 L 5 11 L 5 9 L 3 9 z M 11 9 L 11 11 L 9 11 L 9 13 L 11 13 L 13 13 L 13 11 L 13 9 L 11 9 z "
      id="rect816-3" />
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:21.4285717px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.53571433;"
-     x="6.3571429"
-     y="10.5"
-     id="text814"><tspan
-       sodipodi:role="line"
-       id="tspan812"
-       x="6.3571429"
-       y="10.5"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.14285707px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';stroke-width:0.53571433;fill:#808080;fill-opacity:1;">1</tspan></text>
+  <path
+     d="M 8.3464285,10.5 H 7.6535713 V 6.3714287 q -0.2428571,0.1285714 -0.5785714,0.2785714 -0.3285714,0.15 -0.5785711,0.2357143 L 6.2892858,6.3285716 Q 7.2678571,5.9500002 8.017857,5.5000002 h 0.3285715 z"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.14285707px;line-height:1.25;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';letter-spacing:0px;word-spacing:0px;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.53571433"
+     id="path853-3"
+     inkscape:connector-curvature="0" />
 </svg>
