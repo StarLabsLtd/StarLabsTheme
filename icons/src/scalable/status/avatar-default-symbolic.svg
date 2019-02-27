@@ -41,7 +41,7 @@
      id="namedview8"
      showgrid="false"
      inkscape:zoom="5.2149125"
-     inkscape:cx="21.253748"
+     inkscape:cx="-15.755502"
      inkscape:cy="-11.920541"
      inkscape:window-x="960"
      inkscape:window-y="27"
@@ -49,35 +49,36 @@
      inkscape:current-layer="svg6" />
   <g
      transform="matrix(0.03867272,0,0,-0.03867272,0.10569637,23.469088)"
-     id="g836">
+     id="g836"
+     style="fill:#808080;fill-opacity:1">
     <path
        d="M 256.77566,299.6501 408.26214,253.29738 292.38036,361.30629 265.14253,335.9264 Z M 115.88178,361.30629 -4.4419499e-6,253.29738 151.48385,299.6501 l -8.36337,36.2763 z m 123.84551,91.18548 -35.59067,154.37242 -35.60441,-154.37242 35.60441,-10.88532 35.59067,10.88532"
-       style="fill:#aaa8a8;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       style="fill:#808080;fill-opacity:1;fill-rule:evenodd;stroke:none"
        id="path14"
        inkscape:connector-curvature="0" />
     <path
        d="M 115.88178,361.30629 -4.4419499e-6,253.29738 143.12048,335.9264 Z m 90.13644,80.86952 -1.8816,164.68838 -35.60441,-154.37242 35.60441,-10.88532 1.8816,0.56936"
-       style="fill:#656263;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       style="fill:#808080;fill-opacity:1;fill-rule:evenodd;stroke:none"
        id="path16"
        inkscape:connector-curvature="0" />
     <path
        d="M 151.48385,299.6501 -4.4419499e-6,253.29738 143.12048,335.9264 Z m 115.10676,37.62301 141.67153,-83.97573 -151.48648,46.35272 8.36687,36.2763 1.44808,1.34671"
-       style="fill:#7f7d7e;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       style="fill:#808080;fill-opacity:1;fill-rule:evenodd;stroke:none"
        id="path18"
        inkscape:connector-curvature="0" />
     <path
        d="m 204.13662,412.98685 -154.167645,47.1733 117.938085,-109.92264 36.22956,-157.1017 36.21846,157.1017 117.93545,109.92264 -154.15391,-47.1733"
-       style="fill:#19b5f1;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       style="fill:#808080;fill-opacity:1;fill-rule:evenodd;stroke:none"
        id="path20"
        inkscape:connector-curvature="0" />
     <path
        d="M 204.13662,373.48223 49.968975,460.16015 167.90706,350.23751 204.13662,193.13581 v 180.34642"
-       style="fill:#1575c5;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       style="fill:#808080;fill-opacity:1;fill-rule:evenodd;stroke:none"
        id="path22"
        inkscape:connector-curvature="0" />
     <path
        d="M 204.13662,373.48223 358.29053,460.16015 240.35508,350.23751 204.13662,193.13581 v 180.34642"
-       style="fill:#0994db;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       style="fill:#808080;fill-opacity:1;fill-rule:evenodd;stroke:none"
        id="path24"
        inkscape:connector-curvature="0" />
   </g>
