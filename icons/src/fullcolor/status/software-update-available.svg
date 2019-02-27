@@ -17,7 +17,7 @@
    viewBox="0 0 256 256"
    enable-background="new 0 0 256 256"
    xml:space="preserve"
-   sodipodi:docname="aptdaemon-download.svg"
+   sodipodi:docname="software-update-available.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
    inkscape:label="Shadow"><metadata
    id="metadata253"><rdf:RDF><cc:Work
@@ -1182,7 +1182,7 @@
    id="namedview249"
    showgrid="false"
    inkscape:zoom="2.8284271"
-   inkscape:cx="53.833275"
+   inkscape:cx="-14.40253"
    inkscape:cy="116.97399"
    inkscape:window-x="0"
    inkscape:window-y="27"
@@ -1210,7 +1210,8 @@
      inkscape:connector-curvature="0"
      style="fill:#0068bf;fill-opacity:1;stroke:none;stroke-width:5.65587282;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter1105)"
      d="m 106.00093,56.75 v 41.9981 41.99814 H 85.00189 l 41.9981,56.00376 41.99812,-56.00376 H 147.99905 V 98.7481 56.75 Z"
-     id="path36" /><rect
+     id="path36"
+     transform="rotate(180,127,126.75)" /><rect
      style="fill:#c87137;fill-opacity:0.39607843"
      id="rect446"
      width="2.1213202"
