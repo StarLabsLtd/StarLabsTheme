@@ -11,7 +11,7 @@
    width="16"
    version="1.1"
    id="svg4"
-   sodipodi:docname="semi-starred-symbolic-rtl.svg"
+   sodipodi:docname="system-users-symbolic.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
      id="metadata10">
@@ -21,6 +21,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -39,15 +40,26 @@
      inkscape:window-height="1539"
      id="namedview6"
      showgrid="false"
-     inkscape:zoom="41.7193"
-     inkscape:cx="7.8403773"
-     inkscape:cy="5.4903649"
+     inkscape:zoom="10.429825"
+     inkscape:cx="-19.904918"
+     inkscape:cy="7.5347176"
      inkscape:window-x="1920"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg4" />
-  <path
-     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:2.28012753;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     d="M 8 1 L 5.7246094 5.609375 L 0.640625 6.3476562 L 4.3203125 9.9355469 L 3.4511719 15 L 8 12.609375 L 12.548828 15 L 11.679688 9.9355469 L 15.359375 6.3476562 L 10.275391 5.609375 L 8 1 z M 8 2 L 9.9511719 5.9511719 L 14.308594 6.5839844 L 11.154297 9.6582031 L 11.898438 14 L 8 11.951172 L 8 2 z "
-     id="path819" />
+  <g
+     id="g882"
+     transform="translate(60.978969,26.462572)">
+    <circle
+       r="5"
+       cy="-21.462572"
+       cx="-52.97897"
+       id="circle832"
+       style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.66032714;stroke-opacity:0.94117647" />
+    <path
+       inkscape:connector-curvature="0"
+       id="rect841"
+       d="m -55.226039,-14.845385 c -2.713364,0 -4.971261,1.863241 -5.583985,4.382813 h 15.662109 c -0.612722,-2.519572 -2.87062,-4.382813 -5.583983,-4.382813 z"
+       style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.64956862;stroke-opacity:0.94117647" />
+  </g>
 </svg>
