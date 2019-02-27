@@ -21,7 +21,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -37,48 +37,18 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
-     inkscape:window-height="1474"
+     inkscape:window-height="1539"
      id="namedview6"
      showgrid="false"
-     inkscape:zoom="11.313708"
-     inkscape:cx="30.730976"
-     inkscape:cy="-6.6928506"
-     inkscape:window-x="0"
+     inkscape:zoom="31.999999"
+     inkscape:cx="12.978817"
+     inkscape:cy="1.4263631"
+     inkscape:window-x="1920"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg4" />
-  <g
-     id="g834"
-     transform="translate(-28.060518,-6.9113994)">
-    <path
-       inkscape:transform-center-x="-1.1486172e-06"
-       inkscape:transform-center-y="-4.0784272"
-       transform="matrix(-1.7180185,0,0,-2.0392123,-20.145528,-23.61461)"
-       d="m -32.716205,-15.123854 -2.131755,-3.692307 -2.131755,-3.692308 4.263509,0 4.26351,0 -2.131755,3.692308 z"
-       inkscape:randomized="0"
-       inkscape:rounded="0"
-       inkscape:flatsided="false"
-       sodipodi:arg2="2.6179939"
-       sodipodi:arg1="1.5707963"
-       sodipodi:r2="2.4615383"
-       sodipodi:r1="4.9230766"
-       sodipodi:cy="-20.04693"
-       sodipodi:cx="-32.716206"
-       sodipodi:sides="3"
-       id="path818-3"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#808080;stroke-width:0.61538458;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-       sodipodi:type="star" />
-    <text
-       transform="scale(-1)"
-       id="text843-3"
-       y="-10.973102"
-       x="-37.799107"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.18439674px;line-height:1.25;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';letter-spacing:0px;word-spacing:0px;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.35460994"
-       xml:space="preserve"><tspan
-         style="fill:#808080;fill-opacity:1;stroke-width:0.35460994"
-         y="-10.973102"
-         x="-37.799107"
-         id="tspan841-6"
-         sodipodi:role="line">i</tspan></text>
-  </g>
+  <path
+     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:1.15470052;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     d="M 8.0019531 1.0722656 L 4.0019531 8.0019531 L 0.001953125 14.929688 L 8.0019531 14.929688 L 16.001953 14.929688 L 12.001953 8.0019531 L 8.0019531 1.0722656 z M 7.3203125 4.4257812 L 8.6816406 4.4257812 L 8.6816406 5.0390625 C 8.6816406 7.1812847 8.5650955 9.1277952 8.3339844 10.878906 L 7.6679688 10.878906 C 7.4368576 9.1277952 7.3203125 7.1812847 7.3203125 5.0390625 L 7.3203125 4.4257812 z M 8.0019531 12.185547 C 8.2419531 12.185547 8.4367795 12.265781 8.5878906 12.425781 C 8.7478906 12.585781 8.828125 12.780608 8.828125 13.011719 C 8.828125 13.24283 8.7478906 13.439609 8.5878906 13.599609 C 8.4367795 13.75072 8.2419531 13.826172 8.0019531 13.826172 C 7.7619531 13.826172 7.5603906 13.75072 7.4003906 13.599609 C 7.2492795 13.439609 7.1738281 13.24283 7.1738281 13.011719 C 7.1738281 12.780608 7.2492795 12.585781 7.4003906 12.425781 C 7.5603906 12.265781 7.7619531 12.185547 8.0019531 12.185547 z "
+     id="path818-3-3" />
 </svg>
