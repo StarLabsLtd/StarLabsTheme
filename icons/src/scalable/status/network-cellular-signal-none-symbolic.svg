@@ -40,33 +40,16 @@
      id="namedview6"
      showgrid="false"
      inkscape:zoom="14.75"
-     inkscape:cx="0.020808068"
+     inkscape:cx="-12.860548"
      inkscape:cy="15.925089"
      inkscape:window-x="1920"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg4" />
-  <rect
+  <path
      style="opacity:0.5;fill:#808080;fill-opacity:1;stroke:none;stroke-width:1.09383595;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     id="rect817"
-     width="3.2"
-     height="9.6000004"
-     x="6.4000001"
-     y="6.4000001" />
-  <rect
-     style="opacity:0.5;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.89311326;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     id="rect817-3"
-     width="3.2"
-     height="6.4000001"
-     x="3.1999998"
-     y="9.6000004" />
-  <rect
-     style="opacity:0.5;fill:#808080;fill-opacity:1;stroke:none;stroke-width:1.26305294;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     id="rect817-6"
-     width="3.2"
-     height="12.8"
-     x="9.6000004"
-     y="3.2" />
+     d="M 12.800781 0 L 12.800781 3.1992188 L 9.5996094 3.1992188 L 9.5996094 6.4003906 L 6.4003906 6.4003906 L 6.4003906 9.5996094 L 3.1992188 9.5996094 L 3.1992188 16 L 6.4003906 16 L 9.5996094 16 L 12.800781 16 L 16 16 L 16 0 L 12.800781 0 z "
+     id="rect817" />
   <rect
      style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.63152647;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
      id="rect817-7"
@@ -74,11 +57,4 @@
      height="3.2"
      x="-2.3841858e-07"
      y="12.8" />
-  <rect
-     style="opacity:0.5;fill:#808080;fill-opacity:1;stroke:none;stroke-width:1.41213608;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     id="rect817-5"
-     width="3.2"
-     height="16"
-     x="12.8"
-     y="0" />
 </svg>
