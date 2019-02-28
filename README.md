@@ -25,8 +25,8 @@ We still have a lot of work to do: more icons to add, bugs to squash and many tw
 
 We are all ears :)
 
-## How to install
-### Ubuntu, Linux Mint, elementaryOS
+# How to install
+## Ubuntu and Debian based distributions
 ##### Install
 ```
 sudo add-apt-repository ppa:starlabs/beta
@@ -39,7 +39,7 @@ sudo apt remove starlabstheme
 ```
 
 
-### Other Distributions
+## Other Distributions
 ##### Dependencies
 You need to install:
 ```
@@ -58,6 +58,7 @@ sudo ninja -C build install
 cd StarLabsTheme
 git pull
 ninja -C build reconfigure
+sudo ninja -C build uninstall
 sudo ninja -C build install
 ```
 
@@ -100,6 +101,14 @@ sudo update-initramfs -u
 sudo update-alternatives --remove default.plymouth /usr/share/plymouth/themes/starlabs-logo/starlabs-logo.plymouth
 sudo update-initramfs -u
 ```
+
+## How to use
+
+Once installed, reboot.
+
+At the login screen select 'StarLabs' from the session list.
+
+![Session](Screenshots/Session-cropped.png)
 
 # [© Star Labs® / All Rights Reserved.](https://starlabs.systems)
 
