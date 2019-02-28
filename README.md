@@ -114,8 +114,6 @@ From the dropdown menu, select 'StarLabs' from the session list.
 
 Next, enter your password and proceed to login as normal.
 
-# [© Star Labs® / All Rights Reserved.](https://starlabs.systems)
-
 ## Copying or Reusing
 
 This project has mixed licencing. You are free to copy, redistribute and/or modify aspects of this work under the terms of each licence accordingly (unless otherwise specified).
@@ -126,7 +124,9 @@ Included scripts are free software licensed under the terms of the [GNU General 
 
 Any issues or questions, please contact us at [support@starlabs.systems](mailto:supportstarlabs.systems)
 
-View our range at: [https://starlabs.systems](https://starlabs.systems)
+# [© Star Labs® / All Rights Reserved.](https://starlabs.systems)
+
+View our full range or Linux laptops at: [https://starlabs.systems](https://starlabs.systems)
 
 Star LabTop Mk III: Open Source Edition. This version of the Star LabTop Mk III will include the most popular requests:
 + Open-source Coreboot firmware
