@@ -25,18 +25,18 @@ headerbar, %titlebar {
 window > box > box,
 window > box > box > box,
 window > box > stack {
-&:last-child, &:only-child {
-@include fill(normal);
-&:backdrop {
-@include fill(backdrop);
+	&:last-child, &:only-child {
+		@include fill(normal);
+		&:backdrop {
+			@include fill(backdrop);
+		}
+	}
 }
-}
-}
-notebook, widget viewport, stack > widget > box > stack box {
-@include fill(normal);
-&:backdrop {
-@include fill(backdrop);
-}
+filechooser treview, notebook, widget viewport, stack > widget > box > stack box {
+	@include fill(normal);
+	&:backdrop {
+		@include fill(backdrop);
+	}
 }
 
 
