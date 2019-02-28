@@ -104,7 +104,7 @@ sudo update-initramfs -u
 
 Any issues or questions, please contact us at [support@starlabs.systems](mailto:supportstarlabs.systems)
 
-View our range at: [https://starlabs/systems](https://starlabs.systems)
+View our range at: [https://starlabs.systems](https://starlabs.systems)
 
 Star LabTop Mk III: Open Source Edition. This version of the Star LabTop Mk III will include the most popular requests:
 + Open-source Coreboot firmware
