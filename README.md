@@ -102,6 +102,9 @@ sudo update-initramfs -u
 
 
 Any issues or questions, please contact us at [support@starlabs.systems](mailto:supportstarlabs.systems)
+View our range at: # Linux Laptops ![alt text](https://starlabs.systems "https://starlabs.systems")
+
+
 
 [© Star Labs® / All Rights Reserved.](https://starlabs.systems)
 
