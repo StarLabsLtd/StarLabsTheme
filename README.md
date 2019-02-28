@@ -104,11 +104,15 @@ sudo update-initramfs -u
 
 ## How to use
 
-Once installed, reboot your machine.
+Once the theme is installed, reboot your machine.
 
-At the login screen select 'StarLabs' from the session list.
+At the login screen select your login username and then click the cog symbol.
 
 ![Session](Screenshots/Session-cropped.png)
+
+From the dropdown menu, select 'StarLabs' from the session list.
+
+Next, enter your password and proceed to login as normal.
 
 # [© Star Labs® / All Rights Reserved.](https://starlabs.systems)
 
