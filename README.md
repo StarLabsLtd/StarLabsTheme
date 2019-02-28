@@ -100,7 +100,7 @@ sudo update-alternatives --remove default.plymouth /usr/share/plymouth/themes/st
 sudo update-initramfs -u
 ```
 
-#
+# [© Star Labs® / All Rights Reserved.](https://starlabs.systems)
 Any issues or questions, please contact us at [support@starlabs.systems](mailto:supportstarlabs.systems)
 
 View our range at: [https://starlabs/systems](https://starlabs.systems)
@@ -112,5 +112,4 @@ Star LabTop Mk III: Open Source Edition. This version of the Star LabTop Mk III 
 + Improved speaker output
 See the OSc Edition here: [https://www.kickstarter.com/projects/108557374](https://www.kickstarter.com/projects/108557374)
 
-[© Star Labs® / All Rights Reserved.](https://starlabs.systems)
 
