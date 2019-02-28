@@ -126,7 +126,7 @@ Any issues or questions, please contact us at [support@starlabs.systems](mailto:
 
 # [© Star Labs® / All Rights Reserved.](https://starlabs.systems)
 
-View our full range or Linux laptops at: [https://starlabs.systems](https://starlabs.systems)
+View our full range of Linux laptops at: [https://starlabs.systems](https://starlabs.systems)
 
 Star LabTop Mk III: Open Source Edition. This version of the Star LabTop Mk III will include the most popular requests:
 + Open-source Coreboot firmware
