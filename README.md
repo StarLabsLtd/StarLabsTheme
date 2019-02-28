@@ -104,7 +104,7 @@ sudo update-initramfs -u
 
 ## How to use
 
-Once installed, reboot.
+Once installed, reboot your machine.
 
 At the login screen select 'StarLabs' from the session list.
 
