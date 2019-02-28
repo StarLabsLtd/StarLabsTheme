@@ -64,6 +64,18 @@
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
+       id="clipPath958-3">
+      <rect
+         style="opacity:1;fill:#aa0000;fill-opacity:1;stroke:none;stroke-width:1.26509309;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+         id="rect960-6"
+         width="8"
+         height="5"
+         x="34.915253"
+         y="5.8262711"
+         ry="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
        id="clipPath844">
       <rect
          style="opacity:1;fill:#008080;fill-opacity:1;stroke:none;stroke-width:1.10936391;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10.00000095;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
@@ -87,22 +99,30 @@
      inkscape:window-height="1539"
      id="namedview10"
      showgrid="false"
-     inkscape:zoom="32"
-     inkscape:cx="-3.240454"
-     inkscape:cy="1.7125789"
+     inkscape:zoom="16"
+     inkscape:cx="-3.2340541"
+     inkscape:cy="7.1217403"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg8" />
-  <path
-     inkscape:connector-curvature="0"
-     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:2.60913873;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     d="M 9.28125,0 C 8.6686331,0 8.161488,0.42718537 8.0332031,1 H 7.28125 C 6.5712264,1 6,1.5712264 6,2.28125 v 12.4375 C 6,15.428774 6.5712264,16 7.28125,16 h 7.4375 C 15.428774,16 16,15.428774 16,14.71875 V 2.28125 C 16,1.5712264 15.428774,1 14.71875,1 H 13.966797 C 13.838512,0.42718537 13.331367,0 12.71875,0 Z M 8.1113281,2 H 13.888672 C 14.504026,2 15,2.4959744 15,3.1113281 V 13.888672 C 15,14.504026 14.504026,15 13.888672,15 H 8.1113281 C 7.4959744,15 7,14.504026 7,13.888672 V 3.1113281 C 7,2.4959744 7.4959744,2 8.1113281,2 Z"
-     id="rect846" />
-  <path
-     style="opacity:0.5;fill:#808080;fill-opacity:1;stroke:none;stroke-width:1.12727678;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     d="M 8.109375 2 C 7.494021 2 7 2.494021 7 3.109375 L 7 5.5 L 7 9 L 7 12.5 L 7 13.888672 C 7.000001 14.504026 7.4959741 15 8.1113281 15 L 13.888672 15 C 14.504026 15 15 14.504026 15 13.888672 L 15 12.5 L 15 9 L 15 5.5 L 15 3.109375 C 15 2.494021 14.504026 2 13.888672 2 L 8.109375 2 z "
-     id="rect846-3-5-6-2-9" />
+  <g
+     id="g1125"
+     transform="translate(34.777344,-0.033203)">
+    <path
+       id="rect821-3"
+       d="m -26.28125,-0.03320312 c -0.55088,0 -0.996094,0.44521337 -0.996094,0.99609374 v 0.0703125 h -0.503906 c -0.55088,0 -0.996094,0.4452134 -0.996094,0.9960938 V 15.039062 c 0,0.550882 0.445214,0.994141 0.996094,0.994141 h 8.009766 c 0.55088,0 0.99414,-0.44326 0.99414,-0.994141 V 2.0292969 c 0,-0.5508804 -0.44326,-0.9960938 -0.99414,-0.9960938 h -0.50586 V 0.9628906 c 0,-0.55088037 -0.44326,-0.99609374 -0.99414,-0.99609374 z m -0.632812,2.06640622 h 6.27539 c 0.47743,0 0.861328,0.3858516 0.861328,0.8632813 V 14.171875 c 0,0.47743 -0.383898,0.861328 -0.861328,0.861328 h -6.27539 c -0.47743,0 -0.863282,-0.383898 -0.863282,-0.861328 V 2.8964844 c 0,-0.4774297 0.385852,-0.8632813 0.863282,-0.8632813 z"
+       style="opacity:1;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.20751143;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       inkscape:connector-curvature="0" />
+    <rect
+       ry="0.86178637"
+       y="2.0340004"
+       x="-27.776464"
+       height="13"
+       width="8"
+       id="rect821-7"
+       style="opacity:0.5;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.00145245;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+  </g>
   <g
      id="g840"
      transform="matrix(1.2017212,0,0,1.2017212,-1.2017212,0.81622722)"
