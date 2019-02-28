@@ -21,7 +21,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -69,13 +69,13 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="3840"
-     inkscape:window-height="1474"
+     inkscape:window-width="1920"
+     inkscape:window-height="1019"
      id="namedview10"
      showgrid="false"
      inkscape:zoom="41.7193"
-     inkscape:cx="17.673281"
-     inkscape:cy="5.3799023"
+     inkscape:cx="13.095064"
+     inkscape:cy="5.2840234"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -84,13 +84,6 @@
      inkscape:groupmode="layer"
      id="layer1"
      inkscape:label="Layer 1">
-    <rect
-       style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect819"
-       width="16"
-       height="16"
-       x="0"
-       y="0" />
     <flowRoot
        xml:space="preserve"
        id="flowRoot846"
@@ -117,7 +110,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:23.01163292px;line-height:45.34999847;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.35955676;"
+       style="font-style:normal;font-weight:normal;font-size:23.01163292px;line-height:45.34999847;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.35955676"
        x="4.8517356"
        y="12.972931"
        id="text906"
@@ -126,6 +119,6 @@
          id="tspan904"
          x="4.8517356"
          y="12.972931"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.36730003px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.35955676;">?</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.36730003px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#808080;fill-opacity:1;stroke-width:0.35955676">?</tspan></text>
   </g>
 </svg>
