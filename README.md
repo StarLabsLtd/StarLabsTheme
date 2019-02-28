@@ -100,7 +100,7 @@ sudo update-alternatives --remove default.plymouth /usr/share/plymouth/themes/st
 sudo update-initramfs -u
 ```
 
-
+#
 Any issues or questions, please contact us at [support@starlabs.systems](mailto:supportstarlabs.systems)
 
 View our range at: [https://starlabs/systems](https://starlabs.systems)
