@@ -21,6 +21,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -36,6 +37,16 @@
          cy="8"
          r="8" />
     </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath865-3">
+      <circle
+         style="opacity:1;fill:#ff8080;fill-opacity:1;stroke:none;stroke-width:0.81669122;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10.00000095;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+         id="circle867-6"
+         cx="8"
+         cy="8"
+         r="8" />
+    </clipPath>
   </defs>
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -47,19 +58,21 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
-     inkscape:window-height="1539"
+     inkscape:window-height="1474"
      id="namedview10"
      showgrid="false"
      inkscape:zoom="11.313709"
-     inkscape:cx="14.861049"
+     inkscape:cx="-1.9327363"
      inkscape:cy="8.7227793"
-     inkscape:window-x="1920"
-     inkscape:window-y="27"
+     inkscape:window-x="281"
+     inkscape:window-y="107"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg8" />
   <path
+     transform="translate(-1.2402344,0.52772822)"
+     inkscape:connector-curvature="0"
      style="display:inline;overflow:visible;visibility:visible;opacity:1;fill:#808080;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.07074449;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;marker-start:none;marker-mid:none;marker-end:none;enable-background:accumulate"
-     d="M 21.328125 -4.7460938 L 13.519531 3.0488281 L 13.519531 3 L 5.6113281 10.894531 L 3.6875 8.9238281 L 2.4804688 10.166016 L 5.6796875 13 L 13.486328 5.2539062 L 21.294922 -2.4921875 L 21.328125 -4.7460938 z "
-     id="path10465"
-     clip-path="url(#clipPath865)" />
+     d="M 21.328125,-4.7460938 13.519531,3.0488281 V 3 L 5.6113281,10.894531 3.6875,8.9238281 2.4804688,10.166016 5.6796875,13 13.486328,5.2539062 21.294922,-2.4921875 Z"
+     id="path10465-7"
+     clip-path="url(#clipPath865-3)" />
 </svg>

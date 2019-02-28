@@ -62,6 +62,29 @@
          y="16.588984"
          ry="0" />
     </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath958-3">
+      <rect
+         style="opacity:1;fill:#aa0000;fill-opacity:1;stroke:none;stroke-width:1.26509309;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+         id="rect960-6"
+         width="8"
+         height="5"
+         x="34.915253"
+         y="5.8262711"
+         ry="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath844">
+      <rect
+         style="opacity:1;fill:#008080;fill-opacity:1;stroke:none;stroke-width:1.10936391;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10.00000095;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+         id="rect847"
+         width="12.291875"
+         height="12.466972"
+         x="0.99531424"
+         y="0.1680488" />
+    </clipPath>
   </defs>
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -72,31 +95,20 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="2200"
-     inkscape:window-height="1245"
+     inkscape:window-width="1920"
+     inkscape:window-height="1539"
      id="namedview10"
      showgrid="false"
-     inkscape:zoom="10.429825"
-     inkscape:cx="-41.114212"
-     inkscape:cy="6.1792796"
+     inkscape:zoom="22.627418"
+     inkscape:cx="-8.2344078"
+     inkscape:cy="-5.9606583"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg8" />
   <path
-     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:2.44984174;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
-     d="M 6.0527343,0 C 5.7475654,0 5.5,0.39258815 5.5,0.88085938 V 1 H 4.0156251 c -0.56339,0 -1.015625,0.4541883 -1.015625,1.0175781 V 14.982422 C 3.0000001,15.545812 3.4522351,16 4.0156251,16 H 11.982422 C 12.545812,16 13,15.545812 13,14.982422 V 2.0175781 C 13,1.4541883 12.545812,1 11.982422,1 H 10.5 V 0.88085938 C 10.5,0.39258815 10.254388,0 9.9492187,0 Z M 4.8808593,2 H 11.119141 C 11.607412,2 12,2.3925882 12,2.8808594 V 14.119141 C 12,14.607412 11.607412,15 11.119141,15 H 4.8808593 C 4.3925881,15 4.0000001,14.607412 4.0000001,14.119141 V 2.8808594 C 4.0000001,2.3925882 4.3925881,2 4.8808593,2 Z"
-     id="rect823"
-     inkscape:connector-curvature="0" />
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:35.46099472px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.8865248;"
-     x="5.9716311"
-     y="13.343971"
-     id="text824"><tspan
-       sodipodi:role="line"
-       id="tspan822"
-       x="5.9716311"
-       y="13.343971"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.18439674px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';stroke-width:0.8865248;fill:#808080;fill-opacity:1;">!</tspan></text>
+     inkscape:connector-curvature="0"
+     style="opacity:1;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.20751143;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     d="M 8.496094,-0.066406 C 7.945214,-0.066406 7.5,0.378807 7.5,0.929688 v 0.07031 H 6.996094 C 6.445214,0.999998 6,1.445211 6,1.996092 V 15.005859 C 6,15.556741 6.445214,16 6.996094,16 H 15.00586 C 15.55674,16 16,15.55674 16,15.005859 V 1.996094 C 16,1.445213 15.55674,1 15.00586,1 H 14.5 V 0.92969 c 0,-0.550881 -0.44326,-0.996094 -0.99414,-0.996094 z M 7.863282,2 h 6.27539 C 14.616102,2 15,2.385852 15,2.863281 V 14.138672 C 15,14.616102 14.616102,15 14.138672,15 H 7.863282 C 7.385852,15 7,14.616102 7,14.138672 V 2.863281 C 7,2.385852 7.385852,2 7.863282,2 Z"
+     id="rect821-3" />
 </svg>

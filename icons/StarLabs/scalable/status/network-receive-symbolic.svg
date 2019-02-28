@@ -40,9 +40,9 @@
      inkscape:window-height="1474"
      id="namedview10"
      showgrid="false"
-     inkscape:zoom="20.85965"
-     inkscape:cx="5.7974884"
-     inkscape:cy="16.629831"
+     inkscape:zoom="29.5"
+     inkscape:cx="4.241503"
+     inkscape:cy="14.448296"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
@@ -65,4 +65,12 @@
      id="path841"
      d="m 7.4826984,8.6095684 1.193705,1.19106 2.9842606,-2.9776512 2.984261,2.9776512 1.193705,-1.19106 -2.984261,-2.9776532 -1.193705,-1.191059 -1.193704,1.191059 z"
      style="opacity:0.5;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.89306802;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+  <rect
+     style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:3.36656451;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="rect814"
+     width="1.4381833"
+     height="7.679121"
+     x="3.4588745"
+     y="4.4585791"
+     ry="0.62310994" />
 </svg>
