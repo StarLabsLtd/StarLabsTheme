@@ -122,9 +122,9 @@ The StarLabs icon assets (any and all source `.svg` files or rendered `.png` fil
 
 Included scripts are free software licensed under the terms of the [GNU General Public License, version 3](https://www.gnu.org/licenses/gpl-3.0.txt).
 
-Any issues or questions, please contact us at [support@starlabs.systems](mailto:supportstarlabs.systems)
 
 # [© Star Labs® / All Rights Reserved.](https://starlabs.systems)
+Any issues or questions, please contact us at [support@starlabs.systems](mailto:supportstarlabs.systems)
 
 View our full range of Linux laptops at: [https://starlabs.systems](https://starlabs.systems)
 
