@@ -102,9 +102,8 @@ sudo update-initramfs -u
 
 
 Any issues or questions, please contact us at [support@starlabs.systems](mailto:supportstarlabs.systems)
-View our range at: # Linux Laptops ![alt text](https://starlabs.systems "https://starlabs.systems")
-
-
+View our range at: [https://starlabs/systems](https://starlabs.systems)
+See the LabTop Mk III: Open Source edition at: [https://www.kickstarter.com/projects/108557374](https://www.kickstarter.com/projects/108557374)
 
 [© Star Labs® / All Rights Reserved.](https://starlabs.systems)
 
