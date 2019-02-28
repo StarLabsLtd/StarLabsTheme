@@ -32,7 +32,21 @@ window > box > stack {
 		}
 	}
 }
-filechooser treview, notebook, widget viewport, stack > widget > box > stack box {
+filechooser treeview {
+	background-image: image($fill);
+	&:backdrop {
+		background-image: image($bd-fill);
+	}
+}
+
+filechooser treeview:selected {
+	background-image: image($selected);
+	&:backdrop {
+		background-image: image($bd-selected);
+	}
+}
+
+notebook, widget viewport, stack > widget > box > stack box {
 	@include fill(normal);
 	&:backdrop {
 		@include fill(backdrop);
