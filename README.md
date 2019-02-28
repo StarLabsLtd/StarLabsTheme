@@ -101,7 +101,6 @@ sudo update-initramfs -u
 ```
 
 # [© Star Labs® / All Rights Reserved.](https://starlabs.systems)
-[© Star Labs® / All Rights Reserved.](https://starlabs.systems)
 
 Any issues or questions, please contact us at [support@starlabs.systems](mailto:supportstarlabs.systems)
 
