@@ -41,24 +41,25 @@
      id="namedview6"
      showgrid="false"
      inkscape:zoom="20.85965"
-     inkscape:cx="-8.1889181"
-     inkscape:cy="6.6087583"
-     inkscape:window-x="1920"
+     inkscape:cx="-1.9567905"
+     inkscape:cy="-1.0615526"
+     inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg4" />
   <g
-     id="g843">
+     transform="matrix(0.94454446,0,0,0.93289523,0.44361528,-0.48322366)"
+     id="g843-3">
     <path
        style="fill:none;stroke:#808080;stroke-width:1.38603985;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 14.99936,7.6433651 C 18.172798,-0.98014945 -0.97196308,-1.0237609 1.0132885,8.062628 l 1.4754033,7.30687"
-       id="path821"
+       id="path821-6"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccc" />
     <path
        sodipodi:nodetypes="ccc"
        inkscape:connector-curvature="0"
-       id="path823"
+       id="path823-7"
        d="M 0.9991311,7.6546593 C -2.1693429,-0.95624884 16.945469,-0.9997964 14.963323,8.07331 l -1.473095,7.296188"
        style="fill:none;stroke:#808080;stroke-width:1.3839426;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
@@ -68,11 +69,11 @@
        x="-0.23887248"
        height="6.0989323"
        width="1.1183569"
-       id="rect825"
+       id="rect825-5"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#808080;stroke-width:1.31892169;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
        style="opacity:1;fill:none;fill-opacity:1;stroke:#808080;stroke-width:1.31892169;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect827"
+       id="rect827-3"
        width="1.1183568"
        height="6.0989323"
        x="15.012537"
