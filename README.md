@@ -25,8 +25,8 @@ We still have a lot of work to do: more icons to add, bugs to squash and many tw
 
 We are all ears :)
 
-## How to install
-### Ubuntu, Linux Mint, elementaryOS
+# How to install
+## Ubuntu and Debian based distributions
 ##### Install
 ```
 sudo add-apt-repository ppa:starlabs/beta
@@ -39,7 +39,7 @@ sudo apt remove starlabstheme
 ```
 
 
-### Other Distributions
+## Other Distributions
 ##### Dependencies
 You need to install:
 ```
@@ -58,6 +58,7 @@ sudo ninja -C build install
 cd StarLabsTheme
 git pull
 ninja -C build reconfigure
+sudo ninja -C build uninstall
 sudo ninja -C build install
 ```
 
@@ -101,11 +102,31 @@ sudo update-alternatives --remove default.plymouth /usr/share/plymouth/themes/st
 sudo update-initramfs -u
 ```
 
-# [© Star Labs® / All Rights Reserved.](https://starlabs.systems)
+## How to use
 
+Once the theme is installed, reboot your machine.
+
+At the login screen select your login username and then click the cog symbol.
+
+![Session](Screenshots/Session-cropped.png)
+
+From the dropdown menu, select 'StarLabs' from the session list.
+
+Next, enter your password and proceed to login as normal.
+
+## Copying or Reusing
+
+This project has mixed licencing. You are free to copy, redistribute and/or modify aspects of this work under the terms of each licence accordingly (unless otherwise specified).
+
+The StarLabs icon assets (any and all source `.svg` files or rendered `.png` files) are licensed under the terms of the [Creative Commons Attribution-ShareAlike 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/).
+
+Included scripts are free software licensed under the terms of the [GNU General Public License, version 3](https://www.gnu.org/licenses/gpl-3.0.txt).
+
+
+# [© Star Labs® / All Rights Reserved.](https://starlabs.systems)
 Any issues or questions, please contact us at [support@starlabs.systems](mailto:supportstarlabs.systems)
 
-View our range at: [https://starlabs.systems](https://starlabs.systems)
+View our full range of Linux laptops at: [https://starlabs.systems](https://starlabs.systems)
 
 Star LabTop Mk III: Open Source Edition. This version of the Star LabTop Mk III will include the most popular requests:
 + Open-source Coreboot firmware
