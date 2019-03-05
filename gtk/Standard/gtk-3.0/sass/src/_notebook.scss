@@ -1,24 +1,18 @@
 notebook {
 	> header {
-		@include fill(normal, $alpha2, $header);
-		border-color: transparentize($mix, $alpha3);
-		border-width: 1px;
 		padding: 1px;
-		&:backdrop {
-			@include fill(backdrop, $alpha2, $header);
-		}
 		tabs {
-			margin: -1px;
+			margin-right: 10px;
 		}
 		&.top {
-			border-bottom-style: solid;
 			> tabs {
 				padding-top: 4px;
 				margin-bottom: -2px;
 				> tab {
+					box-shadow: 0 0 1px 1.8px if($variant==light, transparentize($dark1, $alpha2), transparentize(black, $alpha3));
 					border-radius: $omega1 $omega1 0 0;
 					&:checked {
-						border-bottom-style: none;
+						box-shadow: 0 -1.8px 1px 1.8px if($variant==light, transparentize($dark1, $alpha2), transparentize(black, $alpha3));
 					}
 				}
 			}
@@ -29,9 +23,10 @@ notebook {
 				padding-bottom: 4px;
 				margin-top: -2px;
 				> tab {
+					box-shadow: 0 0 1px 1.8px if($variant==light, transparentize($dark1, $alpha2), transparentize(black, $alpha3)); 
 					border-radius: 0 0 $omega1 $omega1;
 					&:checked {
-						border-top-style: none;
+						box-shadow: 0 1.8px 1px 1.8px if($variant==light, transparentize($dark1, $alpha2), transparentize(black, $alpha3)); 
 					}
 				}
 			}
@@ -42,9 +37,10 @@ notebook {
 				padding-left: 4px;
 				margin-right: -2px;
 				> tab {
+					box-shadow: 0 0 1px 1.8px if($variant==light, transparentize($dark1, $alpha2), transparentize(black, $alpha3)); 
 					border-radius: $omega1 0 0 $omega1;
 					&:checked {
-						border-right-color: transparent;
+						box-shadow: 1.8px 0 1px 1.8px if($variant==light, transparentize($dark1, $alpha2), transparentize(black, $alpha3));
 					}
 				}
 			}
@@ -55,9 +51,10 @@ notebook {
 				padding-right: 4px;
 				margin-left: -2px;
 				> tab {
+					box-shadow: 0 0 1px 1.8px if($variant==light, transparentize($dark1, $alpha2), transparentize(black, $alpha3)); 
 					border-radius: 0 $omega1 $omega1 0;
 					&:checked {
-						border-left-color: transparent;
+						box-shadow: -1.8px 0 1px 1.8px if($variant==light, transparentize($dark1, $alpha2), transparentize(black, $alpha3));
 					}
 				}
 			}
@@ -123,32 +120,22 @@ notebook {
 			min-height: 24px;
 			min-width: 24px;
 			padding: 4px 12px;
-			outline-offset: -5px;
-			outline-style: dashed;
-			-gtk-outline-radius: $omega1;
-			color: transparentize($color, $alpha2);
-			border: 1px solid transparent;
 			&:hover:not(:active):not(:backdrop):not(:checked) {
-				background-color: transparentize($selected, $alpha2);
-				border-color: $mix;
+//				background-color: transparentize($selected, $alpha2);
 			}
 			&:backdrop {
-				&:hover {
-					background-color: transparentize($bd-selected, $alpha2);
+				&:hover:not(:active):not(:checked) {
+//					background-color: transparentize($bd-selected, $alpha2);
 				}
 			}
 			&:checked {
 				color: $color;
 				font-weight: 500;
-				background-color: $fill;
-				border-color: $mix;
 				& label {
 					padding-bottom: 1px;
 				}
 			}
 			&:backdrop:checked {
-				background-color: $bd-fill;
-				border-color: $mix;
 				& label {
 					padding-bottom: 1px;
 				}
@@ -206,9 +193,7 @@ notebook {
 		}
 	}
 	> stack:not(:only-child) {
-		background-color: $fill;
-		&:backdrop {
-			background-color: $bd-fill; 
-		}
+		box-shadow: 0 4px 4px  if($variant==light, transparentize($dark1, $alpha2), transparentize(black, $alpha3));
+		margin: 1px;
 	}
 }
