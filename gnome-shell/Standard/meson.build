@@ -42,7 +42,7 @@ theme_sources = files([
   'sass/sections/_popup_menu.scss',
   'sass/sections/_prompt_dialog.scss',
   'sass/sections/_screen_shield.scss',
-  'sass/sections/_scrollbars.css',
+  'sass/sections/_scrollbars.scss',
   'sass/sections/_shell_mount_dialog.scss',
   'sass/sections/_slider.scss',
   'sass/sections/_switcher_popup.scss',
