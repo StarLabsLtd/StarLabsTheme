@@ -1795,19 +1795,19 @@
    id="namedview249"
    showgrid="false"
    inkscape:zoom="1.4142136"
-   inkscape:cx="106.43694"
+   inkscape:cx="-27.913345"
    inkscape:cy="87.373451"
    inkscape:window-x="1920"
    inkscape:window-y="27"
    inkscape:window-maximized="0"
-   inkscape:current-layer="layer1"
+   inkscape:current-layer="layer2"
    inkscape:pagecheckerboard="true" />
 
 <g
    inkscape:groupmode="layer"
    id="layer2"
    inkscape:label="Background"><circle
-     style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="display:inline;fill:#17171d;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path1090"
      cx="128"
      cy="128"
@@ -1823,7 +1823,7 @@
      style="fill:#003059;fill-opacity:1;stroke-width:1.06927836"
      clip-path="url(#clipPath5490)" /><polygon
      class="st2"
-     points="201.939,95.591 22.687,62.276 8.546,142.68 16.387,166.974 172.911,219.015 "
+     points="8.546,142.68 16.387,166.974 172.911,219.015 201.939,95.591 22.687,62.276 "
      id="polygon17"
      style="fill:#fbfbfb"
      transform="matrix(1.0692783,0,0,1.0692783,-4.7413415,-6.0577076)"
@@ -1844,7 +1844,7 @@
      style="fill:#f8f8f8;stroke-width:1.06927836"
      clip-path="url(#clipPath5571)" /><polygon
      class="st3"
-     points="167.321,217.161 18.568,167.703 19.094,171.178 168.976,221.012 "
+     points="19.094,171.178 168.976,221.012 167.321,217.161 18.568,167.703 "
      id="polygon25"
      style="fill:#17171d;fill-opacity:1"
      transform="matrix(1.0692783,0,0,1.0692783,-4.7413415,-6.0577076)" /><path
