@@ -134,6 +134,6 @@ Star LabTop Mk III: Open Source Edition. This version of the Star LabTop Mk III 
 + English (US) keyboard
 + Improved speaker output
 
-See the OSc Edition here: [https://www.kickstarter.com/projects/108557374](https://www.kickstarter.com/projects/108557374)
+See the OSc Edition here: [https://www.kickstarter.com/projects/starlabs/star-labtop-mk-iii-open-source-edition](https://www.kickstarter.com/projects/starlabs/star-labtop-mk-iii-open-source-edition)
 
 
