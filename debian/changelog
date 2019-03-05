@@ -1,3 +1,10 @@
+starlabstheme-master (0.0.47.7) cosmic; urgency=medium
+
+  * Various icon updates
+  * Fixed issue where notebook backdrop not working
+
+ -- Sean Rhodes <sean@starlabs.systems>  Tue, 05 Mar 2019 12:37:50 +0000
+
 starlabstheme-master (0.0.47.6) cosmic; urgency=medium
 
   * Icon Updates
