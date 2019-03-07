@@ -78,9 +78,9 @@
         &:nth-child(2){
                 border-radius: $omega1;
 		&:checked {
-			@include clickable(normal, true, $accent1);
+			@include clickable(normal, true, false, pikachu);
 			&:backdrop {
-				@include clickable(backdrop, true, $accent1);
+				@include clickable(backdrop, true, false, pikachu);
 			}
 		}
         }
