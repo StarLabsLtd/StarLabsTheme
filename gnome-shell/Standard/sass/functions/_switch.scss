@@ -9,8 +9,11 @@
 	color: transparent;
 	font-size: 0;
 	outline-offset: 0;
+
 	&:hover {
 		-gtk-icon-effect: highlight;
+		box-shadow: $shadow1;
+		transition: $click;
 		background-color: lighten($off, $beta1);
 	}
 	&:checked {
@@ -18,7 +21,9 @@
 		border-color: darken($on, $beta1);
 		border-top-color: darken($on, $beta2);
 		box-shadow: $shadow1;
+		transition: $click;
 		&:hover {
+			transition: $click;
 			-gtk-icon-effect: highlight;
 			background-color: lighten($on, $alpha2);
 		}
@@ -27,6 +32,7 @@
 		background-color: transparent;
 		border: 1px solid $mix;
 		box-shadow: $shadow1;
+		transition: $click;
 		&:checked {
 			background-color: transparentize($on, $alpha2);
 		}
