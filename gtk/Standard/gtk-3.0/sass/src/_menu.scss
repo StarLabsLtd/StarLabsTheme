@@ -17,7 +17,7 @@ menubar, .menubar {
 			}
 		}
 		&:hover {
-			@include clickable(hover, $alpha3, $accent2);
+			@include clickable(hover);
 			border-radius: $omega1 $omega1 0 0;
 		}
 		&:disabled {
@@ -48,7 +48,7 @@ menu, .menu, .context-menu {
 		padding: 5px 6px;
 		border-radius: 0;
 		&:hover {
-			@include clickable(hover, solid, $accent2);
+			@include clickable(hover);
 		}
 		&:disabled {
 			@include clickable(disabled);
@@ -90,7 +90,7 @@ menu, .menu, .context-menu {
 			-gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
 		}
 		&:hover {
-			@include clickable(hover, solid, $accent2);
+			@include clickable(hover);
 		}
 		&:disabled {
 			color: transparent;

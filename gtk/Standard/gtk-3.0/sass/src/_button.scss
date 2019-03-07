@@ -22,9 +22,11 @@
 		min-width: 16px;
 		padding: 2px 6px;
 		border-radius: $omega1;
-		@include click($alpha3);
+		&, &.toggle, &.image-button, &.text-button, &.text-button.image-button, &.osd {
+			@include button;
+		}
 		&.flat {
-			@include click($alpha3, $variant, true);
+			@include button(standard);
 		}
 		&.image-button {
 			min-width: 24px;
@@ -68,15 +70,11 @@
 			min-width: 32px;
 		}
 		border-radius: $omega1;
-		@include click($alpha3);
 	}
 
 	//overlay / OSD style
 	@at-root %osd_button, .osd & {
-		@include click($alpha3, $variant, false, $alpha1);
-		&.flat {
-			@include click($alpha3, $variant, true, $alpha1);
-		}
+		@include button;
 	}
 	&.destructive-action image {
 		-gtk-icon-shadow: 1px 0px 1px darken($failure, 25%),
@@ -159,17 +157,18 @@
 			label {
 				padding: 0;
 			}
+			@include button;
 			&:not(.flat):not(:checked):not(:active):not(:disabled):not(:backdrop),	
 			&:hover:not(:checked):not(:active):not(:disabled):not(:backdrop),
 			&:checked, &:active {
-				border-color: $mix;
-				box-shadow: none;
+//				border-color: $mix;
+//				box-shadow: none;
 			}
 			&:not(.flat):not(:checked):not(:active):not(:disabled):not(:backdrop) {
-				@include clickable(normal);
+//				@include clickable(normal);
 		}
 		&:hover:not(:checked):not(:active):not(:disabled):not(:backdrop) {
-			@include clickable(hover);
+//			@include clickable(hover);
 		}	
 		background-origin: padding-box, border-box;
 		background-clip: padding-box, border-box;
@@ -200,40 +199,8 @@
 	}
 }
 
-
-// all the following is for the +|- buttons on inline toolbars, that way
-// should really be deprecated...
-.inline-toolbar toolbutton > button { // redefining the button look is
-	@include click($alpha3);
-// needed since those are flat...
-//	@include clickable(normal);
-//	&:hover {
-//		@include clickable(hover);
-//	}
-//	&:active, &:checked {
-//		@include clickable(active);
-//	}
-//	&:disabled {
-//		@include clickable(disabled);
-//		&:active, &:checked {
-//			@include clickable(active);
-//			@include clickable(disabled);
-//		}
-//	}
-//	&:backdrop {
-//		@include clickable(backdrop);
-//		&:active, &:checked {
-//			@include clickable(backdrop-active);
-//		}
-//		&:disabled {
-//			@include clickable(backdrop);
-//			@include clickable(disabled);
-//			&:active, &:checked {
-//				@include clickable(backdrop-active);
-//				@include clickable(disabled);
-//			}
-//		}
-//	}
+.inline-toolbar toolbutton > button {
+	@include button;
 }
 
 // More inline toolbar buttons
@@ -309,7 +276,6 @@ toolbar.inline-toolbar toolbutton, toolbar.inline-toolbar toolbutton:backdrop {
 		border-bottom-left-radius: $omega1;
 		border-bottom-right-radius: $omega1;
 		-gtk-outline-radius: 0 0 $omega1 $omega1;
-//		border-style: solid;
 	}
 	&:not(:last-child) {
 		// only the last button will have the 3d effect
@@ -318,7 +284,6 @@ toolbar.inline-toolbar toolbutton, toolbar.inline-toolbar toolbutton:backdrop {
 	&:only-child {
 		border-radius: $omega1;
 		-gtk-outline-radius: $omega1;
-//		border-style: solid;
 	}
 }
 
@@ -331,19 +296,7 @@ modelbutton.flat, .menuitem.button.flat {
 	border-radius: 3px;
 	-gtk-outline-radius: 3px;
 	outline-offset: -2px;
-	@include clickable(undecorated);
-	&:hover {
-		background-color: $accent2;
-	}
-	&:active {
-		background-color: $accent3;
-	}
-	&:selected {
-		@extend %selected_items;
-	}
-	&:backdrop, &:backdrop:hover {
-		@include clickable(undecorated);
-	}
+	@include button;
 }
 
 modelbutton.flat arrow {

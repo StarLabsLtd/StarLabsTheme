@@ -73,7 +73,7 @@
 			@include clickable(hover);
 		}
 		&:active {
-			@include clickable(hover)
+			@include clickable(active)
 		}
 	}
 }

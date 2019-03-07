@@ -7,18 +7,14 @@ treeview.view {
 		-GtkTreeView-tree-line-pattern: '';
 		-GtkTreeView-expander-size: 26;
 	}
-//	@include fill(normal, solid, $variant);
 	rubberband {
 		@extend rubberband;
 	}
 	&:selected {
-		@include selected;
-	}
-	&:backdrop {
-//		@include fill(backdrop, solid, $variant);
+		@include button(active);
 	}
 	&:drop(active) {
-		background-color: blue; // Remove?
+		background-color: $success; // Remove?
 	}
 	&.expander {
 		-gtk-icon-source: -gtk-icontheme('pan-end-symbolic');
@@ -58,10 +54,6 @@ treeview.view {
 	}
 	header {
 		button {
-//			@extend %column_header_button;
-//			font-weight: 500;
-//			box-shadow: none;
-//			-gtk-outline-radius: 0;
 			border-radius: 0;
 		}
 	}
@@ -80,9 +72,5 @@ treeview.view {
 	acceleditor > label {
 		background-color: $accent2;
 	}
-}
-
-%column_header_button {
-	//REMOVE
 }
 

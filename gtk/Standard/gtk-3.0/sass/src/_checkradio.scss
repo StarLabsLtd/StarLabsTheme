@@ -61,40 +61,7 @@ check, radio {
 }
 
 %check, %radio, check, radio {
-	& {
-		border: 1px solid;
-		@each $state, $t in
-		("", "normal"),
-		(":hover", "hover"),
-		(":hover:backdrop", "backdrop-hover"),
-		(":active", "active"),
-		(":disabled", "insensitive"),
-		(":backdrop", "backdrop"),
-		(":backdrop:disabled", 'backdrop-insensitive') {
-			&#{$state} {
-				@include check($t, $color);
-			}
-		}
-	}
-	& {
-	@each $t in
-	(':checked:not(:indeterminate)'),
-	(':indeterminate') {
-		&#{$t} {
-			@each $state, $t in
-			("", "normal"),
-			(":hover", "hover"),
-			(":hover:backdrop", "backdrop-hover"),
-			(":disabled", "insensitive"),
-			(":backdrop", "backdrop"),
-			(":backdrop:disabled", 'backdrop-insensitive') {
-				&#{$state} {
-					@include check($t, $success);
-				}
-			}
-		}
-	}
-	}
+	@include checkbox;
 }
 
 %check, check {
@@ -143,17 +110,6 @@ menu menuitem, popover, treeview.view {
 
 treeview.view {
 	radio, check {
-		@each $t, $c in
-		(':checked:not(:indeterminate)', $success),
-		(':indeterminate', $success) {
-			&#{$t} {
-			&, &:hover {
-				background-color: $c;
-				color: $white }
-				&:backdrop {
-					background-color: lighten($c, $beta1);
-				}
-			}
-		}
+		@include checkbox(checked);
 	}
 }

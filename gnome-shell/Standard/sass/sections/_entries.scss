@@ -3,7 +3,7 @@ StEntry {
 	border-width: 1px;
 	min-height: 22px;
 	padding: 4px;
-	@extend %shell-entry;
+	@include entry;
 //	selection-background-color: 
 //	selected-color: $white;
 	StIcon.capslock-warning {

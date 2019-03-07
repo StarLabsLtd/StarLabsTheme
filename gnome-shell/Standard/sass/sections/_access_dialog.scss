@@ -1,10 +1,11 @@
 .access-dialog {
 	@extend %shell-window;
 	StEntry {
-		@extend %shell-entry;
+		@include entry;
 	}
 	.button {
-		@extend %shell-button;
+		@include button(all, true, false);
+		@include button-shell;
 	}
 	spacing: 30px;
 }

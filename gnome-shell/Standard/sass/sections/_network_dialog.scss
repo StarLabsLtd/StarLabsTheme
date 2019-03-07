@@ -11,13 +11,7 @@
 .nm-dialog {
 	@include fill(normal, $alpha3);
 	StEntry {
-		@include entry(normal);
-		&:focus {
-			@include entry(active);
-		}
-		&:insensitive {
-			@include entry(disabled);
-		}
+		@include entry;
 	}
 	.button {
 		@include clickable(normal);

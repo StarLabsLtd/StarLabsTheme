@@ -1,8 +1,8 @@
 tooltip {
-	label {
-		color: $white;
-	}
 	&.background {
+		label {
+			color: $white;
+		}
 		background-color: $selected;
 		background-clip: padding-box;
 	}

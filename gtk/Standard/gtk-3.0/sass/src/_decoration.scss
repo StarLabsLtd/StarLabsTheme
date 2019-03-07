@@ -32,7 +32,7 @@ decoration {
 		border: none;
 	}
 	messagedialog.csd & {
-		box-shadow: $shadowa;
+//		box-shadow: $shadowa;
 	}
 	.solid-csd & {
 		margin: 0;
@@ -49,41 +49,13 @@ decoration {
 
 // Window Close button
 button.titlebutton {
-//      min-height: 24px;
-//      min-width: 24px;
-        border-radius: $omega1; // Should be round?
-        &.minimize {
-                &:hover {
-                        @include clickable(hover, $alpha3, $accent1);
-                        &:backdrop {
-				&:hover {
-	                                @include clickable(backdrop-hover, $alpha3, $accent1);
-				}
-                        }
-                }
-        }
-        &.maximize {
-                &:hover {
-                        @include clickable(hover, $alpha3, $accent2);
-                        &:backdrop {
-				&:hover {
-	                                @include clickable(backdrop-hover, $alpha3, $accent2);
-				}
-                        }
-                }
+        border-radius: $omega1;
+        &.minimize, &.maximize {
+		@include button(standard);
         }
         &.close {
-                @include clickable(normal, $alpha3, $accent2);
-                &:hover {
-                        @include clickable(hover, $alpha3, $accent3);
-                        &:backdrop {
-				@include clickable(backdrop, $alpha3, $accent2);
-				&:hover {
-	                                @include clickable(backdrop-hover, $alpha3, $accent3);
-				}
-                        }
-                }
-        }
+		@include button(standard, false, true, pikachu);
+	}
 }
 
 .monospace {

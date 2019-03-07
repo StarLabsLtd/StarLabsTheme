@@ -1,96 +1,85 @@
-@mixin entry($type, $transparent: solid, $style:$variant) {
-	$color: if($style==light, $dark1, if($style==dark, $white, $white));
-	$fill: if($style==light, $white, if($style==dark, $dark1, $style));
+@mixin entries($type, $shadow: true, $style: normal) {
 
 	@if $type==normal {
-		// Standard Button
+		// Standard Entry
 		&, label, image {
-			color: $color;
+			color: if($style==normal, $color, $white);
 		}
-		background-color: if($transparent==solid, $fill, transparentize($fill, $transparent));
-		box-shadow: $shadow1;
+		box-shadow: if($shadow==true, $shadow1, none);
 		transition: $click;
+		background-color: if($style==normal, $fill, $style);
 	}
+
 	@else if $type==focus {
-		// Selected Button
+		// Selected Entry
 		&, label, image {
 			color: $color;
 		}
-		$background-focus: $fill;
-                background-color: if($transparent==solid, $background-focus, transparentize($background-focus, $transparent));
-		box-shadow: $shadow2;
+		box-shadow: if($shadow==true, $shadow1, none);
 		transition: $click;
+		background-color: $fill;
 	}
+
 	@else if $type==hover {
-		// Hovering on Button
+		// Hovering on Entry
 		&, label, image {
-			color: $color;
+			color: if($style==normal, $color, $white);
 		}
-		$background-hover: $fill;
-                background-color: if($transparent==solid, $background-hover, transparentize($background-hover, $transparent));
-		border-color: transparent;
-		box-shadow: $shadow2;
+		box-shadow: if($shadow==true, $shadow1, none);
 		transition: $click;
+		background-color: if($style==normal, $fill, $style);
 	}
-	@elseif $type==active {
-		// Button in On State
+	@else if $type==active {
+		// Entry in On State
 		&, label, image {
-			color: $color;
+			color: if($style==normal, $color, $white);
 		}
-		$background-active: $fill;
-                background-color: if($transparent==solid, $background-active, transparentize($background-active, $transparent));
-		border-color: transparent;
-		box-shadow: $shadow2;
+		box-shadow: if($shadow==true, $shadow1, none);
 		transition: $click;
+		background-color: if($style==normal, $fill, $style);
 	}
 	@else if $type==disabled {
-		// Button that is disabled
+		// Entry that is disabled
 		&, label, image {
 			color: if($variant==light, lighten($color, 50%), darken($color, 50%));
 		}
 	}
-	@if $type==backdrop {
-		// Backdropped Standard Button
+	@else if $type==backdrop {
+		// Backdropped Standard Entry
 		&, label, image {
-			color: $color;
+			color: if($style==normal, $color, $white);
 		}
-		$background-backdrop: if($fill==$dark1, darken($fill, $beta1), if($fill==$white, darken($fill, $beta1), darken($fill, $beta1)));
-                background-color: if($transparent==solid, $background-backdrop, transparentize($background-backdrop, $transparent));
-		box-shadow: $shadow1;
-		transition: $backdrop;
+		box-shadow: if($shadow==true, $shadow1, none);
+		transition: $click;
+		background-color: if($style==normal, $bd-fill, $style);
 	}
 	@else if $type==backdrop-focus {
-		// Backdropped Selected Button
+		// Backdropped Selected Entry
 		&, label, image {
-			color: $color;
+			color: if($style==normal, $color, $white);
 		}
-		$background-backdrop-focus: if($fill==$dark1, darken($fill, $beta1), if($fill==$white, darken($fill, $beta1), darken($fill, $beta1)));
-		background-color: if($transparent==solid, $background-backdrop-focus, transparentize($background-backdrop-focus, $transparent));
-		box-shadow: $shadow2;
-		transition: $backdrop;
+		box-shadow: if($shadow==true, $shadow1, none);
+		transition: $click;
+		background-color: if($style==normal, $bd-fill, $style);
 	}
 	@else if $type==backdrop-hover {
-		// Backdropped Hovering on Button
+		// Backdropped Hovering on Entry
 		&, label, image {
-			color: $color;
+			color: if($style==normal, $color, $white);
 		}
-		$background-backdrop-hover: if($fill==$dark1, darken($fill, $beta1), if($fill==$white, darken($fill, $beta1), darken($fill, $beta1)));
-                background-color: if($transparent==solid, $background-backdrop-hover, transparentize($background-backdrop-hover, $transparent));
-		border-color: transparent;
-		box-shadow: $shadow2;
-		transition: $backdrop;
+		box-shadow: if($shadow==true, $shadow1, none);
+		transition: $click;
+		background-color: if($style==normal, $bd-fill, $style);
 	}
-	@elseif $type==backdrop-active {
+	@else if $type==backdrop-active {
 		&, label, image {
-			color: $color;
+			color: if($style==normal, $color, $white);
 		}
-		$background-backdrop-active: if($fill==$dark1, darken($fill, $beta1), if($fill==$white, darken($fill, $beta1), darken($fill, $beta1)));
-                background-color: if($transparent==solid, $background-backdrop-active, transparentize($background-backdrop-active, $transparent));
-		border-color: transparent;
-		box-shadow: $shadow2;
-		transition: $backdrop;
+		box-shadow: if($shadow==true, $shadow1, none);
+		transition: $click;
+		background-color: if($style==normal, $bd-fill, $style);
 	}
-	@elseif $type==undecorated {
+	@else if $type==undecorated {
 		background-color: transparent;
 		border-color: transparent;
 		box-shadow: none;

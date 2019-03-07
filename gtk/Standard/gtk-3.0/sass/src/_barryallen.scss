@@ -26,9 +26,9 @@ window > box > box,
 window > box > box > box,
 window > box > stack {
 	&:last-child, &:only-child {
-		@include fill(normal);
+		@include fill(normal, solid, $variant, false);
 		&:backdrop {
-			@include fill(backdrop);
+			@include fill(backdrop, solid, $variant, false);
 		}
 	}
 }
@@ -55,21 +55,21 @@ notebook, widget viewport, stack > widget > box > stack box {
 
 
 window > box > box > treeview.view, window > box > box > scrolledwindow {
-background-color: transparent;
-&:backdrop {
+	background-color: transparent;
+	&:backdrop {
 		background-color: transparent;
 	}
 }
 
 window > box > paned > scrolledwindow > treeview > .view:selected {
 	&:selected {
-		@include clickable(active, solid);
+		@include clickable(active);
 		&:backdrop {
-			@include clickable(backdrop-active, solid);
+			@include clickable(backdrop-active);
 		}
 		label, image {
 			&:backdrop, & {
-				color: if($variant==light, $dark1, $white);
+//				color: if($variant==light, $dark1, $white);
 			}
 		}
 	}

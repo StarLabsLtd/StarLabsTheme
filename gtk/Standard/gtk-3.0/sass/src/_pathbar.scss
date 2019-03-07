@@ -19,24 +19,32 @@
 		}
 	}
 	border-radius: $omega1;
-        min-width: 24px;
-        margin: 6px 0;
-        margin-left: -6px;
+	&, &:checked {
+		min-width: 24px;
+		margin: 6px 0;
+		margin-left: -6px;
+	}
         &:dir(ltr):not(:first-child):not(:last-child):not(:checked) {
-                @include clickable(normal, solid, $variant);
+                @include clickable(normal, true, false);
+		&:hover {
+			@include clickable(hover);
+		}
                 &:backdrop {
-                        @include clickable(backdrop, solid, $variant);
+                        @include clickable(backdrop, true, false);
+			&:hover {
+				@include clickable(backdrop-hover);
+			}
                 }
         }
         &:dir(ltr):not(:first-child):not(:last-child):not(:checked):not(:nth-child(2)) {
                 border-radius: 0 $omega1 $omega1 0;
-        }	
+        }
         &:checked:not(:nth-child(2)) {
                 border-radius: 0 $omega1 $omega1 0;
 		color: $white;
-                @include clickable(active, $alpha3, $accent2);
+                @include clickable(normal, true, $accent1, custom);
                 &:backdrop {
-                        @include clickable(backdrop-active, $alpha3, $accent2);
+                        @include clickable(backdrop, true, $accent1, custom);
                 }
         }
 	&.text-button, &.image-button, & {
@@ -69,6 +77,12 @@
 	}
         &:nth-child(2){
                 border-radius: $omega1;
+		&:checked {
+			@include clickable(normal, true, $accent1);
+			&:backdrop {
+				@include clickable(backdrop, true, $accent1);
+			}
+		}
         }
 
 }

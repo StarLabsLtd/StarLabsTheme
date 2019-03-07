@@ -1,7 +1,7 @@
 .audio-device-selection-dialog {
 	@extend %shell-window;
 	StEntry {
-		@extend %shell-entry;
+		@include entry;
 	}
 	spacing: 30px;
 }
@@ -18,7 +18,8 @@
 }
 .audio-selection-device {
 	border-radius: 12px;
-	@extend %shell-button;
+	@include button(all, true, false);
+	@include button-shell;
 }
 .audio-selection-device-box {
 	padding: 20px;

@@ -2,7 +2,7 @@
 	width: 31.5em;
 }
 .message-list-clear-button.button {
-        @extend %shell-button;
+        @include button(all, true, false);
 	margin: 1.5em 1.5em 0;
 }
 .message-list-sections {
@@ -40,9 +40,7 @@
 	.message-media-control {
 		border-radius: $omega1;
 		padding: 12px;
-		&:hover {
-			@include clickable(normal, $alpha3);
-		}
+		@include button(standard, false);
 		&:last-child:ltr {
 			padding-right: 18px;
 		}
@@ -93,9 +91,10 @@
 }
 .system-menu-action {
 	-st-icon-style: symbolic;
-	border-radius: $omega1;
 	border: none;
-	@extend %shell-button;
+	@include button(all, true, false);
+	padding: 12px;
+	border-radius: $omega1;
 	& > StIcon {
 		icon-size: 16px;
 	}

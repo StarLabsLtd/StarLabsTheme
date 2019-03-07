@@ -33,46 +33,20 @@ stage {
 	color: $white;
 }
 
-%shell-button {
-        border-right-width: 1px;
-	@include click($alpha2);
-	border-radius: 0;
-        padding: 12px;
-        &:first-child {
-                border-radius: 0px 0px 0px $omega1;
-        }
-        &:last-child {
-                border-right-width: 0px;
-                border-radius: 0px 0px $omega1 0px;
-        }
-        &:first-child:last-child {
-                border-right-width: 0px;
-                border-radius: 0px 0px $omega1 $omega1;
-        }
-}
-
 %shell-entry {
-	@include entry(normal, $alpha2);
-	&:focus {
-		@include entry(focus, $alpha2);
-	}
-        &:active {
-		@include entry(active, $alpha2);
-	}
+	@include entry;
 }
 %shell-window {
         background:if($variant==light, transparentize($white, $alpha3), transparentize($dark1, $alpha3));
         background-image: image(if($variant==dark, transparentize($dark1, $alpha2), transparentize($white, $alpha2)));
-
-//	@include fill(normal, $alpha3);
 }
 
 %shell-element {
 	@include fill(normal, $alpha2, $accent2);
 	&:hover, &:focus {
-		@include clickable(normal, $alpha3, $accent2);
+		@include clickable(normal);
 	}
 	&:selected, &:active {
-		@include clickable(normal, $alpha3, $accent3);
+		@include clickable(normal);
 	}
 }

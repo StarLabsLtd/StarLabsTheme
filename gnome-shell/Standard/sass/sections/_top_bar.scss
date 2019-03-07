@@ -8,17 +8,13 @@
 	&.solid {
 		@include fill(normal, $alpha3);
 		.panel-button {
-			&:hover, &:active, &:overview, &:focus, &:checked {
-				@include clickable(normal, $alpha2);
-			}
+			@include button(all, true, false);
 		}
 	}
 	&, &,unlock-screen, &.login-screen, &.lock-screen {
 		@include fill(normal, $alpha2);
 		.panel-button {
-			&:hover, &:active, &:overview, &:focus, &:checked {
-				@include clickable(normal, $alpha2);
-			}
+			@include button(all, true, false);
 		}
 	}
 	&, &,solid, &,unlock-screen, &.login-screen, &.lock-screen {
@@ -41,10 +37,10 @@
 			-panel-corner-border-width: 2px;
 			-panel-corner-border-color: transparent;
 			&:active, &:overview, &:focus {
-				@include clickable(focus, $alpha2);
+				@include clickable(focus);
 			}
 			&:hover {
-				@include clickable(hover, $alpha2);
+				@include clickable(hover);
 
 			}
 			&:active, &:overview, &:focus, &:checked {
@@ -58,7 +54,7 @@
 			}
 			.unlock-screen &, .login-screen &, .lock-screen & {
 				&:focus, &:hover, &:active {
-					@include clickable(hover, $alpha2);
+					@include clickable(hover);
 				}
 			}
 		}
@@ -76,5 +72,4 @@
 	.remote-access-indicator {
 		color: $warning;
 	}
-
 }

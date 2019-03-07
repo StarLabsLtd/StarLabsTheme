@@ -11,22 +11,11 @@
 	border-radius: $omega1;
 	@include fill(normal, $alpha3);
 	StEntry {
-		@include entry(normal);
-		&:focus {
-			@include entry(focus);
-		}
-		&:insensitive {
-			@include entry(disabled);
-		}
+		@include entry;
 	}
 	.button {
-		@include clickable(normal, $alpha2);
-		&:hover {
-			@include clickable(hover, $alpha2, $accent2);
-		}
-		&:active {
-			@include clickable(active, $alpha3, $accent2);
-		}
+		@include button;
+		@include button-shell;
 	}
 	.modal-dialog-content-box {
 		padding: 24px;

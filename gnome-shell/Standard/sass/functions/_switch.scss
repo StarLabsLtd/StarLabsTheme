@@ -1,4 +1,4 @@
-@mixin switch($off:$mix, $on:$accent2) {
+@mixin switch($off:$accent1, $on:$accent3) {
 	background-color: $off;
 	border-radius: $omega1;
 	border-width: 1px;

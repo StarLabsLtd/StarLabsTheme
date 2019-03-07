@@ -46,7 +46,7 @@
 .app-view-control {
 	padding: 4px 32px;
 	margin: 0 4px;
-	@extend %shell-button;
+	@include button(all, true, false);
 	&:first-child {
 		border-right-width: 0;
 		border-radius: 0;
@@ -62,10 +62,10 @@
 	transition: $tran2;
 	text-align: center;
 	&:active, &:checked {
-		@include clickable(active, $alpha2);
+		@include clickable(active);
 	}
 	&:focus, &:selected, &:hover {
-		@include clickable(hover, $alpha2);
+		@include clickable(hover);
 	}
 }
 .app-well-app, .app-well-app.app-folder, .show-apps, .grid-search-result {
@@ -77,13 +77,13 @@
 		text-align: center;
 	}
 	&:active .overview-icon, &:checked .overview-icon {
-		@include clickable(active, $alpha2, $accent3);
+		@include clickable(active);
 		.app-well-app-running-dot {
 			background-color: $white;
 		}
 	}
 	&:hover .overview-icon, &:focus .overview-icon, &:selected .overview-icon {
-		@include clickable(hover, $alpha2, $accent2);
+		@include clickable(hover);
 	}
 }
 .app-well-app-running-dot {

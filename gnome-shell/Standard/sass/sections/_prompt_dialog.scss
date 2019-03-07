@@ -3,11 +3,11 @@
 	box-shadow: $shadow1;
 	@include fill(normal, $alpha3);
         StEntry {
-                @extend %shell-entry;
+                @include entry;
 	}
 	.button {
-		@include click($alpha3, $variant, false, $alpha2);
-//		@extend %shell-button;
+		@include button(all, true, false);
+		@include button-shell;
 	}
 	width: 34em;
 	.message-dialog-main-layout {

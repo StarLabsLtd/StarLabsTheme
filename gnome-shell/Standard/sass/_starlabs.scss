@@ -1,8 +1,8 @@
 // Star Labs Palette
 // Accents
-$accent1: #6ec5ff;
-$accent2: #2195f2;
-$accent3: #0068bf;
+$accent1: #003059; // Base
+$accent2: #0068bf; // Hover
+$accent3: #2195f2; // Active
 
 // Dark
 $dark1: #17171d;
@@ -11,6 +11,16 @@ $dark1: #17171d;
 $white: #ffffff;
 
 // Context Colors
+// Success
+$success1: #06840b;
+$success2: #0ba011;
+$success3: #2bd132;
+
+// Failure
+$failure1: #870400;
+$failure2: #b20903;
+$failure3: #e02821;
+
 $success: #0ba011;
 $warning: #c98810;
 $failure: #b20903;
@@ -25,6 +35,10 @@ $beta2: 10%;
 
 
 // Shadows
+$shadow-normal: 0 1px 3px if($variant==light, transparentize($dark1, 0.12), transparentize(black, 0.62)), 0 1px 2px if($variant==light, transparentize($dark1, 0.24), transparentize(black, 0.74));
+$shadow-hover: 0 3px 9px if($variant==light, transparentize($dark1, 0.19), transparentize(black, 0.9)), 0 6px 6px if($variant==light, transparentize($dark1, 0.23), transparentize(black, 0.9));
+$shadow-active: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
 $shadow1: 0 1.5px 2px if($variant==light, transparentize($dark1, $alpha2), transparentize(black, $alpha3)), 0 1.5px 2px if($variant==light, transparentize($dark1, $alpha2), transparentize(black, $alpha3));
 $shadow2: 0 3px 4px if($variant==light, transparentize($dark1, $alpha2), transparentize(black, $alpha3)), 0 3px 4px if($variant==light, transparentize($dark1, $alpha2), transparentize(black, $alpha3));
 
@@ -34,7 +48,7 @@ $shadowb: 0 3px 9px 1px transparent, 0 2px 6px 2px transparentize (if($variant==
 // Transitions
 $time: 100ms;
 $backdrop: all 500ms ease-out;
-$click: all 100ms cubic-bezier(0, 0, 0.2, 1);
+$click: all 0.25s ease-in-out; //all 100ms cubic-bezier(0, 0, 0.2, 1)
 
 // Need to remove these
 $tran1: all 500ms ease-out; // Used for backdrop(ing)

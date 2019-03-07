@@ -8,9 +8,9 @@
 	margin: $omega1;
 	border-radius: $omega1;
 	border: none;
-	@include fill(normal, $alpha3);
+	@include clickable(normal, true, false);
 	&:hover {
-		@include fill(normal, $alpha3, $accent2);
+		@include clickable(hover, true, false);
 	}
 	.message-icon-bin > StIcon {
 		color: $accent2;
@@ -18,7 +18,7 @@
 		min-width: 40px;
 	}
 	StEntry {
-		@extend %shell-entry;
+		@include entry;
 	}
 	.notification-icon {
 		padding: 5px;
@@ -35,7 +35,7 @@
 		spacing: 0px;
 	}
 	.notification-button {
-		@extend %shell-button;
+		@include button(all, true, false);
 		padding: 0 16px;
 		min-height: 35px;
 		font-weight: 500;
@@ -49,7 +49,7 @@
 	width: 1.6em;
 	-shell-counter-overlap-x: 3px;
 	-shell-counter-overlap-y: 3px;
-	@extend %shell-button;
+	@include button(all, true, false);
 	border-radius: 0.9em;
 }
 .secondary-icon {
@@ -97,7 +97,7 @@
 	padding: 2px 72px 2px 12px;
 }
 .hotplug-notification-item {
-	@extend %shell-button;
+	@include button(all, true, false);
 	border: none;
 	box-shadow: none;
 	padding: 2px 10px;

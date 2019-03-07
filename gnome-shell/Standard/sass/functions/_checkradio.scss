@@ -1,28 +1,48 @@
-@mixin check($type, $color:white, $fill:transparent) {
-  // Check/Radio drawing function
-  //
-  // $t:    check/radio type,
-  // $c:    base button color for colored* types
-  // $tc:   optional text color for colored* types
-  //
-  // possible $t values:
-  // normal, hover, active, insensitive, backdrop, backdrop-insensitive
+@mixin check($type, $state) {
+
+        $normal: if($state==checked, $accent3, transparent);
+        $hover: if($state==checked, $accent2, transparent);
+        $active: if($state==checked, $accent1, transparent);
+
 	@if $type==normal {
-//		background-clip: padding-box;
-		background-color: $fill;
-		color: $color;
+		// Standard Check
+		background-color: $normal;
+		color: if($state==checked, $white, $color);
+		border-color: if($state==checked, $white, $color);
+		box-shadow: $shadow1;
 	}
-	@if else $type==hover {
-
+	@else if $type==hover {
+		// Hovering on Check
+		background-color: $hover;
+		-gtk-icon-effect: hilight;
+		transition: $click;
 	}
-	@if else $type==active {
-
+	@else if $type==active {
+		// Check in On State
+		transition: $click;
+		background-color: $active;
 	}
-	@if else $type==insensitive {
-		opacity: $alpha1;
+	@else if $type==disabled {
+		// Check that is disabled
+		color: if($variant==light, lighten($color, 50%), darken($color, 50%));
+		background-color: $normal;
 	}
-	@if else $type==backdrop {
-
+	@else if $type==backdrop {
+		// Backdropped Standard Check
+		background-color: lighten($normal, $beta1);
+                color: if($state==checked, $white, $color);
+                border-color: if($state==checked, $white, $color);
+                box-shadow: $shadow1;
+	}
+	@else if $type==backdrop-hover {
+		// Hovering on Check
+		background-color: lighten($hover, $beta1);
+		-gtk-icon-effect: hilight;
+		transition: $click;
+	}
+	@else if $type==backdrop-active {
+		// Check in On State
+		transition: $click;
+		background-color: lighten($active, $beta1);
 	}
 }
-

@@ -24,12 +24,14 @@ list.tweak-categories > row , viewport > stack > list > row, placessidebar > vie
                         }
                 }
                 &:hover {
-                      @include clickable(hover, $alpha3, $accent2);
+                      @include clickable(hover);
                 }
                 &:selected, &:active, &.has-open-popup {
-                        @include clickable(active, solid);
+                        @include fill(normal);
+			box-shadow: $shadow1;
                         &:backdrop {
-                                @include clickable(backdrop-active, solid);
+                                @include fill(backdrop);
+				box-shadow: $shadow1;
                         }
                         label, image {
                                 &:backdrop, & {
@@ -40,19 +42,10 @@ list.tweak-categories > row , viewport > stack > list > row, placessidebar > vie
         }
 }
 
-frame row {
+frame row.activatable {
         border-radius: $omega1;
         margin: 6px 1px;
-        @include clickable(normal);
-        &:selected {
-                @include clickable(active, solid, $accent2);
-        }
-        &:backdrop {
-                @include clickable(backdrop);
-                &:selected {
-                        @include clickable(backdrop-active, solid, $accent2);
-                }
-        }
+	@include button;
 }
 
 

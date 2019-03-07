@@ -80,9 +80,9 @@ list.tweak-categories separator {
  ***********/
 terminal-window {
 	.terminal-screen {
-		@include fill(normal, $alpha3, darken($accent3, 20%));
+		@include fill(normal, $alpha3, $accent1);
 		&:backdrop {
-			@include fill(backdrop, $alpha3, darken($accent3, 20%));
+			@include fill(backdrop, $alpha3, $accent1);
 		}
 	}
 	notebook > header.top > tabs > tab {
@@ -146,9 +146,9 @@ terminal-window {
 
 .list-box-app-row {
 	border-radius: 0;
-	border-color: $mix;
-	border-style: none solid solid solid;
-	border-width: 0 1px 1px 1px;
+//	border-color: $mix;
+//	border-style: none solid solid solid;
+//	border-width: 0 1px 1px 1px;
 	margin: -1px 0 0 0;
 	& ~ separator {
 		background-color: $fill;
@@ -329,7 +329,7 @@ box > paned > notebook {
 		}
 		button {
 			// return non-flat buttons
-			@include click($alpha3);			
+			@include button;			
 		}
 	}
 }
@@ -366,8 +366,10 @@ viewport.view, listbox.transparent {
  * Firefox *
  ***********/
 #MozillaGtkWidget.background {
+	color: $color;
 	> widget {
 		> scrolledwindow > textview {
+			@include fill(normal);
 			text {
 				&:selected {
 					@extend %selected_text;
@@ -393,16 +395,7 @@ viewport.view, listbox.transparent {
 }
 
 normal-button {
-	@include clickable(normal);
-	&:hover {
-		@include clickable(hover);
-	}
-	&:active {
-		@include clickable(active);
-	}
-	&:disabled {
-		@include clickable(disabled);
-	}
+	@include button;
 }
 
 /***********

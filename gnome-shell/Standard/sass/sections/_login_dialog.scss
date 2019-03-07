@@ -7,48 +7,20 @@
 	border: none;
 	background-color: transparent;
 	StEntry {
-		@include entry(normal);
-		&:hover  {
-			@include entry(hover);
-		}
-		&:focus {
-			@include entry(active);
-		}
-		&:insensitive {
-			@include entry(disabled);
-		}
+		@include entry;
 	}
 	.modal-dialog-button-box {
 		spacing: 3px;
 	}
 	.modal-dialog-button {
 		padding: 4px 18px;
-		@include clickable(normal);
-		&:active, &:focus {
-			@include clickable(active);
-		}
-		&:hover {
-			@include clickable(hover);
-		}
-		&:insensitive {
-			@include clickable(disabled);
-		}
+		border-radius: $omega1;
+		@include button(standard, false, true, accent);
+
 		&:default {
-			padding-bottom: 5px;
-			padding-top: 5px;
-			@include clickable(normal, solid, $accent2);
-			&:hover {
-				@include clickable(hover, solid, $accent2);
-			}
-			&:focus {
-				@include clickable(focus, solid, $accent2);
-			}
-			&:active {
-				@include clickable(active, solid, $accent2);
-			}
-			&:insensitive {
-				@include clickable(disabled, solid, $accent2);
-			}
+			@include button(standard, false, true, success);
+//			padding-bottom: 5px;
+//			padding-top: 5px;
 		}
 	}
 }
@@ -91,7 +63,7 @@
 	spacing: 12px;
 	width: 23em;
 	&:expanded .login-dialog-user-list-item:selected {
-		@include clickable(focus, $alpha2);
+		@include clickable(active);
 	}
 	&:expanded .login-dialog-user-list-item:logged-in {
 		border-right: 2px solid $accent2;

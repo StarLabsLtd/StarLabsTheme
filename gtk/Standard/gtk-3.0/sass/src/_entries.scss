@@ -4,7 +4,7 @@
 		padding: 2px 6px;
 		border-radius: $omega1;
 		caret-color: currentColor;
-		@include entry(normal);
+		@include entry;
 		image {
 			&.left {
 				margin-right: 6px;
@@ -21,41 +21,8 @@
 				@include undershoot(right);
 			}
 		}
-		&.flat {
-			&:focus, & {
-				min-height: 0;
-				padding: 2px;
-				background-color: transparent;
-				border-color: transparent;
-				border-radius: 0;
-			}
-		}
-		&:focus {
-			@include entry(focus);
-		}
-		&:disabled {
-			@include entry(disabled);
-		}
-		&:backdrop {
-			@include entry(backdrop);
-		}
 		selection {
 			@extend %selected_text;
-		}
-		// entry error and warning style
-		@each $e_type, $e_color in
-		(error, $failure),
-		(warning, $warning) {
-			&.#{$e_type} {
-				color: $e_color;
-//				border-color: entry_focus_border($e_color);
-				&:focus {
-					@include entry(focus, $alpha3, $e_color);
-				}
-				selection {
-					background-color: $e_color;
-				}
-			}
 		}
 		image {
 //			color: mix($color, $base_color, 80%);
@@ -74,16 +41,7 @@
 		}
 
 	.osd & {
-		@include entry(normal);
-		&:focus {
-			@include entry(focus);
-		}
-		&:backdrop {
-			@include entry(backdrop);
-		}
-		&:disabled {
-			@include entry(disabled);
-		}
+		@include entry;
 	}
 }
 

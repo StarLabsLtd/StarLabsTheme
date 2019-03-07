@@ -1,7 +1,4 @@
 placessidebar {
-	> viewport > list {
-//		margin-top: -3px;
-	}
 	separator {
 		@include fill(normal, $alpha2, $header);
 	}

@@ -25,7 +25,7 @@
 }
 .switcher-list .item-box:selected {
 	border-radius: $omega1;
-	@include clickable(hover, $alpha2, $accent3);
+	@include clickable(hover);
 }
 .switcher-list .thumbnail-box {
 	padding: 2px;

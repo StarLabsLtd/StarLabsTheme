@@ -4,22 +4,11 @@
 	border-bottom-style: none;
 	min-height: 22px;
 	padding: 4px 32px;
-	@extend %shell-button;
-//	@include clickable(normal, $alpha2);
-//	&:focus {
-//		@include clickable(focus, $alpha2);
-//	}
-//	&:hover {
-//		@include clickable(hover, $alpha2);
-//	}
-//	&:insensitive {
-//		@include clickable(disabled);
-//	}
-//	&:active {
-//		@include clickable(active, $alpha2);
-//	}
+	@include button(all, true, false);
+//	@include button-shell;
 }
 .modal-dialog-linked-button {
-	@extend %shell-button;
+	@include button(all, true, false);
+	@include button-shell;
 }
 

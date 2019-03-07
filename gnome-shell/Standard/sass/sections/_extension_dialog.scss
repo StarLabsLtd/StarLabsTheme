@@ -1,10 +1,11 @@
 .extension-dialog {
 	@extend %shell-window;
 	StEntry {
-		@extend %shell-entry;
+		@include entry;
 	}
 	.button {
-		@extend %shell-button;
+		@include button(all, true, false);
+		@include button-shell;
 	}
 	.message-dialog-main-layout {
 		spacing: 24px;

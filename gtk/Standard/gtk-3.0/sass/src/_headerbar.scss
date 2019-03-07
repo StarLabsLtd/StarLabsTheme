@@ -7,10 +7,10 @@
 			@include switch;
 		}
 		entry {
-			@include type($alpha3, $header);
+			@include entry;
 		}
 		button, button.flat, button.titlebutton.appmenu {
-			@include click(solid, $variant, false, $alpha1);
+			@include button;
 		}
 		button.imagebutton {
 			
@@ -32,17 +32,7 @@
 			@extend *:link:selected;
 		}
 		button {
-			@include click($alpha3, $success);
-			&.flat, &.selection-menu {
-				&, &:backdrop {
-					&, &:disabled {
-						@include clickable(undecorated);
-					}
-				}
-			}
-			&.suggested-action {
-				@include click($alpha3, $success);
-			}
+			@include button;
 			&.selection-menu {
 				&:backdrop, & {
 					padding-left: 10px;

@@ -1,9 +1,6 @@
 .popup-menu {
 	@extend %shell-window;
 	min-width: 20em;
-	.popup-sub-menu {
-
-	}
 	.popup-menu-content {
 		padding: 1em 0em;
 	}
@@ -18,7 +15,7 @@
 			padding: .4em 0em .4em 1.75em;
 		}
 		&.selected {
-			@include clickable(active, $alpha2, $accent2);
+			@include clickable(active);
 		}
 	}
 	&.panel-menu {

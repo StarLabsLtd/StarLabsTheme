@@ -19,11 +19,8 @@
 		border-style: none;
 		border-radius: $omega1;
 	}
-	button { // +/- buttons on GtkVolumeButton popup
-		&:hover {
-			@include clickable(undecorated);
-			border-radius: $omega1;
-		}
+	button {
+		@include button;
 	}
 }
 

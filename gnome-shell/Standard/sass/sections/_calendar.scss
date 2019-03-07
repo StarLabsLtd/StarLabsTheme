@@ -53,7 +53,7 @@
 	border-left-width: 1px;
 }
 .weather-button {
-	@extend %shell-button;
+	@include button(all, true, false);
 }
 .datemenu-today-button .date-label {
 	font-size: 1.5em;
