@@ -98,7 +98,8 @@
 	margin: 2px;
 	border-radius: $omega1;
 	font-feature-settings: "tnum";
-	@extend %shell-element;
+	@include button(standard, false, true, jifflypuff);
+//	@extend %shell-element;
 	&.calendar-day-heading {	
 		@include fill(normal, $alpha1);
 		margin-top: 1em;
@@ -106,26 +107,25 @@
 	}
 }
 .calendar-nonwork-day {
-	@include fill(normal, $alpha2, $accent3);
+	@include button(standard, false, true, eevee);
+//	@include fill(normal, $alpha2, $accent3);
 }
 
 
 .calendar-today {
 	font-weight: bold;
-	@include fill(normal, $alpha3, $accent2);
+	@include button(standard, false, true, default);
 }
 
 .calendar-day-with-events {
 	@include fill(normal, $alpha2, $accent2);
+	@include button(standard, false, true, mewtwo);
 	font-weight: bold;
 	background-image: url("resource:///org/gnome/shell/theme/calendar-today.svg");
 }
 
 .calendar-other-month-day {
-	@include fill(normal, $alpha2);
-	&:hover, &:focus {
-		@include fill(hover, $alpha2);
-	}
+	@include button(standard, true, false);
 }
 
 .calendar-week-number {

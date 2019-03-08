@@ -8,10 +8,7 @@
 	margin: $omega1;
 	border-radius: $omega1;
 	border: none;
-	@include clickable(normal, true, false);
-	&:hover {
-		@include clickable(hover, true, false);
-	}
+	@include button(standard, false, true, squirtle);
 	.message-icon-bin > StIcon {
 		color: $accent2;
 		min-height: 40px;
@@ -35,7 +32,7 @@
 		spacing: 0px;
 	}
 	.notification-button {
-		@include button(all, true, false);
+		@include button(standard, false, true, success);
 		padding: 0 16px;
 		min-height: 35px;
 		font-weight: 500;

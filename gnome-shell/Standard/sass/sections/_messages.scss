@@ -2,7 +2,7 @@
 	width: 31.5em;
 }
 .message-list-clear-button.button {
-        @include button(all, true, false);
+        @include button(standard, false, true, failure);
 	margin: 1.5em 1.5em 0;
 }
 .message-list-sections {
@@ -13,7 +13,7 @@
 }
 .message {
 	border-radius: $omega1;
-	@extend %shell-element;
+	@include button(standard, false, true, charmander);
 	.message-icon-bin {
 		padding: 0.68em 0.2em 0.68em 0.68em;
 		&:rtl {
@@ -25,7 +25,7 @@
 		icon-size: 1.09em;
 	}
 	.message-secondary-bin {
-		padding: 0 0.82em;;
+		padding: 0 0.82em;
 	}
 	.message-secondary-bin > .event-time {
 		font-size: 0.7em;
@@ -40,7 +40,9 @@
 	.message-media-control {
 		border-radius: $omega1;
 		padding: 12px;
-		@include button(standard, false);
+		&:hover {
+			color: $dark1;
+		}
 		&:last-child:ltr {
 			padding-right: 18px;
 		}
