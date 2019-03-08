@@ -392,6 +392,18 @@ viewport.view, listbox.transparent {
 		background-color: transparent;
 		border-color: transparent;
 	}
+	button, button > button {
+		@include button(standard, true, false);
+	}
+	menubar {
+		background-color: $fill;
+		menuitem {
+			color: $color;
+		}
+	}
+	> window > menu, > menu > menu { 
+		border: none;
+	}
 }
 
 normal-button {
