@@ -296,7 +296,7 @@ modelbutton.flat, .menuitem.button.flat {
 	border-radius: 3px;
 	-gtk-outline-radius: 3px;
 	outline-offset: -2px;
-	@include button;
+	@include button(standard, true, false);
 }
 
 modelbutton.flat arrow {
