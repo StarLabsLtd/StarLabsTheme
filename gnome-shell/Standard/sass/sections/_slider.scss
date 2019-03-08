@@ -1,23 +1,23 @@
 .slider {
 	height: 1em;
 	-barlevel-height: 0.2em;
-	-barlevel-background-color: $accent3;
-	-barlevel-border-color: $accent3;
-	-barlevel-active-background-color: $accent1;
-	-barlevel-active-border-color: $accent1;
-	-barlevel-overdrive-color: $failure;
-	-barlevel-overdrive-border-color: $failure;
-	-barlevel-overdrive-separator-width: 0.2em;
+	-barlevel-background-color: transparent;
+	-barlevel-border-color: transaprent;
+	-barlevel-active-background-color: $accent2;
+	-barlevel-active-border-color: $accent2;
+	-barlevel-overdrive-color: $accent1;
+	-barlevel-overdrive-border-color: $accent1;
+	-barlevel-overdrive-separator-width: 0em;
 	-barlevel-border-width: 0px;
 	-slider-handle-radius: 8px;
 	color: if($variant==light, $dark1, $white);
 	
 	/* START: VERSION SPECIFIC CODE (< 3.29.90) */
 	-slider-height: 0.2em;
-	-slider-background-color: $accent1;
-	-slider-border-color: $accent1;
-	-slider-active-background-color: $accent3;
-	-slider-active-border-color: $accent3;
+	-slider-background-color: transparent;
+	-slider-border-color: transparent;
+	-slider-active-background-color: $accent2;
+	-slider-active-border-color: $accent2;
 	-slider-border-width: 0px;
 	/* END: VERSION SPECIFIC CODE (< 3.29.90) */
 }
