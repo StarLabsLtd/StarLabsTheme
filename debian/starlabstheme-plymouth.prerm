@@ -3,7 +3,7 @@
 set -e
 
 if [ "$1" = "remove" ]; then
-	update-alternatives --remove default.plymouth /usr/share/plymouth/themes/starlabs-logo/starlabs-logo.plymouth
+	update-alternatives --remove default.plymouth /usr/share/plymouth/themes/StarLabs/StarLabs.plymouth
 	update-initramfs -u
 fi
 

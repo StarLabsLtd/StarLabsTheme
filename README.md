@@ -98,7 +98,7 @@ sudo update-initramfs -u
 ```
 ##### Uninstall
 ```
-sudo update-alternatives --remove default.plymouth /usr/share/plymouth/themes/starlabs-logo/starlabs-logo.plymouth
+sudo update-alternatives --remove default.plymouth /usr/share/plymouth/themes/StarLabs/StarLabs.plymouth
 sudo update-initramfs -u
 ```
 
