@@ -35,7 +35,7 @@ sudo apt install starlabstheme
 ```
 ##### Uninstall
 ```
-sudo apt remove starlabstheme
+sudo apt remove starlabsthem*
 ```
 
 
