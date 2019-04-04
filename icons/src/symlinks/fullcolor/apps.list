@@ -95,6 +95,7 @@ system-monitor-app.png gnome-system-monitor.png
 system-settings.png gnome-control-center.png
 system-settings.png preferences-desktop.png
 system-settings.png preferences-system.png
+system-settings.png org.gnome.Settings.png
 system-users.png config-users.png
 terminal-app.png bash.png
 terminal-app.png gnome-terminal.png
