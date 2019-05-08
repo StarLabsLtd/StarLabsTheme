@@ -1,0 +1,6 @@
+0abcacef041cf29f12d698760daa244e  usr/share/doc/starlabstheme-session/changelog.gz
+d69ab6a5f3131027fa491f8b22d5de65  usr/share/doc/starlabstheme-session/copyright
+7fa3b17d4c8918719628e9ba8acf4f5f  usr/share/glib-2.0/schemas/99_StarLabs.gschema.override
+bec2d99b2660cf1ee2bd444fea8b1d01  usr/share/gnome-shell/modes/starlabs.json
+0117bf77c2b3049cd8e221233f0cac02  usr/share/wayland-sessions/StarLabs-wayland.desktop
+1cad850d5e8d7dd4c73a6d0d4ad9c803  usr/share/xsessions/StarLabs.desktop

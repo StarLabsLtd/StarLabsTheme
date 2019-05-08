@@ -1,3 +1,15 @@
+starlabstheme-master (0.0.52) disco; urgency=medium
+
+  * Set to remove old packages
+
+ -- Sean Rhodes <sean@starlabs.systems>  Wed, 08 May 2019 16:12:35 +0100
+
+starlabstheme-master (0.0.51) disco; urgency=medium
+
+  * Started fork from Yaru
+
+ -- Sean Rhodes <sean@starlabs.systems>  Wed, 08 May 2019 15:21:10 +0100
+
 starlabstheme-master (0.0.50) cosmic; urgency=medium
 
   * Various tweaks

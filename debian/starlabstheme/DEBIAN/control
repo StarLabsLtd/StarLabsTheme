@@ -1,0 +1,14 @@
+Package: starlabstheme
+Source: starlabstheme-master
+Version: 0.0.52
+Architecture: all
+Maintainer: Star Labs Systems <support@starlabs.systems>
+Installed-Size: 11
+Depends: starlabstheme-backgrounds, starlabstheme-extensions, starlabstheme-font, starlabstheme-gnome-shell, starlabstheme-grub, starlabstheme-gtk, starlabstheme-icons, starlabstheme-plymouth, starlabstheme-session, starlabstheme-sounds
+Conflicts: starlabs-custom
+Replaces: starlabs-custom
+Provides: starlabs-custom
+Section: misc
+Priority: optional
+Homepage: https://starlabs.systems
+Description: Star Labs Theme

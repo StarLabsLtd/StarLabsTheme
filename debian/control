@@ -15,12 +15,18 @@ Package: starlabstheme
 Architecture: all
 Description: Star Labs Theme
 Depends: starlabstheme-backgrounds, starlabstheme-extensions, starlabstheme-font, starlabstheme-gnome-shell, starlabstheme-grub, starlabstheme-gtk, starlabstheme-icons, starlabstheme-plymouth, starlabstheme-session, starlabstheme-sounds
+Provides: starlabs-custom
+Replaces: starlabs-custom
+Conflicts: starlabs-custom
 
 Package: starlabstheme-backgrounds
 Architecture: all
 Depends: ${shlibs:Depends},
          ${misc:Depends},
 Description: Star Labs Theme.
+Provides: starlabs-backgrounds
+Replaces: starlabs-backgrounds
+Conflicts: starlabs-backgrounds
 
 Package: starlabstheme-extensions
 Architecture: all
@@ -33,12 +39,18 @@ Architecture: all
 Depends: ${shlibs:Depends},
          ${misc:Depends},
 Description: Star Labs Theme.
+Provides: starlabs-font
+Replaces: starlabs-font
+Conflicts: starlabs-font
 
 Package: starlabstheme-gnome-shell
 Architecture: all
 Depends: ${shlibs:Depends},
          ${misc:Depends},
 Description: Star Labs Theme.
+Provides: starlabs-gnome-shell-theme
+Replaces: starlabs-gnome-shell-theme
+Conflicts: starlabs-gnome-shell-theme
 
 Package: starlabstheme-grub
 Architecture: all
@@ -51,18 +63,26 @@ Architecture: all
 Depends: ${shlibs:Depends},
          ${misc:Depends},
 Description: Star Labs Theme.
+Provides: starlabs-gtk-theme
+Conflicts: starlabs-gtk-theme
+Replaces: starlabs-gtk-theme
 
 Package: starlabstheme-icons
 Architecture: all
 Depends: ${shlibs:Depends},
          ${misc:Depends},
 Description: Star Labs Theme.
+Provides: starlabs-cursor-theme
+Replaces: starlabs-cursor-theme
+Conflicts: starlabs-cursor-theme
 
 Package: starlabstheme-plymouth
 Architecture: all
 Depends: ${shlibs:Depends},
          ${misc:Depends},
 Description: Star Labs Theme.
+Replaces: starlabs-plymouth
+Conflicts: starlabs-plymouth
 
 Package: starlabstheme-session
 Architecture: all
