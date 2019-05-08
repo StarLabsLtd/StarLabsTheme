@@ -1,3 +1,1 @@
-subdir('Standard')
-subdir('Dark')
-
+subdir('src')
