@@ -1,0 +1,7 @@
+<gresources>
+  <gresource prefix="/com/StarLabs/themes/StarLabs/3.0">
+    <file>gtk-generated.css</file>
+    <file>gtk-dark-generated.css</file>
+    @ASSETS@
+  </gresource>
+</gresources>
