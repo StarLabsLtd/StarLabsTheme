@@ -1,3 +1,33 @@
+starlabstheme-master (0.0.57) disco; urgency=medium
+
+  * Re-added dependancies to master
+
+ -- Sean Rhodes <sean@starlabs.systems>  Thu, 09 May 2019 09:00:54 +0100
+
+starlabstheme-master (0.0.56) disco; urgency=medium
+
+  * Null
+
+ -- Sean Rhodes <sean@starlabs.systems>  Thu, 09 May 2019 08:41:04 +0100
+
+starlabstheme-master (0.0.55) disco; urgency=medium
+
+  * Set explicit breaks for old packages
+
+ -- Sean Rhodes <sean@starlabs.systems>  Thu, 09 May 2019 08:23:28 +0100
+
+starlabstheme-master (0.0.54) disco; urgency=medium
+
+  * Switched to breaks
+
+ -- Sean Rhodes <sean@starlabs.systems>  Wed, 08 May 2019 22:37:14 +0100
+
+starlabstheme-master (0.0.53) disco; urgency=medium
+
+  * Updated replaces and conflicts
+
+ -- Sean Rhodes <sean@starlabs.systems>  Wed, 08 May 2019 21:47:31 +0100
+
 starlabstheme-master (0.0.52) disco; urgency=medium
 
   * Set to remove old packages
