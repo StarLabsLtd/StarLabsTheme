@@ -1,0 +1,35 @@
+[Plymouth Theme]
+Name=Star Labs Firmware
+Description=Progress indicator for fwupd
+ModuleName=ubuntu-text
+
+[ubuntu-text]
+title=Firmware Update
+black=0x000000
+white=0xffffff
+brown=0x0068bf
+blue=0x2195f2
+
+[boot-up]
+UseFirmwareBackground=true
+
+[shutdown]
+UseFirmwareBackground=true
+
+[reboot]
+UseFirmwareBackground=true
+
+[updates]
+SuppressMessages=true
+ProgressBarShowPercentComplete=true
+UseProgressBar=true
+_Title=Installing Updates...
+_SubTitle=Do not turn off your computer
+
+[system-upgrade]
+SuppressMessages=true
+ProgressBarShowPercentComplete=true
+UseProgressBar=true
+_Title=Upgrading System...
+_SubTitle=Do not turn off your computer
+
