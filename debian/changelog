@@ -1,3 +1,15 @@
+starlabstheme-master (0.0.59) disco; urgency=medium
+
+  * Updated plymouth theme to support fwupd progress
+
+ -- Sean Rhodes <sean@starlabs.systems>  Tue, 14 May 2019 11:41:11 +0100
+
+starlabstheme-master (0.0.58) disco; urgency=medium
+
+  * Finalised to upload to stable PPA
+
+ -- Sean Rhodes <sean@starlabs.systems>  Fri, 10 May 2019 11:26:34 +0100
+
 starlabstheme-master (0.0.57) disco; urgency=medium
 
   * Re-added dependancies to master

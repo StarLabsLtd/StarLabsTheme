@@ -1,0 +1,13 @@
+Package: starlabstheme-gnome-shell
+Source: starlabstheme-master
+Version: 0.0.59
+Architecture: all
+Maintainer: Star Labs Systems <support@starlabs.systems>
+Installed-Size: 891
+Breaks: starlabs-gnome-shell-theme (<< 1.1.5)
+Replaces: starlabs-gnome-shell-theme (<< 1.1.5)
+Provides: starlabs-gnome-shell-theme
+Section: gnome
+Priority: optional
+Homepage: https://starlabs.systems
+Description: Star Labs Theme.

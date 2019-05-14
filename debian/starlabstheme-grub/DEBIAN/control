@@ -1,0 +1,10 @@
+Package: starlabstheme-grub
+Source: starlabstheme-master
+Version: 0.0.59
+Architecture: all
+Maintainer: Star Labs Systems <support@starlabs.systems>
+Installed-Size: 270
+Section: gnome
+Priority: optional
+Homepage: https://starlabs.systems
+Description: Star Labs Theme.

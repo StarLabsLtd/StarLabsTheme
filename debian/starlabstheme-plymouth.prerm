@@ -4,6 +4,7 @@ set -e
 
 if [ "$1" = "remove" ]; then
 	update-alternatives --remove default.plymouth /usr/share/plymouth/themes/StarLabs/StarLabs.plymouth
+	update-alternatives --remove text.plymouth /usr/share/plymouth/themes/StarLabs/StarLabs-Firmware.plymouth
 	update-initramfs -u
 fi
 
