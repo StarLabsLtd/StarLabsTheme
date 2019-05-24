@@ -20,7 +20,7 @@ Includes:
 
 ![Session](Screenshots/Session.png)
 
-# Warning: This theme is currently in beta.
+# This theme is now pushed to stable.
 We still have a lot of work to do: more icons to add, bugs to squash and many tweaks. Please let us know what you think or if you find a bug!
 
 We are all ears :)
@@ -29,7 +29,7 @@ We are all ears :)
 ## Ubuntu and Debian based distributions
 ##### Install
 ```
-sudo add-apt-repository ppa:starlabs/beta
+sudo add-apt-repository ppa:starlabs/ppa
 sudo apt update
 sudo apt install starlabstheme
 ```
@@ -127,13 +127,4 @@ Included scripts are free software licensed under the terms of the [GNU General 
 Any issues or questions, please contact us at [support@starlabs.systems](mailto:supportstarlabs.systems)
 
 View our full range of Linux laptops at: [https://starlabs.systems](https://starlabs.systems)
-
-Star LabTop Mk III: Open Source Edition. This version of the Star LabTop Mk III will include the most popular requests:
-+ Open-source Coreboot firmware
-+ 16GB 2400MHz memory
-+ English (US) keyboard
-+ Improved speaker output
-
-See the OSc Edition here: [https://www.kickstarter.com/projects/starlabs/star-labtop-mk-iii-open-source-edition](https://www.kickstarter.com/projects/starlabs/star-labtop-mk-iii-open-source-edition)
-
 
