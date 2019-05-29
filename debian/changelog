@@ -1,3 +1,9 @@
+starlabstheme-master (0.0.62) disco; urgency=medium
+
+  * Version bump
+
+ -- Sean Rhodes <sean@starlabs.systems>  Wed, 29 May 2019 11:09:39 +0100
+
 starlabstheme-master (0.0.60) disco; urgency=medium
 
   * Updated dock dot color
