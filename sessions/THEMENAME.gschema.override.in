@@ -31,3 +31,8 @@ transparency-mode='FIXED'
 
 [org.gnome.shell.extensions.lockkeys]
 style='capslock'
+
+[org.gnome.shell.extensions.dash-to-dock:@ThemeName@]
+custom-theme-running-dots-color='#0068bf'
+custom-theme-running-dots-border-color='#0068bf'
+
