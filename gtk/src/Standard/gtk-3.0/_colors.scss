@@ -4,10 +4,10 @@
 @import 'starlabs';
 
 $light: if($variant=='light', true, false);
-$base_color: if($variant == 'light', #FFFFFF, $inkstone);
-$bg_color: if($variant == 'light', #F5F6F7, darken($inkstone, 3%));
+$base_color: if($variant == 'light', $white, $inkstone);
+$bg_color: if($variant == 'light', $white, darken($inkstone, 3%));
 $fg_color: if($variant == 'light', $inkstone, $porcelain);
-$text_color: if($variant == 'light', #2D2D2D, $porcelain);
+$text_color: if($variant == 'light', $dark1, $porcelain);
 //
 $selected_fg_color: white;
 $selected_bg_color: $orange;

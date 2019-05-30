@@ -19,6 +19,7 @@ gtk3_scss_dependencies = [
 	'_drawing.scss',
 	'_starlabs.scss',
 #	'_ubuntu-colors.scss',
+	'_barryallen.scss',
 ]
 
 gtk3_assets = [

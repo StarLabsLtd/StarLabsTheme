@@ -1,3 +1,28 @@
+starlabstheme-master (0.0.66) disco; urgency=medium
+
+  * Added setup script
+  * Added in dark sidebar
+
+ -- Sean Rhodes <sean@starlabs.systems>  Thu, 30 May 2019 14:57:28 +0100
+
+starlabstheme-master (0.0.65) disco; urgency=medium
+
+  * Fixed upgrade issue
+
+ -- Sean Rhodes <sean@starlabs.systems>  Wed, 29 May 2019 22:01:51 +0100
+
+starlabstheme-master (0.0.64) disco; urgency=medium
+
+  * Fixed slave install
+
+ -- Sean Rhodes <sean@starlabs.systems>  Wed, 29 May 2019 20:49:35 +0100
+
+starlabstheme-master (0.0.63) disco; urgency=medium
+
+  * Version bump
+
+ -- Sean Rhodes <sean@starlabs.systems>  Wed, 29 May 2019 11:20:00 +0100
+
 starlabstheme-master (0.0.62) disco; urgency=medium
 
   * Version bump

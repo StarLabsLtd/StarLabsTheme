@@ -1,5 +1,0 @@
-echo "${1}set menu_color_normal=white/black"
-echo "${1}set menu_color_highlight=light-blue/white"
-echo "${1}set color_normal=white/black"
-
-

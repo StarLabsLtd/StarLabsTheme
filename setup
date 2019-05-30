@@ -1,0 +1,100 @@
+#!/bin/bash
+
+# Main Menu
+clear
+echo '  _____ _             _           _'
+echo ' /  ___| |           | |         | |'
+echo ' \ `--.| |_ __ _ _ __| |     __ _| |__  ___'
+echo '  `--. \ __/ _` | '"'"'__| |    / _` | '"'"'_ \/ __|'
+echo ' /\__/ / || (_| | |  | |___| (_| | |_) \__ \'
+echo ' \____/ \__\__,_|_|  \_____/\__,_|_.__/|___/'
+echo
+echo '************** Star Labs Theme *************'
+echo
+echo "What would you like to do?"
+select d in "Install" "Update" "Uninstall"
+do
+	echo $d
+	break
+done
+
+clear
+
+if [ "$d" == "Install" ]; then
+	echo '  _____ _             _           _'
+	echo ' /  ___| |           | |         | |'
+	echo ' \ `--.| |_ __ _ _ __| |     __ _| |__  ___'
+	echo '  `--. \ __/ _` | '"'"'__| |    / _` | '"'"'_ \/ __|'
+	echo ' /\__/ / || (_| | |  | |___| (_| | |_) \__ \'
+	echo ' \____/ \__\__,_|_|  \_____/\__,_|_.__/|___/'
+	echo
+	echo '************** Star Labs Theme *************'
+	echo
+	echo "Installing..."
+	echo -ne "Fetching submodules..."
+	git submodule init
+	git pull --recurse-submodules &>/dev/null
+	echo "Done"
+
+	echo -ne "Creating build folder..."
+	meson build &>/dev/null
+
+	echo "Done"
+
+	echo -ne "Compiling build folder..."
+	ninja -C build &>/dev/null
+	echo "Done"
+
+	echo -ne "Installing build folder..."
+	sudo ninja -C build install &>/dev/null
+	echo "Done"
+	echo "Installation complete"
+
+elif [ "$d" == "Update" ]; then
+        echo '  _____ _             _           _'
+        echo ' /  ___| |           | |         | |'
+        echo ' \ `--.| |_ __ _ _ __| |     __ _| |__  ___'
+        echo '  `--. \ __/ _` | '"'"'__| |    / _` | '"'"'_ \/ __|'
+        echo ' /\__/ / || (_| | |  | |___| (_| | |_) \__ \'
+        echo ' \____/ \__\__,_|_|  \_____/\__,_|_.__/|___/'
+        echo
+        echo '************** Star Labs Theme *************'
+        echo
+        echo "Updating..."
+	echo -ne "Uninstalling current version..."
+	sudo ninja -C build uninstall &>/dev/null
+	echo "Done"
+        echo -ne "Fetching submodules..."
+	git pull
+	git pull --recurse-submodules &>/dev/null
+	echo "Done"
+
+	echo "Reconfiguring build folder..."
+        ninja -C build reconfigure &>/dev/null
+	echo "Done"
+
+        echo -ne "Compiling build folder..."
+        ninja -C build &>/dev/null
+	echo "Done"
+
+        echo -ne "Installing build folder..."
+        sudo ninja -C build install &>/dev/null
+        echo "Done"
+	echo "Update complete"
+
+elif [ "$d" == "Uninstall" ]; then
+        echo '  _____ _             _           _'
+        echo ' /  ___| |           | |         | |'
+        echo ' \ `--.| |_ __ _ _ __| |     __ _| |__  ___'
+        echo '  `--. \ __/ _` | '"'"'__| |    / _` | '"'"'_ \/ __|'
+        echo ' /\__/ / || (_| | |  | |___| (_| | |_) \__ \'
+        echo ' \____/ \__\__,_|_|  \_____/\__,_|_.__/|___/'
+        echo
+        echo '************** Star Labs Theme *************'
+        echo
+        echo "Uninstalling..."
+        echo -ne "Uninstalling current version..."
+        sudo ninja -C build uninstall &>/dev/null
+        echo "Done"
+	echo "Uninstallation complete"
+fi

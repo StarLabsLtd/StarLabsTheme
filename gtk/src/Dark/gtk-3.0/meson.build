@@ -12,6 +12,7 @@ gtk3_scss_dependencies = [
 	'../../Standard/gtk-3.0/_drawing.scss',
 	'../../Standard/gtk-3.0/_starlabs.scss',
 #	'../../Standard/gtk-3.0/_ubuntu-colors.scss',
+	'../../Standard/gtk-3.0/_barryallen.scss',
 ]
 
 # generate .css files

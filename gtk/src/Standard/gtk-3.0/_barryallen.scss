@@ -1,0 +1,46 @@
+list.tweak-categories,
+scrolledwindow viewport > stack list,
+.sidebar list {
+	background-color: $headerbar_bg_color;
+	color: $headerbar_fg_color;
+	& label, & image {
+		color: $headerbar_fg_color;
+	}
+	row:selected {
+		color: $fg_color;
+		background-color: transparentize($bg_color, 0.001);
+		& label, & image {
+			color: $fg_color;
+		}
+	}
+	&:backdrop {
+		background-color: $backdrop_headerbar_bg_color;
+		color: $backdrop_fg_color;
+		transition: $backdrop_transition;
+		& label, & image {
+			color: $backdrop_fg_color;
+		}
+		row:selected {
+			color: $backdrop_fg_color;
+			background-color: transparentize($backdrop_bg_color, 0.001);
+			& label, & image {
+				color: $backdrop_fg_color;
+			}
+		}
+	}
+}
+separator,
+paned > separator,
+window > box > separator,
+.sidebar,
+stacksidebar.sidebar:dir(ltr) list, stacksidebar.sidebar.left list, stacksidebar.sidebar.left:dir(rtl) list, .sidebar:dir(ltr), .sidebar.left, .sidebar.left:dir(rtl), 
+.nautilus-window paned > separator {
+	&, &:backdrop {
+		background-color: transparent;
+		border-color: transparent;
+		background: image(transparent);
+	}
+}
+
+
+

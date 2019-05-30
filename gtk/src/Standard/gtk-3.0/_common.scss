@@ -55,7 +55,7 @@ $menu_border: if($variant=='light', transparentize(black, 0.8), transparentize(w
 
   &:backdrop {
     color: $backdrop_fg_color;
-    background-color: $backdrop_bg_color;
+    background-color: transparentize($backdrop_bg_color, 0.001);
   }
 }
 
