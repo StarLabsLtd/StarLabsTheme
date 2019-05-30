@@ -48,6 +48,24 @@ if [ "$d" == "Install" ]; then
 	echo -ne "Installing build folder..."
 	sudo ninja -C build install &>/dev/null
 	echo "Done"
+
+	echo -ne "Installing GDM theme"
+	sudo update-alternatives --install /usr/share/gnome-shell/theme/gdm3.css gdm3.css /usr/share/gnome-shell/theme/StarLabs/gnome-shell.css 47
+	echo "Done"
+
+        echo -ne "Compiling schemas"
+        sudo glib-compile-schemas /usr/share/glib-2.0/schemas
+        echo "Done"
+
+        echo -ne "Installing Plymouth theme"
+        sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/StarLabs/StarLabs.plymouth 150 --slave /usr/share/plymouth/themes/default.grub default.plymouth.grub /usr/share/plymouth/themes/StarLabs/StarLabs.grub
+        sudo update-initramfs -u
+        echo "Done"
+
+        echo -ne "Updating grub"
+        sudo update-grub
+        echo "Done"
+
 	echo "Installation complete"
 
 elif [ "$d" == "Update" ]; then
@@ -93,6 +111,24 @@ elif [ "$d" == "Uninstall" ]; then
         echo '************** Star Labs Theme *************'
         echo
         echo "Uninstalling..."
+
+        echo -ne "Uninstalling GDM theme"
+	sudo update-alternatives --remove gdm3.css /usr/share/gnome-shell/theme/StarLabs/gnome-shell.css
+        echo "Done"
+
+        echo -ne "Compiling schemas"
+        sudo glib-compile-schemas /usr/share/glib-2.0/schemas
+        echo "Done"
+
+        echo -ne "Uninstalling Plymouth theme"
+        sudo update-alternatives --remove default.plymouth /usr/share/plymouth/themes/StarLabs/StarLabs.plymouth
+        sudo update-initramfs -u
+        echo "Done"
+
+        echo -ne "Updating grub"
+        sudo update-grub
+        echo "Done"
+
         echo -ne "Uninstalling current version..."
         sudo ninja -C build uninstall &>/dev/null
         echo "Done"
