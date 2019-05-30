@@ -35,7 +35,7 @@ sudo apt install starlabstheme
 ```
 ##### Uninstall
 ```
-sudo apt remove starlabsthem*
+sudo apt purge starlabstheme
 ```
 
 
@@ -45,61 +45,11 @@ You need to install:
 ```
 git meson sassc
 ```
-##### Install
+##### Install, Update or Uninstall
 ```
 git clone https://github.com/StarLabsLtd/StarLabsTheme.git
 cd StarLabsTheme
-meson build
-ninja -C build
-sudo ninja -C build install
-```
-##### Update
-```
-cd StarLabsTheme
-git pull
-ninja -C build reconfigure
-sudo ninja -C build uninstall
-sudo ninja -C build install
-```
-
-##### Uninstall
-```
-sudo ninja -C build uninstall
-```
-
-#### Additional Features
-Some parts aren't configured on install. If you would like to use them, use the below commands. Make sure to undo these commands before uninstalling.
-
-This isn't required if installed from our PPA.
-### GDM3 Theme
-##### Install
-```
-sudo update-alternatives --install /usr/share/gnome-shell/theme/gdm3.css gdm3.css /usr/share/gnome-shell/theme/StarLabs/gnome-shell.css 47
-```
-##### Uninstall
-```
-sudo update-alternatives --remove gdm3.css /usr/share/gnome-shell/theme/StarLabs/gnome-shell.css
-```
-### Session
-##### Install
-```
-sudo glib-compile-schemas /usr/share/glib-2.0/schemas
-```
-##### Uninstall
-```
-sudo glib-compile-schemas /usr/share/glib-2.0/schemas 
-```
-
-### Plymouth
-##### Install
-```
-sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/StarLabs/StarLabs.plymouth 150 --slave /usr/share/plymouth/themes/default.grub default.plymouth.grub /usr/share/plymouth/themes/StarLabs/StarLabs.grub
-sudo update-initramfs -u
-```
-##### Uninstall
-```
-sudo update-alternatives --remove default.plymouth /usr/share/plymouth/themes/StarLabs/StarLabs.plymouth
-sudo update-initramfs -u
+./setup
 ```
 
 ## How to use
