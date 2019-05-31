@@ -34,7 +34,6 @@ if [ "$d" == "Install" ]; then
 	echo -ne "Fetching submodules..."
 	git submodule init
 	git pull --recurse-submodules &>/dev/null
-	echo "Done"
 
 	echo -ne "Creating build folder..."
 	meson build &>/dev/null
@@ -85,7 +84,6 @@ elif [ "$d" == "Update" ]; then
         echo -ne "Fetching submodules..."
 	git pull
 	git pull --recurse-submodules &>/dev/null
-	echo "Done"
 
 	echo -ne "Reconfiguring build folder..."
         ninja -C build reconfigure &>/dev/null
