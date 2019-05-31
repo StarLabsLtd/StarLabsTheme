@@ -1,5 +1,5 @@
 {
     "parentMode": "user",
     "stylesheetName": "@ThemeName@/gnome-shell.css",
-    "enabledExtensions": ["ubuntu-dock@ubuntu.com", "ubuntu-appindicators@ubuntu.com", "lockkeys@vaina.lt"]
+    "enabledExtensions": ["ubuntu-dock@ubuntu.com", "ubuntu-appindicators@ubuntu.com", "lockkeys@vaina.lt", "desktop-icons@csoriano"]
 }
