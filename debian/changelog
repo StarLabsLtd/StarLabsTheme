@@ -1,3 +1,9 @@
+starlabstheme-master (0.0.68) disco; urgency=medium
+
+  * Enabled desktop-icons@csoriano
+
+ -- Sean Rhodes <sean@starlabs.systems>  Fri, 31 May 2019 14:08:11 +0100
+
 starlabstheme-master (0.0.67) disco; urgency=medium
 
   * Added blue hover
