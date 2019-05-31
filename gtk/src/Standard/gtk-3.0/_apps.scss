@@ -14,8 +14,8 @@ list.tweak-categories separator {
   // keep details box visible
   // details box looks ugly when many items are selected and it floats above the orange
   background-image: none;
-  background-color: if($light, white, $base_color);
-  &:backdrop { background-color: $backdrop_base_color }
+  background-color: $bg_color;
+  &:backdrop { background-color: $backdrop_bg_color; }
 
   // Makes icons less bright in backdrop
   @at-root %dim_icons_in_backdrop,

@@ -257,10 +257,13 @@
 
     $_bg: lighten($c, $_perc);
 
-    background-color: $_bg;
-    color: $tc;
+//    background-color: $_bg;
+	background-color: $accent2;
+//    color: $tc;
+	color: $white;
 
-    border-color: if($flat, if($_headerbar or is_special_color($c), $_bg, $borders_color), $_border);
+//    border-color: if($flat, if($_headerbar or is_special_color($c), $_bg, $borders_color), $_border);
+	border-color: $accent2;
     box-shadow: if($flat, none,  0 1px transparentize(black, 0.85));
 
     @if $flat == false {
@@ -293,8 +296,9 @@
       }
     }
 
-    background-color: $_bg;
-    border-color: $_border;
+//    background-color: $_bg;
+//    border-color: $_border;
+	background-color: $accent3;
     box-shadow: none;
   }
 

@@ -6,9 +6,16 @@ scrolledwindow viewport > stack list,
 	& label, & image {
 		color: $headerbar_fg_color;
 	}
-	row:selected {
+	row.activatable:hover, row:not(:selected):not(:backdrop):hover {
+		color: $white;
+		background-color: $accent3;
+		& label, & image {
+			color: $white;
+		}
+	}
+	row.activatable:selected {
 		color: $fg_color;
-		background-color: transparentize($bg_color, 0.001);
+		background-color: $bg_color;
 		& label, & image {
 			color: $fg_color;
 		}
@@ -20,9 +27,10 @@ scrolledwindow viewport > stack list,
 		& label, & image {
 			color: $backdrop_fg_color;
 		}
+
 		row:selected {
 			color: $backdrop_fg_color;
-			background-color: transparentize($backdrop_bg_color, 0.001);
+			background-color: $backdrop_bg_color;
 			& label, & image {
 				color: $backdrop_fg_color;
 			}
@@ -43,4 +51,41 @@ stacksidebar.sidebar:dir(ltr) list, stacksidebar.sidebar.left list, stacksidebar
 }
 
 
+
+// Window Close button
+button.titlebutton {
+	&, &:hover, &:active {
+		headerbar &, .titlebar &, & {
+			&, &:backdrop {
+				@extend %undecorated_button;
+			}
+		}
+	}
+	border-radius: $small_radius;
+	min-height: 24px;
+	min-width: 24px;
+	padding: 2px;
+
+	&:not(.close):not(.appmenu){
+		&:hover {
+			background-color: $accent2;
+		}
+		&:active {
+			background-color: $accent3;
+		}
+	}
+
+	&.close {
+		background-color: $accent1;
+		color: $white;
+		&:hover {
+			background-color: $accent2;
+			color: $white;
+		}
+		&:active {
+			background-color: $accent3;
+			color: $white;
+		}
+	}
+}
 
