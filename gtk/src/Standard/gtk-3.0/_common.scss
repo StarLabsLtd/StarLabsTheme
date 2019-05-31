@@ -4495,20 +4495,28 @@ button.titlebutton {
 
   &:not(.close):not(.appmenu){
     &:hover {
-      @include draw_circle($c);
+//      @include draw_circle($c);
+	background-color: $accent2;
     }
     &:active {
-      @include draw_circle($c);
+//      @include draw_circle($c);
+	background-color: $accent3;
     }
   }
 
   &.close {
-    @include draw_circle($selected_bg_color, $close:true);
+  //  @include draw_circle($selected_bg_color, $close:true);
+	background-color: $accent1;
+	color: $white;
     &:hover {
-      @include draw_circle($selected_bg_color, $close:true);
+	background-color: $accent2;
+	color: $white;
+	// @include draw_circle($selected_bg_color, $close:true);
     }
     &:active {
-      @include draw_circle($selected_bg_color, $close:true);
+	background-color: $accent3;
+	color: $white;
+//      @include draw_circle($selected_bg_color, $close:true);
     }
   }
 }
