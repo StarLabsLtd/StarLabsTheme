@@ -87,7 +87,7 @@ elif [ "$d" == "Update" ]; then
 	git pull --recurse-submodules &>/dev/null
 	echo "Done"
 
-	echo "Reconfiguring build folder..."
+	echo -ne "Reconfiguring build folder..."
         ninja -C build reconfigure &>/dev/null
 	echo "Done"
 
