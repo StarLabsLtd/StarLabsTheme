@@ -1592,7 +1592,7 @@ headerbar {
   padding: 0 6px;
   min-height: 40px;
   border-color: transparentize(_border_color($headerbar_bg_color), 0.7);
-  border-top-color: $inkstone;
+  border-top-color: $headerbar_bg_color;
   border-style: solid;
   border-width: 0;
   border-top-width: 1px;
@@ -1608,7 +1608,7 @@ headerbar {
   &:backdrop {
     background-color: $backdrop_headerbar_bg_color;
 //    border-color: transparentize(_border_color($backdrop_headerbar_bg_color), 0.7);
-    color: $backdrop_fg_color;
+    color: transparentize($headerbar_fg_color,0.45); //$backdrop_fg_color;
     transition: $backdrop_transition;
   }
 

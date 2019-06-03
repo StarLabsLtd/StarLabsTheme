@@ -22,17 +22,17 @@ scrolledwindow viewport > stack list,
 	}
 	&:backdrop {
 		background-color: $backdrop_headerbar_bg_color;
-		color: $backdrop_fg_color;
+		color: transparentize($headerbar_fg_color,0.45);
 		transition: $backdrop_transition;
 		& label, & image {
-			color: $backdrop_fg_color;
+			color: transparentize($headerbar_fg_color,0.45);
 		}
 
 		row:selected {
-			color: $backdrop_fg_color;
+			color: transparentize($fg_color,0.45);
 			background-color: $backdrop_bg_color;
 			& label, & image {
-				color: $backdrop_fg_color;
+				color: transparentize($fg_color,0.45);
 			}
 		}
 	}
