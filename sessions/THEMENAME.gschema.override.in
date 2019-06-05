@@ -12,7 +12,7 @@ theme-name = "@ThemeName@"
 input-feedback-sounds = true
 
 [org.gnome.mutter:@ThemeName@]
-center-new-windows = true
+center-new-windows = false
 
 [org.gnome.desktop.background:@ThemeName@]
 picture-uri = 'file:///usr/share/backgrounds/StarLabs/StarWallpaper0.png'
