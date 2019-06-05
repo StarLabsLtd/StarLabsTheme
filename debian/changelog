@@ -1,3 +1,9 @@
+starlabstheme-master (0.0.69) disco; urgency=medium
+
+  * removed centered new windows
+
+ -- Ben McMillen <ben@starlabs.systems>  Wed, 05 Jun 2019 14:19:07 +0100
+
 starlabstheme-master (0.0.68) disco; urgency=medium
 
   * Enabled desktop-icons@csoriano
