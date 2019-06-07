@@ -1,19 +1,36 @@
 theme_dir = join_paths(get_option('prefix'), 'share/icons', meson.project_name())
 theme_dir_light = join_paths(get_option('prefix'), 'share/icons', meson.project_name()+'-Light')
 theme_dir_dark = join_paths(get_option('prefix'), 'share/icons', meson.project_name()+'-Dark')
+theme_dir_circle = join_paths(get_option('prefix'), 'share/icons', meson.project_name()+'-Circle')
+theme_dir_squircle = join_paths(get_option('prefix'), 'share/icons', meson.project_name()+'-Squircle')
+
 
 install_subdir('StarLabs',
   install_dir: theme_dir,
   strip_directory: true,
   exclude_files: ['index.theme', 'cursor.theme'],
 )
+
 install_subdir('StarLabs-Light',
   install_dir: theme_dir_light,
   strip_directory: true,
   exclude_files: ['index.theme', 'cursor.theme'],
 )
+
 install_subdir('StarLabs-Dark',
   install_dir: theme_dir_dark,
+  strip_directory: true,
+  exclude_files: ['index.theme', 'cursor.theme'],
+)
+
+install_subdir('StarLabs-Circle',
+  install_dir: theme_dir_circle,
+  strip_directory: true,
+  exclude_files: ['index.theme', 'cursor.theme'],
+)
+
+install_subdir('StarLabs-Squircle',
+  install_dir: theme_dir_squircle,
   strip_directory: true,
   exclude_files: ['index.theme', 'cursor.theme'],
 )
@@ -22,6 +39,7 @@ themes_f = [
   'cursor.theme',
   'index.theme',
 ]
+
 conf_data = configuration_data()
 conf_data.set('ThemeName', meson.project_name())
 foreach theme: themes_f
@@ -30,6 +48,50 @@ foreach theme: themes_f
                  configuration : conf_data,
                  install_dir: theme_dir)
 endforeach
+
+conf_data = configuration_data()
+conf_data.set('ThemeName', meson.project_name())
+foreach theme: themes_f
+  configure_file(input : 'StarLabs-Light/@0@'.format(theme),
+                 output : '@0@'.format(theme),
+                 configuration : conf_data,
+                 install_dir: theme_dir)
+endforeach
+
+conf_data = configuration_data()
+conf_data.set('ThemeName', meson.project_name())
+foreach theme: themes_f
+  configure_file(input : 'StarLabs-Dark/@0@'.format(theme),
+                 output : '@0@'.format(theme),
+                 configuration : conf_data,
+                 install_dir: theme_dir)
+endforeach
+
+conf_data = configuration_data()
+conf_data.set('ThemeName', meson.project_name())
+foreach theme: themes_f
+  configure_file(input : 'StarLabs-Circle/@0@'.format(theme),
+                 output : '@0@'.format(theme),
+                 configuration : conf_data,
+                 install_dir: theme_dir)
+endforeach
+
+conf_data = configuration_data()
+conf_data.set('ThemeName', meson.project_name())
+foreach theme: themes_f
+  configure_file(input : 'StarLabs-Squircle/@0@'.format(theme),
+                 output : '@0@'.format(theme),
+                 configuration : conf_data,
+                 install_dir: theme_dir)
+endforeach
+
+
+
+
+
+
+
+
 
 
 meson.add_install_script('meson/post_install.py', meson.project_name())
