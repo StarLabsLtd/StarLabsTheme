@@ -1468,7 +1468,7 @@
    inkscape:groupmode="layer"
    id="layer4"
    inkscape:label="Squircle-Background"><g
-     style="display:inline"
+     style="display:none"
      transform="matrix(0.14577284,0,0,0.14577284,110,110.30254)"
      id="g196"><g
        id="g170"><linearGradient
@@ -1886,7 +1886,7 @@
    inkscape:groupmode="layer"
    id="layer2"
    inkscape:label="Circle-Background"
-   style="display:none"><circle
+   style="display:inline"><circle
      style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path1090"
      cx="128"
@@ -1913,7 +1913,7 @@
    inkscape:groupmode="layer"
    id="layer6"
    inkscape:label="Circle-Shadow"
-   style="display:none"
+   style="display:inline"
    sodipodi:insensitive="true"><g
      id="g2548"
      style="display:inline"

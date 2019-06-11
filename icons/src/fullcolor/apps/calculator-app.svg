@@ -1164,7 +1164,7 @@
    inkscape:groupmode="layer"
    id="layer2"
    inkscape:label="Squircle-Background"
-   style="display:inline"><path
+   style="display:none"><path
      style="display:inline;fill:#0068bf;fill-opacity:1;stroke-width:1.41822851"
      d="m 4,128 v 98.54492 C 4,240.64746 15.35254,252 29.455078,252 H 128 V 128 Z"
      id="rect1101"
@@ -1184,7 +1184,7 @@
    inkscape:groupmode="layer"
    id="layer3"
    inkscape:label="Squircle-Shadow"
-   style="display:inline"><path
+   style="display:none"><path
      style="display:inline;opacity:0.5;fill:#17171d;fill-opacity:0.39215686;stroke-width:1.41822851"
      d="m 4,216.54492 v 10 C 4,240.64746 15.35254,252 29.45508,252 H 226.54492 C 240.64746,252 252,240.64746 252,226.54492 v -10 C 252,230.64746 240.64746,242 226.54492,242 H 29.45508 C 15.35254,242 4,230.64746 4,216.54492 Z"
      id="rect1101-3"
@@ -1192,7 +1192,7 @@
    inkscape:groupmode="layer"
    id="layer7"
    inkscape:label="Squircle-Icon"
-   style="display:inline"><g
+   style="display:none"><g
      style="display:inline"
      id="g1286"><path
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.59846926;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
@@ -1223,7 +1223,7 @@
    inkscape:groupmode="layer"
    id="layer4"
    inkscape:label="Circle-Background"
-   style="display:none"><circle
+   style="display:inline"><circle
      style="display:inline;fill:#4d5861;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path1090"
      cx="128"
@@ -1283,7 +1283,7 @@
    inkscape:groupmode="layer"
    id="layer6"
    inkscape:label="Circle-Shadow"
-   style="display:none"><g
+   style="display:inline"><g
      id="g2548"
      style="display:inline"
      transform="translate(-2.960187,1.58543)"><path
@@ -1302,7 +1302,7 @@
    inkscape:groupmode="layer"
    id="layer8"
    inkscape:label="Circle-Icon"
-   style="display:none"><path
+   style="display:inline"><path
      style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.59846926;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
      d="m 156.41852,62.923269 -6.34765,5.939454 15.86718,14.851562 -15.86718,14.851562 6.34765,5.939453 15.86719,-14.851562 15.86719,14.851562 6.34765,-5.939453 -15.86718,-14.851562 15.86718,-14.851562 -6.34765,-5.939454 -15.86719,14.851563 z"
      id="path1294"
