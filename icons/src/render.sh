@@ -15,21 +15,23 @@ for v in StarLabs StarLabs-Circle StarLabs-Squircle; do
 		cd $d
 		for f in *.svg; do
 			# Display relevant layer
-			# Show Standard Layers
-                        cat $f | grep -n inkscape:label | grep 'Standard' | cut -d \: -f1 | while read line; do
-                                display=$(($line + 1))
-                                display="$display"s
-                                sed -i "$display/display:none/display:inline/" $f
-                        done
-			# Hide layers that match Circle or Squircle
-			cat $f | grep -n inkscape:label | grep 'Circle\|Squircle' | cut -d \: -f1 | while read line; do
-				display=$(($line + 1))
-				display="$display"s
-				sed -i "$display/display:inline/display:none/" $f
-			done
+
 			# Show all Circle layers
-			if [[ $v == StarLabs-Circle ]]; then
-                                cat $f | grep -n inkscape:label | grep 'Standard' | cut -d \: -f1 | while read line; do
+			if [[ $v == StarLabs ]]; then
+                                cat $f | grep -n inkscape:label | grep 'Circle\|Squircle' | cut -d \: -f1 | while read line; do
+                                        display=$(($line + 1))
+                                        display="$display"s
+                                        sed -i "$display/display:inline/display:none/" $f
+                                done
+
+				cat $f | grep -n inkscape:label | grep 'Standard' | cut -d \: -f1 | while read line; do
+					display=$(($line + 1))
+					display="$display"s
+					sed -i "$display/display:none/display:inline/" $f
+				done
+			# Show all Circle layers
+			elif [[ $v == StarLabs-Circle ]]; then
+                                cat $f | grep -n inkscape:label | grep 'Squircle\|Standard' | cut -d \: -f1 | while read line; do
                                         display=$(($line + 1))
                                         display="$display"s
                                         sed -i "$display/display:inline/display:none/" $f
@@ -42,6 +44,12 @@ for v in StarLabs StarLabs-Circle StarLabs-Squircle; do
 				done
 			# Show all Squircle layers
 			elif [[ $v == StarLabs-Squircle ]]; then
+                                cat $f | grep -n inkscape:label | grep 'Standard\|Circle' | cut -d \: -f1 | while read line; do
+                                        display=$(($line + 1))
+                                        display="$display"s
+                                        sed -i "$display/display:inline/display:none/" $f
+                                done
+
 				cat $f | grep -n inkscape:label | grep 'Squircle' | cut -d \: -f1 | while read line; do
 					display=$(($line + 1))
 					display="$display"s
