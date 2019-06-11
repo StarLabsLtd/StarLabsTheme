@@ -1163,7 +1163,7 @@
    inkscape:groupmode="layer"
    id="layer3"
    inkscape:label="Squircle-Background"
-   style="display:none"><rect
+   style="display:inline"><rect
      style="display:inline;fill:#00c3ff;fill-opacity:1;stroke-width:1.41822851"
      id="rect1101"
      width="248"
@@ -1174,7 +1174,7 @@
    inkscape:groupmode="layer"
    id="layer2"
    inkscape:label="Squircle-Shadow"
-   style="display:none"><path
+   style="display:inline"><path
      style="display:inline;opacity:0.5;fill:#17171d;fill-opacity:0.39215686;stroke-width:1.41822851"
      d="m 4,216.54492 v 10 C 4,240.64746 15.35254,252 29.45508,252 H 226.54492 C 240.64746,252 252,240.64746 252,226.54492 v -10 C 252,230.64746 240.64746,242 226.54492,242 H 29.45508 C 15.35254,242 4,230.64746 4,216.54492 Z"
      id="rect1101-3"
@@ -1182,7 +1182,7 @@
    inkscape:groupmode="layer"
    id="layer4"
    inkscape:label="Circle-Background"
-   style="display:inline"><circle
+   style="display:none"><circle
      style="display:inline;fill:#00c3ff;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path1090"
      cx="128"
@@ -1191,7 +1191,7 @@
    inkscape:groupmode="layer"
    id="layer6"
    inkscape:label="Circle-Shadow"
-   style="display:inline"
+   style="display:none"
    sodipodi:insensitive="true"><g
      id="g2548"
      style="display:inline"

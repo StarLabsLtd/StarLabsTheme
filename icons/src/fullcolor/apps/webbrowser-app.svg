@@ -1339,7 +1339,7 @@
    inkscape:groupmode="layer"
    id="layer4"
    inkscape:label="Squircle-Background"
-   style="display:none"><rect
+   style="display:inline"><rect
      style="display:inline;fill:#4d5861;fill-opacity:1;stroke-width:1.41822851"
      id="rect1101"
      width="248"
@@ -1350,7 +1350,7 @@
    inkscape:groupmode="layer"
    id="layer3"
    inkscape:label="Squircle-Shadow"
-   style="display:none"><path
+   style="display:inline"><path
      style="display:inline;opacity:0.5;fill:#17171d;fill-opacity:0.39215686;stroke-width:1.41822851"
      d="m 4.00001,216.54492 v 10 C 4.00001,240.64746 15.35255,252 29.45509,252 h 197.08984 c 14.10254,0 25.45508,-11.35254 25.45508,-25.45508 v -10 C 252.00001,230.64746 240.64747,242 226.54493,242 H 29.45509 C 15.35255,242 4.00001,230.64746 4.00001,216.54492 Z"
      id="rect1101-3"
@@ -1358,7 +1358,7 @@
    inkscape:groupmode="layer"
    id="layer5"
    inkscape:label="Squircle-Icon"
-   style="display:none"><g
+   style="display:inline"><g
      id="g1182"
      transform="matrix(0.64516129,0,0,0.64516129,45.419355,45.419355)"><circle
        style="display:inline;fill:#0068bf;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -1374,7 +1374,7 @@
    inkscape:groupmode="layer"
    id="layer2"
    inkscape:label="Circle-Background"
-   style="display:inline"><path
+   style="display:none"><path
      style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#00ff00;fill-opacity:1;fill-rule:evenodd;stroke:#0000aa;stroke-width:0.03;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;marker-start:none;marker-mid:none;marker-end:none"
      d="M 846.1032,-300.50777 Z"
      id="path22824"
@@ -1462,7 +1462,7 @@
    inkscape:groupmode="layer"
    id="layer6"
    inkscape:label="Circle-Shadow"
-   style="display:inline"
+   style="display:none"
    sodipodi:insensitive="true"><g
      id="g2548"
      style="display:inline"
