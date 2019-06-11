@@ -1163,7 +1163,7 @@
    inkscape:groupmode="layer"
    id="layer5"
    inkscape:label="Standard-Background"
-   style="display:inline"><rect
+   style="display:none"><rect
      ry="25.455845"
      y="4"
      x="4"
@@ -1174,7 +1174,7 @@
    inkscape:groupmode="layer"
    id="layer7"
    inkscape:label="Standard-Shadow"
-   style="display:inline"><path
+   style="display:none"><path
      inkscape:connector-curvature="0"
      id="path1103"
      d="m 4,216.54492 v 10 C 4,240.64746 15.35254,252 29.45508,252 H 226.54492 C 240.64746,252 252,240.64746 252,226.54492 v -10 C 252,230.64746 240.64746,242 226.54492,242 H 29.45508 C 15.35254,242 4,230.64746 4,216.54492 Z"

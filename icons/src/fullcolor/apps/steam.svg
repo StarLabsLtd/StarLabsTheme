@@ -1189,21 +1189,11 @@
      offset=".73760"
      id="stop10-2-5" /><stop
      stop-color="#136497"
-     offset="0.81640261"
+     offset="0.92972869"
      id="stop12-9-6" /><stop
      stop-color="#1387B8"
      offset="1"
-     id="stop14-2" /></linearGradient><radialGradient
-   inkscape:collect="always"
-   xlink:href="#a-6-3"
-   id="radialGradient1182"
-   cx="128"
-   cy="128"
-   fx="128"
-   fy="128"
-   r="124"
-   gradientUnits="userSpaceOnUse"
-   gradientTransform="matrix(0.22357686,-2.4509095,2.6020402,0.23736332,-233.67898,411.33391)" /><linearGradient
+     id="stop14-2" /></linearGradient><linearGradient
    id="a-6-2"
    x2="116.68872"
    x1="116.68872"
@@ -1231,7 +1221,15 @@
      id="stop12-9-62" /><stop
      stop-color="#1387B8"
      offset="1"
-     id="stop14-6" /></linearGradient></defs><sodipodi:namedview
+     id="stop14-6" /></linearGradient><linearGradient
+   inkscape:collect="always"
+   xlink:href="#a-6"
+   id="linearGradient1131"
+   x1="128.1992"
+   y1="4.001976"
+   x2="128.23045"
+   y2="251.99802"
+   gradientUnits="userSpaceOnUse" /></defs><sodipodi:namedview
    pagecolor="#ffffff"
    bordercolor="#666666"
    borderopacity="1"
@@ -1244,13 +1242,13 @@
    inkscape:window-height="1536"
    id="namedview249"
    showgrid="false"
-   inkscape:zoom="2"
-   inkscape:cx="11.75"
-   inkscape:cy="122.07636"
+   inkscape:zoom="1.4142136"
+   inkscape:cx="69.31299"
+   inkscape:cy="264.91439"
    inkscape:window-x="70"
    inkscape:window-y="27"
    inkscape:window-maximized="0"
-   inkscape:current-layer="layer1"
+   inkscape:current-layer="layer3"
    inkscape:pagecheckerboard="true" />
 
 <g
@@ -1270,7 +1268,7 @@
    id="layer3"
    inkscape:label="Squircle-Background"
    style="display:inline"><rect
-     style="display:inline;fill:url(#radialGradient1182);fill-opacity:1;stroke-width:1.41822851"
+     style="display:inline;fill:url(#linearGradient1131);fill-opacity:1;stroke-width:1.41822851"
      id="rect1101"
      width="248"
      height="248"
