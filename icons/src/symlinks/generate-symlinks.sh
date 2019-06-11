@@ -38,13 +38,13 @@ do
 	do
 		LIST="$DIR/fullcolor/$CONTEXT.list"
 		# Check if directory exists
-		if [ -d "$DIR/../../$THEME/$SIZE/$CONTEXT" ]; then
-			cd $DIR/../../$THEME/$SIZE/$CONTEXT
+		if [ -d "$DIR/../../$1/$SIZE/$CONTEXT" ]; then
+			cd $DIR/../../$1/$SIZE/$CONTEXT
 			while read line;
 			do
 				ln -sf $line
 			done < $LIST
-			cd $DIR/../../$THEME
+			cd $DIR/../../$1
 		else
 			echo "  -- skipping "$SIZE"/"$CONTEXT
 		fi
@@ -61,13 +61,13 @@ do
 	echo " -- "$CONTEXT
 	LIST="$DIR/symbolic/$CONTEXT.list"
 	# Check if directory exists
-	if [ -d "$DIR/../../$THEME/scalable/$CONTEXT" ]; then
-		cd $DIR/../../$THEME/scalable/$CONTEXT
+	if [ -d "$DIR/../../$1/scalable/$CONTEXT" ]; then
+		cd $DIR/../../$1/scalable/$CONTEXT
 		while read line;
 		do
 			ln -sf $line
 		done < $LIST
-		cd $DIR/../../$THEME
+		cd $DIR/../../$1
 	else
 		echo "  -- skipping scalable/"$CONTEXT
 	fi
@@ -77,7 +77,7 @@ echo "Done."
 # Clear symlink errors
 if command -v symlinks 2>&1 >/dev/null; then
 	echo "Deleting broken links..."
-	symlinks -cdr $DIR/../../$THEME
+	symlinks -cdr $DIR/../../$1
 	echo "Done."
 fi
 
