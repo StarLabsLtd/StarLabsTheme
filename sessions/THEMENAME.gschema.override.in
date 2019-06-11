@@ -4,7 +4,7 @@
 
 [org.gnome.desktop.interface:@ThemeName@]
 cursor-theme = "@ThemeName@"
-icon-theme = "@ThemeName@"
+icon-theme = "@ThemeName@-Squircle"
 gtk-theme = "@ThemeName@"
 
 [org.gnome.desktop.sound:@ThemeName@]

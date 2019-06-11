@@ -1151,19 +1151,38 @@
    id="namedview249"
    showgrid="false"
    inkscape:zoom="1"
-   inkscape:cx="59.19601"
+   inkscape:cx="-152.80399"
    inkscape:cy="20.172504"
    inkscape:window-x="70"
    inkscape:window-y="27"
    inkscape:window-maximized="0"
-   inkscape:current-layer="layer6"
+   inkscape:current-layer="layer1"
    inkscape:pagecheckerboard="true" />
 
 <g
    inkscape:groupmode="layer"
+   id="layer5"
+   inkscape:label="Standard-Background"
+   style="display:inline"><rect
+     ry="25.455845"
+     y="4"
+     x="4"
+     height="248"
+     width="248"
+     id="rect1100"
+     style="display:inline;fill:#003059;fill-opacity:1;stroke-width:1.41822851" /></g><g
+   inkscape:groupmode="layer"
+   id="layer7"
+   inkscape:label="Standard-Shadow"
+   style="display:inline"><path
+     inkscape:connector-curvature="0"
+     id="path1103"
+     d="m 4,216.54492 v 10 C 4,240.64746 15.35254,252 29.45508,252 H 226.54492 C 240.64746,252 252,240.64746 252,226.54492 v -10 C 252,230.64746 240.64746,242 226.54492,242 H 29.45508 C 15.35254,242 4,230.64746 4,216.54492 Z"
+     style="display:inline;opacity:0.5;fill:#17171d;fill-opacity:0.39215686;stroke-width:1.41822851" /></g><g
+   inkscape:groupmode="layer"
    id="layer2"
    inkscape:label="Squircle-Background"
-   style="display:inline"><rect
+   style="display:none"><rect
      style="display:inline;fill:#003059;fill-opacity:1;stroke-width:1.41822851"
      id="rect1101"
      width="248"
@@ -1174,7 +1193,7 @@
    inkscape:groupmode="layer"
    id="layer3"
    inkscape:label="Squircle-Shadow"
-   style="display:inline"><path
+   style="display:none"><path
      style="display:inline;opacity:0.5;fill:#17171d;fill-opacity:0.39215686;stroke-width:1.41822851"
      d="m 4,216.54492 v 10 C 4,240.64746 15.35254,252 29.45508,252 H 226.54492 C 240.64746,252 252,240.64746 252,226.54492 v -10 C 252,230.64746 240.64746,242 226.54492,242 H 29.45508 C 15.35254,242 4,230.64746 4,216.54492 Z"
      id="rect1101-3"
@@ -1191,8 +1210,7 @@
    inkscape:groupmode="layer"
    id="layer6"
    inkscape:label="Circle-Shadow"
-   style="display:none"
-   sodipodi:insensitive="true"><g
+   style="display:none"><g
      id="g2548"
      style="display:inline"
      transform="translate(-2.960187,1.58543)"><path
@@ -1210,9 +1228,10 @@
        style="display:inline;opacity:0.05" /></g></g><g
    inkscape:groupmode="layer"
    id="layer1"
-   inkscape:label="Icon"><text
+   inkscape:label="Icon"
+   style="display:inline"><text
    xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:46.21147537px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.15528691"
+   style="font-style:normal;font-weight:normal;font-size:46.21147537px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.15528691"
    x="39.835972"
    y="156.5741"
    id="text1093"><tspan
@@ -1225,4 +1244,16 @@
 
 
 
+
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:46.21147537px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.15528691"
+   x="39.835972"
+   y="156.57361"
+   id="text1093-3"><tspan
+     sodipodi:role="line"
+     id="tspan1091-6"
+     x="39.835972"
+     y="156.57361"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:154.03823853px;line-height:1.25;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:1.15528691">&gt;_</tspan></text>
 </g></svg>
