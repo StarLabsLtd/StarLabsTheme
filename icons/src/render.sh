@@ -94,6 +94,8 @@ for v in $theme; do
 			echo "Rendering: $type"
 			echo "Theme: $theme"
 			echo
+			echo "Current Theme: $v"
+			echo "Current Type: $d"
 			echo "Current Icon: $f"
 			echo
 			# Display relevant layer
@@ -188,6 +190,8 @@ for v in $theme; do
 	echo
 	echo "Rendering: $type"
 	echo "Theme: $theme"
+	echo
+	echo "Current Theme: $v"
 	echo
 
 	cd symlinks
