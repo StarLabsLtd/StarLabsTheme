@@ -59,19 +59,6 @@ for v in $theme; do
 	echo "Rendering: $type"
 	echo "Theme: $theme"
 	echo
-	if [[ $theme == "StarLabs StarLabs-Circle StarLabs-Squircle" ]]; then
-		if [[ $type == "apps places mimetypes categories devices emblems status" ]]; then
-			rm -r ../StarLab*/*x*/*
-		else
-			rm -r ../StarLabs*/*x*/"$type"
-		fi
-	else
-		if [[ $type == "apps places mimetypes categories devices emblems status" ]]; then
-			rm -r ../"$theme"/*x*/*
-		else
-			rm -r ../"$theme"/*x*/"$type"
-		fi
-	fi
 	rm -r ../"$v"/scalable
 	rm -r ../"$v"/scalable-max-32
 	cp index.theme ../"$v"
@@ -80,6 +67,7 @@ for v in $theme; do
 
 	cd fullcolor
 	for d in $type; do
+		rm -r ../$theme/*x*/$type
 		cd $d
 		for f in *.svg; do
 			clear
