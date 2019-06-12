@@ -67,7 +67,7 @@ for v in $theme; do
 
 	cd fullcolor
 	for d in $type; do
-		rm -r ../"$theme"/*x*/"$type"
+		rm -r ../../"$theme"/*x*/"$type"
 		cd $d
 		for f in *.svg; do
 			clear
