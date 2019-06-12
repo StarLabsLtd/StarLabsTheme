@@ -42,9 +42,15 @@ file-roller.png org.gnome.ArchiveManager.png
 filezilla.png org.filezillaproject.Filezilla.png
 firefox-developer.png firefox-beta.png
 firefox-developer.png firefox-aurora.png
+fonts.png appications-fonts.png
 fonts.png cs-fonts.png
+fonts.png font-manager.png
+fonts.png font-viewer.png
+fonts.png gnome-settings-font.png
 fonts.png org.gnome.Fonts.png
-fonts.png applications-fonts.png
+fonts.png org.gnome.font-viewer.png
+fonts.png org.gnome.FontViewer.png
+fonts.png preferences-desktop-font.png
 gallery-app.png gnome-photos.png
 gallery-app.png multimedia-photo-manager.png
 gallery-app.png org.gnome.Photos.png
