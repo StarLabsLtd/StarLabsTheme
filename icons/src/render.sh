@@ -55,7 +55,7 @@ echo
 echo '*************** Icon Renderer **************'
 echo
 echo "Which you like to upload the rendered icons to GitHub?"
-select upload in "Yes" "No
+select upload in "Yes" "No"
 do
 	echo $type
 	break
