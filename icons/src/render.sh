@@ -56,8 +56,8 @@ echo '*************** Icon Renderer **************'
 echo
 echo "Which you like to upload the rendered icons to GitHub?"
 select upload in "Yes" "No"
-do
-	echo $type
+	do
+		echo $type
 	break
 done
 
@@ -210,12 +210,9 @@ for v in $theme; do
 	fi
 	echo "Done"
 	echo
-	do
-	        if [[ $upload == "Yes" ]]; then
+        if [[ $upload == "Yes" ]]; then
 	                git add ../StarLabs ../StarLabs-Circle ../StarLabs-Circle
 			git commit -m "Rendered"
 			git push
-	        fi
-	        break
-	done
+	fi
 done
