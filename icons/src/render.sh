@@ -43,7 +43,25 @@ select type in "All" "apps" "places" "mimetypes" "categories" "devices" "emblems
 	break
 done
 
-
+# Type Selection
+clear
+echo '  _____ _             _           _'
+echo ' /  ___| |           | |         | |'
+echo ' \ `--.| |_ __ _ _ __| |     __ _| |__  ___'
+echo '  `--. \ __/ _` | '"'"'__| |    / _` | '"'"'_ \/ __|'
+echo ' /\__/ / || (_| | |  | |___| (_| | |_) \__ \'
+echo ' \____/ \__\__,_|_|  \_____/\__,_|_.__/|___/'
+echo
+echo '*************** Icon Renderer **************'
+echo
+echo "Which you like to upload the rendered icons to GitHub?"
+select upload in "Yes" "No
+do
+	echo $type
+	break
+done
+	echo "Which you like to upload the rendered icons to GitHub?"
+	select upload in "Yes" "No"
 
 for v in $theme; do
 	clear
@@ -194,8 +212,6 @@ for v in $theme; do
 	fi
 	echo "Done"
 	echo
-	echo "Which you like to upload the rendered icons to GitHub?"
-	select upload in "Yes" "No"
 	do
 	        if [[ $upload == "Yes" ]]; then
 	                git add ../StarLabs ../StarLabs-Circle ../StarLabs-Circle
