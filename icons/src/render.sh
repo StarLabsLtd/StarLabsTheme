@@ -68,8 +68,6 @@ for v in $theme; do
 	for d in $type; do
 		rm -r ../"$theme"/*x*/"$type"
 		cd fullcolor/$d
-		pwd
-		read -p "PAUSE"
 		for f in *.svg; do
 			clear
 			echo '  _____ _             _           _'
@@ -182,8 +180,6 @@ for v in $theme; do
 	echo
 	echo "Current Theme: $v"
 	echo
-	pwd
-	read -p "PAUSE"
 	cd symlinks
 		echo -ne "Generating symlinks....."
 		./generate-symlinks.sh $v  > /dev/null 2>&1
