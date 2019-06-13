@@ -193,4 +193,13 @@ for v in $theme; do
 		cp squircle-view-app-grid-symbolic.svg ../StarLabs-Squircle/scalable/actions/view-app-grid-symbolic.svg
 	fi
 	echo "Done"
+	select upload in "Yes" "No"
+	do
+	        if [[ $upload == "Yes" ]]; then
+	                git add ../StarLabs ../StarLabs-Circle ../StarLabs-Circle
+			git commit -m "Rendered"
+			git push
+	        fi
+	        break
+	done
 done
