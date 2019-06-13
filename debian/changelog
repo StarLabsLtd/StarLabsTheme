@@ -1,3 +1,9 @@
+starlabstheme-master (0.0.70) disco; urgency=medium
+
+  * Added icon theme variants
+
+ -- Sean Rhodes <sean@starlabs.systems>  Thu, 13 Jun 2019 10:15:56 +0100
+
 starlabstheme-master (0.0.69) disco; urgency=medium
 
   * Removed centered new windows
