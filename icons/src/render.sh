@@ -193,6 +193,8 @@ for v in $theme; do
 		cp squircle-view-app-grid-symbolic.svg ../StarLabs-Squircle/scalable/actions/view-app-grid-symbolic.svg
 	fi
 	echo "Done"
+	echo
+	echo "Which you like to upload the rendered icons to GitHub?"
 	select upload in "Yes" "No"
 	do
 	        if [[ $upload == "Yes" ]]; then
