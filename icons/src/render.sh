@@ -65,10 +65,11 @@ for v in $theme; do
 	cp -r scalable ../"$v"
 	cp -r scalable-max-32 ../"$v"
 
-	cd fullcolor
 	for d in $type; do
-		rm -r ../../"$theme"/*x*/"$type"
-		cd $d
+		rm -r ../"$theme"/*x*/"$type"
+		cd fullcolor/$d
+		pwd
+		read -p "PAUSE"
 		for f in *.svg; do
 			clear
 			echo '  _____ _             _           _'
@@ -132,9 +133,9 @@ for v in $theme; do
 				mkdir -p $p$v/"$s"x"$s"/$d
 				mkdir -p $p$v/"$s"x"$s"@2x/$d
 				if [[ $v == StarLabs ]]; then
-					H=$(inkscape -H $f)
-					W=$(inkscape -W $f)
-					if [[ $h -ge $w ]]; then
+					H=$(inkscape -H $f | cut -d . -f1)
+					W=$(inkscape -W $f | cut -d . -f1)
+					if [[ $H -gt $W ]]; then
 						inkscape -z $f -D -e $p$v/"$s"x"$s"/$d/${f%svg}png -h $s > /dev/null 2>&1
 						inkscape -z $f -D -e $p$v/"$s"x"$s"@2x/$d/${f%svg}png -h $(($s * 2)) > /dev/null 2>&1
 					else
@@ -181,7 +182,8 @@ for v in $theme; do
 	echo
 	echo "Current Theme: $v"
 	echo
-
+	pwd
+	read -p "PAUSE"
 	cd symlinks
 		echo -ne "Generating symlinks....."
 		./generate-symlinks.sh $v  > /dev/null 2>&1
@@ -195,5 +197,4 @@ for v in $theme; do
 		cp squircle-view-app-grid-symbolic.svg ../StarLabs-Squircle/scalable/actions/view-app-grid-symbolic.svg
 	fi
 	echo "Done"
-
 done
