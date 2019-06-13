@@ -60,8 +60,6 @@ do
 	echo $type
 	break
 done
-	echo "Which you like to upload the rendered icons to GitHub?"
-	select upload in "Yes" "No"
 
 for v in $theme; do
 	clear
