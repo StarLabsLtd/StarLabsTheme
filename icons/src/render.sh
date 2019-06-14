@@ -106,14 +106,18 @@ for v in $theme; do
 			# Show all Circle layers
 			if [[ $v == StarLabs ]]; then
 				cat $f | grep -n inkscape:label | grep 'Circle\|Squircle' | cut -d \: -f1 | while read line; do
-					display=$(($line + 1))
-					display="$display"s
-					sed -i "$display/display:inline/display:none/" $f
+					for i in $ln; do
+						display=$(($line + $i))
+						display="$display"s
+						sed -i "$display/display:inline/display:none/" $f
+					done
 				done
 				cat $f | grep -n inkscape:label | grep 'Standard' | cut -d \: -f1 | while read line; do
-					display=$(($line + 1))
-					display="$display"s
-					sed -i "$display/display:none/display:inline/" $f
+					for i in $ln; do
+						display=$(($line + $i))
+						display="$display"s
+						sed -i "$display/display:none/display:inline/" $f
+					done
 				done
 			# Show all Circle layers
 			elif [[ $v == StarLabs-Circle ]]; then
@@ -125,21 +129,27 @@ for v in $theme; do
 					done
 				done
 				cat $f | grep -n inkscape:label | grep 'Circle' | cut -d \: -f1 | while read line; do
-					display=$(($line + 1))
-					display="$display"s
-					sed -i "$display/display:none/display:inline/" $f
+					for i in $ln; do
+						display=$(($line + $i))
+						display="$display"s
+						sed -i "$display/display:none/display:inline/" $f
+					done
 				done
 			# Show all Squircle layers
 			elif [[ $v == StarLabs-Squircle ]]; then
 				cat $f | grep -n inkscape:label | grep 'Standard\|Circle' | cut -d \: -f1 | while read line; do
-					display=$(($line + 1))
-					display="$display"s
-					sed -i "$display/display:inline/display:none/" $f
+					for i in $ln; do
+						display=$(($line + $i))
+						display="$display"s
+						sed -i "$display/display:inline/display:none/" $f
+					done
 				done
 				cat $f | grep -n inkscape:label | grep 'Squircle' | cut -d \: -f1 | while read line; do
-					display=$(($line + 1))
-					display="$display"s
-					sed -i "$display/display:none/display:inline/" $f
+					for i in $ln; do
+						display=$(($line + $i))
+						display="$display"s
+						sed -i "$display/display:none/display:inline/" $f
+					done
 				done
 			fi
 
