@@ -1457,7 +1457,7 @@
    inkscape:label="Squircle-Shadow"
    id="g1253"
    inkscape:groupmode="layer"><path
-     style="display:inline;opacity:0.5;fill:#17171d;fill-opacity:0.39215686;stroke-width:1.41822851"
+     style="display:none;opacity:0.5;fill:#17171d;fill-opacity:0.39215686;stroke-width:1.41822851"
      d="m 4,220.54492 v 10 C 4,244.64746 15.3525,256 29.4551,256 H 226.5449 C 240.6474,256 252,244.64746 252,230.54492 v -10 C 252,234.64746 240.6474,246 226.5449,246 H 29.4551 C 15.3525,246 4,234.64746 4,220.54492 Z"
      id="rect1101-3"
      inkscape:connector-curvature="0" /></g><g
