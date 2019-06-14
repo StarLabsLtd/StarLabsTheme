@@ -1251,7 +1251,7 @@
    id="namedview249"
    showgrid="false"
    inkscape:zoom="2.8284271"
-   inkscape:cx="108.15224"
+   inkscape:cx="33.552474"
    inkscape:cy="79.403258"
    inkscape:window-x="1920"
    inkscape:window-y="27"
@@ -1543,7 +1543,7 @@
      cx="128"
      id="circle4945-3-6"
      style="display:inline;opacity:0.1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.91509652;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;enable-background:new" /></g><g
-   style="display:none"
+   style="display:inline"
    inkscape:label="Circle-Background"
    id="g1641"
    inkscape:groupmode="layer"><g
@@ -1644,7 +1644,7 @@
      cx="128"
      cy="128"
      r="24" /></g><g
-   style="display:inline"
+   style="display:none"
    inkscape:label="Squircle-Shadow"
    id="g1124"
    inkscape:groupmode="layer"><path

@@ -117,7 +117,7 @@ for v in $theme; do
 			# Show all Circle layers
 			elif [[ $v == StarLabs-Circle ]]; then
 				cat $f | grep -n inkscape:label | grep 'Squircle\|Standard' | cut -d \: -f1 | while read line; do
-					for i in 1 2 3; do
+					for i in -1 1 2 3; do
 						display=$(($line + $i))
 						display="$display"s
 						sed -i "$display/display:inline/display:none/" $f

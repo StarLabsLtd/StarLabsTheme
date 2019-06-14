@@ -1410,7 +1410,7 @@
    inkscape:pagecheckerboard="true" />
 
 <g
-   style="display:inline"
+   style="display:none"
    inkscape:label="Squircle-Background"
    id="g1241"
    inkscape:groupmode="layer"><rect
@@ -1453,7 +1453,7 @@
      class="st16"
      points="2157,1502.4 2263.7,1457.9 2579.7,1325.1 2359.3,1600 1922.7,1600 1923.3,1599.8 2077.3,1535.6 "
      style="display:inline;fill:url(#linearGradient1359)" /></g><g
-   style="display:inline"
+   style="display:none"
    inkscape:label="Squircle-Shadow"
    id="g1253"
    inkscape:groupmode="layer"><path
