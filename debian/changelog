@@ -1,3 +1,9 @@
+starlabstheme-master (0.0.71) disco; urgency=medium
+
+  * Fixed issue with circle theme showing squircle backgrounds
+
+ -- Sean Rhodes <sean@starlabs.systems>  Fri, 14 Jun 2019 15:24:34 +0100
+
 starlabstheme-master (0.0.70) disco; urgency=medium
 
   * Added icon theme variants
