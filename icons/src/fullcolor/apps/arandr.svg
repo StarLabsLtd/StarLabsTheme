@@ -1389,7 +1389,7 @@
    inkscape:groupmode="layer"
    id="layer5"
    inkscape:label="Circle-Background"
-   style="display:none"><circle
+   style="display:inline"><circle
      style="display:inline;fill:#0068bf;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path1090-6"
      cx="128"
@@ -1470,7 +1470,7 @@
    inkscape:groupmode="layer"
    id="layer7"
    inkscape:label="Circle-Shadow"
-   style="display:none"><g
+   style="display:inline"><g
      id="g2548-7"
      style="display:inline"
      transform="translate(-1.1246562,3.4745172)"><path
@@ -1489,7 +1489,7 @@
    inkscape:groupmode="layer"
    id="g1307"
    inkscape:label="Standard-Icon"
-   style="display:inline"><g
+   style="display:none"><g
      style="display:inline"
      clip-path="url(#clipPath1273)"
      transform="matrix(1.16723,0,0,1.16723,-21.405424,-21.405442)"

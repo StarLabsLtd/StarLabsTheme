@@ -2139,7 +2139,7 @@
    inkscape:groupmode="layer"
    id="layer3"
    inkscape:label="Circle-Background"
-   style="display:none"><path
+   style="display:inline"><path
      style="fill:url(#linearGradient1421);fill-opacity:1;stroke-width:1.00263107"
      inkscape:connector-curvature="0"
      id="path25-1"
@@ -2276,7 +2276,7 @@
    inkscape:groupmode="layer"
    id="layer6"
    inkscape:label="Standard-Icon"
-   style="display:inline"><g
+   style="display:none"><g
      transform="matrix(0.25148627,0,0,0.25148627,-13.275951,-6.2589399)"
      id="g1739"><g
        transform="translate(47.728814,39.050847)"
@@ -2404,7 +2404,7 @@
    inkscape:groupmode="layer"
    id="layer7"
    inkscape:label="Circle-Icon"
-   style="display:none"><g
+   style="display:inline"><g
      style="display:inline"
      id="g2067"
      transform="matrix(0.25148627,0,0,0.25148627,-13.275951,-6.2589399)"><g
@@ -2541,7 +2541,7 @@
    inkscape:groupmode="layer"
    id="layer2"
    inkscape:label="Circle-Shadow"
-   style="display:none"><g
+   style="display:inline"><g
      id="g2548"
      style="display:inline"
      transform="translate(-2.960187,1.58543)"><path

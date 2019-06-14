@@ -1402,7 +1402,7 @@
    inkscape:groupmode="layer"
    id="layer2"
    inkscape:label="Circle-Background"
-   style="display:none"><circle
+   style="display:inline"><circle
      style="display:none;fill:url(#radialGradient1145);fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path1090"
      cx="128"
@@ -1417,7 +1417,7 @@
    inkscape:groupmode="layer"
    id="layer6"
    inkscape:label="Circle-Shadow"
-   style="display:none"><g
+   style="display:inline"><g
      id="g2548"
      style="display:inline"
      transform="translate(-2.960187,1.58543)"><path
@@ -1436,7 +1436,7 @@
    inkscape:groupmode="layer"
    id="layer7"
    inkscape:label="Circle-Icon"
-   style="display:none"><g
+   style="display:inline"><g
      style="display:inline"
      id="g1191"><path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -1472,7 +1472,7 @@
    inkscape:groupmode="layer"
    id="layer1"
    inkscape:label="Standard-Icon"
-   style="display:inline"><g
+   style="display:none"><g
      id="g1140"><path
        inkscape:connector-curvature="0"
        id="path1167"
