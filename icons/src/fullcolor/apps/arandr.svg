@@ -1284,7 +1284,7 @@
    inkscape:groupmode="layer"
    id="layer3"
    inkscape:label="Squircle-Background"
-   style="display:inline"><rect
+   style="display:none"><rect
      style="display:inline;fill:#0068bf;fill-opacity:1;stroke-width:1.41822851"
      id="rect1101"
      width="248"
@@ -1309,7 +1309,7 @@
    inkscape:groupmode="layer"
    id="layer1"
    inkscape:label="Squircle-Icon"
-   style="display:inline"><g
+   style="display:none"><g
      id="g1220"
      transform="matrix(1.16723,0,0,1.16723,-21.405424,-21.405442)"
      clip-path="url(#clipPath1273)"><rect
@@ -1381,7 +1381,7 @@
    inkscape:groupmode="layer"
    id="layer4"
    inkscape:label="Squircle-Shadow"
-   style="display:inline"><path
+   style="display:none"><path
      style="display:inline;opacity:0.5;fill:#17171d;fill-opacity:0.39215686;stroke-width:1.41822851"
      d="m 4,216.54492 v 10 C 4,240.64746 15.352539,252 29.455079,252 H 226.54492 C 240.64746,252 252,240.64746 252,226.54492 v -10 C 252,230.64746 240.64746,242 226.54492,242 H 29.455079 C 15.352539,242 4,230.64746 4,216.54492 Z"
      id="rect1101-3"
@@ -1489,7 +1489,7 @@
    inkscape:groupmode="layer"
    id="g1307"
    inkscape:label="Standard-Icon"
-   style="display:none"><g
+   style="display:inline"><g
      style="display:inline"
      clip-path="url(#clipPath1273)"
      transform="matrix(1.16723,0,0,1.16723,-21.405424,-21.405442)"
