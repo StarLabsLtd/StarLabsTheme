@@ -1564,8 +1564,8 @@
    inkscape:groupmode="layer"
    id="layer3"
    inkscape:label="Squircle-Background"
-   style="display:inline"><rect
-     style="display:inline;fill:#4d5861;fill-opacity:1;stroke-width:1.41822851"
+   style="display:none"><rect
+     style="display:none;fill:#4d5861;fill-opacity:1;stroke-width:1.41822851"
      id="rect1101"
      width="248"
      height="248"
@@ -1575,8 +1575,8 @@
    inkscape:groupmode="layer"
    id="layer4"
    inkscape:label="Squircle-Shadow"
-   style="display:inline"><path
-     style="display:inline;opacity:0.5;fill:#17171d;fill-opacity:0.39215686;stroke-width:1.41822851"
+   style="display:none"><path
+     style="display:none;opacity:0.5;fill:#17171d;fill-opacity:0.39215686;stroke-width:1.41822851"
      d="m 4,216.54492 v 10 C 4,240.64746 15.35254,252 29.45508,252 H 226.54492 C 240.64746,252 252,240.64746 252,226.54492 v -10 C 252,230.64746 240.64746,242 226.54492,242 H 29.45508 C 15.35254,242 4,230.64746 4,216.54492 Z"
      id="rect1101-3"
      inkscape:connector-curvature="0" /></g><g
@@ -1584,7 +1584,7 @@
    id="layer2"
    inkscape:label="Circle-Background"
    style="display:none"><circle
-     style="display:inline;fill:#4d5861;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="display:none;fill:#4d5861;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path1090"
      cx="128"
      cy="128"
@@ -1613,7 +1613,7 @@
    id="layer7"
    inkscape:label="Circle-Icon"><g
      transform="matrix(0.58844938,0,0,0.58844938,30.591711,67.060245)"
-     style="display:inline;enable-background:new"
+     style="display:none;enable-background:new"
      id="g1387"><path
        style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:0.26122448;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.58876401;marker:none;filter:url(#filter7110);enable-background:new"
        d="M 228.5625,138.1875 124.15625,166.15625 96.1875,270.5625 l 76.4375,76.40625 -28,104.40625 76.4375,76.40625 104.375,-27.96875 27.96875,-104.40625 104.40625,-27.96875 27.96875,-104.375 -76.40625,-76.4375 -104.40625,28 z"
@@ -1754,7 +1754,7 @@
    inkscape:groupmode="layer"
    id="layer1"
    inkscape:label="Standard-Icon"
-   style="display:none"><g
+   style="display:inline"><g
      transform="matrix(0.91209654,0,0,0.91209654,-22.982847,33.543379)"
      style="display:inline;enable-background:new"
      id="g1199"><path
@@ -1897,9 +1897,9 @@
    inkscape:groupmode="layer"
    id="layer5"
    inkscape:label="Squircle-Icon"
-   style="display:inline"><g
+   style="display:none"><g
      id="g1312"
-     style="display:inline;enable-background:new"
+     style="display:none;enable-background:new"
      transform="matrix(0.58844938,0,0,0.58844938,30.591711,67.060245)"><path
        inkscape:connector-curvature="0"
        id="path1282"
