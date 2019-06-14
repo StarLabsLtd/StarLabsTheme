@@ -15,9 +15,9 @@ echo "What would you like to do?"
 select d in "Install" "Update" "Uninstall"
 do
 	break
+	echo $d
+	[ "$UID" -eq 0 ] || exec sudo "$0" "$@"
 done
-[ "$UID" -eq 0 ] || exec sudo "$0" "$@"
-
 clear
 
 if [ "$d" == "Install" ]; then
