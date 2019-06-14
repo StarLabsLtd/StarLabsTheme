@@ -1269,7 +1269,7 @@
    inkscape:groupmode="layer"
    id="g1379"
    inkscape:label="Squircle-Background"
-   style="display:inline"><g
+   style="display:none"><g
      transform="translate(356.07464,-319.50784)"
      id="g1341"><circle
        r="124"
@@ -1655,7 +1655,7 @@
    inkscape:groupmode="layer"
    id="layer6"
    inkscape:label="Circle-Shadow"
-   style="display:none"><g
+   style="display:inline"><g
      id="g2548"
      style="display:inline"
      transform="translate(-2.960187,1.58543)"><path
