@@ -210,8 +210,11 @@ for v in $theme; do
 	fi
 	echo "Done"
 	echo
+	pwd
+	read -p "PAUSE"
         if [[ $upload == "Yes" ]]; then
-	                git add ../StarLabs ../StarLabs-Circle ../StarLabs-Circle
+	                git add ../"$v"
+			git add *
 			git commit -m "Rendered"
 			git push
 	fi

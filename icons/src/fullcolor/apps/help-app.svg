@@ -1188,7 +1188,7 @@
    inkscape:groupmode="layer"
    id="layer3"
    inkscape:label="Squircle-Background"
-   style="display:none"><rect
+   style="display:inline"><rect
      style="display:inline;fill:#2195f2;fill-opacity:1;stroke-width:1.41822851"
      id="rect1101"
      width="248"
@@ -1199,7 +1199,7 @@
    inkscape:groupmode="layer"
    id="layer4"
    inkscape:label="Squircle-Shadow"
-   style="display:none"><path
+   style="display:inline"><path
      style="display:inline;opacity:0.5;fill:#17171d;fill-opacity:0.39215686;stroke-width:1.41822851"
      d="m 3.99999,216.54492 v 10 C 3.99999,240.64746 15.35253,252 29.45507,252 h 197.08984 c 14.10254,0 25.45508,-11.35254 25.45508,-25.45508 v -10 C 251.99999,230.64746 240.64745,242 226.54491,242 H 29.45507 C 15.35253,242 3.99999,230.64746 3.99999,216.54492 Z"
      id="rect1101-3"
