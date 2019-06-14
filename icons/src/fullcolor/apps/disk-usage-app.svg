@@ -1184,8 +1184,8 @@
    inkscape:groupmode="layer"
    id="layer2"
    inkscape:label="Circle-Background"
-   style="display:none"><circle
-     style="display:none;fill:#4d5861;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+   style="display:inline"><circle
+     style="display:inline;fill:#4d5861;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path1090"
      cx="128"
      cy="128"
@@ -1255,7 +1255,7 @@
    inkscape:groupmode="layer"
    id="layer1"
    inkscape:label="Standard-Icon"
-   style="display:inline"><g
+   style="display:none"><g
      id="g1120"
      transform="matrix(1.008,0,0,1.008,-1.0227458,-1.02132)"><g
        style="stroke:none"
@@ -1316,8 +1316,8 @@
    inkscape:groupmode="layer"
    id="layer7"
    inkscape:label="Circle-Icon"
-   style="display:none"><g
-     style="display:none"
+   style="display:inline"><g
+     style="display:inline"
      transform="matrix(1.008,0,0,1.008,-1.0227458,-1.02132)"
      id="g1185"><g
        id="g1183"
@@ -1378,7 +1378,7 @@
    inkscape:groupmode="layer"
    id="layer6"
    inkscape:label="Circle-Shadow"
-   style="display:none"
+   style="display:inline"
    sodipodi:insensitive="true"><g
      id="g2548"
      style="display:inline"
