@@ -210,8 +210,6 @@ for v in $theme; do
 	fi
 	echo "Done"
 	echo
-	pwd
-	read -p "PAUSE"
         if [[ $upload == "Yes" ]]; then
 	                git add ../"$v"
 			git add *
