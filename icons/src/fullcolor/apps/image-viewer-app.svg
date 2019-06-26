@@ -1304,8 +1304,8 @@
    inkscape:groupmode="layer"
    id="layer3"
    inkscape:label="Squircle-Background"
-   style="display:inline"><rect
-     style="display:inline;fill:#003059;fill-opacity:1;stroke-width:1.41822851"
+   style="display:none"><rect
+     style="display:none;fill:#003059;fill-opacity:1;stroke-width:1.41822851"
      id="rect1101"
      width="248"
      height="248"
@@ -1378,7 +1378,7 @@
    inkscape:groupmode="layer"
    id="layer1"
    inkscape:label="Standard-Icon"
-   style="display:none"><rect
+   style="display:inline"><rect
      ry="25.455845"
      y="3.9999902"
      x="3.9999881"
@@ -1417,8 +1417,8 @@
    inkscape:groupmode="layer"
    id="layer4"
    inkscape:label="Squircle-Shadow"
-   style="display:inline"><path
-     style="display:inline;opacity:0.5;fill:#17171d;fill-opacity:0.39215686;stroke-width:1.41822851"
+   style="display:none"><path
+     style="display:none;opacity:0.5;fill:#17171d;fill-opacity:0.39215686;stroke-width:1.41822851"
      d="m 4.00001,216.54492 v 10 C 4.00001,240.64746 15.35255,252 29.45509,252 h 197.08984 c 14.10254,0 25.45508,-11.35254 25.45508,-25.45508 v -10 C 252.00001,230.64746 240.64747,242 226.54493,242 H 29.45509 C 15.35255,242 4.00001,230.64746 4.00001,216.54492 Z"
      id="rect1101-3"
      inkscape:connector-curvature="0" /></g><g
