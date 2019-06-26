@@ -1223,8 +1223,8 @@
    inkscape:groupmode="layer"
    id="layer4"
    inkscape:label="Circle-Background"
-   style="display:none"><circle
-     style="display:none;fill:#4d5861;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+   style="display:inline"><circle
+     style="display:inline;fill:#4d5861;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path1090"
      cx="128"
      cy="128"
@@ -1283,9 +1283,9 @@
    inkscape:groupmode="layer"
    id="layer6"
    inkscape:label="Circle-Shadow"
-   style="display:none"><g
+   style="display:inline"><g
      id="g2548"
-     style="display:none"
+     style="display:inline"
      transform="translate(-2.960187,1.58543)"><path
        d="m 256.36019,128.41457 c 0,-33.900005 -13.5,-64.500005 -35.4,-86.900002 -0.4,-0.3 -0.7,-0.7 -1.1,-1 21.3,22.299997 34.5,52.599997 34.5,86.000002 0,68.5 -55.2,124 -123.4,124 -32.900003,0 -62.900003,-13 -85.000003,-34.1 0.3,0.3 0.6,0.6 0.9,0.9 22.2,21.7 52.6,35.1 86.000003,35.1 68.2,0 123.5,-55.5 123.5,-124 z"
        id="path238"
@@ -1302,7 +1302,7 @@
    inkscape:groupmode="layer"
    id="layer8"
    inkscape:label="Circle-Icon"
-   style="display:none"><path
+   style="display:inline"><path
      style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.59846926;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
      d="m 156.41852,62.923269 -6.34765,5.939454 15.86718,14.851562 -15.86718,14.851562 6.34765,5.939453 15.86719,-14.851562 15.86719,14.851562 6.34765,-5.939453 -15.86718,-14.851562 15.86718,-14.851562 -6.34765,-5.939454 -15.86719,14.851563 z"
      id="path1294"
@@ -1331,7 +1331,7 @@
    inkscape:groupmode="layer"
    id="layer5"
    inkscape:label="Standard-Background"
-   style="display:inline"><g
+   style="display:none"><g
      id="g1215"><rect
        ry="10.264454"
        y="16"
@@ -1383,7 +1383,7 @@
    inkscape:groupmode="layer"
    id="layer1"
    inkscape:label="Standard-Icon"
-   style="display:inline">
+   style="display:none">
 
 
 <text
