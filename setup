@@ -1,4 +1,20 @@
 #!/bin/bash
+if [ "$(id -u)" -ne 0 ]; then
+	echo '  _____ _             _           _'
+	echo ' /  ___| |           | |         | |'
+	echo ' \ `--.| |_ __ _ _ __| |     __ _| |__  ___'
+	echo '  `--. \ __/ _` | '"'"'__| |    / _` | '"'"'_ \/ __|'
+	echo ' /\__/ / || (_| | |  | |___| (_| | |_) \__ \'
+	echo ' \____/ \__\__,_|_|  \_____/\__,_|_.__/|___/'
+	echo
+	echo '************** Star Labs Theme *************'
+	echo
+	echo 'This script must be run by root' >&2
+        exit 1
+fi
+
+
+
 
 # Main Menu
 clear
@@ -16,7 +32,6 @@ select d in "Install" "Update" "Uninstall"
 do
 	break
 	echo $d
-	[ "$UID" -eq 0 ] || exec sudo "$0" "$@"
 done
 clear
 

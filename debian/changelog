@@ -1,3 +1,10 @@
+starlabstheme-master (0.0.72) disco; urgency=medium
+
+  * Added opera icon
+  * Various tweaks
+
+ -- Sean Rhodes <sean@starlabs.systems>  Thu, 11 Jul 2019 09:28:51 +0100
+
 starlabstheme-master (0.0.71) disco; urgency=medium
 
   * Fixed issue with circle theme showing squircle backgrounds
