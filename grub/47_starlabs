@@ -2,4 +2,4 @@ echo "${1}set menu_color_normal=white/black"
 echo "${1}set menu_color_highlight=light-blue/white"
 echo "${1}set color_normal=white/black"
 
-
+# GRUB_CMDLINE_LINUX="plymouth.splash_delay=0 i915.fastboot=1"
