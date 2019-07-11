@@ -15,6 +15,7 @@ backgrounds_sources = [
 	'StarWallpaper10.jpg',
 	'StarWallpaper11.jpg',
 	'StarWallpaper12.jpg',
+	'ProjectLiberator0.png'
 ]
 
 install_data(backgrounds_sources, install_dir: install_dir)
