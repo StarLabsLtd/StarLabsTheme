@@ -4,10 +4,10 @@
 @import 'starlabs';
 
 $light: if($variant=='light', true, false);
-$base_color: if($variant == 'light', $white, $inkstone);
-$bg_color: if($variant == 'light', $white, darken($inkstone, 3%));
+$base_color: if($variant == 'light', #FFFFFF, $inkstone);
+$bg_color: if($variant == 'light', #F5F6F7, darken($inkstone, 3%));
 $fg_color: if($variant == 'light', $inkstone, $porcelain);
-$text_color: if($variant == 'light', $dark1, $porcelain);
+$text_color: if($variant == 'light', #2D2D2D, $porcelain);
 //
 $selected_fg_color: white;
 $selected_bg_color: $orange;
@@ -21,10 +21,10 @@ $menu_color: if($variant == 'light', $base_color, transparentize(lighten($jet, 2
 $popover_bg_color: $bg_color;
 $popover_hover_color: if($variant=='light', darken($bg_color, 7%), lighten($bg_color, 7%));
 //
-$scrollbar_bg_color: transparent; // if($variant == 'light', mix($bg_color, $fg_color, 90%), mix($base_color, $bg_color, 50%));
-$scrollbar_slider_color: $accent3; //transparentize($fg_color, 0.4);
-$scrollbar_slider_hover_color: $accent2; //$fg_color;
-$scrollbar_slider_active_color: $accent1; // if($variant=='light', darken($selected_bg_color, 10%), lighten($selected_bg_color, 10%));
+$scrollbar_bg_color: if($variant == 'light', mix($bg_color, $fg_color, 90%), mix($base_color, $bg_color, 50%));
+$scrollbar_slider_color: transparentize($fg_color, 0.4);
+$scrollbar_slider_hover_color: $fg_color;
+$scrollbar_slider_active_color: if($variant=='light', darken($selected_bg_color, 10%), lighten($selected_bg_color, 10%));
 //
 $button_bg_color: lighten($bg_color, if($variant == 'light', 3%, 6%));
 $button_backdrop_bg_color: transparentize($button_bg_color, 0.3);

@@ -1,9 +1,4 @@
 // Star Labs
-// Accents
-$accent1: #003059; // Base
-$accent2: #0068bf; // Hover
-$accent3: #2195f2; // Active
-
 // Dark
 $dark1: #17171d;
 
@@ -49,6 +44,7 @@ $menubar_bg_color: $dark1; // $headerbar_bg_color;
 $headerbar_fg_color: $white; // $porcelain;
 $headerbar_text_color: $white; // $silk;
 $headerbar_insensitive_color: mix($dark1, $white, 50%); // mix($headerbar_fg_color, $headerbar_bg_color, 50%);
+$headerbar_border_color: $dark1;
 //
 $backdrop_headerbar_bg_color: lighten($dark1, 5%); // lighten($headerbar_bg_color, 7%);
 $backdrop_headerbar_fg_color: mix($white, $dark1, 70%); // mix($headerbar_fg_color, $headerbar_bg_color, 70%);

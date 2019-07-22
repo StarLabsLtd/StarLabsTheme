@@ -257,13 +257,10 @@
 
     $_bg: lighten($c, $_perc);
 
-//    background-color: $_bg;
-	background-color: $accent2;
-//    color: $tc;
-	color: $white;
+    background-color: $_bg;
+    color: $tc;
 
-//    border-color: if($flat, if($_headerbar or is_special_color($c), $_bg, $borders_color), $_border);
-	border-color: $accent2;
+    border-color: if($flat, if($_headerbar or is_special_color($c), $_bg, $borders_color), $_border);
     box-shadow: if($flat, none,  0 1px transparentize(black, 0.85));
 
     @if $flat == false {
@@ -296,9 +293,8 @@
       }
     }
 
-//    background-color: $_bg;
-//    border-color: $_border;
-	background-color: $accent3;
+    background-color: $_bg;
+    border-color: $_border;
     box-shadow: none;
   }
 
@@ -431,11 +427,13 @@
 
     $_bg: null;
 
-    @if $_headerbar { $_bg: lighten($backdrop_headerbar_bg_color, 5%); } 
+    @if $_headerbar { $_bg: lighten($backdrop_headerbar_bg_color, 5%); }
     @else if $c==$menu_color { $_bg: if($variant=='light', darken($c, 12%), $headerbar_bg_color); }
     @else { $_bg: darken($c, if($variant == 'light', 12%, 7%)); }
 
-    $_bc: if($c == $button_bg_color, if($variant=='light', $backdrop_borders_color, darken($backdrop_borders_color, 2%)),_backdrop_color(_border_color($c)));
+    $_bc: if($c == $button_bg_color,
+            if($variant=='light', $backdrop_borders_color, darken($backdrop_borders_color, 2%)),
+            _backdrop_color(_border_color($c)));
 
     background-color: $_bg;
     border-color: if($flat, $_bg, $_bc);
@@ -471,7 +469,7 @@
     $_bg: null;
     $_perc: null;
     @if $_headerbar {
-      $_bg: mix($c, $headerbar_bg_color, 85%);
+      $_bg: lighten($backdrop_headerbar_bg_color, 3%);
       $_perc: 15%;
     } @else {
       $_bg: darken($c, if($variant == 'light', 15%, 5%));
@@ -619,13 +617,12 @@
  * Switches *
  ************/
 @mixin switch($bg:$dark_fill, $alt:$success_color) {
-  background-color: $bg;
+  background-color: if($bg==$headerbar_bg_color, lighten($bg, 25%), $bg);
   border-radius: 5px;
   border-width: 1px;
   border-style: solid;
-  border-color: darken($bg, 5%);
-  border-top-color: darken($bg, 20%);
-  box-shadow: inset 0 1px 1px 0 if($bg==$dark_fill, transparentize($bg, 0.2), rgba(0, 0, 0, 0.15));
+  border-color: if($bg==$headerbar_bg_color, lighten($bg, 25%), darken($bg, 5%));
+  box-shadow: if($bg==$dark_fill, inset 0 1px 1px 0 transparentize($bg, 0.2), none);
 
   $_insensitive_border_color: null;
   @if $bg == $dark_fill {
@@ -640,13 +637,13 @@
 
   &:hover {
     -gtk-icon-effect: highlight;
-    background-color: lighten($bg, 5%);
+    background-color: if($bg==$dark_fill, lighten($bg, 5%), lighten($bg, 30%));
   }
 
   &:checked {
     background-color: $alt;
     border-color: darken($alt, 5%);
-    border-top-color: darken($alt, 20%);
+    border-top-color: if($bg==$dark_fill and $variant=='light', darken($alt, 20%), darken($alt, 5%));
     box-shadow: inset 0 1px 1px 0 transparentize($alt, 0.2);
 
     &:hover {
@@ -671,23 +668,22 @@
       background-color: if($variant == 'light', _backdrop_color($bg), lighten($bg, 2%));
       $_border_color: if($variant == 'light', $borders_edge, $bg);
     } @else {
-      background-color: _backdrop_color(transparentize($bg, 0.3));
+      background-color: _backdrop_color(transparentize(lighten($bg, 25%), 0.3));
       $_border_color: transparent;
     }
 
     border: 1px solid $_border_color;
-    border-top-color: darken($bg, if($variant == 'light', 10%, 5%));
     transition: $backdrop_transition;
 
     &:hover {
-      background-color: $bg;
+      background-color: if($bg==$dark_fill, $bg, lighten($bg, 25%));
 
       &:checked { background-color: $alt; }
     }
 
     &:checked {
       background-color: _backdrop_color($alt);
-      border-top-color: darken($alt, 10%);
+      border-color: _backdrop_color($alt);
       box-shadow: none;
 
       &:disabled {
@@ -705,7 +701,7 @@
 
   slider {
     background-color: if($bg == $dark_fill, white, $headerbar_fg_color);
-    background-clip: if($variant == "light", border-box, padding-box);
+    background-clip: border-box;
     border-radius: $small_radius;
     border: 1px solid transparent;
     box-shadow: 0 1px 1px if($bg == $dark_fill, darken($bg, 7%), rgba(0, 0, 0, 0.15));

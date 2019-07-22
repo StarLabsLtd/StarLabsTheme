@@ -14,8 +14,8 @@ list.tweak-categories separator {
   // keep details box visible
   // details box looks ugly when many items are selected and it floats above the orange
   background-image: none;
-  background-color: $bg_color;
-  &:backdrop { background-color: $backdrop_bg_color; }
+  background-color: if($light, white, $base_color);
+  &:backdrop { background-color: $backdrop_base_color }
 
   // Makes icons less bright in backdrop
   @at-root %dim_icons_in_backdrop,
@@ -452,13 +452,6 @@ headerbar button image ~ window decoration ~ menu separator {
         &:not(:backdrop):hover { background-image: image($base_hover_color); }
       }
     }
-  }
-
-  .view {
-    // imports nautilus tweaks
-    // dim icons in backdrop and have only labels be colored when selected
-    &:selected { @extend %remove_folder_icon_tint; }
-    &:backdrop { @extend %dim_icons_in_backdrop; }
   }
 
   toolbar.horizontal.primary-toolbar {
