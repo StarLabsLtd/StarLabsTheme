@@ -132,7 +132,7 @@ function creategnome() {
 	sed -i "s/@VariantThemeName@/$theme/g" "gnome-shell/$theme/meson.build"
 	sed -i "s/@VariantThemeName@/$theme-Light/g" "gnome-shell/$theme-Light/meson.build"
 	sed -i "s/@LightThemeName@/$theme/g" "gnome-shell/$theme-Light/meson.build"
-	if ! [[ "$theme" == 'StarLabs' ]]; then
+	if [[ "$theme" != 'StarLabs' ]]; then
 		sed -i 's/gnomeshell_theme_dir,/theme_dir,/g' "gnome-shell/$theme/meson.build" "gnome-shell/$theme-Light/meson.build"
 	fi
 	echo "subdir('$theme')" >> "gnome-shell/meson.build"
