@@ -80,8 +80,8 @@ function symlink() {
 		while read ALIAS ; do
 			variant=$(echo "$list" | cut -d '/' -f4)
 			type=$(echo "$list" | cut -d '/' -f5| cut -d '.' -f1)
-			FROM=${ALIAS% *}
-			TO=${ALIAS#* }
+			TO=${ALIAS% *}
+			FROM=${ALIAS#* }
 			if [ -e "icons/$1/$path/$sub/$FROM" ]; then
 				continue
 			fi
@@ -198,9 +198,9 @@ while read palette ; do
 		printf "backgrounds_dir = join_paths(get_option('datadir'), 'backgrounds')\ninstall_dir =join_paths(backgrounds_dir, meson.project_name())\nbackgrounds_sources = [\n]\ninstall_data(backgrounds_sources,\ninstall_dir: install_dir)\nxml_dir = join_paths(get_option('datadir'), 'gnome-background-properties')\nxml_sources = [\n'StarLabs.xml',\n]\ninstall_data(xml_sources, install_dir: xml_dir)" > "backgrounds/meson.build"
 		cat "backgrounds/master.xml" > "backgrounds/StarLabs.xml"
 	fi
+	oldColor backgrounds/StarWallpaper0.svg
 	newColor backgrounds/StarWallpaper0.svg
 	exportwallpaper
-	oldColor backgrounds/StarWallpaper0.svg
 	if [[ "$loop" -eq "$loops" ]]; then
 		for i in 1 2 3 4 5 6 7 8 9 10 11 12; do
 			sed -i "/backgrounds_sources = \[/a 'StarWallpaper$i.jpg'," backgrounds/meson.build
@@ -233,30 +233,31 @@ while read palette ; do
 	# Start Cursors
 	if [[ "$loop" == 1 ]]; then
 		rm -r icons/StarLab*
-		printf "icon_dir = join_paths(get_option('prefix'), 'share/icons')\n" > icons/meson.build
+#		printf "icon_dir = join_paths(get_option('prefix'), 'share/icons')\n" > icons/meson.build
 	fi
-	newColor icons/cursors/cursors.svg
-	pointandshoot
-	oldColor icons/cursors/cursors.svg
+#	newColor icons/cursors/cursors.svg
+#	pointandshoot
+#	oldColor icons/cursors/cursors.svg
 	# End Cursors
 
 	# Start Icons
+	oldColor "icons/src/fullcolor/*/*.svg"
 	newColor "icons/src/fullcolor/*/*.svg"
-	for shape in Standard Circle Squircle; do
+	for shape in Squircle; do
+#	for shape in Standard Circle Squircle; do
 		dir=$( echo "$theme"-"$shape" | sed 's/-Standard//g')
 		shapetastic "$shape"
 		renderIcon "$dir"
-		if [[ "$shape" == 'Circle' ]]; then
+		if [[ "$shape" == Circle ]]; then
 			printf "install_subdir('$dir',\ninstall_dir: icon_dir,\nstrip_directory: false,\nexclude_files: ['meson.build'],\n)\n\n" >> icons/meson.build
 			icons/src/circle.svg "icons/$dir/view-app-grid-symbolic.svg"
-		elif [[ "$shape" == 'Squircle' ]]; then
+		elif [[ "$shape" == Squircle ]]; then
 			printf "install_subdir('$dir',\ninstall_dir: icon_dir,\nstrip_directory: false,\nexclude_files: ['meson.build'],\n)\n\n" >> icons/meson.build
 			icons/src/squircle.svg "icons/$dir/view-app-grid-symbolic.svg"
 		fi
 		symlink "$dir"
 		echo -ne "\033[0KGenerating $theme $loop / $loops for variant $shape\\r"
 	done
-	oldColor "icons/src/fullcolor/*/*.svg"
 
 	# End Icons
 
