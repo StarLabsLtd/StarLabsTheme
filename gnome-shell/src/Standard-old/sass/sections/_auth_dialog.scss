@@ -1,8 +1,0 @@
-.framed-user-icon {
-	background-size: contain;
-	@extend %shell-window;
-	border-radius: $omega1;
-	&:hover {
-		@include fill(hover, $alpha3, $accent2);
-	}
-}

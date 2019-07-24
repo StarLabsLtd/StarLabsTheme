@@ -18,16 +18,15 @@ function oldColor() {
 	sed -i "s/$color3/$original3/g" $1
 }
 function renderIcon() {
-	for svg in icons/fullcolor/*/*.svg; do
-		type=$(echo $svg | cut -d '/' -f3)
-		icon=$(echo $svg | cut -d '/' -f4)
-		for size in 8; do
-#		for size in 8 16 24 32 48 256; do
+	for svg in icons/src/fullcolor/*/*.svg; do
+		type=$(echo "$svg" | cut -d '/' -f4)
+		icon=$(echo "$svg" | cut -d '/' -f5)
+		for size in 8 16 24 32 48 256; do
 			for scale in @1x @2x; do
 				factor=${scale#"@"}
 				factor=${factor%"x"}
 				scale=${scale#"@1x"}
-				path=output/icons/"$1"/"$size"x"$size""$scale"/"$type"/
+				path=icons/"$1"/"$size"x"$size""$scale"/"$type"/
 				mkdir -p "$path"
 				dpi=$(( $size * $factor ))
 				height=$(inkscape -H $svg | cut -d . -f1)
@@ -47,14 +46,28 @@ function renderIcon() {
 			done
 		done
 	done
-	echo "[Icon Theme]" > $path/cursor.theme
-	echo "Name=$1" >> $path/cursor.theme
-	sed -i "/subdir/a '$1'," output/icons/meson.build
+	cp -r icons/src/scalable "$1"
+	cp -r icons/src/scalable-max-32 "$1"
+	echo "[Icon Theme]" > "icons/$1/index.theme"
+	echo "Name=$1" >> "icons/$1/index.theme"
+	echo "Inherits=Humanity,hicolor" >> "icons/$1/index.theme"
+	echo "Example=folder" >> "icons/$1/index.theme"
 
+	for list in icons/src/lists/*/*; do
+		while read ALIAS ; do
+			FROM=${ALIAS% *}
+			TO=${ALIAS#* }
+			if [ -e "icons/$theme/cursors/$FROM" ] ; then
+				continue
+			fi
+			ln -s "$TO" "icons/$theme/cursors/$FROM"
+		done < "$list"
+	done
 
+	# Need to add symlinks
 }
 function shapetastic() {
-for svg in icons/fullcolor/*/*.svg; do
+	for svg in icons/src/fullcolor/*/*.svg; do
 		one=$(echo "StandardCircleSquircle" | sed "s/$1//g" | sed -e 's/\([A-Z][a-z]*\)/ &/g' | cut -d ' ' -f2)
 		two=$(echo "StandardCircleSquircle" | sed "s/$1//g" | sed -e 's/\([A-Z][a-z]*\)/ &/g' | cut -d ' ' -f3)
 		hide=$(echo "$one\\|$two")
@@ -75,6 +88,29 @@ for svg in icons/fullcolor/*/*.svg; do
 	done
 }
 
+function symlink() {
+        while read ALIAS ; do
+                variant=$(echo "$list" | cut -d '/' -f4)
+                type=$(echo "$list" | cut -d '/' -f5| cut -d '.' -f1)
+                FROM=${ALIAS% *}
+                TO=${ALIAS#* }
+                if [ -e "icons/$1/$path/$sub/$FROM" ]; then
+                        continue
+                fi
+                if [[ "$variant" == 'fullcolor' ]]; then
+                        for size in 8 16 24 32 48 256; do
+                                for scale in @1x @2x; do
+                                        scale=${scale#"@1x"}
+                                        path=icons/"$1"/"$size"x"$size""$scale"/"$type"
+                                        ln -s "$TO" "$path/$FROM"
+                                done
+                        done
+                elif [[ "$path" == 'scalable' ]]; then
+                        ln -s "$TO" "icons/$1/scalable/$FROM"
+                fi
+        done < "$list"
+}
+
 function exportwallpaper() {
 	inkscape -z backgrounds/StarWallpaper0.svg -D -e backgrounds/StarWallpaper0"$name".png > /dev/null 2>&1
 	printf "<wallpaper deleted="\"false\"">\n<name>Star Labs Systems - NAME</name>\n<filename>/usr/share/backgrounds/StarLabs/WALLPAPER</filename>\n<options>zoom</options>\n<shade_type>solid</shade_type>\n<pcolor>#000000</pcolor>\n<scolor>#000000</scolor>\n<artist>StarLabs</artist>\n</wallpaper>\n" | sed "s/WALLPAPER/StarWallpaper0$name.png/g" | sed "s/NAME/$name/g" >> backgrounds/StarLabs.xml
@@ -82,33 +118,75 @@ function exportwallpaper() {
 }
 
 function creategtk() {
-	cp -r "gtk/Template" "output/gtk/$theme"
-	cp -r "gtk/Template-Dark" "output/gtk/$theme-Dark"
-	sed -i "s/@VariantThemeName@/$theme/g" "output/gtk/$theme"/index.theme "output/gtk/$theme"/gtk-3.0/meson.build "output/gtk/$theme"/meson.build "output/gtk/$theme"/*/meson.build
-	sed -i "s/@VariantThemeName@/$theme-Dark/g" "output/gtk/$theme"-Dark/index.theme "output/gtk/$theme"-Dark/meson.build "output/gtk/$theme"-Dark/*/meson.build
-	sed -i "s/@LightThemeName@/$theme/g" "output/gtk/$theme"-Dark/gtk-3.0/meson.build
-	sed -i "s/@ThemeName@/StarLabs/g" "output/gtk/$theme"/index.theme "output/gtk/$theme"-Dark/index.theme
-	echo "subdir('$theme')" >> "output/gtk/meson.build"
-	echo "subdir('$theme-Dark')" >> "output/gtk/meson.build"
+	cp -r "gtk/Light" "gtk/$theme"
+	cp -r "gtk/Dark" "gtk/$theme-Dark"
+	sed -i "s/@VariantThemeName@/$theme/g" "gtk/$theme"/index.theme "gtk/$theme"/gtk-3.0/meson.build "gtk/$theme"/meson.build "gtk/$theme"/*/meson.build
+	sed -i "s/@VariantThemeName@/$theme-Dark/g" "gtk/$theme"-Dark/index.theme "gtk/$theme"-Dark/meson.build "gtk/$theme"-Dark/*/meson.build
+	sed -i "s/@LightThemeName@/$theme/g" "gtk/$theme"-Dark/gtk-3.0/meson.build
+	sed -i "s/@ThemeName@/StarLabs/g" "gtk/$theme"/index.theme "gtk/$theme"-Dark/index.theme
+	echo "subdir('$theme')" >> "gtk/meson.build"
+	echo "subdir('$theme-Dark')" >> "gtk/meson.build"
 }
 
 function creategnome() {
-	cp -r "gnome-shell/Template" "output/gnome-shell/$theme"
-	cp -r "gnome-shell/Template" "output/gnome-shell/$theme-Light"
-	sed -i 's/Dark/Light/g' "output/gnome-shell/$theme-Light/gnome-shell.scss"
-	sed -i "s/@VariantThemeName@/$theme/g" "output/gnome-shell/$theme/meson.build"
-	sed -i "s/@VariantThemeName@/$theme-Light/g" "output/gnome-shell/$theme-Light/meson.build"
-	sed -i "s/@LightThemeName@/$theme/g" "output/gnome-shell/$theme-Light/meson.build"
-	echo "subdir('$theme')" >> "output/gnome-shell/meson.build"
-	echo "subdir('$theme-Light')" >> "output/gnome-shell/meson.build"
+	cp -r "gnome-shell/Dark" "gnome-shell/$theme"
+	cp -r "gnome-shell/Light" "gnome-shell/$theme-Light"
+	sed -i "s/@VariantThemeName@/$theme/g" "gnome-shell/$theme/meson.build"
+	sed -i "s/@VariantThemeName@/$theme-Light/g" "gnome-shell/$theme-Light/meson.build"
+	sed -i "s/@LightThemeName@/$theme/g" "gnome-shell/$theme-Light/meson.build"
+	if ! [[ "$theme" == 'StarLabs' ]]; then
+		sed -i 's/gnomeshell_theme_dir,/theme_dir,/g' "gnome-shell/$theme/meson.build" "gnome-shell/$theme-Light/meson.build"
+	fi
+	echo "subdir('$theme')" >> "gnome-shell/meson.build"
+	echo "subdir('$theme-Light')" >> "gnome-shell/meson.build"
 }
 
-function createSession() {
-	themelower=$(echo $theme | tr '[:upper:]' '[:lower:]')
-
-	cp output/background/THEMENAME.desktop "output/background/$theme.desktop"
-	sed -i "/install_dir: gnomeshell_mode_dir,/p $theme.desktop" output/background/meson.build
+# function createSession() {
+#	themelower=$(echo $theme | tr '[:upper:]' '[:lower:]')
+#	cp background/THEMENAME.desktop "background/$theme.desktop"
+#	sed -i "/install_dir: gnomeshell_mode_dir,/p $theme.desktop" background/meson.build
+# }
+function pointandshoot() {
+	printf "install_subdir('$theme',\ninstall_dir: icon_dir,\nstrip_directory: false,\nexclude_files: ['meson.build'],\n)\n\n" >> icons/meson.build
+	newColor icons/cursors/cursors.svg
+	mkdir -p icons/$theme/cursors
+	echo "[Icon Theme]" > icons/$theme/cursor.theme
+	echo "Name=$theme" >> icons/$theme/cursor.theme
+	for dpi in x1 x1_5 x2; do
+		mkdir -p "icons/$theme/$dpi"
+	done
+	for cursor in icons/cursors/config/*.cursor; do
+		NAME=$cursor
+		NAME=${NAME##*/}
+		NAME=${NAME%.*}
+#		echo -ne "\033[0KGenerating cursor png $NAME\\r"
+		if [[ $NAME == 'wait' ]] || [[ $NAME == 'progress' ]]; then
+			for i in 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24; do
+				inkscape -i "$NAME-$i" -d 90 -f icons/cursors/cursors.svg -e "icons/$theme/x1/$NAME-$i.png" > /dev/null
+				inkscape -i "$NAME-$i" -d 135 -f icons/cursors/cursors.svg -e "icons/$theme/x1_5/$NAME-$i.png" > /dev/null
+				inkscape -i "$NAME-$i" -d 180 -f icons/cursors/cursors.svg -e "icons/$theme/x2/$NAME-$i.png" > /dev/null
+			done
+			xcursorgen -p "icons/$theme" "$cursor" "icons/$theme/cursors/$NAME"
+		else
+			inkscape -i $NAME -d 90 -f icons/cursors/cursors.svg -e "icons/$theme/x1/$NAME.png" > /dev/null
+			inkscape -i $NAME -d 135 -f icons/cursors/cursors.svg -e "icons/$theme/x1_5/$NAME.png" > /dev/null
+			inkscape -i $NAME -d 180 -f icons/cursors/cursors.svg -e "icons/$theme/x2/$NAME.png" > /dev/null
+			xcursorgen -p "icons/$theme" "$cursor" "icons/$theme/cursors/$NAME"
+		fi
+	done
+	for dpi in x1 x1_5 x2; do
+		rm -r "icons/$theme/$dpi"
+	done
+	while read ALIAS ; do
+		FROM=${ALIAS% *}
+		TO=${ALIAS#* }
+		if [ -e "icons/$theme/cursors/$FROM" ] ; then
+			continue
+		fi
+		ln -s "$TO" "icons/$theme/cursors/$FROM"
+	done < icons/cursors/cursorList
 }
+
 
 # rm -r output
 while read palette ; do
@@ -120,24 +198,7 @@ while read palette ; do
 	theme=$(echo "StarLabs"-"$name" | sed 's/-Blue//g')
 	echo -ne "\033[0KGenerating $theme $loop / $loops\\r"
 
-	# Start Icons
-#	mkdir -p output/icons
-#	if [[ "$loop" == 1 ]]; then
-#		printf "icon_dir = join_paths(get_option('prefix'), 'share/icons')\ninstall_subdir{\n" > output/icons/meson.build
-#		printf "install_dir: icon_dir,\nstrip_directory: false,\n}" >> output/icons/meson.build
-#	fi
-#	newColor "icons/fullcolor/*/*.svg"
-#	for shape in Squircle; do
-#	for shape in Standard Circle Squircle; do
-#		dir=$( echo "$theme"-"$shape" | sed 's/-Standard//g')
-#		shapetastic "$shape"
-#		renderIcon "$dir"
-#		echo -ne "\033[0KGenerating $theme $loop / $loops for variant $shape\\r"
-#	done
-#	oldColor "icons/fullcolor/*/*.svg"
-	# End Icons
 	# Start Backgrounds
-#	mkdir -p backgrounds/
 	if [[ "$loop" == 1 ]]; then
 		printf "backgrounds_dir = join_paths(get_option('datadir'), 'backgrounds')\ninstall_dir =join_paths(backgrounds_dir, meson.project_name())\nbackgrounds_sources = [\n]\ninstall_data(backgrounds_sources,\ninstall_dir: install_dir)\nxml_dir = join_paths(get_option('datadir'), 'gnome-background-properties')\nxml_sources = [\n'StarLabs.xml',\n]\ninstall_data(xml_sources, install_dir: xml_dir)" > "backgrounds/meson.build"
 		cat "backgrounds/master.xml" > "backgrounds/StarLabs.xml"
@@ -146,7 +207,6 @@ while read palette ; do
 	exportwallpaper
 	oldColor backgrounds/StarWallpaper0.svg
 	if [[ "$loop" -eq "$loops" ]]; then
-#		cp backgrounds/originalbackgrounds/* output/backgrounds/
 		for i in 1 2 3 4 5 6 7 8 9 10 11 12; do
 			sed -i "/backgrounds_sources = \[/a 'StarWallpaper$i.jpg'," backgrounds/meson.build
 		done
@@ -154,36 +214,55 @@ while read palette ; do
 		echo "</wallpapers>" >> "backgrounds/StarLabs.xml"
 	fi
 	# End Backgrounds
-	# Start GTK
-#	mkdir -p output/gtk
-#	if [[ "$loop" == 1 ]]; then
-#		cp -r gtk/Master output/gtk/Master
-#	fi
-#	creategtk
-#	newColor "output/gtk/$theme/gtk-3.0/gtk.scss"
-#	newColor "output/gtk/$theme/gtk-3.0/gtk-dark.scss"
-	# End GTK
-	# Start Gnome
-#	mkdir -p output/gnome-shell
-#	if [[ "$loop" == 1 ]]; then
-#		cp -r gnome-shell/Master output/gnome-shell/Master
-#	fi
-#	creategnome
-#	newColor "output/gnome-shell/$theme/gnome-shell.scss"
-	# End Gnome
-	# Start Font
-#	cp -r font/ output/font/
-	# End Font
-	# Start Sessions
-#	cp -r sessions/ output/sessions/
-	# End Sessions
-	# Start Sounds
-#	cp -r sounds/ output/sounds/
-	# End Sounds
-	# Start Extensions
-#	cp -r extensions/ output/extensions/
-	# End Extensions
 
+
+	# Start GTK
+	if [[ "$loop" == 1 ]]; then
+		rm -r gtk/StarLab*
+		rm gtk/meson.build
+	fi
+	creategtk
+	newColor "gtk/$theme/gtk-3.0/gtk.scss"
+	newColor "gtk/$theme/gtk-3.0/gtk-dark.scss"
+	# End GTK
+
+
+	# Start Gnome
+	if [[ "$loop" == 1 ]]; then
+		rm -r gnome-shell/StarLab*
+		rm gnome-shell/meson.build
+	fi
+	creategnome
+	newColor "gnome-shell/$theme/gnome-shell.scss"
+	# End Gnome
+	# Start Cursors
+	if [[ "$loop" == 1 ]]; then
+		printf "icon_dir = join_paths(get_option('prefix'), 'share/icons')\n" > icons/meson.build
+	fi
+	newColor icons/cursors/cursors.svg
+	pointandshoot
+	oldColor icons/cursors/cursors.svg
+	# End Cursors
+
+	# Start Icons
+	newColor "icons/src/fullcolor/*/*.svg"
+	for shape in Standard Circle Squircle; do
+		dir=$( echo "$theme"-"$shape" | sed 's/-Standard//g')
+		shapetastic "$shape"
+		renderIcon "$dir"
+		if [[ "$shape" == 'Circle' ]]; then
+			icons/src/circle.svg "icons/$dir/view-app-grid-symbolic.svg"
+		elif [[ "$shape" == 'Squircle' ]]; then
+			icons/src/squircle.svg "icons/$dir/view-app-grid-symbolic.svg"
+		fi
+		symlink "$dir"
+#		echo -ne "\033[0KGenerating $theme $loop / $loops for variant $shape\\r"
+	done
+	oldColor "icons/src/fullcolor/*/*.svg"
+
+        printf "install_subdir('$theme-$shape',\ninstall_dir: icon_dir,\nstrip_directory: false,\nexclude_files: ['meson.build'],\n)\n\n" >> icons/meson.build
+
+	# End Icons
 
 	loop=$(( $loop + 1 ))
 done < colors.list
