@@ -235,6 +235,7 @@ while read palette ; do
 	# End Gnome
 	# Start Cursors
 	if [[ "$loop" == 1 ]]; then
+		rm -r icons/StarLab*
 		printf "icon_dir = join_paths(get_option('prefix'), 'share/icons')\n" > icons/meson.build
 	fi
 	newColor icons/cursors/cursors.svg
