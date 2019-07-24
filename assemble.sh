@@ -90,11 +90,15 @@ function symlink() {
 					for scale in @1x @2x; do
 						scale=${scale#"@1x"}
 						path=icons/"$1"/"$size"x"$size""$scale"/"$type"
-						ln -s "$TO" "$path/$FROM"
+						if [[ -f "$path/$FROM" ]]; then
+							ln -s "$TO" "$path/$FROM"
+						fi
 					done
 				done
 			elif [[ "$path" == 'scalable' ]]; then
-				ln -s "$TO" "icons/$1/scalable/$FROM"
+				if [[ -f "icons/$1/scalable/$FROM" ]]; then
+					ln -s "$TO" "icons/$1/scalable/$FROM"
+				fi
 			fi
 		done < "$list"
 	done
@@ -172,7 +176,9 @@ function pointandshoot() {
 		if [ -e "icons/$theme/cursors/$FROM" ] ; then
 			continue
 		fi
-		ln -s "$TO" "icons/$theme/cursors/$FROM"
+		if [[ -f "icons/$theme/cursors/$FROM" ]]; then
+			ln -s "$TO" "icons/$theme/cursors/$FROM"
+		fi
 	done < icons/cursors/cursorList
 }
 
