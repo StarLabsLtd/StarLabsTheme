@@ -139,6 +139,7 @@ function creategnome() {
 #	cp background/THEMENAME.desktop "background/$theme.desktop"
 #	sed -i "/install_dir: gnomeshell_mode_dir,/p $theme.desktop" background/meson.build
 # }
+
 function pointandshoot() {
 	printf "install_subdir('$theme',\ninstall_dir: icon_dir,\nstrip_directory: false,\nexclude_files: ['meson.build'],\n)\n\n" >> icons/meson.build
 	newColor icons/cursors/cursors.svg
@@ -233,18 +234,17 @@ while read palette ; do
 	# Start Cursors
 	if [[ "$loop" == 1 ]]; then
 		rm -r icons/StarLab*
-#		printf "icon_dir = join_paths(get_option('prefix'), 'share/icons')\n" > icons/meson.build
+		printf "icon_dir = join_paths(get_option('prefix'), 'share/icons')\n" > icons/meson.build
 	fi
-#	newColor icons/cursors/cursors.svg
-#	pointandshoot
-#	oldColor icons/cursors/cursors.svg
+	newColor icons/cursors/cursors.svg
+	pointandshoot
+	oldColor icons/cursors/cursors.svg
 	# End Cursors
 
 	# Start Icons
 	oldColor "icons/src/fullcolor/*/*.svg"
 	newColor "icons/src/fullcolor/*/*.svg"
-	for shape in Squircle; do
-#	for shape in Standard Circle Squircle; do
+	for shape in Standard Circle Squircle; do
 		dir=$( echo "$theme"-"$shape" | sed 's/-Standard//g')
 		shapetastic "$shape"
 		renderIcon "$dir"
