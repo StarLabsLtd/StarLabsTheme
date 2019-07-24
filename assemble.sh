@@ -256,7 +256,7 @@ while read palette ; do
 		fi
 		symlink "$dir"
 #		echo -ne "\033[0KGenerating $theme $loop / $loops for variant $shape\\r"
-		printf "install_subdir('$theme-$shape',\ninstall_dir: icon_dir,\nstrip_directory: false,\nexclude_files: ['meson.build'],\n)\n\n" >> icons/meson.build
+		printf "install_subdir('$dir',\ninstall_dir: icon_dir,\nstrip_directory: false,\nexclude_files: ['meson.build'],\n)\n\n" >> icons/meson.build
 	done
 	oldColor "icons/src/fullcolor/*/*.svg"
 
