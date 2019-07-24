@@ -46,8 +46,8 @@ function renderIcon() {
 			done
 		done
 	done
-	cp -r icons/src/scalable "$1"
-	cp -r icons/src/scalable-max-32 "$1"
+	cp -r icons/src/scalable/ "icons/$1/scalable"
+	cp -r icons/src/scalable-max-32/ "icons/$1/scalable"
 	echo "[Icon Theme]" > "icons/$1/index.theme"
 	echo "Name=$1" >> "icons/$1/index.theme"
 	echo "Inherits=Humanity,hicolor" >> "icons/$1/index.theme"
