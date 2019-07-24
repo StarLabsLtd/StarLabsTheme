@@ -63,8 +63,6 @@ function renderIcon() {
 			ln -s "$TO" "icons/$theme/cursors/$FROM"
 		done < "$list"
 	done
-
-	# Need to add symlinks
 }
 function shapetastic() {
 	for svg in icons/src/fullcolor/*/*.svg; do
@@ -257,10 +255,9 @@ while read palette ; do
 		fi
 		symlink "$dir"
 #		echo -ne "\033[0KGenerating $theme $loop / $loops for variant $shape\\r"
+		printf "install_subdir('$theme-$shape',\ninstall_dir: icon_dir,\nstrip_directory: false,\nexclude_files: ['meson.build'],\n)\n\n" >> icons/meson.build
 	done
 	oldColor "icons/src/fullcolor/*/*.svg"
-
-        printf "install_subdir('$theme-$shape',\ninstall_dir: icon_dir,\nstrip_directory: false,\nexclude_files: ['meson.build'],\n)\n\n" >> icons/meson.build
 
 	# End Icons
 
