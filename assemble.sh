@@ -250,13 +250,14 @@ while read palette ; do
 		shapetastic "$shape"
 		renderIcon "$dir"
 		if [[ "$shape" == 'Circle' ]]; then
+			printf "install_subdir('$dir',\ninstall_dir: icon_dir,\nstrip_directory: false,\nexclude_files: ['meson.build'],\n)\n\n" >> icons/meson.build
 			icons/src/circle.svg "icons/$dir/view-app-grid-symbolic.svg"
 		elif [[ "$shape" == 'Squircle' ]]; then
+			printf "install_subdir('$dir',\ninstall_dir: icon_dir,\nstrip_directory: false,\nexclude_files: ['meson.build'],\n)\n\n" >> icons/meson.build
 			icons/src/squircle.svg "icons/$dir/view-app-grid-symbolic.svg"
 		fi
 		symlink "$dir"
-#		echo -ne "\033[0KGenerating $theme $loop / $loops for variant $shape\\r"
-		printf "install_subdir('$dir',\ninstall_dir: icon_dir,\nstrip_directory: false,\nexclude_files: ['meson.build'],\n)\n\n" >> icons/meson.build
+		echo -ne "\033[0KGenerating $theme $loop / $loops for variant $shape\\r"
 	done
 	oldColor "icons/src/fullcolor/*/*.svg"
 
