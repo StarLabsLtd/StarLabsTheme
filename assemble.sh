@@ -124,7 +124,8 @@ function creategnome() {
 	cp -r "gnome-shell/Light" "gnome-shell/$theme-Light"
 
 	if [[ "$theme" == 'StarLabs' ]]; then
-		sed -i "s/install_dir = /install_dir = join_paths(gnomeshell_theme_dir, '@VariantThemeName@')/g" "gnome-shell/$theme/meson.build" "gnome-shell/$theme-Light/meson.build"
+		sed -i "s/install_dir = /install_dir = join_paths(gnomeshell_theme_dir, '@VariantThemeName@')/g" "gnome-shell/$theme/meson.build"
+		sed -i "s/install_dir = /install_dir = join_paths(theme_dir, '@VariantThemeName@', 'gnome-shell')/g" "gnome-shell/$theme-Light/meson.build"
 	else
 		sed -i "s/install_dir = /install_dir = join_paths(theme_dir, '@VariantThemeName@', 'gnome-shell')/g" "gnome-shell/$theme/meson.build" "gnome-shell/$theme-Light/meson.build"
 	fi
