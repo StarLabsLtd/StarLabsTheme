@@ -50,6 +50,7 @@ function renderIcon() {
 	cp -r icons/src/scalable-max-32/ "icons/$1/scalable-max-32"
 	echo "[Icon Theme]" > "icons/$1/index.theme"
 	echo "Name=$1" >> "icons/$1/index.theme"
+	cat icons/src/index.theme >> "icons/$1/index.theme"
 	echo "Inherits=Humanity,hicolor" >> "icons/$1/index.theme"
 	echo "Example=folder" >> "icons/$1/index.theme"
 }
@@ -80,24 +81,21 @@ function symlink() {
 		while read ALIAS ; do
 			variant=$(echo "$list" | cut -d '/' -f4)
 			type=$(echo "$list" | cut -d '/' -f5| cut -d '.' -f1)
-			TO=${ALIAS% *}
-			FROM=${ALIAS#* }
-			if [ -e "icons/$1/$path/$sub/$FROM" ]; then
-				continue
-			fi
-			if [[ "$variant" == 'fullcolor' ]]; then
+			FROM=${ALIAS% *}
+			TO=${ALIAS#* }
+			if [[ "$variant" == fullcolor ]]; then
 				for size in 8 16 24 32 48 256; do
 					for scale in @1x @2x; do
 						scale=${scale#"@1x"}
 						path=icons/"$1"/"$size"x"$size""$scale"/"$type"
-						if [[ -f "$path/$FROM" ]]; then
-							ln -s "$TO" "$path/$FROM"
+						if [[ -e "$path/$FROM" ]]; then
+							ln -s "$FROM" "$path/$TO"
 						fi
 					done
 				done
-			elif [[ "$path" == 'scalable' ]]; then
-				if [[ -f "icons/$1/scalable/$FROM" ]]; then
-					ln -s "$TO" "icons/$1/scalable/$FROM"
+			elif [[ "$path" == scalable ]]; then
+				if [[ -e "icons/$1/scalable/$FROM" ]]; then
+					ln -s "$FROM" "icons/$1/scalable/$TO"
 				fi
 			fi
 		done < "$list"
@@ -124,12 +122,17 @@ function creategtk() {
 function creategnome() {
 	cp -r "gnome-shell/Dark" "gnome-shell/$theme"
 	cp -r "gnome-shell/Light" "gnome-shell/$theme-Light"
+
+	if [[ "$theme" == 'StarLabs' ]]; then
+		sed -i "s/install_dir = /install_dir = join_paths(gnomeshell_theme_dir, '@VariantThemeName@')/g" "gnome-shell/$theme/meson.build" "gnome-shell/$theme-Light/meson.build"
+	else
+		sed -i "s/install_dir = /install_dir = join_paths(theme_dir, '@VariantThemeName@', 'gnome-shell')/g" "gnome-shell/$theme/meson.build" "gnome-shell/$theme-Light/meson.build"
+	fi
+
 	sed -i "s/@VariantThemeName@/$theme/g" "gnome-shell/$theme/meson.build"
 	sed -i "s/@VariantThemeName@/$theme-Light/g" "gnome-shell/$theme-Light/meson.build"
 	sed -i "s/@LightThemeName@/$theme/g" "gnome-shell/$theme-Light/meson.build"
-	if [[ "$theme" != 'StarLabs' ]]; then
-		sed -i 's/gnomeshell_theme_dir,/theme_dir,/g' "gnome-shell/$theme/meson.build" "gnome-shell/$theme-Light/meson.build"
-	fi
+
 	echo "subdir('$theme')" >> "gnome-shell/meson.build"
 	echo "subdir('$theme-Light')" >> "gnome-shell/meson.build"
 }
@@ -172,13 +175,10 @@ function pointandshoot() {
 		rm -r "icons/$theme/$dpi"
 	done
 	while read ALIAS ; do
-		FROM=${ALIAS% *}
-		TO=${ALIAS#* }
-		if [ -e "icons/$theme/cursors/$FROM" ] ; then
-			continue
-		fi
-		if [[ -f "icons/$theme/cursors/$FROM" ]]; then
-			ln -s "$TO" "icons/$theme/cursors/$FROM"
+		TO=${ALIAS% *}
+		FROM=${ALIAS#* }
+		if [[ -e "icons/$theme/cursors/$FROM" ]] && ! [[ -e "icons/$theme/cursors/$TO" ]]; then
+			ln -s "$FROM" "icons/$theme/cursors/$TO"
 		fi
 	done < icons/cursors/cursorList
 }
@@ -199,7 +199,6 @@ while read palette ; do
 		printf "backgrounds_dir = join_paths(get_option('datadir'), 'backgrounds')\ninstall_dir =join_paths(backgrounds_dir, meson.project_name())\nbackgrounds_sources = [\n]\ninstall_data(backgrounds_sources,\ninstall_dir: install_dir)\nxml_dir = join_paths(get_option('datadir'), 'gnome-background-properties')\nxml_sources = [\n'StarLabs.xml',\n]\ninstall_data(xml_sources, install_dir: xml_dir)" > "backgrounds/meson.build"
 		cat "backgrounds/master.xml" > "backgrounds/StarLabs.xml"
 	fi
-	oldColor backgrounds/StarWallpaper0.svg
 	newColor backgrounds/StarWallpaper0.svg
 	exportwallpaper
 	if [[ "$loop" -eq "$loops" ]]; then
@@ -209,6 +208,7 @@ while read palette ; do
 		sed -i "/backgrounds_sources = \[/a 'StarWallpaper0.png'," backgrounds/meson.build
 		echo "</wallpapers>" >> "backgrounds/StarLabs.xml"
 	fi
+	oldColor backgrounds/StarWallpaper0.svg
 	# End Backgrounds
 
 
@@ -242,7 +242,6 @@ while read palette ; do
 	# End Cursors
 
 	# Start Icons
-	oldColor "icons/src/fullcolor/*/*.svg"
 	newColor "icons/src/fullcolor/*/*.svg"
 	for shape in Standard Circle Squircle; do
 		dir=$( echo "$theme"-"$shape" | sed 's/-Standard//g')
@@ -256,9 +255,10 @@ while read palette ; do
 			icons/src/squircle.svg "icons/$dir/view-app-grid-symbolic.svg"
 		fi
 		symlink "$dir"
-		echo -ne "\033[0KGenerating $theme $loop / $loops for variant $shape\\r"
-	done
 
+#		echo -ne "\033[0KGenerating $theme $loop / $loops for variant $shape\\r"
+	done
+	oldColor "icons/src/fullcolor/*/*.svg"
 	# End Icons
 
 	loop=$(( $loop + 1 ))
