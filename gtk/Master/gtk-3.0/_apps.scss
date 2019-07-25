@@ -143,13 +143,11 @@ terminal-window {
   // only colors, let everything else be inherited
   .terminal-screen {
     // inherits from .background
-    background-color: if($variant == 'light', darken($terminal_bg_color,5%), darken($terminal_bg_color, 10%));
-//  background-color: $terminal_bg_color;
+    background-color: if($variant == 'light', darken($terminal_bg_color,10%), darken($terminal_bg_color, 15%));
     color: $terminal_fg_color;
 
     &:backdrop {
-      background-color: lighten(if($variant == 'light', $terminal_bg_color, darken($terminal_bg_color, 15%)), 2%);
-//    background-color: lighten($terminal_bg_color, 2%);
+      background-color: lighten(if($variant == 'light', darken($terminal_bg_color,10%), darken($terminal_bg_color, 15%)), 2%);
       color: $backdrop_selected_fg_color;
     }
   }
