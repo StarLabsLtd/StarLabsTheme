@@ -3,7 +3,7 @@ sassc = find_program('sassc')
 # destination directory
 theme_dir = join_paths(get_option('prefix'), 'share', 'themes',)
 gnomeshell_theme_dir = join_paths(get_option('datadir'), 'gnome-shell', 'theme')
-install_dir = join_paths(gnomeshell_theme_dir, '@VariantThemeName@')
+install_dir = 
 
 # generate .css files
 theme_sources = [

@@ -1410,7 +1410,7 @@
    inkscape:pagecheckerboard="true" />
 
 <g
-   style="display:none"
+   style="display:inline"
    inkscape:label="Squircle-Background"
    id="g1241"
    inkscape:groupmode="layer"><rect
@@ -1453,19 +1453,19 @@
      class="st16"
      points="2157,1502.4 2263.7,1457.9 2579.7,1325.1 2359.3,1600 1922.7,1600 1923.3,1599.8 2077.3,1535.6 "
      style="display:inline;fill:url(#linearGradient1359)" /></g><g
-   style="display:none"
+   style="display:inline"
    inkscape:label="Squircle-Shadow"
    id="g1253"
    inkscape:groupmode="layer"><path
-     style="display:none;opacity:0.5;fill:#17171d;fill-opacity:0.39215686;stroke-width:1.41822851"
+     style="display:inline;opacity:0.5;fill:#17171d;fill-opacity:0.39215686;stroke-width:1.41822851"
      d="m 4,220.54492 v 10 C 4,244.64746 15.3525,256 29.4551,256 H 226.5449 C 240.6474,256 252,244.64746 252,230.54492 v -10 C 252,234.64746 240.6474,246 226.5449,246 H 29.4551 C 15.3525,246 4,234.64746 4,220.54492 Z"
      id="rect1101-3"
      inkscape:connector-curvature="0" /></g><g
    inkscape:groupmode="layer"
    id="layer2"
    inkscape:label="Circle-Background"
-   style="display:inline"><circle
-     style="display:inline;fill:#17171d;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+   style="display:none"><circle
+     style="display:none;fill:#17171d;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path1090"
      cx="128"
      cy="128"
@@ -1549,9 +1549,9 @@
    inkscape:groupmode="layer"
    id="layer6"
    inkscape:label="Circle-Shadow"
-   style="display:inline"><g
+   style="display:none"><g
      id="g2548"
-     style="display:inline"
+     style="display:none"
      transform="translate(-2.960187,1.58543)"><path
        d="m 256.36019,128.41457 c 0,-33.900005 -13.5,-64.500005 -35.4,-86.900002 -0.4,-0.3 -0.7,-0.7 -1.1,-1 21.3,22.299997 34.5,52.599997 34.5,86.000002 0,68.5 -55.2,124 -123.4,124 -32.900003,0 -62.900003,-13 -85.000003,-34.1 0.3,0.3 0.6,0.6 0.9,0.9 22.2,21.7 52.6,35.1 86.000003,35.1 68.2,0 123.5,-55.5 123.5,-124 z"
        id="path238"

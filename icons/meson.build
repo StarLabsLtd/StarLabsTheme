@@ -5,3 +5,9 @@ strip_directory: false,
 exclude_files: ['meson.build'],
 )
 
+install_subdir('StarLabs-Circle',
+install_dir: icon_dir,
+strip_directory: false,
+exclude_files: ['meson.build'],
+)
+
