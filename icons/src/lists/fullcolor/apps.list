@@ -74,9 +74,9 @@ help-app.png system-help.png
 imagemagick.png display.im6.png
 imagemagick.png display-im6.q16.png 
 imagemagick.png display-im6.Q16.png
-image-viewer-app.png eog.png
-image-viewer-app.png multimedia-photo-viewer.png
-image-viewer-app.png org.gnome.eog.png
+image-viewer.png eog.png
+image-viewer.png multimedia-photo-viewer.png
+image-viewer.png org.gnome.eog.png
 log-viewer-app.png gnome-logs.png
 log-viewer-app.png logviewer.png
 log-viewer-app.png org.gnome.Logs.png
@@ -158,6 +158,7 @@ notes-app.png bijiben.png
 notes-app.png org.gnome.bijiben.png
 notes-app.png org.gnome.Bijiben.png
 notes-app.png org.gnome.Notes.png
+remmina.svg org.remmina.Remmina.png
 packages-app.png system-software-install.png
 passwords-app.png org.gnome.seahorse.Application.png
 passwords-app.png seahorse.png
@@ -189,10 +190,10 @@ system-file-manager.png org.gnome.Nautilus.png
 system-monitor-app.png gnome-system-monitor.png
 system-monitor-app.png org.gnome.SystemMonitor.png
 system-monitor-app.png utilities-system-monitor.png
-system-settings.png gnome-control-center.png
-system-settings.png org.gnome.Settings.png
-system-settings.png preferences-desktop.png
-system-settings.png preferences-system.png
+system-app.png gnome-control-center.png
+system-app.png org.gnome.Settings.png
+system-app.png preferences-desktop.png
+system-app.png preferences-system.png
 system-users.png config-users.png
 terminal-app.png bash.png
 terminal-app.png gnome-terminal.png
