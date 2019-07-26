@@ -49,7 +49,7 @@ if [ "$d" == "Install" ]; then
 	echo -ne "Fetching submodules..."
 	git submodule init
 	git pull --recurse-submodules &>/dev/null
-
+	echo "Done"
 	echo -ne "Creating build folder..."
 	meson build &>/dev/null
 
@@ -125,20 +125,20 @@ elif [ "$d" == "Uninstall" ]; then
         echo
         echo "Uninstalling..."
 
-        echo -ne "Uninstalling GDM theme"
+        echo -ne "Uninstalling GDM theme..."
 	sudo update-alternatives --remove gdm3.css /usr/share/gnome-shell/theme/StarLabs/gnome-shell.css
         echo "Done"
 
-        echo -ne "Compiling schemas"
+        echo -ne "Compiling schemas..."
         sudo glib-compile-schemas /usr/share/glib-2.0/schemas
         echo "Done"
 
-        echo -ne "Uninstalling Plymouth theme"
+        echo -ne "Uninstalling Plymouth theme..."
         sudo update-alternatives --remove default.plymouth /usr/share/plymouth/themes/StarLabs/StarLabs.plymouth
         sudo update-initramfs -u
         echo "Done"
 
-        echo -ne "Updating grub"
+        echo -ne "Updating grub..."
         sudo update-grub
         echo "Done"
 
