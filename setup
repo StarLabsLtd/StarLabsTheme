@@ -13,9 +13,6 @@ if [ "$(id -u)" -ne 0 ]; then
         exit 1
 fi
 
-
-
-
 # Main Menu
 clear
 echo '  _____ _             _           _'
@@ -52,7 +49,6 @@ if [ "$d" == "Install" ]; then
 	echo "Done"
 	echo -ne "Creating build folder..."
 	meson build &>/dev/null
-
 	echo "Done"
 
 	echo -ne "Compiling build folder..."

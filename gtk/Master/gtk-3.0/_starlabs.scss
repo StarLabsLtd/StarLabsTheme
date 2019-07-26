@@ -1,8 +1,14 @@
 // Star Labs
 // Dark
-$dark1: #17171d;
+$dark1: #3d3d44;
+$dark2: #17171d;
+$dark3: #000000;
 
 // White
+$white1: #ffffff;
+$white2: #fafafa;
+$white3: #c6c6c6;
+
 $white: #ffffff;
 
 // States
@@ -19,10 +25,10 @@ $slate: $dark1; // #5D5D5D;
 $graphite: $dark1; // #666666;
 
 // Whites
-$white: $white;// #FFFFFF;
-$porcelain: $white; // #F7F7F7;
-$silk: $white; // #CCC;
-$ash: $white; // #878787;
+$white: $white1;// #FFFFFF;
+$porcelain: $white2; // #F7F7F7;
+$silk: $white2; // #CCC;
+$ash: $white3; // #878787;
 
 // Utility
 $red: $failure; // #ED3146;
@@ -34,15 +40,15 @@ $purple: $accent3; // #762572;
 
 // Terminal colors
 $terminal_bg_color: $accent1; // #300A24;
-$terminal_base_color: lighten($accent1, 5%); // lighten($terminal_bg_color, 5%);
+$terminal_base_color: $accent1; // lighten($terminal_bg_color, 5%);
 $terminal_fg_color: $white; // white;
-$terminal_borders_color: darken($accent1, 5%); // darken($terminal_bg_color, 10%);
+$terminal_borders_color: $accent1; // darken($terminal_bg_color, 10%);
 
 // Widget Colors
 $headerbar_bg_color: $dark1; // #2B2929;
 $menubar_bg_color: $dark1; // $headerbar_bg_color;
-$headerbar_fg_color: $white; // $porcelain;
-$headerbar_text_color: $white; // $silk;
+$headerbar_fg_color: $white1; // $porcelain;
+$headerbar_text_color: $white1; // $silk;
 $headerbar_insensitive_color: mix($dark1, $white, 50%); // mix($headerbar_fg_color, $headerbar_bg_color, 50%);
 $headerbar_border_color: $dark1;
 //
