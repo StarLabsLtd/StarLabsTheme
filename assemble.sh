@@ -250,10 +250,10 @@ while read palette ; do
 		renderIcon "$dir"
 		if [[ "$shape" == Circle ]]; then
 			printf "install_subdir('$dir',\ninstall_dir: icon_dir,\nstrip_directory: false,\nexclude_files: ['meson.build'],\n)\n\n" >> icons/meson.build
-			icons/src/circle.svg "icons/$dir/view-app-grid-symbolic.svg"
+			cp icons/src/circle.svg "icons/$dir/scalable/actions/view-app-grid-symbolic.svg"
 		elif [[ "$shape" == Squircle ]]; then
 			printf "install_subdir('$dir',\ninstall_dir: icon_dir,\nstrip_directory: false,\nexclude_files: ['meson.build'],\n)\n\n" >> icons/meson.build
-			icons/src/squircle.svg "icons/$dir/view-app-grid-symbolic.svg"
+			cp icons/src/squircle.svg "icons/$dir/scalable/actions/view-app-grid-symbolic.svg"
 		fi
 		symlink "$dir"
 
