@@ -1417,7 +1417,7 @@
      height="10"
      x="127.99999"
      y="145.25" /><path
-     style="fill:#2D9B27;fill-opacity:1;stroke:none;stroke-width:0.68369824;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     style="fill:#0068bf;fill-opacity:1;stroke:none;stroke-width:0.68369824;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
      d="M 125.07617,148 C 121.15599,148 118,151.15599 118,155.07617 v 25.84766 c 0,3.92018 3.15599,7.07617 7.07617,7.07617 h 5.84766 C 134.84401,188 138,184.84401 138,180.92383 V 155.07617 C 138,151.15599 134.84401,148 130.92383,148 Z M 123,173 h 10 v 10 h -10 z"
      id="rect1093"
      inkscape:connector-curvature="0" /><rect

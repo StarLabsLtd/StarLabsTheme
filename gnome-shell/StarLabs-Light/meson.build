@@ -3,7 +3,7 @@ sassc = find_program('sassc')
 # destination directory
 theme_dir = join_paths(get_option('prefix'), 'share', 'themes', 'StarLabs-Light', 'gnome-shell')
 gnomeshell_theme_dir = join_paths(get_option('datadir'), 'gnome-shell', 'theme')
-install_dir = join_paths(gnomeshell_theme_dir, 'StarLabs-Light')
+install_dir = join_paths(theme_dir, 'StarLabs-Light', 'gnome-shell')
 
 # generate .css files
 theme_sources = [
