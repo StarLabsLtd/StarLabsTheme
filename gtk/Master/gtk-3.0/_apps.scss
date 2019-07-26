@@ -147,7 +147,7 @@ terminal-window {
     color: $terminal_fg_color;
 
     &:backdrop {
-      background-color: lighten(if($variant == 'light', darken($terminal_bg_color,10%), darken($terminal_bg_color, 15%)), 2%);
+      background-color: if($variant == 'light', darken($terminal_bg_color,8%), darken($terminal_bg_color, 13%));
       color: $backdrop_selected_fg_color;
     }
   }
