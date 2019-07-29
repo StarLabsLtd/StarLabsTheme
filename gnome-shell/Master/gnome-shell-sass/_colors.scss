@@ -1,8 +1,9 @@
 // When color definition differs for dark and light variant,
 // it gets @if ed depending on $variant
 @import "starlabs";
+
 $base_color: if($variant == 'light', $white, $dark1);
-$bg_color: $base_color
+$bg_color: $base_color;
 $fg_color: if($variant == 'light', $dark1, $white);
 $subheader_fg_color: darken($fg_color, 10%);
 $caption_fg_color: darken($fg_color, 20%);
