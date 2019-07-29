@@ -1,7 +1,7 @@
 sassc = find_program('sassc')
 
 # destination directory
-theme_dir = join_paths(get_option('prefix'), 'share', 'themes', 'StarLabs-Green-Light', 'gnome-shell')
+theme_dir = join_paths(get_option('prefix'), 'share', 'themes')
 gnomeshell_theme_dir = join_paths(get_option('datadir'), 'gnome-shell', 'theme')
 install_dir = join_paths(theme_dir, 'StarLabs-Green-Light', 'gnome-shell')
 

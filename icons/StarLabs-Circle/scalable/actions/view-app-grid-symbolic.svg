@@ -11,7 +11,7 @@
    width="16"
    version="1.1"
    id="svg4"
-   sodipodi:docname="view-app-grid-symbolic.svg"
+   sodipodi:docname="circle-view-app-grid-symbolic.svg"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
   <metadata
      id="metadata10">
@@ -26,7 +26,25 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs8" />
+     id="defs8">
+    <linearGradient
+       id="linear-gradient-6-8"
+       x1="-8778.8066"
+       y1="-6369.4072"
+       x2="-8547.9189"
+       y2="-6368.8652"
+       gradientTransform="matrix(1.219,0.123,-0.123,1.219,10533.536,9729.872)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#002079"
+         id="stop45-79" />
+      <stop
+         offset="0.995"
+         stop-color="#000f40"
+         id="stop47-2" />
+    </linearGradient>
+  </defs>
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -36,21 +54,20 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="3770"
+     inkscape:window-width="1885"
      inkscape:window-height="1536"
      id="namedview6"
      showgrid="false"
      inkscape:pagecheckerboard="true"
-     inkscape:zoom="14.75"
-     inkscape:cx="-6.1694915"
-     inkscape:cy="-3.118644"
-     inkscape:window-x="70"
+     inkscape:zoom="29.5"
+     inkscape:cx="4.7127032"
+     inkscape:cy="3.4158877"
+     inkscape:window-x="1955"
      inkscape:window-y="27"
-     inkscape:window-maximized="1"
+     inkscape:window-maximized="0"
      inkscape:current-layer="svg4" />
   <path
-     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.45816851;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="M 7.9999993,2 A 6.0000002,6.0000002 0 0 0 2.0000003,8 6.0000002,6.0000002 0 0 0 7.9999993,14 6.0000002,6.0000002 0 0 0 14,8 6.0000002,6.0000002 0 0 0 7.9999993,2 Z m 0,0.75 A 5.2500002,5.2500002 0 0 1 13.25,8 5.2500002,5.2500002 0 0 1 7.9999993,13.25 5.2500002,5.2500002 0 0 1 2.7500013,8 5.2500002,5.2500002 0 0 1 7.9999993,2.75 Z"
-     id="path820"
-     inkscape:connector-curvature="0" />
+     style="display:inline;fill:#ffffff;fill-opacity:1;stroke-width:0.06468587"
+     d="M 7.9960938 0 C 3.5793937 0 5.9211895e-16 3.58065 0 8 C -0.0059999991 12.42581 3.5793937 16 7.9960938 16 C 12.419274 16 16 12.41935 16 8 C 16 3.58065 12.419274 0 7.9960938 0 z M 7.9960938 0.5 C 12.142826 0.5 15.5 3.8568583 15.5 8 C 15.5 12.143141 12.142826 15.5 7.9960938 15.5 C 3.855437 15.5 0.494375 12.149197 0.5 8 C 0.5 3.8568583 3.8554369 0.5 7.9960938 0.5 z "
+     id="path25-1" />
 </svg>

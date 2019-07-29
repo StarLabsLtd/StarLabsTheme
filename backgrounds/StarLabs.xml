@@ -153,8 +153,98 @@
 <artist>StarLabs</artist>
 </wallpaper>
 <wallpaper deleted="false">
+<name>Star Labs Systems - Alternative</name>
+<filename>/usr/share/backgrounds/StarLabs/StarWallpaper0Alternative.png</filename>
+<options>zoom</options>
+<shade_type>solid</shade_type>
+<pcolor>#000000</pcolor>
+<scolor>#000000</scolor>
+<artist>StarLabs</artist>
+</wallpaper>
+<wallpaper deleted="false">
+<name>Star Labs Systems - Navy</name>
+<filename>/usr/share/backgrounds/StarLabs/StarWallpaper0Navy.png</filename>
+<options>zoom</options>
+<shade_type>solid</shade_type>
+<pcolor>#000000</pcolor>
+<scolor>#000000</scolor>
+<artist>StarLabs</artist>
+</wallpaper>
+<wallpaper deleted="false">
+<name>Star Labs Systems - Grey</name>
+<filename>/usr/share/backgrounds/StarLabs/StarWallpaper0Grey.png</filename>
+<options>zoom</options>
+<shade_type>solid</shade_type>
+<pcolor>#000000</pcolor>
+<scolor>#000000</scolor>
+<artist>StarLabs</artist>
+</wallpaper>
+<wallpaper deleted="false">
+<name>Star Labs Systems - Turquoise</name>
+<filename>/usr/share/backgrounds/StarLabs/StarWallpaper0Turquoise.png</filename>
+<options>zoom</options>
+<shade_type>solid</shade_type>
+<pcolor>#000000</pcolor>
+<scolor>#000000</scolor>
+<artist>StarLabs</artist>
+</wallpaper>
+<wallpaper deleted="false">
+<name>Star Labs Systems - Yellow</name>
+<filename>/usr/share/backgrounds/StarLabs/StarWallpaper0Yellow.png</filename>
+<options>zoom</options>
+<shade_type>solid</shade_type>
+<pcolor>#000000</pcolor>
+<scolor>#000000</scolor>
+<artist>StarLabs</artist>
+</wallpaper>
+<wallpaper deleted="false">
 <name>Star Labs Systems - Green</name>
 <filename>/usr/share/backgrounds/StarLabs/StarWallpaper0Green.png</filename>
+<options>zoom</options>
+<shade_type>solid</shade_type>
+<pcolor>#000000</pcolor>
+<scolor>#000000</scolor>
+<artist>StarLabs</artist>
+</wallpaper>
+<wallpaper deleted="false">
+<name>Star Labs Systems - Purple</name>
+<filename>/usr/share/backgrounds/StarLabs/StarWallpaper0Purple.png</filename>
+<options>zoom</options>
+<shade_type>solid</shade_type>
+<pcolor>#000000</pcolor>
+<scolor>#000000</scolor>
+<artist>StarLabs</artist>
+</wallpaper>
+<wallpaper deleted="false">
+<name>Star Labs Systems - Pink</name>
+<filename>/usr/share/backgrounds/StarLabs/StarWallpaper0Pink.png</filename>
+<options>zoom</options>
+<shade_type>solid</shade_type>
+<pcolor>#000000</pcolor>
+<scolor>#000000</scolor>
+<artist>StarLabs</artist>
+</wallpaper>
+<wallpaper deleted="false">
+<name>Star Labs Systems - Orange</name>
+<filename>/usr/share/backgrounds/StarLabs/StarWallpaper0Orange.png</filename>
+<options>zoom</options>
+<shade_type>solid</shade_type>
+<pcolor>#000000</pcolor>
+<scolor>#000000</scolor>
+<artist>StarLabs</artist>
+</wallpaper>
+<wallpaper deleted="false">
+<name>Star Labs Systems - Red</name>
+<filename>/usr/share/backgrounds/StarLabs/StarWallpaper0Red.png</filename>
+<options>zoom</options>
+<shade_type>solid</shade_type>
+<pcolor>#000000</pcolor>
+<scolor>#000000</scolor>
+<artist>StarLabs</artist>
+</wallpaper>
+<wallpaper deleted="false">
+<name>Star Labs Systems - OLED</name>
+<filename>/usr/share/backgrounds/StarLabs/StarWallpaper0OLED.png</filename>
 <options>zoom</options>
 <shade_type>solid</shade_type>
 <pcolor>#000000</pcolor>

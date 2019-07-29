@@ -1,0 +1,9 @@
+[X-GNOME-Metatheme]
+Name=StarLabs-Alternative
+Type=X-GNOME-Metatheme
+Comment=StarLabs StarLabs-Alternative theme
+Encoding=UTF-8
+GtkTheme=StarLabs-Alternative
+IconTheme=StarLabs
+CursorTheme=StarLabs
+CursorSize=24

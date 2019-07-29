@@ -1,0 +1,9 @@
+[X-GNOME-Metatheme]
+Name=StarLabs-Yellow
+Type=X-GNOME-Metatheme
+Comment=StarLabs StarLabs-Yellow theme
+Encoding=UTF-8
+GtkTheme=StarLabs-Yellow
+IconTheme=StarLabs
+CursorTheme=StarLabs
+CursorSize=24

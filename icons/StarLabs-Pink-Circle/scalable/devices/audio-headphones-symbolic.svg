@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="16"
+   width="16"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="audio-headphones-symbolic.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8">
+    <clipPath
+       id="SVGID_2_">
+      <use
+         xlink:href="#SVGID_1_"
+         overflow="visible"
+         id="use7"
+         style="overflow:visible"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+    </clipPath>
+    <clipPath
+       id="clipPath1024">
+      <use
+         xlink:href="#SVGID_1_"
+         overflow="visible"
+         id="use1022"
+         style="overflow:visible"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+    </clipPath>
+    <clipPath
+       id="clipPath1028">
+      <use
+         xlink:href="#SVGID_1_"
+         overflow="visible"
+         id="use1026"
+         style="overflow:visible"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+    </clipPath>
+    <clipPath
+       id="clipPath1032">
+      <use
+         xlink:href="#SVGID_1_"
+         overflow="visible"
+         id="use1030"
+         style="overflow:visible"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+    </clipPath>
+    <clipPath
+       id="clipPath1036">
+      <use
+         xlink:href="#SVGID_1_"
+         overflow="visible"
+         id="use1034"
+         style="overflow:visible"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+    </clipPath>
+    <clipPath
+       id="clipPath1040">
+      <use
+         xlink:href="#SVGID_1_"
+         overflow="visible"
+         id="use1038"
+         style="overflow:visible"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+    </clipPath>
+    <clipPath
+       id="clipPath1044">
+      <use
+         xlink:href="#SVGID_1_"
+         overflow="visible"
+         id="use1042"
+         style="overflow:visible"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+    </clipPath>
+    <clipPath
+       id="clipPath1048">
+      <use
+         xlink:href="#SVGID_1_"
+         overflow="visible"
+         id="use1046"
+         style="overflow:visible"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+    </clipPath>
+    <path
+       id="SVGID_1_"
+       d="m 1075.21,664.627 0.062,-0.648 c 0.908,-8.984 -1.733,-17.777 -7.454,-24.775 -5.716,-6.98 -13.81,-11.324 -22.788,-12.235 l -25.43,-2.553 c 0.434,-7.867 0.723,-15.743 0.723,-23.634 0,-33.385 -3.927,-66.499 -11.658,-98.648 20.171,-13.221 29.303,-39.127 20.466,-62.635 C 962.336,261.836 789.888,142.45 600.004,142.45 c -189.884,0 -362.341,119.386 -429.141,297.054 -8.831,23.502 0.304,49.408 20.478,62.629 -7.734,32.179 -11.667,65.281 -11.667,98.648 0,7.857 0.286,15.749 0.731,23.634 l -25.444,2.553 c -8.976,0.911 -17.066,5.255 -22.779,12.235 -5.719,6.998 -8.365,15.791 -7.457,24.775 l 0.07,0.648 c -50.761,17.821 -82.351,95.123 -73.231,185.786 9.126,90.681 55.483,160.228 108.789,167.564 l 0.059,0.558 c 1.754,17.396 16.469,30.41 33.595,30.41 1.12,0 2.264,-0.064 3.413,-0.171 l 116.871,-11.765 h 0.009 c 18.525,-1.868 32.1,-18.469 30.236,-37.001 L 308.849,645.45 c -1.869,-18.546 -18.468,-32.088 -37.008,-30.239 l -62.124,6.246 c -0.357,-6.906 -0.59,-13.805 -0.59,-20.678 0,-30.471 3.72,-60.662 10.652,-90.051 21.506,0.15 41.83,-12.863 49.827,-34.125 51.412,-136.775 184.186,-228.678 330.397,-228.678 146.2,0 278.984,91.902 330.395,228.678 7.685,20.454 27.525,34.199 49.364,34.199 0.159,0 0.304,-0.045 0.463,-0.045 6.93,29.371 10.641,59.543 10.641,90.021 0,6.902 -0.227,13.809 -0.578,20.678 l -62.127,-6.246 c -9.008,-0.905 -17.78,1.736 -24.774,7.451 -6.989,5.709 -11.337,13.807 -12.23,22.788 L 855.473,1000 c -0.908,8.98 1.739,17.773 7.445,24.766 5.716,6.994 13.81,11.34 22.785,12.244 h 0.006 l 116.862,11.765 c 1.149,0.106 2.284,0.171 3.422,0.171 17.123,0 31.841,-13.02 33.598,-30.41 l 0.05,-0.558 c 53.299,-7.337 99.678,-76.89 108.791,-167.564 9.134,-90.676 -22.461,-167.966 -73.222,-185.787 z"
+       inkscape:connector-curvature="0" />
+    <defs
+       id="defs3">
+      <path
+         id="path956"
+         d="m 1075.21,664.627 0.062,-0.648 c 0.908,-8.984 -1.733,-17.777 -7.454,-24.775 -5.716,-6.98 -13.81,-11.324 -22.788,-12.235 l -25.43,-2.553 c 0.434,-7.867 0.723,-15.743 0.723,-23.634 0,-33.385 -3.927,-66.499 -11.658,-98.648 20.171,-13.221 29.303,-39.127 20.466,-62.635 C 962.336,261.836 789.888,142.45 600.004,142.45 c -189.884,0 -362.341,119.386 -429.141,297.054 -8.831,23.502 0.304,49.408 20.478,62.629 -7.734,32.179 -11.667,65.281 -11.667,98.648 0,7.857 0.286,15.749 0.731,23.634 l -25.444,2.553 c -8.976,0.911 -17.066,5.255 -22.779,12.235 -5.719,6.998 -8.365,15.791 -7.457,24.775 l 0.07,0.648 c -50.761,17.821 -82.351,95.123 -73.231,185.786 9.126,90.681 55.483,160.228 108.789,167.564 l 0.059,0.558 c 1.754,17.396 16.469,30.41 33.595,30.41 1.12,0 2.264,-0.064 3.413,-0.171 l 116.871,-11.765 h 0.009 c 18.525,-1.868 32.1,-18.469 30.236,-37.001 L 308.849,645.45 c -1.869,-18.546 -18.468,-32.088 -37.008,-30.239 l -62.124,6.246 c -0.357,-6.906 -0.59,-13.805 -0.59,-20.678 0,-30.471 3.72,-60.662 10.652,-90.051 21.506,0.15 41.83,-12.863 49.827,-34.125 51.412,-136.775 184.186,-228.678 330.397,-228.678 146.2,0 278.984,91.902 330.395,228.678 7.685,20.454 27.525,34.199 49.364,34.199 0.159,0 0.304,-0.045 0.463,-0.045 6.93,29.371 10.641,59.543 10.641,90.021 0,6.902 -0.227,13.809 -0.578,20.678 l -62.127,-6.246 c -9.008,-0.905 -17.78,1.736 -24.774,7.451 -6.989,5.709 -11.337,13.807 -12.23,22.788 L 855.473,1000 c -0.908,8.98 1.739,17.773 7.445,24.766 5.716,6.994 13.81,11.34 22.785,12.244 h 0.006 l 116.862,11.765 c 1.149,0.106 2.284,0.171 3.422,0.171 17.123,0 31.841,-13.02 33.598,-30.41 l 0.05,-0.558 c 53.299,-7.337 99.678,-76.89 108.791,-167.564 9.134,-90.676 -22.461,-167.966 -73.222,-185.787 z"
+         inkscape:connector-curvature="0" />
+    </defs>
+    <clipPath
+       id="clipPath1055">
+      <use
+         xlink:href="#SVGID_1_"
+         overflow="visible"
+         id="use1053"
+         style="overflow:visible"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1539"
+     id="namedview6"
+     showgrid="false"
+     inkscape:zoom="20.85965"
+     inkscape:cx="26.264512"
+     inkscape:cy="-0.21555485"
+     inkscape:window-x="1920"
+     inkscape:window-y="27"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg4" />
+  <use
+     xlink:href="#SVGID_1_"
+     overflow="visible"
+     id="use5"
+     style="overflow:visible;fill:#808080;fill-opacity:1"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     transform="matrix(0.01454545,0,0,0.01454545,-0.72727095,-2.0719994)" />
+</svg>
