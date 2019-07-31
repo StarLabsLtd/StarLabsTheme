@@ -1298,12 +1298,12 @@
    id="namedview249"
    showgrid="false"
    inkscape:zoom="2.8284271"
-   inkscape:cx="145.45867"
-   inkscape:cy="37.055007"
+   inkscape:cx="75.101545"
+   inkscape:cy="92.03256"
    inkscape:window-x="70"
    inkscape:window-y="27"
    inkscape:window-maximized="0"
-   inkscape:current-layer="layer3"
+   inkscape:current-layer="layer2"
    inkscape:pagecheckerboard="true" />
 
 <g
@@ -1318,7 +1318,7 @@
      x="4"
      y="4"
      ry="25.455845" /><rect
-     style="display:inline;fill:#133f65;fill-opacity:1;stroke-width:1.00283897"
+     style="display:inline;opacity:0.2;fill:#ffffff;fill-opacity:1;stroke-width:1.00283897"
      id="rect1101-36"
      width="248"
      height="124"
@@ -1343,13 +1343,13 @@
    inkscape:groupmode="layer"
    id="layer2"
    inkscape:label="Circle-Background"
-   style="display:none"><circle
+   style="display:inline"><circle
      style="display:none;fill:#003059;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path1090"
      cx="128"
      cy="128"
      r="124" /><path
-     style="display:inline;fill:#133f65;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="display:inline;fill:#33597a;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="M 128,252 A 124,124 0 0 0 252,128 H 4 a 124,124 0 0 0 124,124 z"
      id="path1090-3-6"
      inkscape:connector-curvature="0" /><path
@@ -1362,7 +1362,7 @@
    inkscape:groupmode="layer"
    id="layer6"
    inkscape:label="Circle-Shadow"
-   style="display:none"
+   style="display:inline"
    sodipodi:insensitive="true"><g
      id="g2548"
      style="display:inline"
@@ -1397,4 +1397,5 @@
      x="52.230213"
      y="170.26666"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:133.33332825px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;fill-opacity:1">28</tspan></text>
+
 </g></svg>
