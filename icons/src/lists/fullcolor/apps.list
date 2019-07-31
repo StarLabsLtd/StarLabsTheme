@@ -190,10 +190,10 @@ system-file-manager.png org.gnome.Nautilus.png
 system-monitor-app.png gnome-system-monitor.png
 system-monitor-app.png org.gnome.SystemMonitor.png
 system-monitor-app.png utilities-system-monitor.png
-system-app.png gnome-control-center.png
-system-app.png org.gnome.Settings.png
-system-app.png preferences-desktop.png
-system-app.png preferences-system.png
+settings-app.png gnome-control-center.png
+settings-app.png org.gnome.Settings.png
+settings-app.png preferences-desktop.png
+settings-app.png preferences-system.png
 system-users.png config-users.png
 terminal-app.png bash.png
 terminal-app.png gnome-terminal.png
