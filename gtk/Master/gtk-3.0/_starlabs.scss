@@ -45,14 +45,14 @@ $terminal_fg_color: $white; // white;
 $terminal_borders_color: $accent1; // darken($terminal_bg_color, 10%);
 
 // Widget Colors
-$headerbar_bg_color: $dark1; // #2B2929;
-$menubar_bg_color: $dark1; // $headerbar_bg_color;
+$headerbar_bg_color: $dark2; // #2B2929;
+$menubar_bg_color: $dark2; // $headerbar_bg_color;
 $headerbar_fg_color: $white1; // $porcelain;
 $headerbar_text_color: $white1; // $silk;
 $headerbar_insensitive_color: mix($dark1, $white, 50%); // mix($headerbar_fg_color, $headerbar_bg_color, 50%);
 $headerbar_border_color: $dark1;
 //
-$backdrop_headerbar_bg_color: lighten($dark1, 5%); // lighten($headerbar_bg_color, 7%);
+$backdrop_headerbar_bg_color: lighten($dark2, 5%); // lighten($headerbar_bg_color, 7%);
 $backdrop_headerbar_fg_color: mix($white, $dark1, 70%); // mix($headerbar_fg_color, $headerbar_bg_color, 70%);
 $backdrop_headerbar_text_color: mix($white, $dark1, 70%); // mix($headerbar_text_color, $backdrop_headerbar_bg_color, 70%);
 $backdrop_headerbar_insensitive_color: mix($white, $dark1, 70%); // mix($headerbar_fg_color, $backdrop_headerbar_bg_color, 70%);

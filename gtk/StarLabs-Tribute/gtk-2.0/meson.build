@@ -1,4 +1,4 @@
-gtk2_dir = join_paths(get_option('prefix'), 'share', 'themes', 'StarLabs-Alternative-Dark', 'gtk-2.0')
+gtk2_dir = join_paths(get_option('prefix'), 'share', 'themes', 'StarLabs-Tribute', 'gtk-2.0')
 
 # static theme files to copy
 gtk2_theme_data_sources = [

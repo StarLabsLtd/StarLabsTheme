@@ -113,12 +113,12 @@ gtk3_scss_dependencies = [
 
 sassc = find_program('sassc')
 
-gtk3_dir = join_paths(get_option('prefix'), 'share', 'themes', '@VariantThemeName@', 'gtk-3.0')
+gtk3_dir = join_paths(get_option('prefix'), 'share', 'themes', 'StarLabs-Tribute-Dark', 'gtk-3.0')
 gtk3_asset_dir = join_paths(gtk3_dir, 'assets')
 
 
-custom_target('@VariantThemeName@-gtk',
-    input: '../../@LightThemeName@/gtk-3.0/gtk-dark.scss',
+custom_target('StarLabs-Tribute-Dark-gtk',
+    input: '../../StarLabs-Tribute/gtk-3.0/gtk-dark.scss',
     output: 'gtk.css',
     depend_files: files(gtk3_scss_dependencies),
     command: [sassc, '-a', '@INPUT@', '@OUTPUT@'],

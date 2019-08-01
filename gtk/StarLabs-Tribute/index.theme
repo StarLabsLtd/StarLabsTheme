@@ -1,0 +1,9 @@
+[X-GNOME-Metatheme]
+Name=StarLabs-Tribute
+Type=X-GNOME-Metatheme
+Comment=StarLabs StarLabs-Tribute theme
+Encoding=UTF-8
+GtkTheme=StarLabs-Tribute
+IconTheme=StarLabs
+CursorTheme=StarLabs
+CursorSize=24

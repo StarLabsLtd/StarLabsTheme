@@ -1,9 +1,9 @@
 [X-GNOME-Metatheme]
-Name=StarLabs-Alternative
+Name=StarLabs-Tribute-Dark
 Type=X-GNOME-Metatheme
-Comment=StarLabs StarLabs-Alternative theme
+Comment=StarLabs StarLabs-Tribute-Dark theme
 Encoding=UTF-8
-GtkTheme=StarLabs-Alternative
+GtkTheme=StarLabs-Tribute-Dark
 IconTheme=StarLabs
 CursorTheme=StarLabs
 CursorSize=24

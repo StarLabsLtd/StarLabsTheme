@@ -82,12 +82,15 @@ button.titlebutton {
 		&:backdrop {
 			background-color: $accent1;
 			color: $white;
+			&:hover, &:active {
+				background-color: $accent2;
+				color: $white;
+			}
+			&:active {
+
+			}
 		}
-		&:hover {
-			background-color: $accent3;
-			color: $white;
-		}
-		&:active {
+		&:hover, &:active {
 			background-color: $accent3;
 			color: $white;
 		}

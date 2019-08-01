@@ -113,12 +113,13 @@ gtk3_scss_dependencies = [
 
 sassc = find_program('sassc')
 
-gtk3_dir = join_paths(get_option('prefix'), 'share', 'themes', '@VariantThemeName@', 'gtk-3.0')
+gtk3_dir = join_paths(get_option('prefix'), 'share', 'themes', 'StarLabs-Tribute', 'gtk-3.0')
 gtk3_asset_dir = join_paths(gtk3_dir, 'assets')
 
-
-custom_target('@VariantThemeName@-gtk',
-    input: '../../@LightThemeName@/gtk-3.0/gtk-dark.scss',
+# generate .css files
+# and install to themes/THEMENAME/gtk-3.0
+custom_target('StarLabs-Tribute-gtk',
+    input: 'gtk.scss',
     output: 'gtk.css',
     depend_files: files(gtk3_scss_dependencies),
     command: [sassc, '-a', '@INPUT@', '@OUTPUT@'],
@@ -127,4 +128,15 @@ custom_target('@VariantThemeName@-gtk',
     install_dir: gtk3_dir,
 )
 
+custom_target('StarLabs-Tribute-gtk-rdark',
+    input: 'gtk-dark.scss',
+    output: 'gtk-dark.css',
+    depend_files: files(gtk3_scss_dependencies),
+    command: [sassc, '-a', '@INPUT@', '@OUTPUT@'],
+    build_by_default: true,
+    install: true,
+    install_dir: gtk3_dir,
+)
+
 install_data(gtk3_assets, install_dir: gtk3_asset_dir)
+
