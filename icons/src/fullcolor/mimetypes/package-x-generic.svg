@@ -1360,7 +1360,7 @@
 
 
 <rect
-   style="opacity:0.93999999;fill:#bfb172;fill-opacity:1;stroke:none;stroke-width:0.49862751;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+   style="opacity:0.93999999;fill:#0068bf;fill-opacity:1;stroke:none;stroke-width:0.49862751;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
    id="rect1285-7"
    width="119.99998"
    height="91.285698"
@@ -1370,7 +1370,7 @@
    inkscape:connector-curvature="0"
    id="path758-5"
    d="M 88.476412,76.002808 V 88.711491 H 166.51403 V 76.002808 H 88.476412"
-   style="fill:#600314;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.73980135" /><path
+   style="fill:#003059;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.73980135" /><path
    style="opacity:0.93999999;fill:#1f8fe9;fill-opacity:1;stroke:none;stroke-width:1.39725912;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
    d="M 88.476412,76.002808 V 88.711491 H 68.000007 Z"
    id="rect1333-4-5"

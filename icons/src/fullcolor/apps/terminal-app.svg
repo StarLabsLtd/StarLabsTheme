@@ -1170,7 +1170,7 @@
      height="248"
      width="248"
      id="rect1100"
-     style="display:inline;fill:#600314;fill-opacity:1;stroke-width:1.41822851" /></g><g
+     style="display:inline;fill:#003059;fill-opacity:1;stroke-width:1.41822851" /></g><g
    inkscape:groupmode="layer"
    id="layer7"
    inkscape:label="Standard-Shadow"
@@ -1183,7 +1183,7 @@
    id="layer2"
    inkscape:label="Squircle-Background"
    style="display:inline"><rect
-     style="display:inline;fill:#600314;fill-opacity:1;stroke-width:1.41822851"
+     style="display:inline;fill:#003059;fill-opacity:1;stroke-width:1.41822851"
      id="rect1101"
      width="248"
      height="248"
@@ -1202,7 +1202,7 @@
    id="layer4"
    inkscape:label="Circle-Background"
    style="display:none"><circle
-     style="fill:#600314;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:#003059;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path1090"
      cx="128"
      cy="128"

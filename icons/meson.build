@@ -209,3 +209,9 @@ strip_directory: false,
 exclude_files: ['meson.build'],
 )
 
+install_subdir('StarLabs-Tribute-Squircle',
+install_dir: icon_dir,
+strip_directory: false,
+exclude_files: ['meson.build'],
+)
+

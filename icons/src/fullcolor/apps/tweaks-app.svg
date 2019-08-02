@@ -1247,12 +1247,12 @@
        cy="128"
        cx="128"
        id="path1114-7"
-       style="fill:#f3e3a1;fill-opacity:1;stroke:#ffffff;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /><circle
+       style="fill:#2195f2;fill-opacity:1;stroke:#ffffff;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /><circle
        r="20"
        cy="78"
        cx="78"
        id="path1114"
-       style="fill:#600314;fill-opacity:1;stroke:#ffffff;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /><path
+       style="fill:#003059;fill-opacity:1;stroke:#ffffff;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /><path
        inkscape:connector-curvature="0"
        id="rect1091-6-3-5-0-6"
        d="m 48,168 c -5.54,0 -10,4.46 -10,10 0,5.54 4.46,10 10,10 h 141 v -20 z"
@@ -1261,4 +1261,4 @@
        cy="178"
        cx="178"
        id="path1114-5"
-       style="fill:#bfb172;fill-opacity:1;stroke:#ffffff;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></g></g></svg>
+       style="fill:#0068bf;fill-opacity:1;stroke:#ffffff;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></g></g></svg>
