@@ -187,14 +187,14 @@ function pointandshoot() {
 
 # rm -r output
 while read palette ; do
-
+	lowername=$(echo "$palette" | cut -d ',' -f1 | tr '[:upper:]' '[:lower:]')
 	name=$(echo "${palette^}" | cut -d ',' -f1)
 	color1=$(echo "$palette" | cut -d ',' -f2)
 	color2=$(echo "$palette" | cut -d ',' -f3)
 	color3=$(echo "$palette" | cut -d ',' -f4)
 	theme=$(echo "StarLabs"-"$name" | sed 's/-Blue//g')
-	echo -ne "\033[0KGenerating $theme $loop / $loops\\r"
 
+	echo -ne "\033[0KGenerating $theme $loop / $loops\\r"
 	# Start Backgrounds
 	if [[ "$loop" == 1 ]]; then
 		printf "backgrounds_dir = join_paths(get_option('datadir'), 'backgrounds')\ninstall_dir =join_paths(backgrounds_dir, meson.project_name())\nbackgrounds_sources = [\n]\ninstall_data(backgrounds_sources,\ninstall_dir: install_dir)\nxml_dir = join_paths(get_option('datadir'), 'gnome-background-properties')\nxml_sources = [\n'StarLabs.xml',\n]\ninstall_data(xml_sources, install_dir: xml_dir)" > "backgrounds/meson.build"
@@ -261,6 +261,16 @@ while read palette ; do
 	done
 	oldColor "icons/src/fullcolor/*/*.svg"
 	# End Icons
+	# Start Debian Package
+	if [[ "$loop" == 1 ]]; then
+		cp debian/control.in debian/control
+	fi
+	if [[ "$name" != 'Blue' ]]; then
+		printf "Package: starlabstheme-$lowername\nArchitecture: all\nDepends: \${shlibs:Depends},\n\${misc:Depends},\nDescription: Star Labs Theme.\n\n" >> debian/control
+		printf "usr/share/themes/StarLabs-$name/\nusr/share/themes/StarLabs-$name-Dark/\nusr/share/themes/StarLabs-$name-Light/\nusr/share/icons/StarLabs-$name/\nusr/share/icons/StarLabs-$name-Circle/\nusr/share/icons/StarLabs-$name-Squircle/\n" >> "debian/starlabstheme-$lowername.install"
+	fi
+	# End Debian Package
+
 
 	loop=$(( $loop + 1 ))
 done < colors.list
