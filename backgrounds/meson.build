@@ -14,6 +14,7 @@ backgrounds_sources = [
 'StarWallpaper3.jpg',
 'StarWallpaper2.jpg',
 'StarWallpaper1.jpg',
+'StarWallpaper0Tribute.png',
 'StarWallpaper0OLED.png',
 'StarWallpaper0Red.png',
 'StarWallpaper0Orange.png',
@@ -24,7 +25,6 @@ backgrounds_sources = [
 'StarWallpaper0Turquoise.png',
 'StarWallpaper0Grey.png',
 'StarWallpaper0Navy.png',
-'StarWallpaper0Alternative.png',
 'StarWallpaper0Blue.png',
 ]
 install_data(backgrounds_sources,

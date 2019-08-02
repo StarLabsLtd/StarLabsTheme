@@ -1212,7 +1212,7 @@
    id="layer1"
    inkscape:label="Icon"
    style="display:inline"><rect
-     style="opacity:0.93999999;fill:#0068bf;fill-opacity:1;stroke:none;stroke-width:0.66355842;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+     style="opacity:0.93999999;fill:#bfb172;fill-opacity:1;stroke:none;stroke-width:0.66355842;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
      id="rect1285-7"
      width="159.69234"
      height="121.48025"
@@ -1222,7 +1222,7 @@
      inkscape:connector-curvature="0"
      id="path758-5"
      d="M 75.4032,58.80371 V 75.71604 H 179.2533 V 58.80371 H 75.4032"
-     style="fill:#003059;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.98450524" /><path
+     style="fill:#600314;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.98450524" /><path
      style="opacity:0.93999999;fill:#00aff5;fill-opacity:1;stroke:none;stroke-width:1.85943019;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
      d="M 75.4032,58.80371 V 75.71604 H 48.15382 Z"
      id="rect1333-4-5"

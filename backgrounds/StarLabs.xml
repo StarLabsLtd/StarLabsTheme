@@ -153,15 +153,6 @@
 <artist>StarLabs</artist>
 </wallpaper>
 <wallpaper deleted="false">
-<name>Star Labs Systems - Alternative</name>
-<filename>/usr/share/backgrounds/StarLabs/StarWallpaper0Alternative.png</filename>
-<options>zoom</options>
-<shade_type>solid</shade_type>
-<pcolor>#000000</pcolor>
-<scolor>#000000</scolor>
-<artist>StarLabs</artist>
-</wallpaper>
-<wallpaper deleted="false">
 <name>Star Labs Systems - Navy</name>
 <filename>/usr/share/backgrounds/StarLabs/StarWallpaper0Navy.png</filename>
 <options>zoom</options>
@@ -245,6 +236,15 @@
 <wallpaper deleted="false">
 <name>Star Labs Systems - OLED</name>
 <filename>/usr/share/backgrounds/StarLabs/StarWallpaper0OLED.png</filename>
+<options>zoom</options>
+<shade_type>solid</shade_type>
+<pcolor>#000000</pcolor>
+<scolor>#000000</scolor>
+<artist>StarLabs</artist>
+</wallpaper>
+<wallpaper deleted="false">
+<name>Star Labs Systems - Tribute</name>
+<filename>/usr/share/backgrounds/StarLabs/StarWallpaper0Tribute.png</filename>
 <options>zoom</options>
 <shade_type>solid</shade_type>
 <pcolor>#000000</pcolor>

@@ -17,24 +17,6 @@ strip_directory: false,
 exclude_files: ['meson.build'],
 )
 
-install_subdir('StarLabs-Alternative',
-install_dir: icon_dir,
-strip_directory: false,
-exclude_files: ['meson.build'],
-)
-
-install_subdir('StarLabs-Alternative-Circle',
-install_dir: icon_dir,
-strip_directory: false,
-exclude_files: ['meson.build'],
-)
-
-install_subdir('StarLabs-Alternative-Squircle',
-install_dir: icon_dir,
-strip_directory: false,
-exclude_files: ['meson.build'],
-)
-
 install_subdir('StarLabs-Navy',
 install_dir: icon_dir,
 strip_directory: false,
@@ -210,6 +192,18 @@ exclude_files: ['meson.build'],
 )
 
 install_subdir('StarLabs-OLED-Squircle',
+install_dir: icon_dir,
+strip_directory: false,
+exclude_files: ['meson.build'],
+)
+
+install_subdir('StarLabs-Tribute',
+install_dir: icon_dir,
+strip_directory: false,
+exclude_files: ['meson.build'],
+)
+
+install_subdir('StarLabs-Tribute-Circle',
 install_dir: icon_dir,
 strip_directory: false,
 exclude_files: ['meson.build'],
