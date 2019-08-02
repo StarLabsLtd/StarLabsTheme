@@ -17,7 +17,7 @@
    viewBox="0 0 3840 1600"
    style="enable-background:new 0 0 3840 1600;"
    xml:space="preserve"
-   sodipodi:docname="StarWallpaper0.svg"
+   sodipodi:docname="StarWallpaper0Test.svg"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"><metadata
    id="metadata123"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
@@ -33,7 +33,7 @@
      style="stop-color:#9d8b59;stop-opacity:1"
      id="stop1142" /><stop
      offset="0.29253218"
-     style="stop-color:#0068bf;stop-opacity:1"
+     style="stop-color:#bfb172;stop-opacity:1"
      id="stop1144" /></radialGradient><radialGradient
    gradientTransform="translate(-562.35502,-3871.6481)"
    id="radialGradient1140"
@@ -42,10 +42,10 @@
    r="1924.037"
    gradientUnits="userSpaceOnUse"><stop
      offset="1.076729e-007"
-     style="stop-color:#0068bf;stop-opacity:1"
+     style="stop-color:#bfb172;stop-opacity:1"
      id="stop1136" /><stop
      offset="0.92015809"
-     style="stop-color:#2195f2;stop-opacity:1"
+     style="stop-color:#f3e3a1;stop-opacity:1"
      id="stop1138" /></radialGradient><radialGradient
    gradientUnits="userSpaceOnUse"
    r="1924.037"
@@ -54,10 +54,10 @@
    id="radialGradient1128"
    gradientTransform="translate(-562.35502,-3871.6481)"><stop
      id="stop1124"
-     style="stop-color:#0068bf;stop-opacity:1"
+     style="stop-color:#bfb172;stop-opacity:1"
      offset="1.076729e-007" /><stop
      id="stop1126"
-     style="stop-color:#2195f2;stop-opacity:1"
+     style="stop-color:#f3e3a1;stop-opacity:1"
      offset="1" /></radialGradient><radialGradient
    gradientUnits="userSpaceOnUse"
    r="1924.037"
@@ -66,10 +66,10 @@
    id="IronMan"
    gradientTransform="translate(-562.35502,-3871.6481)"><stop
      id="stop1118"
-     style="stop-color:#2195f2;stop-opacity:1"
+     style="stop-color:#f3e3a1;stop-opacity:1"
      offset="1.076729e-007" /><stop
      id="stop1120"
-     style="stop-color:#0068bf;stop-opacity:1"
+     style="stop-color:#bfb172;stop-opacity:1"
      offset="0.51164758" /></radialGradient><radialGradient
    gradientUnits="userSpaceOnUse"
    r="1924.037"
@@ -78,10 +78,10 @@
    id="radialGradient1098"
    gradientTransform="translate(-562.35502,-3871.6481)"><stop
      id="stop1094"
-     style="stop-color:#2195f2;stop-opacity:1"
+     style="stop-color:#f3e3a1;stop-opacity:1"
      offset="1" /><stop
      id="stop1096"
-     style="stop-color:#2195f2;stop-opacity:1"
+     style="stop-color:#f3e3a1;stop-opacity:1"
      offset="1" /></radialGradient><linearGradient
    y2="1605.2648"
    x2="1920"
@@ -90,7 +90,7 @@
    gradientUnits="userSpaceOnUse"
    id="linearGradient1090"><stop
      id="stop1086"
-     style="stop-color:#003059;stop-opacity:1"
+     style="stop-color:#690013;stop-opacity:1"
      offset="0" /><stop
      id="stop1088"
      style="stop-color:#000000;stop-opacity:1"
@@ -117,7 +117,7 @@
    id="radialGradient952">
 	<stop
    id="stop948"
-   style="stop-color:#003059;stop-opacity:1"
+   style="stop-color:#600314;stop-opacity:1"
    offset="1.076729e-007" />
 	<stop
    id="stop950"
@@ -134,11 +134,11 @@
    id="radialGradient1025">
 	<stop
    id="stop1021"
-   style="stop-color:#0068bf;stop-opacity:1"
+   style="stop-color:#bfb172;stop-opacity:1"
    offset="0.50617439" />
 	<stop
    id="stop1023"
-   style="stop-color:#2195f2;stop-opacity:1"
+   style="stop-color:#f3e3a1;stop-opacity:1"
    offset="0.74964613" />
 </radialGradient>
 	<linearGradient
@@ -150,11 +150,11 @@
    id="XMLID_12_">
 		<stop
    id="stop73"
-   style="stop-color:#0068bf;stop-opacity:1"
+   style="stop-color:#bfb172;stop-opacity:1"
    offset="0" />
 		<stop
    id="stop75"
-   style="stop-color:#2195f2;stop-opacity:1"
+   style="stop-color:#f3e3a1;stop-opacity:1"
    offset="1" />
 	</linearGradient>
 	
@@ -167,11 +167,11 @@
    id="XMLID_13_">
 		<stop
    id="stop79"
-   style="stop-color:#0068bf;stop-opacity:1"
+   style="stop-color:#bfb172;stop-opacity:1"
    offset="0" />
 		<stop
    id="stop81"
-   style="stop-color:#2195f2;stop-opacity:1"
+   style="stop-color:#f3e3a1;stop-opacity:1"
    offset="1" />
 	</linearGradient>
 	
@@ -257,7 +257,7 @@
    cx="1915.6217"
    id="radialGradient952-7"><stop
      id="stop948-5"
-     style="stop-color:#003059;stop-opacity:1"
+     style="stop-color:#600314;stop-opacity:1"
      offset="1.076729e-007" /><stop
      id="stop950-9"
      style="stop-color:#36000a;stop-opacity:1"
@@ -325,10 +325,10 @@
    id="namedview119"
    showgrid="false"
    inkscape:zoom="0.1185877"
-   inkscape:cx="-1847.4329"
+   inkscape:cx="-152.48479"
    inkscape:cy="-625.93207"
-   inkscape:window-x="1073"
-   inkscape:window-y="57"
+   inkscape:window-x="70"
+   inkscape:window-y="27"
    inkscape:window-maximized="0"
    inkscape:current-layer="Layer_1"
    inkscape:pagecheckerboard="true" />
@@ -375,7 +375,7 @@
    spreadMethod="pad">
 	<stop
    offset="1.076729e-007"
-   style="stop-color:#003059;stop-opacity:1"
+   style="stop-color:#600314;stop-opacity:1"
    id="stop4" />
 	<stop
    offset="1"
@@ -396,11 +396,11 @@
    y2="1607.7794">
 	<stop
    offset="0"
-   style="stop-color:#0068bf;stop-opacity:1"
+   style="stop-color:#bfb172;stop-opacity:1"
    id="stop16" />
 	<stop
    offset="1"
-   style="stop-color:#2195f2;stop-opacity:1"
+   style="stop-color:#f3e3a1;stop-opacity:1"
    id="stop18" />
 </linearGradient>
 
@@ -413,11 +413,11 @@
    y2="1613.2791">
 	<stop
    offset="0"
-   style="stop-color:#2195f2;stop-opacity:1"
+   style="stop-color:#f3e3a1;stop-opacity:1"
    id="stop22" />
 	<stop
    offset="1"
-   style="stop-color:#0068bf;stop-opacity:1"
+   style="stop-color:#bfb172;stop-opacity:1"
    id="stop24" />
 </linearGradient>
 
@@ -535,7 +535,7 @@
    y2="1605.2648">
 	<stop
    offset="0"
-   style="stop-color:#003059;stop-opacity:1"
+   style="stop-color:#690013;stop-opacity:1"
    id="stop67" />
 	<stop
    offset="1"
