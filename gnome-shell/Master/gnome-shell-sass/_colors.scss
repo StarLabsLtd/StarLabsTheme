@@ -2,9 +2,9 @@
 // it gets @if ed depending on $variant
 @import "starlabs";
 
-$base_color: if($variant == 'light', $white, $dark1);
+$base_color: if($variant == 'light', $white2, $dark2);
 $bg_color: $base_color;
-$fg_color: if($variant == 'light', $dark1, $white);
+$fg_color: if($variant == 'light', $dark1, $white1);
 $subheader_fg_color: darken($fg_color, 10%);
 $caption_fg_color: darken($fg_color, 20%);
 $text_color: darken($fg_color, 30%);
