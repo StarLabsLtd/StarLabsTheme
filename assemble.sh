@@ -196,71 +196,71 @@ while read palette ; do
 
 	echo -ne "\033[0KGenerating $theme $loop / $loops\\r"
 	# Start Backgrounds
-	if [[ "$loop" == 1 ]]; then
-		printf "backgrounds_dir = join_paths(get_option('datadir'), 'backgrounds')\ninstall_dir =join_paths(backgrounds_dir, meson.project_name())\nbackgrounds_sources = [\n]\ninstall_data(backgrounds_sources,\ninstall_dir: install_dir)\nxml_dir = join_paths(get_option('datadir'), 'gnome-background-properties')\nxml_sources = [\n'StarLabs.xml',\n]\ninstall_data(xml_sources, install_dir: xml_dir)" > "backgrounds/meson.build"
-		cat "backgrounds/master.xml" > "backgrounds/StarLabs.xml"
-	fi
-	newColor backgrounds/StarWallpaper0.svg
-	exportwallpaper
-	if [[ "$loop" -eq "$loops" ]]; then
-		for i in 1 2 3 4 5 6 7 8 9 10 11 12; do
-			sed -i "/backgrounds_sources = \[/a 'StarWallpaper$i.jpg'," backgrounds/meson.build
-		done
-		sed -i "/backgrounds_sources = \[/a 'StarWallpaper0.png'," backgrounds/meson.build
-		echo "</wallpapers>" >> "backgrounds/StarLabs.xml"
-	fi
-	oldColor backgrounds/StarWallpaper0.svg
-	# End Backgrounds
-
-
-	# Start GTK
-	if [[ "$loop" == 1 ]]; then
-		rm -r gtk/StarLab*
-		rm gtk/meson.build
-	fi
-	creategtk
-	newColor "gtk/$theme/gtk-3.0/gtk.scss"
-	newColor "gtk/$theme/gtk-3.0/gtk-dark.scss"
-	# End GTK
-
-
-	# Start Gnome
-	if [[ "$loop" == 1 ]]; then
-		rm -r gnome-shell/StarLab*
-		rm gnome-shell/meson.build
-	fi
-	creategnome
-	newColor "gnome-shell/$theme/gnome-shell.scss"
-	# End Gnome
-	# Start Cursors
-	if [[ "$loop" == 1 ]]; then
-		rm -r icons/StarLab*
-		printf "icon_dir = join_paths(get_option('prefix'), 'share/icons')\n" > icons/meson.build
-	fi
-	newColor icons/cursors/cursors.svg
-	pointandshoot
-	oldColor icons/cursors/cursors.svg
-	# End Cursors
-
-	# Start Icons
-	newColor "icons/src/fullcolor/*/*.svg"
-	for shape in Standard Circle Squircle; do
-		dir=$( echo "$theme"-"$shape" | sed 's/-Standard//g')
-		shapetastic "$shape"
-		renderIcon "$dir"
-		if [[ "$shape" == Circle ]]; then
-			printf "install_subdir('$dir',\ninstall_dir: icon_dir,\nstrip_directory: false,\nexclude_files: ['meson.build'],\n)\n\n" >> icons/meson.build
-			cp icons/src/circle.svg "icons/$dir/scalable/actions/view-app-grid-symbolic.svg"
-		elif [[ "$shape" == Squircle ]]; then
-			printf "install_subdir('$dir',\ninstall_dir: icon_dir,\nstrip_directory: false,\nexclude_files: ['meson.build'],\n)\n\n" >> icons/meson.build
-			cp icons/src/squircle.svg "icons/$dir/scalable/actions/view-app-grid-symbolic.svg"
-		fi
-		symlink "$dir"
-
-#		echo -ne "\033[0KGenerating $theme $loop / $loops for variant $shape\\r"
-	done
-	oldColor "icons/src/fullcolor/*/*.svg"
-	# End Icons
+#	if [[ "$loop" == 1 ]]; then
+#		printf "backgrounds_dir = join_paths(get_option('datadir'), 'backgrounds')\ninstall_dir =join_paths(backgrounds_dir, meson.project_name())\nbackgrounds_sources = [\n]\ninstall_data(backgrounds_sources,\ninstall_dir: install_dir)\nxml_dir = join_paths(get_option('datadir'), 'gnome-background-properties')\nxml_sources = [\n'StarLabs.xml',\n]\ninstall_data(xml_sources, install_dir: xml_dir)" > "backgrounds/meson.build"
+#		cat "backgrounds/master.xml" > "backgrounds/StarLabs.xml"
+#	fi
+#	newColor backgrounds/StarWallpaper0.svg
+#	exportwallpaper
+#	if [[ "$loop" -eq "$loops" ]]; then
+#		for i in 1 2 3 4 5 6 7 8 9 10 11 12; do
+#			sed -i "/backgrounds_sources = \[/a 'StarWallpaper$i.jpg'," backgrounds/meson.build
+#		done
+#		sed -i "/backgrounds_sources = \[/a 'StarWallpaper0.png'," backgrounds/meson.build
+#		echo "</wallpapers>" >> "backgrounds/StarLabs.xml"
+#	fi
+#	oldColor backgrounds/StarWallpaper0.svg
+#	# End Backgrounds
+#
+#
+#	# Start GTK
+#	if [[ "$loop" == 1 ]]; then
+#		rm -r gtk/StarLab*
+#		rm gtk/meson.build
+#	fi
+#	creategtk
+#	newColor "gtk/$theme/gtk-3.0/gtk.scss"
+#	newColor "gtk/$theme/gtk-3.0/gtk-dark.scss"
+#	# End GTK
+#
+#
+#	# Start Gnome
+#	if [[ "$loop" == 1 ]]; then
+#		rm -r gnome-shell/StarLab*
+#		rm gnome-shell/meson.build
+#	fi
+#	creategnome
+#	newColor "gnome-shell/$theme/gnome-shell.scss"
+#	# End Gnome
+#	# Start Cursors
+#	if [[ "$loop" == 1 ]]; then
+#		rm -r icons/StarLab*
+#		printf "icon_dir = join_paths(get_option('prefix'), 'share/icons')\n" > icons/meson.build
+#	fi
+#	newColor icons/cursors/cursors.svg
+#	pointandshoot
+#	oldColor icons/cursors/cursors.svg
+#	# End Cursors
+#
+#	# Start Icons
+#	newColor "icons/src/fullcolor/*/*.svg"
+#	for shape in Standard Circle Squircle; do
+#		dir=$( echo "$theme"-"$shape" | sed 's/-Standard//g')
+#		shapetastic "$shape"
+#		renderIcon "$dir"
+#		if [[ "$shape" == Circle ]]; then
+#			printf "install_subdir('$dir',\ninstall_dir: icon_dir,\nstrip_directory: false,\nexclude_files: ['meson.build'],\n)\n\n" >> icons/meson.build
+#			cp icons/src/circle.svg "icons/$dir/scalable/actions/view-app-grid-symbolic.svg"
+#		elif [[ "$shape" == Squircle ]]; then
+#			printf "install_subdir('$dir',\ninstall_dir: icon_dir,\nstrip_directory: false,\nexclude_files: ['meson.build'],\n)\n\n" >> icons/meson.build
+#			cp icons/src/squircle.svg "icons/$dir/scalable/actions/view-app-grid-symbolic.svg"
+#		fi
+#		symlink "$dir"
+#
+##		echo -ne "\033[0KGenerating $theme $loop / $loops for variant $shape\\r"
+#	done
+#	oldColor "icons/src/fullcolor/*/*.svg"
+#	# End Icons
 	# Start Debian Package
 	if [[ "$loop" == 1 ]]; then
 		cp debian/control.in debian/control
