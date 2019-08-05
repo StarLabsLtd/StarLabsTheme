@@ -1,3 +1,15 @@
+starlabstheme-master (0.0.81) disco; urgency=medium
+
+  * Version bump
+
+ -- Sean Rhodes <sean@starlabs.systems>  Mon, 05 Aug 2019 09:17:45 +0100
+
+starlabstheme-master (0.0.73) disco; urgency=medium
+
+  * Tweaked colors
+
+ -- Sean Rhodes <sean@starlabs.systems>  Mon, 05 Aug 2019 08:49:39 +0100
+
 starlabstheme-master (0.0.72) disco; urgency=medium
 
   * Added opera icon
