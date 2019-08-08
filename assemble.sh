@@ -184,6 +184,25 @@ function pointandshoot() {
 	done < icons/cursors/cursorList
 }
 
+clear
+echo '  _____ _             _           _'
+echo ' /  ___| |           | |         | |'
+echo ' \ `--.| |_ __ _ _ __| |     __ _| |__  ___'
+echo '  `--. \ __/ _` | '"'"'__| |    / _` | '"'"'_ \/ __|'
+echo ' /\__/ / || (_| | |  | |___| (_| | |_) \__ \'
+echo ' \____/ \__\__,_|_|  \_____/\__,_|_.__/|___/'
+echo
+echo '*************** Icon Renderer **************'
+echo
+echo "Which components would you like to assemble?"
+select component in "All" "Backgrounds" "GTK" "Gnome" "Cursors" "Icons" "Debian"
+do
+	if [[ $component == "All" ]]; then
+		component="Backgrounds GTK Gnome Cursors Icons Debian"
+	fi
+	echo $component
+	break
+done
 
 # rm -r output
 while read palette ; do
@@ -196,78 +215,88 @@ while read palette ; do
 
 	echo -ne "\033[0KGenerating $theme $loop / $loops\\r"
 	# Start Backgrounds
-	if [[ "$loop" == 1 ]]; then
-		printf "backgrounds_dir = join_paths(get_option('datadir'), 'backgrounds')\ninstall_dir =join_paths(backgrounds_dir, meson.project_name())\nbackgrounds_sources = [\n]\ninstall_data(backgrounds_sources,\ninstall_dir: install_dir)\nxml_dir = join_paths(get_option('datadir'), 'gnome-background-properties')\nxml_sources = [\n'StarLabs.xml',\n]\ninstall_data(xml_sources, install_dir: xml_dir)" > "backgrounds/meson.build"
-		cat "backgrounds/master.xml" > "backgrounds/StarLabs.xml"
+	if [[ "$component" == *"Backgrounds"* ]]; then
+		if [[ "$loop" == 1 ]]; then
+			printf "backgrounds_dir = join_paths(get_option('datadir'), 'backgrounds')\ninstall_dir =join_paths(backgrounds_dir, meson.project_name())\nbackgrounds_sources = [\n]\ninstall_data(backgrounds_sources,\ninstall_dir: install_dir)\nxml_dir = join_paths(get_option('datadir'), 'gnome-background-properties')\nxml_sources = [\n'StarLabs.xml',\n]\ninstall_data(xml_sources, install_dir: xml_dir)" > "backgrounds/meson.build"
+			cat "backgrounds/master.xml" > "backgrounds/StarLabs.xml"
+		fi
+		newColor backgrounds/StarWallpaper0.svg
+		exportwallpaper
+		if [[ "$loop" -eq "$loops" ]]; then
+			for i in 1 2 3 4 5 6 7 8 9 10 11 12; do
+				sed -i "/backgrounds_sources = \[/a 'StarWallpaper$i.jpg'," backgrounds/meson.build
+			done
+			sed -i "/backgrounds_sources = \[/a 'StarWallpaper0.png'," backgrounds/meson.build
+			echo "</wallpapers>" >> "backgrounds/StarLabs.xml"
+		fi
+		oldColor backgrounds/StarWallpaper0.svg
 	fi
-	newColor backgrounds/StarWallpaper0.svg
-	exportwallpaper
-	if [[ "$loop" -eq "$loops" ]]; then
-		for i in 1 2 3 4 5 6 7 8 9 10 11 12; do
-			sed -i "/backgrounds_sources = \[/a 'StarWallpaper$i.jpg'," backgrounds/meson.build
-		done
-		sed -i "/backgrounds_sources = \[/a 'StarWallpaper0.png'," backgrounds/meson.build
-		echo "</wallpapers>" >> "backgrounds/StarLabs.xml"
-	fi
-	oldColor backgrounds/StarWallpaper0.svg
 	# End Backgrounds
 
-
 	# Start GTK
-	if [[ "$loop" == 1 ]]; then
-		rm -r gtk/StarLab*
-		rm gtk/meson.build
+	if [[ "$component" == *"GTK"* ]]; then
+		if [[ "$loop" == 1 ]]; then
+			rm -r gtk/StarLab*
+			rm gtk/meson.build
+		fi
+		creategtk
+		newColor "gtk/$theme/gtk-3.0/gtk.scss"
+		newColor "gtk/$theme/gtk-3.0/gtk-dark.scss"
 	fi
-	creategtk
-	newColor "gtk/$theme/gtk-3.0/gtk.scss"
-	newColor "gtk/$theme/gtk-3.0/gtk-dark.scss"
 	# End GTK
 
 
 	# Start Gnome
-	if [[ "$loop" == 1 ]]; then
-		rm -r gnome-shell/StarLab*
-		rm gnome-shell/meson.build
+	if [[ "$component" == *"Gnome"* ]]; then
+		if [[ "$loop" == 1 ]]; then
+			rm -r gnome-shell/StarLab*
+			rm gnome-shell/meson.build
+		fi
+		creategnome
+		newColor "gnome-shell/$theme/gnome-shell.scss"
 	fi
-	creategnome
-	newColor "gnome-shell/$theme/gnome-shell.scss"
 	# End Gnome
+
 	# Start Cursors
-	if [[ "$loop" == 1 ]]; then
-		rm -r icons/StarLab*
-		printf "icon_dir = join_paths(get_option('prefix'), 'share/icons')\n" > icons/meson.build
+	if [[ "$component" == *"Cursors"* ]]; then
+		if [[ "$loop" == 1 ]]; then
+			rm -r icons/StarLab*
+			printf "icon_dir = join_paths(get_option('prefix'), 'share/icons')\n" > icons/meson.build
+		fi
+		newColor icons/cursors/cursors.svg
+		pointandshoot
+		oldColor icons/cursors/cursors.svg
 	fi
-	newColor icons/cursors/cursors.svg
-	pointandshoot
-	oldColor icons/cursors/cursors.svg
 	# End Cursors
 
 	# Start Icons
-	newColor "icons/src/fullcolor/*/*.svg"
-	for shape in Standard Circle Squircle; do
-		dir=$( echo "$theme"-"$shape" | sed 's/-Standard//g')
-		shapetastic "$shape"
-		renderIcon "$dir"
-		if [[ "$shape" == Circle ]]; then
-			printf "install_subdir('$dir',\ninstall_dir: icon_dir,\nstrip_directory: false,\nexclude_files: ['meson.build'],\n)\n\n" >> icons/meson.build
-			cp icons/src/circle.svg "icons/$dir/scalable/actions/view-app-grid-symbolic.svg"
-		elif [[ "$shape" == Squircle ]]; then
-			printf "install_subdir('$dir',\ninstall_dir: icon_dir,\nstrip_directory: false,\nexclude_files: ['meson.build'],\n)\n\n" >> icons/meson.build
-			cp icons/src/squircle.svg "icons/$dir/scalable/actions/view-app-grid-symbolic.svg"
-		fi
-		symlink "$dir"
-
-#		echo -ne "\033[0KGenerating $theme $loop / $loops for variant $shape\\r"
-	done
-	oldColor "icons/src/fullcolor/*/*.svg"
+	if [[ "$component" == *"Icons"* ]]; then
+		newColor "icons/src/fullcolor/*/*.svg"
+		for shape in Standard Circle Squircle; do
+			dir=$( echo "$theme"-"$shape" | sed 's/-Standard//g')
+			shapetastic "$shape"
+			renderIcon "$dir"
+			if [[ "$shape" == Circle ]]; then
+				printf "install_subdir('$dir',\ninstall_dir: icon_dir,\nstrip_directory: false,\nexclude_files: ['meson.build'],\n)\n\n" >> icons/meson.build
+				cp icons/src/circle.svg "icons/$dir/scalable/actions/view-app-grid-symbolic.svg"
+			elif [[ "$shape" == Squircle ]]; then
+				printf "install_subdir('$dir',\ninstall_dir: icon_dir,\nstrip_directory: false,\nexclude_files: ['meson.build'],\n)\n\n" >> icons/meson.build
+				cp icons/src/squircle.svg "icons/$dir/scalable/actions/view-app-grid-symbolic.svg"
+			fi
+			symlink "$dir"
+		done
+		oldColor "icons/src/fullcolor/*/*.svg"
+	fi
 	# End Icons
 	# Start Debian Package
-	if [[ "$loop" == 1 ]]; then
-		cp debian/control.in debian/control
-	fi
-	if [[ "$name" != 'Blue' ]]; then
-		printf "Package: starlabstheme-$lowername\nArchitecture: all\nDepends: \${shlibs:Depends},\n\${misc:Depends},\nDescription: Star Labs Theme.\n\n" >> debian/control
-		printf "usr/share/themes/StarLabs-$name/\nusr/share/themes/StarLabs-$name-Dark/\nusr/share/themes/StarLabs-$name-Light/\nusr/share/icons/StarLabs-$name/\nusr/share/icons/StarLabs-$name-Circle/\nusr/share/icons/StarLabs-$name-Squircle/\n" > "debian/starlabstheme-$lowername.install"
+	if [[ "$component" == *"Debian"* ]]; then
+		if [[ "$loop" == 1 ]]; then
+			cp debian/control.in debian/control
+		fi
+		if [[ "$name" != 'Blue' ]]; then
+			printf "Package: starlabstheme-$lowername\nArchitecture: all\nDepends: \${shlibs:Depends},\n\${misc:Depends},\nDescription: Star Labs Theme.\n\n" >> debian/control
+			printf "usr/share/themes/StarLabs-$name/\nusr/share/themes/StarLabs-$name-Dark/\nusr/share/themes/StarLabs-$name-Light/\nusr/share/icons/StarLabs-$name/\nusr/share/icons/StarLabs-$name-Circle/\nusr/share/icons/StarLabs-$name-Squircle/\n" > "debian/starlabstheme-$lowername.install"
+		fi
 	fi
 	# End Debian Package
 
