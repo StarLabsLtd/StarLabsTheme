@@ -267,7 +267,7 @@ while read palette ; do
 	fi
 	if [[ "$name" != 'Blue' ]]; then
 		printf "Package: starlabstheme-$lowername\nArchitecture: all\nDepends: \${shlibs:Depends},\n\${misc:Depends},\nDescription: Star Labs Theme.\n\n" >> debian/control
-		printf "usr/share/themes/StarLabs-$name/\nusr/share/themes/StarLabs-$name-Dark/\nusr/share/themes/StarLabs-$name-Light/\nusr/share/icons/StarLabs-$name/\nusr/share/icons/StarLabs-$name-Circle/\nusr/share/icons/StarLabs-$name-Squircle/\n" >> "debian/starlabstheme-$lowername.install"
+		printf "usr/share/themes/StarLabs-$name/\nusr/share/themes/StarLabs-$name-Dark/\nusr/share/themes/StarLabs-$name-Light/\nusr/share/icons/StarLabs-$name/\nusr/share/icons/StarLabs-$name-Circle/\nusr/share/icons/StarLabs-$name-Squircle/\n" > "debian/starlabstheme-$lowername.install"
 	fi
 	# End Debian Package
 
