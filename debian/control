@@ -97,6 +97,66 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
 Description: Star Labs Theme.
 
+Package: starlabstheme-navy
+Architecture: all
+Depends: ${shlibs:Depends},
+${misc:Depends},
+Description: Star Labs Theme.
+
+Package: starlabstheme-grey
+Architecture: all
+Depends: ${shlibs:Depends},
+${misc:Depends},
+Description: Star Labs Theme.
+
+Package: starlabstheme-turquoise
+Architecture: all
+Depends: ${shlibs:Depends},
+${misc:Depends},
+Description: Star Labs Theme.
+
+Package: starlabstheme-yellow
+Architecture: all
+Depends: ${shlibs:Depends},
+${misc:Depends},
+Description: Star Labs Theme.
+
+Package: starlabstheme-green
+Architecture: all
+Depends: ${shlibs:Depends},
+${misc:Depends},
+Description: Star Labs Theme.
+
+Package: starlabstheme-purple
+Architecture: all
+Depends: ${shlibs:Depends},
+${misc:Depends},
+Description: Star Labs Theme.
+
+Package: starlabstheme-pink
+Architecture: all
+Depends: ${shlibs:Depends},
+${misc:Depends},
+Description: Star Labs Theme.
+
+Package: starlabstheme-orange
+Architecture: all
+Depends: ${shlibs:Depends},
+${misc:Depends},
+Description: Star Labs Theme.
+
+Package: starlabstheme-red
+Architecture: all
+Depends: ${shlibs:Depends},
+${misc:Depends},
+Description: Star Labs Theme.
+
+Package: starlabstheme-oled
+Architecture: all
+Depends: ${shlibs:Depends},
+${misc:Depends},
+Description: Star Labs Theme.
+
 Package: starlabstheme-tribute
 Architecture: all
 Depends: ${shlibs:Depends},
