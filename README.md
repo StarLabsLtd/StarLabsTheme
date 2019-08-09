@@ -20,11 +20,6 @@ Includes:
 
 ![Session](Screenshots/Session.png)
 
-# This theme is now pushed to stable.
-We still have a lot of work to do: more icons to add, bugs to squash and many tweaks. Please let us know what you think or if you find a bug!
-
-We are all ears :)
-
 # How to install
 ## Ubuntu and Debian based distributions
 ##### Install
