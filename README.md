@@ -64,6 +64,56 @@ From the dropdown menu, select 'StarLabs' from the session list.
 
 Next, enter your password and proceed to login as normal.
 
+## Using a different colour
+
+StarLabsTheme now includes various colour schemes:
+#### Navy
+![Navy](backgrounds/StarWallpaper0Navy.png)
+#### Grey
+![Grey](backgrounds/StarWallpaper0Grey.png)
+#### Turquoise
+![Turquoise](backgrounds/StarWallpaper0Turquoise.png)
+#### Yellow
+![Yellow](backgrounds/StarWallpaper0Yellow.png)
+#### Green
+![Green](backgrounds/StarWallpaper0Green.png)
+#### Purple
+![Purple](backgrounds/StarWallpaper0Purple.png)
+#### Pink
+![Pink](backgrounds/StarWallpaper0Pink.png)
+#### Orange
+![Orange](backgrounds/StarWallpaper0Orange.png)
+#### Red
+![Red](backgrounds/StarWallpaper0Red.png)
+#### OLED
+![oLED](backgrounds/StarWallpaper0OLED.png)
+#### Tribute
+![Tribute](backgrounds/StarWallpaper0Tribute.png)
+
+If you installed StarLabsTheme from source using meson, you will have these variants. To install using the ppa, please use:
+```
+sudo apt install starlabstheme-navy
+sudo apt install starlabstheme-grey
+sudo apt install starlabstheme-turquoise
+sudo apt install starlabstheme-yellow
+sudo apt install starlabstheme-green
+sudo apt install starlabstheme-purple
+sudo apt install starlabstheme-pink
+sudo apt install starlabstheme-orange
+sudo apt install starlabstheme-red
+sudo apt install starlabstheme-oled
+sudo apt install starlabstheme-tribute
+
+```
+
+You can select different colours using the Gnome Tweak Tool. Or from a terminal, using:
+```
+gsettings set org.gnome.desktop.interface icon-theme 'StarLabs-Green'
+gsettings set org.gnome.desktop.interface cursor-theme 'StarLabs-Green'
+gsettings set org.gnome.desktop.interface gtk-theme 'StarLabs-Green'
+```
+
+
 ## Copying or Reusing
 
 This project has mixed licencing. You are free to copy, redistribute and/or modify aspects of this work under the terms of each licence accordingly (unless otherwise specified).
