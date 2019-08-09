@@ -106,7 +106,10 @@ sudo apt install starlabstheme-tribute
 
 ```
 
-You can select different colours using the Gnome Tweak Tool. Or from a terminal, using:
+You can select different colours using the Gnome Tweak Tool:
+![Tweaks](Screenshots/Tweaks.png)
+
+Alternatively, from a terminal, using:
 ```
 gsettings set org.gnome.desktop.interface icon-theme 'StarLabs-Green'
 gsettings set org.gnome.desktop.interface cursor-theme 'StarLabs-Green'
