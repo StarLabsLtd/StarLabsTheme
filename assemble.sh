@@ -221,6 +221,7 @@ while read palette ; do
 			cat "backgrounds/master.xml" > "backgrounds/StarLabs.xml"
 		fi
 		newColor backgrounds/StarWallpaper0.svg
+		cp backgrounds/StarWallpaper0.svg ../$theme.svg
 		exportwallpaper
 		if [[ "$loop" -eq "$loops" ]]; then
 			for i in 1 2 3 4 5 6 7 8 9 10 11 12; do
