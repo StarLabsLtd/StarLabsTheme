@@ -5,13 +5,13 @@ $cakeisalie: "This stylesheet is generated, DO NOT EDIT";
 /* #{$cakeisalie} */
 $panel-corner-radius: 0;
 
-$panel-alpha-value: 0.6;
+$panel-alpha-value: 0.2;
 $panel_opaque_value: 0.0;
 
-$dash-alpha-value: 0.6;
+$dash-alpha-value: 0.2;
 $dash-opaque-alpha-value: 0.0;
 
-$popover-alpha-value: 0.025;
+$popover-alpha-value: 0.2;
 
 $small_radius: 4px;
 $medium_radius: 6px;
@@ -817,8 +817,8 @@ StScrollBar {
 
 #panel {
   $_fg: darken($panel_fg_color, 5%);
-  background-color: $panel_bg_color;
-  font-weight: 450;
+  background-color: transparentize($dash_bg_color, $dash-alpha-value);
+  font-weight: 400;
   height: 1.86em;
   font-feature-settings: "tnum";
 
