@@ -1,3 +1,9 @@
+starlabstheme-master (0.0.98) eoan; urgency=medium
+
+  * Updated for eoan compatibility
+
+ -- Sean Rhodes <sean@starlabs.systems>  Thu, 26 Sep 2019 13:56:11 +0100
+
 starlabstheme-master (0.0.92) disco; urgency=medium
 
   * Adjusted colors
