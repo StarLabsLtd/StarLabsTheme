@@ -271,21 +271,21 @@ while read palette ; do
 
 	# Start Icons
 	if [[ "$component" == *"Icons"* ]]; then
-		newColor "icons/src/fullcolor/*/*.svg"
+#		newColor "icons/src/fullcolor/*/*.svg"
 		for shape in Standard Circle Squircle; do
 			dir=$( echo "$theme"-"$shape" | sed 's/-Standard//g')
-			shapetastic "$shape"
-			renderIcon "$dir"
-			if [[ "$shape" == Circle ]]; then
-				printf "install_subdir('$dir',\ninstall_dir: icon_dir,\nstrip_directory: false,\nexclude_files: ['meson.build'],\n)\n\n" >> icons/meson.build
-				cp icons/src/circle.svg "icons/$dir/scalable/actions/view-app-grid-symbolic.svg"
-			elif [[ "$shape" == Squircle ]]; then
-				printf "install_subdir('$dir',\ninstall_dir: icon_dir,\nstrip_directory: false,\nexclude_files: ['meson.build'],\n)\n\n" >> icons/meson.build
-				cp icons/src/squircle.svg "icons/$dir/scalable/actions/view-app-grid-symbolic.svg"
-			fi
+#			shapetastic "$shape"
+#			renderIcon "$dir"
+#			if [[ "$shape" == Circle ]]; then
+#				printf "install_subdir('$dir',\ninstall_dir: icon_dir,\nstrip_directory: false,\nexclude_files: ['meson.build'],\n)\n\n" >> icons/meson.build
+#				cp icons/src/circle.svg "icons/$dir/scalable/actions/view-app-grid-symbolic.svg"
+#			elif [[ "$shape" == Squircle ]]; then
+#				printf "install_subdir('$dir',\ninstall_dir: icon_dir,\nstrip_directory: false,\nexclude_files: ['meson.build'],\n)\n\n" >> icons/meson.build
+#				cp icons/src/squircle.svg "icons/$dir/scalable/actions/view-app-grid-symbolic.svg"
+#			fi
 			symlink "$dir"
 		done
-		oldColor "icons/src/fullcolor/*/*.svg"
+#		oldColor "icons/src/fullcolor/*/*.svg"
 	fi
 	# End Icons
 	# Start Debian Package
