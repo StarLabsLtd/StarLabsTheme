@@ -36,3 +36,6 @@ style='capslock'
 custom-theme-running-dots-color='#0068bf'
 custom-theme-running-dots-border-color='#0068bf'
 background-opacity=0.8
+
+[org.gnome.desktop.peripherals.touchpad]
+click-method="areas"
