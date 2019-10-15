@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -e
+
+if [[ -L /usr/share/themes/StarLabs-Dark/gtk-3.0/assets/ ]]; then
+	find /usr/share/themes/StarLabs-Dark/gtk-3.0/ -type l -delete
+fi
+
+exit 0

@@ -1,20 +1,44 @@
-starlabstheme-master (1.0.0) eoan; urgency=medium
+starlabstheme-master (0.0.99.5) disco; urgency=medium
 
-  * Finalised
+  * New animation for plymouth
 
- -- Sean Rhodes <sean@starlabs.systems>  Thu, 03 Oct 2019 11:19:43 +0100
+ -- Sean Rhodes <sean@starlabs.systems>  Tue, 15 Oct 2019 09:16:54 +0100
 
-starlabstheme-master (0.0.99) eoan; urgency=medium
+starlabstheme-master (0.0.99.4) disco; urgency=medium
 
-  * Updated plymouth theme
+  * Tweaked session creation
 
- -- Sean Rhodes <sean@starlabs.systems>  Fri, 27 Sep 2019 09:03:02 +0100
+ -- Sean Rhodes <sean@starlabs.systems>  Mon, 14 Oct 2019 14:24:02 +0100
 
-starlabstheme-master (0.0.98) eoan; urgency=medium
+starlabstheme-master (0.0.99.3) eoan; urgency=medium
 
-  * Updated for eoan compatibility
+  * Updated for eoan
 
- -- Sean Rhodes <sean@starlabs.systems>  Thu, 26 Sep 2019 13:56:11 +0100
+ -- Sean Rhodes <sean@starlabs.systems>  Wed, 09 Oct 2019 14:03:59 +0100
+
+starlabstheme-master (0.0.96) disco; urgency=medium
+
+  * Added if exists to pre-install
+
+ -- Sean Rhodes <sean@starlabs.systems>  Tue, 13 Aug 2019 10:19:28 +0100
+
+starlabstheme-master (0.0.95) disco; urgency=medium
+
+  * Added preinst to solve issue with StarLabs-Dark asset dir
+
+ -- Sean Rhodes <sean@starlabs.systems>  Mon, 12 Aug 2019 19:23:01 +0100
+
+starlabstheme-master (0.0.94) disco; urgency=medium
+
+  * Potential fix for #11
+
+ -- Sean Rhodes <sean@starlabs.systems>  Mon, 12 Aug 2019 14:14:34 +0100
+
+starlabstheme-master (0.0.93) disco; urgency=medium
+
+  * Removed colours from main debian package
+
+ -- Sean Rhodes <sean@starlabs.systems>  Fri, 09 Aug 2019 10:17:34 +0100
 
 starlabstheme-master (0.0.92) disco; urgency=medium
 

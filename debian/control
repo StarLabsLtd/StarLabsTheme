@@ -78,9 +78,9 @@ Provides: starlabs-cursor-theme
 
 Package: starlabstheme-plymouth
 Architecture: all
-Depends: plymouth-themes,
-         ${shlibs:Depends},
+Depends: ${shlibs:Depends},
          ${misc:Depends},
+         plymouth-themes
 Description: Star Labs Theme.
 Replaces: starlabs-plymouth (<< 2.0.2)
 Breaks: starlabs-plymouth (<< 2.0.2)

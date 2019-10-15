@@ -9,46 +9,39 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="21"
-   height="10"
-   id="svg2"
+   width="18"
+   height="18"
+   id="svg4703"
    version="1.1"
-   inkscape:version="0.48.0 r9654"
-   sodipodi:docname="source-button-border.svg">
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="page-indicator-pushed.svg">
   <defs
-     id="defs4" />
+     id="defs4705" />
   <sodipodi:namedview
      id="base"
-     pagecolor="#000000"
+     pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0"
+     inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="44.8"
-     inkscape:cx="8.704132"
-     inkscape:cy="5.7029946"
-     inkscape:document-units="px"
+     inkscape:zoom="31.392433"
+     inkscape:cx="1.0245308"
+     inkscape:cy="13.3715"
      inkscape:current-layer="layer1"
      showgrid="true"
-     showguides="true"
-     inkscape:guide-bbox="true"
-     inkscape:window-width="1600"
-     inkscape:window-height="1145"
+     inkscape:grid-bbox="true"
+     inkscape:document-units="px"
+     inkscape:window-width="2560"
+     inkscape:window-height="1374"
      inkscape:window-x="0"
-     inkscape:window-y="26"
-     inkscape:window-maximized="1"
-     guidetolerance="10000"
-     objecttolerance="10000">
+     inkscape:window-y="27"
+     inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
-       id="grid3792"
-       empspacing="10"
-       visible="true"
-       enabled="true"
-       snapvisiblegridlinesonly="true" />
+       id="grid6140" />
   </sodipodi:namedview>
   <metadata
-     id="metadata7">
+     id="metadata4708">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -60,15 +53,19 @@
     </rdf:RDF>
   </metadata>
   <g
+     id="layer1"
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
-    <rect
-       style="opacity:0.8;fill:#ffffff;fill-opacity:1;stroke-width:0.43599999;stroke-miterlimit:4;stroke-dasharray:none"
-       id="rect3796"
-       width="19"
-       height="2"
-       x="1"
-       y="8" />
+     transform="translate(0,2)">
+    <path
+       transform="matrix(0.54617904,0,0,0.62523128,-1131.9904,-392.39214)"
+       d="m 2099.9808,638.83099 a 10.985409,9.5964489 0 1 1 -21.9708,0 10.985409,9.5964489 0 1 1 21.9708,0 z"
+       sodipodi:ry="9.5964489"
+       sodipodi:rx="10.985409"
+       sodipodi:cy="638.83099"
+       sodipodi:cx="2088.9954"
+       id="path4711"
+       style="fill:#fdffff;fill-opacity:1;stroke:none"
+       sodipodi:type="arc" />
   </g>
 </svg>

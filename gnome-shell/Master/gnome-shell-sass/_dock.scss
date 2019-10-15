@@ -4,7 +4,7 @@
   // Shrink the dash by reducing padding and border radius
   &.shrink #dash,
   &.dashtodock #dash {
-    border: 1px;
+    border: 0px;
     padding: 0px;
   }
 
@@ -96,7 +96,7 @@
     }
 
     #dash {
-      background: #2e3436;
+      background: $bg-transparent;
     }
   }
 
@@ -104,16 +104,16 @@
     /* Temporary reduce traslucency, see https://gitlab.gnome.org/GNOME/gnome-shell/merge_requests/376
      * background-color: transparentize($dash_bg_color, $dash-opaque-alpha-value);
      * transition-duration: 500ms; */
-    background-color: $dash_bg_color;
-    border-color: rgba(0, 0, 0, 0.4);
+    background-color: $bg-transparent;
+    border-color: $bg-transparent;
   }
 
   &.transparent {
     /* Temporary traslucency under overview state only. See https://gitlab.gnome.org/GNOME/gnome-shell/merge_requests/376
      * background-color: transparentize($dash_bg_color, $dash-alpha-value);
      * transition-duration: 500ms; */
-    background-color: $dash_bg_color;
-    border-color: rgba(0, 0, 0, 0.1);
+    background-color: $bg-transparent;
+    border-color: $bg-transparent;
     transition-duration: 500ms;
 
     &:overview {
@@ -170,17 +170,20 @@
 
   &.shrink.top #dash,
   &.dashtodock.top #dash {
-    border: none !important;
+    
+border: none !important;
   }
 
   &.shrink.bottom #dash,
   &.dashtodock.bottom #dash {
-    border: none !important;
+    
+border: none !important;
   }
 
   &.straight-corner #dash,
   &.shrink.straight-corner #dash {
-    border: none !important;
+    
+border: none !important;
   }
 
   &.shrink.left #dash,
@@ -195,7 +198,7 @@
 
   .show-apps {
     .overview-icon {
-      border-radius: $small_radius;
+      border-radius: $button_radius;
     }
     &:active, &:checked {
       .overview-icon {
@@ -212,7 +215,7 @@
 
     &:active .overview-icon,
     &:checked .overview-icon {
-      // when clicking on an app
+      background-color: $base_active_color; box-shadow: none;
     }
 
     &.focused .overview-icon {
