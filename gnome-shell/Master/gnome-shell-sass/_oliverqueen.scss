@@ -66,3 +66,11 @@
 		background: $bg-transparent; 
 	}
 }
+.slider {
+	-slider-height: 0.3em;
+	-slider-background-color: transparentize($fg_color, 0.9);
+	-slider-border-color: $borders_color;
+	-slider-active-background-color: $blue;
+	-slider-active-border-color: $blue;
+	-slider-border-width: 1px;
+}
