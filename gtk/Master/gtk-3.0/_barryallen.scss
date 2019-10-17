@@ -111,19 +111,15 @@ button.titlebutton:not(.appmenu) {
 			headerbar &, .titlebar &, headerbar.selection-mode & {
 				@include button(normal, $_headerbar_button_bg, $headerbar_fg_color);					
 				&:backdrop {
-					@include button(backdrop, $backdrop_headerbar_bg_color, $backdrop_headerbar_fg_color);
+					@include button(normal, $backdrop_headerbar_bg_color, $backdrop_headerbar_fg_color);
 				}
 			}
 		}
-		min-height: $_titlebutton_height;
-		min-width: $_titlebutton_height;
-		padding: 2px;
 	
 		headerbar &, .titlebar &, headerbar.selection-mode &, & {
 			&, &.maximize, &.minimize, &.close {
 				&, &:backdrop {
 					&, &:hover, &:active {
-						background-image: none;
 						border-radius: $small_radius;
 					}
 				}
@@ -163,3 +159,9 @@ button.titlebutton:not(.appmenu) {
 
 
 
+.nautilus-window {
+	background-color: $bg_color;
+	&:backdrop {
+		background-color: $backdrop_bg_color;
+	}
+}

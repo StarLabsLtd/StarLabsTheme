@@ -9,7 +9,7 @@ $_titlebutton_height: 24px;
   background-image: -gtk-gradient(radial,
                                   center center, 0,
                                   center center, $circle_size,
-                                  to($c),
+                                  to(transparent),
                                   to(transparent));
 }
 

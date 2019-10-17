@@ -1,8 +1,8 @@
 #lockDialogGroup {
         background: $accent-bg url("noise-texture.svg");
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: bottom center;
 }
 
 .login-dialog StEntry {
