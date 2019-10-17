@@ -108,15 +108,95 @@ function exportwallpaper() {
 	sed -i "/backgrounds_sources = \[/a 'StarWallpaper0$name.png'," backgrounds/meson.build
 }
 
-function creategtk() {
-	cp -r "gtk/Light" "gtk/$theme"
+function creategtk3() {
+	cp -r "gtk/Light" "gtk/$theme-Light"
+	cp -r "gtk/Default" "gtk/$theme"
 	cp -r "gtk/Dark" "gtk/$theme-Dark"
-	sed -i "s/@VariantThemeName@/$theme/g" "gtk/$theme"/index.theme "gtk/$theme"/gtk-3.0/meson.build "gtk/$theme"/meson.build "gtk/$theme"/*/meson.build
-	sed -i "s/@VariantThemeName@/$theme-Dark/g" "gtk/$theme"-Dark/index.theme "gtk/$theme"-Dark/meson.build "gtk/$theme"-Dark/*/meson.build
-	sed -i "s/@LightThemeName@/$theme/g" "gtk/$theme"-Dark/gtk-3.0/meson.build
-	sed -i "s/@ThemeName@/StarLabs/g" "gtk/$theme"/index.theme "gtk/$theme"-Dark/index.theme
+
+        sed -i "s/@VariantThemeName@/$theme-Light/g" "gtk/$theme"-Light/index.theme "gtk/$theme"-Light/gtk-3.0/meson.build "gtk/$theme"-Light/gtk-2.0/meson.build
+	sed -i "s/@VariantThemeName@/$theme/g" "gtk/$theme"/index.theme "gtk/$theme"/gtk-3.0/meson.build "gtk/$theme"/gtk-2.0/meson.build
+	sed -i "s/@VariantThemeName@/$theme-Dark/g" "gtk/$theme"-Dark/index.theme "gtk/$theme"-Dark/gtk-3.0/meson.build "gtk/$theme"-Dark/gtk-2.0/meson.build
+
+	sed -i "s/@LightThemeName@/$theme/g" "gtk/$theme"-Dark/gtk-3.0/meson.build "gtk/$theme"-Light/gtk-3.0/meson.build
+
+#	sed -i "s/@ThemeName@/StarLabs/g" "gtk/$theme"/index.theme "gtk/$theme"-Dark/index.theme
+
+	echo "subdir('$theme-Light')" >> "gtk/meson.build"
 	echo "subdir('$theme')" >> "gtk/meson.build"
 	echo "subdir('$theme-Dark')" >> "gtk/meson.build"
+}
+
+function creategtk2() {
+	newColor gtk/"$theme"/gtk-2.0/assets.svg
+	newColor gtk/"$theme"/gtk-2.0/assets-external.svg
+	newColor gtk/"$theme"-Dark/gtk-2.0/assets.svg
+	newColor gtk/"$theme"-Dark/gtk-2.0/assets-external.svg
+	newColor gtk/"$theme"-Light/gtk-2.0/assets.svg
+	newColor gtk/"$theme"-Light/gtk-2.0/assets-external.svg
+	newColor gtk/"$theme"/gtk-2.0/gtkrc
+	newColor gtk/"$theme"-Dark/gtk-2.0/gtkrc
+	newColor gtk/"$theme"-Light/gtk-2.0/gtkrc
+	for i in `cat gtk/"$theme"-Light/gtk-2.0/assets.txt`; do
+		if [[ -f gtk/"$theme"-Light/gtk-2.0/assets/"$i".png ]]; then
+			rm gtk/"$theme"-Light/gtk-2.0/assets/"$i".png
+		fi
+		inkscape --export-id="$i" \
+			--export-id-only \
+			--export-background-opacity=0 \
+			--export-png=gtk/"$theme"-Light/gtk-2.0/assets/"$i".png gtk/"$theme"-Light/gtk-2.0/assets.svg
+		optipng -o7 --quiet gtk/"$theme"-Light/gtk-2.0/assets/"$i".png
+	done
+	for i in `cat gtk/"$theme"/gtk-2.0/assets.txt`; do
+		if [[ -f gtk/"$theme"/gtk-2.0/assets/"$i".png ]]; then
+			rm gtk/"$theme"/gtk-2.0/assets/"$i".png
+		fi
+		inkscape --export-id="$i" \
+			--export-id-only \
+			--export-background-opacity=0 \
+			--export-png=gtk/"$theme"/gtk-2.0/assets/"$i".png gtk/"$theme"/gtk-2.0/assets.svg
+		optipng -o7 --quiet gtk/"$theme"/gtk-2.0/assets/"$i".png
+	done
+	for i in `cat gtk/"$theme"-Dark/gtk-2.0/assets.txt`; do
+		if [[ -f gtk/"$theme"-Dark/gtk-2.0/assets/"$i".png ]]; then
+			rm gtk/"$theme"-Dark/gtk-2.0/assets/"$i".png
+		fi
+		inkscape --export-id="$i" \
+			--export-id-only \
+			--export-background-opacity=0 \
+			--export-png=gtk/"$theme"-Dark/gtk-2.0/assets/"$i".png gtk/"$theme"-Dark/gtk-2.0/assets.svg
+		optipng -o7 --quiet gtk/"$theme"-Dark/gtk-2.0/assets/"$i".png
+	done
+
+	for i in `cat gtk/"$theme"-Light/gtk-2.0/assets-external.txt`; do
+		if [[ -f gtk/"$theme"-Light/gtk-2.0/assets/"$i".png ]]; then
+			rm gtk/"$theme"-Light/gtk-2.0/assets/"$i".png
+		fi
+		inkscape --export-id="$i" \
+			--export-id-only \
+			--export-background-opacity=0 \
+			--export-png=gtk/"$theme"-Light/gtk-2.0/assets/"$i".png gtk/"$theme"-Light/gtk-2.0/assets-external.svg
+		optipng -o7 --quiet gtk/"$theme"-Light/gtk-2.0/assets/"$i".png
+	done
+	for i in `cat gtk/"$theme"/gtk-2.0/assets-external.txt`; do
+		if [[ -f gtk/"$theme"/gtk-2.0/assets/"$i".png ]]; then
+			rm gtk/"$theme"/gtk-2.0/assets/"$i".png
+		fi
+		inkscape --export-id="$i" \
+			--export-id-only \
+			--export-background-opacity=0 \
+			--export-png=gtk/"$theme"/gtk-2.0/assets/"$i".png gtk/"$theme"/gtk-2.0/assets-external.svg
+		optipng -o7 --quiet gtk/"$theme"/gtk-2.0/assets/"$i".png
+	done
+	for i in `cat gtk/"$theme"-Dark/gtk-2.0/assets-external.txt`; do
+		if [[ -f gtk/"$theme"-Dark/gtk-2.0/assets/"$i".png ]]; then
+			rm gtk/"$theme"-Dark/gtk-2.0/assets/"$i".png
+		fi
+		inkscape --export-id="$i" \
+			--export-id-only \
+			--export-background-opacity=0 \
+			--export-png=gtk/"$theme"-Dark/gtk-2.0/assets/"$i".png gtk/"$theme"-Dark/gtk-2.0/assets-external.svg
+		optipng -o7 --quiet gtk/"$theme"-Dark/gtk-2.0/assets/"$i".png
+	done
 }
 
 function creategnome() {
@@ -195,7 +275,7 @@ echo
 echo '*************** Icon Renderer **************'
 echo
 echo "Which components would you like to assemble?"
-select component in "All" "Backgrounds" "GTK" "Gnome" "Cursors" "Icons" "Debian"
+select component in "All" "Backgrounds" "GTK-2.0" "GTK-3.0" "Gnome" "Cursors" "Icons" "Debian"
 do
 	if [[ $component == "All" ]]; then
 		component="Backgrounds GTK Gnome Cursors Icons Debian"
@@ -233,18 +313,23 @@ while read palette ; do
 	fi
 	# End Backgrounds
 
-	# Start GTK
-	if [[ "$component" == *"GTK"* ]]; then
+	# Start GTK3
+	if [[ "$component" == *"GTK-3.0"* ]]; then
 		if [[ "$loop" == 1 ]]; then
 			rm -r gtk/StarLab*
 			rm gtk/meson.build
 		fi
-		creategtk
+		creategtk3
+		newColor "gtk/$theme/gtk-3.0/gtk-light.scss"
 		newColor "gtk/$theme/gtk-3.0/gtk.scss"
 		newColor "gtk/$theme/gtk-3.0/gtk-dark.scss"
 	fi
-	# End GTK
-
+	# End GTK3
+	# Start GTK2
+	if [[ "$component" == *"GTK-2.0"* ]]; then
+		creategtk2
+	fi
+	# End GTK2
 
 	# Start Gnome
 	if [[ "$component" == *"Gnome"* ]]; then

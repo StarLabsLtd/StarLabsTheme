@@ -1,0 +1,9 @@
+[X-GNOME-Metatheme]
+Name=StarLabs-OLED-Light
+Type=X-GNOME-Metatheme
+Comment=StarLabs StarLabs-OLED-Light theme
+Encoding=UTF-8
+GtkTheme=StarLabs-OLED-Light
+IconTheme=@ThemeName@
+CursorTheme=@ThemeName@
+CursorSize=24

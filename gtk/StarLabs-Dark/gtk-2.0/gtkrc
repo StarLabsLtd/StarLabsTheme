@@ -12,30 +12,38 @@
 # order to not mess up the dark theme.
 
 # Text/base
-gtk-color-scheme = "text_color:white\nbase_color:#232729"
+gtk-color-scheme = "text_color:#F7F7F7\nbase_color:#3d3d3d"
 # Foreground/background
-gtk-color-scheme = "fg_color:#eeeeec\nbg_color:#33393b"
+gtk-color-scheme = "fg_color:#F7F7F7\nbg_color:#353535"
 # Selected foreground/background
-gtk-color-scheme = "selected_fg_color:#ffffff\nselected_bg_color:#2195f2"
+gtk-color-scheme = "selected_fg_color:#FFFFFF\nselected_bg_color:#0068bf"
 # Insensitive foreground/background
-gtk-color-scheme = "insensitive_fg_color:#919494\ninsensitive_bg_color:#2d3234"
+gtk-color-scheme = "insensitive_fg_color:#969696\ninsensitive_bg_color:#383838"
 # Menus
-gtk-color-scheme = "menu_color:#262b2d"
+gtk-color-scheme = "menu_color:#252525\nmenubar_bg:#2B2929"
+gtk-color-scheme = "menubar_fg:#F7F7F7\nmenubar_insensitive_fg:#CCCCCC"
 # Links
-gtk-color-scheme = "link_color:#2195f2\nvisited_link_color:#0068bf"
+gtk-color-scheme = "link_color:#2194bd\nvisited_link_color:#c97c5b"
 # Treeview headers
-gtk-color-scheme = "column_header_color:#898b8b\nhover_column_header_color:#bcbdbc"
+gtk-color-scheme = "column_header_color:#353535\nhover_column_header_color:#636769"
 # Window decoration
-gtk-color-scheme = "window_color:#17171d;"
+gtk-color-scheme = "menu_hover_color:#616161\nwindow_color:#f4f4f4"
 # Tooltips
-gtk-color-scheme = "tooltip_fg_color:#ffffff\ntooltip_bg_color:#343434"
+gtk-color-scheme = "tooltip_fg_color:#f7f7f7\ntooltip_bg_color:#353535"
 
 # Set GTK settings
 gtk-auto-mnemonics              = 1
 gtk-primary-button-warps-slider = 1
+gtk-icon-sizes="gtk-menu=16,16:\
+	gtk-button=16,16:\
+	gtk-small-toolbar=16,16:\
+	gtk-dnd=16,16:\
+	gtk-dialog=16,16"
+gtk-toolbar-style = GTK_TOOLBAR_ICONS
+gtk-menu-images = 0
+gtk-menu-popup-delay = 0
 
 # And hand over the control to the theme files
 include "main.rc"
 include "apps.rc"
 include "hacks.rc"
-include "hacks-dark.rc"

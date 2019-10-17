@@ -4,7 +4,7 @@
   // Shrink the dash by reducing padding and border radius
   &.shrink #dash,
   &.dashtodock #dash {
-    border: 0px;
+    border: 1px;
     padding: 0px;
   }
 
@@ -96,7 +96,7 @@
     }
 
     #dash {
-      background: $bg-transparent;
+      background: #2e3436;
     }
   }
 
@@ -104,16 +104,16 @@
     /* Temporary reduce traslucency, see https://gitlab.gnome.org/GNOME/gnome-shell/merge_requests/376
      * background-color: transparentize($dash_bg_color, $dash-opaque-alpha-value);
      * transition-duration: 500ms; */
-    background-color: $bg-transparent;
-    border-color: $bg-transparent;
+    background-color: $dash_bg_color;
+    border-color: rgba(0, 0, 0, 0.4);
   }
 
   &.transparent {
     /* Temporary traslucency under overview state only. See https://gitlab.gnome.org/GNOME/gnome-shell/merge_requests/376
      * background-color: transparentize($dash_bg_color, $dash-alpha-value);
      * transition-duration: 500ms; */
-    background-color: $bg-transparent;
-    border-color: $bg-transparent;
+    background-color: $dash_bg_color;
+    border-color: rgba(0, 0, 0, 0.1);
     transition-duration: 500ms;
 
     &:overview {
@@ -170,20 +170,17 @@
 
   &.shrink.top #dash,
   &.dashtodock.top #dash {
-    
-border: none !important;
+    border: none !important;
   }
 
   &.shrink.bottom #dash,
   &.dashtodock.bottom #dash {
-    
-border: none !important;
+    border: none !important;
   }
 
   &.straight-corner #dash,
   &.shrink.straight-corner #dash {
-    
-border: none !important;
+    border: none !important;
   }
 
   &.shrink.left #dash,

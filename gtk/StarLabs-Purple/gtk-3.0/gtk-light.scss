@@ -1,0 +1,14 @@
+$accent1:#38006b;
+$accent2:#6a1b9a;
+$accent3:#9c4dcc;
+
+$variant: 'light';
+$header: 'light';
+
+@import '../../Master/gtk-3.0/_colors.scss';
+@import '../../Master/gtk-3.0/_drawing.scss';
+@import '../../Master/gtk-3.0/_common.scss';
+@import '../../Master/gtk-3.0/_apps.scss';
+@import '../../Master/gtk-3.0/_headerbar';
+@import '../../Master/gtk-3.0/_colors-public.scss';
+@import '../../Master/gtk-3.0/_barryallen.scss';

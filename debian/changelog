@@ -1,3 +1,15 @@
+starlabstheme-master (0.0.99.7) eoan; urgency=medium
+
+  * Major updates
+
+ -- Sean Rhodes <sean@starlabs.systems>  Thu, 17 Oct 2019 14:13:48 +0100
+
+starlabstheme-master (0.0.99.6) eoan; urgency=medium
+
+  * Adjusted top bar
+
+ -- Sean Rhodes <sean@starlabs.systems>  Tue, 15 Oct 2019 11:30:03 +0100
+
 starlabstheme-master (0.0.99.5) disco; urgency=medium
 
   * New animation for plymouth

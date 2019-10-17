@@ -3,10 +3,11 @@ $accent2:#80deea;
 $accent3:#b4ffff;
 
 $variant: 'dark';
-
+$header: 'dark';
 @import "../Master/gnome-shell-sass/_starlabs";
 @import "../Master/gnome-shell-sass/_colors"; //use gtk colors
 @import "../Master/gnome-shell-sass/_drawing";
 @import "../Master/gnome-shell-sass/_common";
 @import "../Master/gnome-shell-sass/_dock";
+@import "../Master/gnome-shell-sass/_oliverqueen";
 

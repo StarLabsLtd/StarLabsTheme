@@ -80,7 +80,7 @@ Package: starlabstheme-plymouth
 Architecture: all
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         plymouth-themes
+         plymouth-themes,
 Description: Star Labs Theme.
 Replaces: starlabs-plymouth (<< 2.0.2)
 Breaks: starlabs-plymouth (<< 2.0.2)

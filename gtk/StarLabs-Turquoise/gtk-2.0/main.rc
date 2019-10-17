@@ -45,13 +45,13 @@ style "default" {
   GtkEntry::state-hint = 1
   GtkEntry::inner-border = {7, 7, 4, 5}
 
-  GtkPaned::handle-size = 9
-  GtkHPaned::handle-size = 9
-  GtkVPaned::handle-size = 9
+  GtkPaned::handle-size = 8
+  GtkHPaned::handle-size = 8
+  GtkVPaned::handle-size = 8
 
   GtkScrollbar::trough-border = 0
   GtkRange::trough-border     = 0
-  GtkRange::slider-width      = 13
+  GtkRange::slider-width      = 10
   GtkRange::stepper-size      = 0
   GtkRange::activate-slider   = 1
 
@@ -180,7 +180,7 @@ style "default" {
       function        = CHECK
       state           = INSENSITIVE
       shadow          = OUT
-      overlay_file    = "assets/checkbox-unchecked-insensitive.png"
+      overlay_file    = "assets/menu-checkbox-insensitive.png"
       overlay_stretch = FALSE
     }
 
@@ -196,7 +196,7 @@ style "default" {
       function        = CHECK
       state           = PRELIGHT
       shadow          = IN
-      overlay_file    = "assets/checkbox-checked-hover.png"
+      overlay_file    = "assets/checkbox-checked.png"
       overlay_stretch = FALSE
     }
 
@@ -220,7 +220,7 @@ style "default" {
       function        = CHECK
       state           = INSENSITIVE
       shadow          = IN
-      overlay_file    = "assets/checkbox-checked-insensitive.png"
+      overlay_file    = "assets/menu-checkbox-checked-insensitive.png"
       overlay_stretch = FALSE
     }
 
@@ -236,7 +236,7 @@ style "default" {
       function        = CHECK
       state           = PRELIGHT
       shadow          = ETCHED_IN
-      overlay_file    = "assets/checkbox-mixed-hover.png"
+      overlay_file    = "assets/checkbox-mixed.png"
       overlay_stretch = FALSE
     }
 
@@ -304,7 +304,7 @@ style "default" {
       function        = OPTION
       state           = INSENSITIVE
       shadow          = OUT
-      overlay_file    = "assets/radio-unchecked-insensitive.png"
+      overlay_file    = "assets/menu-radio-insensitive.png"
       overlay_stretch = FALSE
     }
 
@@ -312,7 +312,7 @@ style "default" {
       function        = OPTION
       state           = NORMAL
       shadow          = IN
-      overlay_file    = "assets/radio-checked.png"
+      overlay_file    = "assets/menu-radio-checked.png"
       overlay_stretch = FALSE
     }
 
@@ -320,7 +320,7 @@ style "default" {
       function        = OPTION
       state           = PRELIGHT
       shadow          = IN
-      overlay_file    = "assets/radio-checked-hover.png"
+      overlay_file    = "assets/menu-radio-checked.png"
       overlay_stretch = FALSE
     }
 
@@ -328,7 +328,7 @@ style "default" {
       function        = OPTION
       state           = ACTIVE
       shadow          = IN
-      overlay_file    = "assets/radio-checked-active.png"
+      overlay_file    = "assets/menu-radio-checked.png"
       overlay_stretch = FALSE
     }
 
@@ -336,7 +336,7 @@ style "default" {
       function        = OPTION
       state           = SELECTED
       shadow          = IN
-      overlay_file    = "assets/radio-checked.png"
+      overlay_file    = "assets/menu-radio-checked.png"
       overlay_stretch = FALSE
     }
 
@@ -344,7 +344,7 @@ style "default" {
       function        = OPTION
       state           = INSENSITIVE
       shadow          = IN
-      overlay_file    = "assets/radio-checked-insensitive.png"
+      overlay_file    = "assets/menu-radio-checked-insensitive.png"
       overlay_stretch = FALSE
     }
 
@@ -360,7 +360,7 @@ style "default" {
       function        = OPTION
       state           = PRELIGHT
       shadow          = ETCHED_IN
-      overlay_file    = "assets/radio-mixed-hover.png"
+      overlay_file    = "assets/radio-mixed.png"
       overlay_stretch = FALSE
     }
 
@@ -400,14 +400,56 @@ style "default" {
       detail = "spinbutton"
     }
 
-    # Disable arrows for qt in scrollbars
+    # QGtkStyle (used for Qt apps) *always* assumes scrollbars have
+    # arrows, so configure these here. Gtk2 apps will atually ignore
+    # this.
+
     image {
-      function = ARROW
-      detail   = "vscrollbar"
+      function        = ARROW
+      overlay_file    = "assets/scrollbar-arrow-up.png"
+      detail          = "vscrollbar"
+      overlay_border  = { 0, 0, 0, 0 }
+      overlay_stretch = FALSE
+      arrow_direction = UP
     }
+
     image {
-      function = ARROW
-      detail   = "hscrollbar"
+      function        = ARROW
+      overlay_file    = "assets/scrollbar-arrow-down.png"
+      detail          = "vscrollbar"
+      overlay_border  = { 0, 0, 0, 0 }
+      overlay_stretch = FALSE
+      arrow_direction = DOWN
+    }
+
+    image {
+      function        = ARROW
+      overlay_file    = "assets/scrollbar-arrow-left.png"
+      detail          = "hscrollbar"
+      overlay_border  = { 0, 0, 0, 0 }
+      overlay_stretch = FALSE
+      arrow_direction = LEFT
+    }
+
+    image {
+      function        = ARROW
+      overlay_file    = "assets/scrollbar-arrow-right.png"
+      detail          = "hscrollbar"
+      overlay_border  = { 0, 0, 0, 0 }
+      overlay_stretch = FALSE
+      arrow_direction = RIGHT
+    }
+
+    image {
+      function    = BOX
+      detail      = "hscrollbar"
+      orientation = HORIZONTAL
+    }
+
+    image {
+      function    = BOX
+      detail      = "vscrollbar"
+      orientation = VERTICAL
     }
 
     # Menu arrows
@@ -425,7 +467,7 @@ style "default" {
       function        = ARROW
       state           = PRELIGHT
       detail          = "menuitem"
-      overlay_file    = "assets/menu-pan-left-hover.png"
+      overlay_file    = "assets/menu-pan-left.png"
       overlay_stretch = FALSE
       arrow_direction = LEFT
     }
@@ -452,7 +494,7 @@ style "default" {
       function        = ARROW
       state           = PRELIGHT
       detail          = "menuitem"
-      overlay_file    = "assets/menu-pan-right-hover.png"
+      overlay_file    = "assets/menu-pan-right.png"
       overlay_stretch = FALSE
       arrow_direction = RIGHT
     }
@@ -1498,9 +1540,9 @@ style "default" {
 style "menubar" {
 
   # Needed to fix Firefox's menubar text
+  bg[NORMAL]   = @menubar_bg
   bg[SELECTED] = @selected_fg_color
   fg[SELECTED] = @link_color
-
 }
 
 style "menubar_item" {
@@ -1508,7 +1550,8 @@ style "menubar_item" {
   xthickness = 3
   ythickness = 4
 
-  fg[PRELIGHT] = @link_color
+  fg[NORMAL]   = @menubar_insensitive_fg
+  fg[PRELIGHT] = @menubar_fg
 
   engine "pixmap" {
     image {
@@ -1538,14 +1581,19 @@ style "menu_item" {
   xthickness = 3
   ythickness = 4
 
-  bg[PRELIGHT]   = @selected_bg_color
+  bg[PRELIGHT]   = @menu_hover_color
   # Chromium uses this setting
-  bg[SELECTED]   = @selected_bg_color
+  bg[SELECTED]   = @menu_hover_color
 
-  fg[PRELIGHT]   = @selected_fg_color
-  # Some widgets use text, we need to handle that
+  fg[PRELIGHT]   = @fg_color
+  fg[SELECTED]    = @fg_color
   text[NORMAL]   = @fg_color
-  text[PRELIGHT] = @selected_fg_color
+  text[PRELIGHT] = @fg_color
+  text[ACTIVE]      = @fg_color
+  text[SELECTED]    = @fg_color
+
+  # Some widgets use text, we need to handle that
+  # Don't know what this comment is about but maybe we've nulled it
 
   # Unfortunately we can't tell regular and menu checks/radios apart
   # Without the heirarchy
@@ -1567,7 +1615,7 @@ style "menu_item" {
       function        = CHECK
       state           = PRELIGHT
       shadow          = OUT
-      overlay_file    = "assets/menu-checkbox-hover.png"
+      overlay_file    = "assets/menu-checkbox.png"
       overlay_stretch = FALSE
     }
 
@@ -1599,7 +1647,7 @@ style "menu_item" {
       function        = CHECK
       state           = PRELIGHT
       shadow          = IN
-      overlay_file    = "assets/menu-checkbox-checked-hover.png"
+      overlay_file    = "assets/menu-checkbox-checked.png"
       overlay_stretch = FALSE
     }
 
@@ -1631,7 +1679,7 @@ style "menu_item" {
       function        = CHECK
       state           = PRELIGHT
       shadow          = ETCHED_IN
-      overlay_file    = "assets/menu-checkbox-mixed-hover.png"
+      overlay_file    = "assets/menu-checkbox-mixed.png"
       overlay_stretch = FALSE
     }
 
@@ -1667,7 +1715,7 @@ style "menu_item" {
       function        = OPTION
       state           = PRELIGHT
       shadow          = OUT
-      overlay_file    = "assets/menu-radio-hover.png"
+      overlay_file    = "assets/menu-radio.png"
       overlay_stretch = FALSE
     }
 
@@ -1699,7 +1747,7 @@ style "menu_item" {
       function        = OPTION
       state           = PRELIGHT
       shadow          = IN
-      overlay_file    = "assets/menu-radio-checked-hover.png"
+      overlay_file    = "assets/menu-radio-checked.png"
       overlay_stretch = FALSE
     }
 
@@ -1731,7 +1779,7 @@ style "menu_item" {
       function        = OPTION
       state           = PRELIGHT
       shadow          = ETCHED_IN
-      overlay_file    = "assets/menu-radio-mixed-hover.png"
+      overlay_file    = "assets/menu-radio-mixed.png"
       overlay_stretch = FALSE
     }
 
@@ -2286,13 +2334,24 @@ style "progressbar" {
 
 }
 
-style "treeview_header" {
+style "treeview_header_button" {
+
+  engine "pixmap" {
+    image {
+      function = SHADOW
+      state    = NORMAL
+      file     = "assets/treeview-header-button.png"
+      border   = {4, 4, 4, 4}
+      stretch  = TRUE
+    }
+  }
+
+}
+
+style "treeview_header_label" {
 
   xthickness = 1
   ythickness = 0
-
-  fg[NORMAL]   = @column_header_color
-  fg[PRELIGHT] = @hover_column_header_color
 
   font_name    = "Bold"
 
@@ -2498,10 +2557,12 @@ class "GtkTextView"                                                style "textvi
 # Menu and menubar items
 widget_class "*<GtkMenuItem>*"                                     style "menu_item"
 widget_class "*<GtkMenuBar>.<GtkMenuItem>*"                        style "menubar_item"
+widget_class "*<GtkMenuBar>*"                                       style "menubar_item"
 widget_class "*<GtkSeparatorMenuItem>*"                            style "separator_menu_item"
 
 # Treeview buttons
-widget_class "*<GtkTreeView>*<GtkButton>*"                         style "treeview_header"
+widget_class "*<GtkTreeView>*<GtkButton>*"                         style "treeview_header_label"
+widget_class "*<GtkTreeView>*<GtkButton>"                         style "treeview_header_button"
 
 # Give the file chooser toolbar a border
 widget_class "*<GtkFileChooserDefault>*<GtkToolbar>"               style "inline_toolbar"

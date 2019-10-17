@@ -1,0 +1,9 @@
+[X-GNOME-Metatheme]
+Name=StarLabs-Tribute-Light
+Type=X-GNOME-Metatheme
+Comment=StarLabs StarLabs-Tribute-Light theme
+Encoding=UTF-8
+GtkTheme=StarLabs-Tribute-Light
+IconTheme=@ThemeName@
+CursorTheme=@ThemeName@
+CursorSize=24

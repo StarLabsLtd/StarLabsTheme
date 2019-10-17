@@ -1,0 +1,68 @@
+#lockDialogGroup {
+        background: $accent-bg url("noise-texture.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+}
+
+.login-dialog StEntry {
+	&, &:hover, &:focus, &:insensitive {
+	        padding: 9px;
+	        border-radius: 0;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+	        border-bottom: 3px solid;
+	}
+        border-color: $fg-secondary;
+        color: $fg-secondary;
+        background-color: transparent;
+        box-shadow: none;
+        selection-background-color: $accent-active;
+        selected-color: $accent-fg;
+        &:hover {
+                border-color: $accent-hover;
+                color: $accent-fg;
+        }
+        &:focus {
+                border-color: $accent-active;
+                color: $accent-fg;
+        }
+        &:insensitive {
+                color: $accent-disabled;
+                border-color: $accent-disabled;
+        }
+        StIcon.capslock-warning {
+                icon-size: 16px;
+                warning-color: $failure;
+                padding: 0 4px;
+        }
+}
+
+#panel {
+	background-color: $bg-transparent;
+	color: $headerbar_fg_color;
+	.panel-button {
+		&, &:active {
+			color: $headerbar-fg-color;
+		}
+		&:hover {
+			&, &:active {
+				background-color: $accent-hover-transparent;
+				color: $accent-fg;
+			}
+		}
+	}
+}
+.popup-menu-boxpointer, .candidate-popup-boxpointer {
+	-arrow-background-color: $bg-transparent;
+}
+
+#dashtodockContainer {
+	&.shrink.left #dash,
+	&.dashtodock.left #dash,
+	&.shrink.right #dash,
+	&.dashtodock.right #dash {
+		background: $bg-transparent; 
+	}
+}

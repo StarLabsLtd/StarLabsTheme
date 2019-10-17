@@ -8,7 +8,7 @@ $dark3: #000000;
 // White
 $white1: #ffffff;
 $white2: #fafafa;
-$white3: #c6c6c6;
+$white3: #cfd8dc;
 
 $white: #ffffff;
 
@@ -26,23 +26,6 @@ $bottom-shadow: 0 2px 10px 0 rgba(0,0,0,0.15);
 $full-shadow: 0 1px 4px 0 rgba(0,0,0,1);
 
 
-// Derived
-
-$fg: if($variant == 'light', $dark2, $white2);
-$bg: if($variant == 'light', $white2, $dark2);
-$fg-secondary: if($variant == 'light', $dark3, $white3);
-$fg-disabled: if($variant == 'light', $dark1, $white1);
-$bg-transparent: transparentize($bg, $alpha);
-
-$accent-normal: $accent1;
-$accent-hover: $accent2;
-$accent-active: $accent3;
-$accent-normal-transparent: transparentize($accent-normal, $alpha);
-$accent-hover-transparent: transparentize($accent-hover, $alpha);
-$accent-active-transparent: transparentize($accent-active, $alpha);
-$accent-disabled: mix($accent2,$bg,50%);
-$accent-fg: $white1;
-$accent-bg: mix($accent2,$bg,5%);
 
 
 // Use Ubuntu to names to make upstream changes easier
@@ -67,22 +50,41 @@ $green: $success; // #3EB34F;
 $blue: $accent2; // #19B6EE;
 $purple: $accent3; // #762572;
 
+
+
+// Widget Colors
+$headerbar_bg_color: if($header == 'dark', $dark2, $white3);
+$menubar_bg_color: $headerbar_bg_color;
+$headerbar_fg_color: if($header == 'dark', $white1, $dark1);
+$headerbar_text_color: $headerbar_fg_color;
+$headerbar_insensitive_color: mix($headerbar_bg_color, $headerbar_fg_color, 50%);
+$headerbar_border_color: $headerbar_bg_color;
+//
+$backdrop_headerbar_bg_color: lighten($headerbar_bg_color, 5%);
+$backdrop_headerbar_fg_color: lighten($headerbar_fg_color, 5%);
+$backdrop_headerbar_text_color: $backdrop_headerbar_fg_color;
+$backdrop_headerbar_insensitive_color: lighten($headerbar_insensitive_color, 5%);
+$backdrop_menubar_bg_color: lighten($headerbar_bg_color, 5%);
 // Terminal colors
-$terminal_bg_color: $accent1; // #300A24;
+$terminal_bg_color:  if($variant == 'dark', darken($accent1,10%), if($header == 'light', mix($accent1,$headerbar_bg_color, 15%), $accent1)); // #300A24;
 $terminal_base_color: $accent1; // lighten($terminal_bg_color, 5%);
 $terminal_fg_color: $white; // white;
 $terminal_borders_color: $accent1; // darken($terminal_bg_color, 10%);
+// Derived
 
-// Widget Colors
-$headerbar_bg_color: $dark2; // #2B2929;
-$menubar_bg_color: $dark2; // $headerbar_bg_color;
-$headerbar_fg_color: $white1; // $porcelain;
-$headerbar_text_color: $white1; // $silk;
-$headerbar_insensitive_color: mix($dark1, $white, 50%); // mix($headerbar_fg_color, $headerbar_bg_color, 50%);
-$headerbar_border_color: $dark1;
-//
-$backdrop_headerbar_bg_color: lighten($dark2, 5%); // lighten($headerbar_bg_color, 7%);
-$backdrop_headerbar_fg_color: mix($white, $dark1, 70%); // mix($headerbar_fg_color, $headerbar_bg_color, 70%);
-$backdrop_headerbar_text_color: mix($white, $dark1, 70%); // mix($headerbar_text_color, $backdrop_headerbar_bg_color, 70%);
-$backdrop_headerbar_insensitive_color: mix($white, $dark1, 70%); // mix($headerbar_fg_color, $backdrop_headerbar_bg_color, 70%);
-$backdrop_menubar_bg_color: lighten($dark1, 5%); // lighten($menubar_bg_color, 5%);
+$fg: if($variant == 'light', $dark2, $white2);
+$bg: if($variant == 'light', $white2, $dark2);
+$fg-secondary: if($variant == 'light', $dark3, $white3);
+$fg-disabled: if($variant == 'light', $dark1, $white1);
+$bg-transparent: transparentize($headerbar_bg_color, $alpha);
+
+$accent-normal: $accent1;
+$accent-hover: $accent2;
+$accent-active: $accent3;
+$accent-normal-transparent: transparentize($accent-normal, $alpha);
+$accent-hover-transparent: transparentize($accent-hover, $alpha);
+$accent-active-transparent: transparentize($accent-active, $alpha);
+$accent-disabled: mix($accent2,$bg,50%);
+$accent-fg: $white1;
+$accent-bg: mix($accent2,$bg,5%);
+
