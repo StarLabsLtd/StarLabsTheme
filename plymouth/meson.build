@@ -6,7 +6,6 @@ main_sources = [
 	'entry.png',
 	'lock.png',
 	'lock.svg',
-	'progress-00.png',
 	'StarLabs.grub',
 	'StarLabs.plymouth',
 'animation-0000.png',
