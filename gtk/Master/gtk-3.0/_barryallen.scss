@@ -107,55 +107,57 @@ stacksidebar.sidebar:dir(ltr) list, stacksidebar.sidebar.left list, stacksidebar
 
 // Window Close button
 button.titlebutton:not(.appmenu) {
-	&, &:hover, &:active {
-		headerbar &, .titlebar &, headerbar.selection-mode & {
-			&, &:backdrop {
-				@extend %undecorated_button;
-			}
-		}
-	}
-	min-height: $_titlebutton_height;
-	min-width: $_titlebutton_height;
-	padding: 2px;
-
-	headerbar &, .titlebar &, headerbar.selection-mode &, & {
-		&, &.maximize, &.minimize, &.close {
-			&, &:backdrop {
-				&, &:hover, &:active {
-					background-image: none;
-					border-radius: $small_radius;
+		&, &:hover, &:active {
+			headerbar &, .titlebar &, headerbar.selection-mode & {
+				@include button(normal, $_headerbar_button_bg, $headerbar_fg_color);					
+				&:backdrop {
+					@include button(backdrop, $backdrop_headerbar_bg_color, $backdrop_headerbar_fg_color);
 				}
 			}
 		}
-		&.maximize, &.minimize {
-			&, &:backdrop {
+		min-height: $_titlebutton_height;
+		min-width: $_titlebutton_height;
+		padding: 2px;
+	
+		headerbar &, .titlebar &, headerbar.selection-mode &, & {
+			&, &.maximize, &.minimize, &.close {
+				&, &:backdrop {
+					&, &:hover, &:active {
+						background-image: none;
+						border-radius: $small_radius;
+					}
+				}
+			}
+			&.maximize, &.minimize {
+				&, &:backdrop {
+					&:hover {
+						background-color: $accent-normal;
+						color: $accent-fg;
+					}
+					&:active {
+						background-color: $accent-hover;
+						color: $accent-fg;
+					}
+				}
+			}
+			&.close {
+				background-color: $accent-normal;
+				color: $accent-fg;
 				&:hover {
-					background-color: $accent-normal;
-					color: $accent-fg;
+					background-color: $accent-hover;
 				}
 				&:active {
-					background-color: $accent-hover;
-					color: $accent-fg;
+					background-color: $accent-active;
+				}
+				&:backdrop {
+					background-color: lighten($accent-normal, 5%);
+					&:hover {
+						background-color: lighten($accent-hover, 5%);
+					}
 				}
 			}
 		}
-		&.close {
-			background-color: $accent-normal;
-			color: $accent-fg;
-			&:hover {
-				background-color: $accent-hover;
-			}
-			&:active {
-				background-color: $accent-active;
-			}
-			&:backdrop {
-				background-color: lighten($accent-normal, 5%);
-				&:hover {
-					background-color: lighten($accent-hover, 5%);
-				}
-			}
-		}
-	}
+	
 }
 
 
