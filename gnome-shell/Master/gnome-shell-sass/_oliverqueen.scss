@@ -1,42 +1,42 @@
 #lockDialogGroup {
-        background: $accent-bg url("noise-texture.svg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: bottom center;
+background: $accent-bg url("noise-texture.svg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: bottom center;
 }
 
 .login-dialog StEntry {
 	&, &:hover, &:focus, &:insensitive {
-	        padding: 9px;
-	        border-radius: 0;
+	padding: 9px;
+	border-radius: 0;
 		border-top: none;
 		border-left: none;
 		border-right: none;
-	        border-bottom: 3px solid;
+	border-bottom: 3px solid;
 	}
-        border-color: $fg-secondary;
-        color: $fg-secondary;
-        background-color: transparent;
-        box-shadow: none;
-        selection-background-color: $accent-active;
-        selected-color: $accent-fg;
-        &:hover {
-                border-color: $accent-hover;
-                color: $accent-fg;
-        }
-        &:focus {
-                border-color: $accent-active;
-                color: $accent-fg;
-        }
-        &:insensitive {
-                color: $accent-disabled;
-                border-color: $accent-disabled;
-        }
-        StIcon.capslock-warning {
-                icon-size: 16px;
-                warning-color: $failure;
-                padding: 0 4px;
-        }
+border-color: $fg-secondary;
+color: $fg-secondary;
+background-color: transparent;
+box-shadow: none;
+selection-background-color: $accent-active;
+selected-color: $accent-fg;
+&:hover {
+border-color: $accent-hover;
+color: $accent-fg;
+}
+&:focus {
+border-color: $accent-active;
+color: $accent-fg;
+}
+&:insensitive {
+color: $accent-disabled;
+border-color: $accent-disabled;
+}
+StIcon.capslock-warning {
+icon-size: 16px;
+warning-color: $failure;
+padding: 0 4px;
+}
 }
 
 #panel {
@@ -73,4 +73,21 @@
 	-slider-active-background-color: $blue;
 	-slider-active-border-color: $blue;
 	-slider-border-width: 1px;
+}
+.osd-window {
+	.level {
+		height: 1em;
+		border-radius: 8px;
+		-barlevel-height: 0.2em;
+		-barlevel-background-color: transparentize($fg_color, 0.9);
+		-barlevel-active-background-color: $blue;
+		-barlevel-overdrive-color: darken($destructive_color,10%);
+		-barlevel-overdrive-separator-width: 0.2em;
+	}
+	/* START: VERSION SPECIFIC CODE (< 3.29.90) */
+	.level-bar {
+		background-color: transparentize($fg_color, 0.9);
+		border-radius: 0.3em;
+	}
+	/* END: VERSION SPECIFIC CODE (< 3.29.90) */
 }
