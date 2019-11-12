@@ -165,14 +165,3 @@ button.titlebutton:not(.appmenu) {
 		background-color: $backdrop_bg_color;
 	}
 }
-
-@if $variant == 'light' {
-        @if $header == 'dark' {
-                menubar,
-                .menubar,
-                menubar > menuitem:hover {
-                        color: $headerbar_bg_color;
-                }
-        }
-}
-
