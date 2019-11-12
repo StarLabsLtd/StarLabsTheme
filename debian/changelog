@@ -1,3 +1,9 @@
+starlabstheme-master (1.0.4) eoan; urgency=medium
+
+  * Fixed issue with Firefox tabs
+
+ -- Sean Rhodes <sean@starlabs.systems>  Tue, 12 Nov 2019 17:07:43 +0000
+
 starlabstheme-master (1.0.3) eoan; urgency=medium
 
   * Fixed install issue
