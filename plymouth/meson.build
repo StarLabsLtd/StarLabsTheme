@@ -4,6 +4,7 @@ main_dir = join_paths(plymouth_dir, meson.project_name())
 main_sources = [
 	'bullet.png',
 	'entry.png',
+	'box.png',
 	'lock.png',
 	'lock.svg',
 	'StarLabs.grub',
