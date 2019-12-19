@@ -1,3 +1,9 @@
+starlabstheme-master (1.0.6) eoan; urgency=medium
+
+  * Added box.png for compatibility
+
+ -- Sean Rhodes <sean@starlabs.systems>  Wed, 18 Dec 2019 11:55:36 +0000
+
 starlabstheme-master (1.0.4) eoan; urgency=medium
 
   * Fixed issue with Firefox tabs
