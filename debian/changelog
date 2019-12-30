@@ -1,3 +1,9 @@
+starlabstheme-master (1.1.1) eoan; urgency=medium
+
+  * Re-added Firefox fix
+
+ -- Sean Rhodes <sean@sean-LabTop>  Mon, 30 Dec 2019 11:16:25 +0000
+
 starlabstheme-master (1.0.6) eoan; urgency=medium
 
   * Added box.png for compatibility

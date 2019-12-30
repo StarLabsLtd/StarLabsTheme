@@ -167,12 +167,16 @@ button.titlebutton:not(.appmenu) {
 }
 
 @if $variant == 'light' {
-        @if $header == 'dark' {
-                menubar,
-                .menubar,
-                menubar > menuitem:hover {
-                        color: $headerbar_bg_color;
-                }
-        }
+	@if $header == 'dark' {
+		menubar, 
+		.menubar,
+		menubar > menuitem:hover {
+			background-color: $headerbar_bg_color;
+			color: $headerbar_fg_color;
+			&:backdrop {
+				background-color: $backdrop_headerbar_bg_color;
+				color: $backdrop_headerbar_fg_color;
+			}
+		}
+	}
 }
-
