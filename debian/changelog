@@ -1,8 +1,14 @@
+starlabstheme-master (1.1.2) eoan; urgency=medium
+
+  * DCH
+
+ -- Sean Rhodes <sean@sean-LabTop>  Mon, 30 Dec 2019 12:38:35 +0000
+
 starlabstheme-master (1.1.1) eoan; urgency=medium
 
   * Re-added Firefox fix
 
- -- Sean Rhodes <sean@sean-LabTop>  Mon, 30 Dec 2019 11:16:25 +0000
+ -- Sean Rhodes <sean@starlabs.systems>  Mon, 30 Dec 2019 11:16:25 +0000
 
 starlabstheme-master (1.0.6) eoan; urgency=medium
 
