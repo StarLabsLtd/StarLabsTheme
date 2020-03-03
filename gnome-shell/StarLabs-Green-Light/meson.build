@@ -1,4 +1,4 @@
-sassc = find_program('sassc')
+# sassc = find_program('sassc')
 
 # destination directory
 theme_dir = join_paths(get_option('prefix'), 'share', 'themes')
@@ -13,6 +13,41 @@ theme_sources = [
 	'../Master/gnome-shell-sass/_dock.scss',
 	'../Master/gnome-shell-sass/_drawing.scss',
 	'../Master/gnome-shell-sass/_starlabs.scss',
+	'../Master/gnome-shell-sass/_widgets.scss',
+	'../Master/gnome-shell-sass/widgets/_a11y.scss',
+	'../Master/gnome-shell-sass/widgets/_app-grid.scss',
+	'../Master/gnome-shell-sass/widgets/_base.scss',
+	'../Master/gnome-shell-sass/widgets/_buttons.scss',
+	'../Master/gnome-shell-sass/widgets/_calendar.scss',
+	'../Master/gnome-shell-sass/widgets/_check-box.scss',
+	'../Master/gnome-shell-sass/widgets/_corner-ripple.scss',
+	'../Master/gnome-shell-sass/widgets/_dash.scss',
+	'../Master/gnome-shell-sass/widgets/_dialogs.scss',
+	'../Master/gnome-shell-sass/widgets/_entries.scss',
+	'../Master/gnome-shell-sass/widgets/_hotplug.scss',
+	'../Master/gnome-shell-sass/widgets/_ibus-popup.scss',
+	'../Master/gnome-shell-sass/widgets/_keyboard.scss',
+	'../Master/gnome-shell-sass/widgets/_login-dialog.scss',
+	'../Master/gnome-shell-sass/widgets/_looking-glass.scss',
+	'../Master/gnome-shell-sass/widgets/_message-list.scss',
+	'../Master/gnome-shell-sass/widgets/_misc.scss',
+	'../Master/gnome-shell-sass/widgets/_network-dialog.scss',
+	'../Master/gnome-shell-sass/widgets/_notifications.scss',
+	'../Master/gnome-shell-sass/widgets/_osd.scss',
+	'../Master/gnome-shell-sass/widgets/_overview.scss',
+	'../Master/gnome-shell-sass/widgets/_panel.scss',
+	'../Master/gnome-shell-sass/widgets/_popovers.scss',
+	'../Master/gnome-shell-sass/widgets/_screen-shield.scss',
+	'../Master/gnome-shell-sass/widgets/_scrollbars.scss',
+	'../Master/gnome-shell-sass/widgets/_search-entry.scss',
+	'../Master/gnome-shell-sass/widgets/_search-results.scss',
+	'../Master/gnome-shell-sass/widgets/_slider.scss',
+	'../Master/gnome-shell-sass/widgets/_switcher-popup.scss',
+	'../Master/gnome-shell-sass/widgets/_switches.scss',
+	'../Master/gnome-shell-sass/widgets/_tiled-previews.scss',
+	'../Master/gnome-shell-sass/widgets/_window-picker.scss',
+	'../Master/gnome-shell-sass/widgets/_workspace-switcher.scss',
+	'../Master/gnome-shell-sass/widgets/_workspace-thumbnails.scss',
 	'../Master/gnome-shell-sass/_oliverqueen.scss',
 ]
 

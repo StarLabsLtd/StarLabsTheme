@@ -109,7 +109,7 @@ stacksidebar.sidebar:dir(ltr) list, stacksidebar.sidebar.left list, stacksidebar
 button.titlebutton:not(.appmenu) {
 		&, &:hover, &:active {
 			headerbar &, .titlebar &, headerbar.selection-mode & {
-				@include button(normal, $_headerbar_button_bg, $headerbar_fg_color);					
+				@include button(normal, $headerbar_bg_color, $headerbar_fg_color);					
 				&:backdrop {
 					@include button(normal, $backdrop_headerbar_bg_color, $backdrop_headerbar_fg_color);
 				}
@@ -120,7 +120,7 @@ button.titlebutton:not(.appmenu) {
 			&, &.maximize, &.minimize, &.close {
 				&, &:backdrop {
 					&, &:hover, &:active {
-						border-radius: $small_radius;
+						border-radius: $button_radius;
 					}
 				}
 			}
@@ -179,4 +179,19 @@ button.titlebutton:not(.appmenu) {
 			}
 		}
 	}
+}
+terminal-window {
+
+    // use unity 8 colors
+    // only colors, let everything else be inherited
+    .terminal-screen {
+        // inherits from .background
+        background-color: $terminal_bg_color;
+        color: $terminal_fg_color;
+
+        &:backdrop {
+            background-color: lighten($terminal_bg_color, 2%);
+            color: $backdrop_selected_fg_color;
+        }
+    }
 }

@@ -1,3 +1,4 @@
+sassc = find_program('sassc')
 subdir('StarLabs')
 subdir('StarLabs-Light')
 subdir('StarLabs-Navy')

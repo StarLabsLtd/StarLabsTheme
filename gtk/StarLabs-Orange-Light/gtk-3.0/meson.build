@@ -139,7 +139,7 @@ gtk3_scss_dependencies = [
 	'../../Master/gtk-3.0/_barryallen.scss',
 ]
 
-sassc = find_program('sassc')
+# sassc = find_program('sassc')
 
 gtk3_dir = join_paths(get_option('prefix'), 'share', 'themes', 'StarLabs-Orange-Light', 'gtk-3.0')
 gtk3_asset_dir = join_paths(gtk3_dir, 'assets')
