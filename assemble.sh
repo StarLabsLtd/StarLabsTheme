@@ -335,7 +335,8 @@ while read palette ; do
 	if [[ "$component" == *"Gnome"* ]]; then
 		if [[ "$loop" == 1 ]]; then
 			rm -r gnome-shell/StarLab*
-			rm gnome-shell/meson.build
+#			rm gnome-shell/meson.build
+			echo "sassc = find_program('sassc')" > gnome-shell/meson.build
 		fi
 		creategnome
 		newColor "gnome-shell/$theme/gnome-shell.scss"

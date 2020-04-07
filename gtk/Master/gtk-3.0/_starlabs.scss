@@ -16,6 +16,7 @@ $white: #ffffff;
 $default1: #004a00;
 $success: #0ba011;
 $default2: #49a83c;
+$alert: #f99b11;
 $warning: #c98810;
 $failure: #b20903;
 
@@ -24,8 +25,6 @@ $radius: 10px;
 $top-shadow: 0 -2px 16px 0 rgba(0,0,0,0.15);
 $bottom-shadow: 0 2px 10px 0 rgba(0,0,0,0.15);
 $full-shadow: 0 1px 4px 0 rgba(0,0,0,1);
-
-
 
 
 // Use Ubuntu to names to make upstream changes easier
@@ -42,15 +41,29 @@ $porcelain: $white2; // #F7F7F7;
 $silk: $white2; // #CCC;
 $ash: $white3; // #878787;
 
-// Utility
-$red: $failure; // #ED3146;
-$orange: $accent2; // #E95420;
-$yellow: $warning; // #F89B0F;
-$green: $success; // #3EB34F;
-$blue: $accent2; // #19B6EE;
-$purple: $accent3; // #762572;
+// Purples
+$aubergine: $accent3;
+$purple: $accent2;
+$light_aubergine: $accent3;
+$mid_aubergine: $accent2;
+$dark_aubergine: $accent1;
 
+// Reds
+$red: $failure;
 
+// Oranges
+$orange: $warning;
+
+// Yellows
+$yellow: $alert;
+
+// Greens
+$green: $success;
+
+// Blues
+$blue: $accent2;
+$linkblue: $accent3;
+$darkblue: $accent1;
 
 // Widget Colors
 $headerbar_bg_color: if($header == 'dark', $dark2, $white3);
