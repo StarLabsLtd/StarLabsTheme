@@ -109,8 +109,10 @@ stacksidebar.sidebar:dir(ltr) list, stacksidebar.sidebar.left list, stacksidebar
 button.titlebutton:not(.appmenu) {
 		&, &:hover, &:active {
 			headerbar &, .titlebar &, headerbar.selection-mode & {
+				background-image: none;
 				@include button(normal, $headerbar_bg_color, $headerbar_fg_color);					
 				&:backdrop {
+					background-image: none;
 					@include button(normal, $backdrop_headerbar_bg_color, $backdrop_headerbar_fg_color);
 				}
 			}
@@ -127,28 +129,28 @@ button.titlebutton:not(.appmenu) {
 			&.maximize, &.minimize {
 				&, &:backdrop {
 					&:hover {
-						background-color: $accent-normal;
+						background: $accent-normal;
 						color: $accent-fg;
 					}
 					&:active {
-						background-color: $accent-hover;
+						background: $accent-hover;
 						color: $accent-fg;
 					}
 				}
 			}
 			&.close {
-				background-color: $accent-normal;
+				background: $accent-normal;
 				color: $accent-fg;
 				&:hover {
-					background-color: $accent-hover;
+					background: $accent-hover;
 				}
 				&:active {
-					background-color: $accent-active;
+					background: $accent-active;
 				}
 				&:backdrop {
-					background-color: lighten($accent-normal, 5%);
+					background: lighten($accent-normal, 5%);
 					&:hover {
-						background-color: lighten($accent-hover, 5%);
+						background: lighten($accent-hover, 5%);
 					}
 				}
 			}
