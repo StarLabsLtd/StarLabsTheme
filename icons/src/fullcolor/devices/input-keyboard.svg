@@ -1300,19 +1300,19 @@
    id="namedview249"
    showgrid="false"
    inkscape:zoom="1.4142136"
-   inkscape:cx="189.03386"
+   inkscape:cx="88.978253"
    inkscape:cy="112.15883"
    inkscape:window-x="1920"
    inkscape:window-y="27"
    inkscape:window-maximized="0"
-   inkscape:current-layer="layer1"
+   inkscape:current-layer="layer6"
    inkscape:pagecheckerboard="true" />
 
 <g
    inkscape:label="Squircle-Background"
    id="g2183"
    inkscape:groupmode="layer"
-   style="display:inline"><rect
+   style="display:none"><rect
      style="display:inline;fill:#0068bf;fill-opacity:1;stroke-width:1.41822851"
      id="rect1101"
      width="248"
@@ -1320,7 +1320,7 @@
      x="4"
      y="4"
      ry="25.455845" /></g><g
-   style="display:inline"
+   style="display:none"
    inkscape:label="Squircle-Shadow"
    id="g2179"
    inkscape:groupmode="layer"><path
@@ -1331,16 +1331,21 @@
    inkscape:groupmode="layer"
    id="layer2"
    inkscape:label="Circle-Background"
-   style="display:none"><circle
+   style="display:inline"><circle
      style="display:none;fill:#0068bf;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path1090"
      cx="128"
      cy="128"
+     r="124" /><circle
+     style="display:inline;fill:#0068bf;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path1090-3-3"
+     cx="125.99999"
+     cy="126"
      r="124" /></g><g
    inkscape:groupmode="layer"
    id="layer6"
    inkscape:label="Circle-Shadow"
-   style="display:none"><g
+   style="display:inline"><g
      id="g2548"
      style="display:none"
      transform="translate(-2.960187,1.58543)"><path
@@ -1354,6 +1359,21 @@
        style="display:inline;opacity:0.2" /><path
        d="m 220.96019,41.514568 c 21.9,22.399997 35.4,53.099997 35.4,86.900002 0,68.5 -55.2,124 -123.4,124 -33.500003,0 -63.800003,-13.4 -86.000003,-35.1 22.4,22.9 53.600003,37.1 88.000003,37.1 68.2,0 123.4,-55.5 123.4,-124 -0.1,-34.900005 -14.4,-66.400005 -37.4,-88.900002 z"
        id="path236"
+       inkscape:connector-curvature="0"
+       style="display:inline;opacity:0.05" /></g><g
+     id="g2548-6"
+     style="display:inline"
+     transform="translate(-4.36019,-0.414569)"><path
+       d="m 256.36019,128.41457 c 0,-33.900005 -13.5,-64.500005 -35.4,-86.900002 -0.4,-0.3 -0.7,-0.7 -1.1,-1 21.3,22.299997 34.5,52.599997 34.5,86.000002 0,68.5 -55.2,124 -123.4,124 -32.900003,0 -62.900003,-13 -85.000003,-34.1 0.3,0.3 0.6,0.6 0.9,0.9 22.2,21.7 52.6,35.1 86.000003,35.1 68.2,0 123.5,-55.5 123.5,-124 z"
+       id="path238-7"
+       inkscape:connector-curvature="0"
+       style="display:inline;opacity:0.1" /><path
+       d="m 219.86019,40.414568 c -0.7,-0.6 -1.4,-1.3 -2,-1.9 -0.7,-0.6 -1.4,-1.2 -2.1,-1.9 19.1,21.799997 30.7,50.499997 30.7,81.800002 0,68.5 -55.2,124 -123.4,124 -30.900003,0 -59.200003,-11.4 -80.900003,-30.3 0.6,0.7 1.2,1.4 1.9,2.1 0.6,0.7 1.3,1.4 1.9,2 22.1,21.1 52.1,34.1 85.000003,34.1 68.2,0 123.4,-55.5 123.4,-124 0,-33.300005 -13.1,-63.600005 -34.5,-85.900002 z"
+       id="path240-5"
+       inkscape:connector-curvature="0"
+       style="display:inline;opacity:0.2" /><path
+       d="m 220.96019,41.514568 c 21.9,22.399997 35.4,53.099997 35.4,86.900002 0,68.5 -55.2,124 -123.4,124 -33.500003,0 -63.800003,-13.4 -86.000003,-35.1 22.4,22.9 53.600003,37.1 88.000003,37.1 68.2,0 123.4,-55.5 123.4,-124 -0.1,-34.900005 -14.4,-66.400005 -37.4,-88.900002 z"
+       id="path236-3"
        inkscape:connector-curvature="0"
        style="display:inline;opacity:0.05" /></g></g><g
    inkscape:groupmode="layer"
@@ -5797,6 +5817,7 @@
      sodipodi:role="line">`</tspan></text>
 
 
+
 <text
    transform="scale(1.000022,0.99997803)"
    xml:space="preserve"
@@ -5812,6 +5833,7 @@
      x="33.151066"
      y="100.55027"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">¬</tspan></text>
+
 
 
 <text
@@ -5831,6 +5853,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">!</tspan></text>
 
 
+
 <text
    transform="scale(1.000022,0.99997803)"
    xml:space="preserve"
@@ -5846,6 +5869,7 @@
      x="60.088448"
      y="100.55027"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">&quot;</tspan></text>
+
 
 
 <text
@@ -5865,6 +5889,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">£</tspan></text>
 
 
+
 <text
    transform="scale(1.000022,0.99997803)"
    xml:space="preserve"
@@ -5880,6 +5905,7 @@
      x="88.840561"
      y="100.55027"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">$</tspan></text>
+
 
 
 <text
@@ -5899,6 +5925,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">%</tspan></text>
 
 
+
 <text
    transform="scale(1.000022,0.99997803)"
    xml:space="preserve"
@@ -5914,6 +5941,7 @@
      x="117.78135"
      y="100.55027"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">^</tspan></text>
+
 
 
 <text
@@ -5933,6 +5961,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">&amp;</tspan></text>
 
 
+
 <text
    transform="scale(1.000022,0.99997803)"
    xml:space="preserve"
@@ -5948,6 +5977,7 @@
      x="146.86697"
      y="100.55027"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">*</tspan></text>
+
 
 
 <text
@@ -5967,6 +5997,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">(</tspan></text>
 
 
+
 <text
    transform="scale(1.000022,0.99997803)"
    xml:space="preserve"
@@ -5982,6 +6013,7 @@
      x="176.07835"
      y="100.55027"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">)</tspan></text>
+
 
 
 <text
@@ -6001,6 +6033,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">_</tspan></text>
 
 
+
 <text
    transform="scale(1.000022,0.99997803)"
    xml:space="preserve"
@@ -6016,6 +6049,7 @@
      x="204.62553"
      y="100.55027"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">+</tspan></text>
+
 
 
 <text
@@ -6035,6 +6069,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">1</tspan></text>
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:8.20090389px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.2050226"
@@ -6050,6 +6085,7 @@
      x="59.895725"
      y="108.91975"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">2</tspan></text>
+
 
 
 <text
@@ -6069,6 +6105,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">3</tspan></text>
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:8.20090389px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.2050226"
@@ -6084,6 +6121,7 @@
      x="88.841927"
      y="108.91945"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">4</tspan></text>
+
 
 
 <text
@@ -6103,6 +6141,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">5</tspan></text>
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:8.20090389px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.2050226"
@@ -6118,6 +6157,7 @@
      x="117.78819"
      y="108.91975"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">6</tspan></text>
+
 
 
 <text
@@ -6137,6 +6177,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">7</tspan></text>
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:8.20090389px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.2050226"
@@ -6152,6 +6193,7 @@
      x="146.73439"
      y="108.91975"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">8</tspan></text>
+
 
 
 <text
@@ -6171,6 +6213,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">9</tspan></text>
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:8.20090389px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.2050226"
@@ -6186,6 +6229,7 @@
      x="175.68062"
      y="108.91975"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">0</tspan></text>
+
 
 
 <text
@@ -6205,6 +6249,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">-</tspan></text>
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:8.20090389px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.2050226"
@@ -6220,6 +6265,7 @@
      x="204.62553"
      y="108.91975"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">=</tspan></text>
+
 
 
 <text
@@ -6239,6 +6285,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">[</tspan></text>
 
 
+
 <text
    transform="scale(1.000022,0.99997803)"
    xml:space="preserve"
@@ -6254,6 +6301,7 @@
      x="192.63965"
      y="114.7316"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">{</tspan></text>
+
 
 
 <text
@@ -6273,6 +6321,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">}</tspan></text>
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:8.20090389px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.2050226"
@@ -6288,6 +6337,7 @@
      x="202.80685"
      y="123.10049"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">]</tspan></text>
+
 
 
 <text
@@ -6307,6 +6357,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">;</tspan></text>
 
 
+
 <text
    transform="scale(1.000022,0.99997803)"
    xml:space="preserve"
@@ -6322,6 +6373,7 @@
      x="184.64122"
      y="128.91266"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">:</tspan></text>
+
 
 
 <text
@@ -6341,6 +6393,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">@</tspan></text>
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:8.20090389px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.2050226"
@@ -6356,6 +6409,7 @@
      x="199.62236"
      y="137.28183"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">'</tspan></text>
+
 
 
 <text
@@ -6375,6 +6429,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">#</tspan></text>
 
 
+
 <text
    transform="scale(1.000022,0.99997803)"
    xml:space="preserve"
@@ -6390,6 +6445,7 @@
      x="210.44583"
      y="128.91266"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">~</tspan></text>
+
 
 
 <text
@@ -6409,6 +6465,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">\</tspan></text>
 
 
+
 <text
    transform="scale(1.000022,0.99997803)"
    xml:space="preserve"
@@ -6424,6 +6481,7 @@
      x="48.352806"
      y="143.09225"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">|</tspan></text>
+
 
 
 <text
@@ -6443,6 +6501,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">&lt;</tspan></text>
 
 
+
 <text
    transform="scale(1.000022,0.99997803)"
    xml:space="preserve"
@@ -6458,6 +6517,7 @@
      x="175.00793"
      y="143.09225"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">&gt;</tspan></text>
+
 
 
 <text
@@ -6477,6 +6537,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">?</tspan></text>
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:8.20090389px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.2050226"
@@ -6492,6 +6553,7 @@
      x="161.22452"
      y="151.46115"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">,</tspan></text>
+
 
 
 <text
@@ -6511,6 +6573,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">.</tspan></text>
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:8.20090389px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.2050226"
@@ -6526,6 +6589,7 @@
      x="189.63054"
      y="151.46115"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73363447px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.2050226">/</tspan></text>
+
 
 
 <text
@@ -6544,6 +6608,7 @@
      sodipodi:role="line">ctrl</tspan></text>
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:8.20108128px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.20502704"
@@ -6558,6 +6623,7 @@
      x="51.840042"
      y="161.18237"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73369384px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">fn</tspan></text>
+
 
 
 <text
@@ -6576,6 +6642,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73369384px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">shift</tspan></text>
 
 
+
 <text
    inkscape:export-ydpi="96"
    inkscape:export-xdpi="96"
@@ -6590,6 +6657,7 @@
      x="65.600471"
      id="tspan3042"
      sodipodi:role="line">super</tspan></text>
+
 
 
 <text
@@ -6608,6 +6676,7 @@
      sodipodi:role="line">alt</tspan></text>
 
 
+
 <text
    inkscape:export-ydpi="96"
    inkscape:export-xdpi="96"
@@ -6622,6 +6691,7 @@
      x="169.98911"
      id="tspan3050"
      sodipodi:role="line">alt</tspan></text>
+
 
 
 <text
@@ -6640,6 +6710,7 @@
      sodipodi:role="line">ctrl</tspan></text>
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:8.20108128px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.20502704"
@@ -6656,6 +6727,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73369384px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">caps lock</tspan></text>
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:8.20108128px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.20502704"
@@ -6670,6 +6742,7 @@
      x="35.045013"
      y="118.64011"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73369384px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">tab</tspan></text>
+
 
 
 <path
@@ -6771,6 +6844,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73369384px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">enter</tspan></text>
 
 
+
 <path
    d="m 221.12367,159.26251 1.90728,1.2452 -1.90728,1.2441 z"
    style="fill:none;stroke:#ffffff;stroke-width:0.17512044;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -6815,6 +6889,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73369384px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">shift</tspan></text>
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:8.20108223px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.20502704"
@@ -6829,6 +6904,7 @@
      x="49.292439"
      y="119.12124"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.2804327px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">Q</tspan></text>
+
 
 
 <text
@@ -6847,6 +6923,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.2804327px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">W</tspan></text>
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:8.20108223px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.20502704"
@@ -6861,6 +6938,7 @@
      x="78.495155"
      y="119.12124"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.2804327px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">E</tspan></text>
+
 
 
 <text
@@ -6879,6 +6957,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.2804327px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">R</tspan></text>
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:8.20108223px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.20502704"
@@ -6893,6 +6972,7 @@
      x="107.55687"
      y="119.12124"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.2804327px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">T</tspan></text>
+
 
 
 <text
@@ -6911,6 +6991,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.2804327px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">Y</tspan></text>
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:8.20108223px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.20502704"
@@ -6925,6 +7006,7 @@
      x="136.28227"
      y="119.12124"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.2804327px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">U</tspan></text>
+
 
 
 <text
@@ -6943,6 +7025,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.2804327px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">I</tspan></text>
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:8.20108223px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.20502704"
@@ -6957,6 +7040,7 @@
      x="165.07991"
      y="119.12124"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.2804327px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">O</tspan></text>
+
 
 
 <text
@@ -6975,6 +7059,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.2804327px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">P</tspan></text>
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:8.20108223px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.20502704"
@@ -6989,6 +7074,7 @@
      x="55.70388"
      y="133.28395"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.2804327px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">A</tspan></text>
+
 
 
 <text
@@ -7007,6 +7093,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.2804327px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">S</tspan></text>
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:8.20108223px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.20502704"
@@ -7021,6 +7108,7 @@
      x="84.003029"
      y="133.28395"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.2804327px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">D</tspan></text>
+
 
 
 <text
@@ -7039,6 +7127,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.2804327px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">F</tspan></text>
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:8.20108223px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.20502704"
@@ -7053,6 +7142,7 @@
      x="112.62527"
      y="133.28395"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.2804327px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">G</tspan></text>
+
 
 
 <text
@@ -7071,6 +7161,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.2804327px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">H</tspan></text>
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:8.20108223px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.20502704"
@@ -7085,6 +7176,7 @@
      x="141.51157"
      y="133.28395"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.2804327px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">J</tspan></text>
+
 
 
 <text
@@ -7103,6 +7195,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.2804327px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">K</tspan></text>
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:8.20108223px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.20502704"
@@ -7117,6 +7210,7 @@
      x="169.74995"
      y="133.28395"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.2804327px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">L</tspan></text>
+
 
 
 <text
@@ -7135,6 +7229,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.2804327px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">Z</tspan></text>
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:8.20108223px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.20502704"
@@ -7149,6 +7244,7 @@
      x="74.540512"
      y="147.46471"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.2804327px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">X</tspan></text>
+
 
 
 <text
@@ -7167,6 +7263,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.2804327px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">C</tspan></text>
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:8.20108223px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.20502704"
@@ -7181,6 +7278,7 @@
      x="103.16977"
      y="147.46471"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.2804327px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">V</tspan></text>
+
 
 
 <text
@@ -7199,6 +7297,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.2804327px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">B</tspan></text>
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:8.20108223px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.20502704"
@@ -7213,6 +7312,7 @@
      x="131.68417"
      y="147.46471"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.2804327px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">N</tspan></text>
+
 
 
 <text
@@ -7231,6 +7331,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.2804327px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">M</tspan></text>
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:8.20108223px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.20502704"
@@ -7245,6 +7346,7 @@
      x="93.049026"
      y="108.91736"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73369384px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">€</tspan></text>
+
 
 
 <path
@@ -7270,6 +7372,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73369384px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">|</tspan></text>
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:8.20108223px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.20502704"
@@ -7284,6 +7387,7 @@
      x="216.9686"
      y="104.45938"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73369384px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">back</tspan></text>
+
 
 
 <g
@@ -7414,6 +7518,7 @@
      x="206.68994"
      y="93.223251"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73369384px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">del</tspan></text>
+
 
 
 <g
@@ -8261,6 +8366,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73369384px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">esc</tspan></text>
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:8.20108223px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.20502704"
@@ -8275,6 +8381,7 @@
      x="193.61581"
      y="93.223251"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.73369384px;font-family:'Star Labs';-inkscape-font-specification:'Star Labs';fill:#ffffff;stroke-width:0.20502704">lock</tspan></text>
+
 
 
 <text
@@ -8292,6 +8399,7 @@
      style="fill:#ffffff;stroke-width:0.27336937">F1</tspan></text>
 
 
+
 <text
    id="text4066"
    style="font-variant:normal;font-weight:normal;font-size:2.18695498px;font-family:'Star Labs';-inkscape-font-specification:StarLabs-Regular;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.27336937"
@@ -8305,6 +8413,7 @@
      y="94.772171"
      x="58.55407 59.780952"
      style="fill:#ffffff;stroke-width:0.27336937">F2</tspan></text>
+
 
 
 <text
@@ -8322,6 +8431,7 @@
      style="fill:#ffffff;stroke-width:0.27336937">F3</tspan></text>
 
 
+
 <text
    id="text4114"
    style="font-variant:normal;font-weight:normal;font-size:2.18695498px;font-family:'Star Labs';-inkscape-font-specification:StarLabs-Regular;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.27336937"
@@ -8335,6 +8445,7 @@
      y="94.772171"
      x="83.316551"
      style="fill:#ffffff;stroke-width:0.27336937">F4</tspan></text>
+
 
 
 <text
@@ -8352,6 +8463,7 @@
      style="fill:#ffffff;stroke-width:0.27336937">F6</tspan></text>
 
 
+
 <text
    id="text4150"
    style="font-variant:normal;font-weight:normal;font-size:2.18695498px;font-family:'Star Labs';-inkscape-font-specification:StarLabs-Regular;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.27336937"
@@ -8365,6 +8477,7 @@
      y="94.772171"
      x="132.92641 134.15329"
      style="fill:#ffffff;stroke-width:0.27336937">F8</tspan></text>
+
 
 
 <text
@@ -8382,6 +8495,7 @@
      style="fill:#ffffff;stroke-width:0.27336937">F9</tspan></text>
 
 
+
 <text
    id="text4240"
    style="font-variant:normal;font-weight:normal;font-size:2.18695498px;font-family:'Star Labs';-inkscape-font-specification:StarLabs-Regular;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.27336937"
@@ -8395,6 +8509,7 @@
      y="94.772171"
      x="157.1021"
      style="fill:#ffffff;stroke-width:0.27336937">F10</tspan></text>
+
 
 
 <text
@@ -8412,6 +8527,7 @@
      style="fill:#ffffff;stroke-width:0.27336937">F12</tspan></text>
 
 
+
 <text
    id="text4240-3"
    style="font-variant:normal;font-weight:normal;font-size:2.18695498px;font-family:'Star Labs';-inkscape-font-specification:StarLabs-Regular;writing-mode:lr-tb;display:inline;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.27336937"
@@ -8425,6 +8541,7 @@
      y="94.772171"
      x="169.6657"
      style="fill:#ffffff;stroke-width:0.27336937">F11</tspan></text>
+
 
 
 <text
@@ -8442,6 +8559,7 @@
      style="fill:#ffffff;stroke-width:0.27336937">F7</tspan></text>
 
 
+
 <text
    id="text4114-3"
    style="font-variant:normal;font-weight:normal;font-size:2.18695498px;font-family:'Star Labs';-inkscape-font-specification:StarLabs-Regular;writing-mode:lr-tb;display:inline;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.27336937"
@@ -8455,6 +8573,7 @@
      y="94.772171"
      x="95.74675"
      style="fill:#ffffff;stroke-width:0.27336937">F5</tspan></text>
+
 
 
 <g

@@ -1452,23 +1452,23 @@
    inkscape:pageopacity="0"
    inkscape:pageshadow="2"
    inkscape:window-width="1885"
-   inkscape:window-height="1536"
+   inkscape:window-height="1537"
    id="namedview249"
    showgrid="false"
    inkscape:zoom="1"
-   inkscape:cx="224.33793"
+   inkscape:cx="45.83793"
    inkscape:cy="-124.46976"
-   inkscape:window-x="70"
+   inkscape:window-x="1955"
    inkscape:window-y="27"
    inkscape:window-maximized="0"
-   inkscape:current-layer="layer3"
+   inkscape:current-layer="layer2"
    inkscape:pagecheckerboard="true" />
 
 <g
    inkscape:groupmode="layer"
    id="layer4"
    inkscape:label="Squircle-Background"
-   style="display:inline"><g
+   style="display:none"><g
      style="display:inline"
      transform="matrix(0.14577284,0,0,0.14577284,110,110.30254)"
      id="g196"><g
@@ -1500,7 +1500,7 @@
          inkscape:connector-curvature="0"
          style="fill:url(#SVGID_1_-3)" /><polygon
          class="st2"
-         points="22.687,62.276 8.546,142.68 16.387,166.974 172.911,219.015 201.939,95.591 "
+         points="16.387,166.974 172.911,219.015 201.939,95.591 22.687,62.276 8.546,142.68 "
          id="polygon17"
          style="fill:#fbfbfb" /><g
          id="g21"><path
@@ -1515,7 +1515,7 @@
          inkscape:connector-curvature="0"
          style="fill:#f8f8f8" /><polygon
          class="st3"
-         points="168.976,221.012 167.321,217.161 18.568,167.703 19.094,171.178 "
+         points="18.568,167.703 19.094,171.178 168.976,221.012 167.321,217.161 "
          id="polygon25"
          style="fill:#999999" /><linearGradient
          id="linearGradient1127"
@@ -1879,7 +1879,7 @@
    inkscape:groupmode="layer"
    id="layer3"
    inkscape:label="Squircle-Shadow"
-   style="display:inline"><path
+   style="display:none"><path
      style="display:inline;opacity:0.5;fill:#17171d;fill-opacity:0.39215686;stroke-width:1.41822851"
      d="m 4.00001,216.54492 v 10 C 4.00001,240.64746 15.35255,252 29.45509,252 h 197.08984 c 14.10254,0 25.45508,-11.35254 25.45508,-25.45508 v -10 C 252.00001,230.64746 240.64747,242 226.54493,242 H 29.45509 C 15.35255,242 4.00001,230.64746 4.00001,216.54492 Z"
      id="rect1101-3"
@@ -1891,9 +1891,14 @@
    inkscape:groupmode="layer"
    id="layer2"
    inkscape:label="Circle-Background"
-   style="display:none"><circle
+   style="display:inline"><circle
      style="display:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path1090"
+     cx="128"
+     cy="128"
+     r="124" /><circle
+     style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path1090-3"
      cx="128"
      cy="128"
      r="124" /></g><g
@@ -1915,11 +1920,12 @@
 
 
 
+
 </g></g><g
    inkscape:groupmode="layer"
    id="layer6"
    inkscape:label="Circle-Shadow"
-   style="display:none"
+   style="display:inline"
    sodipodi:insensitive="true"><g
      id="g2548"
      style="display:inline"
