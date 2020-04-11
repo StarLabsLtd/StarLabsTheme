@@ -1206,7 +1206,7 @@
    id="layer4"
    inkscape:label="Squircle-Shadow"
    style="display:none"><path
-     style="display:inline;opacity:0.5;fill:#17171d;fill-opacity:0.39215686;stroke-width:1.41822851"
+     style="display:none;opacity:0.5;fill:#17171d;fill-opacity:0.39215686;stroke-width:1.41822851"
      d="m 4,216.54492 v 10 C 4,240.64746 15.35254,252 29.455078,252 H 226.54492 C 240.64746,252 252,240.64746 252,226.54492 v -10 C 252,230.64746 240.64746,242 226.54492,242 H 29.455078 C 15.35254,242 4,230.64746 4,216.54492 Z"
      id="rect1101-3"
      inkscape:connector-curvature="0" /></g><g
@@ -1214,7 +1214,7 @@
    id="layer2"
    inkscape:label="Circle-Background"
    style="display:inline"><circle
-     style="display:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.74049902;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path1090"
      cx="128"
      cy="128"
@@ -1255,9 +1255,9 @@
        inkscape:connector-curvature="0"
        id="rect1188"
        d="M 17.333334,-404 H 50 l 15,15 h 97.66667 c 9.60266,0 17.33333,7.73034 17.33333,17.333 v 110.33367 C 180,-251.73067 172.26933,-244 162.66667,-244 H 17.333334 C 7.730667,-244 0,-251.73067 0,-261.33333 V -386.66667 C 0,-396.26933 7.730667,-404 17.333334,-404 Z"
-       style="fill:#003059;fill-opacity:1;stroke:none;stroke-width:1.89773726;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /><path
+       style="fill:#001c45;fill-opacity:1;stroke:none;stroke-width:1.89773726;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /><path
        sodipodi:nodetypes="sccssssssss"
        inkscape:connector-curvature="0"
        id="rect1188-3"
        d="M 14.083334,-359 H 60 l 15,-15 h 90.91667 c 7.80216,0 14.08333,6.28117 14.08333,14.08333 v 101.83334 C 180,-250.28117 173.71883,-244 165.91667,-244 H 14.083334 C 6.281167,-244 0,-250.28117 0,-258.08333 V -344.917 C 0,-352.71916 6.281167,-359 14.083334,-359 Z"
-       style="fill:#0068bf;fill-opacity:1;stroke:none;stroke-width:1.7105974;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></g></g></svg>
+       style="fill:#325485;fill-opacity:1;stroke:none;stroke-width:1.7105974;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></g></g></svg>
