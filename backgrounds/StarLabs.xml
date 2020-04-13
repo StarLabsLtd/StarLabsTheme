@@ -251,4 +251,13 @@
 <scolor>#000000</scolor>
 <artist>StarLabs</artist>
 </wallpaper>
+<wallpaper deleted="false">
+<name>Star Labs Systems - Sky</name>
+<filename>/usr/share/backgrounds/StarLabs/StarWallpaper0Sky.png</filename>
+<options>zoom</options>
+<shade_type>solid</shade_type>
+<pcolor>#000000</pcolor>
+<scolor>#000000</scolor>
+<artist>StarLabs</artist>
+</wallpaper>
 </wallpapers>

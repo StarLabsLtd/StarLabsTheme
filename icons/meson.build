@@ -215,3 +215,21 @@ strip_directory: false,
 exclude_files: ['meson.build'],
 )
 
+install_subdir('StarLabs-Sky',
+install_dir: icon_dir,
+strip_directory: false,
+exclude_files: ['meson.build'],
+)
+
+install_subdir('StarLabs-Sky-Circle',
+install_dir: icon_dir,
+strip_directory: false,
+exclude_files: ['meson.build'],
+)
+
+install_subdir('StarLabs-Sky-Squircle',
+install_dir: icon_dir,
+strip_directory: false,
+exclude_files: ['meson.build'],
+)
+

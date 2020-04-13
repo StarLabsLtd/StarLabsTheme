@@ -14,6 +14,7 @@ backgrounds_sources = [
 'StarWallpaper3.jpg',
 'StarWallpaper2.jpg',
 'StarWallpaper1.jpg',
+'StarWallpaper0Sky.png',
 'StarWallpaper0Tribute.png',
 'StarWallpaper0OLED.png',
 'StarWallpaper0Red.png',
