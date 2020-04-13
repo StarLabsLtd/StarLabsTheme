@@ -1,8 +1,9 @@
 #lockDialogGroup {
-background: $accent-bg url("noise-texture.svg");
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
+	background-color: none;
+	background: $accent-bg url("noise-texture.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .login-dialog StEntry {
@@ -14,29 +15,29 @@ background-position: center;
 		border-right: none;
 	border-bottom: 3px solid;
 	}
-border-color: $fg-secondary;
-color: $fg-secondary;
-background-color: transparent;
-box-shadow: none;
-selection-background-color: $accent-active;
-selected-color: $accent-fg;
-&:hover {
-border-color: $accent-hover;
-color: $accent-fg;
-}
-&:focus {
-border-color: $accent-active;
-color: $accent-fg;
-}
-&:insensitive {
-color: $accent-disabled;
-border-color: $accent-disabled;
-}
-StIcon.capslock-warning {
-icon-size: 16px;
-warning-color: $failure;
-padding: 0 4px;
-}
+	border-color: $fg-secondary;
+	color: $fg-secondary;
+	background-color: transparent;
+	box-shadow: none;
+	selection-background-color: $accent-active;
+	selected-color: $accent-fg;
+	&:hover {
+		border-color: $accent-hover;
+		color: $accent-fg;
+	}
+	&:focus {
+		border-color: $accent-active;
+		color: $accent-fg;
+	}
+	&:insensitive {
+		color: $accent-disabled;
+		border-color: $accent-disabled;
+	}
+	StIcon.capslock-warning {
+		icon-size: 16px;
+		warning-color: $failure;
+		padding: 0 4px;
+	}
 }
 
 #panel {

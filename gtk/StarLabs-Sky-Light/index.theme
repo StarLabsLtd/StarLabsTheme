@@ -1,0 +1,9 @@
+[X-GNOME-Metatheme]
+Name=StarLabs-Sky-Light
+Type=X-GNOME-Metatheme
+Comment=StarLabs StarLabs-Sky-Light theme
+Encoding=UTF-8
+GtkTheme=StarLabs-Sky-Light
+IconTheme=@ThemeName@
+CursorTheme=@ThemeName@
+CursorSize=24
