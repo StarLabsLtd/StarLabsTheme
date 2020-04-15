@@ -1,6 +1,3 @@
 [submodule "extensions/gnome-shell-extension-lockkeys"]
 	path = extensions/gnome-shell-extension-lockkeys
 	url = https://github.com/kazysmaster/gnome-shell-extension-lockkeys.git
-[submodule "upstream/yaru"]
-	path = upstream/yaru
-	url = https://github.com/ubuntu/yaru.git
