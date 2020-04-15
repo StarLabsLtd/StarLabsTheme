@@ -1,9 +1,15 @@
-# sassc = find_program('sassc')
-
 # destination directory
 theme_dir = join_paths(get_option('prefix'), 'share', 'themes')
 gnomeshell_theme_dir = join_paths(get_option('datadir'), 'gnome-shell', 'theme')
 install_dir = join_paths(theme_dir, 'StarLabs-Orange-Light', 'gnome-shell')
+
+theme_css = []
+theme_sources = files(
+	run_command(
+		'find', '-L', '../Master', '-name', '*.scss'
+		).stdout().strip().split('\n')
+	)
+assert(theme_sources.length() > 0, 'No theme sources found')
 
 # generate .css files
 theme_sources = [
@@ -50,19 +56,21 @@ theme_sources = [
 	'../Master/gnome-shell-sass/widgets/_workspace-thumbnails.scss',
 	'../Master/gnome-shell-sass/_oliverqueen.scss',
 ]
-
+theme_css=[]
+style_css=[]
 # generate .css files
 # and install to themes/THEMENAME/gtk-3.0
-custom_target('StarLabs-Orange-Light-gnome',
-input: 'gnome-shell.scss',
-output: 'gnome-shell.css',
-depend_files: files(theme_sources),
-command: [sassc, '-a', '@INPUT@', '@OUTPUT@'],
-build_by_default: true,
-install: true,
-install_dir: install_dir,
+style_css += custom_target('StarLabs-Orange-Light-gnome',
+	input: 'gnome-shell.scss',
+	output: 'gnome-shell.css',
+	depend_files: files(theme_sources),
+	command: [sassc, '-a', '@INPUT@', '@OUTPUT@'],
+	build_by_default: true,
+	install: true,
+	install_dir: install_dir,
 )
 
+theme_css += style_css
 # static files to copy
 data_sources = [
 '../Master/calendar-today.svg',
@@ -111,3 +119,22 @@ data_sources = [
 # install static data files
 install_data(data_sources, install_dir: install_dir)
 
+gresource_xml = files('gnome-shell-theme.gresource.xml')[0]
+
+data_svg = run_command(
+	gresources_xml_parser, [
+		join_paths(meson.source_root(), '@0@'.format(gresource_xml)),
+		'--filter', '*.css',
+	],
+).stdout().strip().split('\n')
+
+assert(data_sources.length() > 0 and data_sources[0] != '', 'No data sources found')
+
+gnome.compile_resources(
+    'gnome-shell-theme',
+    gresource_xml,
+    dependencies: theme_css,
+    gresource_bundle: true,
+    install: true,
+    install_dir: install_dir,
+)

@@ -61,6 +61,7 @@ if [ "$d" == "Install" ]; then
 
 	echo -ne "Installing GDM theme..."
 	sudo update-alternatives --install /usr/share/gnome-shell/theme/gdm3.css gdm3.css /usr/share/gnome-shell/theme/StarLabs/gnome-shell.css 47
+	sudo update-alternatives --install /usr/share/gnome-shell/gdm3-theme.gresource gdm3-theme.gresource /usr/share/gnome-shell/theme/StarLabs/gnome-shell-theme.gresource 47
 	echo "Done"
 
         echo -ne "Compiling schemas..."
@@ -123,6 +124,7 @@ elif [ "$d" == "Uninstall" ]; then
 
         echo -ne "Uninstalling GDM theme..."
 	sudo update-alternatives --remove gdm3.css /usr/share/gnome-shell/theme/StarLabs/gnome-shell.css
+	sudo update-alternatives --remove gdm3-theme.gresource /usr/share/gnome-shell/theme/StarLabs/gnome-shell-theme.gresource
         echo "Done"
 
         echo -ne "Compiling schemas..."

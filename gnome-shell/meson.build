@@ -1,4 +1,6 @@
 sassc = find_program('sassc')
+gnome = import('gnome')
+gresources_xml_parser = find_program('gresources-xml-parser.py')
 subdir('StarLabs')
 subdir('StarLabs-Light')
 subdir('StarLabs-Navy')

@@ -337,6 +337,8 @@ while read palette ; do
 			rm -r gnome-shell/StarLab*
 #			rm gnome-shell/meson.build
 			echo "sassc = find_program('sassc')" > gnome-shell/meson.build
+			echo "gnome = import('gnome')" >> gnome-shell/meson.build
+			echo "gresources_xml_parser = find_program('gresources-xml-parser.py')" >> gnome-shell/meson.build
 		fi
 		creategnome
 		newColor "gnome-shell/$theme/gnome-shell.scss"
