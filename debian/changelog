@@ -1,6 +1,7 @@
 starlabstheme-master (1.1.8) focal; urgency=medium
 
   * Added gresource file
+  * Fixed icon theme inheritance
 
  -- Sean Rhodes <sean@starlabs.systems>  Wed, 15 Apr 2020 13:32:07 +0100
 

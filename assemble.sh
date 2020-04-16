@@ -50,9 +50,10 @@ function renderIcon() {
 	cp -r icons/src/scalable-max-32/ "icons/$1/scalable-max-32"
 	echo "[Icon Theme]" > "icons/$1/index.theme"
 	echo "Name=$1" >> "icons/$1/index.theme"
-	cat icons/src/index.theme >> "icons/$1/index.theme"
 	echo "Inherits=Humanity,hicolor" >> "icons/$1/index.theme"
 	echo "Example=folder" >> "icons/$1/index.theme"
+	cat icons/src/index.theme >> "icons/$1/index.theme"
+
 }
 function shapetastic() {
 	for svg in icons/src/fullcolor/*/*.svg; do
