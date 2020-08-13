@@ -1,0 +1,16 @@
+$variant: '@variant@';
+$titlebar: '@topbar@';
+$trans: 'false';
+$menu: 'gnome';
+$titlebutton: 'circle';
+$theme: 'default';
+$selected_bg_color: @hex@;  
+
+@import '../_sass/colors';
+@import '../_sass/variables';
+@import '../_sass/gtk/drawing';
+@import '../_sass/gtk/common';
+@import '../_sass/gtk/apps';
+@import '../_sass/gtk/granite';
+@import '../_sass/gtk/darksidebar_widgets';
+@import '../_sass/gtk/colors-public';

@@ -1,0 +1,26 @@
+option(
+  'theme_name',
+  type: 'string',
+  value: 'StarLabs',
+  description: 'Set theme name',
+)
+
+option(
+  'colors',
+  type: 'array',
+  choices: ['default', 'dark'],
+  description: 'Choose color variant(s)',
+)
+
+option(
+  'accents',
+  type: 'array',
+  choices: ['default', 'green'],
+  description: 'Choose accent color(s)',
+)
+
+option(
+  'gnome_shell_version',
+  type: 'string',
+  description: 'Manually set gnome-shell version',
+)

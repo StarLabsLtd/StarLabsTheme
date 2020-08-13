@@ -1,3 +1,6 @@
 [submodule "extensions/gnome-shell-extension-lockkeys"]
 	path = extensions/gnome-shell-extension-lockkeys
 	url = https://github.com/kazysmaster/gnome-shell-extension-lockkeys.git
+[submodule "upstream/Qogir-theme"]
+	path = upstream/Qogir-theme
+	url = https://github.com/vinceliuice/Qogir-theme.git
