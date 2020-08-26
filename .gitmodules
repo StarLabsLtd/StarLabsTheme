@@ -1,4 +1,1 @@
 
-[submodule "src/extensions/gnome-shell-extension-lockkeys"]
-	path = src/extensions/gnome-shell-extension-lockkeys
-	url = https://github.com/kazysmaster/gnome-shell-extension-lockkeys.git
