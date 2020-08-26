@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+  <wallpaper deleted="false">
+    <name>Star Labs Systems</name>
+    <filename>/usr/share/backgrounds/StarLabs/Wallpaper1.svg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000000</pcolor>
+    <scolor>#000000</scolor>
+    <artist>StarLabs</artist>
+  </wallpaper>
+
+  <wallpaper deleted="false">
+    <name>Star Labs Systems - Herd</name>
+    <filename>/usr/share/backgrounds/StarLabs/Wallpaper2.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000000</pcolor>
+    <scolor>#000000</scolor>
+    <artist>StarLabs</artist>
+  </wallpaper>
+
+  <wallpaper deleted="false">
+    <name>Star Labs Systems - Mist</name>
+    <filename>/usr/share/backgrounds/StarLabs/Wallpaper3.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000000</pcolor>
+    <scolor>#000000</scolor>
+    <artist>StarLabs</artist>
+  </wallpaper>
+
+  <wallpaper deleted="false">
+    <name>Star Labs Systems - Boat</name>
+    <filename>/usr/share/backgrounds/StarLabs/Wallpaper4.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000000</pcolor>
+    <scolor>#000000</scolor>
+    <artist>StarLabs</artist>
+  </wallpaper>
+
+</wallpapers>

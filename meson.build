@@ -1,18 +1,58 @@
-project('StarLabs',
-        version: '0.1',
-        meson_version: '>= 0.45',
-        license : ['GPL3', 'CC BY-SA 4.0'],
-        default_options: ['prefix=/usr']
+project(
+  'StarLabs',
+  version: '4.0.0',
+  license: ['GPL3', 'CC BY-SA 4.0'],
+  meson_version: '>= 0.47.0',
+  default_options: ['prefix=/usr'],
 )
 
-subdir('backgrounds')
-subdir('extensions')
-subdir('font')
-subdir('gnome-shell')
-subdir('grub')
-subdir('gtk')
-subdir('icons')
-subdir('plymouth')
-subdir('sessions')
-subdir('sounds')
+theme_base_name = get_option('theme_name')
+theme_base_dir = join_paths(get_option('datadir'), 'themes', theme_base_name)
 
+sassc = find_program('sassc')
+sassc_opts = ['-M', '-t', 'expanded']
+
+themes = []
+foreach color: get_option('colors')
+  foreach accent: get_option('accents')
+    if color == 'default'
+      color_suffix = ''
+      scss_variant = 'light'
+      scss_topbar = 'light'
+    elif color == 'dark'
+      color_suffix = '-Dark'
+      scss_variant = 'dark'
+      scss_topbar = 'dark'
+    endif
+
+    if accent == 'default'
+      accent_suffix = ''
+      scss_accent = 'blue'
+      scss_hex = '#0068bf'
+    elif accent == 'green'
+      accent_suffix = '-Green'
+      scss_accent = 'green'
+      scss_hex = '#43a047'
+    endif
+
+    themes += {
+      'name': theme_base_name + accent_suffix + color_suffix,
+      'parent': theme_base_name + accent_suffix,
+      'dir': theme_base_dir + accent_suffix + color_suffix,
+      'color': color_suffix,
+      'accent': accent_suffix,
+      'scss_variant': scss_variant,
+      'scss_topbar': scss_topbar,
+      'scss_accent': scss_accent,
+      'scss_hex': scss_hex,
+    }
+  endforeach
+endforeach
+
+foreach theme: themes
+  install_data(
+    install_dir: theme['dir'],
+  )
+endforeach
+
+subdir('src')
