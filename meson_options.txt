@@ -24,3 +24,11 @@ option(
   type: 'string',
   description: 'Manually set gnome-shell version',
 )
+
+option(
+  'shapes',
+  type: 'array',
+  choices: ['default', 'circle', 'square'],
+  description: 'Choose icon shape(s)',
+)
+

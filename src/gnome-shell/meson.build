@@ -6,16 +6,7 @@ files_gnome_shell_scss = files(
         )
 assert(files_gnome_shell_scss.length() > 0, 'No theme sources found')
 
-files_gnome_shell_asset = files(
-        run_command(
-                'find', '-L', '../', '-name', '*.svg'
-                ).stdout().strip().split('\n')
-        )
-assert(files_gnome_shell_asset.length() > 0, 'No theme sources found')
-
-
 ### Program Dependancies
-gresources_xml_parser = find_program('gresources-xml-parser.py')
 gnome_shell = find_program('gnome-shell', required: false)
 glib_compile_resources = find_program('glib-compile-resources')
 gnome = import('gnome')
@@ -46,12 +37,6 @@ foreach theme: themes
   gnome_shell_dir = join_paths(theme['dir'], 'gnome-shell')
   gresource_dir = join_paths('share', 'gnome-shell', 'theme', theme['name'])
 
-#  install_subdir(
-#    'assets',
-#    strip_directory: true,
-#    install_dir: gnome_shell_dir,
-#  )
-
   install_data(
     [
       'pad-osd.css',
@@ -71,7 +56,6 @@ foreach theme: themes
   gnome_shell_scss_conf.set('hex', theme['scss_hex'])
   gnome_shell_scss_conf.set('theme_name', theme['name'])
   gnome_shell_scss_conf.set('color', theme['color'])
-  gnome_shell_scss_conf.set('parent', theme['parent'])
 
   # Configure SCSS file
   gnome_shell_scss = configure_file(
@@ -92,24 +76,22 @@ foreach theme: themes
     install_dir: gnome_shell_dir,
   )
 
-  if theme['color'] == '-Dark'
-    # Configure XML file
-    gresource_xml = configure_file(
-      input: 'gnome-shell-theme.gresource.xml.in',
-      output: 'gnome-shell-theme.gresource.@0@.xml'.format(theme['parent']),
-      configuration: gnome_shell_scss_conf,
-    )
-    # Complile Gresource file
-    gresource = configure_file(
-      input: gresource_xml,
-      output: 'gnome-shell-theme.gresource.@0@'.format(theme['parent']),
-      command: [glib_compile_resources, '@INPUT@', '--target', '@OUTPUT@'],
-    )
-    # Install Gresource file
-    install_data(
-      gresource,
-      rename: 'gnome-shell-theme.gresource',
-      install_dir: gresource_dir,
-    )
-  endif
+  # Configure XML file
+  gresource_xml = configure_file(
+    input: 'gnome-shell-theme.gresource.xml.in',
+    output: 'gnome-shell-theme.gresource.@0@.xml'.format(theme['name']),
+    configuration: gnome_shell_scss_conf,
+  )
+  # Complile Gresource file
+  gresource = configure_file(
+    input: gresource_xml,
+    output: 'gnome-shell-theme.gresource.@0@'.format(theme['name']),
+    command: [glib_compile_resources, '@INPUT@', '--target', '@OUTPUT@'],
+  )
+  # Install Gresource file
+  install_data(
+    gresource,
+    rename: 'gnome-shell-theme.gresource',
+    install_dir: gresource_dir,
+  )
 endforeach

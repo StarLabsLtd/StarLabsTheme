@@ -1,0 +1,20 @@
+[Icon Theme]
+Name=Numix Square
+Comment=Numix icon theme with a square apps icons design
+
+Inherits=Numix
+
+Example=directory-x-normal
+
+# Directory list
+Directories=apps
+
+
+[apps]
+Size=48
+Context=Applications
+MinSize=8
+MaxSize=512
+Type=Scalable
+
+

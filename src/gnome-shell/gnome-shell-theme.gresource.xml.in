@@ -75,9 +75,9 @@
     <file alias="switch-on.svg">../../../src/gnome-shell/assets/switch-on.svg</file>
 
     <file alias="pad-osd.css">../../../src/gnome-shell/pad-osd.css</file>
-    <file alias="gnome-shell.css">@parent@.css</file>
-    <file alias="gdm3.css">@parent@.css</file>
-    <file alias="StarLabs/gnome-shell.css">@parent@.css</file>
-    <file alias="StarLabs-Dark/gnome-shell.css">@parent@-Dark.css</file>
+    <file alias="gnome-shell.css">@theme_name@.css</file>
+    <file alias="gdm3.css">@theme_name@.css</file>
+    <file alias="StarLabs/gnome-shell.css">@theme_name@.css</file>
+    <file alias="StarLabs-Dark/gnome-shell.css">@theme_name@.css</file>
   </gresource>
 </gresources>
