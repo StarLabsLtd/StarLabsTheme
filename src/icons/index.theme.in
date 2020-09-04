@@ -4,7 +4,7 @@ Comment=@icon_name@ icon theme
 
 Inherits=Humanity,hi-color
 
-Example=directory-x-normal
+Example=folder
 
 # Directory list
 Directories=48/apps,48/categories,48/emblems,48/mimetypes,48/places,48/status

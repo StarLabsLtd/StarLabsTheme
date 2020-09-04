@@ -77,6 +77,8 @@ apps_imagemagick.svg_display-im6.Q16.svg
 apps_image-viewer.svg_eog.svg
 apps_image-viewer.svg_multimedia-photo-viewer.svg
 apps_image-viewer.svg_org.gnome.eog.svg
+apps_inkscape.svg_org.inkscape.Inkscape.svg
+apps_inkscape.svg_inkscape-logo.svg
 apps_log-viewer-app.svg_gnome-logs.svg
 apps_log-viewer-app.svg_logviewer.svg
 apps_log-viewer-app.svg_org.gnome.Logs.svg

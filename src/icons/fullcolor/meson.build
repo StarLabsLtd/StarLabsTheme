@@ -31,17 +31,17 @@ foreach icon_theme: icon_themes
         output: '@0@@1@'.format(icon_theme['name'], '.svg'),
         command: ['sed', '-i', icon_theme['hex'], '@OUTPUT@']
       )
+# inkscape --batch-process --actions="select:apps_gnome-mahjongg;AlignHorizontalCenter;AlignVerticalCenter" --export-id=apps_gnome-mahjongg --export-id-only --export-area-page --export-filename=test.svg master.svg
 
       file_48 = configure_file(
         input: file_svg,
-        output: target_temp_name + size + '.png',
+        output: target_temp_name + '.svg',
         command: [
           inkscape, '--batch-process',
-          '--actions="select:@0@;AlignHorizontalCenter;AlignVerticalCenter;"'.format(object),
+          '--actions=select:@0@;AlignHorizontalCenter;AlignVerticalCenter;'.format(object),
           '--export-id=@0@'.format(object),
           '--export-id-only',
           '--export-area-page',
-          '--export-dpi=96',
           '--export-filename=@OUTPUT@',
           '@INPUT@',
         ]

@@ -74,41 +74,43 @@ stage {
 // Entries
 //
 StEntry {
-  padding: 7px;
-  caret-size: 1px;
-  caret-color: $fg_color;
-  selection-background-color: $selected_bg_color;
-  selected-color: $selected_fg_color;
-  transition-duration: 300ms;
-  border-radius: 3px;
+  @extend %StEntry;
 
-  @include entry(normal);
+//  padding: 7px;
+//  caret-size: 1px;
+//  caret-color: $fg_color;
+//  selection-background-color: $selected_bg_color;
+//  selected-color: $selected_fg_color;
+//  transition-duration: 300ms;
+//  border-radius: 3px;
 
-  &:focus, &:hover {
-    @include entry(focus);
+//  @include entry(normal);
 
-    StLabel.hint-text {
-      color: transparentize($selected_fg_color, 0.3);
-    }
-  }
+//  &:focus, &:hover {
+//    @include entry(focus);
 
-  &:insensitive { @include entry(insensitive); }
+//    StLabel.hint-text {
+//      color: transparentize($selected_fg_color, 0.3);
+//    }
+//  }
 
-  StIcon.capslock-warning {
-    icon-size: 16px;
-    warning-color: $warning_color;
-    padding: 0 4px;
-  }
+//  &:insensitive { @include entry(insensitive); }
 
-  StIcon.peek-password {
-    icon-size: 16px;
-    padding: 0 4px;
-  }
+//  StIcon.capslock-warning {
+//    icon-size: 16px;
+//    warning-color: $warning_color;
+//    padding: 0 4px;
+//  }
 
-  StLabel.hint-text {
-    margin-left: 2px;
-    color: transparentize($fg_color, 0.3);
-  }
+//  StIcon.peek-password {
+//    icon-size: 16px;
+//    padding: 0 4px;
+//  }
+
+//  StLabel.hint-text {
+//    margin-left: 2px;
+//    color: transparentize($fg_color, 0.3);
+//  }
 }
 
 //
@@ -2893,6 +2895,47 @@ $legacy_icon_size: 24px;
   max-width: 23em;
 }
 
+%StEntry {
+  &, &:hover, &:focus, &:insensitive {
+    padding: 9px;
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid;
+  }
+  border-color: 1px solid $button_border;
+  color: $fg-color;
+  background-color: transparent;
+  box-shadow: none;
+  selection-background-color: $selected_bg_color;
+  selected-color: $selected_fg_color;
+  &:hover {
+    border-color: if($variant=='light', darken($button_border, 5%), lighten($button_border, 5%))
+  }
+  &:focus {
+    border-color: if($variant == 'light', $sec_selected_bg_color, $alt_selected_bg_color);
+  }
+  &:insensitive {
+    color: $insensitive_fg_color;
+    border-color: transparentize($button_border, 0.45);
+  }
+  StIcon.capslock-warning {
+    icon-size: 16px;
+    warning-color: $warning-color;
+    padding: 0 4px;
+  }
+  StIcon.peek-password {
+    icon-size: 16px;
+    padding: 0 4px;
+  }
+
+  StLabel.hint-text {
+    margin-left: 2px;
+    color: transparentize($fg_color, 0.3);
+  }
+
+}
 .login-dialog {
   //reset
   border: none;
@@ -2922,6 +2965,9 @@ $legacy_icon_size: 24px;
     padding-top: 0;
     padding-bottom: 0;
     max-height: 2em;
+  }
+  StEntry {
+    @extend %StEntry;
   }
 }
 

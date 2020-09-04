@@ -60,7 +60,7 @@ foreach accent: get_option('accents')
     icon_themes += {
       'name': theme_base_name + accent_suffix,
       'dir': icon_base_dir + accent_suffix,
-#      'shape': shape_suffix,
+#     'shape': shape_suffix,
       'accent': accent_suffix,
       'hex': 's/#0068bf/' + scss_hex + '/',
     }
