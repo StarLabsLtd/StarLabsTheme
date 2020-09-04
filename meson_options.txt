@@ -26,9 +26,8 @@ option(
 )
 
 option(
-  'shapes',
+  'icon_sizes',
   type: 'array',
-  choices: ['default', 'circle', 'square'],
-  description: 'Choose icon shape(s)',
+  choices: ['8', '16', '22', '24', '32', '48', '64', '128', '256'],
+  description: 'Choose icon size(s)',
 )
-

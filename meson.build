@@ -14,7 +14,7 @@ sassc = find_program('sassc')
 sassc_opts = ['-M', '-t', 'expanded']
 
 themes = []
-icons = []
+icon_themes = []
 
 foreach accent: get_option('accents')
   if accent == 'default'
@@ -49,26 +49,23 @@ foreach accent: get_option('accents')
     }
   endforeach
 
-  foreach shape: get_option('shapes')
-    if shape == 'default'
-      shape_suffix = ''
-      inkscape_options = ['--actions=select:Square', '--verb=EditDelete', '--select=Circle', '--verb=EditDelete']
-    elif shape == 'circle'
-      shape_suffix = '-Circle'
-      inkscape_options = ['--actions=select:Square', '--verb=EditDelete', '--select=Default', '--verb=EditDelete']
-    elif shape == 'square'
-      shape_suffix = '-Square'
-      inkscape_options = ['--actions=select:Default', '--verb=EditDelete', '--select=Circle', '--verb=EditDelete']
-    endif
-    icons += {
-      'name': theme_base_name + accent_suffix + shape_suffix,
-      'dir': icon_base_dir + accent_suffix + shape_suffix,
-      'shape': shape_suffix,
+#  foreach shape: get_option('shapes')
+#    if shape == 'default'
+#      shape_suffix = ''
+#    elif shape == 'circle'
+#      shape_suffix = '-Circle'
+#    elif shape == 'square'
+#      shape_suffix = '-Square'
+#    endif
+    icon_themes += {
+      'name': theme_base_name + accent_suffix,
+      'dir': icon_base_dir + accent_suffix,
+#      'shape': shape_suffix,
       'accent': accent_suffix,
       'hex': 's/#0068bf/' + scss_hex + '/',
-      'options': inkscape_options
     }
-  endforeach
+
+#  endforeach
 endforeach
 
 foreach theme: themes
