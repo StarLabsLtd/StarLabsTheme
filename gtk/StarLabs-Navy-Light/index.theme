@@ -1,9 +1,0 @@
-[X-GNOME-Metatheme]
-Name=StarLabs-Navy-Light
-Type=X-GNOME-Metatheme
-Comment=StarLabs StarLabs-Navy-Light theme
-Encoding=UTF-8
-GtkTheme=StarLabs-Navy-Light
-IconTheme=@ThemeName@
-CursorTheme=@ThemeName@
-CursorSize=24

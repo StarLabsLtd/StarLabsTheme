@@ -1,9 +1,0 @@
-[X-GNOME-Metatheme]
-Name=StarLabs-Orange
-Type=X-GNOME-Metatheme
-Comment=StarLabs StarLabs-Orange theme
-Encoding=UTF-8
-GtkTheme=StarLabs-Orange
-IconTheme=@ThemeName@
-CursorTheme=@ThemeName@
-CursorSize=24

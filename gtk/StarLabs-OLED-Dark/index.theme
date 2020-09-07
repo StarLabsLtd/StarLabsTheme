@@ -1,9 +1,0 @@
-[X-GNOME-Metatheme]
-Name=StarLabs-OLED-Dark
-Type=X-GNOME-Metatheme
-Comment=StarLabs StarLabs-OLED-Dark theme
-Encoding=UTF-8
-GtkTheme=StarLabs-OLED-Dark
-IconTheme=@ThemeName@
-CursorTheme=@ThemeName@
-CursorSize=24

@@ -1,3 +1,0 @@
-#!/bin/bash
-# sudo update-alternatives --install /usr/share/gnome-shell/theme/gdm3.css gdm3.css /usr/share/gnome-shell/theme/StarLabs/gnome-shell.css 99
-

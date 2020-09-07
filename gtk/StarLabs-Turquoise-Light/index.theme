@@ -1,9 +1,0 @@
-[X-GNOME-Metatheme]
-Name=StarLabs-Turquoise-Light
-Type=X-GNOME-Metatheme
-Comment=StarLabs StarLabs-Turquoise-Light theme
-Encoding=UTF-8
-GtkTheme=StarLabs-Turquoise-Light
-IconTheme=@ThemeName@
-CursorTheme=@ThemeName@
-CursorSize=24

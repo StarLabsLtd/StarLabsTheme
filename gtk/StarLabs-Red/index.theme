@@ -1,9 +1,0 @@
-[X-GNOME-Metatheme]
-Name=StarLabs-Red
-Type=X-GNOME-Metatheme
-Comment=StarLabs StarLabs-Red theme
-Encoding=UTF-8
-GtkTheme=StarLabs-Red
-IconTheme=@ThemeName@
-CursorTheme=@ThemeName@
-CursorSize=24
