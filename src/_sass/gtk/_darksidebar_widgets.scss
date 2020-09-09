@@ -1,83 +1,76 @@
 // Dark sidebar theme apps
-$side_theme_bg: $dark_sidebar_icon_bg;
-$side_theme_fg: rgba($dark_sidebar_icon_fg, 0.8);
-$side_theme_alt_fg: $dark_sidebar_icon_fg;
 
-%side_background {
-  color: $side_theme_fg;
-  background-color: $side_theme_bg;
 
-  &:disabled, label:disabled {
-    color: rgba($side_theme_alt_fg, 0.35);
-  }
+%link_selected {
+}
+%selected-button, %selected_items, %side_views {
 
 }
 
+$borders-color: red;
+$solid_borders_color: blue;
+$dark_sidebar_border: green;
+$menu: athur;
+$drop_target_color: pink;
+$cont_padding: 3px;
+$header_bg: orange;
+$header_bg_backdrop: $header_bg;
+$selection_mode_fg: green;
+$selection_mode_bg: green;
+
+%side_background {
+  background-color: $base-alt;
+  color: $on-base-alt;
+  & label, & image {
+    color: $on-base-alt;
+  }
+}
+
+
 %side_buttons {
-  color: $side_theme_fg;
-  background-color: rgba($dark_sidebar_icon_fg, 0.15);
+  color: $on-base-alt;
+  background-color: rgba($on-base-alt, 0.15);
   border: none;
 
   &:hover {
-    color: $side_theme_alt_fg;
-    background-color: rgba($dark_sidebar_icon_fg, 0.25);
+    color: disabled($on-base-alt);
+    background-color: rgba($on-base-alt, 0.25);
   }
 
   &:active, &:checked {
-    color: $selected_fg_color;
-    background-color: $selected_bg_color;
+    color: $on-primary;
+    background-color: $primary;
   }
 
   &:disabled {
-    color: rgba($side_theme_alt_fg, 0.35);
-    background-color: rgba($side_theme_alt_fg, 0.08);
+    color: rgba(disabled($on-base-alt), 0.35);
+    background-color: rgba(disabled($on-base-alt), 0.08);
   }
 
   @at-root %side_buttons_flat, &.flat {
     border: none;
     background: none;
     box-shadow: none;
-    color: $side_theme_fg;
+    color: $on-base-alt;
 
     &:hover {
-      color: $side_theme_alt_fg;
-      background-color: rgba($dark_sidebar_icon_fg, 0.15);
+      color: disabled($on-base-alt);
+      background-color: rgba($on-base-alt, 0.15);
     }
 
     &:active, &:checked {
-      color: $selected_fg_color;
-      background-color: $selected_bg_color;
+      color: $on-primary;
+      background-color: $primary;
     }
 
     &:disabled {
-      color: rgba($side_theme_alt_fg, 0.35);
+      color: rgba(disabled($on-base-alt), 0.35);
     }
-  }
-}
-
-%side_views {
-  color: $side_theme_fg;
-  background-color: $side_theme_bg;
-
-  &:hover {
-    color: $side_theme_alt_fg;
-    background-color: rgba($side_theme_alt_fg, 0.1);
-  }
-
-  &:disabled, label:disabled {
-    color: rgba($side_theme_alt_fg, 0.35);
-  }
-
-  &:selected {
-    @extend %selected_items;
-    
-    &.has-open-popup,
-    &:hover { background-color: mix(black, $selected_bg_color, 10%); }
   }
 }
 
 %side_searchbar {
-  background-image: image($side_theme_bg);
+  background-image: image($base-alt);
   box-shadow: none;
   border: none;
 
@@ -87,17 +80,17 @@ $side_theme_alt_fg: $dark_sidebar_icon_fg;
   }
 
   entry {
-    color: $side_theme_fg;
-    background-color: rgba($side_theme_fg, 0.1);
+    color: $on-base-alt;
+    background-color: rgba($on-base-alt, 0.1);
 
-    image { color: $side_theme_fg; }
+    image { color: $on-base-alt; }
 
     &:focus {
-      background-color: rgba($side_theme_fg, 0.12);
+      background-color: rgba($on-base-alt, 0.12);
     }
 
     &:disabled, label:disabled, image:disabled {
-      color: rgba($side_theme_alt_fg, 0.35);
+      color: rgba(disabled($on-base-alt), 0.35);
     }
   }
 }
@@ -106,8 +99,8 @@ $side_theme_alt_fg: $dark_sidebar_icon_fg;
   button.titlebutton {
     @each $k in ('close', 'maximize', 'minimize', 'restore') {
       @each $l, $m in ('',''), (':backdrop','-backdrop'), (':hover','-hover'), (':active','-active') {
-        &.#{$k}#{$l} { background-image: -gtk-scaled(url('assets/titlebutton-#{$k}#{$m}-dark#{$asset_suffix_win}.png'),
-                                                     url('assets/titlebutton-#{$k}#{$m}-dark#{$asset_suffix_win}@2.png'));
+        &.#{$k}#{$l} { background-image: -gtk-scaled(url('assets/titlebutton-#{$k}#{$m}-dark.png'),
+                                                     url('assets/titlebutton-#{$k}#{$m}-dark@2.png'));
         }
       }
     }
@@ -117,17 +110,17 @@ $side_theme_alt_fg: $dark_sidebar_icon_fg;
 %side_max_titlebutton {
   button.titlebutton {
     @each $l, $m in ('',''), (':backdrop','-backdrop'), (':hover','-hover'), (':active','-active') {
-      &.maximize#{$l} { background-image: -gtk-scaled(url('assets/titlebutton-restore#{$m}-dark#{$asset_suffix_win}.png'),
-                                                      url('assets/titlebutton-restore#{$m}-dark#{$asset_suffix_win}@2.png'));
+      &.maximize#{$l} { background-image: -gtk-scaled(url('assets/titlebutton-restore#{$m}-dark#.png'),
+                                                      url('assets/titlebutton-restore#{$m}-dark#@2.png'));
       }
     }
   }
 }
 
 %side_headerbar {
-  color: $side_theme_fg;
-  background-color: $side_theme_bg;
-  background-image: image($side_theme_bg);
+  color: $on-base-alt;
+  background-color: $base-alt;
+  background-image: image($base-alt);
   border: none;
   box-shadow: none;
 
@@ -141,16 +134,16 @@ $side_theme_alt_fg: $dark_sidebar_icon_fg;
   }
 
   button:not(.titlebutton) {
-    color: $side_theme_fg;
+    color: $on-base-alt;
     border: none;
 
     &:hover {
-      color: $side_theme_alt_fg;
-      background-color: rgba($side_theme_fg, 0.25);
+      color: disabled($on-base-alt);
+      background-color: rgba($on-base-alt, 0.25);
     }
 
     &:active, &:checked {
-      @include button(active);
+      @include entry(active);
     }
   }
 
@@ -169,11 +162,11 @@ $side_theme_alt_fg: $dark_sidebar_icon_fg;
       image { opacity: 0; } // Make menu button icon invisible
 
       &:hover {
-        background-color: rgba($side_theme_fg, 0.15);
+        background-color: rgba($on-base-alt, 0.15);
       }
 
       &:checked, &:active {
-        background-color: rgba($side_theme_fg, 0.25);
+        background-color: rgba($on-base-alt, 0.25);
       }
     }
   }
@@ -183,41 +176,15 @@ $side_theme_alt_fg: $dark_sidebar_icon_fg;
 // Nautilus
 //
 %dark_sidebar_button {
-  @include button(normal);
-
-  &:hover { @include button(hover); }
-  &:active, &:checked { @include button(active); }
-  &:disabled { @include button(insensitive); }
-}
-
-%dark_sidebar_entry {
   @include entry(normal);
 
-  &:focus { @include entry(focus); }
+  &:hover { @include entry(hover); }
+  &:active, &:checked { @include entry(active); }
   &:disabled { @include entry(insensitive); }
 }
 
-%dark_sidebar_scrollbar {
-  border-color: $borders_color;
-
-  &.overlay-indicator:not(.dragging):not(.hovering) slider {
-    background-color: lighten($dark_sidebar_fg, 15%);
-    border: 1px solid $borders_color;
-  }
-
-  slider {
-    background-color: transparentize(lighten($dark_sidebar_fg, 15%), 0.3);
-
-    &:hover { background-color: lighten($dark_sidebar_fg, 20%); }
-    &:hover:active { background-color: $selected_bg_color; }
-    &:disabled { background-color: transparent; }
-  }
-
-  trough { background-color: darken($dark_sidebar_bg, 5%); }
-}
-
 %headerbar_image {
-  background-image: -gtk-scaled(url("assets/logo.svg"),url("assets/logo@2.svg")), image($dark_sidebar_icon_bg);
+  background: image($base-alt);
   background-repeat: no-repeat;
   background-size: 38px auto;
   background-position: left center;
@@ -235,7 +202,7 @@ filechooser {
   // &.csd.background, placessidebar list { background-color: transparent; }
 
   paned > separator {
-    background-image: if($variant == 'light' and $titlebar == 'dark', _solid($base_color), _solid($dark_sidebar_border));
+    background-image: if($variant == 'light' and $titlebar == 'dark', _solid($surface), _solid($dark_sidebar_border));
   }
 
   headerbar {
@@ -243,8 +210,8 @@ filechooser {
     @if $menu == 'gnome' { @extend %headerbar_image; } // Set nautilus headerbar mountain icon
 
     &, &:backdrop {
-      box-shadow: inset 0 -1px if($variant=='light', rgba($dark_sidebar_icon_bg, 0.15), $dark_sidebar_icon_bg),
-                  inset 38px 0 0 0 if($menu=='budgie', $dark_sidebar_icon_bg, transparent);
+      box-shadow: inset 0 -1px if($variant=='light', rgba($base-alt, 0.15), $base-alt),
+                  inset 38px 0 0 0 if($menu=='budgie', $base-alt, transparent);
     }
 
     @if $menu == 'budgie' {
@@ -256,14 +223,14 @@ filechooser {
   }
 
   placessidebar.sidebar {
-    box-shadow: inset 38px 0 0 0 $dark_sidebar_icon_bg;
-    background-color: $dark_sidebar_bg;
+    box-shadow: inset 38px 0 0 0 $base-alt;
+    background-color: $base-alt;
 
     row.sidebar-row {
       transition: none;
-      color: $dark_sidebar_fg;
+      color: $on-base-alt;
 
-      .sidebar-icon { color: transparentize($dark_sidebar_icon_fg, 0.15); }
+      .sidebar-icon { color: transparentize($on-base-alt, 0.15); }
 
       image.sidebar-icon {
         padding-right: 2px;
@@ -275,33 +242,33 @@ filechooser {
 
       &.has-open-popup,
       &:hover {
-        background-color: transparentize($dark_sidebar_fg, 0.95);
-        box-shadow: inset -2px 0 lighten($selected_bg_color, 10%),
-                    inset 38px 0 0 0 $dark_sidebar_icon_bg;
+        background-color: transparentize($on-base-alt, 0.95);
+        box-shadow: inset -2px 0 lighten($primary, 10%),
+                    inset 38px 0 0 0 $base-alt;
       }
 
       &:disabled {
-        &, label, image { color: transparentize($dark_sidebar_fg, 0.6); }
+        &, label, image { color: transparentize($on-base-alt, 0.6); }
       }
 
       &:active { transition: box-shadow 0.2s; }
 
       &:selected.has-open-popup,
       &:selected, &:selected:hover, &:active:hover {
-        box-shadow: inset 38px 0 0 0 $selected_bg_color;
-        background-color: rgba($selected_bg_color, 0.0);
+        box-shadow: inset 38px 0 0 0 $primary;
+        background-color: rgba($primary, 0.0);
         background-image: -gtk-scaled(url("assets/selected-dot.png"),
                                       url("assets/selected-dot@2.png"));
         background-repeat: no-repeat;
         background-position: 42px center;
-        .sidebar-label { color: $alt_dark_sidebar_fg; }
+        .sidebar-label { color: disabled($on-base-alt); }
         // .sidebar-icon { color: inherit; }
       }
 
       &:selected:hover, &:active:hover {
-        background-color: transparentize($dark_sidebar_fg, 0.95);
-        box-shadow: inset -2px 0 lighten($selected_bg_color, 10%),
-                    inset 38px 0 0 0 $selected_bg_color;
+        background-color: transparentize($on-base-alt, 0.95);
+        box-shadow: inset -2px 0 lighten($primary, 10%),
+                    inset 38px 0 0 0 $primary;
         background-image: -gtk-scaled(url("assets/selected-dot.png"),
                                       url("assets/selected-dot@2.png"));
         background-repeat: no-repeat;
@@ -309,16 +276,16 @@ filechooser {
       }
 
       button.sidebar-button {
-        color: $dark_sidebar_fg;
+        color: $on-base-alt;
 
-        &:hover { @include button(hover); }
-        &:active { @include button(active); }
+        &:hover { @include entry(hover); }
+        &:active { @include entry(active); }
 
         &:not(:hover):not(:active) > image { opacity: 0.5 };
       }
 
       &.sidebar-new-bookmark-row {
-        color: $selected_bg_color;
+        color: $primary;
 
         // .sidebar-icon { color: inherit; }
       }
@@ -329,70 +296,52 @@ filechooser {
         &, label, .sidebar-icon { color: $drop_target_color; }
 
         &:selected {
-          &, label, .sidebar-icon { color: $selected_fg_color; }
+          &, label, .sidebar-icon { color: $on-primary; }
           background-color: $drop_target_color;
         }
       }
     }
 
     separator { background-color: transparent; }
-
-    scrollbar { @extend %dark_sidebar_scrollbar }
   }
 }
 
 .nemo-window {
   .sidebar {
-    color: $dark_sidebar_fg;
-    background-color: $dark_sidebar_bg;
+    color: $on-base-alt;
+    background-color: $base-alt;
 
     .view, row {
       background-color: transparent;
-      color: $dark_sidebar_fg;
+      color: $on-base-alt;
 
       &.cell:selected {
         @extend %selected_items;
 
         &.has-open-popup,
         &:hover {
-          color: $selected_fg_color;
-          background-color: mix(black, $selected_bg_color, 10%);
+          color: $on-primary;
+          background-color: mix(black, $primary, 10%);
         }
       }
 
       &.has-open-popup,
       &:hover {
-        color: $dark_sidebar_fg;
-        background-color: mix($dark_sidebar_fg, $dark_sidebar_bg, 10%);
+        color: $on-base-alt;
+        background-color: mix($on-base-alt, $base-alt, 10%);
       }
 
       &.expander {
-        color: mix($dark_sidebar_fg, $dark_sidebar_bg, 50%);
+        color: mix($on-base-alt, $base-alt, 50%);
 
-        &:hover { color: $dark_sidebar_fg; }
+        &:hover { color: $on-base-alt; }
       }
     }
 
     separator { background-color: transparent; }
 
-    scrollbar { @extend %dark_sidebar_scrollbar }
   }
 }
-
-// filechooser {
-//   actionbar {
-//     color: $dark_sidebar_fg;
-//     background-color: $dark_sidebar_bg;
-//     border-color: $solid_borders_color;
-//
-//     button { @extend %dark_sidebar_button; }
-//     entry { @extend %dark_sidebar_entry; }
-//
-//     @extend %osd_check_radio;
-//
-//     label, combobox { color: $dark_sidebar_fg; }
-//   }
-// }
 
 //
 // Gedit
@@ -403,7 +352,7 @@ window.org-gnome-gedit {
   > paned > separator,
   > overlay > box.vertical > paned > separator {
     &, &:backdrop {
-      background-image: if($variant == 'light', image($side_theme_bg), image($solid_borders_color));
+      background-image: if($variant == 'light', image($base-alt), image($solid_borders_color));
     }
   }
 }
@@ -422,24 +371,24 @@ window.maximized.org-gnome-gedit {
   border-color: $borders_color;  // disable borders, making them transparent doesn't work for some reason
 
   &:hover {
-    background-color: mix($fg_color, $base_color, 7%);
+    background-color: mix($on-surface, $surface, 7%);
 
     &:selected {
-      color: $selected_fg_color;
-      background-color: $selected_bg_color;
+      color: $on-primary;
+      background-color: $primary;
     }
   }
 }
 
 .open-document-selector-name-label {
-  color: $fg_color;
+  color: $on-surface;
 }
 
 .open-document-selector-path-label {
-  color: mix($fg_color, $base_color, 50%);
+  color: mix($on-surface, $surface, 50%);
   font-size: smaller;
 
-  &:selected { color: transparentize($selected_fg_color, 0.1); }
+  &:selected { color: transparentize($on-primary, 0.1); }
 }
 
 // Document sidebar
@@ -462,13 +411,13 @@ list.gedit-document-panel {
     background: none;
 
     &:hover {
-      color: $selected_fg_color;
-      background-color: rgba($side_theme_fg, 0.15);
+      color: $on-primary;
+      background-color: rgba($on-base-alt, 0.15);
     }
 
     &:active, &:checked {
-      color: $selected_fg_color;
-      background-color: rgba($side_theme_fg, 0.25);
+      color: $on-primary;
+      background-color: rgba($on-base-alt, 0.25);
     }
 
     image { color: inherit; }
@@ -476,8 +425,8 @@ list.gedit-document-panel {
 
   row:hover:not(:selected) button {
     &:active, &:checked {
-      color: $selected_fg_color;
-      background-color: rgba($side_theme_fg, 0.25);
+      color: $on-primary;
+      background-color: rgba($on-base-alt, 0.25);
     }
   }
 }
@@ -499,12 +448,12 @@ list.gedit-document-panel {
 
   statusbar { // Bottom statusbar of gedit
     border-top: 1px solid $solid_borders_color;
-    background-color: $bg_color;
+    background-color: $surface;
   }
 }
 
 .gedit-search-slider {
-  background-color: lighten($bg_color, 2%);
+  background-color: lighten($surface, 2%);
   padding: $cont_padding;
   border-color: $borders_color;
   border-radius: 0 0 2px 2px;
@@ -513,7 +462,7 @@ list.gedit-document-panel {
 }
 
 .gedit-search-entry-occurrences-tag {
-  color: transparentize($fg_color, 0.4);
+  color: transparentize($on-surface, 0.4);
   border: none;
   margin: 2px;
   padding: 2px;
@@ -539,7 +488,7 @@ textview.view.sourceview.gedit-view {
   }
 }
 
-.gedit-bottom-panel-paned { background-color: $base_color; }
+.gedit-bottom-panel-paned { background-color: $surface; }
 .gedit-side-panel-paned > separator { background-image: _solid($dark_sidebar_border); }
 .gedit-bottom-panel-paned > separator { background-image: _solid($borders_color); }
 
@@ -568,7 +517,7 @@ row#workspaces-only-on-primary { margin-top: 4px; }
 
 row#AutostartTitle.tweak {
   padding: 3px;
-  background-color: $base_color;
+  background-color: $surface;
 }
 
 list#AutostartListBoxTweakGroup {
@@ -599,8 +548,8 @@ list#AutostartListBoxTweakGroup {
 
 .tweak-category:not(:selected) {
   &:hover {
-    color: $side_theme_alt_fg;
-    background-image: image(rgba($side_theme_fg, 0.06));
+    color: disabled($on-base-alt);
+    background-image: image(rgba($on-base-alt, 0.06));
     // transition: all 50ms $ease-out-quad;
   }
 }
@@ -609,16 +558,6 @@ window.background.csd {
   > box.horizontal > box.vertical {
     > searchbar {
       @extend %side_searchbar;
-    }
-  }
-}
-
-// separator of sidebar on Gnome contol center and Gnome tweaks
-window.background.csd {
-  > box:not(.titlebar).horizontal > separator.vertical {
-    &, &:backdrop {
-      background-image: if($variant == 'light', image($bg_color), image($borders_color));
-      background-color: transparent;
     }
   }
 }
@@ -679,33 +618,33 @@ window.background.csd {
           separator { background: none; }
 
           row.activatable:not(:hover):not(:selected) {
-            background-image: image($side_theme_bg);
+            background-image: image($base-alt);
           }
 
           row.activatable:not(:selected):hover {
-            color: $side_theme_alt_fg;
-            background-color: rgba($side_theme_fg, 0.06);
+            color: disabled($on-base-alt);
+            background-color: rgba($on-base-alt, 0.06);
             // transition: all 50ms $ease-out-quad;
           }
         }
 
         entry.search {
-          color: $side_theme_fg;
-          background-color: rgba($side_theme_fg, 0.1);
+          color: $on-base-alt;
+          background-color: rgba($on-base-alt, 0.1);
 
-          image { color: $side_theme_fg; }
+          image { color: $on-base-alt; }
 
           &:focus {
-            background-color: rgba($side_theme_fg, 0.12);
+            background-color: rgba($on-base-alt, 0.12);
           }
 
           &:disabled, label:disabled, image:disabled {
-            color: rgba($side_theme_alt_fg, 0.35);
+            color: rgba(disabled($on-base-alt), 0.35);
           }
         }
       }
 
-      // > scrollbar { @extend %dark_sidebar_scrollbar; }
+
     }
 
     > searchbar {
@@ -731,15 +670,15 @@ window.background.csd {
   > border { border: none; }
 
   treeview.view {
-    color: $side_theme_fg;
-    background-color: darken($side_theme_bg, 3%);
+    color: $on-base-alt;
+    background-color: darken($base-alt, 3%);
 
     &:selected {
       &, &:focus {
-        background-color: rgba($selected_bg_color, 0.25);
-        color: $selected_fg_color;
-        &:dir(ltr) { box-shadow: inset 2px 0 $selected_bg_color; }
-        &:dir(rtl) { box-shadow: inset -2px 0 $selected_bg_color; }
+        background-color: rgba($primary, 0.25);
+        color: $on-primary;
+        &:dir(ltr) { box-shadow: inset 2px 0 $primary; }
+        &:dir(rtl) { box-shadow: inset -2px 0 $primary; }
       }
     }
   }
@@ -880,7 +819,7 @@ window.background.csd {
             min-height: 0;
           }
 
-          > label:disabled { color: $side_theme_alt_fg; }
+          > label:disabled { color: disabled($on-base-alt); }
         }
 
         row.activatable {
@@ -915,7 +854,7 @@ window.background.csd {
   .sidebar {
     @extend %side_background;
     margin-top: -1px;
-    border-color: if($variant == 'light', $bg_color, $solid_borders_color); // Not use
+    border-color: if($variant == 'light', $surface, $solid_borders_color); // Not use
 
     .activatable, .inactive, .room-list-header {
       @extend %side_views;
@@ -957,18 +896,18 @@ hdyleaflet {
     }
 
     > entry.search {
-      color: $side_theme_fg;
-      background-color: rgba($side_theme_fg, 0.1);
+      color: $on-base-alt;
+      background-color: rgba($on-base-alt, 0.1);
 
-      image { color: $side_theme_fg; }
+      image { color: $on-base-alt; }
 
       &:focus {
-        background-color: rgba($side_theme_fg, 0.12);
+        background-color: rgba($on-base-alt, 0.12);
       }
 
       &:disabled {
         label, image {
-          color: rgba($side_theme_alt_fg, 0.35);
+          color: rgba(disabled($on-base-alt), 0.35);
         }
       }
     }
@@ -1013,31 +952,31 @@ hdyleaflet {
       }
     }
 
-    .maximized & { background-color: opacify($selection_mode_bg, 1); }
+    .maximized & { background-color: $selection_mode_bg; }
 
     button:not(.titlebutton) {
       &, &.flat {
-        @include button(undecorated);
+        @include entry(undecorated);
         color: $selection_mode_fg;
         background-color: transparentize($selection_mode_fg, 1);
       }
 
       &:hover { background-color: gtkalpha($selection_mode_fg, 0.3); }
       &:active, &:checked {
-        color: $selected_fg_color;
-        background-color: transparentize($selected_fg_color, 0.65);
-        border-color: transparentize($selected_fg_color, 0.35);
+        color: $on-primary;
+        background-color: transparentize($on-primary, 0.65);
+        border-color: transparentize($on-primary, 0.35);
       }
 
       &:disabled {
-        &, label { color: transparentize($selected_fg_color, 0.5); }
-        background-color: transparentize($selected_fg_color, 1);
-        border-color: transparentize($selected_fg_color, 0.6);
+        &, label { color: transparentize($on-primary, 0.5); }
+        background-color: transparentize($on-primary, 1);
+        border-color: transparentize($on-primary, 0.6);
 
         &:active, &:checked {
-          color: transparentize($selected_fg_color, 0.25);
-          background-color: transparentize($selected_fg_color, 0.8);
-          border-color: transparentize($selected_fg_color, 0.6);
+          color: transparentize($on-primary, 0.25);
+          background-color: transparentize($on-primary, 0.8);
+          border-color: transparentize($on-primary, 0.6);
         }
       }
 

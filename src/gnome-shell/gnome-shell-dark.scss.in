@@ -1,12 +1,12 @@
-$variant: '@variant@';
-$trans: 'true';
-$titlebar: '@variant@';
-$theme: 'default';
-$titlebutton: 'square';
-$selected_bg_color: @hex@;
+$variant: "@variant@";
+$topbar: "@variant@";
+$compact: "true";
+$version: @version@;
+$accent: @hex@;
 
 @import '../../../src/_sass/colors'; //use gtk colors
 @import '../../../src/_sass/variables';
+@import '../../../src/_sass/gnome-shell/variables';
 @import '../../../src/_sass/gnome-shell/drawing';
-@import '../../../src/_sass/gnome-shell/common';
+@import '../../../src/_sass/gnome-shell/components';
 @import '../../../src/_sass/gnome-shell/extensions';

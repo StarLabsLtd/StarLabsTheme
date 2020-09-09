@@ -40,6 +40,7 @@ foreach theme: themes
   install_data(
     [
       'pad-osd.css',
+      'workspaces-to-dock.css',
     ],
     install_dir: gnome_shell_dir,
   )

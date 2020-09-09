@@ -25,19 +25,14 @@ foreach theme: themes
 endforeach
 
 subdir('backgrounds')
-#subdir('cinnamon')
 subdir('extensions')
-#subdir('firefox')
 subdir('font')
 subdir('gnome-shell')
 subdir('grub')
 subdir('gtk-2.0')
 subdir('gtk-3.0')
 subdir('icons')
-#subdir('metacity-1')
-#subdir('plank')
 subdir('plymouth')
 subdir('sessions')
 subdir('sounds')
-#subdir('unity')
-#subdir('xfwm4')
+

@@ -1,128 +1,206 @@
 // When color definition differs for dark and light variant,
 // it gets @if ed depending on $variant
 
-$base_color: if($variant =='light', #ffffff, #282A33);
-$text_color: if($variant == 'light', #5c616c, #D3DAE3);
-$bg_color: if($variant =='light', #fafbfc, #282A33);//#32343D);
-$fg_color: if($variant =='light', #5c616c, #D3DAE3);
+@import 'color-palette';
 
-$alt_base_color: if($variant == 'light', darken($base_color, 5%), lighten($base_color, 5%));
-$sec_base_color: if($variant == 'light', darken($base_color, 10%), lighten($base_color, 10%));
-$alt_bg_color: if($variant == 'light', darken($bg_color, 5%), lighten($bg_color, 5%));
-$sec_bg_color: dif($variant == 'light', darken($bg_color, 10%), lighten($bg_color, 10%));
-$alt_fg_color: rgba($fg_color, 0.75);
-$sec_fg_color: rgba($fg_color, 0.6);
+@function gtkalpha($color, $alpha) {
+  @return unquote("alpha(#{$color}, #{$alpha})");
+}
 
-$selected_fg_color: #ffffff;
+// Determine whether the color has alpha.
+@function has-alpha($color) {
+  @return if(alpha($color) < 1, true, false);
+}
 
-$alt_selected_bg_color: lighten($selected_bg_color, 5%);
-$sec_selected_bg_color: darken($selected_bg_color, 10%);
-$alt_selected_fg_color: rgba($selected_fg_color, 0.75);
-$sec_selected_fg_color: rgba($selected_fg_color, 0.6);
+// Determine whether the color is "light" or "dark".
+@function tone($color) {
+  // Calculate color brightness as per https://www.w3.org/TR/AERT/#color-contrast
+  $brightness: (red($color) * 299 + green($color) * 587 + blue($color) * 114) / 1000;
 
-$selection_mode_bg: if($trans == 'true', rgba($selected_bg_color, 0.95), $selected_bg_color);
-$selection_mode_fg: $selected_fg_color;
-$warning_color: #F27835;
-$error_color: #FC4138;
-$warning_fg_color: white;
-$error_fg_color: white;
-$success_color: #73d216;
-$destructive_color: #F04A50;
-$suggested_color: $selected_bg_color;
-$destructive_fg_color: white;
-$suggested_fg_color: white;
-$drop_target_color: #F08437;
-$progress_color: $selected_bg_color;
+  @if $brightness >= 128 {
+    @return "light";
+  } @else {
+    @return "dark";
+  }
+}
 
-$borders_color: if($variant == 'light', rgba(black, 0.15), rgba(white, 0.12));
-$alt_borders_color: if($variant == 'light', rgba(black, 0.05), rgba(white, 0.05));
-$solid_borders_color: if($variant == 'light', darken($bg_color, 15%), lighten($bg_color, 10%));
-$highlight: if($variant == 'light', rgba(white, 0.13), rgba(white, 0.10));
-$alt_highlight_color: rgba(white, 0.2);
+$on-light: #000;
+$on-dark: #fff;
 
-$link_color: if($variant == 'light', darken($selected_bg_color, 10%), lighten($selected_bg_color, 20%));
-$link_visited_color: if($variant == 'light', darken($text_color, 5%), lighten($text_color, 10%));
+// Determine whether to use dark or light color on top of given color
+// to meet accessibility standards for contrast.
+@function on($color) {
+  $contrast-color: if(tone($color) == "dark", $on-dark, $on-light);
 
-//insensitive state derived colors
-$insensitive_fg_color: if($variant == 'light', transparentize($fg_color, 0.45), transparentize($fg_color, 0.55));
-$insensitive_bg_color: lighten($bg_color, 2%);
+  @if saturation($color) > 50% or alpha($color) < 1 {
+    @return $contrast-color;
+  } @else {
+    @return rgba($contrast-color, .87);
+  }
+}
 
-$header_bg: black;
-@if $trans == 'true' and $variant == 'light' { $header_bg: rgba(#ffffff, 0.95); }
-@if $trans == 'false' and $variant == 'light' { $header_bg: #ffffff; }
-@if $trans == 'true' and ($variant == 'dark' or $titlebar == 'dark') { $header_bg: rgba(#282A33, 0.97); }
-@if $trans == 'false' and ($variant == 'dark' or $titlebar == 'dark') { $header_bg: #282A33; }
+// Determine the strength of highlight on top of given color.
+@function highlight($color) {
+  @if lightness($color) >= 80% {
+    @return rgba(white, .4);
+  } @else if lightness($color) >= 40% {
+    @return rgba(white, .2);
+  } @else {
+    @return rgba(white, .1);
+  }
+}
 
-$header_bg_backdrop: if($titlebar == 'dark' or $variant == 'dark', lighten($header_bg, 1.5%), lighten($header_bg, 3%));
+// Make translucent color opaque by blending with the background color.
+@function opacify($color, $bg) {
+  @return mix(change-color($color, $alpha: 1), $bg, alpha($color) * 100%);
+}
 
-$header_border: if($variant == 'light' and $titlebar == 'light', darken($header_bg, 10%), lighten($header_bg, 10%));
+// Set the accessible opacity for the overlay depending on the given color.
+@function overlay($state, $color, $background: transparent, $opacity-modifier: 0) {
+  @if saturation($color) > 50% or saturation($background) > 50% {
+    $opacity-modifier: .04;
+  }
 
-$header_fg: if($titlebar == 'dark', saturate(rgba(#D3DAE3, 0.8), 10%), saturate(rgba($fg_color, 0.8), 10%));
-$alt_header_fg: if($titlebar == 'dark', lighten($header_fg, 10%), darken($header_fg, 10%));
+  $opacity: ();
 
-$dark_sidebar_bg: white;
-@if $trans == 'true' and $titlebar == 'light' { $dark_sidebar_bg: rgba(#f6f9fb, 0.95); }
-@if $trans == 'false' and $titlebar == 'light' { $dark_sidebar_bg: #f6f9fb; }
-@if $trans == 'true' and $titlebar == 'dark' { $dark_sidebar_bg: rgba(#272931, 0.95); }
-@if $trans == 'false' and $titlebar == 'dark' { $dark_sidebar_bg: #272931; }
+  @if $state == "hover" {
+    $opacity: .08 + $opacity-modifier;
+  } @else if $state == "hover-alt" {
+    $opacity: .04 + $opacity-modifier;
+  } @else if $state == "focus" {
+    $opacity: .08 + $opacity-modifier;
+  } @else if $state == "pressed" {
+    $opacity: .12 + $opacity-modifier;
+  } @else if $state == "activated" {
+    $opacity: .12 + $opacity-modifier;
+  } @else if $state == "selected" {
+    @return rgba($color, .24);
+  } @else {
+    @error "Invalid type: '#{$state}'";
+  }
 
-$dark_sidebar_fg: if($titlebar == 'light', #646972, #C4CAD1);
-$alt_dark_sidebar_fg: if($variant == 'light', darken($dark_sidebar_fg, 10%), lighten($dark_sidebar_fg, 10%));
+  @return mix(rgba($color, 1), $background, $opacity * 100%);
+}
 
-$dark_sidebar_icon_bg: #32343D;
-$dark_sidebar_icon_fg: #F6F6FB;
+// Private variables for dark background colors
+$-dark-background: #181818;
+$-dark-surface-1dp: mix(white, $-dark-background, 5%);
+$-dark-surface-4dp: mix(white, $-dark-background, 9%);
+$-dark-surface-8dp: mix(white, $-dark-background, 12%);
+$-dark-surface-switch: mix(white, $-dark-background, 60%);
 
-$dark_sidebar_border: if($variant == 'light', darken($dark_sidebar_bg, 10%), lighten($dark_sidebar_bg, 8%));
+//
+// Main colors
+//
 
-$osd_fg_color: #D3DAE3;
-$osd_bg_color: #282A33;
+$dark: #232323;
+$light: #fff;
 
-$osd_button_bg: rgba(lighten($osd_bg_color, 22%), 0.4);
-$osd_button_border: rgba(lighten($osd_bg_color, 26%), 0.55);
 
-$osd_entry_bg: rgba(lighten($osd_bg_color, 22%), 0.4);
-$osd_entry_border: rgba(darken($osd_bg_color, 12%), 0.4);
+$background: if($variant == "light", $light, $dark);
+$base: $background;
+$base-alt: if($variant == "light", $dark, darken($dark, 10%));
+$on-base-alt: on($base-alt);
+$surface: $background;
+$switch-surface: $background;
+$on-surface: on($surface);
 
-$osd_insensitive_bg_color: darken($osd_bg_color, 3%);
-$osd_insensitive_fg_color: mix($osd_fg_color, opacify($osd_bg_color, 1), 30%);
-$osd_borders_color: $osd_button_border;
+$primary-on-light: $accent;
+$primary-on-dark: $accent;
+$primary: if($variant == "light", $primary-on-light, $primary-on-dark);
+$on-primary: on($primary);
 
-$panel_bg: $bg_color; //#21232b;
-$panel_fg: $fg_color;
+$error-on-light: #d93025;
+$error-on-dark: #f28b82;
+$error: if($variant == "light", $error-on-light, $error-on-dark);
+$on-error: on($error);
 
-$dash_bg: $dark_sidebar_icon_bg;
-$dash_fg: $osd_fg_color;
+$warning-on-light: #f4b400;
+$warning-on-dark: #fdd633;
+$warning: if($variant == "light", $warning-on-light, $warning-on-dark);
+$on-warning: on($warning);
 
-$entry_bg: if($variant=='light', $base_color, lighten($base_color, 0%));
-$entry_border: $borders_color;
+$success-on-light: #0f9d58;
+$success-on-dark: #81c995;
+$success: if($variant == "light", $success-on-light, $success-on-dark);
+$on-success: on($success);
 
-$header_entry_bg: darken($header_bg, 3%);
-$header_entry_border: if($titlebar == 'light', rgba(black, 0.12), rgba(white, 0.12));
+$visited-on-light: $purple-500;
+$visited-on-dark: $purple-200;
+$visited: if($variant == "light", $visited-on-light, $visited-on-dark);
+$on-visited: on($visited);
 
-$button_bg: if($variant == 'light', lighten($bg_color, 2%), lighten($base_color, 2%));
-$button_border: $entry_border;
+$os-background: $-dark-background;
+$on-os-background: on($os-background);
 
-$header_button_bg: if($titlebar == 'dark' or $variant == 'dark', rgba(lighten($header_bg, 22%), 0.4), rgba($button_bg, 0.9));
-$header_button_border: if($titlebar == 'dark' or $variant == 'dark', rgba(darken($header_bg, 12%), 0.4), rgba($header_fg, 0.3));
+$tooltip: rgba(#616161, .9);
+$on-tooltip: on($tooltip);
 
-//WM Buttons
+$scrim: rgba(black, .6);
+$on-scrim: on($scrim);
 
-$wm_borders: if($variant == 'light', darken($base_color, 35%), darken($base_color, 10%));
+$scrim-alt: rgba(black, .3);
+$on-scrim-alt: on($scrim-alt);
 
-// Close
-$wm_button_close_bg: if($variant == 'light' and $titlebar == 'light', #f46067, #cc575d);
-$wm_button_close_hover_bg: if($variant == 'light' and $titlebar == 'light', #f68086, #d7787d);
-$wm_button_close_active_bg: if($variant == 'light' and $titlebar == 'light', #f13039, #be3841);
+$panel: #1f1f1f;
+$on-panel: on($panel);
 
-$wm_icon_close_bg: if($variant == 'light' and $titlebar == 'light',#F8F8F9 , #2f343f);
+// for Unity panel which doesn't allow translucent colors
+$panel-solid: $panel;
+$on-panel-solid: on($panel-solid);
 
-// Minimize, Maximize
-$wm_button_hover_bg: if($variant == 'light' and $titlebar == 'light', #fdfdfd, #454C5C);
-$wm_button_active_bg: $selected_bg_color;
+$titlebar: $light; //#383838;
+$titlebar-backdrop: $light; // #303030;
+$on-titlebar: on($titlebar);
 
-$wm_button_hover_border: if($variant == 'light' and $titlebar == 'light', #D1D3DA, #262932);
+$titlebar-indicator: currentcolor;
 
-$wm_icon_bg: if($variant == 'light' and $titlebar == 'light', #90949E, #90939B);
-$wm_icon_unfocused_bg: if($variant == 'light' and $titlebar == 'light', #B6B8C0, #666A74);
-$wm_icon_hover_bg: if($variant == 'light' and $titlebar == 'light', #7A7F8B, #C4C7CC);
-$wm_icon_active_bg: $selected_fg_color;
+//
+// Overlay state colors
+//
+
+$overlay-selected: rgba($primary, .24);
+
+//
+// For “on” colors
+//
+
+@function primary($color) {
+  @return if(tone($color) == "dark", $primary-on-light, $primary-on-dark);
+}
+
+@function error($color) {
+  @return if(tone($color) == "dark", $error-on-light, $error-on-dark);
+}
+
+@function hint($color) {
+  @return rgba($color, if(has-alpha($color), .6, .7));
+}
+
+@function disabled($color) {
+  @return rgba($color, if(has-alpha($color), .38, .5));
+}
+
+@function disabled-hint($color) {
+  @return rgba($color, if(has-alpha($color), .26, .3));
+}
+
+@function stroke($color) {
+  @return rgba($color, if(has-alpha($color), .26, .3));
+}
+
+@function disabled-stroke($color) {
+  @return rgba($color, if(has-alpha($color), .12, .2));
+}
+
+@function divider($color) {
+  @return rgba($color, if(has-alpha($color), .12, .2));
+}
+
+@function fill($color) {
+  @return rgba($color, if(has-alpha($color), .08, .08));
+}
+
+@function entry-fill($color) {
+  @return rgba($color, if(has-alpha($color), .04, .04));
+}

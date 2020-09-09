@@ -1,16 +1,11 @@
-$variant: 'dark';
-$titlebar: 'dark';
-$trans: 'true';
-$menu: 'gnome';
-$titlebutton: 'square';
-$theme: 'default';
-$selected_bg_color: @hex@;
+$variant: "@variant@";
+$compact: "true";
+$accent: @hex@;
 
 @import '../../../src/_sass/colors';
 @import '../../../src/_sass/variables';
-@import '../../../src/_sass/gtk/drawing';
-@import '../../../src/_sass/gtk/common';
-@import '../../../src/_sass/gtk/apps';
-@import '../../../src/_sass/gtk/granite';
+@import "../../../src/_sass/gtk/drawing-3.20";
+@import "../../../src/_sass/gtk/common-3.20";
+@import "../../../src/_sass/gtk/apps-3.22";
+@import "../../../src/_sass/gtk/colors-public";
 @import '../../../src/_sass/gtk/darksidebar_widgets';
-@import '../../../src/_sass/gtk/colors-public';

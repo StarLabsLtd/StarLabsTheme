@@ -1,0 +1,50 @@
+/* Check Boxes */
+
+.check-box {
+  StBoxLayout {
+    spacing: 8px;
+  }
+
+  StBin {
+    transition-duration: $duration;
+    width: 24px;
+    height: 24px;
+    padding: ($medium-size - 24px) / 2;
+    border-radius: $medium-size / 2;
+  }
+
+  StBin,
+  &:focus StBin {
+    background-image: url("resource:///org/gnome/shell/theme/checkbox-off.svg");
+  }
+
+  &:focus StBin {
+    background-color: overlay("focus", $on-surface);
+  }
+
+  &:hover StBin {
+    background-color: overlay("hover", $on-surface);
+  }
+
+  &:active StBin {
+    transition-duration: $duration-ripple;
+    background-color: overlay("pressed", $on-surface);
+  }
+
+  &:checked StBin,
+  &:checked:focus StBin {
+    background-image: url("resource:///org/gnome/shell/theme/checkbox.svg");
+  }
+
+  &:checked:focus StBin {
+    background-color: overlay("focus", $primary);
+  }
+
+  &:checked:hover StBin {
+    background-color: overlay("hover", $primary);
+  }
+
+  &:checked:active StBin {
+    background-color: overlay("pressed", $primary);
+  }
+}

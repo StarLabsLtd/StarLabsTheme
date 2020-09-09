@@ -14,7 +14,20 @@ foreach icon_theme: icon_themes
     rename: 'index.theme',
     install_dir: icon_theme['dir'],
   )
+  cursor_theme = configure_file(
+    input: 'cursor.theme.in',
+    output: 'cursor.@0@.theme'.format(icon_theme['name']),
+    configuration: index_icon_conf,
+  )
+  install_data(
+    cursor_theme,
+    rename: 'cursor.theme',
+    install_dir: icon_theme['dir'],
+  )
+
+
 endforeach
 
 
 subdir('fullcolor')
+subdir('cursors')
