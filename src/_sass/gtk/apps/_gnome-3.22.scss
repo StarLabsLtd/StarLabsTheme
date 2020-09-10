@@ -398,17 +398,10 @@ frame.gedit-map-frame > border {
 
 /**
  * Tweaks
- */
-
-// hard-coded css:
-// https://gitlab.gnome.org/GNOME/gnome-tweaks/blob/master/data/shell.css
+ */  
 
 // the sidebar
-.tweak-categories {
-  // padding: 4px 0;
-  // background-color: shade(@theme_bg_color, 0.99);
-  background-image: image($base-alt);
-
+.tweak-categories, .titlebar > headerbar.titlebar.tweak-titlebar-left, .nautilus-window {
   separator {
     @extend %hide_separators;
   }
@@ -1255,3 +1248,4 @@ evview.content-view.view:selected {
 button.osd.scroll_button {
   margin: 4px;
 }
+

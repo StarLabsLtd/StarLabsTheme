@@ -1,25 +1,42 @@
-gtk-color-scheme = "base_color: #ffffff"
-gtk-color-scheme = "text_color: #5c616c"
-gtk-color-scheme = "bg_color: #fafbfc"
-gtk-color-scheme = "fg_color: #5c616c"
-gtk-color-scheme = "tooltip_bg_color: #21232b"
-gtk-color-scheme = "tooltip_fg_color: #D3DAE3"
-gtk-color-scheme = "selected_bg_color: @hex@"
-gtk-color-scheme = "selected_fg_color: #ffffff"
-gtk-color-scheme = "insensitive_bg_color: #fbfcfc"
-gtk-color-scheme = "insensitive_fg_color: #a9acb2"
-gtk-color-scheme = "notebook_bg: #ffffff"
-gtk-color-scheme = "dark_sidebar_bg: #f6f9fb"
-gtk-color-scheme = "link_color: @hex@"
-gtk-color-scheme = "menu_bg: #ffffff"
-gtk-color-scheme = "menu_fg: #263033"
+# Based on Bridge by ScionicSpectre and Adwaita by GNOME
+# vim:set ts=2 sw=2 sts=2 ai et:
+#
+# This is the GTK 2 version of Materia. It's whole purpose is to look as the
+# GTK 3 version as much as possible until GTK 2 dies completely.
+#
+# Note: comments for explaining styles are on the bottom of each file beside the
+# widget matches.
 
-gtk-icon-sizes = "gtk-button=16,16" # This makes button icons smaller.
-gtk-auto-mnemonics = 1
+# Declare the colours used throughout the theme.
+# There shouldn't be any fiddling with them in the theme files themselves in
+# order to not mess up the dark theme.
+
+# Text/base
+gtk-color-scheme = "base_color:#ffffff"
+gtk-color-scheme = "text_color:#212121"
+# Foreground/background
+gtk-color-scheme = "bg_color:#f2f2f2"
+gtk-color-scheme = "fg_color:#212121"
+# Selected foreground/background
+gtk-color-scheme = "selected_bg_color:@hex@"
+gtk-color-scheme = "selected_fg_color:#ffffff"
+# Titlebar foreground/background
+gtk-color-scheme = "titlebar_bg_color:#383838"
+gtk-color-scheme = "titlebar_fg_color:#ffffff"
+# Menus
+gtk-color-scheme = "menu_color:#ffffff"
+# Tooltips foreground/background
+gtk-color-scheme = "tooltip_bg_color:#616161"
+gtk-color-scheme = "tooltip_fg_color:#ffffff"
+# Links
+gtk-color-scheme = "link_color:@hex@"
+gtk-color-scheme = "visited_link_color:#9c27b0"
+
+# Set GTK settings
+gtk-auto-mnemonics              = 1
 gtk-primary-button-warps-slider = 1
 
+# And hand over the control to the theme files
 include "main.rc"
 include "apps.rc"
-include "panel.rc"
-include "xfce-notify.rc"
-include "menubar-toolbar.rc"
+include "hacks.rc"

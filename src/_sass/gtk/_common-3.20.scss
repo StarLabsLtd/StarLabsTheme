@@ -194,7 +194,8 @@ label {
   }
 }
 
-.dim-label {
+.dim-
+label {
   color: hint($on-surface);
 }
 
@@ -1316,7 +1317,6 @@ searchbar > revealer > box {
 //box-shadow: $shadow-z1, inset 0 1px highlight($surface);
   background-color: $surface;
   color: $on-surface;
-
   &:disabled {
     color: disabled($on-surface);
   }
@@ -1360,7 +1360,7 @@ searchbar > revealer > box {
 
   // The separator for split headerbars
   headerbar + separator {
-    background-color: divider($on-surface);
+    background: transparent;
   }
 
   entry {
@@ -3546,21 +3546,21 @@ filechooserbutton:drop(active) {
 
 .sidebar {
   border-style: none;
-  background-color: $base-alt;
+  background-color: $surface;
 
   &:not(separator) {
     @at-root %sidebar_left,
     &:dir(ltr),
     &.left,
     &.left:dir(rtl) {
-      border-right: 1px solid divider($on-surface);
+//    border-right: 1px solid divider($on-surface);
       border-left-style: none;
     }
 
     @at-root %sidebar_right,
     &:dir(rtl),
     &.right {
-      border-left: 1px solid divider($on-surface);
+//    border-left: 1px solid divider($on-surface);
       border-right-style: none;
     }
   }
@@ -3671,9 +3671,9 @@ placessidebar.sidebar {
   row {
     // Needs overriding of the GtkListBoxRow padding
     min-height: 32px;
-    margin: -1px 4px; // Remove unwanted hard-coded vertical margins with -1px
+//  margin: -1px 0; //-1px 4px; // Remove unwanted hard-coded vertical margins with -1px
     padding: 0;
-    border-radius: $corner-radius;
+//  border-radius: $corner-radius;
 
     // Using margins/padding directly in the SidebarRow
     // will make the animation of the new bookmark row jump
@@ -3767,6 +3767,7 @@ paned {
     // workaround, using background istead of a border since the border will get rendered twice (?)
     background-image: image(divider($on-surface));
     background-size: 1px 1px;
+    background: transparent;
     background-clip: content-box; // avoids borders image being rendered twice (?)
 
     &.wide {

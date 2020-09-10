@@ -96,12 +96,11 @@ $-dark-surface-switch: mix(white, $-dark-background, 60%);
 $dark: #232323;
 $light: #fff;
 
-
 $background: if($variant == "light", $light, $dark);
 $base: $background;
 $base-alt: if($variant == "light", $dark, darken($dark, 10%));
 $on-base-alt: on($base-alt);
-$surface: $background;
+$surface: $background; // $background;
 $switch-surface: $background;
 $on-surface: on($surface);
 
@@ -147,10 +146,10 @@ $on-panel: on($panel);
 
 // for Unity panel which doesn't allow translucent colors
 $panel-solid: $panel;
-$on-panel-solid: on($panel-solid);
+$on-panel-solid: red; //on($panel-solid);
 
-$titlebar: $light; //#383838;
-$titlebar-backdrop: $light; // #303030;
+$titlebar: $background; //#383838;
+$titlebar-backdrop: $background; // #303030;
 $on-titlebar: on($titlebar);
 
 $titlebar-indicator: currentcolor;

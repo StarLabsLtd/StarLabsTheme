@@ -7,17 +7,8 @@ foreach theme: themes
 
   if theme['color'] != '-Dark'
     gtk2_assets_dir = 'assets'
-    install_data(
-      'menubar-toolbar.rc',
-       install_dir: gtk2_dir,
-    )
   else
     gtk2_assets_dir = 'assets-dark'
-    install_data(
-      'menubar-toolbar-dark.rc',
-       rename: 'menubar-tooolbar.rc',
-       install_dir: gtk2_dir,
-    )
   endif
 
   install_subdir(
@@ -32,16 +23,8 @@ foreach theme: themes
     output: 'gtkrc' + theme['color'] + theme['scss_hex'],
     configuration: gtk_2_conf,
   )
- 
-  # Copy it from build dir to source dir
-  run_command(
-    'cp',
-     gtkrc,
-     meson.current_source_dir(),
-    )
-
   install_data(
-    'gtkrc' + theme['color'] + theme['scss_hex'],
+    gtkrc,
     rename: 'gtkrc',
     install_dir: gtk2_dir,
   )
@@ -49,9 +32,9 @@ foreach theme: themes
   install_data(
     [
       'apps.rc',
+      'hacks.rc',
       'main.rc',
-      'panel.rc',
-      'xfce-notify.rc',
+      'main.rc.hidpi',
     ],
     install_dir: gtk2_dir,
   )
