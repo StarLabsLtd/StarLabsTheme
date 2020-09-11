@@ -1,3 +1,16 @@
+starlabstheme-master (2starlabs1) focal; urgency=medium
+
+  * Updated build dependency
+
+ -- Sean Rhodes <sean@starlabs.systems>  Fri, 11 Sep 2020 09:42:15 +0100
+
+starlabstheme-master (2) focal; urgency=medium
+
+  * Overhaul to tie in with L4
+  * Switch to 3 main themes, with variants for plymouth
+
+ -- Sean Rhodes <sean@starlabs.systems>  Thu, 10 Sep 2020 22:15:48 +0100
+
 starlabstheme-master (1.1.8) focal; urgency=medium
 
   * Added gresource file

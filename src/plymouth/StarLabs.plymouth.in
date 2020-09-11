@@ -1,12 +1,12 @@
 [Plymouth Theme]
-Name=BGRT
-Description=Jimmac's spinner theme using the ACPI BGRT graphics as background
+Name=@name@
+Description=Star Labs ACPI Plymouth Theme
 ModuleName=two-step
 
 [two-step]
 Font=Cantarell 12
 TitleFont=Cantarell Light 30
-ImageDir=/usr/share/plymouth/themes/StarLabs
+ImageDir=/usr/share/plymouth/themes/@name@
 DialogHorizontalAlignment=.5
 DialogVerticalAlignment=.382
 TitleHorizontalAlignment=.5

@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = "remove" ]; then
+	update-alternatives --remove default.plymouth /usr/share/plymouth/themes/StarLabs-Orange/StarLabs-Orange.plymouth
+	update-initramfs -u
+fi
+
+#DEBHELPER#
+

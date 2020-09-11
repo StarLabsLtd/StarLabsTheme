@@ -1,9 +1,9 @@
 ### File Dependancies
 files_gtk_scss = files(
-        run_command(
-                'find', '-L', '../_sass', '-name', '*.scss'
-                ).stdout().strip().split('\n')
-        )
+  run_command(
+    'find', '-L', '../_sass', '-name', '*.scss'
+   ).stdout().strip().split('\n')
+)
 assert(files_gtk_scss.length() > 0, 'No theme sources found')
 ### Program Dependancies
 

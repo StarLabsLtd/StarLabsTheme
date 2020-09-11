@@ -25,6 +25,10 @@ foreach accent: get_option('accents')
     accent_suffix = '-Green'
     scss_accent = 'green'
     scss_hex = '#43a047'
+  elif accent == 'orange'
+    accent_suffix = '-Orange'
+    scss_accent = 'orange'
+    scss_hex = '#ff6f00'
   endif
 
   foreach color: get_option('colors')

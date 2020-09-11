@@ -24,10 +24,14 @@ foreach icon_theme: icon_themes
     rename: 'cursor.theme',
     install_dir: icon_theme['dir'],
   )
+  install_subdir(
+    'scalable-max-32',
+    install_dir: icon_theme['dir'],
+  )
 
 
 endforeach
 
-
 subdir('fullcolor')
 subdir('cursors')
+subdir('scalable')

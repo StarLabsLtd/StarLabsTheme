@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = "remove" ]; then
+	update-alternatives --remove gdm3-theme.gresource /usr/share/gnome-shell/theme/StarLabs-Orange/gnome-shell-theme.gresource
+fi
+
+#DEBHELPER#
+

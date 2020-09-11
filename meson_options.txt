@@ -15,7 +15,7 @@ option(
 option(
   'accents',
   type: 'array',
-  choices: ['default', 'green'],
+  choices: ['default', 'green', 'orange'],
   description: 'Choose accent color(s)',
 )
 

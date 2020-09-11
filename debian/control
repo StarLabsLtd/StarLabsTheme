@@ -4,8 +4,10 @@ Priority: optional
 Maintainer: Star Labs Systems <support@starlabs.systems>
 Build-Depends: debhelper (>= 10.3),
 Build-Depends-Indep: libglib2.0-dev,
-                     meson (>= 0.45),
+                     meson (>= 0.52),
                      sassc,
+                     inkscape (>= 1),
+                     x11-apps,
 Standards-Version: 4.1.5
 Homepage: https://starlabs.systems
 Vcs-Browser: https://github.com/StarLabsLtd/StarLabsTheme
@@ -97,75 +99,60 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
 Description: Star Labs Theme.
 
-Package: starlabstheme-navy
-Architecture: all
-Depends: ${shlibs:Depends},
-${misc:Depends},
-Description: Star Labs Theme.
-
-Package: starlabstheme-grey
-Architecture: all
-Depends: ${shlibs:Depends},
-${misc:Depends},
-Description: Star Labs Theme.
-
-Package: starlabstheme-turquoise
-Architecture: all
-Depends: ${shlibs:Depends},
-${misc:Depends},
-Description: Star Labs Theme.
-
-Package: starlabstheme-yellow
-Architecture: all
-Depends: ${shlibs:Depends},
-${misc:Depends},
-Description: Star Labs Theme.
-
 Package: starlabstheme-green
 Architecture: all
-Depends: ${shlibs:Depends},
-${misc:Depends},
-Description: Star Labs Theme.
-
-Package: starlabstheme-purple
-Architecture: all
-Depends: ${shlibs:Depends},
-${misc:Depends},
-Description: Star Labs Theme.
-
-Package: starlabstheme-pink
-Architecture: all
-Depends: ${shlibs:Depends},
-${misc:Depends},
-Description: Star Labs Theme.
+Description: Star Labs Theme
+Depends: starlabstheme-backgrounds, starlabstheme-extensions, starlabstheme-font, starlabstheme-grub, starlabstheme-session, starlabstheme-sounds, starlabstheme-green-gnome-shell,  starlabstheme-green-gtk, starlabstheme-green-icons, starlabstheme-green-plymouth
 
 Package: starlabstheme-orange
 Architecture: all
-Depends: ${shlibs:Depends},
-${misc:Depends},
-Description: Star Labs Theme.
+Description: Star Labs Theme
+Depends: starlabstheme-backgrounds, starlabstheme-extensions, starlabstheme-font, starlabstheme-grub, starlabstheme-session, starlabstheme-sounds, starlabstheme-orange-gnome-shell,  starlabstheme-orange-gtk, starlabstheme-orange-icons, starlabstheme-orange-plymouth
 
-Package: starlabstheme-red
+Package: starlabstheme-green-gtk
 Architecture: all
 Depends: ${shlibs:Depends},
-${misc:Depends},
+         ${misc:Depends},
 Description: Star Labs Theme.
 
-Package: starlabstheme-oled
+Package: starlabstheme-orange-gtk
 Architecture: all
 Depends: ${shlibs:Depends},
-${misc:Depends},
+         ${misc:Depends},
 Description: Star Labs Theme.
 
-Package: starlabstheme-tribute
+Package: starlabstheme-green-plymouth
 Architecture: all
 Depends: ${shlibs:Depends},
-${misc:Depends},
+         ${misc:Depends},
 Description: Star Labs Theme.
 
-Package: starlabstheme-sky
+Package: starlabstheme-orange-plymouth
 Architecture: all
 Depends: ${shlibs:Depends},
-${misc:Depends},
+         ${misc:Depends},
 Description: Star Labs Theme.
 
+Package: starlabstheme-green-icons
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+Description: Star Labs Theme.
+
+Package: starlabstheme-orange-icons
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+Description: Star Labs Theme.
+
+Package: starlabstheme-green-gnome-shell
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+Description: Star Labs Theme.
+
+Package: starlabstheme-orange-gnome-shell
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+Description: Star Labs Theme.
