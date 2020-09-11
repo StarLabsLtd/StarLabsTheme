@@ -1,3 +1,33 @@
+starlabstheme-master (2starlabs6) focal; urgency=medium
+
+  * Switched full-color to slicers
+
+ -- Sean Rhodes <sean@starlabs.systems>  Fri, 11 Sep 2020 20:23:26 +0100
+
+starlabstheme-master (2starlabs5) focal; urgency=medium
+
+  * Added index.theme files
+
+ -- Sean Rhodes <sean@starlabs.systems>  Fri, 11 Sep 2020 19:36:34 +0100
+
+starlabstheme-master (2starlabs4) focal; urgency=medium
+
+  * Honed paths
+
+ -- Sean Rhodes <sean@starlabs.systems>  Fri, 11 Sep 2020 16:53:27 +0100
+
+starlabstheme-master (2starlabs3) focal; urgency=medium
+
+  * Removed old reference
+
+ -- Sean Rhodes <sean@starlabs.systems>  Fri, 11 Sep 2020 15:01:10 +0100
+
+starlabstheme-master (2starlabs2) focal; urgency=medium
+
+  * Adjusted group for plymouth slicer
+
+ -- Sean Rhodes <sean@starlabs.systems>  Fri, 11 Sep 2020 14:18:59 +0100
+
 starlabstheme-master (2starlabs1) focal; urgency=medium
 
   * Updated build dependency

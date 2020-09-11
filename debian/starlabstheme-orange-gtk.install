@@ -1,2 +1,6 @@
-usr/share/themes/StarLabs-Orange/
-usr/share/themes/StarLabs-Orange-Dark/
+usr/share/themes/StarLabs-Orange/gtk-3.0/
+usr/share/themes/StarLabs-Orange/gtk-2.0/
+usr/share/themes/StarLabs-Orange/index.theme
+usr/share/themes/StarLabs-Orange-Dark/gtk-3.0/
+usr/share/themes/StarLabs-Orange-Dark/gtk-2.0/
+usr/share/themes/StarLabs-Orange-Dark/index.theme

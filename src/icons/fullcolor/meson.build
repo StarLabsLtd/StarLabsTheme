@@ -38,10 +38,10 @@ foreach icon_theme: icon_themes
         output: target_temp_name + '.svg',
         command: [
           inkscape, '--batch-process',
-          '--actions=select:@0@;AlignHorizontalCenter;AlignVerticalCenter;'.format(object),
+#         '--actions=select:@0@;AlignHorizontalCenter;AlignVerticalCenter;'.format(object),
           '--export-id=@0@'.format(object),
-          '--export-id-only',
-          '--export-area-page',
+#         '--export-id-only',
+#         '--export-area-page',
           '--export-filename=@OUTPUT@',
           '@INPUT@',
         ]
