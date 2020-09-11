@@ -1,3 +1,15 @@
+starlabstheme-master (2starlabs8) focal; urgency=medium
+
+  * Fixed gnome-shell prerm postinst
+
+ -- Sean Rhodes <sean@starlabs.systems>  Fri, 11 Sep 2020 21:56:23 +0100
+
+starlabstheme-master (2starlabs7) focal; urgency=medium
+
+  * Adjusted install path
+
+ -- Sean Rhodes <sean@starlabs.systems>  Fri, 11 Sep 2020 20:49:06 +0100
+
 starlabstheme-master (2starlabs6) focal; urgency=medium
 
   * Switched full-color to slicers
