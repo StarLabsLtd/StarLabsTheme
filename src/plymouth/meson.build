@@ -53,7 +53,7 @@ foreach icon_theme: icon_themes
     )
     install_data(
       animation_png,
-      rename: 'animation' + stage + '.png',
+      rename: 'animation-00' + stage + '.png',
       install_dir: theme_dir,
     )
   endforeach  
