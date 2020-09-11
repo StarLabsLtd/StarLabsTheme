@@ -1,3 +1,9 @@
+starlabstheme-master (2starlabs9) focal; urgency=medium
+
+  * Fixed green plymouth install
+
+ -- Sean Rhodes <sean@starlabs.systems>  Fri, 11 Sep 2020 22:43:03 +0100
+
 starlabstheme-master (2starlabs8) focal; urgency=medium
 
   * Fixed gnome-shell prerm postinst
