@@ -1,3 +1,9 @@
+starlabstheme-master (2starlabs13) focal; urgency=medium
+
+  * Fixed session installer
+
+ -- Sean Rhodes <sean@starlabs.systems>  Mon, 14 Sep 2020 10:18:11 +0100
+
 starlabstheme-master (2starlabs12) focal; urgency=medium
 
   * Adjusted Orange hex color
