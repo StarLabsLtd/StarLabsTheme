@@ -1,0 +1,11 @@
+usr/share/gnome-shell/modes/starlabs-green.json
+usr/share/gnome-shell/modes/starlabs-green-dark.json
+
+usr/share/xsessions/StarLabs-Green.destop
+usr/share/xsessions/StarLabs-Green-Dark.desktop
+
+usr/share/wayland-sessions/StarLabs-Green-wayland.desktop
+usr/share/wayland-sessions/StarLabs-Green-Dark-wayland.desktop
+
+usr/share/glib-2.0/schemas/99_StarLabs-Green.gschema.override
+usr/share/glib-2.0/schemas/99_StarLabs-Green-Dark.gschema.override

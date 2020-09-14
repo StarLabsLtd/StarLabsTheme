@@ -3,7 +3,7 @@
 <wallpapers>
   <wallpaper deleted="false">
     <name>Star Labs Systems</name>
-    <filename>/usr/share/backgrounds/StarLabs/Wallpaper1.svg</filename>
+    <filename>/usr/share/backgrounds/StarLabs/@name@.svg</filename>
     <options>zoom</options>
     <shade_type>solid</shade_type>
     <pcolor>#000000</pcolor>

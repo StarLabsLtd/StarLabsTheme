@@ -1,4 +1,11 @@
-usr/share/gnome-shell/modes/
-usr/share/xsessions/
-usr/share/wayland-sessions/
+usr/share/gnome-shell/modes/starlabs.json
+usr/share/gnome-shell/modes/starlabs-dark.json
+
+usr/share/xsessions/StarLabs.destop
+usr/share/xsessions/StarLabs-Dark.desktop
+
+usr/share/wayland-sessions/StarLabs-wayland.desktop
+usr/share/wayland-sessions/StarLabs-Dark-wayland.desktop
+
 usr/share/glib-2.0/schemas/99_StarLabs.gschema.override
+usr/share/glib-2.0/schemas/99_StarLabs-Dark.gschema.override

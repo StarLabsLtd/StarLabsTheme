@@ -1,29 +1,29 @@
 ##########################################
-# @ThemeName@ specific session #
+# @name@ specific session #
 ##########################################
 
-[org.gnome.desktop.interface:@ThemeName@]
-cursor-theme = "@ThemeName@"
-icon-theme = "@ThemeName@-Squircle"
-gtk-theme = "@ThemeName@"
+[org.gnome.desktop.interface:@name@]
+cursor-theme = "@name@"
+icon-theme = "@name@"
+gtk-theme = "@name@"
 
-[org.gnome.desktop.sound:@ThemeName@]
-theme-name = "@ThemeName@"
+[org.gnome.desktop.sound:@name@]
+theme-name = "@name@"
 input-feedback-sounds = true
 
-[org.gnome.mutter:@ThemeName@]
+[org.gnome.mutter:@name@]
 center-new-windows = false
 
-[org.gnome.desktop.background:@ThemeName@]
-picture-uri = 'file:///usr/share/backgrounds/StarLabs/StarWallpaper0.png'
+[org.gnome.desktop.background:@name@]
+picture-uri = 'file:///usr/share/backgrounds/StarLabs/@name@.svg'
 
-[org.gnome.desktop.screensaver:@ThemeName@]
-picture-uri = 'file:///usr/share/backgrounds/StarLabs/StarWallpaper0.png'
+[org.gnome.desktop.screensaver:@name@]
+picture-uri = 'file:///usr/share/backgrounds/StarLabs/@name@.svg'
 
-[org.gnome.desktop.interface:@ThemeName@]
+[org.gnome.desktop.interface:@name@]
 show-battery-percentage=true
 
-[com.ubuntu.sound:@ThemeName@]
+[com.ubuntu.sound:@name@]
 allow-amplified-volume=true
 
 [org.gnome.shell.extensions.dash-to-dock]
@@ -32,9 +32,9 @@ transparency-mode='FIXED'
 [org.gnome.shell.extensions.lockkeys]
 style='capslock'
 
-[org.gnome.shell.extensions.dash-to-dock:@ThemeName@]
-custom-theme-running-dots-color='#0068bf'
-custom-theme-running-dots-border-color='#0068bf'
+[org.gnome.shell.extensions.dash-to-dock:@name@]
+custom-theme-running-dots-color='@hex@'
+custom-theme-running-dots-border-color='@hex@'
 background-opacity=0.9
 
 [org.gnome.desktop.peripherals.touchpad]

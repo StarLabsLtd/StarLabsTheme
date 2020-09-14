@@ -1,6 +1,6 @@
 {
     "parentMode": "user",
-    "stylesheetName": "@ThemeName@/gnome-shell.css",
-    "themeResourceName": "theme/@ThemeName@/gnome-shell-theme.gresource",
+    "stylesheetName": "@name@/gnome-shell.css",
+    "themeResourceName": "theme/@name@/gnome-shell-theme.gresource",
     "enabledExtensions": ["ubuntu-dock@ubuntu.com", "ubuntu-appindicators@ubuntu.com", "lockkeys@vaina.lt"]
 }

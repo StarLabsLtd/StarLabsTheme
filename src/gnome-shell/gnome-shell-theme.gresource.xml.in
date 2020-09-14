@@ -114,7 +114,7 @@
     <file alias="window-close-active.svg">../../../src/gnome-shell/assets/window-close-active.svg</file>
     <file alias="window-close-Dark.svg">../../../src/gnome-shell/assets/window-close-Dark.svg</file>
     <file alias="window-close.svg">../../../src/gnome-shell/assets/window-close.svg</file>
-    <file alias="background.svg">../../../src/gnome-shell/assets/background.svg</file>
+    <file alias="background.svg">@theme_name@.svg</file>
     <file alias="pad-osd.css">../../../src/gnome-shell/pad-osd.css</file>
     <file alias="workspaces-to-dock.css">../../../src/gnome-shell/workspaces-to-dock.css</file>
     <file alias="gnome-shell.css">@theme_name@.css</file>

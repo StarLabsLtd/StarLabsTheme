@@ -1,9 +1,9 @@
 ### File Dependancies
 files_gnome_shell_scss = files(
-        run_command(
-                'find', '-L', '../_sass', '-name', '*.scss'
-                ).stdout().strip().split('\n')
-        )
+  run_command(
+    'find', '-L', '../_sass', '-name', '*.scss'
+  ).stdout().strip().split('\n')
+)
 assert(files_gnome_shell_scss.length() > 0, 'No theme sources found')
 
 ### Program Dependancies
@@ -31,11 +31,21 @@ else
 endif
 
 
-
-
 foreach theme: themes
   gnome_shell_dir = join_paths(theme['dir'], 'gnome-shell')
   gresource_dir = join_paths('share', 'gnome-shell', 'theme', theme['name'])
+
+  background = configure_file(
+    input: 'background.svg',
+    output: theme['name'] + '.svg',
+    copy: true,
+  )
+
+  gdm_background = configure_file(
+    input: background,
+    output: theme['name'] + '.svg',
+    command: ['sed', '-i', 's/#0068bf/@0@/'.format(theme['scss_hex']), '@OUTPUT@'],
+  )
 
   install_data(
     [

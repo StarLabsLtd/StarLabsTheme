@@ -1,3 +1,16 @@
+starlabstheme-master (2starlabs12) focal; urgency=medium
+
+  * Adjusted Orange hex color
+  * Added colored backgrounds
+
+ -- Sean Rhodes <sean@starlabs.systems>  Mon, 14 Sep 2020 09:56:41 +0100
+
+starlabstheme-master (2starlabs11) focal; urgency=medium
+
+  * Added sessions for green + orange
+
+ -- Sean Rhodes <sean@starlabs.systems>  Mon, 14 Sep 2020 08:47:57 +0100
+
 starlabstheme-master (2starlabs10) focal; urgency=medium
 
   * Adjusted animation names

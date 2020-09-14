@@ -102,12 +102,12 @@ Description: Star Labs Theme.
 Package: starlabstheme-green
 Architecture: all
 Description: Star Labs Theme
-Depends: starlabstheme-backgrounds, starlabstheme-extensions, starlabstheme-font, starlabstheme-grub, starlabstheme-session, starlabstheme-sounds, starlabstheme-green-gnome-shell,  starlabstheme-green-gtk, starlabstheme-green-icons, starlabstheme-green-plymouth
+Depends: starlabstheme-green-backgrounds, starlabstheme-extensions, starlabstheme-font, starlabstheme-grub, starlabstheme-green-session, starlabstheme-sounds, starlabstheme-green-gnome-shell,  starlabstheme-green-gtk, starlabstheme-green-icons, starlabstheme-green-plymouth
 
 Package: starlabstheme-orange
 Architecture: all
 Description: Star Labs Theme
-Depends: starlabstheme-backgrounds, starlabstheme-extensions, starlabstheme-font, starlabstheme-grub, starlabstheme-session, starlabstheme-sounds, starlabstheme-orange-gnome-shell,  starlabstheme-orange-gtk, starlabstheme-orange-icons, starlabstheme-orange-plymouth
+Depends: starlabstheme-orange-backgrounds, starlabstheme-extensions, starlabstheme-font, starlabstheme-grub, starlabstheme-orange-session, starlabstheme-sounds, starlabstheme-orange-gnome-shell,  starlabstheme-orange-gtk, starlabstheme-orange-icons, starlabstheme-orange-plymouth
 
 Package: starlabstheme-green-gtk
 Architecture: all
@@ -152,6 +152,31 @@ Depends: ${shlibs:Depends},
 Description: Star Labs Theme.
 
 Package: starlabstheme-orange-gnome-shell
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+Description: Star Labs Theme.
+
+Package: starlabstheme-green-session
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+Description: Star Labs Theme.
+
+Package: starlabstheme-orange-session
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+Description: Star Labs Theme.
+
+
+Package: starlabstheme-green-backgrounds
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+Description: Star Labs Theme.
+
+Package: starlabstheme-orange-backgrounds
 Architecture: all
 Depends: ${shlibs:Depends},
          ${misc:Depends},
