@@ -1,4 +1,4 @@
 usr/share/gnome-shell/modes/starlabs-orange.json
-usr/share/xsessions/StarLabs-Orange.destop
+usr/share/xsessions/StarLabs-Orange.desktop
 usr/share/wayland-sessions/StarLabs-Orange-wayland.desktop
 usr/share/glib-2.0/schemas/99_StarLabs-Orange.gschema.override
