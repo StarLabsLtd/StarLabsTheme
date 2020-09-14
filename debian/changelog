@@ -1,3 +1,9 @@
+starlabstheme-master (2starlabs16) focal; urgency=medium
+
+  * Adjusted cursor loading
+
+ -- Sean Rhodes <sean@starlabs.systems>  Mon, 14 Sep 2020 22:21:59 +0100
+
 starlabstheme-master (2starlabs15) focal; urgency=medium
 
   * Added new icons
