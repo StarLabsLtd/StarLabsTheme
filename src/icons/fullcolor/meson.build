@@ -1,3 +1,4 @@
+sizes = [16, 24, 32, 48, 64, 256]
 # Get list of object from current SVG
 objects = run_command(
   inkscape, '-S', 'master.svg',
@@ -30,27 +31,26 @@ foreach icon_theme: icon_themes
       target = object.split('_').get(0)
       name = object.split('_').get(1)
 
-      target_temp_name = '@0@.@1@.@2@'.format(icon_theme['name'], target, name)
-# inkscape --batch-process --actions="select:apps_gnome-mahjongg;AlignHorizontalCenter;AlignVerticalCenter" --export-id=apps_gnome-mahjongg --export-id-only --export-area-page --export-filename=test.svg master.svg
+      foreach dpi: sizes
+        target_temp_name = '@0@.@1@.@2@.@3@'.format(icon_theme['name'], target, name, dpi)
 
-      file_48 = configure_file(
-        input: file_svg,
-        output: target_temp_name + '.svg',
-        command: [
-          inkscape, '--batch-process',
-#         '--actions=select:@0@;AlignHorizontalCenter;AlignVerticalCenter;'.format(object),
-          '--export-id=@0@'.format(object),
-#         '--export-id-only',
-#         '--export-area-page',
-          '--export-filename=@OUTPUT@',
-          '@INPUT@',
-        ]
-      )
-      install_data(
-        file_48,
-        rename: name + '.svg',
-        install_dir: join_paths(icon_theme['dir'], '48', target),
-      )
+        png = configure_file(
+          input: file_svg,
+          output: target_temp_name + '.png',
+          command: [
+            inkscape, '--batch-process',
+            '--export-id=@0@'.format(object),
+            '--export-dpi=@0@'.format(dpi),
+            '--export-filename=@OUTPUT@',
+            '@INPUT@',
+          ]
+        )
+        install_data(
+          png,
+          rename: name + '.png',
+          install_dir: join_paths(icon_theme['dir'], dpi, target),
+        )
+      endforeach
     endif
   endforeach
 
@@ -63,11 +63,12 @@ foreach icon_theme: icon_themes
       output: destination,
       command: ['ln', '-frs', source, destination],
     )
-
-    install_data(
-      sym,
-      install_dir: join_paths(icon_theme['dir'], '48', target),
-    )
+    foreach dpi: sizes
+      install_data(
+        sym,
+        install_dir: join_paths(icon_theme['dir'], dpi, target),
+      )
+    endforeach
 
   endforeach
   
