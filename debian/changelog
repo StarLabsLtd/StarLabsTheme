@@ -1,3 +1,10 @@
+starlabstheme-master (2starlabs24) focal; urgency=medium
+
+  * Team upload.
+  * Fixed typo in meson_option
+
+ -- Sean Rhodes <sean@starlabs.systems>  Tue, 15 Sep 2020 22:25:04 +0100
+
 starlabstheme-master (2starlabs23) focal; urgency=medium
 
   * Team upload.
