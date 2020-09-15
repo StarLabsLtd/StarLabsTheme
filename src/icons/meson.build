@@ -32,6 +32,6 @@ foreach icon_theme: icon_themes
 
 endforeach
 
-subdir('fullcolor')
+#subdir('fullcolor')
 subdir('cursors')
-subdir('scalable')
+#subdir('scalable')

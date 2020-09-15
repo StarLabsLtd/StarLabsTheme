@@ -1,3 +1,9 @@
+starlabstheme-master (2starlabs17) focal; urgency=medium
+
+  * Adjusted cursor source and render target
+
+ -- Sean Rhodes <sean@starlabs.systems>  Tue, 15 Sep 2020 08:06:55 +0100
+
 starlabstheme-master (2starlabs16) focal; urgency=medium
 
   * Adjusted cursor loading
