@@ -1,4 +1,3 @@
-sizes = ['16', '24', '32', '48', '64', '256']
 # Get list of object from current SVG
 objects = run_command(
   inkscape, '-S', 'master.svg',
@@ -31,8 +30,8 @@ foreach icon_theme: icon_themes
       target = object.split('_').get(0)
       name = object.split('_').get(1)
 
-      foreach dpi: sizes
-        target_temp_name = '@0@.@1@.@2@.@3@'.format(icon_theme['name'], target, name, dpi)
+      foreach size: get_option('sizes')
+        target_temp_name = '@0@.@1@.@2@.@3@'.format(icon_theme['name'], target, name, size)
 
         png = configure_file(
           input: file_svg,
@@ -40,7 +39,7 @@ foreach icon_theme: icon_themes
           command: [
             inkscape, '--batch-process',
             '--export-id=@0@'.format(object),
-            '--export-dpi=@0@'.format(dpi),
+            '--export-dpi=@0@'.format(size),
             '--export-filename=@OUTPUT@',
             '@INPUT@',
           ]
@@ -48,7 +47,7 @@ foreach icon_theme: icon_themes
         install_data(
           png,
           rename: name + '.png',
-          install_dir: join_paths(icon_theme['dir'], dpi, target),
+          install_dir: join_paths(icon_theme['dir'], size, target),
         )
       endforeach
     endif
@@ -63,10 +62,10 @@ foreach icon_theme: icon_themes
       output: destination,
       command: ['ln', '-frs', source, destination],
     )
-    foreach dpi: sizes
+    foreach size: get_option('sizes')
       install_data(
         sym,
-        install_dir: join_paths(icon_theme['dir'], dpi, target),
+        install_dir: join_paths(icon_theme['dir'], size, target),
       )
     endforeach
 
