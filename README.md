@@ -93,7 +93,7 @@ If you want a different color, it's fairly straight forward to add. There are tw
 `meson.build`
 `meson_options.txt`
 
-These files contain examples for adding a Red variant. 
+These files contain examples for adding a Red variant. Examples are below, all you'd need to do is replace "color" with your color of choice.
 
 #### meson_options.txt
 
@@ -101,7 +101,7 @@ These files contain examples for adding a Red variant.
 option(
   'accents',
   type: 'array',
-  choices: ['newColor'],
+  choices: ['color'],
   description: 'Choose accent color(s)',
 )
 
@@ -110,9 +110,9 @@ option(
 #### meson.build
 ```
 foreach accent: get_option('accents')
-  if accent == 'red'
+  if accent == 'color'
     accent_suffix = ''
-    scss_accent = '-Red'
+    scss_accent = '-Color'
     scss_hex = '#FF0000'
   endif
 endforeach
