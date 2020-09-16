@@ -33,13 +33,14 @@ foreach icon_theme: icon_themes
       foreach size: get_option('sizes')
         target_temp_name = '@0@.@1@.@2@.@3@'.format(icon_theme['name'], target, name, size)
 
+        dpi=size.to_int() * 2
         png = configure_file(
           input: file_svg,
           output: target_temp_name + '.png',
           command: [
             inkscape, '--batch-process',
             '--export-id=@0@'.format(object),
-            '--export-dpi=@0@'.format(size),
+            '--export-dpi=@0@'.format(dpi),
             '--export-filename=@OUTPUT@',
             '@INPUT@',
           ]
