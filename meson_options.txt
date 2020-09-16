@@ -16,6 +16,10 @@ option(
   'accents',
   type: 'array',
   choices: ['default', 'green', 'orange'],
+# If you want to add a new color variant, add it here.
+#
+# For example:
+# choices: ['red']
   description: 'Choose accent color(s)',
 )
 

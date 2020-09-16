@@ -29,6 +29,13 @@ foreach accent: get_option('accents')
     accent_suffix = '-Orange'
     scss_accent = 'orange'
     scss_hex = '#FB8B00'
+# If you want to add a new color variant, add it here.
+#
+# For example:
+# elif accent == 'red'
+#    accent_suffix = '-Orange'
+#    scss_accent = 'red'
+#    scss_hex = '#FF0000'
   endif
 
   foreach color: get_option('colors')

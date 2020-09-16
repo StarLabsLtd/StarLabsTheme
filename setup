@@ -51,10 +51,6 @@ if [ "$d" == "Install" ]; then
 	meson build &>/dev/null
 	echo "Done"
 
-	echo -ne "Compiling build folder..."
-	ninja -C build &>/dev/null
-	echo "Done"
-
 	echo -ne "Installing build folder..."
 	sudo ninja -C build install &>/dev/null
 	echo "Done"
@@ -96,14 +92,6 @@ elif [ "$d" == "Update" ]; then
 	git pull
 	git pull --recurse-submodules &>/dev/null
 
-	echo -ne "Reconfiguring build folder..."
-        ninja -C build reconfigure &>/dev/null
-	echo "Done"
-
-        echo -ne "Compiling build folder..."
-        ninja -C build &>/dev/null
-	echo "Done"
-
 	echo -ne "Removing old gdm3 link"
 	sudo update-alternatives --remove gdm3.css /usr/share/gnome-shell/theme/StarLabs/gnome-shell.css
 	echo "Done"
@@ -126,7 +114,6 @@ elif [ "$d" == "Uninstall" ]; then
         echo "Uninstalling..."
 
         echo -ne "Uninstalling GDM theme..."
-	sudo update-alternatives --remove gdm3.css /usr/share/gnome-shell/theme/StarLabs/gnome-shell.css
 	sudo update-alternatives --remove gdm3-theme.gresource /usr/share/gnome-shell/theme/StarLabs/gnome-shell-theme.gresource
         echo "Done"
 
