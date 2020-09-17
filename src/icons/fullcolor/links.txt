@@ -226,7 +226,6 @@ categories_preferences-system-power.png_gnome-power-manager.png
 categories_preferences-system-power.png_unity-power-panel.png
 categories_preferences-system-sound.png_unity-sound-panel.png
 categories_preferences-system-time.png_unity-datetime-panel.png
-emblems_emblem-dropbox-uptodate.png_emblem-dropbox-mixedstate.png
 emblems_emblem-synchronizing.png_emblem-dropbox-syncing.png
 emblems_emblem-unreadable.png_emblem-dropbox-unsyncable.png
 mimetypes_application-apk.png_application-vnd.android.package-archive.png
@@ -262,19 +261,12 @@ mimetypes_application-x-rar.png_rar.png
 mimetypes_application-x-zip.png_application-archive-zip.png
 mimetypes_application-x-zip.png_application-zip.png
 mimetypes_application-x-zip.png_zip.png
-mimetypes_audio-x-flac.png_audio-flac.png
-mimetypes_audio-x-flac.png_audio-x-flac+ogg.png
-mimetypes_audio-x-mpeg.png_audio-mpeg.png
-mimetypes_audio-x-mpegurl.png_audio-x-mp3-playlist.png
-mimetypes_audio-x-mpegurl.png_audio-x-playlist.png
-mimetypes_audio-x-mpegurl.png_audio-x-scpls.png
-mimetypes_audio-x-wav.png_audio-x-adpcm.png
 mimetypes_font-x-generic.png_application-font.png
 mimetypes_font-x-generic.png_font-otf.png
 mimetypes_font-x-generic.png_font.png
 mimetypes_font-x-generic.png_font-ttf.png
-mimetypes_image-svg+xml.png_image-svg+xml-compressed.png_
-mimetypes_image-x-xcf.png_image-x-compressed-xcf.png
+mimetypes_image-svg-xml.png_image-svg+xml-compressed.png
+mimetypes_image-svg-xml.png_image-svg+xml.png
 mimetypes_libreoffice-oasis-database.png_application-vnd.oasis.opendocument.database.png
 mimetypes_libreoffice-oasis-database.png_application-vnd.oasis.opendocument.database-template.png
 mimetypes_libreoffice-oasis-database.png_libreoffice-database.png
@@ -347,4 +339,3 @@ mimetypes_x-office-spreadsheet.png_office-spreadsheet.png
 mimetypes_x-office-spreadsheet.png_spreadsheet.png
 mimetypes_x-office-spreadsheet.png_text-spreadsheet.png
 places_folder.png_inode-directory.png
-status_folder-open.png_folder-drag-accept.png
