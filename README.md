@@ -64,7 +64,7 @@ Next, enter your password and proceed to login as normal.
 
 StarLabsTheme now includes various colour schemes:
 #### Orange
-![Navy](Screenshots/Orange)
+![Orange](Screenshots/Orange.png)
 #### Green
 ![Green](Screenshots/Green.png)
 
