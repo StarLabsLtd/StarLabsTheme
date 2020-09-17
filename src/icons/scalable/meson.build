@@ -20,6 +20,8 @@ foreach object: scalable_objects
         inkscape, '--batch-process',
         '--export-id=@0@'.format(object),
         '--export-filename=@OUTPUT@',
+        '--export-id-only',
+        '--export-plain-svg',
         '@INPUT@',
       ]
     )
