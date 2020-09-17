@@ -15,10 +15,10 @@ input-feedback-sounds = true
 center-new-windows = false
 
 [org.gnome.desktop.background:@name@]
-picture-uri = 'file:///usr/share/backgrounds/StarLabs/@name@.svg'
+picture-uri = 'file:///usr/share/backgrounds/@name@/@name@.svg'
 
 [org.gnome.desktop.screensaver:@name@]
-picture-uri = 'file:///usr/share/backgrounds/StarLabs/@name@.svg'
+picture-uri = 'file:///usr/share/backgrounds/@name@/@name@.svg'
 
 [org.gnome.desktop.interface:@name@]
 show-battery-percentage=true

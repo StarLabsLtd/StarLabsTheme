@@ -20,6 +20,7 @@ Includes:
 
 ![Session](Screenshots/Session.png)
 
+![Icons](Screenshots/Icons.png)
 # How to install
 ## Ubuntu and Debian based distributions
 ##### Install
