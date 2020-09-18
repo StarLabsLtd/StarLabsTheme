@@ -4,7 +4,7 @@ set -e
 
 if [ "$1" = configure ]; then
 	update-alternatives --install /usr/share/plymouth/themes/default.plymouth \
-        default.plymouth /usr/share/plymouth/themes/StarLabs-Green/StarLabs-Green.plymouth 150 \
+        default.plymouth /usr/share/plymouth/themes/StarLabs-Green/StarLabs-Green.plymouth 201 \
         --slave /usr/share/plymouth/themes/default.grub default.plymouth.grub /usr/share/plymouth/themes/StarLabs-Green/StarLabs.grub
 	update-initramfs -u
 fi
