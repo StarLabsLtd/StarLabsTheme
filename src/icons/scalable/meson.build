@@ -28,7 +28,7 @@ foreach object: scalable_objects
     foreach icon_theme: icon_themes
       install_data(
         svg,
-        rename: name + '.svg',
+        rename: name + '-symbolic.svg',
         install_dir: join_paths(icon_theme['dir'], 'scalable', target),
       )
     endforeach
