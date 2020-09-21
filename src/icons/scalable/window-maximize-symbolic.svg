@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   height="16"
+   width="15.999999"
+   version="1.1"
+   id="actionssvg4023">
+  <metadata
+     id="actions_metadata58">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title />
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="actions_defs82">
+    <linearGradient
+       osb:paint="solid"
+       id="actions_linearGradient64">
+      <stop
+         offset="0"
+         style="stop-color:#000000;stop-opacity:1;"
+         id="actions_stop62" />
+    </linearGradient>
+    <linearGradient
+       osb:paint="solid"
+       id="actions_linearGradient68">
+      <stop
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1;"
+         id="actions_stop66" />
+    </linearGradient>
+    <linearGradient
+       osb:paint="gradient"
+       id="actions_linearGradient74">
+      <stop
+         style="stop-color:#f4f4f4;stop-opacity:1"
+         offset="0"
+         id="actions_stop70" />
+      <stop
+         style="stop-color:#dbdbdb;stop-opacity:1"
+         offset="1"
+         id="actions_stop72" />
+    </linearGradient>
+    <linearGradient
+       id="actions_linearGradient80">
+      <stop
+         style="stop-color:#808080;stop-opacity:1"
+         offset="0"
+         id="actions_stop76" />
+      <stop
+         style="stop-color:#808080;stop-opacity:0"
+         offset="1"
+         id="actions_stop78" />
+    </linearGradient>
+  </defs>
+  <g
+     transform="translate(-52.000001,-300)"
+     style="display:inline"
+     id="actions_actions">
+    <g
+       transform="translate(-240,108)"
+       id="actions_window-maximize">
+      <rect
+         style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:none;fill-opacity:0;stroke:none;stroke-width:3.99921;marker:none;enable-background:accumulate"
+         width="16"
+         height="15.999999"
+         x="192"
+         y="-308"
+         transform="rotate(90)"
+         id="actionsrect3060" />
+      <path
+         d="m 295,195 v 2 6 2 h 2 8 v -2 -8 h -8 z m 2,2 h 6 v 6 h -6 z"
+         style="display:inline;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.966823;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+         id="rect816-3-2" />
+    </g>
+  </g>
+</svg>
