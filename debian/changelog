@@ -1,3 +1,10 @@
+starlabstheme-master (2starlabs37) focal; urgency=medium
+
+  * Team upload.
+  * Fixed path to gnome-shell.css for green and orange variants
+
+ -- Sean Rhodes <sean@starlabs.systems>  Wed, 30 Sep 2020 11:44:25 +0100
+
 starlabstheme-master (2starlabs36) focal; urgency=medium
 
   * Team upload.
