@@ -1,5 +1,5 @@
 Source: starlabstheme-master
-Section: gnome
+Section: universe/graphics
 Priority: optional
 Maintainer: Star Labs Systems <support@starlabs.systems>
 Build-Depends: debhelper (>= 10.3),
