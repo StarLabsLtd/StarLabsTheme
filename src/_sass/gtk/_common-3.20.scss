@@ -133,6 +133,7 @@ iconview {
   }
 }
 
+%rubberband,
 .rubberband,
 rubberband {
   border: 1px solid $primary;
@@ -141,7 +142,7 @@ rubberband {
 
 flowbox {
   rubberband {
-    @extend rubberband;
+    @extend %rubberband;
   }
 
   flowboxchild {
@@ -172,6 +173,10 @@ label {
     color: hint($on-surface);
   }
 
+  &.error {
+    color: $error;
+  }
+
   selection {
     background-color: $overlay-selected;
   }
@@ -194,8 +199,7 @@ label {
   }
 }
 
-.dim-
-label {
+.dim-label {
   color: hint($on-surface);
 }
 
@@ -250,6 +254,64 @@ spinner {
 }
 
 /**
+ * General Typography
+ */
+
+@function pt($size: $font-size) {
+  @return ($size * .75 / 1px) * 1pt;
+}
+
+.large-title {
+  font-weight: 400;
+  font-size: pt(48px);
+}
+
+.title-1 {
+  font-weight: 400;
+  font-size: pt(34px);
+  letter-spacing: pt(.25px);
+}
+
+.title-2 {
+  font-weight: 400;
+  font-size: pt(24px);
+}
+
+.title-3 {
+  font-weight: 500;
+  font-size: pt(20px);
+  letter-spacing: pt(.15px);
+}
+
+.title-4 {
+  font-weight: 400;
+  font-size: pt(16px);
+  letter-spacing: pt(.5px);
+}
+
+.heading {
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.body {
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.caption-heading {
+  font-weight: 500;
+  font-size: pt(12px);
+  letter-spacing: pt(1.5px);
+}
+
+.caption {
+  font-weight: 400;
+  font-size: pt(12px);
+  letter-spacing: pt(.4px);
+}
+
+/**
  * Text Entries
  */
 
@@ -280,7 +342,7 @@ entry {
     background-color: transparent;
   }
 
-  // icons inside the entry
+  // assets inside the entry
   image {
     // min-height: $small-size;
     // min-width: $small-size;
@@ -736,7 +798,7 @@ button {
   }
 
   .primary-toolbar & {
-    -gtk-icon-shadow: none; // tango icons don't need shadows
+    -gtk-icon-shadow: none; // tango assets don't need shadows
   }
 
   &.close,
@@ -1314,19 +1376,20 @@ searchbar > revealer > box {
 .titlebar {
   transition: background-color $duration $ease-out, color $duration $ease-out;
   border-radius: $corner-radius $corner-radius 0 0;
-//box-shadow: $shadow-z1, inset 0 1px highlight($surface);
-  background-color: $surface;
-  color: $on-surface;
+  box-shadow: $shadow-z1, inset 0 1px highlight($titlebar);
+  background-color: $titlebar;
+  color: $on-titlebar;
+
   &:disabled {
-    color: disabled($on-surface);
+    color: disabled($on-titlebar);
   }
 
   &:backdrop {
-    background-color: $switch-surface;
-    color: $on-surface;
+    background-color: $titlebar-backdrop;
+    color: hint($on-titlebar);
 
     &:disabled {
-      color: disabled-hint($on-surface);
+      color: disabled-hint($on-titlebar);
     }
   }
 
@@ -1345,10 +1408,10 @@ searchbar > revealer > box {
   .subtitle,
   .dim-label {
     transition: color $duration $ease-out;
-    color: hint($on-surface);
+    color: hint($on-titlebar);
 
     &:backdrop {
-      color: disabled($on-surface);
+      color: disabled($on-titlebar);
     }
   }
 
@@ -1360,30 +1423,30 @@ searchbar > revealer > box {
 
   // The separator for split headerbars
   headerbar + separator {
-    background: transparent;
+    background-color: divider($on-titlebar);
   }
 
   entry {
-    box-shadow: inset 0 -1px stroke($on-surface);
-    background-color: entry-fill($on-surface);
+    box-shadow: inset 0 -1px stroke($on-titlebar);
+    background-color: entry-fill($on-titlebar);
     color: $on-titlebar;
 
     &:disabled {
-      box-shadow: inset 0 -1px disabled-stroke($on-surface);
-      background-color: entry-fill($on-surface);
-      color: disabled($on-surface);
+      box-shadow: inset 0 -1px disabled-stroke($on-titlebar);
+      background-color: entry-fill($on-titlebar);
+      color: disabled($on-titlebar);
     }
 
     image {
-      color: hint($on-surface);
+      color: hint($on-titlebar);
 
       &:hover,
       &:active {
-        color: $on-surface;
+        color: $on-titlebar;
       }
 
       &:disabled {
-        color: disabled($on-surface);
+        color: disabled($on-titlebar);
       }
     }
   }
@@ -1402,11 +1465,11 @@ searchbar > revealer > box {
         transparent 0%
       ) 0 0 0 / 0 0 0;
     background-color: transparent;
-    color: hint($on-surface);
-    @include ink-color($on-surface);
+    color: hint($on-titlebar);
+    @include ink-color($on-titlebar);
 
     &:disabled {
-      color: disabled-hint($on-surface);
+      color: disabled-hint($on-titlebar);
     }
 
     @at-root %titlebar-button-checked,
@@ -1418,27 +1481,27 @@ searchbar > revealer > box {
           transparent 0%
         ) 0 0 2 / 0 0 2px;
       background-color: transparent;
-      color: $primary; //$on-titlebar;
-      @include ink-color($on-surface);
+      color: $on-titlebar;
+      @include ink-color($on-titlebar);
 
       &:disabled {
         background-color: transparent;
-        color: disabled($on-surface);
+        color: disabled($on-titlebar);
       }
     }
 
     &:backdrop {
-      color: disabled($on-surface);
+      color: disabled($on-titlebar);
 
       &:disabled {
-        color: disabled-hint($on-surface);
+        color: disabled-hint($on-titlebar);
       }
 
       &:checked {
-        color: hint($on-surface);
+        color: hint($on-titlebar);
 
         &:disabled {
-          color: disabled-hint($on-surface);
+          color: disabled-hint($on-titlebar);
         }
       }
     }
@@ -1446,8 +1509,8 @@ searchbar > revealer > box {
 
   button.suggested-action, button.destructive-action {
     &:disabled {
-      background-color: fill($on-surface);
-      color: disabled($on-surface);
+      background-color: fill($on-titlebar);
+      color: disabled($on-titlebar);
     }
   }
 
@@ -1558,7 +1621,7 @@ searchbar > revealer > box {
   &.default-decoration {
     min-height: $small-size;
     padding: $container-padding;
-    box-shadow: inset 0 1px highlight($surface);
+    box-shadow: inset 0 1px highlight($titlebar);
 
     .tiled &,
     .maximized &,
@@ -1603,11 +1666,10 @@ headerbar {
   separator.titlebutton {
     margin-top: $large-size / 4;
     margin-bottom: $large-size / 4;
-    background-color: divider($on-surface);
+    background-color: divider($on-titlebar);
   }
 
-  
-switch {
+  switch {
     margin-top: ($large-size - 24px) / 2;
     margin-bottom: ($large-size - 24px) / 2;
   }
@@ -1707,7 +1769,7 @@ treeview.view {
 
   // to avoid borders being overridden by the previously set props
   rubberband {
-    @extend rubberband;
+    @extend %rubberband;
   }
 
   &:hover,
@@ -1836,12 +1898,12 @@ menubar,
   -GtkWidget-window-dragging: true;
   padding: 0;
   // box-shadow: inset 0 -1px divider($on-surface);
-  background-color: $surface;
-  color: $on-surface;
+  background-color: $titlebar;
+  color: $on-titlebar;
 
   &:backdrop {
-    background-color: $switch-surface;
-    color: hint($on-surface);
+    background-color: $titlebar-backdrop;
+    color: hint($on-titlebar);
   }
 
   .csd & {
@@ -1852,16 +1914,16 @@ menubar,
     transition: $transition;
     min-height: 20px;
     padding: 4px 8px;
-    color: hint($on-surface);
+    color: hint($on-titlebar);
 
     &:hover { // Seems like it :hover even with keyboard focus
       transition: none;
-      background-color: overlay("activated", $on-surface);
-      color: $on-surface;
+      background-color: overlay("activated", $on-titlebar);
+      color: $on-titlebar;
     }
 
     &:disabled {
-      color: disabled-hint($on-surface);
+      color: disabled-hint($on-titlebar);
     }
   }
 }
@@ -2389,18 +2451,18 @@ scrollbar {
     border: 4px solid transparent;
     border-radius: $circular-radius;
     background-clip: padding-box;
-    background-color: disabled($primary);
+    background-color: disabled($on-surface);
 
     &:hover {
-      background-color: hint($primary);
+      background-color: hint($on-surface);
     }
 
     &:active {
-      background-color: $primary;
+      background-color: $on-surface;
     }
 
     &:disabled {
-      background-color: disabled-hint($primary);
+      background-color: disabled-hint($on-surface);
     }
   }
 
@@ -2473,7 +2535,7 @@ scrollbar {
 
     &.dragging,
     &.hovering {
-      background-color: transparent; //rgba($surface, .9);
+      background-color: rgba($surface, .9);
     }
   }
 
@@ -2495,7 +2557,7 @@ scrollbar {
     border-radius: 0;
   }
 
-  // button icons
+  // button assets
   &.vertical {
     button {
       &.down {
@@ -2544,7 +2606,7 @@ switch {
     opacity: .5;
   }
 
-  // hide on/off icons for >=3.24.5
+  // hide on/off assets for >=3.24.5
   image {
     margin: -8px;
     -gtk-icon-transform: scale(0);
@@ -2558,7 +2620,7 @@ switch {
     border-radius: $circular-radius;
     outline: none;
     box-shadow: 0 0 0 10px transparent, $shadow-z1;
-    background-color: $on-surface; //lighten($primary, 20%); //$switch-surface;
+    background-color: $switch-surface;
   }
 
   &:hover slider {
@@ -2594,7 +2656,7 @@ switch {
 
 // selection-mode
 .view.content-view.check:not(list),
-.content-view:not(list) .tile check {
+.content-view:not(list) check {
   min-height: 40px;
   min-width: 40px;
   margin: 0;
@@ -3164,16 +3226,7 @@ levelbar {
     }
   }
 
-  // imitate the entry style
   trough {
-    // padding: 2px;
-    // border-radius: $corner-radius;
-    // box-shadow: $shadow-z1;
-    // background-color: $base;
-
-    &:disabled {
-      // background-color: $base-alt;
-    }
   }
 
   block {
@@ -3217,14 +3270,11 @@ printdialog {
  * Frames
  */
 
-frame > border {
-  border: 1px solid divider($on-surface);
-}
-
 frame > border,
 .frame {
   margin: 0;
   padding: 0;
+  border: 1px solid divider($on-surface);
   border-radius: 0;
   box-shadow: none;
 
@@ -3295,9 +3345,9 @@ scrolledwindow {
 
 // vbox and hbox separators
 separator {
-//min-width: 1px;
-//min-height: 1px;
-  background-color: transparent;//divider($on-surface);
+  min-width: 1px;
+  min-height: 1px;
+  background-color: divider($on-surface);
 }
 
 %hide_separators {
@@ -3333,11 +3383,8 @@ row {
   }
 
   &:selected {
-    background-color: $surface; 
-    color: $on-surface; //$overlay-selected;
-    & label, & image {
-      color: $on-surface;
-    }
+    background-color: $overlay-selected;
+
     @include ink-color($primary);
 
     &.has-open-popup {
@@ -3528,7 +3575,8 @@ filechooser {
     border-bottom: 1px solid divider($on-surface);
     background-color: $background;
 
-    > stack > box > button { // The new folder button
+    // The new folder button
+    > stack > box > button {
       @extend %button-flat;
 
       border-radius: $circular-radius;
@@ -3546,21 +3594,21 @@ filechooserbutton:drop(active) {
 
 .sidebar {
   border-style: none;
-  background-color: $surface;
+  background-color: $base-alt;
 
   &:not(separator) {
     @at-root %sidebar_left,
     &:dir(ltr),
     &.left,
     &.left:dir(rtl) {
-//    border-right: 1px solid divider($on-surface);
+      border-right: 1px solid divider($on-surface);
       border-left-style: none;
     }
 
     @at-root %sidebar_right,
     &:dir(rtl),
     &.right {
-//    border-left: 1px solid divider($on-surface);
+      border-left: 1px solid divider($on-surface);
       border-right-style: none;
     }
   }
@@ -3649,7 +3697,7 @@ separator.sidebar {
  * File chooser
  */
 
-// dim the sidebar icons, see bug #786613 for details on this oddity
+// dim the sidebar assets, see bug #786613 for details on this oddity
 row image.sidebar-icon {
   transition: color $duration $ease-out;
   color: hint($on-surface);
@@ -3671,9 +3719,9 @@ placessidebar.sidebar {
   row {
     // Needs overriding of the GtkListBoxRow padding
     min-height: 32px;
-//  margin: -1px 0; //-1px 4px; // Remove unwanted hard-coded vertical margins with -1px
+    margin: -1px 4px; // Remove unwanted hard-coded vertical margins with -1px
     padding: 0;
-//  border-radius: $corner-radius;
+    border-radius: $corner-radius;
 
     // Using margins/padding directly in the SidebarRow
     // will make the animation of the new bookmark row jump
@@ -3767,7 +3815,6 @@ paned {
     // workaround, using background istead of a border since the border will get rendered twice (?)
     background-image: image(divider($on-surface));
     background-size: 1px 1px;
-    background: transparent;
     background-clip: content-box; // avoids borders image being rendered twice (?)
 
     &.wide {
@@ -3824,8 +3871,12 @@ paned {
 infobar {
   border-style: none;
 
-  &.info,
-  &.question {
+  &.action:hover > revealer > box {
+    background-image: image(overlay("hover", $on-surface));
+  }
+
+  &.info > revealer > box,
+  &.question > revealer > box {
     border-bottom: 1px solid divider($on-surface);
     background-color: $base;
 
@@ -3839,7 +3890,7 @@ infobar {
     }
   }
 
-  &.warning {
+  &.warning > revealer > box {
     background-color: $warning;
     color: $on-warning;
 
@@ -3856,7 +3907,7 @@ infobar {
     }
   }
 
-  &.error {
+  &.error > revealer > box {
     background-color: $error;
     color: $on-error;
 
@@ -4059,7 +4110,7 @@ colorchooser .popover.osd {
 
   rubberband,
   .rubberband {
-    @extend rubberband;
+    @extend %rubberband;
   }
 }
 
@@ -4067,11 +4118,13 @@ colorchooser .popover.osd {
   .osd & {
     // @extend %osd;
 
-    button.flat { // FIXME: quick hack, redo properly
+    // FIXME: quick hack, redo properly
+    button.flat {
     }
   }
 
-  button { // +/- buttons on GtkVolumeButton popup
+  // +/- buttons on GtkVolumeButton popup
+  button {
   }
 }
 
@@ -4212,16 +4265,19 @@ cursor-handle {
   font-size: smaller;
 }
 
-:not(decoration):not(window):drop(active) { // FIXME needs to be done widget by widget, this wildcard should really die
+// FIXME needs to be done widget by widget, this wildcard should really die
+:not(decoration):not(window):drop(active) {
   // caret-color: $primary;
 }
 
-stackswitcher button.text-button { // FIXME aggregate with buttons
+// FIXME aggregate with buttons
+stackswitcher button.text-button {
   min-width: 100px;
 }
 
+// FIXME aggregate with buttons
 stackswitcher button.circular,
-stackswitcher button.text-button.circular { // FIXME aggregate with buttons
+stackswitcher button.text-button.circular {
   min-width: $medium-size;
   min-height: $medium-size;
   padding: 0;
@@ -4231,12 +4287,12 @@ stackswitcher button.text-button.circular { // FIXME aggregate with buttons
  * App Icons
  */
 
-// Outline for low res icons
+// Outline for low res assets
 .lowres-icon {
   // -gtk-icon-shadow: none;
 }
 
-// Drapshadow for large icons
+// Drapshadow for large assets
 .icon-dropshadow {
   // -gtk-icon-shadow: none;
 }
