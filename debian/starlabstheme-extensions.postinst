@@ -4,6 +4,7 @@ set -e
 
 if [ "$1" = configure ]; then
 	glib-compile-schemas /usr/share/glib-2.0/schemas
+	glib-compile-schemas /usr/share/gnome-shell/extensions/lockkeys@vaina.lt/schemas
 fi
 
 #DEBHELPER#
