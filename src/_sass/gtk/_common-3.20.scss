@@ -1481,7 +1481,7 @@ searchbar > revealer > box {
           transparent 0%
         ) 0 0 2 / 0 0 2px;
       background-color: transparent;
-      color: $on-titlebar;
+      color: $primary;
       @include ink-color($on-titlebar);
 
       &:disabled {
@@ -2620,7 +2620,7 @@ switch {
     border-radius: $circular-radius;
     outline: none;
     box-shadow: 0 0 0 10px transparent, $shadow-z1;
-    background-color: $switch-surface;
+    background-color: $on-surface;
   }
 
   &:hover slider {
@@ -3345,9 +3345,7 @@ scrolledwindow {
 
 // vbox and hbox separators
 separator {
-  min-width: 1px;
-  min-height: 1px;
-  background-color: divider($on-surface);
+  background-color: transparent;
 }
 
 %hide_separators {
@@ -3384,7 +3382,7 @@ row {
 
   &:selected {
     background-color: $overlay-selected;
-
+    color: $on-surface; // Might Break
     @include ink-color($primary);
 
     &.has-open-popup {
