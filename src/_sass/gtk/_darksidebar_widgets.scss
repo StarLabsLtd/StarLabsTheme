@@ -58,3 +58,20 @@ button.titlebutton:not(.appmenu) {
 .nautilus-window paned > separator {
     background: image($surface);
 }
+
+// SPLIT
+separator {
+  background-color: transparent;
+}
+row {
+  &:selected {
+    color: $on-surface;
+}
+slider {
+  bakground-color: $on-surface;
+}
+
+@at-root %titlebar-button-checked,
+&:checked {
+  color: $primary;
+}}

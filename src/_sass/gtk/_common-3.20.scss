@@ -342,7 +342,7 @@ entry {
     background-color: transparent;
   }
 
-  // assets inside the entry
+  // icons inside the entry
   image {
     // min-height: $small-size;
     // min-width: $small-size;
@@ -798,7 +798,7 @@ button {
   }
 
   .primary-toolbar & {
-    -gtk-icon-shadow: none; // tango assets don't need shadows
+    -gtk-icon-shadow: none; // tango icons don't need shadows
   }
 
   &.close,
@@ -1481,7 +1481,7 @@ searchbar > revealer > box {
           transparent 0%
         ) 0 0 2 / 0 0 2px;
       background-color: transparent;
-      color: $primary;
+      color: $on-titlebar;
       @include ink-color($on-titlebar);
 
       &:disabled {
@@ -2557,7 +2557,7 @@ scrollbar {
     border-radius: 0;
   }
 
-  // button assets
+  // button icons
   &.vertical {
     button {
       &.down {
@@ -2606,7 +2606,7 @@ switch {
     opacity: .5;
   }
 
-  // hide on/off assets for >=3.24.5
+  // hide on/off icons for >=3.24.5
   image {
     margin: -8px;
     -gtk-icon-transform: scale(0);
@@ -2620,7 +2620,7 @@ switch {
     border-radius: $circular-radius;
     outline: none;
     box-shadow: 0 0 0 10px transparent, $shadow-z1;
-    background-color: $on-surface;
+    background-color: $switch-surface;
   }
 
   &:hover slider {
@@ -3345,7 +3345,9 @@ scrolledwindow {
 
 // vbox and hbox separators
 separator {
-  background-color: transparent;
+  min-width: 1px;
+  min-height: 1px;
+  background-color: divider($on-surface);
 }
 
 %hide_separators {
@@ -3382,7 +3384,7 @@ row {
 
   &:selected {
     background-color: $overlay-selected;
-    color: $on-surface; // Might Break
+
     @include ink-color($primary);
 
     &.has-open-popup {
@@ -3695,7 +3697,7 @@ separator.sidebar {
  * File chooser
  */
 
-// dim the sidebar assets, see bug #786613 for details on this oddity
+// dim the sidebar icons, see bug #786613 for details on this oddity
 row image.sidebar-icon {
   transition: color $duration $ease-out;
   color: hint($on-surface);
@@ -4285,12 +4287,12 @@ stackswitcher button.text-button.circular {
  * App Icons
  */
 
-// Outline for low res assets
+// Outline for low res icons
 .lowres-icon {
   // -gtk-icon-shadow: none;
 }
 
-// Drapshadow for large assets
+// Drapshadow for large icons
 .icon-dropshadow {
   // -gtk-icon-shadow: none;
 }

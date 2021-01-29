@@ -1,0 +1,93 @@
+96,104c96,100
+< $dark: #232323;
+< $light: #fff;
+< 
+< $background: if($variant == "light", $light, $dark);
+< $base: $background;
+< $base-alt: if($variant == "light", $dark, darken($dark, 10%));
+< $on-base-alt: on($base-alt);
+< $surface: $background; // $background;
+< $switch-surface: $background;
+---
+> $background: #f2f2f2;
+> $base: #fff; // for views
+> $base-alt: #fafafa;
+> $surface: #fff;
+> $switch-surface: #fff; // Special case for switches
+107,109c103,105
+< $primary-on-light: $accent;
+< $primary-on-dark: $accent;
+< $primary: if($variant == "light", $primary-on-light, $primary-on-dark);
+---
+> $primary-on-light: #1a73e8;
+> $primary-on-dark: #8ab4f8;
+> $primary: $primary-on-light;
+114c110
+< $error: if($variant == "light", $error-on-light, $error-on-dark);
+---
+> $error: $error-on-light;
+119c115
+< $warning: if($variant == "light", $warning-on-light, $warning-on-dark);
+---
+> $warning: $warning-on-light;
+124c120
+< $success: if($variant == "light", $success-on-light, $success-on-dark);
+---
+> $success: $success-on-light;
+129c125
+< $visited: if($variant == "light", $visited-on-light, $visited-on-dark);
+---
+> $visited: $visited-on-light;
+149c145
+< $on-panel-solid: red; //on($panel-solid);
+---
+> $on-panel-solid: on($panel-solid);
+151,152c147,148
+< $titlebar: $background; //#383838;
+< $titlebar-backdrop: $background; // #303030;
+---
+> $titlebar: #383838;
+> $titlebar-backdrop: #303030;
+155a152,193
+> 
+> @if $variant == "dark" {
+>   $background: $-dark-background;
+>   $base: $-dark-surface-1dp;
+>   $base-alt: $-dark-surface-1dp;
+>   $surface: $-dark-surface-8dp;
+>   $switch-surface: $-dark-surface-switch;
+>   $on-surface: on($surface);
+> 
+>   $primary: $primary-on-dark;
+>   $on-primary: on($primary);
+> 
+>   $error: $error-on-dark;
+>   $on-error: on($error);
+> 
+>   $warning: $warning-on-dark;
+>   $on-warning: on($warning);
+> 
+>   $success: $success-on-dark;
+>   $on-success: on($success);
+> 
+>   $visited: $visited-on-dark;
+>   $on-visited: on($visited);
+> 
+>   $titlebar: $-dark-surface-4dp;
+>   $titlebar-backdrop: $-dark-surface-1dp;
+>   $on-titlebar: on($titlebar);
+> }
+> 
+> @if $topbar == "light" {
+>   $panel: $scrim;
+>   $on-panel: on($panel);
+> 
+>   $panel-solid: #ccc;
+>   $on-panel-solid: on($panel-solid);
+> 
+>   $titlebar: #e0e0e0;
+>   $titlebar-backdrop: #d6d6d6;
+>   $on-titlebar: on($titlebar);
+> 
+>   $titlebar-indicator: $primary;
+> }
