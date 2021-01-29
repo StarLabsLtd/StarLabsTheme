@@ -62,6 +62,8 @@ button.titlebutton:not(.appmenu) {
 // SPLIT
 separator {
   background-color: transparent;
+  min-height: 0px;
+  min-width: 0px;
 }
 row {
   &:selected {
@@ -75,3 +77,8 @@ slider {
 &:checked {
   color: $primary;
 }}
+
+row {
+  border-radius: 0;
+  margin: 0 0 0 4px;
+}
