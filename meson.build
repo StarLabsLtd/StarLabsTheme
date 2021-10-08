@@ -6,6 +6,9 @@ project(
   default_options: ['prefix=/usr'],
 )
 
+sass_opts = ['--no-source-map']
+inkscape = find_program('inkscape')
+
 theme_base_name = get_option('theme_name')
 theme_base_dir = join_paths(get_option('datadir'), 'themes', theme_base_name)
 icon_base_dir = join_paths(get_option('datadir'), 'icons', theme_base_name)
