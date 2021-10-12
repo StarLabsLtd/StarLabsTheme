@@ -26,6 +26,7 @@ option(
 option(
   'gnome_shell_version',
   type: 'string',
+  value: '40.5',
   description: 'Manually set gnome-shell version',
 )
 
