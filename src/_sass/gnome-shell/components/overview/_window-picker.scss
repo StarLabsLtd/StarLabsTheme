@@ -3,71 +3,103 @@
 // Window picker
 .window-picker {
   // Space between window thumbnails
-  -horizontal-spacing: 16px;
-  -vertical-spacing: 16px;
-  // Padding for container around window thumbnails
-  padding: 0 16px 32px;
+  @if $version >= 3.38 {
+    spacing: 8px;
+  } @else {
+    -horizontal-spacing: 16px;
+    -vertical-spacing: 16px;
+  }
 
-  &.external-monitor {
-    padding: 16px;
+  @if $version < 40 {
+    // Padding for container around window thumbnails
+    padding: 0 16px 32px;
+
+    &.external-monitor {
+      padding: 16px;
+    }
   }
 }
 
-// Borders on window thumbnails
-.window-clone-border {
-  border: 4px solid stroke($on-dark);
-  border-radius: $corner-radius;
-  // For window decorations with round corners we can't match
-  // the exact shape when the window is scaled. So apply a shadow
-  // to fix that case
-  box-shadow: inset 0 0 0 1px stroke($on-dark);
+@if $version < 40 {
+  // Borders on window thumbnails
+  .window-clone-border {
+    border: 4px solid stroke($on-dark);
+    border-radius: $corner-radius;
+    // For window decorations with round corners we can't match
+    // the exact shape when the window is scaled. So apply a shadow
+    // to fix that case
+    box-shadow: inset 0 0 0 1px stroke($on-dark);
+  }
 }
 
 // Window titles
 .window-caption {
-  spacing: 0;
   padding: 4px 8px;
-  border: 0;
   border-radius: $corner-radius;
   background-color: $scrim;
   color: $on-scrim;
-  font-size: 1em;
-  font-weight: normal;
+
+  @if $version < 40 {
+    spacing: 0;
+    border: 0;
+    font-size: 1em;
+    font-weight: normal;
+  }
 }
 
 // Close button
 .window-close {
-  -shell-close-overlap: $medium-size / 2;
-  // FIXME: unless disable the transition, button will distort when hovering
-  // transition-duration: $duration;
+  transition-duration: $duration;
   height: $medium-size;
   width: $medium-size;
   padding: 0;
   border: 0;
-  border-radius: 0;
-  box-shadow: none;
-  background-color: transparent;
-  color: transparent;
+  border-radius: $medium-size / 2;
+  box-shadow: $shadow-1;
+  background-color: $error;
+  color: $on-error;
 
-  -st-background-image-shadow: $shadow-1;
   background-image: url("resource:///org/gnome/shell/theme/window-close.svg");
-  background-size: $medium-size;
+  background-size: 24px;
+
+  @if $version < 3.38 {
+    -shell-close-overlap: $medium-size / 2;
+  }
 
   &:hover {
+    box-shadow: $shadow-1;
     border-color: transparent;
-    background-color: transparent;
-    color: transparent;
+    background-color: overlay("hover", $on-error);
+    color: $on-error;
 
-    -st-background-image-shadow: $shadow-2;
-    background-image: url("resource:///org/gnome/shell/theme/window-close.svg");
+    @if $version < 3.32 {
+      background-image: url("resource:///org/gnome/shell/theme/window-close.svg");
+    }
   }
 
   &:active {
+    transition-duration: $duration;
+    box-shadow: $shadow-2;
     border-color: transparent;
-    background-color: transparent;
-    color: transparent;
+    background-color: overlay("hover", $on-error);
+    color: $on-error;
 
-    // transition-duration: $duration-ripple;
-    background-image: url("resource:///org/gnome/shell/theme/window-close-active.svg");
+    @if $version < 3.32 {
+      background-image: url("resource:///org/gnome/shell/theme/window-close-active.svg");
+    }
+  }
+
+  StIcon {
+    icon-size: 24px;
+    color: transparent;
+  }
+}
+
+@if $version >= 40 {
+  .workspace-background {
+    // keep in sync with BACKGROUND_CORNER_RADIUS_PIXELS in workspace.js
+    border-radius: 30px;
+    background-color: black;
+    box-shadow: $shadow-2; // use z4 for the huge card
   }
 }
