@@ -27,6 +27,7 @@
   border-color: rgba(black, .1) rgba(black, .2) rgba(black, .3);
   border-radius: $corner-radius + 1px;
   box-shadow: $shadow-z4;
+  background-clip: padding-box;
   background-color: $surface;
 
   .container {
@@ -35,10 +36,11 @@
 
   border {
     border: none;
+    background-color: transparent;
   }
 
   list {
-    background-color: transparent;
+    // background-color: transparent;
   }
 
   row {
@@ -65,7 +67,7 @@
       padding: 0;
     }
 
-    .sidebar,
+    // .sidebar,
     scrollbar,
     entry.search {
       background-color: transparent;
@@ -289,7 +291,7 @@ button.raven-trigger {
     min-width: 16px;
     padding: 0;
     border-radius: 0;
-    background-color: transparent;
+    // background-color: transparent;
     color: hint($on-panel);
     @include ink-color($on-panel);
 
@@ -303,6 +305,7 @@ button.raven-trigger {
       @include ink-color($on-panel);
 
       &:disabled {
+        background-color: activated-overlay($on-panel);
         color: disabled($on-panel);
       }
     }
@@ -509,7 +512,7 @@ $pos_list: (top: bottom, bottom: top, left: right, right: left);
 
     // Adopt Choice chips style
     stackswitcher.linked > button {
-      @extend %button-flat-activatable;
+      // @extend %button-flat-activatable;
 
       margin: -2px 8px 9px;
       padding: 0 12px;

@@ -11,6 +11,8 @@
 .nautilus-window notebook,
 .nautilus-window notebook > stack {
   background-color: $base;
+  // TO DO
+  // background-color: $surface-z0;
 }
 
 .nautilus-canvas-item {
@@ -119,6 +121,7 @@
   border-width: 1px;
   border-color: divider($on-surface);
   border-radius: ($corner-radius + 1px) ($corner-radius + 1px) 0 0;
+  background-clip: padding-box;
   background-color: $surface;
 
   // axes left border and border radius
@@ -264,6 +267,8 @@ dialog.background > box.dialog-vbox.vertical > grid.horizontal {
 // Ensure paned separator rendering. See issue #84 for details.
 .nautilus-window paned > separator {
   background-color: $base-alt;
+  // TO DO
+  // background-color: theme-color.$surface-z0;
 }
 
 
@@ -370,7 +375,8 @@ dialog.background > box.dialog-vbox.vertical > grid.horizontal {
   .linked:not(.vertical) > button {
     border: solid $container-padding transparent;
     border-radius: $circular-radius;
-
+    // TO DO
+    // background-clip: padding-box;
     @extend %button-flat-basic;
     @extend %button-small;
 
@@ -519,6 +525,7 @@ layouttab {
   margin: 0 8px; // not working
   border-style: none solid;
   border-width: 1px;
+  // TO DO
   border-color: divider($on-surface);
   box-shadow: inset 0 -2px $primary;
   background-color: $base;
@@ -603,7 +610,7 @@ popover.omnibar list row:not(:last-child) {
 entry.preferences-search {
   border-bottom: 1px solid divider($on-surface);
   box-shadow: none;
-  background-color: $base;
+  background-color: transparent;
 
   // doesn't work properly
   &:dir(ltr) {
@@ -756,6 +763,7 @@ dockoverlayedge {
 }
 
 pillbox {
+  // TO DO
   background-color: $background;
   border-radius: $corner-radius;
 }
@@ -893,6 +901,7 @@ popover.messagepopover {
 
   list {
     border: 1px solid divider($on-surface);
+    background-clip: padding-box;
 
     row:not(:last-child) {
       border-bottom: 1px solid divider($on-surface);
@@ -979,9 +988,11 @@ GdMainIconView.content-view {
 
 .documents-scrolledwin.frame {
   border-style: none;
+  background-color: transparent;
 
   frame.content-view > border {
     border-style: none;
+    background-color: transparent;
   }
 }
 
@@ -1201,6 +1212,8 @@ frame.commit-frame > border {
 
 box.dialog-vbox scrolledwindow.related {
   border: 1px solid divider($on-surface);
+  background-clip: padding-box;
+  background-color: $surface;
 }
 
 list.categories {
