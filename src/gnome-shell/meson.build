@@ -66,6 +66,7 @@ foreach theme: themes
   gnome_shell_scss_conf.set('version', gnome_shell_version)
   gnome_shell_scss_conf.set('hex', theme['scss_hex'])
   gnome_shell_scss_conf.set('theme_name', theme['name'])
+  gnome_shell_scss_conf.set('theme-name', theme['name'])
   gnome_shell_scss_conf.set('color', theme['color'])
 
   # Configure SCSS file

@@ -1,17 +1,45 @@
 /* OVERVIEW */
 
-#overview {
-  spacing: 24px;
-  background-color: transparent;
-  color: $on-dark;
 
-  StScrollBar {
-    @extend %scrollbar-on-dark;
-  }
+// Same as the ANIMATION_TIME in overview.js
+$transition-duration: 250ms;
+
+$color: $dark;
+$on-color: $on-dark;
+
+@if $version < 40 {
+  $color: transparent;
+  $on-color: $on-dark;
 }
 
-.overview-controls {
-  padding-bottom: 32px;
+@if $version >= 40 {
+  .controls-manager,
+  .secondary-monitor-workspaces {
+    spacing: 16px;
+  }
+
+  #overviewGroup {
+    background-color: $color;
+    color: $on-color;
+
+    StScrollBar {
+      @extend %scrollbar-on-dark;
+    }
+  }
+} @else {
+  #overview {
+    spacing: 24px;
+    background-color: $color;
+    color: $on-color;
+
+    StScrollBar {
+      @extend %scrollbar-on-dark;
+    }
+  }
+
+  .overview-controls {
+    padding-bottom: 32px;
+  }
 }
 
 %overview-panel {
@@ -90,6 +118,7 @@
 }
 
 %-overview-item-hover {
+  border: 0;
   border-image: none;
   background-image: none;
   background-color: overlay("hover", $on-dark);

@@ -1,0 +1,67 @@
+$dark-theme: false !default;
+$light-topbar: false !default;
+$compact: false !default;
+$toolkit: "none" !default;
+
+$asset-suffix: if($dark-theme, "-dark", "");
+
+//
+// Sizes
+//
+
+$container-padding: 6px;
+$small-size: 24px;
+$medium-size: 36px;
+$large-size: 48px;
+
+@if $compact {
+  $container-padding: 4px;
+  $small-size: 24px;
+  $medium-size: 32px;
+  $large-size: 40px;
+}
+
+$menu-item-height: 32px;
+$menu-item-dense-height: 28px;
+
+@if $compact {
+  $menu-item-height: 28px;
+}
+
+//
+// Radii
+//
+
+$corner-radius: 4px;
+$circular-radius: 9999px;
+
+//
+// Durations
+//
+
+$state-duration: 75ms;
+$ripple-duration: 225ms;
+$ripple-fade-out-duration: 300ms;
+$ripple-opacity-fade-out-duration: 1200ms;
+
+@if $toolkit == "st" {
+  // Tweak transition durations since St does not support transition-timing-function
+  $state-duration: 100ms;
+  $ripple-duration: 200ms;
+}
+
+//
+// Timing functions
+//
+
+$ease: cubic-bezier(.4, 0, .2, 1);
+$ease-out: cubic-bezier(0, 0, .2, 1);
+$ease-in: cubic-bezier(.4, 0, 1, 1);
+$ease-in-out: cubic-bezier(.4, 0, .6, 1);
+
+//
+// Transition shorthands
+//
+
+$transition: all $state-duration $ease-out;
+$transition-shadow: box-shadow $state-duration $ease-out;

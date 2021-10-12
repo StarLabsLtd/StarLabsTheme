@@ -24,13 +24,13 @@
   }
 
   &.panel-menu {
-    -boxpointer-gap: 4px; // distance from the panel
+    -boxpointer-gap: 0; // distance from the panel
     margin-bottom: 1.75em;
   }
 }
 
 .popup-menu-content {
-  margin: 5px 8px 8px;
+  margin: 8px;
   padding: 8px 0;
   border-radius: $corner-radius;
   box-shadow: $shadow-2;
@@ -90,6 +90,16 @@
   &:insensitive {
     color: disabled($on-surface);
   }
+
+  .toggle-switch {
+    width: 20px;
+    height: 20px;
+    background-image: url("resource:///org/gnome/shell/theme/menu-item-toggle-off.svg");
+
+    &:checked {
+      background-image: url("resource:///org/gnome/shell/theme/menu-item-toggle-on.svg");
+    }
+  }
 }
 
 // all icons and other graphical elements
@@ -135,6 +145,14 @@
   text-align: right;
   width: 16px;
   height: 16px;
+
+  &:ltr {
+    text-align: right;
+  }
+
+  &:rtl {
+    text-align: left;
+  }
 }
 
 // separator
@@ -221,7 +239,7 @@
   }
 }
 
-@if $version <= 3.34 {
+@if $version <= 3.36 {
   .system-menu-action {
     -st-icon-style: symbolic; // >= 3.30
     padding: ($large-size - 16px) / 2;
