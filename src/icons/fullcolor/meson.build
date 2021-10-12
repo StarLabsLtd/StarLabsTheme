@@ -38,7 +38,8 @@ foreach icon_theme: icon_themes
           input: file_svg,
           output: target_temp_name + '.png',
           command: [
-            inkscape, '--batch-process',
+            inkscape, 
+	    # '--batch-process',
             '--export-id=@0@'.format(object),
             '--export-dpi=@0@'.format(dpi),
             '--export-filename=@OUTPUT@',

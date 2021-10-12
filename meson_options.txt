@@ -26,6 +26,8 @@ option(
 option(
   'gnome_shell_version',
   type: 'string',
+# Focal: 3.36
+# Impish: 40.5
   value: '40.5',
   description: 'Manually set gnome-shell version',
 )
