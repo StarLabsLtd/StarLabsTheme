@@ -1,3 +1,9 @@
+starlabstheme-master (3+f+2) UNRELEASED; urgency=medium
+
+  * Fixed filename export
+
+ -- Ben McMillen <ben@starlabs.systems>  Wed, 13 Oct 2021 11:54:06 +0100
+
 starlabstheme-master (3+f+1) impish; urgency=medium
 
   * Add support for GNOME 40
