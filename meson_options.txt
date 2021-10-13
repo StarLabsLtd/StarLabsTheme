@@ -28,7 +28,7 @@ option(
   type: 'string',
 # Focal: 3.36
 # Impish: 40.5
-  value: '40.5',
+  value: '3.36',
   description: 'Manually set gnome-shell version',
 )
 
