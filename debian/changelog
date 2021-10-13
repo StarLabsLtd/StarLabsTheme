@@ -1,3 +1,9 @@
+starlabstheme-master (3+i+2) impish; urgency=medium
+
+  * Update build opts
+
+ -- Sean Rhodes <sean@starlabs.systems>  Wed, 13 Oct 2021 14:08:44 +0100
+
 starlabstheme-master (3+i+1) impish; urgency=medium
 
   * Add support for GNOME 40

@@ -1,4 +1,3 @@
-inkscape = find_program('inkscape')
 foreach icon_theme: icon_themes
 
   index_icon_conf = configuration_data()
