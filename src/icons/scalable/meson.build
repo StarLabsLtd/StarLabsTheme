@@ -17,7 +17,7 @@ foreach object: scalable_objects
       input: 'master.svg',
       output: target_temp_name + '-symbolic.svg',
       command: [
-        inkscape, '--batch-process',
+        inkscape,
         '--export-id=@0@'.format(object),
         '--export-filename=@OUTPUT@',
         '--export-id-only',
