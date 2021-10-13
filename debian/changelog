@@ -1,8 +1,9 @@
-starlabstheme-master (3+f+2) UNRELEASED; urgency=medium
+starlabstheme-master (3+f+3) focal; urgency=medium
 
+  [ Sean Rhodes ]
   * Fixed filename export
 
- -- Ben McMillen <ben@starlabs.systems>  Wed, 13 Oct 2021 11:54:06 +0100
+ -- Sean Rhodes <sean@starlabs.systems>  Wed, 13 Oct 2021 11:54:06 +0100
 
 starlabstheme-master (3+f+1) impish; urgency=medium
 
