@@ -2,9 +2,9 @@
 
 set -e
 
-if [ "$1" = "remove" ]; then
-	update-alternatives --remove gdm3-theme.gresource /usr/share/gnome-shell/theme/StarLabs-Green/gnome-shell-theme.gresource
-fi
+# if [ "$1" = "remove" ]; then
+#	update-alternatives --remove gdm3-theme.gresource /usr/share/gnome-shell/theme/StarLabs-Green/gnome-shell-theme.gresource
+# fi
 
 #DEBHELPER#
 

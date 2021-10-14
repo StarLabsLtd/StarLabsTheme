@@ -1,0 +1,4 @@
+Name: gdm-theme.gresource
+Link: /usr/share/gnome-shell/gdm-theme.gresource
+Alternative: /usr/share/gnome-shell/theme/StarLabs/gnome-shell-theme.gresource
+Priority: 20
