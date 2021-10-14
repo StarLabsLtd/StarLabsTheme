@@ -19,6 +19,10 @@ window.background.csd {
   }
 }
 
+.titlebar > headerbar.titlebar.tweak-titlebar-right {
+  background-color: $titlebar;
+  color: $on-titlebar;
+}
 
 list.tweak-categories,
 scrolledwindow viewport > stack list,
