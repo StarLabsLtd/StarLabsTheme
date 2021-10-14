@@ -118,7 +118,7 @@
     <file alias="pad-osd.css">../../../src/gnome-shell/pad-osd.css</file>
     <file alias="workspaces-to-dock.css">../../../src/gnome-shell/workspaces-to-dock.css</file>
     <file alias="gnome-shell.css">@theme_name@.css</file>
-    <file alias="gdm3.css">@theme_name@.css</file>
+    <file alias="gdm.css">@theme_name@.css</file>
     <file alias="@theme_name@/gnome-shell.css">@theme_name@.css</file>
     <file alias="@theme-name@-Dark/gnome-shell.css">@theme_name@.css</file>
   </gresource>
