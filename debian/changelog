@@ -1,3 +1,9 @@
+starlabstheme-master (3+i+6) impish; urgency=medium
+
+  * Restore subdirs
+
+ -- Sean Rhodes <sean@starlabs.systems>  Thu, 14 Oct 2021 20:52:31 +0100
+
 starlabstheme-master (3+i+5) impish; urgency=medium
 
   * Change stylesheet name
