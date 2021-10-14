@@ -1,3 +1,9 @@
+starlabstheme-master (3+i+4) impish; urgency=medium
+
+  * Install using alternatives
+
+ -- Sean Rhodes <sean@starlabs.systems>  Thu, 14 Oct 2021 10:19:51 +0100
+
 starlabstheme-master (3+i+3) impish; urgency=medium
 
   * Fix gnome-tweaks titlebar
