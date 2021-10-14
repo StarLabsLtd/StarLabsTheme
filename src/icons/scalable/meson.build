@@ -19,7 +19,7 @@ foreach object: scalable_objects
       command: [
         inkscape,
         '--export-id=@0@'.format(object),
-        '--export-filename=@OUTPUT@',
+        '--export-png=@OUTPUT@',
         '--export-id-only',
         '--export-plain-svg',
         '@INPUT@',

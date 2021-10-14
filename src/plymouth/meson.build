@@ -47,7 +47,7 @@ foreach icon_theme: icon_themes
         inkscape,
         '--export-id=@0@'.format(stage),
 #       '--export-dpi=@0@'.format(dpi),
-        '--export-filename=@OUTPUT@',
+        '--export-png=@OUTPUT@',
         '@INPUT@',
       ]
     )
