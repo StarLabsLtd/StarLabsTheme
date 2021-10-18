@@ -1,3 +1,9 @@
+starlabstheme-master (3+i+7) impish; urgency=medium
+
+  * Fix user-home
+
+ -- Sean Rhodes <sean@starlabs.systems>  Mon, 18 Oct 2021 17:49:57 +0100
+
 starlabstheme-master (3+i+6) impish; urgency=medium
 
   * Restore subdirs
