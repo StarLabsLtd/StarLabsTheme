@@ -1,3 +1,9 @@
+starlabstheme-master (3+f+6) focal; urgency=medium
+
+  * Rename home icon
+
+ -- Sean Rhodes <sean@starlabs.systems>  Mon, 18 Oct 2021 17:47:59 +0100
+
 starlabstheme-master (3+f+5) focal; urgency=medium
 
   * Fix build args
