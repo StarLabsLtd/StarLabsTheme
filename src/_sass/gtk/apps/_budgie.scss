@@ -305,7 +305,7 @@ button.raven-trigger {
       @include ink-color($on-panel);
 
       &:disabled {
-        background-color: activated-overlay($on-panel);
+        background-color: overlay("activated", $on-panel);
         color: disabled($on-panel);
       }
     }
