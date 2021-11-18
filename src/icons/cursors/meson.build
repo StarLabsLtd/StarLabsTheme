@@ -41,7 +41,7 @@ foreach icon_theme: icon_themes
               '--shell',
               '--export-id=@0@-@1@'.format(name, stage),
               '--export-dpi=@0@'.format(dpi),
-              '--export-filename=@OUTPUT@',
+              '--export-png=@OUTPUT@',
               '@INPUT@',
             ]
           )
@@ -56,7 +56,7 @@ foreach icon_theme: icon_themes
             '--shell',
             '--export-id=@0@'.format(name),
             '--export-dpi=@0@'.format(dpi),
-            '--export-filename=@OUTPUT@',
+            '--export-png=@OUTPUT@',
             '@INPUT@',
           ]
         )

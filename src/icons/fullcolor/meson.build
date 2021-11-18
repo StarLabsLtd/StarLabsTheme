@@ -42,7 +42,7 @@ foreach icon_theme: icon_themes
             '--shell',
             '--export-id=@0@'.format(object),
             '--export-dpi=@0@'.format(dpi),
-            '--export-filename=@OUTPUT@',
+            '--export-png=@OUTPUT@',
             '@INPUT@',
           ]
         )
