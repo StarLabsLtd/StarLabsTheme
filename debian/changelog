@@ -1,3 +1,9 @@
+starlabstheme-master (3+f+8) focal; urgency=medium
+
+  * Version bump
+
+ -- Sean Rhodes <sean@starlabs.systems>  Thu, 11 Nov 2021 22:50:41 +0000
+
 starlabstheme-master (3+f+7) focal; urgency=medium
 
   * Fix cursor build
