@@ -45,20 +45,19 @@ foreach icon_theme: icon_themes
             ]
           )
         endforeach
-      else
-        target_temp_name = '@0@.@1@'.format(dpi, name)
-        cursor_png = configure_file(
-          input: cursor_svg,
-          output: target_temp_name + '.png',
-          command: [
-            inkscape,
-            '--export-id=@0@'.format(name),
-            '--export-dpi=@0@'.format(dpi),
-            '--export-png=@OUTPUT@',
-            '@INPUT@',
-          ]
-        )
       endif
+      target_temp_name = '@0@.@1@'.format(dpi, name)
+      cursor_png = configure_file(
+        input: cursor_svg,
+        output: target_temp_name + '.png',
+        command: [
+          inkscape,
+          '--export-id=@0@'.format(name),
+          '--export-dpi=@0@'.format(dpi),
+          '--export-png=@OUTPUT@',
+          '@INPUT@',
+        ]
+      )
     endforeach
 
     cursor_temp_name = '@0@.@1@'.format(icon_theme['name'], name)
