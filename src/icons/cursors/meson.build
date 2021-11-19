@@ -15,7 +15,7 @@ links = run_command(
 
 
 foreach icon_theme: icon_themes
-  cursor_svg = configure_file(
+  master_cursor_svg = configure_file(
     input: 'cursors.svg',
     output: icon_theme['name'] + '.svg',
     copy: true,
