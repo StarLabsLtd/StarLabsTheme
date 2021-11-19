@@ -45,9 +45,7 @@ foreach icon_theme: icon_themes
       output: target_temp_name + '.png',
       command: [
         inkscape,
-	'--shell',
         '--export-id=@0@'.format(stage),
-#       '--export-dpi=@0@'.format(dpi),
         '--export-png=@OUTPUT@',
         '@INPUT@',
       ]

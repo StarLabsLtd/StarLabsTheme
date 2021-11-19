@@ -38,7 +38,6 @@ foreach icon_theme: icon_themes
             output: target_temp_name + '.png',
             command: [
               inkscape,
-              '--shell',
               '--export-id=@0@-@1@'.format(name, stage),
               '--export-dpi=@0@'.format(dpi),
               '--export-png=@OUTPUT@',
@@ -53,7 +52,6 @@ foreach icon_theme: icon_themes
           output: target_temp_name + '.png',
           command: [
             inkscape,
-            '--shell',
             '--export-id=@0@'.format(name),
             '--export-dpi=@0@'.format(dpi),
             '--export-png=@OUTPUT@',

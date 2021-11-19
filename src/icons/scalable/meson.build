@@ -18,7 +18,6 @@ foreach object: scalable_objects
       output: target_temp_name + '-symbolic.svg',
       command: [
         inkscape,
-	'--shell',
         '--export-id=@0@'.format(object),
         '--export-png=@OUTPUT@',
         '--export-id-only',
