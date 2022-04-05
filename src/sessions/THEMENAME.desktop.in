@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=@name@
-Comment=This session logs you with @name@
-Exec=env GNOME_SHELL_SESSION_MODE=@lowercase_name@ gnome-session
+Name=@name_w_dark@
+Comment=This session logs you with @name_w_dark@
+Exec=env GNOME_SHELL_SESSION_MODE=@lowercase_name_w_dark@ gnome-session
 TryExec=gnome-session
 Type=Application
-DesktopNames=@name@:ubuntu:GNOME
+DesktopNames=@name_w_dark@:ubuntu:GNOME
 X-Ubuntu-Gettext-Domain=gnome-session-3.0

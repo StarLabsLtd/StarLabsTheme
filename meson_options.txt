@@ -15,7 +15,7 @@ option(
 option(
   'accents',
   type: 'array',
-  choices: ['default', 'green', 'orange'],
+  choices: ['default', 'green', 'orange', 'pink'],
 # If you want to add a new color variant, add it here.
 #
 # For example:
@@ -28,7 +28,8 @@ option(
   type: 'string',
 # Focal: 3.36
 # Impish: 40.5
-  value: '40.5',
+# Jammy: 42.0
+  value: '42.0',
   description: 'Manually set gnome-shell version',
 )
 

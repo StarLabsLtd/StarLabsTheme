@@ -32,6 +32,10 @@ foreach accent: get_option('accents')
     accent_suffix = '-Orange'
     scss_accent = 'orange'
     scss_hex = '#FB8B00'
+  elif accent == 'pink'
+    accent_suffix = '-Pink'
+    scss_accent = 'pink'
+    scss_hex = '#a345a0'
 # If you want to add a new color variant, add it here.
 #
 # For example:

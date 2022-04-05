@@ -1,0 +1,8 @@
+usr/share/gnome-shell/modes/starlabs-pink.json
+usr/share/xsessions/StarLabs-Pink.desktop
+usr/share/wayland-sessions/StarLabs-Pink-wayland.desktop
+usr/share/glib-2.0/schemas/99_StarLabs-Pink.gschema.override
+usr/share/gnome-shell/modes/starlabs-pink-dark.json
+usr/share/xsessions/StarLabs-Pink-Dark.desktop
+usr/share/wayland-sessions/StarLabs-Pink-Dark-wayland.desktop
+usr/share/glib-2.0/schemas/99_StarLabs-Pink-Dark.gschema.override

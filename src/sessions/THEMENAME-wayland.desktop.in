@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=@name@ on wayland
-Comment=This session logs you with @name@ on wayland
+Name=@name_w_dark@ on wayland
+Comment=This session logs you with @name_w_dark@ on wayland
 Exec=env GNOME_SHELL_SESSION_MODE=@lowercase_name@ gnome-session
 TryExec=gnome-session
 Type=Application
-DesktopNames=@name@:ubuntu:GNOME
+DesktopNames=@name_w_dark@:ubuntu:GNOME
 X-Ubuntu-Gettext-Domain=gnome-session-3.0

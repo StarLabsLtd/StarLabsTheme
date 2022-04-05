@@ -1,29 +1,29 @@
 ##########################################
-# @name@ specific session #
+# @name_w_dark specific session #
 ##########################################
 
-[org.gnome.desktop.interface:@name@]
+[org.gnome.desktop.interface:@name_w_dark@]
 cursor-theme = "@name@"
 icon-theme = "@name@"
-gtk-theme = "@name@"
+gtk-theme = "@name_w_dark@"
 
-[org.gnome.desktop.sound:@name@]
+[org.gnome.desktop.sound:@name_w_dark@]
 theme-name = "@name@"
 input-feedback-sounds = true
 
-[org.gnome.mutter:@name@]
+[org.gnome.mutter:@name_w_dark@]
 center-new-windows = false
 
-[org.gnome.desktop.background:@name@]
+[org.gnome.desktop.background:@name_w_dark@]
 picture-uri = 'file:///usr/share/backgrounds/@name@/@name@.svg'
 
-[org.gnome.desktop.screensaver:@name@]
+[org.gnome.desktop.screensaver:@name_w_dark@]
 picture-uri = 'file:///usr/share/backgrounds/@name@/@name@.svg'
 
-[org.gnome.desktop.interface:@name@]
+[org.gnome.desktop.interface:@name_w_dark@]
 show-battery-percentage=true
 
-[com.ubuntu.sound:@name@]
+[com.ubuntu.sound:@name_w_dark@]
 allow-amplified-volume=true
 
 [org.gnome.shell.extensions.dash-to-dock]
@@ -32,7 +32,7 @@ transparency-mode='FIXED'
 [org.gnome.shell.extensions.lockkeys]
 style='capslock'
 
-[org.gnome.shell.extensions.dash-to-dock:@name@]
+[org.gnome.shell.extensions.dash-to-dock:@name_w_dark@]
 custom-theme-running-dots-color='@hex@'
 custom-theme-running-dots-border-color='@hex@'
 background-opacity=0.9

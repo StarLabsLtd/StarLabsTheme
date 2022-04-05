@@ -1,6 +1,14 @@
-starlabstheme-master (3+i+8) impish; urgency=medium
+starlabstheme-master (3+j) jammy; urgency=medium
 
-  * Fix incorrect class name
+  * Release 3 for jammy
+
+ -- Sean Rhodes <sean@starlabs.systems>  Tue, 05 Apr 2022 07:57:20 +0100
+
+starlabstheme-master (3+i+25) impish; urgency=medium
+
+  * Fix plymouth firmware progress
+  * Add pink variant
+  * Add dark launchers
 
  -- Sean Rhodes <sean@starlabs.systems>  Thu, 11 Nov 2021 22:37:17 +0000
 

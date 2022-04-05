@@ -1,12 +1,12 @@
 [Plymouth Theme]
-Name=@name@
-Description=Star Labs ACPI Plymouth Theme
+Name=elementary
+Description=elementary theme using the ACPI BGRT graphics as background
 ModuleName=two-step
 
 [two-step]
-Font=Cantarell 12
-TitleFont=Cantarell Light 30
-ImageDir=/usr/share/plymouth/themes/@name@
+Font=Inter 12
+TitleFont=Inter Bold 32
+ImageDir=/usr/share/plymouth/themes/elementary
 DialogHorizontalAlignment=.5
 DialogVerticalAlignment=.7
 TitleHorizontalAlignment=.5

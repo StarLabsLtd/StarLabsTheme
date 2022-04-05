@@ -110,6 +110,11 @@ Architecture: all
 Description: Star Labs Theme
 Depends: starlabstheme-orange-backgrounds, starlabstheme-extensions, starlabstheme-font, starlabstheme-grub, starlabstheme-orange-session, starlabstheme-sounds, starlabstheme-orange-gnome-shell,  starlabstheme-orange-gtk, starlabstheme-orange-icons, starlabstheme-orange-plymouth
 
+Package: starlabstheme-pink
+Architecture: all
+Description: Star Labs Theme
+Depends: starlabstheme-pink-backgrounds, starlabstheme-extensions, starlabstheme-font, starlabstheme-grub, starlabstheme-pink-session, starlabstheme-sounds, starlabstheme-pink-gnome-shell,  starlabstheme-pink-gtk, starlabstheme-pink-icons, starlabstheme-pink-plymouth
+
 Package: starlabstheme-green-gtk
 Architecture: all
 Depends: ${shlibs:Depends},
@@ -117,6 +122,12 @@ Depends: ${shlibs:Depends},
 Description: Star Labs Theme.
 
 Package: starlabstheme-orange-gtk
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+Description: Star Labs Theme.
+
+Package: starlabstheme-pink-gtk
 Architecture: all
 Depends: ${shlibs:Depends},
          ${misc:Depends},
@@ -136,6 +147,13 @@ Depends: plymouth-themes,
          ${misc:Depends},
 Description: Star Labs Theme.
 
+Package: starlabstheme-pink-plymouth
+Architecture: all
+Depends: plymouth-themes,
+         ${shlibs:Depends},
+         ${misc:Depends},
+Description: Star Labs Theme.
+
 Package: starlabstheme-green-icons
 Architecture: all
 Depends: ${shlibs:Depends},
@@ -143,6 +161,12 @@ Depends: ${shlibs:Depends},
 Description: Star Labs Theme.
 
 Package: starlabstheme-orange-icons
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+Description: Star Labs Theme.
+
+Package: starlabstheme-pink-icons
 Architecture: all
 Depends: ${shlibs:Depends},
          ${misc:Depends},
@@ -160,6 +184,12 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
 Description: Star Labs Theme.
 
+Package: starlabstheme-pink-gnome-shell
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+Description: Star Labs Theme.
+
 Package: starlabstheme-green-session
 Architecture: all
 Depends: ${shlibs:Depends},
@@ -172,6 +202,11 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
 Description: Star Labs Theme.
 
+Package: starlabstheme-pink-session
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+Description: Star Labs Theme.
 
 Package: starlabstheme-green-backgrounds
 Architecture: all
@@ -180,6 +215,12 @@ Depends: ${shlibs:Depends},
 Description: Star Labs Theme.
 
 Package: starlabstheme-orange-backgrounds
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+Description: Star Labs Theme.
+
+Package: starlabstheme-pink-backgrounds
 Architecture: all
 Depends: ${shlibs:Depends},
          ${misc:Depends},
